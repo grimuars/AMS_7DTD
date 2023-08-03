@@ -1,0 +1,66 @@
+Key,File,Type,English,russian
+
+resourceScrapBrassBundle,items,Item,Stack of Brass (10000),Запас латуни (10000)
+resourceScrapBrassBundleDesc,items,Item,This is a compact stack of brass. Use this item to open and unpack it.,"Компактно упакованная латунь. Откройте, чтобы получить содержимое."
+resourceClayLumpBundle,items,Item,Stack of Clay (10000),Запас глины (10000)
+resourceClayLumpBundleDesc,items,Item,This is a compact stack of clay. Use this item to open and unpack it.,"Компактно упакованная глина. Откройте, чтобы получить содержимое."
+resourceCrushedSandBundle,items,Item,Stack of Crushed Sand (10000),Запас песка (10000)
+resourceCrushedSandBundleDesc,items,Item,This is a compact stack of crushed sand. Use this item to open and unpack it.,"Компактно упакованный песок. Откройте, чтобы получить содержимое."
+resourceCementBundle,items,Item,Stack of Cement (10000),Запас цемента (10000)
+resourceCementBundleDesc,items,Item,This is a compact stack of cement. Use this item to open and unpack it.,"Компактно упакованный цемент. Откройте, чтобы получить содержимое."
+resourcePaperBundle,items,Item,Stack of Paper (1000),Запас бумаги (1000)
+resourcePaperBundleDesc,items,Item,This is a compact stack of paper. Use this item to open and unpack it.,"Компактно упакованная бумага. Откройте, чтобы получить содержимое."
+resourceScrapPolymersBundle,items,Item,Stack of Polymers (1000),Запас синтетического мусора (1000)
+resourceScrapPolymersBundleDesc,items,Item,This is a compact stack of polymers. Use this item to open and unpack it.,"Компактно упакованный синтетический мусор. Откройте, чтобы получить содержимое."
+resourceCobblestonesBundle,items,Item,Stack of Cobblestones (10000),Запас булыжников (10000)
+resourceCobblestonesBundleDesc,items,Item,This is a compact stack of cobblestones. Use this item to open and unpack it.,"Компактно упакованные булыжники. Откройте, чтобы получить содержимое."
+resourceConcreteMixBundle,items,Item,Stack of Concrete Mix (1000),Запас бетона (1000)
+resourceConcreteMixBundleDesc,items,Item,This is a compact stack of concrete mix. Use this item to open and unpack it.,"Компактно упакованный бетон. Откройте, чтобы получить содержимое."
+resourceForgedIronBundle,items,Item,Stack of Forged Iron (1000),Запас слитков железа (1000)
+resourceForgedIronBundleDesc,items,Item,This is a compact stack of forged iron. Use this item to open and unpack it.,"Компактно упакованные слитки железа. Откройте, чтобы получить содержимое."
+resourceForgedSteelBundle,items,Item,Stack of Forged Steel (1000),Запас слитков стали (1000)
+resourceForgedSteelBundleDesc,items,Item,This is a compact stack of forged steel. Use this item to open and unpack it.,"Компактно упакованные слитки стали. Откройте, чтобы получить содержимое."
+resourceBuckshotBundle,items,Ammo,Stack of Buckshot (1000),Запас крупной дроби (1000)
+resourceBuckshotBundleDesc,items,Ammo,This is a compact stack of buckshot. Use this item to open and unpack it.,"Компактно упакованная крупная дробь. Откройте, чтобы получить содержимое."
+resourceBulletCasingBundle,items,Item,Stack of Bullet Casing (1000),Запас гильз (1000)
+resourceBulletCasingBundleDesc,items,Item,This is a compact stack of bullet casing. Use this item to open and unpack it.,"Компактно упакованные гильзы. Откройте, чтобы получить содержимое."
+resourceBulletTipBundle,items,Item,Stack of Bullet Tip (1000),Запас пуль (1000)
+resourceBulletTipBundleDesc,items,Item,This is a compact stack of bullet tip. Use this item to open and unpack it.,"Компактно упакованные пули. Откройте, чтобы получить содержимое."
+resourceArrowHeadIronBundle,items,Item,Stack of Iron Arrowhead (1000),Запас железных наконечников (1000)
+resourceArrowHeadIronBundleDesc,items,Item,This is a compact stack of iron arrowhead. Use this item to open and unpack it.,"Компактно упакованные железные наконечники. Откройте, чтобы получить содержимое."
+resourceArrowHeadSteelAPBundle,items,Item,Stack of Steel Arrowhead (1000),Запас стальных наконечников (1000)
+resourceArrowHeadSteelAPBundleDesc,items,Item,This is a compact stack of steel arrowhead. Use this item to open and unpack it.,"Компактно упакованные стальные наконечники. Откройте, чтобы получить содержимое."
+ammoDartIronBundle,items,Ammo,Box of Iron Dart (1000),Запас железных дротиков (1000)
+ammoDartIronBundleDesc,items,Ammo,Crafting boxes of ammo costs fewer resources.\n\nUse this item to take the ammo out of the box so that you can load it into a trap.,"Создание упакованных боеприпасов тратит меньше ресурсов.\n\nОткройте, чтобы получить содержимое и зарядить его в ловушку."
+
+resourceCoalBundle,items,Item,Stack of Coal (10000),Запас угля (10000)
+resourceLeadBundle,items,Item,Stack of Lead (10000),Запас свинца (10000)
+resourceOilShaleBundle,items,Item,Stack of Oil Shale (10000),Запас горючего сланца (10000)
+resourcePotassiumNitratePowderBundle,items,Item,Stack of Nitrate Powder (10000),Запас порошковой селитры (10000)
+resourceRockSmallBundle,items,Item,Stack of Small Stone (10000),Запас маленьких камней (10000)
+resourceScrapIronBundle,items,Item,Stack of Iron (10000),Запас железа (10000)
+resourceWoodBundle,items,Item,Stack of Wood (10000),Запас дерева (10000)
+
+ammoBundleArrowExploding,items,Ammo,Box of Exploding Arrows (300),Коробка взрывных стрел (300)
+ammoBundleArrowFlaming,items,Ammo,Box of Flaming Arrows (300),Коробка зажигательных стрел (300)
+ammoBundleArrowIron,items,Ammo,Box of Iron Arrows (300),Коробка железных стрел (300)
+ammoBundleArrowSteelAP,items,Ammo,Box of Steel Arrows (300),Коробка стальных стрел (300)
+ammoBundleArrowStone,items,Ammo,Box of Stone Arrows (300),Коробка каменных стрел (300)
+ammoBundleCrossbowBoltExploding,items,Ammo,Box of Exploding Crossbow Bolts (300),Коробка взрывных болтов (300)
+ammoBundleCrossbowBoltFlaming,items,Ammo,Box of Flaming Crossbow Bolts (300),Коробка зажигательных болтов (300)
+ammoBundleCrossbowBoltIron,items,Ammo,Box of Iron Crossbow Bolts (300),Коробка железных болтов (300)
+ammoBundleCrossbowBoltSteelAP,items,Ammo,Box of Steel Crossbow Bolts (300),Коробка стальных болтов (300)
+ammoBundleCrossbowBoltStone,items,Ammo,Box of Stone Crossbow Bolts (300),Коробка каменных болтов (300)
+
+ammoBundle44MagnumBulletAP,items,Ammo,Box of AP .44 Magnum Ammo (1000),Коробка бронебойных патронов .44 Magnum (1000)
+ammoBundle44MagnumBulletBall,items,Ammo,Box of .44 Magnum Ammo (1000),Коробка патронов .44 Magnum (1000)
+ammoBundle44MagnumBulletHP,items,Ammo,Box of HP .44 Magnum Ammo (1000),Коробка экспансивных патронов .44 Magnum (1000)
+ammoBundle762mmBulletAP,items,Ammo,Box of AP 7.62mm Ammo (1000),"Коробка бронебойных патронов 7,62 мм (1000)"
+ammoBundle762mmBulletBall,items,Ammo,Box of 7.62mm Ammo (1000),"Коробка патронов 7,62 мм (1000)"
+ammoBundle762mmBulletHP,items,Ammo,Box of HP 7.62mm Ammo (1000),"Коробка экспансивных патронов 7,62 мм (1000)"
+ammoBundle9mmBulletAP,items,Ammo,Box of AP 9mm Ammo (1000),"Коробка бронебойных патронов 9 мм (1000)"
+ammoBundle9mmBulletBall,items,Ammo,Box of 9mm Ammo (1000),"Коробка патронов 9 мм (1000)"
+ammoBundle9mmBulletHP,items,Ammo,Box of HP 9mm Ammo (1000),"Коробка экспансивных патронов 9 мм (1000)"
+ammoBundleShotgunBreachingSlug,items,Ammo,Box of Shotgun Breaching Slugs (1000),Коробка патронов с разделённым пороховым зарядом для дробовика (1000)
+ammoBundleShotgunShell,items,Ammo,Box of Shotgun Shells (1000),Коробка патронов для дробовика (10000)
+ammoBundleShotgunSlug,items,Ammo,Box of Shotgun AP Slugs (1000),Коробка бронебойных патронов для дробовика (10000)

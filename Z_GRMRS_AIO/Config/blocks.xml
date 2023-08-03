@@ -1,0 +1,80 @@
+<configs>
+	<!-- Удаляем старый и тупой вариант хелпер для флагов -->
+	<remove xpath="/blocks/block[@name='flagThick44BlockVariantHelper']"/>
+	<!-- Усиливаем ловушки -->
+	<set xpath="blocks/block[@name='trapSpikesWoodMaster']/property[@name='MaxDamage']/@value">200</set>
+	<set xpath="blocks/block[@name='trapSpikesWoodMaster']/property[@name='Damage']/@value">25</set>
+	<set xpath="blocks/block[@name='trapSpikesScrapIronMaster']/property[@name='MaxDamage']/@value">800</set>
+	<set xpath="blocks/block[@name='trapSpikesScrapIronMaster']/property[@name='Damage']/@value">35</set>
+	<!-- Ускоряем коллектор росы -->
+	<!-- <set xpath="/blocks/block[@name='cntDewCollector']/property[@name='MinConvertTime']/@value">7200</set> -->
+	<!-- original value 21600 -->
+	<!-- <set xpath="/blocks/block[@name='cntDewCollector']/property[@name='MaxConvertTime']/@value">10800</set> -->
+	<!-- original value 36000 -->
+	<!-- Коллектор собирает мутную воду (что логично) -->
+	<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='ConvertToItem']/@value">drinkJarRiverWater</set>
+	<!-- Активируем подбор мусора -->
+	<append xpath="/blocks/block[@name='garbage_decor1']">
+		<property name="CanPickup" value="true" param1="resourceCloth"/>
+	</append>
+	<append xpath="/blocks/block[@name='garbage_decor2']">
+		<property name="CanPickup" value="true" param1="resourceScrapPolymers"/>
+	</append>
+	<append xpath="/blocks/block[@name='garbage_decor3']">
+		<property name="CanPickup" value="true" param1="resourceBrokenGlass"/>
+	</append>
+	<append xpath="/blocks/block[@name='glassDebris01']">
+		<property name="CanPickup" value="true" param1="resourceBrokenGlass"/>
+	</append>
+	<!-- При сломе крафтовые станции не уничтожаются -->
+	<remove xpath="/blocks/block[@name='forge']/drop[@event='Destroy']"/>
+	<append xpath="/blocks/block[@name='forge']">
+		<drop event="Destroy" name="forge" count="1"/>
+	</append>
+	<remove xpath="/blocks/block[@name='workbench']/drop[@event='Destroy']"/>
+	<append xpath="/blocks/block[@name='workbench']">
+		<drop event="Destroy" name="workbench" count="1"/>
+	</append>
+	<remove xpath="/blocks/block[@name='cementMixer']/drop[@event='Destroy']"/>
+	<append xpath="/blocks/block[@name='cementMixer']">
+		<drop event="Destroy" name="cementMixer" count="1"/>
+	</append>
+	<remove xpath="/blocks/block[@name='chemistryStation']/drop[@event='Destroy']"/>
+	<append xpath="/blocks/block[@name='chemistryStation']">
+		<drop event="Destroy" name="chemistryStation" count="1"/>
+	</append>
+	<!-- Обыскиваемый тостер -->
+	<append xpath="/blocks/block[@name='cntToaster']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='cntToaster'/>
+	</append>
+	<!-- Лут с шин -->
+	<set xpath="/blocks/block[@name='decoCarTireSmallFlat']//drop[@event='Destroy']/@count">5,10</set>
+	<set xpath="/blocks/block[@name='decoCarTireFlat']//drop[@event='Destroy']/@count">10,15</set>
+	<set xpath="/blocks/block[@name='decoCarTirePile']//drop[@event='Destroy']/@count">15,20</set>
+	<!-- При разборе колёс в мире можно получить колесо -->
+	<append xpath="/blocks/block[@name='decoCarWheelFlat']">
+		<drop event="Harvest" name="vehicleWheels" count="1" prob="0.2" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoCarWheelFlat02']">
+		<drop event="Harvest" name="vehicleWheels" count="1" prob="0.2" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoCarWheelOffset01']">
+		<drop event="Harvest" name="vehicleWheels" count="1" prob="0.2" tag="salvageHarvest"/>
+	</append>
+	<!-- Новый блок с вариантами выбора для флагов -->
+	<append xpath="/blocks">
+		<block name="flagBlockVariantHelper">
+			<property name="Extends" value="flagWallHungUSA"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="flagWallHungUSA"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="flagBlockVariantHelperDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="flagWallHungUSA,flagWallHungDuke,flagWallHungHonorDuty,flagWallHungValiant,flagWallHungTFP,flagWallHungGadsdenWhite,flagWallHungGadsdenBrown,flagWallHungGadsdenRed,flagWallHungGadsdenOrange,flagWallHungGadsdenYellow,flagWallHungGadsdenGreen,flagWallHungGadsdenBlue,flagWallHungGadsdenPurple,flagWallHungGadsdenGrey,flagWallHungGadsdenPink,flagWallHungGadsdenArmyGreen,flagTopWallHungUSA,flagTopWallHungDuke,flagTopWallHungHonorDuty,flagTopWallHungValiant,flagTopWallHungTFP,flagTopWallHungGadsdenWhite,flagTopWallHungGadsdenBrown,flagTopWallHungGadsdenRed,flagTopWallHungGadsdenOrange,flagTopWallHungGadsdenYellow,flagTopWallHungGadsdenGreen,flagTopWallHungGadsdenBlue,flagTopWallHungGadsdenPurple,flagTopWallHungGadsdenGrey,flagTopWallHungGadsdenPink,flagTopWallHungGadsdenArmyGreen,flagWallHungThick44Black,flagWallHungThick44Purple,flagTopWallHungThick44Purple,flagTopWallHungThick44Black"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
+	</append>
+</configs>

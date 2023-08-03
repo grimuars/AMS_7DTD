@@ -1,0 +1,155 @@
+<ByHowlune>
+	<!--Range filtration. Masively reduce audio netpackages, cutoff based on audiosource range. In order of most used.-->
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Footsteps']">
+		<distantfadeend name="30"/>
+	</insertAfter>
+	<!--<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_WeaponFire']"><distantfadeend name="250"/></insertAfter>-->
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[starts-with(@name, 'Sounds/AudioSource_Player')]">
+		<distantfadeend name="50"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[starts-with(@name, 'Sounds/AudioSource_Pain')]">
+		<distantfadeend name="75"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Impact']">
+		<distantfadeend name="50"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Impact_Large']">
+		<distantfadeend name="50"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Impact_Small']">
+		<distantfadeend name="25"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Impact_XSmall']">
+		<distantfadeend name="13"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Melee']">
+		<distantfadeend name="25"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Bows']">
+		<distantfadeend name="25"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Reloads']">
+		<distantfadeend name="10"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_ReloadsFullVolume']">
+		<distantfadeend name="10"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Interact']">
+		<distantfadeend name="20"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Interact_Large']">
+		<distantfadeend name="50"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_InteractFullVolume']">
+		<distantfadeend name="25"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_ZPack']">
+		<distantfadeend name="10"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_HandTool']">
+		<distantfadeend name="30"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/Weapons/Motorized/Auger/AugerAudioSource']">
+		<distantfadeend name="100"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_JunkWeaponFire']">
+		<distantfadeend name="50"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Creatures100Meter']">
+		<distantfadeend name="100"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Creatures']">
+		<distantfadeend name="20"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_CreatureSenseAlert']">
+		<distantfadeend name="30"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_CreaturesLG']">
+		<distantfadeend name="40"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Creatures100Meter']">
+		<distantfadeend name="100"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Vehicle']">
+		<distantfadeend name="250"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Amb_XSmall']">
+		<distantfadeend name="10"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Amb_Small']">
+		<distantfadeend name="15"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Amb_Med']">
+		<distantfadeend name="30"/>
+	</insertAfter>
+	<!-- <insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Amb_Large']">
+		<distantfadeend name="50"/>
+	</insertAfter> -->
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_UI']">
+		<distantfadeend name="25"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_Notifications']">
+		<distantfadeend name="25"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_UseAction']">
+		<distantfadeend name="25"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_VO']">
+		<distantfadeend name="33"/>
+	</insertAfter>
+	<insertAfter xpath="/Sounds/SoundDataNode/AudioSource[@name='Sounds/AudioSource_VO_Announce']">
+		<distantfadeend name="100"/>
+	</insertAfter>
+	<append xpath="/Sounds/SoundDataNode[@name='auger_idle']">
+		<distantfadeend name="100"/>
+	</append>
+	<append xpath="/Sounds/SoundDataNode[@name='silencefiller']">
+		<distantfadeend name="100"/>
+	</append>
+	<append xpath="/Sounds/SoundDataNode[contains(@name,'_s_')]">
+		<distantfadeend name="150"/>
+	</append>
+	<!--Reduce sound spam.-->
+	<set xpath="/Sounds/SoundDataNode[not (contains(@name, '_fire'))]/MaxRepeatRate[@value='0.001']/@value">0.01</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitcloth')]/MaxRepeatRate/@value">0.5</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitcloth')]/MaxVoices/@value">3</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitearth')]/MaxRepeatRate/@value">0.5</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitearth')]/MaxVoices/@value">3</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitglass')]/MaxRepeatRate/@value">0.5</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitglass')]/MaxVoices/@value">3</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitmetal')]/MaxRepeatRate/@value">0.5</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitmetal')]/MaxVoices/@value">3</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitorganic')]/MaxRepeatRate/@value">0.5</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitorganic')]/MaxVoices/@value">3</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitplant')]/MaxRepeatRate/@value">0.5</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitplant')]/MaxVoices/@value">3</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitsnow')]/MaxRepeatRate/@value">0.5</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitsnow')]/MaxVoices/@value">3</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitstone')]/MaxRepeatRate/@value">0.5</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitstone')]/MaxVoices/@value">3</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitwater')]/MaxRepeatRate/@value">0.5</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitwater')]/MaxVoices/@value">3</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitwood')]/MaxRepeatRate/@value">0.5</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'hitwood')]/MaxVoices/@value">3</set>
+	<set xpath="/Sounds/SoundDataNode[@name='HitEntitySound']/MaxRepeatRate/@value">0.1</set>
+	<set xpath="/Sounds/SoundDataNode[@name='HitEntitySound']/MaxVoices/@value">20</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'fpv_motion')]/MaxRepeatRate/@value">0.1</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'fpv_motion')]/MaxVoices/@value">5</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'sight_')]/MaxRepeatRate/@value">0.1</set>
+	<set xpath="/Sounds/SoundDataNode[contains(@name, 'sight_')]/MaxVoices/@value">5</set>
+	<set xpath="/Sounds/SoundDataNode[@name='rustle']/MaxRepeatRate/@value">0.5</set>
+	<set xpath="/Sounds/SoundDataNode[@name='rustle']/MaxVoices/@value">5</set>
+	<set xpath="/Sounds/SoundDataNode[@name='rustle']/maxVoicesPerEntity/@value">5</set>
+	<set xpath="/Sounds/SoundDataNode[@name='turret_retarget_lp']/MaxRepeatRate/@value">0.5</set>
+	<set xpath="/Sounds/SoundDataNode[@name='turret_retarget_lp']/MaxVoices/@value">2</set>
+	<set xpath="/Sounds/SoundDataNode[@name='FireSmallLoop']/MaxRepeatRate/@value">0.01</set>
+	<set xpath="/Sounds/SoundDataNode[@name='FireSmallLoop']/MaxVoices/@value">5</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'craft_')]/MaxRepeatRate/@value">0.2</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'cement_mixer')]/MaxRepeatRate/@value">0.1</set>
+	<!--Hamfisted into some weapons, but dont even play properly due to playing them the exact same time the weapon fires.-->
+	<remove xpath="/Sounds/SoundDataNode[@name='bullet_shell_eject']"/>
+	<remove xpath="/Sounds/SoundDataNode[@name='shotgun_shell_eject']"/>
+	<!--Fix wrong sound paths.-->
+	<set xpath="/Sounds/SoundDataNode[@name='snakepain']/AudioClip[@ClipName='Sounds/Animals/Snake/snakepain1']/@ClipName">Sounds/Animals/Snake/snake_pain1</set>
+	<set xpath="/Sounds/SoundDataNode[@name='snakepain']/AudioClip[@ClipName='Sounds/Animals/Snake/snakepain2']/@ClipName">Sounds/Animals/Snake/snake_pain2</set>
+</ByHowlune>

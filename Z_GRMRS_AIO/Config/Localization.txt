@@ -1,0 +1,11 @@
+Key,File,Type,UsedInMainMenu,english,russian
+resourceBurningDesc,items,Item,,"Special fuel briquettes ensure combustion for up to 600 minutes. Recommended for stable operation and safety of workstations.","Специальные топливные брикеты обеспечивают горение вплоть до 600 минут. Рекомендованы к использованию для стабильной работы и сохранности рабочих станций."
+resourceCoal600,items,Item,,"Coal Fuel Briquette","Угольный топливный брикет"
+resourceWood600,items,Item,,"Wood Fuel Briquette","Древесный топливный брикет"
+AMSStarterPackDesc,items,Item,,"Hello, Survivor! To make your immersion into the Land of Harmful Zombies easier and more enjoyable, we give you this little gift. Spend it wisely!","Привет, Выживший! Чтобы погружение в Страну Вредных Зомби прошло легче и приятнее, дарим тебе этот небольшой подарок. Потрать его с умом!"
+bucketRiverWaterCooking,items,Item,,"Bucket of Boiled Water","Ведро кипячёной воды"
+questRewardBoiledWaterBundleDesc,items,Item,,"This bucket contains three drinks of water, 'open' to obtain the drinks.","Это ведро позволит наполнить три бутылки воды. Просто... откройте его."
+drugWaterCleanerPills,items,Item,,"Water purification tablets","Таблетки для очистки воды"
+drugWaterCleanerPillsDesc,items,Item,,"This hellish mixture of plant ingredients and natural materials somehow miraculously can purify contaminated water during the boiling process. This trick doesn't work with murky water.","Эта адская смесь растительных компонентов и природных материалов каким-то чудом способна очистить заражённую воду в процессе кипячения. С мутной водой этот фокус не работает."
+flagBlockVariantHelper,blocks,block,,Flags,Флаги
+flagBlockVariantHelperDesc,blocks,block,,"Allows you to place one of several flags variants.","Позволяет разместить один из нескольких вариантов флагов на выбор."

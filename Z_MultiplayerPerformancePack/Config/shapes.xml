@@ -1,0 +1,9 @@
+<ByHowlune>
+	<!--Lower tricount models to increase fps in buildings such as skyscrapers-->
+	<set xpath="/shapes/shape[@name='verticalBlindsTop']/property[@name='Model']/@value">commercial_blind</set>
+	<set xpath="/shapes/shape[@name='verticalBlindsTop2']/property[@name='Model']/@value">commercial_blind</set>
+	<set xpath="/shapes/shape[@name='verticalBlindsBottom']/property[@name='Model']/@value">billboard</set>
+	<set xpath="/shapes/shape[@name='verticalBlindsTopOpen']/property[@name='Model']/@value">commercial_blind</set>
+	<set xpath="/shapes/shape[@name='verticalBlindsTop2Open']/property[@name='Model']/@value">commercial_blind</set>
+	<set xpath="/shapes/shape[@name='verticalBlindsBottomOpen']/property[@name='Model']/@value">billboard</set>
+</ByHowlune>	

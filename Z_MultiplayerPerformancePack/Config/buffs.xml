@@ -1,0 +1,245 @@
+<ByHowlune>
+	<!--Ensures fire is removed from player after death.-->
+	<append xpath="/buffs/buff[@name='buffIsOnFire' or @name='buffBurningElement']">
+		<effect_group name="clearafterdeath">
+			<triggered_effect trigger="onSelfRespawn" action="RemoveBuff" buff="buffIsOnFire"/>
+		</effect_group>
+	</append>
+	<append xpath="/buffs/buff[@name='buffBurningElement']">
+		<effect_group name="clearafterdeath">
+			<triggered_effect trigger="onSelfRespawn" action="RemoveBuff" buff="buffBurningElement"/>
+		</effect_group>
+	</append>
+	<!--Sprain sometimes glitches through death-->
+	<append xpath="/buffs/buff[@name='buffLegSprained']">
+		<effect_group name="clearsprainafterdeath">
+			<triggered_effect trigger="onSelfRespawn" action="RemoveBuff" buff="buffLegSprained"/>
+		</effect_group>
+	</append>
+	<!--Nightvision screen effect fix. Crouching sometimes removes it.-->
+	<append xpath="/buffs/buff[@name='buffCrouching']/effect_group/triggered_effect[@action='ModifyScreenEffect']">
+		<requirement name="WornItems" tags="nvgs" operation="LT" value="1"/>
+	</append>
+	<!--Pimps say PlayerItemCount is expensive, so let's get rid of it. Players spam jump often enough for this to be checking way too often.-->
+	<!-- <remove xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group/triggered_effect[@cvar='.impactSpeed' and @value='-.114']"/> -->
+	<append xpath="/buffs">
+		<!--Fix for nightvision overlay sometimes disappearing. Constantly refreshes screen effect.-->
+		<buff name="buffNightVision" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<update_rate value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Vibrant" intensity="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="Spinup" play_in_head="true"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="PlaySound" sound="button5" play_in_head="true"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="NightVision" intensity="1" fade="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="NightVision" intensity="1" fade="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="NightVision" intensity="0" fade="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Vibrant" intensity=".7">
+					<requirement name="IsNight"/>
+					<requirement name="!IsIndoors"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Vibrant" intensity=".9">
+					<requirement name="IsNight"/>
+					<requirement name="IsIndoors"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+	</append>
+	<!-- = = = = = = = = = = = STATUS CHECK AND CVAR OPTIMIZATION = = = = = = = = = = = -->
+	<!--Add more delay.-->
+	<set xpath="/buffs/buff[@name='buffStatusCheck02']/update_rate/@value">4.217</set>
+	<!--Move to PerkAbilityUpdate to delay.-->
+	<remove xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @cvar='$critHitNaturalHealingRate']"/>
+	<remove xpath="/buffs/buff[@name='buffStatusCheck02']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @cvar='$treatedCritHealing']"/>
+	<!--Delay heavy perk ability buff via queueing.-->
+	<remove xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group/triggered_effect[@trigger='onSelfBuffStart' and @buff='buffPerkAbilityUpdate']"/>
+	<remove xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group/triggered_effect[@trigger='onSelfBuffUpdate' and @buff='buffPerkAbilityUpdate']"/>
+	<append xpath="/buffs/buff[@name='buffStatusCheck02']">
+		<effect_group name="Perk Ability Update">
+			<!-- Update cvar driven perks on buying perk levels. Will only fire if .PerkAbilityUpdate is applied first.-->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffPerkAbilityUpdate">
+				<requirement name="CVarCompare" cvar=".PerkAbilityUpdate" operation="Equals" value="1"/>
+			</triggered_effect>
+			<!--What triggers perk updates-->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".PerkAbilityUpdate" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar=".PerkAbilityUpdate" operation="set" value="1"/>
+		</effect_group>
+	</append>
+	<!--Expensive buff that regulates perk levels. Fired by queueing with .PerkAbilityUpdate-->
+	<set xpath="/buffs/buff[@name='buffPerkAbilityUpdate']">
+		<stack_type value="replace"/>
+		<duration value="3"/>
+		<effect_group>
+			<!-- set max bleeding stacks that a player can apply -->
+			<!-- <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$maxBleedCounter" operation="set" value="2">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$maxBleedCounter" operation="set" value="3">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$maxBleedCounter" operation="set" value="4">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="2"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$maxBleedCounter" operation="set" value="5">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$maxBleedCounter" operation="set" value="6">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="4"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$maxBleedCounter" operation="set" value="7">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="5"/>
+			</triggered_effect> -->
+			<!-- set the speed at which crit buffs heal naturally. -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1.2">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1.4">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="2"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1.6">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1.8">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="4"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="2">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="5"/>
+			</triggered_effect>
+			<!-- $critHitNaturalHealingRate: Health Bar candy speeds up Natural Healing Rate -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="multiply" value="2">
+				<requirement name="HasBuff" buff="buffDrugHealthBar"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1.15">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1.25">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="2"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1.5">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1.5">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1.5">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="5"/>
+			</triggered_effect>
+			<!--Set MG stamina gain-->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MGStamLVL" operation="set" value="0">
+				<requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="LT" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MGStamLVL" operation="set" value=".1">
+				<requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="Equals" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MGStamLVL" operation="set" value=".2">
+				<requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="Equals" value="4"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MGStamLVL" operation="set" value=".3">
+				<requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="Equals" value="5"/>
+			</triggered_effect>
+			<!-- perkIntrinsicImmunity update; will likely have to overhaul diseases but... not now -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$illnessChance" operation="set" value="20">
+				<requirement name="ProgressionLevel" progression_name="perkIntrinsicImmunity" operation="Equals" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$illnessChance" operation="set" value="18">
+				<requirement name="ProgressionLevel" progression_name="perkIntrinsicImmunity" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$illnessChance" operation="set" value="16">
+				<requirement name="ProgressionLevel" progression_name="perkIntrinsicImmunity" operation="Equals" value="2"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$illnessChance" operation="set" value="14">
+				<requirement name="ProgressionLevel" progression_name="perkIntrinsicImmunity" operation="Equals" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$illnessChance" operation="set" value="12">
+				<requirement name="ProgressionLevel" progression_name="perkIntrinsicImmunity" operation="Equals" value="4"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$illnessChance" operation="set" value="10">
+				<requirement name="ProgressionLevel" progression_name="perkIntrinsicImmunity" operation="Equals" value="5"/>
+			</triggered_effect>
+			<!-- perkSlowMetabolism : food poisoning / dysentery resistance -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="0">
+				<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="-1">
+				<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="-2">
+				<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="2"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="-3">
+				<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="-4">
+				<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="4"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="-5">
+				<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="5"/>
+			</triggered_effect>
+			<!-- perkSlowMetabolism : breath hold duration update -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$DrowningTimerMax" operation="set" value="-12"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$DrowningTimerMax" operation="multiply" value="@$MetabolismResist"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$DrowningTimerMax" operation="add" value="30"/>
+			<!-- perkSlowMetabolism : buff duration update, $MetabolismDuration is 1 to .5 -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MetabolismDuration" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MetabolismDuration" operation="set" value=".909">
+				<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MetabolismDuration" operation="set" value=".833">
+				<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="2"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MetabolismDuration" operation="set" value=".769">
+				<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MetabolismDuration" operation="set" value=".714">
+				<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="4"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$MetabolismDuration" operation="set" value=".667">
+				<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="5"/>
+			</triggered_effect>
+			<!-- perkPhysician update, regular health per tick -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="set" value="2"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="set" value="2.5">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="set" value="3">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="2"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="set" value="4">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="set" value="4">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="set" value="4">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="5"/>
+			</triggered_effect>
+			<!-- perkParkour update, fall damage/height -->
+			<!-- 1m = .01414 -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$parkourBonus" operation="set" value="0">
+				<requirement name="ProgressionLevel" progression_name="perkParkour" operation="Equals" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$parkourBonus" operation="set" value=".0081">
+				<requirement name="ProgressionLevel" progression_name="perkParkour" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$parkourBonus" operation="set" value=".0152">
+				<requirement name="ProgressionLevel" progression_name="perkParkour" operation="Equals" value="2"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$parkourBonus" operation="set" value=".0294">
+				<requirement name="ProgressionLevel" progression_name="perkParkour" operation="Equals" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$parkourBonus" operation="set" value=".0364">
+				<requirement name="ProgressionLevel" progression_name="perkParkour" operation="Equals" value="4"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar=".PerkAbilityUpdate" operation="set" value="0"/>
+		</effect_group>
+	</set>
+</ByHowlune>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<!-- Увеличиваем количество опыта на уровень -->
+	<set xpath="/progression/level[@max_level='300']/@exp_to_level">11000</set>
+	<!-- Увеличиваем стоимость части навыков до 2 очков -->
+	<setattribute xpath="/progression/perks/perk[@name='perkDemolitionsExpert']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkJavelinMaster']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkInfiltrator']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkPenetrator']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkLuckyLooter']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkTreasureHunter']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkBoomstick']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkPummelPete']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkSkullCrusher']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkHeavyArmor']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkMiner69r']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkMotherLode']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkBrawler']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkMachineGunner']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkTheHuntsman']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkWellInsulated']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkPainTolerance']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkRuleOneCardio']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkArchery']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkGunslinger']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkDeepCuts']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkRunAndGun']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkLightArmor']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkParkour']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkElectrocutioner']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkTurrets']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkBetterBarter']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkCharismaticNature']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkPhysician']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkAdvancedEngineering']" name="base_skill_point_cost">2</setattribute>
+	<!-- Увеличиваем сбор растений на 3 уровне перка фермерства до 4 штук -->
+	<!-- <set xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group/passive_effect[@name='HarvestCount']/@value">1,1,2,3</set> -->
+	<!-- Бонус перка на турели под новые параметры -->
+	<set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='MagazineSize'][@value='10,50']/@value">100,500</set>
+	<!--Отключаем дроны -->
+	<remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingRobotics']/display_entry[@item='gunBotT3JunkDrone']"/>
+	<remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingRobotics']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunBotT3JunkDrone']"/>
+	<remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingRobotics']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunBotT3JunkDrone']"/>
+</configs>

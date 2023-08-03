@@ -1,0 +1,621 @@
+<configs>
+<!-- ХХХХХХХХХХХХ Ресурсы ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<!-- Камень (10000) размер стака -->
+	<set xpath="/recipes/recipe[@name='resourceRockSmallBundle']/ingredient[@name='resourceRockSmall']/@count">10000</set>
+	<!-- Дерево (10000) размер стака -->
+	<set xpath="/recipes/recipe[@name='resourceWoodBundle']/ingredient[@name='resourceWood']/@count">10000</set>
+	<!-- Железо (10000) размер стака -->
+	<set xpath="/recipes/recipe[@name='resourceScrapIronBundle']/ingredient[@name='resourceScrapIron']/@count">10000</set>
+	<!-- Селитра (10000) размер стака -->
+	<set xpath="/recipes/recipe[@name='resourcePotassiumNitratePowderBundle']/ingredient[@name='resourcePotassiumNitratePowder']/@count">10000</set>
+	<!-- Свинец (10000) размер стака -->
+	<set xpath="/recipes/recipe[@name='resourceLeadBundle']/ingredient[@name='resourceScrapLead']/@count">10000</set>
+	<!-- Уголь (10000) размер стака -->
+	<set xpath="/recipes/recipe[@name='resourceCoalBundle']/ingredient[@name='resourceCoal']/@count">10000</set>
+	<!-- Нефтяной сланец (10000) размер стака -->
+	<set xpath="/recipes/recipe[@name='resourceOilShaleBundle']/ingredient[@name='resourceOilShale']/@count">10000</set>
+	<!-- Бензин (10000) новый бандл -->
+	<!-- Рецепт для химлабы, поэтому -20% по ресам -->
+	<set xpath="/recipes/recipe[@name='ammoGasCanBundle']/ingredient[@name='resourceOilShale']/@count">8000</set>
+	<!-- Большой пак рецептов -->
+	<append xpath="/recipes">
+		<!-- Латунь (10000) новый бандл -->
+		<recipe name="resourceScrapBrassBundle" count="1" craft_time="60" tags="learnable">
+			<ingredient name="resourceScrapBrass" count="10000"/>
+		</recipe>
+		<!-- Глинистый грунт (10000) новый бандл -->
+		<recipe name="resourceClayLumpBundle" count="1" craft_time="60" tags="learnable">
+			<ingredient name="resourceClayLump" count="10000"/>
+		</recipe>
+		<!-- Песок (10000) новый бандл -->
+		<recipe name="resourceCrushedSandBundle" count="1" craft_time="60" tags="learnable">
+			<ingredient name="resourceCrushedSand" count="10000"/>
+		</recipe>
+		<!-- Цемент (10000) новый бандл -->
+		<recipe name="resourceCementBundle" count="1" craft_time="60">
+			<ingredient name="resourceCement" count="10000"/>
+		</recipe>
+		<!-- Цемент (10000) новый бандл -->
+		<!-- Рецепт для бетономешалки, поэтому -20% по ресам -->
+		<recipe name="resourceCementBundle" count="1" craft_time="2750" material_based="true" craft_area="cementMixer" tags="learnable,cementMixerCrafting,perkAdvancedEngineering">
+			<ingredient name="unit_stone" count="8000"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_stone"/>
+			</effect_group>
+		</recipe>
+		<!-- Бумага (1000) новый бандл -->
+		<recipe name="resourcePaperBundle" count="1" craft_time="60">
+			<ingredient name="resourcePaper" count="1000"/>
+		</recipe>
+		<!-- Синтетический мусор (1000) новый бандл -->
+		<recipe name="resourceScrapPolymersBundle" count="1" craft_time="60" tags="learnable">
+			<ingredient name="resourceScrapPolymers" count="1000"/>
+		</recipe>
+		<!-- Булыжники (10000) новый бандл -->
+		<recipe name="resourceCobblestonesBundle" count="1" craft_time="60">
+			<ingredient name="resourceCobblestones" count="10000"/>
+		</recipe>
+		<!-- Булыжники (10000) новый бандл -->
+		<!-- Рецепт для верстака, поэтому -20% по ресам -->
+		<recipe name="resourceCobblestonesBundle" count="1" craft_time="480" craft_area="workbench" tags="learnable,perkAdvancedEngineering">
+			<ingredient name="resourceClayLump" count="8000"/>
+			<ingredient name="resourceRockSmall" count="8000"/>
+		</recipe>
+		<!-- Бетон (1000) новый бандл -->
+		<recipe name="resourceConcreteMixBundle" count="1" craft_time="60">
+			<ingredient name="resourceConcreteMix" count="1000"/>
+		</recipe>
+		<!-- Бетон (1000) новый бандл -->
+		<!-- Рецепт для бетономешалки, поэтому -20% по ресам -->
+		<recipe name="resourceConcreteMixBundle" count="1" craft_time="2420" craft_area="cementMixer" tags="learnable,cementMixerCrafting">
+			<ingredient name="resourceCrushedSand" count="800"/>
+			<ingredient name="resourceRockSmall" count="800"/>
+			<ingredient name="resourceCement" count="800"/>
+		</recipe>
+		<!-- Слитки железа (1000) новый бандл -->
+		<recipe name="resourceForgedIronBundle" count="1" craft_time="60">
+			<ingredient name="resourceForgedIron" count="1000"/>
+		</recipe>
+		<!-- Слитки железа (1000) новый бандл -->
+		<!-- Рецепт для кузницы, поэтому -20% по ресам -->
+		<recipe name="resourceForgedIronBundle" count="1" craft_time="3750" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="9600"/>
+			<ingredient name="unit_clay" count="4800"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,unit_iron"/>
+			</effect_group>
+		</recipe>
+		<!-- Слитки стали (1000) новый бандл -->
+		<recipe name="resourceForgedSteelBundle" count="1" craft_time="60">
+			<ingredient name="resourceForgedSteel" count="1000"/>
+		</recipe>
+		<!-- Слитки стали (1000) новый бандл -->
+		<!-- Рецепт для кузницы, поэтому -20% по ресам -->
+		<recipe name="resourceForgedSteelBundle" count="1" craft_time="7500" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering" craft_tool="toolForgeCrucible">
+			<ingredient name="unit_iron" count="21700"/>
+			<ingredient name="unit_clay" count="10500"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="unit_clay,unit_iron"/>
+			</effect_group>
+		</recipe>
+<!-- ХХХХХХХХХХХХ Крафт боеприпасов ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+		<!-- Дробь (1000) новый бандл -->
+		<recipe name="resourceBuckshotBundle" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBuckshot" count="1000"/>
+		</recipe>
+		<!-- Дробь (1000) новый бандл -->
+		<!-- Рецепт для кузницы, поэтому -20% по ресам -->
+		<recipe name="resourceBuckshotBundle" count="1" craft_time="2200" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering">
+			<ingredient name="unit_lead" count="2400"/>
+			<ingredient name="unit_clay" count="800"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_lead"/>
+			</effect_group>
+		</recipe>
+		<!-- Гильзы(1000) новый бандл -->
+		<recipe name="resourceBulletCasingBundle" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletCasing" count="1000"/>
+		</recipe>
+		<!-- Гильзы(1000) новый бандл -->
+		<!-- Рецепт для кузницы, поэтому -20% по ресам -->
+		<recipe name="resourceBulletCasingBundle" count="1" craft_time="3300" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering">
+			<ingredient name="unit_brass" count="4800"/>
+			<ingredient name="unit_clay" count="800"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_brass"/>
+			</effect_group>
+		</recipe>
+		<!-- Пули (1000) новый бандл -->
+		<recipe name="resourceBulletTipBundle" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1000"/>
+		</recipe>
+		<!-- Пули (1000) новый бандл -->
+		<!-- Рецепт для кузницы, поэтому -20% по ресам -->
+		<recipe name="resourceBulletTipBundle" count="1" craft_time="1650" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering">
+			<ingredient name="unit_lead" count="1600"/>
+			<ingredient name="unit_clay" count="800"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_lead"/>
+			</effect_group>
+		</recipe>
+		<!-- Железные наконечники (1000) новый бандл -->
+		<recipe name="resourceArrowHeadIronBundle" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceArrowHeadIron" count="1000"/>
+		</recipe>
+		<!-- Железные наконечники (1000) новый бандл -->
+		<!-- Рецепт для кузницы, поэтому -20% по ресам -->
+		<recipe name="resourceArrowHeadIronBundle" count="1" craft_time="900" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="1600"/>
+			<ingredient name="unit_clay" count="800"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<!-- Стальные наконечники (1000) новый бандл -->
+		<recipe name="resourceArrowHeadSteelAPBundle" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceArrowHeadSteelAP" count="1000"/>
+		</recipe>
+		<!-- Стальные наконечники (1000) новый бандл -->
+		<!-- Рецепт для кузницы, поэтому -20% по ресам -->
+		<recipe name="resourceArrowHeadSteelAPBundle" count="1" craft_time="1650" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering" craft_tool="toolForgeCrucible">
+			<ingredient name="unit_iron" count="5600"/>
+			<ingredient name="unit_clay" count="800"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="unit_clay,unit_iron"/>
+			</effect_group>
+		</recipe>
+		<!-- Порох (1000) новый бандл -->
+		<recipe name="resourceGunPowderBundle" count="1" craft_time="60">
+			<ingredient name="resourceGunPowder" count="10000"/>
+		</recipe>
+		<!-- ХХХХХХХХХХХХ Запчасти ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+		<!-- Отмычки (100) новый бандл -->
+		<recipe name="resourceLockPickBundle" count="1" craft_time="60">
+			<ingredient name="resourceLockPick" count="100"/>
+		</recipe>
+	</append>
+	<!-- Отмычки (100) изменения в рецепте старого бандла -->
+	<set xpath="/recipes/recipe[@name='resourceLockPickBundle']//ingredient[1]/@count">80</set>
+	<set xpath="/recipes/recipe[@name='resourceLockPickBundle']//ingredient[2]/@count">80</set>
+<!-- ХХХХХХХХХХХХ Боеприпасы ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<!-- 9 мм (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle9mmBulletBall" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo9mmBulletBall" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 9 мм (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[@name='ammo9mmBulletBall']" name="count">2</setattribute>
+	<set xpath="/recipes/recipe[@name='ammo9mmBulletBall']//ingredient[1]/@count">2</set>
+	<set xpath="/recipes/recipe[@name='ammo9mmBulletBall']//ingredient[2]/@count">3</set>
+	<set xpath="/recipes/recipe[@name='ammo9mmBulletBall']//ingredient[3]/@count">2</set>
+	<!-- 9 мм (1000) изменения в рецепте старого бандла -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletBall') and contains(@tags, 'learnable')]//ingredient[1]/@count">800</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletBall') and contains(@tags, 'learnable')]//ingredient[2]/@count">1200</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletBall') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- 9 мм экспансивные (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle9mmBulletHP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo9mmBulletHP" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 9 мм экспансивные (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletHP') and contains(@tags, 'learnable')]" name="count">2</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletHP') and contains(@tags, 'learnable')]//ingredient[1]/@count">4</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletHP') and contains(@tags, 'learnable')]//ingredient[2]/@count">3</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletHP') and contains(@tags, 'learnable')]//ingredient[3]/@count">2</set>
+	<!-- 9 мм экспансивные (1000) изменения в рецепте старого бандла -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletHP') and contains(@tags, 'learnable')]//ingredient[1]/@count">1600</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletHP') and contains(@tags, 'learnable')]//ingredient[2]/@count">1200</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletHP') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- 9 мм ББ (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle9mmBulletAP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo9mmBulletAP" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 9 мм ББ (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletAP') and contains(@tags, 'learnable')]" name="count">2</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletAP') and contains(@tags, 'learnable')]//ingredient[1]/@count">2</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletAP') and contains(@tags, 'learnable')]//ingredient[2]/@count">5</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletAP') and contains(@tags, 'learnable')]//ingredient[3]/@count">2</set>
+	<!-- 9 мм ББ (1000) изменения в рецепте старого бандла -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletAP') and contains(@tags, 'learnable')]//ingredient[1]/@count">800</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletAP') and contains(@tags, 'learnable')]//ingredient[2]/@count">2000</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletAP') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- 44 Магнум (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle44MagnumBulletBall" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo44MagnumBulletBall" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 44 Магнум (1000) изменения в рецепте -->
+	<set xpath="/recipes/recipe[@name='ammo44MagnumBulletBall']//ingredient[2]/@count">3</set>
+	<!-- 44 Магнум (1000) изменения в рецепте старого бандла -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletBall') and contains(@tags, 'learnable')]//ingredient[1]/@count">800</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletBall') and contains(@tags, 'learnable')]//ingredient[2]/@count">2400</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletBall') and contains(@tags, 'learnable')]//ingredient[3]/@count">1600</set>
+	<!-- 44 Магнум экспансивные (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle44MagnumBulletHP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo44MagnumBulletHP" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 44 Магнум экспансивные (1000) изменения в рецепте -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammo44MagnumBulletHP') and contains(@tags, 'learnable')]//ingredient[2]/@count">3</set>
+	<!-- 44 Магнум экспансивные (1000) изменения в рецепте старого бандла -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletHP') and contains(@tags, 'learnable')]//ingredient[1]/@count">1600</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletHP') and contains(@tags, 'learnable')]//ingredient[2]/@count">2400</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletHP') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- 44 магнум ББ (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle44MagnumBulletAP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo44MagnumBulletAP" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 44 магнум ББ (1000) изменения в рецепте -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammo44MagnumBulletAP') and contains(@tags, 'learnable')]//ingredient[2]/@count">5</set>
+	<!-- 44 магнум ББ (1000) изменения в рецепте старого бандла -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletAP') and contains(@tags, 'learnable')]//ingredient[1]/@count">1600</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletAP') and contains(@tags, 'learnable')]//ingredient[2]/@count">4000</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletAP') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- 7,62 (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle762mmBulletBall" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo762mmBulletBall" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 7,62 (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[@name='ammo762mmBulletBall']" name="count">2</setattribute>
+	<set xpath="/recipes/recipe[@name='ammo762mmBulletBall']//ingredient[1]/@count">2</set>
+	<set xpath="/recipes/recipe[@name='ammo762mmBulletBall']//ingredient[2]/@count">4</set>
+	<set xpath="/recipes/recipe[@name='ammo762mmBulletBall']//ingredient[3]/@count">2</set>
+	<!-- 7,62 (1000) изменения в рецепте старого бандла -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletBall') and contains(@tags, 'learnable')]//ingredient[1]/@count">800</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletBall') and contains(@tags, 'learnable')]//ingredient[2]/@count">1600</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletBall') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- 7,62 экспансивные (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle762mmBulletHP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo762mmBulletHP" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 7,62 экспансивные (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletHP') and contains(@tags, 'learnable')]" name="count">2</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletHP') and contains(@tags, 'learnable')]//ingredient[1]/@count">4</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletHP') and contains(@tags, 'learnable')]//ingredient[2]/@count">5</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletHP') and contains(@tags, 'learnable')]//ingredient[3]/@count">4</set>
+	<!-- 7,62 экспансивные (1000) изменения в рецепте старого бандла -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletHP') and contains(@tags, 'learnable')]//ingredient[1]/@count">1600</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletHP') and contains(@tags, 'learnable')]//ingredient[2]/@count">2000</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletHP') and contains(@tags, 'learnable')]//ingredient[3]/@count">1600</set>
+	<!-- 7,62 ББ (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle762mmBulletAP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo762mmBulletAP" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 7,62 ББ (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletAP') and contains(@tags, 'learnable')]" name="count">2</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletAP') and contains(@tags, 'learnable')]//ingredient[1]/@count">4</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletAP') and contains(@tags, 'learnable')]//ingredient[2]/@count">8</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletAP') and contains(@tags, 'learnable')]//ingredient[3]/@count">2</set>
+	<!-- 7,62 ББ (1000) изменения в рецепте старого бандла -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletAP') and contains(@tags, 'learnable')]//ingredient[1]/@count">1600</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletAP') and contains(@tags, 'learnable')]//ingredient[2]/@count">3200</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletAP') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- Для дробовика (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleShotgunShell" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoShotgunShell" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Для дробовика (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[@name='ammoShotgunShell']" name="count">2</setattribute>
+	<set xpath="/recipes/recipe[@name='ammoShotgunShell']//ingredient[1]/@count">2</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunShell']//ingredient[2]/@count">8</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunShell']//ingredient[3]/@count">2</set>
+	<!-- Для дробовика (1000) изменения в рецепте старого бандла -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunShell') and contains(@tags, 'learnable')]//ingredient[1]/@count">800</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunShell') and contains(@tags, 'learnable')]//ingredient[2]/@count">3200</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunShell') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- Для дробовика ББ (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleShotgunSlug" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoShotgunSlug" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Для дробовика ББ (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[@name='ammoShotgunSlug']" name="count">2</setattribute>
+	<set xpath="/recipes/recipe[@name='ammoShotgunSlug']//ingredient[1]/@count">4</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunSlug']//ingredient[2]/@count">8</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunSlug']//ingredient[3]/@count">2</set>
+	<!-- Для дробовика ББ (1000) изменения в рецепте старого бандла -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunSlug') and contains(@tags, 'learnable')]//ingredient[1]/@count">1600</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunSlug') and contains(@tags, 'learnable')]//ingredient[2]/@count">3200</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunSlug') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- Для дробовика ПРПЗ (1000) -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleShotgunBreachingSlug" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoShotgunBreachingSlug" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Для дробовика ПРПЗ (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[@name='ammoShotgunBreachingSlug']" name="count">2</setattribute>
+	<set xpath="/recipes/recipe[@name='ammoShotgunBreachingSlug']//ingredient[1]/@count">6</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunBreachingSlug']//ingredient[2]/@count">3</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunBreachingSlug']//ingredient[3]/@count">7</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunBreachingSlug']//ingredient[4]/@count">2</set>
+	<!-- Для дробовика ПРПЗ (1000) изменения в рецепте старого бандла -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunBreachingSlug') and contains(@tags, 'learnable')]//ingredient[1]/@count">2400</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunBreachingSlug') and contains(@tags, 'learnable')]//ingredient[2]/@count">1200</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunBreachingSlug') and contains(@tags, 'learnable')]//ingredient[3]/@count">2800</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunBreachingSlug') and contains(@tags, 'learnable')]//ingredient[4]/@count">800</set>
+	<!-- Патроны для робопушек крафтятся больше за раз -->
+	<set xpath="/recipes//recipe[@name='ammoJunkTurretRegular']/@count">10</set>
+	<set xpath="/recipes//recipe[@name='ammoJunkTurretShell']/@count">10</set>
+	<set xpath="/recipes//recipe[@name='ammoJunkTurretAP']/@count">10</set>
+	<!-- Патроны для робопушки (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleJunkTurretRegular" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoJunkTurretRegular" count="1000"/>
+			<ingredient name="resourcePaper" count="10"/>
+			<ingredient name="resourceCloth" count="10"/>
+		</recipe>
+	</append>
+	<!-- Больше свинца для робопатронов -->
+	<set xpath="/recipes/recipe[@name='ammoJunkTurretRegular']//ingredient[1]/@count">30</set>
+	<!-- Порох в крафт робопатронов -->
+	<insertAfter xpath="/recipes/recipe[@name='ammoJunkTurretRegular']/ingredient[@name='resourceScrapLead']">
+		<ingredient name="resourceGunPowder" count="10"/>
+	</insertAfter>
+	<!-- Порох в обычные робопатроны (бандл) -->
+	<insertAfter xpath="/recipes/recipe[contains(@name, 'ammoBundleJunkTurretRegular') and contains(@tags, 'learnable')]/ingredient[@name='resourceScrapLead']">
+		<ingredient name="resourceGunPowder" count="800"/>
+	</insertAfter>
+	<!-- Патроны для робопушки с дробью (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleJunkTurretShell" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoJunkTurretShell" count="1000"/>
+			<ingredient name="resourcePaper" count="10"/>
+			<ingredient name="resourceCloth" count="10"/>
+		</recipe>
+	</append>
+	<!-- Множитель для робопатронов с дробью -->
+	<set xpath="/recipes/recipe[@name='ammoJunkTurretShell']//ingredient[1]/@count">10</set>
+	<set xpath="/recipes/recipe[@name='ammoJunkTurretShell']//ingredient[2]/@count">10</set>
+	<!-- Порох в робопатроны с дробью -->
+	<insertAfter xpath="/recipes/recipe[@name='ammoJunkTurretShell']/ingredient[@name='resourceBuckshot']">
+		<ingredient name="resourceGunPowder" count="10"/>
+	</insertAfter>
+	<!-- Порох в робопатроны с дробью (бандл) -->
+	<insertAfter xpath="/recipes/recipe[contains(@name, 'ammoBundleJunkTurretShell') and contains(@tags, 'learnable')]/ingredient[@name='resourceBuckshot']">
+		<ingredient name="resourceGunPowder" count="800"/>
+	</insertAfter>
+	<!-- Патроны для робопушки ББ (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleJunkTurretAP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoJunkTurretAP" count="1000"/>
+			<ingredient name="resourcePaper" count="10"/>
+			<ingredient name="resourceCloth" count="10"/>
+		</recipe>
+	</append>
+	<!-- Множитель для робопатронов ББ -->
+	<set xpath="/recipes/recipe[@name='ammoJunkTurretAP']//ingredient[1]/@count">30</set>
+	<set xpath="/recipes/recipe[@name='ammoJunkTurretAP']//ingredient[2]/@count">30</set>
+	<!-- Порох в робопатроны ББ -->
+	<insertAfter xpath="/recipes/recipe[@name='ammoJunkTurretAP']/ingredient[@name='resourceScrapIron']">
+		<ingredient name="resourceGunPowder" count="10"/>
+	</insertAfter>
+	<!-- Порох в робопатроны ББ (бандл) -->
+	<insertAfter xpath="/recipes/recipe[contains(@name, 'ammoBundleJunkTurretAP') and contains(@tags, 'learnable')]/ingredient[@name='resourceScrapIron']">
+		<ingredient name="resourceGunPowder" count="800"/>
+	</insertAfter>
+<!-- ХХХХХХХХХХХХ Стрелы и болты ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<!-- Дротики (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoDartIronBundle" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoDartIron" count="1000"/>
+			<ingredient name="resourcePaper" count="10"/>
+			<ingredient name="resourceCloth" count="10"/>
+		</recipe>
+	</append>
+	<!-- Дротики (1000) новый бандл -->
+	<!-- Рецепт для кузницы, поэтому -20% по ресам -->
+	<append xpath="/recipes">
+		<recipe name="ammoDartIronBundle" count="1" craft_time="1200" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="2400"/>
+			<ingredient name="unit_clay" count="800"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+	</append>
+	<!-- Каменная стрела (300) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleArrowStone" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoArrowStone" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Модифицируем рецепт старого бандла каменных стрел под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowStone') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowStone') and contains(@tags, 'learnable')]//ingredient[2]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowStone') and contains(@tags, 'learnable')]//ingredient[3]/@count">240</set>
+	<!-- Железная стрела (300) -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleArrowIron" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoArrowIron" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Модифицируем рецепт старого бандла железных стрел под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowIron') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowIron') and contains(@tags, 'learnable')]//ingredient[2]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowIron') and contains(@tags, 'learnable')]//ingredient[3]/@count">240</set>
+	<!-- Стальная стрела (300) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleArrowSteelAP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoArrowSteelAP" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Модифицируем рецепт старого бандла стальных стрел под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowSteelAP') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowSteelAP') and contains(@tags, 'learnable')]//ingredient[2]/@count">480</set>
+	<!-- Поджигающая стрела (300) -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleArrowFlaming" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoArrowFlaming" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Вместо жира для крафта огненных стрел используем бензин -->
+	<setattribute xpath="/recipes/recipe[@name='ammoArrowFlaming']/ingredient[@name='resourceAnimalFat']" name="name">ammoGasCan</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']/ingredient[@name='resourceAnimalFat']" name="name">ammoGasCan</setattribute>
+	<!-- Больше пороха и бензина на огненные стрелы -->
+	<set xpath="/recipes/recipe[@name='ammoArrowFlaming']//ingredient[3]/@count">3</set>
+	<set xpath="/recipes/recipe[@name='ammoArrowFlaming']//ingredient[5]/@count">5</set>
+	<!-- Модифицируем рецепт старой коробки огненных стрел под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowFlaming') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowFlaming') and contains(@tags, 'learnable')]//ingredient[2]/@count">480</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowFlaming') and contains(@tags, 'learnable')]//ingredient[3]/@count">720</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowFlaming') and contains(@tags, 'learnable')]//ingredient[4]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowFlaming') and contains(@tags, 'learnable')]//ingredient[5]/@count">1200</set>
+	<!-- Взрывная стрела (300) новая коробка -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleArrowExploding" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoArrowExploding" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Больше пороха на взрывные стрелы-->
+	<set xpath="/recipes/recipe[@name='ammoArrowExploding']//ingredient[3]/@count">8</set>
+	<!-- Модифицируем рецепт старой коробки взрывных стрел под новое количество (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowExploding') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowExploding') and contains(@tags, 'learnable')]//ingredient[2]/@count">480</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowExploding') and contains(@tags, 'learnable')]//ingredient[3]/@count">1920</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowExploding') and contains(@tags, 'learnable')]//ingredient[4]/@count">240</set>
+	<!-- Каменный болт (300) -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleCrossbowBoltStone" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltStone" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Модифицируем рецепт старого бандла каменных болтов под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltStone') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltStone') and contains(@tags, 'learnable')]//ingredient[2]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltStone') and contains(@tags, 'learnable')]//ingredient[3]/@count">240</set>
+	<!-- Железный болт (300) -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleCrossbowBoltIron" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltIron" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Модифицируем рецепт старого бандла железных болтов под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltIron') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltIron') and contains(@tags, 'learnable')]//ingredient[2]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltIron') and contains(@tags, 'learnable')]//ingredient[3]/@count">240</set>
+	<!-- Стальной болт (300) -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleCrossbowBoltSteelAP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltSteelAP" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Модифицируем рецепт старого бандла стальных болтов под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltSteelAP') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltSteelAP') and contains(@tags, 'learnable')]//ingredient[2]/@count">480</set>
+	<!-- Поджигающий болт (300) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleCrossbowBoltFlaming" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltFlaming" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Вместо жира для крафта огненных болтов используем бензин -->
+	<setattribute xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']/ingredient[@name='resourceAnimalFat']" name="name">ammoGasCan</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']/ingredient[@name='resourceAnimalFat']" name="name">ammoGasCan</setattribute>
+	<!-- Больше пороха и бензина на огненные болты -->
+	<set xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']//ingredient[3]/@count">3</set>
+	<set xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']//ingredient[5]/@count">5</set>
+	<!-- Модифицируем рецепт коробки огненных болтов под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltFlaming') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltFlaming') and contains(@tags, 'learnable')]//ingredient[2]/@count">480</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltFlaming') and contains(@tags, 'learnable')]//ingredient[3]/@count">720</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltFlaming') and contains(@tags, 'learnable')]//ingredient[4]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltFlaming') and contains(@tags, 'learnable')]//ingredient[5]/@count">1200</set>
+	<!-- Взрывной болт (300) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleCrossbowBoltExploding" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltExploding" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Больше пороха на взрывные болты -->
+	<set xpath="/recipes/recipe[@name='ammoCrossbowBoltExploding']//ingredient[3]/@count">10</set>
+	<!-- Модифицируем рецепт коробки взрывных болтов под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoCrossbowBoltExploding') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoCrossbowBoltExploding') and contains(@tags, 'learnable')]//ingredient[2]/@count">480</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoCrossbowBoltExploding') and contains(@tags, 'learnable')]//ingredient[3]/@count">2400</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoCrossbowBoltExploding') and contains(@tags, 'learnable')]//ingredient[4]/@count">240</set>
+<!-- ХХХХХХХХХХХХ Взрывчатка ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<!-- Бомба из трубы (50) -->
+	<set xpath="/recipes/recipe[@name='thrownAmmoPipeBomb']//ingredient[1]/@count">2</set>
+	<set xpath="/recipes/recipe[@name='thrownAmmoPipeBomb']//ingredient[2]/@count">15</set>
+	<!-- Обычная граната (50) -->
+	<set xpath="/recipes/recipe[@name='thrownGrenade']//ingredient[2]/@count">18</set>
+	<set xpath="/recipes/recipe[@name='thrownGrenade']//ingredient[3]/@count">5</set>
+	<!-- Контактная граната (50) -->
+	<set xpath="/recipes/recipe[@name='thrownGrenadeContact']//ingredient[1]/@count">1</set>
+	<set xpath="/recipes/recipe[@name='thrownGrenadeContact']//ingredient[2]/@count">18</set>
+	<set xpath="/recipes/recipe[@name='thrownGrenadeContact']//ingredient[3]/@count">5</set>
+	<!-- Бомба с часовым механизмом (50) -->
+	<set xpath="/recipes/recipe[@name='thrownTimedCharge']//ingredient[1]/@count">24</set>
+	<set xpath="/recipes/recipe[@name='thrownTimedCharge']//ingredient[2]/@count">12</set>
+	<!-- Динамит (50) -->
+	<set xpath="/recipes/recipe[@name='thrownDynamite']//ingredient[1]/@count">2</set>
+	<set xpath="/recipes/recipe[@name='thrownDynamite']//ingredient[2]/@count">24</set>
+	<set xpath="/recipes/recipe[@name='thrownDynamite']//ingredient[4]/@count">12</set>
+	<!-- Молотов (50) -->
+	<set xpath="/recipes/recipe[@name='thrownAmmoMolotovCocktail']//ingredient[1]/@count">2</set>
+	<set xpath="/recipes/recipe[@name='thrownAmmoMolotovCocktail']//ingredient[2]/@count">360</set>
+	<!-- Свинца на запчасти для ракет надо больше -->
+	<set xpath="/recipes/recipe[@name='resourceRocketTip']//ingredient[1]/@count">70</set>
+</configs>

@@ -1,0 +1,11 @@
+<configs>
+	<!-- Добавляем новые бандлы в разблокировку существующими перками -->
+	<append xpath="/progression/perks/book[@name='perkArtOfMiningPallets']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceScrapBrassBundle,resourceClayLumpBundle,resourceCrushedSandBundle,resourceScrapPolymersBundle"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="resourceCobblestonesBundle,resourceForgedIronBundle,resourceArrowHeadIronBundle,ammoDartIronBundle"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1" tags="resourceCementBundle,resourceConcreteMixBundle"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="resourceForgedSteelBundle,resourceBuckshotBundle,resourceBulletCasingBundle,resourceBulletTipBundle,resourceArrowHeadSteelAPBundle"/>
+	</append>
+</configs>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<quests>
+	<!-- Добавляем в награду за квесты 5 и 6 тира 1-2 очка навыков -->
+	<insertAfter xpath="/quests/quest[@id='tier6_fetch_clear']/reward[@type='Item']">
+		<reward type="SkillPoints" value="1"/>
+	</insertAfter>
+	<insertAfter xpath="/quests/quest[@id='tier6_clear_infested']/reward[@type='Item']">
+		<reward type="SkillPoints" value="2"/>
+	</insertAfter>
+	<insertAfter xpath="/quests/quest[@id='tier6_clear']/reward[@type='Item']">
+		<reward type="SkillPoints" value="1"/>
+	</insertAfter>
+	<insertAfter xpath="/quests/quest[@id='tier5_clear']/reward[@type='Item']">
+		<reward type="SkillPoints" value="1"/>
+	</insertAfter>
+	<insertAfter xpath="/quests/quest[@id='tier5_clear_infested']/reward[@type='Item']">
+		<reward type="SkillPoints" value="2"/>
+	</insertAfter>
+	<insertAfter xpath="/quests/quest[@id='tier5_fetch_clear']/reward[@type='Item']">
+		<reward type="SkillPoints" value="1"/>
+	</insertAfter>
+	<!-- Убираем квесты на восстановление энергии и на закопанные припасы (т.к. земля = бедрок) -->
+	<remove xpath="//quest[contains(@id, '_buried_supplies')]"/>
+	<remove xpath="/quests/quest[@id='tier2_restore_power']"/>
+	<remove xpath="/quests/quest[@id='tier3_restore_power']"/>
+	<remove xpath="/quests/quest[@id='tier4_restore_power']"/>
+	<remove xpath="/quests/quest_list[@id='trader_quests']/quest[contains(@id, '_restore_power')]"/>
+	<!-- Усиливаем квесты нашествия 5 тира и повышаем награду -->
+	<set xpath="/quests/quest[@id='tier5_clear_infested']/variable[@name='spawn_multiplier']/@value">3</set>
+	<set xpath="/quests/quest[@id='tier5_clear_infested']/variable[@name='gamestage_mod']/@value">1</set>
+	<set xpath="/quests/quest[@id='tier5_clear_infested']/variable[@name='gamestage_bonus']/@value">50</set>
+	<set xpath="/quests/quest[@id='tier5_clear_infested']/reward[@type='Exp']/@value">60000</set>
+	<!-- Усиливаем квесты нашествия 6 тира и повышаем награду -->
+	<set xpath="/quests/quest[@id='tier6_clear_infested']/variable[@name='spawn_multiplier']/@value">4</set>
+	<set xpath="/quests/quest[@id='tier6_clear_infested']/variable[@name='gamestage_mod']/@value">1</set>
+	<set xpath="/quests/quest[@id='tier6_clear_infested']/variable[@name='gamestage_bonus']/@value">100</set>
+	<set xpath="/quests/quest[@id='tier6_clear_infested']/reward[@type='Exp']/@value">120000</set>
+	<!-- Добавляем новый стартовый квест -->
+	<append xpath="/quests">
+		<quest id="quest_visit_trader">
+			<property name="group_name_key" value="quest_WhiteRiverCitizen"/>
+			<property name="name_key" value="quest_WhiteRiverCitizen1"/>
+			<property name="subtitle_key" value="quest_WhiteRiverCitizen1_subtitle"/>
+			<property name="description_key" value="quest_WhiteRiverCitizen1_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+			<property name="quest_hints" value="quest_whiteRiverCitizen1_hint1,quest_whiteRiverCitizen1_hint2"/>
+			<objective type="Goto" id="trader" value="5" phase="1">
+				<property name="biome_filter_type" value="OnlyBiome"/>
+				<property name="biome_filter" value="pine_forest"/>
+				<!-- <property name="biome_filter_type" value="ExcludeBiome" /> -->
+				<!-- <property name="biome_filter" value="wasteland" /> -->
+				<property name="nav_object" value="go_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
+				<property name="use_closest" value="true"/>
+			</objective>
+			<reward type="SkillPoints" value="6"/>
+		</quest>
+	</append>
+	<!-- Делаем безопасную зону квеста больше -->
+	<set xpath="quests//objective[contains(@type, 'StayWithin')]/property[@name='radius']/@value">100</set>
+</quests>

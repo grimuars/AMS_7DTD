@@ -1,0 +1,11 @@
+<ByHowlune>
+	<!--Limits fuel slots in workstations to 1 to limit their uptime-->
+	<set xpath="/windows/window[@name='windowFuel']/rect/rect/grid/@cols">1</set>
+	<set xpath="/windows/window[@name='windowFuel']/rect/grid/@cols">1</set>
+	<set xpath="/windows/window[@name='windowFuel']/rect/@pos">75,-43</set>
+	<set xpath="/windows/window[@name='windowFuel']/rect/grid[@name='slot_preview']">
+		<rect>
+			<sprite name="slot" depth="2" width="64" height="64" sprite="resourceWood" atlas="ItemIconAtlasGreyscale" pos="35,-35" pivot="center" foregroundlayer="true"/>
+		</rect>
+	</set>
+</ByHowlune>

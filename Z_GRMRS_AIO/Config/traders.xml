@@ -1,0 +1,102 @@
+<config>
+	<!--Joel - Одежда и броня-->
+	<set xpath="/traders/trader_info[@id='1']/@reset_interval">7</set>
+	<!--Bob - Инструменты и транспорт-->
+	<set xpath="/traders/trader_info[@id='6']/@reset_interval">7</set>
+	<!--Jen - Медицина и книги-->
+	<set xpath="/traders/trader_info[@id='2']/@reset_interval">7</set>
+	<!--Hugh - Оружие и боеприпасы-->
+	<set xpath="/traders/trader_info[@id='7']/@reset_interval">7</set>
+	<!--Rekt - Еда и фермерство-->
+	<set xpath="/traders/trader_info[@id='8']/@reset_interval">7</set>
+	<!--POI - Торговые автоматы напитков -->
+	<set xpath="/traders/trader_info[@id='4']/@reset_interval">7</set>
+	<!--POI - Торговые автоматы еды и конфет-->
+	<set xpath="/traders/trader_info[@id='10']/@reset_interval">7</set>
+	<!--Продажа торговцам выгоднее, покупка у торговцев дороже-->
+	<set xpath="/traders/@buy_markup">10</set>
+	<set xpath="/traders/@sell_markdown">0.2</set>
+	<!--Аналогично предыдущему - для торговых автоматов-->
+	<set xpath="/traders/trader_info[@id='4']/@override_buy_markup">10</set>
+	<set xpath="/traders/trader_info[@id='10']/@override_buy_markup">10</set>
+	<!-- Убираем дроны -->
+	<remove xpath="/traders/trader_item_groups/trader_item_group/item[contains(@name,'Drone')]"/>
+	<!-- Убираем мод на ускорение транспорта -->
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsVehiclesMods']/item[@name='modVehicleSuperChargerSchematic']"/>
+	<!--Устанавливаем ограничение по продаваемой броне-->
+	<set xpath="//trader_item_group[@name='groupArmorT1Light']//item[1]/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupArmorT1Light']//item[2]/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupArmorT1Light']//item[3]/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupArmorT1Light']//item[4]/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupArmorT1Light']//item[5]/@quality">2,4</set>
+	<remove xpath="//trader_item_group[@name='groupArmorT2Light']//item[@name='armorMilitaryGloves']"/>
+	<remove xpath="//trader_item_group[@name='groupArmorT2Light']//item[@name='armorMilitaryHelmet']"/>
+	<remove xpath="//trader_item_group[@name='groupArmorT2Light']//item[@name='armorMilitaryBoots']"/>
+	<remove xpath="//trader_item_group[@name='groupArmorT2Light']//item[@name='armorMilitaryLegs']"/>
+	<remove xpath="//trader_item_group[@name='groupArmorT2Light']//item[@name='armorMilitaryVest']"/>
+	<remove xpath="//trader_item_group[@name='groupArmorAllLight']//item[3]"/>
+	<set xpath="//trader_item_group[@name='groupArmorT1Heavy']//item[1]/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupArmorT1Heavy']//item[2]/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupArmorT1Heavy']//item[3]/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupArmorT1Heavy']//item[4]/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupArmorT1Heavy']//item[5]/@quality">2,4</set>
+	<remove xpath="//trader_item_group[@name='groupArmorT2Heavy']//item[@name='armorSteelBoots']"/>
+	<remove xpath="//trader_item_group[@name='groupArmorT2Heavy']//item[@name='armorSteelLegs']"/>
+	<remove xpath="//trader_item_group[@name='groupArmorT2Heavy']//item[@name='armorSteelChest']"/>
+	<remove xpath="//trader_item_group[@name='groupArmorT2Heavy']//item[@name='armorSteelGloves']"/>
+	<remove xpath="//trader_item_group[@name='groupArmorT2Heavy']//item[@name='armorSwatHelmet']"/>
+	<remove xpath="//trader_item_group[@name='groupArmorAllHeavy']//item[3]"/>
+	<!-- Убираем сигару из продажи -->
+	<remove xpath="//trader_item_group[@name='groupArmorMods']//item[@name='apparelCigar']"/>
+	<!-- Меньше некоторых медицинских расходников в продаже -->
+	<set xpath="//trader_item_group[@name='medicine']//item[2]/@count">1,2</set>
+	<set xpath="//trader_item_group[@name='medicine']//item[4]/@count">1,2</set>
+	<!-- Меньше частей оружия в продаже -->
+	<set xpath="//trader_item_group[@name='weaponsGunParts']//item[1]/@count">1,2</set>
+	<set xpath="//trader_item_group[@name='weaponsGunParts']//item[2]/@count">1,2</set>
+	<set xpath="//trader_item_group[@name='weaponsGunParts']//item[3]/@count">1,2</set>
+	<set xpath="//trader_item_group[@name='weaponsGunParts']//item[4]/@count">1,2</set>
+	<set xpath="//trader_item_group[@name='weaponsGunParts']//item[5]/@count">1,2</set>
+	<set xpath="//trader_item_group[@name='weaponsGunParts']//item[6]/@count">1,2</set>
+	<set xpath="//trader_item_group[@name='weaponsGunParts']//item[7]/@count">1,2</set>
+	<!-- Убираем семена и конфеты из продажи -->
+	<remove xpath="//trader_item_group[@name='seeds']//item[5]"/>
+	<remove xpath="//trader_item_group[@name='foodCandy']//item[4]"/>
+	<!-- Инструменты в продаже 2-4 тира -->
+	<set xpath="//trader_item_group[@name='tools']//item[@name='meleeToolPickT1IronPickaxe']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='tools']//item[@name='meleeToolShovelT1IronShovel']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='tools']//item[@name='meleeToolAxeT1IronFireaxe']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='tools']//item[@name='meleeWpnSledgeT1IronSledgehammer']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='tools']//item[@name='meleeToolRepairT1ClawHammer']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='tools']//item[@name='meleeToolSalvageT1Wrench']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='rareTools']//item[@name='meleeToolSalvageT2Ratchet']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='tools']//item[@name='resourceRepairKit']/@count">1,2</set>
+	<set xpath="//trader_item_group[@name='tools']//item[@name='resourceForgedIron']/@count">5,20</set>
+	<set xpath="//trader_item_group[@name='tools']//item[@name='resourceForgedSteel']/@count">5,10</set>
+	<!-- Часть оружия в продаже 2-4 тира -->
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunMGT3M60']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunHandgunT2Magnum44']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunHandgunT3DesertVulture']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunShotgunT3AutoShotgun']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunRifleT3SniperRifle']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunExplosivesT3RocketLauncher']/@quality">2,4</set>
+	<!-- <set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunBotT3JunkDrone']/@quality">2,4</set> -->
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunHandgunT3SMG5']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunBotT2JunkTurret']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunBowT3CompoundCrossbow']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunBotT2JunkTurret']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunMGT2TacticalAR']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunRifleT2LeverActionRifle']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunShotgunT2PumpShotgun']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunHandgunT2Magnum44']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunBowT3CompoundBow']/@quality">2,4</set>
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[@name='gunBowT1IronCrossbow']/@quality">2,4</set>
+	<!-- Частей электрики в продаже меньше -->
+	<set xpath="//trader_item_group[@name='traderElectrical']//item[1]/@count">8,15</set>
+	<!-- Торговцы открываются раньше -->
+	<set xpath="//trader_info[@id='1']/@open_time">4:05</set>
+	<set xpath="//trader_info[@id='6']/@open_time">4:05</set>
+	<set xpath="//trader_info[@id='2']/@open_time">4:05</set>
+	<set xpath="//trader_info[@id='7']/@open_time">4:05</set>
+	<set xpath="//trader_info[@id='8']/@open_time">4:05</set>
+</config>

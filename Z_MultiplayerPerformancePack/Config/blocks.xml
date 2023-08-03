@@ -1,0 +1,236 @@
+<ByHowlune>
+	<!--Remove a massive source of AddRemoveBuff netpackages. Players using multiple means its rapidly firing.-->
+	<remove xpath="/blocks/block[@name='forge']/property[@name='ActiveRadiusEffects']"/>
+	<!--Half tree seed output and add maximum radius to their placement, counters players spamming trees-->
+	<set xpath="//block[starts-with(@name,'treePlanted') and(contains(@name, '1m'))]/property[@name='BigDecorationRadius']/@value">6</set>
+	<!-- Disable block fall. Keep animations on everything but terrain.-->
+	<remove xpath="//block/drop[@event='Fall']"/>
+	<remove xpath="//block/property[@name='ShowModelOnFall']"/>
+	<append xpath="//block[starts-with(@name,'terr')]">
+		<property name="ShowModelOnFall" value="false"/>
+	</append>
+	<!--Changes grass checking on ticks to static-->
+	<set xpath="/blocks/block/property[@name='Class' and @value='Tallgrass']/@value">Deadgrass</set>
+	<!--Set turrets to wider target cone so players use less of them. Now takes 4 turrets to cover an entire 360 radius instead of 8.-->
+	<set xpath="/blocks/block/property[@name='YawRange' and @value='90']/@value">120</set>
+	<set xpath="/blocks/block/property[@name='PitchRange' and @value='90']/@value">120</set>
+	<!--Credit to Grumbleman for originally making this. 
+Changes windows to less graphically intensive ones for better FPS.
+Some edits have been made from original due to trim on some POIs blocking paths. They are now more accurate shapes to their previous forms.-->
+	<!--<remove xpath="/blocks/block[@name='windowStoreCornerFull']"/>
+	<remove xpath="/blocks/block[@name='windowStoreOneSidedFull']"/>
+	<remove xpath="/blocks/block[@name='windowStoreTwoSidedFull']"/>
+	<remove xpath="/blocks/block[@name='windowStoreThreeSidedFull']"/>
+	<remove xpath="/blocks/block[@name='windowStoreFourSidedFull']"/>
+	<remove xpath="/blocks/block[@name='windowStorePane']"/>
+
+	<remove xpath="/blocks/block[@name='windowStoreCornerBulletproof']"/>
+	<remove xpath="/blocks/block[@name='windowStoreOneSidedBulletproof']"/>
+	<remove xpath="/blocks/block[@name='windowStoreTwoSidedBulletproof']"/>
+	<remove xpath="/blocks/block[@name='windowStoreThreeSidedBulletproof']"/>
+	<remove xpath="/blocks/block[@name='windowStoreFourSidedBulletproof']"/>
+	<remove xpath="/blocks/block[@name='windowStorePaneBulletproof']"/>
+
+	<remove xpath="/blocks/block[@name='windowStoreOneSided']"/>
+	<remove xpath="/blocks/block[@name='windowStoreTwoSided']"/>
+	<remove xpath="/blocks/block[@name='windowStoreTwoSidedCorner']"/>
+	<remove xpath="/blocks/block[@name='windowStoreThreeSided']"/>
+	<remove xpath="/blocks/block[@name='windowStoreFourSided']"/>
+
+	<remove xpath="/blocks/block[@name='windowStoreOneSidedEmpty']"/>
+	<remove xpath="/blocks/block[@name='windowStoreTwoSidedEmpty']"/>
+	<remove xpath="/blocks/block[@name='windowStoreTwoSidedCornerEmpty']"/>
+	<remove xpath="/blocks/block[@name='windowStoreThreeSidedEmpty']"/>
+	<remove xpath="/blocks/block[@name='windowStoreFourSidedEmpty']"/>
+
+	<remove xpath="/blocks/block[@name='trapWindowStoreCornerFull']"/>
+	<remove xpath="/blocks/block[@name='trapWindowStoreOneSidedFull']"/>
+	<remove xpath="/blocks/block[@name='trapWindowStoreTwoSidedFull']"/>
+	<remove xpath="/blocks/block[@name='trapWindowStoreThreeSidedFull']"/>
+	<remove xpath="/blocks/block[@name='trapWindowStoreFourSidedFull']"/>
+
+
+	<append xpath="/blocks">
+		<block name="windowStoreCornerFull">
+			<property name="Shape" value="New"/>
+			<property name="Model" value="billboard"/>
+			<property name="Mesh" value="transparent"/>
+				<property name="Texture" value="285"/>
+				<property name="MaxDamage" value="1"/>
+				<property name="Material" value="Mglass"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="87"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="DescriptionKey" value="bulletproofGlassGroupDesc"/>
+			<drop event="Harvest" name="resourceBrokenGlass" count="1" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="LightOpacity" value="2"/>
+			<property name="ModelOffset" value="1,0,1.99"/>
+		</block>
+
+		<block name="windowStoreOneSidedFull">
+			<property name="Extends" value="windowStoreCornerFull"/>
+		</block>
+
+		<block name="windowStoreTwoSidedFull">
+			<property name="Extends" value="windowStoreCornerFull"/>
+		</block>
+
+		<block name="windowStoreThreeSidedFull">
+			<property name="Extends" value="windowStoreCornerFull"/>
+		</block>
+
+		<block name="windowStoreFourSidedFull">
+			<property name="Extends" value="windowStoreCornerFull"/>
+		</block>
+
+		<block name="windowStorePane">
+			<property name="Extends" value="windowStoreCornerFull"/>
+		</block>
+
+		<block name="windowStoreCornerBulletproof">
+			<property name="Shape" value="New"/>
+			<property name="Model" value="billboard"/>
+			<property name="Mesh" value="transparent"/>
+				<property name="Texture" value="333"/>
+				<property name="MaxDamage" value="3000"/>
+				<property name="Material" value="MglassBulletproof"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="87"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="DescriptionKey" value="bulletproofGlassGroupDesc"/>
+			<property class="RepairItems">
+			<property name="glassBulletproofBlockVariantHelper" value="1"/>
+			</property>
+			<drop event="Harvest" name="resourceBrokenGlass" count="21" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="EconomicValue" value="150"/>
+			<property name="LightOpacity" value="2"/>
+			<property name="ModelOffset" value="1,0,1.99"/>
+		</block>
+
+		<block name="windowStoreOneSidedBulletproof">
+			<property name="Extends" value="windowStoreCornerBulletproof"/>
+		</block>
+
+		<block name="windowStoreTwoSidedBulletproof">
+			<property name="Extends" value="windowStoreCornerBulletproof"/>
+		</block>
+
+		<block name="windowStoreThreeSidedBulletproof">
+			<property name="Extends" value="windowStoreCornerBulletproof"/>
+		</block>
+
+		<block name="windowStoreFourSidedBulletproof">
+			<property name="Extends" value="windowStoreCornerBulletproof"/>
+		</block>
+
+		<block name="windowStorePaneBulletproof">
+			<property name="Extends" value="windowStoreCornerBulletproof"/>
+		</block>
+
+		<block name="windowStoreOneSided">
+			<property name="Shape" value="New"/>
+			<property name="Model" value="door_trim_1m"/> 
+			<property name="Mesh" value="opaque"/>
+				<property name="Texture" value="443"/>
+				<property name="MaxDamage" value="300"/>
+				<property name="Material" value="Mmetal"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property class="RepairItems">
+			<property name="resourceScrapIron" value="10"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="1" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="EconomicValue" value="150"/>
+			<property name="LightOpacity" value="2"/>
+			<property name="ModelOffset" value="1,0,1.9"/>
+		</block>
+
+		<block name="windowStoreTwoSided">
+			<property name="Extends" value="windowStoreOneSided"/>
+			<property name="Model" value="door_trim_1m_double"/> 
+		</block>
+
+		<block name="windowStoreTwoSidedCorner">
+			<property name="Extends" value="windowStoreOneSided"/>
+		</block>
+
+		<block name="windowStoreThreeSided">
+			<property name="Extends" value="windowStoreOneSided"/>
+			<property name="Model" value="door_trim_1m_double"/>
+		</block>
+
+		<block name="windowStoreFourSided">
+			<property name="Extends" value="windowStoreOneSided"/>
+			<property name="Model" value="door_trim_square"/>
+		</block>
+
+		<block name="windowStoreOneSidedEmpty">
+			<property name="Extends" value="windowStoreOneSided"/>
+		</block>
+
+		<block name="windowStoreTwoSidedEmpty">
+			<property name="Extends" value="windowStoreOneSided"/>
+			<property name="Model" value="door_trim_1m_double"/> 
+		</block>
+
+		<block name="windowStoreTwoSidedCornerEmpty">
+			<property name="Extends" value="windowStoreOneSided"/>
+		</block>
+
+		<block name="windowStoreThreeSidedEmpty">
+			<property name="Extends" value="windowStoreThreeSided"/>
+			<property name="Model" value="door_trim_1m_double"/>
+		</block>
+
+		<block name="windowStoreFourSidedEmpty">
+			<property name="Extends" value="windowStoreFourSided"/>
+			<property name="Model" value="door_trim_square"/>
+		</block>
+
+		<block name="trapWindowStoreCornerFull">
+			<property name="DescriptionKey" value="looseBoardsTrapBlock1x1Desc"/>
+			<property name="Class" value="TrapDoor"/>
+			<property name="TriggerDelay" value="0.25"/>
+			<property name="TriggerSound" value="stepglasssmallcreak"/>
+			<property name="CustomIcon" value="glassBusinessCTRSheet"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Shape" value="New"/>
+			<property name="Model" value="billboard"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="Mesh" value="transparent"/>
+			<property name="Texture" value="285"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+
+			<drop event="Destroy" name="resourceBrokenGlass" count="1,3"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="FilterTags" value="MC_building,SC_destruction,SC_traps"/>
+			<property name="SortOrder1" value="70g0"/>
+			<drop event="Fall" count="0" prob="0"/>
+			<property name="ShowModelOnFall" value="true"/>
+			<property name="ModelOffset" value="1,0,1.99"/>
+		</block>
+
+		<block name="trapWindowStoreOneSidedFull">
+			<property name="Extends" value="trapWindowStoreCornerFull"/>
+		</block>
+
+		<block name="trapWindowStoreTwoSidedFull">
+			<property name="Extends" value="trapWindowStoreCornerFull"/>
+		</block>
+
+		<block name="trapWindowStoreThreeSidedFull">
+			<property name="Extends" value="trapWindowStoreCornerFull"/>
+		</block>
+
+		<block name="trapWindowStoreFourSidedFull">
+			<property name="Extends" value="trapWindowStoreCornerFull"/>
+		</block>
+
+	</append>-->
+</ByHowlune>

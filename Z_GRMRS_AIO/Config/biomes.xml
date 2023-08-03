@@ -1,0 +1,15 @@
+<configs>
+	<!-- Уменьшаем вероятность дождя и шторма -->
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='default']/@prob">90</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='snow']/@prob">2</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='storm']/@prob">1</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='default']/@prob">90</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='rain']/@prob">2</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/@prob">1</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='default']/@prob">90</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='rain']/@prob">2</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='storm']/@prob">1</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='default']/@prob">90</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='rain']/@prob">2</set>
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='storm']/@prob">1</set>
+</configs>

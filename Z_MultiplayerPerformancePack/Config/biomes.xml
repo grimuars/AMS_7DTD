@@ -1,0 +1,13 @@
+<ByHowlune>
+	<!--Grass density halved.-->
+	<set xpath="/worldgeneration/biomes/biome/decorations/decoration[@blockname='treeShortGrass' and @prob='.8']/@prob">.4</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='treeShortGrass' and @prob='.95']/@prob">.45</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='treeShortGrass' and @prob='.85']/@prob">.40</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='treeShortGrass' and @prob='.6']/@prob">.3</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='treeShortGrass' and @prob='.5']/@prob">.25</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='treeTallGrassDiagonal' and @prob='.5']/@prob">.25</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='treeSnowyGrassDiagonal' and @prob='.1']/@prob">.05</set>
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='treeSnowyGrassDiagonal' and @prob='.4']/@prob">.2</set>
+</ByHowlune>	
+
+

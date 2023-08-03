@@ -1,0 +1,22 @@
+<ByHowlune>
+	<!--Better Triggers for perk cvar application. Adds a queue to prevent spam of checks. Only added to applicable perks.-->
+	<remove xpath="/progression/perks/perk/effect_group/triggered_effect[@trigger='onPerkLevelChanged']"/>
+	<append xpath="/progression/perks/perk[@name='perkDeepCuts']/effect_group[1]">
+		<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar=".PerkAbilityUpdate" operation="set" value="1"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkHealingFactor']/effect_group[1]">
+		<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar=".PerkAbilityUpdate" operation="set" value="1"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group[1]">
+		<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar=".PerkAbilityUpdate" operation="set" value="1"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkSlowMetabolism']/effect_group[1]">
+		<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar=".PerkAbilityUpdate" operation="set" value="1"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkPhysician']/effect_group[1]">
+		<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar=".PerkAbilityUpdate" operation="set" value="1"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkParkour']/effect_group[1]">
+		<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar=".PerkAbilityUpdate" operation="set" value="1"/>
+	</append>
+</ByHowlune>
