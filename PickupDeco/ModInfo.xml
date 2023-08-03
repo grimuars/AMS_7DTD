@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="PickupDeco"/>
+	<DisplayName value="Pickup Deco"/>
+	<Description value="Allows deco blocks to be picked up, inspired by donovan pickmeup"/>
+	<Author value="LootGoblin"/>
+	<Version value="21.1.4" compat="A21"/>
+	<Website value=""/>
+</xml>

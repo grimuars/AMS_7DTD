@@ -1,0 +1,17 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="OcbParachuteDeployable" count="1" craft_time="20" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceMilitaryFiber" count="2"/>
+			<ingredient name="resourceGlue" count="10"/>
+			<ingredient name="resourceCloth" count="100"/>
+			<ingredient name="resourceScrapPolymers" count="100"/>
+		</recipe>
+
+		<recipe name="modOcbArmorParachute" count="1" craft_time="90" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceSewingKit" count="10"/>
+			<ingredient name="resourceLeather" count="50"/>
+			<ingredient name="resourceCloth" count="500"/>
+			<ingredient name="resourceScrapPolymers" count="500"/>
+		</recipe>
+	</append>
+</configs>

@@ -1,0 +1,16 @@
+<configs>
+	<append xpath="/item_modifiers">
+		<item_modifier name="modOcbArmorParachute" installable_tags="armorChest" modifier_tags="misc" blocked_tags="noMods" type="attachment">
+			<property name="CustomIcon" value="OcbParachuteBackpack"/>
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="craftingArmor"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+			<property name="Material" value="Mcloth"/>
+			<effect_group tiered="false">
+				<!-- <requirement name="ItemHasTags" tags="armorChest"/> -->
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffOcbParachute"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffOcbParachute"/>
+			</effect_group>
+		</item_modifier>
+	</append>
+</configs>
