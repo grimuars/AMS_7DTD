@@ -1,0 +1,1271 @@
+<configs>
+	<append xpath="/blocks">
+		<!--RangeHoods-->
+		<block name="craftableLightsHoodRangeWhite">
+			<property name="Extends" value="hoodRangeWhite"/>
+			<property name="CustomIcon" value="hoodRangeWhite"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsHoodRangeYellow">
+			<property name="Extends" value="hoodRangeYellow"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsHoodRangeGreen">
+			<property name="Extends" value="hoodRangeGreen"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsHoodRangeGrey">
+			<property name="Extends" value="hoodRangeGrey"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsHoodRangeBlack">
+			<property name="Extends" value="hoodRangeBlack"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--Porch Lights-->
+		<block name="craftableLightsPorchWhite">
+			<property name="Extends" value="lightPorchWhite"/>
+			<property name="CustomIcon" value="lightPorchWhite"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsPorchBrown">
+			<property name="Extends" value="lightPorchBrown"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsPorchYellow">
+			<property name="Extends" value="lightPorchYellow"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsPorchGreen">
+			<property name="Extends" value="lightPorchGreen"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsPorchGrey">
+			<property name="Extends" value="lightPorchGrey"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsPorchBlack">
+			<property name="Extends" value="lightPorchBlack"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--Gooseneck Lights-->
+		<block name="craftableLightsWallGooseneckWhite">
+			<property name="Extends" value="lightWallGooseneckWhite"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsWallGooseneckBrown">
+			<property name="Extends" value="lightWallGooseneckBrown"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsWallGooseneckRed">
+			<property name="Extends" value="lightWallGooseneckRed"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsWallGooseneckOrange">
+			<property name="Extends" value="lightWallGooseneckOrange"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsWallGooseneckYellow">
+			<property name="Extends" value="lightWallGooseneckYellow"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsWallGooseneckGreen">
+			<property name="Extends" value="lightWallGooseneckGreen"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsWallGooseneckBlue">
+			<property name="Extends" value="lightWallGooseneckBlue"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsWallGooseneckPurple">
+			<property name="Extends" value="lightWallGooseneckPurple"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsWallGooseneckGrey">
+			<property name="Extends" value="lightWallGooseneckGrey"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsWallGooseneckBlack">
+			<property name="Extends" value="lightWallGooseneckBlack"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsWallGooseneckPink">
+			<property name="Extends" value="lightWallGooseneckPink"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsWallGooseneckArmyGreen">
+			<property name="Extends" value="lightWallGooseneckArmyGreen"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--Dome Lights-->
+		<block name="craftableLightsCeilingLight02">
+			<property name="Extends" value="ceilingLight02"/>
+			<property name="CustomIcon" value="ceilingLight02"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsCeilingLight02Brass">
+			<property name="Extends" value="ceilingLight02Brass"/>
+			<property name="CustomIcon" value="ceilingLight02Brass"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsCeilingLight02_2x2">
+			<property name="Extends" value="ceilingLight02_2x2"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsCeilingLight02Brass_2x2">
+			<property name="Extends" value="ceilingLight02Brass_2x2"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!-- OLD Warehouse Light -->
+		<block name="craftableLightsCeilingLight04">
+			<property name="Extends" value="ceilingLight04"/>
+			<property name="CustomIcon" value="ceilingLight04"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!-- Ceiling Glass Bell Light -->
+		<block name="craftableLightsCeilingLight05">
+			<property name="Extends" value="ceilingLight05"/>
+			<property name="CustomIcon" value="ceilingLight05"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsCeilingLight05Brass">
+			<property name="Extends" value="ceilingLight05Brass"/>
+			<property name="CustomIcon" value="ceilingLight05Brass"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--Recessed Lights-->
+		<block name="craftableLightsRecessedLight">
+			<property name="Extends" value="recessedLight"/>
+			<property name="CustomIcon" value="recessedLight"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsRecessedLight_2x2">
+			<property name="Extends" value="recessedLight_2x2"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsRecessedLightOffset">
+			<property name="Extends" value="recessedLightOffset"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsRecessedLight_2x2Offset">
+			<property name="Extends" value="recessedLight_2x2Offset"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--Fluorescent Lights-->
+		<block name="craftableLightsFluorescentLight">
+			<property name="Extends" value="fluorescentLight"/>
+			<property name="CustomIcon" value="fluorescentLight"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsFluorescentLightBayIntact">
+			<property name="Extends" value="fluorescentLightBayIntact"/>
+			<property name="CustomIcon" value="fluorescentLightBayIntact"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsCeiling07_2x2">
+			<property name="Extends" value="lightCeiling07_2x2"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--LED_PANEL_LIGHTS -->
+		<block name="craftableLightsPanelLEDWhite">
+			<property name="Extends" value="lightPanelLEDWhite"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsPanelLEDSilver">
+			<property name="Extends" value="lightPanelLEDSilver"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsPanelLEDGrey">
+			<property name="Extends" value="lightPanelLEDGrey"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsPanelLEDBlack">
+			<property name="Extends" value="lightPanelLEDBlack"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsPanelLEDOffsetWhite">
+			<property name="Extends" value="lightPanelLEDOffsetWhite"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsPanelLEDOffsetSilver">
+			<property name="Extends" value="lightPanelLEDOffsetSilver"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsPanelLEDOffsetGrey">
+			<property name="Extends" value="lightPanelLEDOffsetGrey"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsPanelLEDOffsetBlack">
+			<property name="Extends" value="lightPanelLEDOffsetBlack"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsPanelLEDOffset02White">
+			<property name="Extends" value="lightPanelLEDOffset02White"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsPanelLEDOffset02Silver">
+			<property name="Extends" value="lightPanelLEDOffset02Silver"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsPanelLEDOffset02Grey">
+			<property name="Extends" value="lightPanelLEDOffset02Grey"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsPanelLEDOffset02Black">
+			<property name="Extends" value="lightPanelLEDOffset02Black"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--TRACK_LIGHTS -->
+		<block name="craftableLightsTrackLight">
+			<property name="Extends" value="trackLight"/>
+			<property name="CustomIcon" value="trackLight"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--Industrial Caged Lights-->
+		<block name="craftableLightsIndustrialRed">
+			<property name="Extends" value="lightIndustrialRed"/>
+			<property name="CustomIcon" value="lightIndustrialRed"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsIndustrialMountedWall">
+			<property name="Extends" value="lightIndustrialMountedWall"/>
+			<property name="CustomIcon" value="lightIndustrialMountedWall"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsIndustrialMountedWallRed">
+			<property name="Extends" value="lightIndustrialMountedWallRed"/>
+			<property name="CustomIcon" value="lightIndustrialMountedWallRed"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--Industrial Hanging Lights-->
+		<block name="craftableLightsIndustrialHangingWhite">
+			<property name="Extends" value="lightIndustrialHangingWhite"/>
+			<property name="CustomIcon" value="lightIndustrialHangingWhite"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsIndustrialHangingBrown">
+			<property name="Extends" value="lightIndustrialHangingBrown"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsIndustrialHangingGrey">
+			<property name="Extends" value="lightIndustrialHangingGrey"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsIndustrialHangingBlack">
+			<property name="Extends" value="lightIndustrialHangingBlack"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--Sconce Light-->
+		<block name="craftableLightsSconce">
+			<property name="Extends" value="lightSconce"/>
+			<property name="CustomIcon" value="lightSconce"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--Ceiling Fan Light-->
+		<block name="craftableLightsCeilingFanLight">
+			<property name="Extends" value="ceilingFanLight"/>
+			<property name="CustomIcon" value="ceilingFanLight"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--CHANDELIER_LIGHTS-->
+		<block name="craftableLightsChandelierLight">
+			<property name="Extends" value="chandelierLight"/>
+			<property name="CustomIcon" value="chandelierLight"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsChandelierLight2x2">
+			<property name="Extends" value="chandelierLight2x2"/>
+			<property name="CustomIcon" value="chandelierLight2x2"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--End Table Lamp-->
+		<block name="craftableLightsEndTableLamp">
+			<property name="Extends" value="endTableLamp"/>
+			<property name="CustomIcon" value="endTableLamp"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--EXIT_SIGN_LIGHTS-->
+		<block name="craftableLightsSignExitLight">
+			<property name="Extends" value="signExitLight"/>
+			<property name="CustomIcon" value="signExitLight"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsSignExitLightOffset">
+			<property name="Extends" value="signExitLightOffset"/>
+			<property name="CustomIcon" value="signExitLightOffset"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsSignExitFrameMount">
+			<property name="Extends" value="signExitFrameMount"/>
+			<property name="CustomIcon" value="signExitFrameMount"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsSignExitFrameMountHigh">
+			<property name="Extends" value="signExitFrameMountHigh"/>
+			<property name="CustomIcon" value="signExitFrameMountHigh"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsSignExitFrameMount2mCentered">
+			<property name="Extends" value="signExitFrameMount2mCentered"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsSignExitFrameMountHigh2mCentered">
+			<property name="Extends" value="signExitFrameMountHigh2mCentered"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsSignExitWallMount">
+			<property name="Extends" value="signExitWallMount"/>
+			<property name="CustomIcon" value="signExitWallMount"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsSignExitWallMountHigh">
+			<property name="Extends" value="signExitWallMountHigh"/>
+			<property name="CustomIcon" value="signExitWallMountHigh"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--Desk Lamps-->
+		<block name="craftableLightsDeskLampLight">
+			<property name="Extends" value="deskLampLight"/>
+			<property name="CustomIcon" value="deskLampLight"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsDeskLampLight02White">
+			<property name="Extends" value="deskLampLight02White"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsDeskLampLight02Brown">
+			<property name="Extends" value="deskLampLight02Brown"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsDeskLampLight02Red">
+			<property name="Extends" value="deskLampLight02Red"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsDeskLampLight02Orange">
+			<property name="Extends" value="deskLampLight02Orange"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsDeskLampLight02Yellow">
+			<property name="Extends" value="deskLampLight02Yellow"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsDeskLampLight02Green">
+			<property name="Extends" value="deskLampLight02Green"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsDeskLampLight02Blue">
+			<property name="Extends" value="deskLampLight02Blue"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsDeskLampLight02BPurple">
+			<property name="Extends" value="deskLampLight02BPurple"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsDeskLampLight02BGrey">
+			<property name="Extends" value="deskLampLight02BGrey"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsDeskLampLight02Black">
+			<property name="Extends" value="deskLampLight02Black"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsDeskLampLight02Pink">
+			<property name="Extends" value="deskLampLight02Pink"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--Table Lamps-->
+		<block name="craftableLightsTableLampLight01White">
+			<property name="Extends" value="tableLampLight01White"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01Brown">
+			<property name="Extends" value="tableLampLight01Brown"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01Red">
+			<property name="Extends" value="tableLampLight01Red"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01Orange">
+			<property name="Extends" value="tableLampLight01Orange"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01Yellow">
+			<property name="Extends" value="tableLampLight01Yellow"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01Green">
+			<property name="Extends" value="tableLampLight01Green"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01Blue">
+			<property name="Extends" value="tableLampLight01Blue"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01Purple">
+			<property name="Extends" value="tableLampLight01Purple"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01Grey">
+			<property name="Extends" value="tableLampLight01Grey"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01Black">
+			<property name="Extends" value="tableLampLight01Black"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01Pink">
+			<property name="Extends" value="tableLampLight01Pink"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01CenteredWhite">
+			<property name="Extends" value="tableLampLight01CenteredWhite"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01CenteredBrown">
+			<property name="Extends" value="tableLampLight01CenteredBrown"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01CenteredRed">
+			<property name="Extends" value="tableLampLight01CenteredRed"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01CenteredOrange">
+			<property name="Extends" value="tableLampLight01CenteredOrange"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01CenteredYellow">
+			<property name="Extends" value="tableLampLight01CenteredYellow"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01CenteredGreen">
+			<property name="Extends" value="tableLampLight01CenteredGreen"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01CenteredBlue">
+			<property name="Extends" value="tableLampLight01CenteredBlue"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01CenteredPurple">
+			<property name="Extends" value="tableLampLight01CenteredPurple"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01CenteredGrey">
+			<property name="Extends" value="tableLampLight01CenteredGrey"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01CenteredBlack">
+			<property name="Extends" value="tableLampLight01CenteredBlack"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsTableLampLight01CenteredPink">
+			<property name="Extends" value="tableLampLight01CenteredPink"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--Work Light-->
+		<block name="craftableLightsWorkLightPOI">
+			<property name="Extends" value="workLightPOI"/>
+			<property name="CustomIcon" value="workLightPOI"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--Street Lights-->
+		<block name="craftableLightsStreetLight01">
+			<property name="Extends" value="streetLight01"/>
+			<property name="CustomIcon" value="streetLight01"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsStreetLight02">
+			<property name="Extends" value="streetLight02"/>
+			<property name="CustomIcon" value="streetLight02"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsStreetLight03">
+			<property name="Extends" value="streetLight03"/>
+			<property name="CustomIcon" value="streetLight03"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsStreetLight04">
+			<property name="Extends" value="streetLight04"/>
+			<property name="CustomIcon" value="streetLight04"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsStreetLightClassic">
+			<property name="Extends" value="streetLightClassic"/>
+			<property name="CustomIcon" value="streetLightClassic"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--Projectors-->
+		<block name="craftableLightsProjectorCeiling">
+			<property name="Extends" value="projectorCeiling"/>
+			<property name="CustomIcon" value="projectorCeiling"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsProjectorTableTop">
+			<property name="Extends" value="projectorTableTop"/>
+			<property name="CustomIcon" value="projectorTableTop"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--Xray Display-->
+		<block name="craftableLightsDisplayXRayFull">
+			<property name="Extends" value="lightDisplayXRayFull"/>
+			<property name="CustomIcon" value="lightDisplayXRayFull"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsDisplayXRayEmpty">
+			<property name="Extends" value="lightDisplayXRayEmpty"/>
+			<property name="CustomIcon" value="lightDisplayXRayEmpty"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--Signs-->
+		<block name="craftableLightsSignShopOpen">
+			<property name="Extends" value="signShopOpen"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsSignNeonColdBeer">
+			<property name="Extends" value="signNeonColdBeer"/>
+			<property name="CustomIcon" value="signNeonColdBeer"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsSignPillsLogo">
+			<property name="Extends" value="signPillsLogo"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<block name="craftableLightsSignPillsLogoSmall">
+			<property name="Extends" value="signPillsLogoSmall"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+		</block>
+		<!--
+*******************************
+*******************************
+*******************************
+Variant Helpers
+*******************************
+*******************************
+*******************************
+-->
+		<block name="craftableLightsVariantHelper">
+			<property name="Extends" value="lightPorchWhite"/>
+			<property name="CustomIcon" value="hoodRangeWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="craftableLightsHoodRangeWhite,craftableLightsHoodRangeYellow,craftableLightsHoodRangeGreen,craftableLightsHoodRangeGrey,craftableLightsHoodRangeBlack,craftableLightsPorchWhite,craftableLightsPorchBrown,craftableLightsPorchYellow,craftableLightsPorchGreen,craftableLightsPorchGrey,craftableLightsPorchBlack,craftableLightsWallGooseneckWhite,craftableLightsWallGooseneckBrown,craftableLightsWallGooseneckRed,craftableLightsWallGooseneckOrange,craftableLightsWallGooseneckYellow,craftableLightsWallGooseneckGreen,craftableLightsWallGooseneckBlue,craftableLightsWallGooseneckPurple,craftableLightsWallGooseneckGrey,craftableLightsWallGooseneckBlack,craftableLightsWallGooseneckPink,craftableLightsWallGooseneckArmyGreen,craftableLightsCeilingLight02,craftableLightsCeilingLight02Brass,craftableLightsCeilingLight02_2x2,craftableLightsCeilingLight02Brass_2x2,craftableLightsCeilingLight04,craftableLightsCeilingLight05,craftableLightsCeilingLight05Brass,craftableLightsRecessedLight,craftableLightsRecessedLight_2x2,craftableLightsRecessedLightOffset,craftableLightsRecessedLight_2x2Offset,craftableLightsFluorescentLight,craftableLightsFluorescentLightBayIntact,craftableLightsCeiling07_2x2,craftableLightsPanelLEDWhite,craftableLightsPanelLEDSilver,craftableLightsPanelLEDGrey,craftableLightsPanelLEDBlack,craftableLightsPanelLEDOffsetWhite,craftableLightsPanelLEDOffsetSilver,craftableLightsPanelLEDOffsetGrey,craftableLightsPanelLEDOffsetBlack,craftableLightsPanelLEDOffset02White,craftableLightsPanelLEDOffset02Silver,craftableLightsPanelLEDOffset02Grey,craftableLightsPanelLEDOffset02Black,craftableLightsTrackLight,craftableLightsIndustrialRed,craftableLightsIndustrialMountedWall,craftableLightsIndustrialMountedWallRed,craftableLightsIndustrialHangingWhite,craftableLightsIndustrialHangingBrown,craftableLightsIndustrialHangingGrey,craftableLightsIndustrialHangingBlack,craftableLightsSconce,craftableLightsCeilingFanLight,craftableLightsChandelierLight,craftableLightsChandelierLight2x2,craftableLightsEndTableLamp,craftableLightsSignExitLight,craftableLightsSignExitLightOffset,craftableLightsSignExitFrameMount,craftableLightsSignExitFrameMountHigh,craftableLightsSignExitFrameMount2mCentered,craftableLightsSignExitFrameMountHigh2mCentered,craftableLightsSignExitWallMount,craftableLightsSignExitWallMountHigh,craftableLightsDeskLampLight,craftableLightsDeskLampLight02White,craftableLightsDeskLampLight02Brown,craftableLightsDeskLampLight02Red,craftableLightsDeskLampLight02Orange,craftableLightsDeskLampLight02Yellow,craftableLightsDeskLampLight02Green,craftableLightsDeskLampLight02Blue,craftableLightsDeskLampLight02BPurple,craftableLightsDeskLampLight02BGrey,craftableLightsDeskLampLight02Black,craftableLightsDeskLampLight02Pink,craftableLightsTableLampLight01White,craftableLightsTableLampLight01Brown,craftableLightsTableLampLight01Red,craftableLightsTableLampLight01Orange,craftableLightsTableLampLight01Yellow,craftableLightsTableLampLight01Green,craftableLightsTableLampLight01Blue,craftableLightsTableLampLight01Purple,craftableLightsTableLampLight01Grey,craftableLightsTableLampLight01Black,craftableLightsTableLampLight01Pink,craftableLightsTableLampLight01CenteredWhite,craftableLightsTableLampLight01CenteredBrown,craftableLightsTableLampLight01CenteredRed,craftableLightsTableLampLight01CenteredOrange,craftableLightsTableLampLight01CenteredYellow,craftableLightsTableLampLight01CenteredGreen,craftableLightsTableLampLight01CenteredBlue,craftableLightsTableLampLight01CenteredPurple,craftableLightsTableLampLight01CenteredGrey,craftableLightsTableLampLight01CenteredBlack,craftableLightsTableLampLight01CenteredPink,craftableLightsWorkLightPOI,craftableLightsStreetLight01,craftableLightsStreetLight02,craftableLightsStreetLight03,craftableLightsStreetLight04,craftableLightsStreetLightClassic,craftableLightsProjectorCeiling,craftableLightsProjectorTableTop,craftableLightsDisplayXRayFull,craftableLightsDisplayXRayEmpty,craftableLightsSignShopOpen,craftableLightsSignNeonColdBeer,craftableLightsSignPillsLogo,craftableLightsSignPillsLogoSmall"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_lighting"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+	</append>
+</configs>

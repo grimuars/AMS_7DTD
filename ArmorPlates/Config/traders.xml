@@ -1,0 +1,23 @@
+<!-- Бронеплиты -->
+<configs>
+	<!-- Модификации -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorMods']">
+		<item name="modArmorPlatingSteel"/>
+		<item name="modArmorPlatingTitanium"/>
+	</append>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorT2Light']">
+		<item name="modArmorPlatingPE"/>
+		<item name="modArmorPlatingSiC"/>
+	</append>
+	<!-- Схемы -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">
+		<item name="modArmorPlatingSteelSchematic"/>
+		<item name="modArmorPlatingTitaniumSchematic"/>
+	</append>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareBooks']">
+		<item name="modArmorPlatingSteelSchematic"/>
+		<item name="modArmorPlatingTitaniumSchematic"/>
+		<item name="modArmorPlatingPESchematic"/>
+		<item name="modArmorPlatingSiCSchematic"/>
+	</append>
+</configs>

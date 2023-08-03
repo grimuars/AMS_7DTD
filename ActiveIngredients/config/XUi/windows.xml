@@ -1,0 +1,4 @@
+<!DOCTYPE xml>
+<xml>
+	<setattribute xpath="//window[@name='itemInfoPanel']//sprite[@depth='1']" name="depth">0</setattribute>
+</xml>

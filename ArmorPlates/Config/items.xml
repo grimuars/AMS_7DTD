@@ -1,0 +1,76 @@
+<MoreArmorPlates>
+	<append xpath="/items">
+		<!-- Схемы для бронеплит -->
+		<item name="modArmorPlatingSteelSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="SteelArmor"/>
+			<property name="Unlocks" value="modArmorPlatingSteel"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingSteel" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		<item name="modArmorPlatingTitaniumSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="TitaniumArmor"/>
+			<property name="Unlocks" value="modArmorPlatingTitanium"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingTitanium" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="100"/>
+			</effect_group>
+		</item>
+		<item name="modArmorPlatingPESchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="PEArmor"/>
+			<property name="Unlocks" value="modArmorPlatingPE"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingPE" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="150"/>
+			</effect_group>
+		</item>
+		<item name="modArmorPlatingSiCSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="SiCArmor"/>
+			<property name="Unlocks" value="modArmorPlatingSiC"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingSiC" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="200"/>
+			</effect_group>
+		</item>
+		<!-- Ресурсы для крафта -->
+		<item name="resourceTitanium">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mdirt"/>
+			<property name="CustomIcon" value="TitaniumAlloy"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="100"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+		</item>
+		<item name="resourcePE">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mdirt"/>
+			<property name="CustomIcon" value="PE"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="150"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+		</item>
+		<item name="resourceSiC">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mdirt"/>
+			<property name="CustomIcon" value="SiC"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="200"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+		</item>
+	</append>
+</MoreArmorPlates>

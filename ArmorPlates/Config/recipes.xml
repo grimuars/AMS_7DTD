@@ -1,0 +1,47 @@
+<MoreArmorPlates>
+	<append xpath="/recipes">
+		<!-- Модификации для брони -->
+		<recipe name="modArmorPlatingSteel" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="40"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+			<ingredient name="resourceDuctTape" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+		</recipe>
+		<recipe name="modArmorPlatingTitanium" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceTitanium" count="20"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+			<ingredient name="resourceDuctTape" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+		</recipe>
+		<recipe name="modArmorPlatingPE" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourcePE" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+			<ingredient name="resourceDuctTape" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+		</recipe>
+		<recipe name="modArmorPlatingSiC" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceSiC" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+			<ingredient name="resourceDuctTape" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+		</recipe>
+		<!-- Требуемые ресурсы -->
+		<recipe name="resourceTitanium" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+			<ingredient name="resourceCoal" count="10"/>
+			<ingredient name="resourceForgedSteel" count="4"/>
+		</recipe>
+		<recipe name="resourcePE" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+			<ingredient name="resourceScrapPolymers" count="30"/>
+			<ingredient name="resourceOilShale" count="30"/>
+		</recipe>
+		<recipe name="resourceSiC" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+			<ingredient name="resourceCoal" count="150"/>
+			<ingredient name="resourceCrushedSand" count="50"/>
+			<ingredient name="resourceOilShale" count="10"/>
+		</recipe>
+	</append>
+</MoreArmorPlates>

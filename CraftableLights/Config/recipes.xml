@@ -1,0 +1,8 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="craftableLightsVariantHelper" count="1" craft_area="workbench" craft_time="2">
+			<ingredient name="resourceForgedIron" count="3"/>
+			<ingredient name="resourceElectricParts" count="20"/>
+		</recipe>
+	</append>
+</configs>

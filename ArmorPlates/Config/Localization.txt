@@ -1,0 +1,35 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,russian
+
+modArmorPlatingSteel,items,Ammo,,,Steel Armor Plating,"Бронепластина из стали"
+modArmorPlatingSteelDesc,items,Ammo,,,"This Steel Plating will offer moderate protection against most types of damage.\n\nSlightly increases protection against radiation. Reduces mobility.","Бронепластина из стали предоставляет среднюю защиту от большинства видов урона.\n\nНезначительно повышает защиту от радиации. Снижает мобильность."
+
+modArmorPlatingSteelSchematic,items,Ammo,,,"Steel Armor Plating Schematic","Схема бронепластины из стали"
+
+modArmorPlatingTitanium,items,Ammo,,,Titanium Armor Plating,"Бронепластина из титана"
+modArmorPlatingTitaniumDesc,items,Ammo,,,"This Titanium Plating will offer quite a lot of protection against most types of damage.\n\nSlightly increases protection against radiation. Reduces mobility.","Бронепластина из титана обеспечивает хорошую защиту от большинства видов урона.\n\nНезначительно повышает защиту от радиации. Снижает мобильность."
+
+modArmorPlatingTitaniumSchematic,items,Ammo,,,"Titanium Armor Plating Schematic","Схема бронепластины из титана"
+
+modArmorPlatingPE,items,Ammo,,,Polyethylene Armor Plating,"Бронепластина из полиэтилена"
+modArmorPlatingPEDesc,items,Ammo,,,"Polyethylene is among the strongest plastic materials, commonly used as armor plating in the law enforcement and military before the fall.\n\nSlightly increases protection against radiation. Reduces mobility.","Полиэтилен - один из самых прочных пластиков, часто использовавшийся для создания различных видов брони и военного оборудования до апокалипсиса.\n\nНезначительно повышает защиту от радиации. Снижает мобильность."
+
+modArmorPlatingPESchematic,items,Ammo,,,"Polyethylene Armor Plating Schematic","Схема бронепластины из полиэтилена"
+
+modArmorPlatingSiC,items,Ammo,,,Silicon Carbide Armor Plating,"Бронепластина из карбида кремния"
+modArmorPlatingSiCDesc,items,Ammo,,,"Silicon Carbide is among the strongest compounds known to man, which before the fall was extremely rare, mostly being mass produced in synthetic form. It's many applications included the manufacturing of armor plating.\n\nSlightly increases protection against radiation. Reduces mobility.","Карбид кремния, прочнейший из известных человеку сплавов, до апокалипсиса из-за своей редкости в основном производился с помощью химического синтеза. Имеет множество применений, включая производство бронепластин.\n\nНезначительно повышает защиту от радиации. Снижает мобильность."
+
+modArmorPlatingSiCSchematic,items,Ammo,,,"Silicon Carbide Plating Schematic","Схема бронепластины из карбида кремния"
+
+resourceTitanium,items,Ammo,,,Titanium Alloy,"Слиток титана"
+resourceTitaniumDesc,items,Ammo,,,"Used in the crafting of armor plates","Используется при создании бронепластин и некоторых других предметов"
+
+resourcePE,items,Ammo,,,Polyethylene Sheets,"Лист полиэтилена"
+resourcePEDesc,items,Ammo,,,"Used in the crafting of armor plates","Используется при создании бронепластин и некоторых других предметов"
+
+resourceSiC,items,Ammo,,,Silicon Carbide,"Карбид кремния"
+resourceSiCDesc,items,Ammo,,,"Used in the crafting of armor plates","Используется при создании бронепластин и некоторых других предметов"
+
+
+
+
+

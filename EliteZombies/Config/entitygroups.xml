@@ -1,0 +1,3175 @@
+<configs>
+
+
+
+<!-- badassOnlyHordeStages -->
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS79']/text()" delim="\n" op="add" >
+    EliteCop, .002
+    EliteHawai, .002
+    EliteSkater, .002
+    EliteSoldier, .002
+    EliteBoomer, .002
+    EliteFeral, .002
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS95']/text()" delim="\n" op="add" >
+    EliteCop, .006
+    EliteHawai, .006
+    EliteSkater, .006
+    EliteSoldier, .006
+    EliteBoomer, .006
+    EliteFeral, .006
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS112']/text()" delim="\n" op="add" >
+    EliteCop, .010
+    EliteHawai, .010
+    EliteSkater, .010
+    EliteSoldier, .010
+    EliteBoomer, .010
+    EliteFeral, .010
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS130']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS150']/text()" delim="\n" op="add" >
+    EliteCop, .050
+    EliteHawai, .050
+    EliteSkater, .050
+    EliteSoldier, .050
+    EliteBoomer, .050
+    EliteFeral, .050
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS171']/text()" delim="\n" op="add" >
+    EliteCop, .055
+    EliteHawai, .055
+    EliteSkater, .055
+    EliteSoldier, .055
+    EliteBoomer, .055
+    EliteFeral, .055
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS194']/text()" delim="\n" op="add" >
+    EliteCop, .060
+    EliteHawai, .060
+    EliteSkater, .060
+    EliteSoldier, .060
+    EliteBoomer, .060
+    EliteFeral, .060
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS217']/text()" delim="\n" op="add" >
+    EliteCop, .070
+    EliteHawai, .070
+    EliteSkater, .070
+    EliteSoldier, .070
+    EliteBoomer, .070
+    EliteFeral, .070
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS242']/text()" delim="\n" op="add" >
+    EliteCop, .080
+    EliteHawai, .080
+    EliteSkater, .080
+    EliteSoldier, .080
+    EliteBoomer, .080
+    EliteFeral, .080
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS268']/text()" delim="\n" op="add" >
+    EliteCop, .090
+    EliteHawai, .090
+    EliteSkater, .090
+    EliteSoldier, .090
+    EliteBoomer, .090
+    EliteFeral, .090
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS296']/text()" delim="\n" op="add" >
+    EliteCop, .120
+    EliteHawai, .120
+    EliteSkater, .120
+    EliteSoldier, .120
+    EliteBoomer, .120
+    EliteFeral, .120
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS325']/text()" delim="\n" op="add" >
+    EliteCop, .160
+    EliteHawai, .160
+    EliteSkater, .160
+    EliteSoldier, .160
+    EliteBoomer, .160
+    EliteFeral, .160
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS355']/text()" delim="\n" op="add" >
+    EliteCop, .200
+    EliteHawai, .200
+    EliteSkater, .200
+    EliteSoldier, .200
+    EliteBoomer, .200
+    EliteFeral, .200
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS386']/text()" delim="\n" op="add" >
+    EliteCop, .250
+    EliteHawai, .250
+    EliteSkater, .250
+    EliteSoldier, .250
+    EliteBoomer, .250
+    EliteFeral, .250
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS419']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS452']/text()" delim="\n" op="add" >
+    EliteCop, .350
+    EliteHawai, .350
+    EliteSkater, .350
+    EliteSoldier, .350
+    EliteBoomer, .350
+    EliteFeral, .350
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS488']/text()" delim="\n" op="add" >
+    EliteCop, .400
+    EliteHawai, .400
+    EliteSkater, .400
+    EliteSoldier, .400
+    EliteBoomer, .400
+    EliteFeral, .400
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS524']/text()" delim="\n" op="add" >
+    EliteCop, .450
+    EliteHawai, .450
+    EliteSkater, .450
+    EliteSoldier, .450
+    EliteBoomer, .450
+    EliteFeral, .450
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS561']/text()" delim="\n" op="add" >
+    EliteCop, .500
+    EliteHawai, .500
+    EliteSkater, .500
+    EliteSoldier, .500
+    EliteBoomer, .500
+    EliteFeral, .500
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS600']/text()" delim="\n" op="add" >
+    EliteCop, .550
+    EliteHawai, .550
+    EliteSkater, .550
+    EliteSoldier, .550
+    EliteBoomer, .550
+    EliteFeral, .550
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS640']/text()" delim="\n" op="add" >
+    EliteCop, .600
+    EliteHawai, .600
+    EliteSkater, .600
+    EliteSoldier, .600
+    EliteBoomer, .600
+    EliteFeral, .600
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS681']/text()" delim="\n" op="add" >
+    EliteCop, 1
+    EliteHawai, 1
+    EliteSkater, 1
+    EliteSoldier, 1
+    EliteBoomer, 1
+    EliteFeral, 1
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS724']/text()" delim="\n" op="add" >
+    EliteCop, 1
+    EliteHawai, 1
+    EliteSkater, 1
+    EliteSoldier, 1
+    EliteBoomer, 1
+    EliteFeral, 1
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS767']/text()" delim="\n" op="add" >
+    EliteCop, 1
+    EliteHawai, 1
+    EliteSkater, 1
+    EliteSoldier, 1
+    EliteBoomer, 1
+    EliteFeral, 1
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS812']/text()" delim="\n" op="add" >
+    EliteCop, 1
+    EliteHawai, 1
+    EliteSkater, 1
+    EliteSoldier, 1
+    EliteBoomer, 1
+    EliteFeral, 1
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS858']/text()" delim="\n" op="add" >
+    EliteCop, 1
+    EliteHawai, 1
+    EliteSkater, 1
+    EliteSoldier, 1
+    EliteBoomer, 1
+    EliteFeral, 1
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS905']/text()" delim="\n" op="add" >
+    EliteCop, 1
+    EliteHawai, 1
+    EliteSkater, 1
+    EliteSoldier, 1
+    EliteBoomer, 1
+    EliteFeral, 1
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS954']/text()" delim="\n" op="add" >
+    EliteCop, 1
+    EliteHawai, 1
+    EliteSkater, 1
+    EliteSoldier, 1
+    EliteBoomer, 1
+    EliteFeral, 1
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1003']/text()" delim="\n" op="add" >
+    EliteCop, 1
+    EliteHawai, 1
+    EliteSkater, 1
+    EliteSoldier, 1
+    EliteBoomer, 1
+    EliteFeral, 1
+</csv>
+
+<!-- badasshordeStages -->	
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS79']/text()" delim="\n" op="add" >
+    EliteCop, .002
+    EliteHawai, .002
+    EliteSkater, .002
+    EliteSoldier, .002
+    EliteBoomer, .002
+    EliteFeral, .002
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS95']/text()" delim="\n" op="add" >
+    EliteCop, .006
+    EliteHawai, .006
+    EliteSkater, .006
+    EliteSoldier, .006
+    EliteBoomer, .006
+    EliteFeral, .006
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS112']/text()" delim="\n" op="add" >
+    EliteCop, .010
+    EliteHawai, .010
+    EliteSkater, .010
+    EliteSoldier, .010
+    EliteBoomer, .010
+    EliteFeral, .010
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS130']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS150']/text()" delim="\n" op="add" >
+    EliteCop, .050
+    EliteHawai, .050
+    EliteSkater, .050
+    EliteSoldier, .050
+    EliteBoomer, .050
+    EliteFeral, .050
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS171']/text()" delim="\n" op="add" >
+    EliteCop, .055
+    EliteHawai, .055
+    EliteSkater, .055
+    EliteSoldier, .055
+    EliteBoomer, .055
+    EliteFeral, .055
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS194']/text()" delim="\n" op="add" >
+    EliteCop, .060
+    EliteHawai, .060
+    EliteSkater, .060
+    EliteSoldier, .060
+    EliteBoomer, .060
+    EliteFeral, .060
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS217']/text()" delim="\n" op="add" >
+    EliteCop, .070
+    EliteHawai, .070
+    EliteSkater, .070
+    EliteSoldier, .070
+    EliteBoomer, .070
+    EliteFeral, .070
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS242']/text()" delim="\n" op="add" >
+    EliteCop, .080
+    EliteHawai, .080
+    EliteSkater, .080
+    EliteSoldier, .080
+    EliteBoomer, .080
+    EliteFeral, .080
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS268']/text()" delim="\n" op="add" >
+    EliteCop, .090
+    EliteHawai, .090
+    EliteSkater, .090
+    EliteSoldier, .090
+    EliteBoomer, .090
+    EliteFeral, .090
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS296']/text()" delim="\n" op="add" >
+    EliteCop, .120
+    EliteHawai, .120
+    EliteSkater, .120
+    EliteSoldier, .120
+    EliteBoomer, .120
+    EliteFeral, .120
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS325']/text()" delim="\n" op="add" >
+    EliteCop, .160
+    EliteHawai, .160
+    EliteSkater, .160
+    EliteSoldier, .160
+    EliteBoomer, .160
+    EliteFeral, .160
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS355']/text()" delim="\n" op="add" >
+    EliteCop, .200
+    EliteHawai, .200
+    EliteSkater, .200
+    EliteSoldier, .200
+    EliteBoomer, .200
+    EliteFeral, .200
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS386']/text()" delim="\n" op="add" >
+    EliteCop, .250
+    EliteHawai, .250
+    EliteSkater, .250
+    EliteSoldier, .250
+    EliteBoomer, .250
+    EliteFeral, .250
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS419']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS452']/text()" delim="\n" op="add" >
+    EliteCop, .350
+    EliteHawai, .350
+    EliteSkater, .350
+    EliteSoldier, .350
+    EliteBoomer, .350
+    EliteFeral, .350
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS488']/text()" delim="\n" op="add" >
+    EliteCop, .400
+    EliteHawai, .400
+    EliteSkater, .400
+    EliteSoldier, .400
+    EliteBoomer, .400
+    EliteFeral, .400
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS524']/text()" delim="\n" op="add" >
+    EliteCop, .450
+    EliteHawai, .450
+    EliteSkater, .450
+    EliteSoldier, .450
+    EliteBoomer, .450
+    EliteFeral, .450
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS561']/text()" delim="\n" op="add" >
+    EliteCop, .500
+    EliteHawai, .500
+    EliteSkater, .500
+    EliteSoldier, .500
+    EliteBoomer, .500
+    EliteFeral, .500
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS600']/text()" delim="\n" op="add" >
+    EliteCop, .550
+    EliteHawai, .550
+    EliteSkater, .550
+    EliteSoldier, .550
+    EliteBoomer, .550
+    EliteFeral, .550
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS640']/text()" delim="\n" op="add" >
+    EliteCop, .600
+    EliteHawai, .600
+    EliteSkater, .600
+    EliteSoldier, .600
+    EliteBoomer, .600
+    EliteFeral, .600
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS681']/text()" delim="\n" op="add" >
+    EliteCop, 1
+    EliteHawai, 1
+    EliteSkater, 1
+    EliteSoldier, 1
+    EliteBoomer, 1
+    EliteFeral, 1
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS724']/text()" delim="\n" op="add" >
+    EliteCop, 1
+    EliteHawai, 1
+    EliteSkater, 1
+    EliteSoldier, 1
+    EliteBoomer, 1
+    EliteFeral, 1
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS767']/text()" delim="\n" op="add" >
+    EliteCop, 1
+    EliteHawai, 1
+    EliteSkater, 1
+    EliteSoldier, 1
+    EliteBoomer, 1
+    EliteFeral, 1
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS812']/text()" delim="\n" op="add" >
+    EliteCop, 1
+    EliteHawai, 1
+    EliteSkater, 1
+    EliteSoldier, 1
+    EliteBoomer, 1
+    EliteFeral, 1
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS858']/text()" delim="\n" op="add" >
+    EliteCop, 1
+    EliteHawai, 1
+    EliteSkater, 1
+    EliteSoldier, 1
+    EliteBoomer, 1
+    EliteFeral, 1
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS905']/text()" delim="\n" op="add" >
+    EliteCop, 1
+    EliteHawai, 1
+    EliteSkater, 1
+    EliteSoldier, 1
+    EliteBoomer, 1
+    EliteFeral, 1
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS954']/text()" delim="\n" op="add" >
+    EliteCop, 1
+    EliteHawai, 1
+    EliteSkater, 1
+    EliteSoldier, 1
+    EliteBoomer, 1
+    EliteFeral, 1
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1003']/text()" delim="\n" op="add" >
+    EliteCop, 1
+    EliteHawai, 1
+    EliteSkater, 1
+    EliteSoldier, 1
+    EliteBoomer, 1
+    EliteFeral, 1
+</csv>
+
+
+<!-- feralHordeStage bloodmoon -->
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS140']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS147']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS153']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS160']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS167']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS174']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS181']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS188']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS195']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS202']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS210']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS217']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS225']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS232']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS240']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS247']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS255']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS263']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS271']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS279']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS287']/text()" delim="\n" op="add" >
+    EliteCop, .030
+    EliteHawai, .030
+    EliteSkater, .030
+    EliteSoldier, .030
+    EliteBoomer, .030
+    EliteFeral, .030
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS295']/text()" delim="\n" op="add" >
+    EliteCop, .030
+    EliteHawai, .030
+    EliteSkater, .030
+    EliteSoldier, .030
+    EliteBoomer, .030
+    EliteFeral, .030
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS304']/text()" delim="\n" op="add" >
+    EliteCop, .030
+    EliteHawai, .030
+    EliteSkater, .030
+    EliteSoldier, .030
+    EliteBoomer, .030
+    EliteFeral, .030
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS312']/text()" delim="\n" op="add" >
+    EliteCop, .040
+    EliteHawai, .040
+    EliteSkater, .040
+    EliteSoldier, .040
+    EliteBoomer, .040
+    EliteFeral, .040
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS320']/text()" delim="\n" op="add" >
+    EliteCop, .040
+    EliteHawai, .040
+    EliteSkater, .040
+    EliteSoldier, .040
+    EliteBoomer, .040
+    EliteFeral, .040
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS329']/text()" delim="\n" op="add" >
+    EliteCop, .040
+    EliteHawai, .040
+    EliteSkater, .040
+    EliteSoldier, .040
+    EliteBoomer, .040
+    EliteFeral, .040
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS337']/text()" delim="\n" op="add" >
+    EliteCop, .050
+    EliteHawai, .050
+    EliteSkater, .050
+    EliteSoldier, .050
+    EliteBoomer, .050
+    EliteFeral, .050
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS346']/text()" delim="\n" op="add" >
+    EliteCop, .060
+    EliteHawai, .060
+    EliteSkater, .060
+    EliteSoldier, .060
+    EliteBoomer, .060
+    EliteFeral, .060
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS354']/text()" delim="\n" op="add" >
+    EliteCop, .070
+    EliteHawai, .070
+    EliteSkater, .070
+    EliteSoldier, .070
+    EliteBoomer, .070
+    EliteFeral, .070
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS363']/text()" delim="\n" op="add" >
+    EliteCop, .080
+    EliteHawai, .080
+    EliteSkater, .080
+    EliteSoldier, .080
+    EliteBoomer, .080
+    EliteFeral, .080
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS372']/text()" delim="\n" op="add" >
+    EliteCop, .090
+    EliteHawai, .090
+    EliteSkater, .090
+    EliteSoldier, .090
+    EliteBoomer, .090
+    EliteFeral, .090
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS381']/text()" delim="\n" op="add" >
+    EliteCop, .120
+    EliteHawai, .120
+    EliteSkater, .120
+    EliteSoldier, .120
+    EliteBoomer, .120
+    EliteFeral, .120
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS389']/text()" delim="\n" op="add" >
+    EliteCop, .160
+    EliteHawai, .160
+    EliteSkater, .160
+    EliteSoldier, .160
+    EliteBoomer, .160
+    EliteFeral, .160
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS398']/text()" delim="\n" op="add" >
+    EliteCop, .200
+    EliteHawai, .200
+    EliteSkater, .200
+    EliteSoldier, .200
+    EliteBoomer, .200
+    EliteFeral, .200
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS407']/text()" delim="\n" op="add" >
+    EliteCop, .250
+    EliteHawai, .250
+    EliteSkater, .250
+    EliteSoldier, .250
+    EliteBoomer, .250
+    EliteFeral, .250
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS417']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS426']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS435']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS444']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS453']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS463']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS472']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS482']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS491']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS501']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS510']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS520']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS530']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS540']/text()" delim="\n" op="add" >
+    EliteCop, .350
+    EliteHawai, .350
+    EliteSkater, .350
+    EliteSoldier, .350
+    EliteBoomer, .350
+    EliteFeral, .350
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS550']/text()" delim="\n" op="add" >
+    EliteCop, .400
+    EliteHawai, .400
+    EliteSkater, .400
+    EliteSoldier, .400
+    EliteBoomer, .400
+    EliteFeral, .400
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS560']/text()" delim="\n" op="add" >
+    EliteCop, .450
+    EliteHawai, .450
+    EliteSkater, .450
+    EliteSoldier, .450
+    EliteBoomer, .450
+    EliteFeral, .450
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS570']/text()" delim="\n" op="add" >
+    EliteCop, .500
+    EliteHawai, .500
+    EliteSkater, .500
+    EliteSoldier, .500
+    EliteBoomer, .500
+    EliteFeral, .500
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS580']/text()" delim="\n" op="add" >
+    EliteCop, .550
+    EliteHawai, .550
+    EliteSkater, .550
+    EliteSoldier, .550
+    EliteBoomer, .550
+    EliteFeral, .550
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS590']/text()" delim="\n" op="add" >
+    EliteCop, .600
+    EliteHawai, .600
+    EliteSkater, .600
+    EliteSoldier, .600
+    EliteBoomer, .600
+    EliteFeral, .600
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS600']/text()" delim="\n" op="add" >
+    EliteCop, .650
+    EliteHawai, .650
+    EliteSkater, .650
+    EliteSoldier, .650
+    EliteBoomer, .650
+    EliteFeral, .650
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS610']/text()" delim="\n" op="add" >
+    EliteCop, .700
+    EliteHawai, .700
+    EliteSkater, .700
+    EliteSoldier, .700
+    EliteBoomer, .700
+    EliteFeral, .700
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS620']/text()" delim="\n" op="add" >
+    EliteCop, .750
+    EliteHawai, .750
+    EliteSkater, .750
+    EliteSoldier, .750
+    EliteBoomer, .750
+    EliteFeral, .750
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS641']/text()" delim="\n" op="add" >
+    EliteCop, .760
+    EliteHawai, .760
+    EliteSkater, .760
+    EliteSoldier, .760
+    EliteBoomer, .760
+    EliteFeral, .760
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS651']/text()" delim="\n" op="add" >
+    EliteCop, .770
+    EliteHawai, .770
+    EliteSkater, .770
+    EliteSoldier, .770
+    EliteBoomer, .770
+    EliteFeral, .770
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS662']/text()" delim="\n" op="add" >
+    EliteCop, .780
+    EliteHawai, .780
+    EliteSkater, .780
+    EliteSoldier, .780
+    EliteBoomer, .780
+    EliteFeral, .780
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS672']/text()" delim="\n" op="add" >
+    EliteCop, .790
+    EliteHawai, .790
+    EliteSkater, .790
+    EliteSoldier, .790
+    EliteBoomer, .790
+    EliteFeral, .790
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS683']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS693']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS704']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS715']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS726']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS736']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS747']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS758']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS769']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS780']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS791']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS802']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS813']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS824']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS836']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS847']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS858']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS870']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS881']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS893']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS904']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS916']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS927']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS939']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS683']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS951']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS962']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS974']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS986']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS998']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1010']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1022']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1034']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1046']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1058']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1070']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1082']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1094']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1106']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1119']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1131']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1143']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1156']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1168']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1181']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1193']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1206']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1218']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1231']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1244']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1256']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1269']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1282']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1295']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1308']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1321']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1334']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1347']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1360']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1373']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1386']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1399']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1412']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1425']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1439']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1452']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1465']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1479']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1492']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1506']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1519']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1533']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1546']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1560']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1573']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1587']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1601']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1614']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1628']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1642']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1656']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1670']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1684']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1698']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1712']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1726']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1740']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1754']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1768']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1782']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1796']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1811']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1825']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1839']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1853']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1868']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1882']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1897']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1911']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1926']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1940']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1955']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1969']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1984']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<!-- Scout horde stage screamer spawn -->
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS140']/text()" delim="\n" op="add" >
+    EliteCop, .010
+    EliteHawai, .010
+    EliteSkater, .010
+    EliteSoldier, .010
+    EliteBoomer, .010
+    EliteFeral, .010
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS148']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS156']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS164']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS172']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS181']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS189']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS198']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS207']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS216']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS225']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS234']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS243']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS252']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS262']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS272']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS281']/text()" delim="\n" op="add" >
+    EliteCop, .020
+    EliteHawai, .020
+    EliteSkater, .020
+    EliteSoldier, .020
+    EliteBoomer, .020
+    EliteFeral, .020
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS291']/text()" delim="\n" op="add" >
+    EliteCop, .030
+    EliteHawai, .030
+    EliteSkater, .030
+    EliteSoldier, .030
+    EliteBoomer, .030
+    EliteFeral, .030
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS301']/text()" delim="\n" op="add" >
+    EliteCop, .030
+    EliteHawai, .030
+    EliteSkater, .030
+    EliteSoldier, .030
+    EliteBoomer, .030
+    EliteFeral, .030
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS311']/text()" delim="\n" op="add" >
+    EliteCop, .030
+    EliteHawai, .030
+    EliteSkater, .030
+    EliteSoldier, .030
+    EliteBoomer, .030
+    EliteFeral, .030
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS322']/text()" delim="\n" op="add" >
+    EliteCop, .040
+    EliteHawai, .040
+    EliteSkater, .040
+    EliteSoldier, .040
+    EliteBoomer, .040
+    EliteFeral, .040
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS332']/text()" delim="\n" op="add" >
+    EliteCop, .040
+    EliteHawai, .040
+    EliteSkater, .040
+    EliteSoldier, .040
+    EliteBoomer, .040
+    EliteFeral, .040
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS343']/text()" delim="\n" op="add" >
+    EliteCop, .040
+    EliteHawai, .040
+    EliteSkater, .040
+    EliteSoldier, .040
+    EliteBoomer, .040
+    EliteFeral, .040
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS353']/text()" delim="\n" op="add" >
+    EliteCop, .050
+    EliteHawai, .050
+    EliteSkater, .050
+    EliteSoldier, .050
+    EliteBoomer, .050
+    EliteFeral, .050
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS364']/text()" delim="\n" op="add" >
+    EliteCop, .060
+    EliteHawai, .060
+    EliteSkater, .060
+    EliteSoldier, .060
+    EliteBoomer, .060
+    EliteFeral, .060
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS374']/text()" delim="\n" op="add" >
+    EliteCop, .070
+    EliteHawai, .070
+    EliteSkater, .070
+    EliteSoldier, .070
+    EliteBoomer, .070
+    EliteFeral, .070
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS385']/text()" delim="\n" op="add" >
+    EliteCop, .080
+    EliteHawai, .080
+    EliteSkater, .080
+    EliteSoldier, .080
+    EliteBoomer, .080
+    EliteFeral, .080
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS396']/text()" delim="\n" op="add" >
+    EliteCop, .090
+    EliteHawai, .090
+    EliteSkater, .090
+    EliteSoldier, .090
+    EliteBoomer, .090
+    EliteFeral, .090
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS407']/text()" delim="\n" op="add" >
+    EliteCop, .120
+    EliteHawai, .120
+    EliteSkater, .120
+    EliteSoldier, .120
+    EliteBoomer, .120
+    EliteFeral, .120
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS419']/text()" delim="\n" op="add" >
+    EliteCop, .160
+    EliteHawai, .160
+    EliteSkater, .160
+    EliteSoldier, .160
+    EliteBoomer, .160
+    EliteFeral, .160
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS430']/text()" delim="\n" op="add" >
+    EliteCop, .200
+    EliteHawai, .200
+    EliteSkater, .200
+    EliteSoldier, .200
+    EliteBoomer, .200
+    EliteFeral, .200
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS453']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS453']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS464']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS476']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS488']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS500']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS512']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS524']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS536']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS548']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS560']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS573']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS585']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS598']/text()" delim="\n" op="add" >
+    EliteCop, .300
+    EliteHawai, .300
+    EliteSkater, .300
+    EliteSoldier, .300
+    EliteBoomer, .300
+    EliteFeral, .300
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS610']/text()" delim="\n" op="add" >
+    EliteCop, .350
+    EliteHawai, .350
+    EliteSkater, .350
+    EliteSoldier, .350
+    EliteBoomer, .350
+    EliteFeral, .350
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS623']/text()" delim="\n" op="add" >
+    EliteCop, .400
+    EliteHawai, .400
+    EliteSkater, .400
+    EliteSoldier, .400
+    EliteBoomer, .400
+    EliteFeral, .400
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS636']/text()" delim="\n" op="add" >
+    EliteCop, .450
+    EliteHawai, .450
+    EliteSkater, .450
+    EliteSoldier, .450
+    EliteBoomer, .450
+    EliteFeral, .450
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS649']/text()" delim="\n" op="add" >
+    EliteCop, .500
+    EliteHawai, .500
+    EliteSkater, .500
+    EliteSoldier, .500
+    EliteBoomer, .500
+    EliteFeral, .500
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS662']/text()" delim="\n" op="add" >
+    EliteCop, .550
+    EliteHawai, .550
+    EliteSkater, .550
+    EliteSoldier, .550
+    EliteBoomer, .550
+    EliteFeral, .550
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS662']/text()" delim="\n" op="add" >
+    EliteCop, .600
+    EliteHawai, .600
+    EliteSkater, .600
+    EliteSoldier, .600
+    EliteBoomer, .600
+    EliteFeral, .600
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS688']/text()" delim="\n" op="add" >
+    EliteCop, .650
+    EliteHawai, .650
+    EliteSkater, .650
+    EliteSoldier, .650
+    EliteBoomer, .650
+    EliteFeral, .650
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS688']/text()" delim="\n" op="add" >
+    EliteCop, .700
+    EliteHawai, .700
+    EliteSkater, .700
+    EliteSoldier, .700
+    EliteBoomer, .700
+    EliteFeral, .700
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS729']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS742']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS756']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS769']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS783']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS797']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS811']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS825']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS839']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS853']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS868']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS882']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS896']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS911']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS925']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS940']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS955']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS970']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS985']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1000']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1015']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1030']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1045']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1060']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1075']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1091']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1106']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1122']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1137']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1153']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1169']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1185']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1201']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1217']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1233']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1249']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1265']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1281']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1298']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1314']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1331']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1347']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1364']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1380']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1397']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1414']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1431']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1448']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1465']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1482']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1499']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1516']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1533']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1551']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1568']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1586']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1603']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1621']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1638']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1656']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1674']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1692']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1710']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1728']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1746']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1764']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1782']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1800']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1818']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1837']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1855']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1873']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1892']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1911']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1929']/text()" delim="\n" op="add" >
+    EliteCop, .800
+    EliteHawai, .800
+    EliteSkater, .800
+    EliteSoldier, .800
+    EliteBoomer, .800
+    EliteFeral, .800
+</csv>
+
+
+</configs>

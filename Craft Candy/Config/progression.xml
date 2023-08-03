@@ -1,0 +1,36 @@
+<configs>
+
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']/display_entry[@name_key='medicalT2-1,medicalT2-2,medicalT2-3']">
+		<unlock_entry item="drugCovertCats" unlock_tier="3" />
+		<unlock_entry item="drugJailBreakers" unlock_tier="3" />
+		<unlock_entry item="drugNerdTats" unlock_tier="3" />
+		<unlock_entry item="drugRockBusters" unlock_tier="3" />
+	</append>
+		
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']/display_entry[@name_key='medicalT3-1,medicalT3-2,medicalT3-3']">
+		<unlock_entry item="drugAtomJunkies" unlock_tier="3" />
+		<unlock_entry item="drugEyeKandy" unlock_tier="3" />
+		<unlock_entry item="drugHackers" unlock_tier="3" />
+		<unlock_entry item="drugHealthBar" unlock_tier="3" />
+		<unlock_entry item="drugSkullCrushers" unlock_tier="3" />
+		<unlock_entry item="drugSugarButts" unlock_tier="3" />
+	</append>
+		
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']">
+
+        <effect_group>
+            <passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="drugCovertCats"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="drugAtomJunkies"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="drugEyeKandy"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="drugHackers"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="drugHealthBar"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="drugJailBreakers"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="drugNerdTats"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="drugSkullCrushers"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="drugSugarButts"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="drugRockBusters"/>
+		</effect_group>
+		
+	</append>
+	
+</configs>

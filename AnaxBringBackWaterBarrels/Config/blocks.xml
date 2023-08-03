@@ -1,0 +1,18 @@
+<lootableBarrels>
+<append xpath="/blocks/block[@name='cntBarrelPlasticSingle00']">	
+	<property name="Class" value="Loot"/>
+	<property name='LootList' value = 'cntBarrelPlasticSingle00'/>
+</append>
+<append xpath="/blocks/block[@name='cntBarrelPlasticSingle45']">	
+	<property name="Class" value="Loot"/>
+	<property name='LootList' value = 'cntBarrelPlasticSingle00'/>
+</append>
+<append xpath="/blocks/block[@name='cntBarrelPlasticQuadA']">	
+	<property name="Class" value="Loot"/>
+	<property name='LootList' value = 'cntBarrelPlasticSingle00'/>
+</append>
+<append xpath="/blocks/block[@name='cntBarrelPlasticQuadB']">	
+	<property name="Class" value="Loot"/>
+	<property name='LootList' value = 'cntBarrelPlasticSingle00'/>
+</append>
+</lootableBarrels>

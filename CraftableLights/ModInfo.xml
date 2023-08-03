@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="CraftableLights"/>
+	<DisplayName value="Craftable Lights"/>
+	<Version value="1.1"/>
+	<Description value="Add a crafting recipe for most lights in the game."/>
+	<Author value="LuckyIsh"/>
+	<Website value=""/>
+</xml>

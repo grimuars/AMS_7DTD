@@ -1,0 +1,74 @@
+<AzukiStunBomb>
+	<append xpath="/items">
+		<item name="thrownAmmoStunBomb">
+			<!-- T1 demolitions -->
+			<property name="Tags" value="ammo,weapon,attPerception,perkElectrocutioner"/>
+			<property name="ItemTypeIcon" value="explosion"/>
+			<property name="DisplayType" value="ammoStunGrenade"/>
+			<property name="Class" value="ItemClassTimeBomb"/>
+			<property name="HoldType" value="57"/>
+			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
+			<property name="UnlockedBy" value="craftingExplosives"/>
+			<property name="DropScale" value="2.5"/>
+			<property name="FusePrimeOnActivate" value="true"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="ThrowableDecoy" value="true"/>
+			<property name="Weight" value="0"/>
+			<property name="CustomIcon" value="thrownGrenadeStun1"/>
+			<property name="Stacknumber" value="30"/>
+			<property name="LightValue" value=".5"/>
+			<property name="LightSource" value="lightSource"/>
+			<property name="ActivateObject" value="lightSource"/>
+			<!-- <property name="ActivationTransformToHide" value="Sparks"/> -->
+			<property name="Explosion.ParticleIndex" value="13"/>
+			<property name="Explosion.RadiusBlocks" value="3"/>
+			<property name="Explosion.RadiusEntities" value="3"/>
+			<property name="Explosion.BlastPower" value="35"/>
+			<property name="Explosion.DamageBonus.stone" value=".1"/>
+			<property name="Explosion.DamageBonus.metal" value="0"/>
+			<property name="Explosion.DamageBonus.earth" value="0"/>
+			<property name="Explosion.DamageBonus.water" value="0"/>
+			<property name="Explosion.DamageBonus.wood" value="0"/>
+			<property name="FuseTime" value="20000"/>
+			<!-- theoretically redundant but I don't want to experiment on this -->
+			<property name="ExplodeOnHit" value="true"/>
+			<property name="StickPercent" value=".5"/>
+			<property name="EconomicValue" value="52"/>
+			<property name="Group" value="Ammo/Weapons,Ammo"/>
+			<property name="SoundUnholster" value="grenade_unholster"/>
+			<property class="Action0">
+				<property name="Class" value="ThrowAway"/>
+				<!-- <property name="Hitmask_override" value="Arrow"/> unfortunately this cannot work without a serious rewrite of the hitmask system -->
+				<property name="Delay" value="1.2"/>
+				<!-- obsolete if rounds per minute exists -->
+				<property name="Explosion.ParticleIndex" value="7"/>
+				<property name="Throw_strength_default" value="20"/>
+				<property name="Throw_strength_max" value="50"/>
+				<property name="Max_strain_time" value="1.25"/>
+				<property name="Sound_start" value="swoosh"/>
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+			</property>
+			<property class="Action1">
+				<!-- UseAction -->
+				<property name="Class" value="Activate"/>
+				<property name="Delay" value="1"/>
+				<property name="Sound_start" value="grenade_pullpin"/>
+				<!-- obsolete if rounds per minute exists -->
+			</property>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="positionAOE" range="3.2" cvar=".buffShockedDurationStart" operation="set" value="10"/>
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="positionAOE" range="3.2" buff="buffShocked"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="50" tags="perkElectrocutioner"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="0" tags="perkElectrocutioner"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddPart" part="Sparks" prefab="ParticleEffects/p_electric_shock_small" parentTransform="Handle" localPos="0,-.40,0" localRot="0,0,0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemovePart" part="Sparks"/>
+				<!-- onSelfSecondaryActionEnd onSelfActivate-->
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="DamageElectric" operation="add" value="14"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="ShockCharge" operation="add" value="14"/>
+				<display_value name="dDamageElectric" title_key="statDamageElectric" value="45"/>
+				<display_value name="dShockCharge" title_key="statShockCharge" value="10"/>
+				<display_value name="dExRadius" value="3"/>
+			</effect_group>
+		</item>
+	</append>
+</AzukiStunBomb>

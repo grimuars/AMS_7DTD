@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/recipes">
+		<recipe name="modGunMeleeNiCdBatteryDA" count="1" craft_time="400" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceTitanium" count="15"/>
+			<ingredient name="resourceElectricParts" count="45"/>
+			<ingredient name="resourcePE" count="60"/>
+			<ingredient name="resourceAcid" count="10"/>
+		</recipe>
+		<!-- XP ammo recipes -->
+		<recipe name="ammo762mmBulletXP" count="2" craft_time="2" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="4"/>
+			<ingredient name="resourceGunPowder" count="16"/>
+			<ingredient name="resourceElectricParts" count="6"/>
+			<ingredient name="resourceBulletCasing" count="2"/>
+		</recipe>
+		<recipe name="ammoBundle762mmBulletXP" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammo762mmBulletXP" count="1000"/>
+		</recipe>
+		<recipe name="ammoBundle762mmBulletXP" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1600"/>
+			<ingredient name="resourceGunPowder" count="6400"/>
+			<ingredient name="resourceElectricParts" count="2400"/>
+			<ingredient name="resourceBulletCasing" count="800"/>
+		</recipe>
+		<recipe name="ammo9mmBulletXP" count="1" craft_time="2" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="4"/>
+			<ingredient name="resourceGunPowder" count="16"/>
+			<ingredient name="resourceElectricParts" count="6"/>
+			<ingredient name="resourceBulletCasing" count="2"/>
+		</recipe>
+		<recipe name="ammoBundle9mmBulletXP" count="60" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammo9mmBulletXP" count="1000"/>
+		</recipe>
+		<recipe name="ammoBundle9mmBulletXP" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1600"/>
+			<ingredient name="resourceGunPowder" count="6400"/>
+			<ingredient name="resourceElectricParts" count="2400"/>
+			<ingredient name="resourceBulletCasing" count="800"/>
+		</recipe>
+	</append>
+</configs>

@@ -1,0 +1,7 @@
+Key,English,Russian
+EliteCop,Elite Cop,Элитный полицейский
+EliteSoldier,Elite Soldier,Элитный солдат
+EliteHawai,Elite Hawai,Элитный гаваец
+EliteSkater,Elite Skater,Элитный скейтер
+EliteFeral,Elite Feral,Элитный упырь
+EliteBoomer,Elite Boomer,Элитный подрывник

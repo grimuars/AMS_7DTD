@@ -1,0 +1,10 @@
+<AzukiStunBomb>
+	<append xpath="/ui_display_info/item_display">
+		<!-- Adds new stunbomb UI-->
+		<item_display_info display_type="ammoStunGrenade" display_group="groupAmmo">
+			<display_entry name="dDamageElectric" title_key="Электрический урон"/>
+			<display_entry name="dShockCharge" title_key="Длительность электрошока" display_type="Time"/>
+			<display_entry name="dExRadius" title_key="statExRadius"/>
+		</item_display_info>
+	</append>
+</AzukiStunBomb>

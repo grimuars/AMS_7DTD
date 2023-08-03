@@ -1,0 +1,13 @@
+<config>
+	<!-- Меняем размер модификаций под новый размер рюкзака -->
+	<set xpath="/item_modifiers/item_modifier[@name='modClothingStoragePocket']//passive_effect[@name='CarryCapacity']/@value">5</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modClothingStoragePocket']//display_value[@name='dCarryCapacity']/@value">5</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modClothingCargoStoragePocket']//passive_effect[@name='CarryCapacity']/@value">10</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modClothingCargoStoragePocket']//display_value[@name='dCarryCapacity']/@value">10</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorStoragePocket']//passive_effect[@name='CarryCapacity']/@value">5</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorStoragePocket']//display_value[@name='dCarryCapacity']/@value">5</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorDoubleStoragePocket']//passive_effect[@name='CarryCapacity']/@value">10</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorDoubleStoragePocket']//display_value[@name='dCarryCapacity']/@value">10</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorTripleStoragePocket']//passive_effect[@name='CarryCapacity']/@value">15</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorTripleStoragePocket']//display_value[@name='dCarryCapacity']/@value">15</set>
+</config>
