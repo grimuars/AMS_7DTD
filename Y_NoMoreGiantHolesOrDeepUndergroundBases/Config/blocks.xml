@@ -1,0 +1,444 @@
+<Configs>
+	<append xpath="/blocks">
+		<block name="rockResourceRespawner">
+			<property name="DisplayInfo" value="Description"/>
+			<property name="DescriptionKey" value="resourceRespawnerDesc"/>
+			<property name="Tags" value="surfaceOreRespawner"/>
+			<property name="CustomIcon" value="rock01"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="Mbedrock"/>
+			<property name="PassThroughDamage" value="false"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/stoneAPrefab"/>
+			<property name="LODCullScale" value=".65"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="CanPickup" value="false"/>
+			<property name="Collide" value=""/>
+			<property name="CanMobsSpawnOn" value="false"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+			<property name="IndexName" value="quest_stone"/>
+			<drop event="Fall" name="rockResourceRespawner" count="1" prob="1" stick_chance="1"/>
+			<property name="PlantGrowing.Next" value="rockResource"/>
+			<property name="PlantGrowing.GrowthRate" value="15"/>
+			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+		<block name="rockResource02Respawner">
+			<property name="DisplayInfo" value="Description"/>
+			<property name="DescriptionKey" value="resourceRespawnerDesc"/>
+			<property name="Tags" value="surfaceOreRespawner"/>
+			<property name="CustomIcon" value="rock01"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="Mbedrock"/>
+			<property name="PassThroughDamage" value="false"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/stoneBPrefab"/>
+			<property name="LODCullScale" value=".65"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="CanPickup" value="false"/>
+			<property name="Collide" value=""/>
+			<property name="CanMobsSpawnOn" value="false"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+			<property name="IndexName" value="quest_stone"/>
+			<drop event="Fall" name="rockResource02Respawner" count="1" prob="1" stick_chance="1"/>
+			<property name="PlantGrowing.Next" value="rockResource02"/>
+			<property name="PlantGrowing.GrowthRate" value="15"/>
+			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+		<block name="oreIronBoulderRespawner">
+			<property name="DisplayInfo" value="Description"/>
+			<property name="DescriptionKey" value="resourceRespawnerDesc"/>
+			<property name="Tags" value="surfaceOreRespawner"/>
+			<property name="CustomIcon" value="rock01"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="Mbedrock"/>
+			<property name="PassThroughDamage" value="false"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/stoneAPrefab"/>
+			<property name="LODCullScale" value=".65"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="CanPickup" value="false"/>
+			<property name="Collide" value=""/>
+			<property name="CanMobsSpawnOn" value="false"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+			<property name="IndexName" value="quest_stone"/>
+			<drop event="Fall" name="oreIronBoulderRespawner" count="1" prob="1" stick_chance="1"/>
+			<property name="PlantGrowing.Next" value="oreIronBoulder"/>
+			<property name="PlantGrowing.GrowthRate" value="15"/>
+			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+		<block name="oreLeadBoulderRespawner">
+			<property name="DisplayInfo" value="Description"/>
+			<property name="DescriptionKey" value="resourceRespawnerDesc"/>
+			<property name="Tags" value="surfaceOreRespawner"/>
+			<property name="CustomIcon" value="rock01"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="Mbedrock"/>
+			<property name="PassThroughDamage" value="false"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/stoneAPrefab"/>
+			<property name="LODCullScale" value=".65"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="CanPickup" value="false"/>
+			<property name="Collide" value=""/>
+			<property name="CanMobsSpawnOn" value="false"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+			<property name="IndexName" value="quest_stone"/>
+			<drop event="Fall" name="oreLeadBoulderRespawner" count="1" prob="1" stick_chance="1"/>
+			<property name="PlantGrowing.Next" value="oreLeadBoulder"/>
+			<property name="PlantGrowing.GrowthRate" value="15"/>
+			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+		<block name="oreCoalBoulderRespawner">
+			<property name="DisplayInfo" value="Description"/>
+			<property name="DescriptionKey" value="resourceRespawnerDesc"/>
+			<property name="Tags" value="surfaceOreRespawner"/>
+			<property name="CustomIcon" value="rock01"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="Mbedrock"/>
+			<property name="PassThroughDamage" value="false"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/stoneAPrefab"/>
+			<property name="LODCullScale" value=".65"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="CanPickup" value="false"/>
+			<property name="Collide" value=""/>
+			<property name="CanMobsSpawnOn" value="false"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+			<property name="IndexName" value="quest_stone"/>
+			<drop event="Fall" name="oreCoalBoulderRespawner" count="1" prob="1" stick_chance="1"/>
+			<property name="PlantGrowing.Next" value="oreCoalBoulder"/>
+			<property name="PlantGrowing.GrowthRate" value="15"/>
+			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+		<block name="orePotassiumNitrateBoulderRespawner">
+			<property name="DisplayInfo" value="Description"/>
+			<property name="DescriptionKey" value="resourceRespawnerDesc"/>
+			<property name="Tags" value="surfaceOreRespawner"/>
+			<property name="CustomIcon" value="rock01"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="Mbedrock"/>
+			<property name="PassThroughDamage" value="false"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/stoneAPrefab"/>
+			<property name="LODCullScale" value=".65"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="CanPickup" value="false"/>
+			<property name="Collide" value=""/>
+			<property name="CanMobsSpawnOn" value="false"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+			<property name="IndexName" value="quest_stone"/>
+			<drop event="Fall" name="orePotassiumNitrateBoulderRespawner" count="1" prob="1" stick_chance="1"/>
+			<property name="PlantGrowing.Next" value="orePotassiumNitrateBoulder"/>
+			<property name="PlantGrowing.GrowthRate" value="15"/>
+			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+		<block name="oreShaleBoulderRespawner">
+			<property name="DisplayInfo" value="Description"/>
+			<property name="DescriptionKey" value="resourceRespawnerDesc"/>
+			<property name="Tags" value="surfaceOreRespawner"/>
+			<property name="CustomIcon" value="rock01"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="Mbedrock"/>
+			<property name="PassThroughDamage" value="false"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/stoneAPrefab"/>
+			<property name="LODCullScale" value=".65"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="CanPickup" value="false"/>
+			<property name="Collide" value=""/>
+			<property name="CanMobsSpawnOn" value="false"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+			<property name="IndexName" value="quest_stone"/>
+			<drop event="Fall" name="oreShaleBoulderRespawner" count="1" prob="1" stick_chance="1"/>
+			<property name="PlantGrowing.Next" value="oreShaleBoulder"/>
+			<property name="PlantGrowing.GrowthRate" value="15"/>
+			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+		</block>
+	</append>
+	<append xpath="/blocks/block[@name='rockResource']">
+		<property name="DisplayInfo" value="Description"/>
+		<property name="DescriptionKey" value="rockResourceDesc"/>
+		<drop event="Fall" name="rockResourceRespawner" count="1" prob="1" stick_chance="1"/>
+	</append>
+	<append xpath="/blocks/block [contains(@name, 'rockResource02')]">
+		<drop event="Fall" name="rockResource02Respawner" count="1" prob="1" stick_chance="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='rockResourceBroke2']">
+		<property name="Tags" value="surfaceOre"/>
+		<property name="PassThroughDamage" value="false"/>
+		<property name="DowngradeBlock" value="rockResourceRespawner"/>
+	</append>
+	<append xpath="/blocks/block[@name='rockResource02Broke2']">
+		<property name="Tags" value="surfaceOre"/>
+		<property name="PassThroughDamage" value="false"/>
+		<property name="DowngradeBlock" value="rockResource02Respawner"/>
+	</append>
+	<append xpath="/blocks/block[@name='oreIronBoulder']">
+		<property name="DisplayInfo" value="Description"/>
+		<property name="DescriptionKey" value="oreIronBoulderRespawnerDesc"/>
+		<property name="PassThroughDamage" value="false"/>
+		<property name="DowngradeBlock" value="oreIronBoulderRespawner"/>
+		<drop event="Fall" name="oreIronBoulderRespawner" count="1" prob="1" stick_chance="1"/>
+		<drop event="Harvest" name="resourceRawDiamond" prob=".05" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceSilverNugget" prob=".1" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceGoldNugget" prob=".07" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='oreLeadBoulder']">
+		<property name="DisplayInfo" value="Description"/>
+		<property name="DescriptionKey" value="oreLeadBoulderRespawnerDesc"/>
+		<property name="PassThroughDamage" value="false"/>
+		<property name="DowngradeBlock" value="oreLeadBoulderRespawner"/>
+		<drop event="Fall" name="oreLeadBoulderRespawner" count="1" prob="1" stick_chance="1"/>
+		<drop event="Harvest" name="resourceRawDiamond" prob=".05" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceSilverNugget" prob=".1" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceGoldNugget" prob=".07" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='oreCoalBoulder']">
+		<property name="DisplayInfo" value="Description"/>
+		<property name="DescriptionKey" value="oreCoalBoulderRespawnerDesc"/>
+		<property name="PassThroughDamage" value="false"/>
+		<property name="DowngradeBlock" value="oreCoalBoulderRespawner"/>
+		<drop event="Fall" name="oreCoalBoulderRespawner" count="1" prob="1" stick_chance="1"/>
+		<drop event="Harvest" name="resourceRawDiamond" prob=".05" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceSilverNugget" prob=".1" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceGoldNugget" prob=".07" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='orePotassiumNitrateBoulder']">
+		<property name="DisplayInfo" value="Description"/>
+		<property name="DescriptionKey" value="orePotassiumNitrateBoulderRespawnerDesc"/>
+		<property name="PassThroughDamage" value="false"/>
+		<property name="DowngradeBlock" value="orePotassiumNitrateBoulderRespawner"/>
+		<drop event="Fall" name="orePotassiumNitrateBoulderRespawner" count="1" prob="1" stick_chance="1"/>
+		<drop event="Harvest" name="resourceRawDiamond" prob=".05" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceSilverNugget" prob=".1" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceGoldNugget" prob=".07" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='oreShaleBoulder']">
+		<property name="DisplayInfo" value="Description"/>
+		<property name="DescriptionKey" value="oreShaleBoulderRespawnerDesc"/>
+		<property name="PassThroughDamage" value="false"/>
+		<property name="DowngradeBlock" value="oreShaleBoulderRespawner"/>
+		<drop event="Fall" name="oreShaleBoulderRespawner" count="1" prob="1" stick_chance="1"/>
+		<drop event="Harvest" name="resourceRawDiamond" prob=".05" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceSilverNugget" prob=".1" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="resourceGoldNugget" prob=".07" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	</append>
+	<set xpath="blocks/block [contains(@name, 'rockResource')]/drop [@event='Harvest'and(@count='22')]/@count">330</set>
+	<!-- Добавляем дроп глины и песка с больших булыжников, учитывая изменения -->
+	<append xpath="blocks/block [contains(@name, 'rockResource')]">
+		<drop event="Harvest" name="resourceClayLump" count="330" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceCrushedSand" count="330" tag="oreWoodHarvest"/>
+	</append>
+	<set xpath="blocks/block [contains(@name, 'oreBoulderMaster')]/drop [@event='Harvest'and(@count='14')]/@count">220</set>
+	<!-- Добавляем дроп глины и песка с больших булыжников, учитывая изменения -->
+	<append xpath="blocks/block [contains(@name, 'oreBoulderMaster')]">
+		<drop event="Harvest" name="resourceClayLump" count="220" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceCrushedSand" count="220" tag="oreWoodHarvest"/>
+	</append>
+	<!-- Делаем бедрок пригодным для роста растений -->
+	<set xpath="blocks/block[@name='terrBedrock']/property[@name='DisplayType']/@value">blockTerrainFertile</set>
+	<!-- Настраиваем дроп с возобновляемых булыжников -->
+	<set xpath="blocks/block [contains(@name, 'reIron')]/drop [@event='Harvest'and(@count='105')]/@count">7500</set>
+	<set xpath="blocks/block [contains(@name, 'reLead')]/drop [@event='Harvest'and(@count='50')]/@count">4500</set>
+	<set xpath="blocks/block [contains(@name, 'reCoal')]/drop [@event='Harvest'and(@count='50')]/@count">4500</set>
+	<set xpath="blocks/block [contains(@name, 'rePotassiumNitrate')]/drop [@event='Harvest'and(@count='50')]/@count">4500</set>
+	<set xpath="blocks/block [contains(@name, 'reOilDeposit')]/drop [@event='Harvest'and(@count='50')]/@count">4500</set>
+	<set xpath="blocks/block [contains(@name, 'reShale')]/drop [@event='Harvest'and(@count='50')]/@count">4500</set>
+	<!-- Делаем неразрушимыми камень, гравий и руды -->
+	<set xpath="/blocks/block[@name='terrStone']/property[@name='Material']/@value">Mbedrock</set>
+	<set xpath="/blocks/block[@name='terrGravel']/property[@name='Material']/@value">Mbedrock</set>
+	<set xpath="/blocks/block[@name='terrOreIron']/property[@name='Material']/@value">Mbedrock</set>
+	<set xpath="/blocks/block[@name='terrOreLead']/property[@name='Material']/@value">Mbedrock</set>
+	<set xpath="/blocks/block[@name='terrOreCoal']/property[@name='Material']/@value">Mbedrock</set>
+	<!-- Добавляем в неразрушимые асфальт, землю и песок -->
+	<set xpath="/blocks/block[@name='terrDirt']/property[@name='Material']/@value">Mbedrock</set>
+	<set xpath="/blocks/block[@name='terrForestGround']/property[@name='Material']/@value">Mbedrock</set>
+	<set xpath="/blocks/block[@name='terrBurntForestGround']/property[@name='Material']/@value">Mbedrock</set>
+	<set xpath="/blocks/block[@name='terrDestroyedStone']/property[@name='Material']/@value">Mbedrock</set>
+	<set xpath="/blocks/block[@name='terrDesertGround']/property[@name='Material']/@value">Mbedrock</set>
+	<set xpath="/blocks/block[@name='terrSand']/property[@name='Material']/@value">Mbedrock</set>
+	<set xpath="/blocks/block[@name='terrAsphalt']/property[@name='Material']/@value">Mbedrock</set>
+	<set xpath="/blocks/block[@name='terrOrePotassiumNitrate']/property[@name='Material']/@value">Mbedrock</set>
+	<set xpath="/blocks/block[@name='terrOreOilDeposit']/property[@name='Material']/@value">Mbedrock</set>
+	<set xpath="/blocks/block[@name='rockResource']/property[@name='Material']/@value">OreRock</set>
+	<set xpath="/blocks/block[@name='oreBoulderMaster']/property[@name='Material']/@value">OreStone</set>
+	<set xpath="/blocks/block[@name='oreIronBoulder']/property[@name='Material']/@value">OreMetal</set>
+	<set xpath="/blocks/block[@name='oreLeadBoulder']/property[@name='Material']/@value">OreMetal</set>
+	<set xpath="blocks/block [contains(@name, 'terrDestroyedStone')]/drop [@event='Harvest'and(@count='12')]/@count">24</set>
+	<set xpath="blocks/block [contains(@name, 'terrOre')]/property[@name='DescriptionKey']/@value">oreVeinDesc</set>
+	<set xpath="blocks/block[@name='terrSandStone']/property[@name='DescriptionKey']/@value">stoneResourceDesc</set>
+	<append xpath="/blocks/block[@name='terrOreIron']">
+		<property name="DisplayInfo" value="Description"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrOreLead']">
+		<property name="DisplayInfo" value="Description"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrOreCoal']">
+		<property name="DisplayInfo" value="Description"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrOrePotassiumNitrate']">
+		<property name="DisplayInfo" value="Description"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrOreOilDeposit']">
+		<property name="DisplayInfo" value="Description"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrStone']">
+		<property name="DisplayInfo" value="Description"/>
+		<property name="DescriptionKey" value="stoneResourceDesc"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrDirt']">
+		<property name="DisplayInfo" value="Description"/>
+		<property name="DescriptionKey" value="stoneResourceDesc"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrForestGround']">
+		<property name="DisplayInfo" value="Description"/>
+		<property name="DescriptionKey" value="stoneResourceDesc"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrBurntForestGround']">
+		<property name="DisplayInfo" value="Description"/>
+		<property name="DescriptionKey" value="stoneResourceDesc"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrDesertGround']">
+		<property name="DisplayInfo" value="Description"/>
+		<property name="DescriptionKey" value="stoneResourceDesc"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrSand']">
+		<property name="DisplayInfo" value="Description"/>
+		<property name="DescriptionKey" value="stoneResourceDesc"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrGravel']">
+		<property name="DisplayInfo" value="Description"/>
+		<property name="DescriptionKey" value="gravelResourceDesc"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrDirt']">
+		<drop event="Harvest" name="resourceRockSmall" count="11" tag="oreWoodHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrForestGround']">
+		<drop event="Harvest" name="resourceRockSmall" count="11" tag="oreWoodHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrBurntForestGround']">
+		<drop event="Harvest" name="resourceRockSmall" count="11" tag="oreWoodHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrDesertGround']">
+		<drop event="Harvest" name="resourceRockSmall" count="9" tag="oreWoodHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrSand']">
+		<drop event="Harvest" name="resourceRockSmall" count="2" tag="oreWoodHarvest"/>
+	</append>
+	<append xpath="/blocks">
+		<block name="Stone">
+			<property name="CustomIcon" value="terrStone"/>
+			<property name="Material" value="Mstone"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="Shape" value="Terrain"/>
+			<property name="Mesh" value="terrain"/>
+			<property name="Texture" value="1"/>
+			<property name="TerrainIndex" value="1"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="LPHardnessScale" value="2"/>
+			<property name="Weight" value="125"/>
+			<property name="Map.Color" value="100,100,100"/>
+			<property class="RepairItems">
+				<property name="resourceCobblestones" value="6"/>
+			</property>
+			<drop event="Harvest" name="resourceRockSmall" count="55" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="resourceRockSmall" count="44" prob="0.23" stick_chance="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
+			<property name="CanMobsSpawnOn" value="true"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+			<property name="SortOrder1" value="0000"/>
+			<property name="SortOrder2" value="0101"/>
+			<property name="DisplayType" value="blockTerrain"/>
+		</block>
+		<block name="Gravel">
+			<property name="CustomIcon" value="terrGravel"/>
+			<property name="Tags" value="terrGravel"/>
+			<property name="CustomIcon" value="terrGravel"/>
+			<property name="Material" value="Mgravel"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="Shape" value="Terrain"/>
+			<property name="Mesh" value="terrain"/>
+			<property name="Texture" value="11"/>
+			<property name="TerrainIndex" value="5"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="Map.Color" value="158,139,124"/>
+			<!-- gravel: 7 sand, 8 rocks  (1/2 the hit points of stone) -->
+			<drop event="Harvest" name="resourceCrushedSand" count="8" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceRockSmall" count="9" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="resourceCrushedSand" count="23" prob="0.16" stick_chance="0"/>
+			<drop event="Fall" name="resourceRockSmall" count="26" prob="0.16" stick_chance="0"/>
+			<property name="CanMobsSpawnOn" value="true"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="20"/>
+			<property class="RepairItems">
+				<property name="resourceCobblestones" value="6"/>
+			</property>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+			<property name="SortOrder1" value="0000"/>
+			<property name="SortOrder2" value="0801"/>
+			<property name="DisplayType" value="blockTerrainFertile"/>
+		</block>
+	</append>
+</Configs>
