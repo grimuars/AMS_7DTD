@@ -1,0 +1,146 @@
+<Dementive>
+	<append xpath="/lootcontainers/lootprobtemplates">
+		<lootprobtemplate name="DementiveRaresT1">
+			<loot level="1,999999" prob="0.003"/>
+			<!-- 1 / 1000  -->
+		</lootprobtemplate>
+		<lootprobtemplate name="DementiveRaresT2">
+			<loot level="1,999999" prob="0.006"/>
+			<!-- 1 / 500  -->
+		</lootprobtemplate>
+		<lootprobtemplate name="DementiveRaresT3">
+			<loot level="1,999999" prob="0.009"/>
+			<!-- 1 / 250  -->
+		</lootprobtemplate>
+		<lootprobtemplate name="DementiveRaresT4">
+			<loot level="1,999999" prob="0.012"/>
+			<!-- 1 / 125 -->
+		</lootprobtemplate>
+		<lootprobtemplate name="DementiveRaresT5">
+			<loot level="1,999999" prob="0.015"/>
+			<!-- 1 / 100 -->
+		</lootprobtemplate>
+	</append>
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupScrapCommon']">
+		<lootgroup name="groupDementiveAll" count="1">
+			<item name="DementiveHughsGlock"/>
+			<item name="DementiveDesertRedeemer"/>
+			<item name="DementivegunHandgunT2Magnum44"/>
+			<item name="DementivegunHandgunT3SMG5"/>
+			<item name="DementivegunMGT1AK47"/>
+			<item name="DementivegunMGT2TacticalAR"/>
+			<item name="DementivegunMGT3M60"/>
+			<item name="DementivegunRifleT1HuntingRifle"/>
+			<item name="DementivegunRifleT2LeverActionRifle"/>
+			<item name="DementivegunRifleT3SniperRifle"/>
+			<item name="DementivegunShotgunT1DoubleBarrel"/>
+			<item name="DementivegunShotgunT3AutoShotgun"/>
+			<item name="DementivegunShotgunT2PumpShotgun"/>
+			<item name="DementivegunRocketFinale"/>
+			<item name="DementivegunTrifecta"/>
+			<item name="DementivegunPacifier"/>
+			<item name="DementivemeleeToolAxeT1IronFireaxe"/>
+			<item name="DementivemeleeToolAxeT2SteelAxe"/>
+			<item name="DementivemeleeToolAxeT3Auger"/>
+			<item name="DementivemeleeToolAxeT3Chainsaw"/>
+			<item name="DementivemeleeToolArchitect"/>
+			<item name="DementivemeleeWpnBladeHellHound"/>
+			<item name="DementivemeleeWpnBatonT2StunBaton"/>
+			<item name="DementivemeleeWpnClubT3SteelClub"/>
+			<item name="DementivemeleeWpnKnucklesT3SteelKnuckles"/>
+			<item name="DementivemeleeWpnSledgeT3SteelSledgehammer"/>
+			<item name="DementivemeleeWpnSpearT3SteelSpear"/>
+		</lootgroup>
+		<lootgroup name="groupDementiveRanged" count="1">
+			<item name="DementiveHughsGlock"/>
+			<item name="DementiveDesertRedeemer"/>
+			<item name="DementivegunHandgunT2Magnum44"/>
+			<item name="DementivegunHandgunT3SMG5"/>
+			<item name="DementivegunMGT1AK47"/>
+			<item name="DementivegunMGT2TacticalAR"/>
+			<item name="DementivegunMGT3M60"/>
+			<item name="DementivegunRifleT1HuntingRifle"/>
+			<item name="DementivegunRifleT2LeverActionRifle"/>
+			<item name="DementivegunRifleT3SniperRifle"/>
+			<item name="DementivegunShotgunT1DoubleBarrel"/>
+			<item name="DementivegunShotgunT3AutoShotgun"/>
+			<item name="DementivegunShotgunT2PumpShotgun"/>
+			<item name="DementivegunRocketFinale"/>
+			<item name="DementivegunTrifecta"/>
+			<item name="DementivegunPacifier"/>
+		</lootgroup>
+		<lootgroup name="groupDementiveMelee" count="1">
+			<item name="DementivemeleeToolAxeT1IronFireaxe"/>
+			<item name="DementivemeleeToolAxeT2SteelAxe"/>
+			<item name="DementivemeleeToolAxeT3Auger"/>
+			<item name="DementivemeleeToolAxeT3Chainsaw"/>
+			<item name="DementivemeleeToolArchitect"/>
+			<item name="DementivemeleeWpnBladeHellHound"/>
+			<item name="DementivemeleeWpnBatonT2StunBaton"/>
+			<item name="DementivemeleeWpnClubT3SteelClub"/>
+			<item name="DementivemeleeWpnKnucklesT3SteelKnuckles"/>
+			<item name="DementivemeleeWpnSledgeT3SteelSledgehammer"/>
+			<item name="DementivemeleeWpnSpearT3SteelSpear"/>
+		</lootgroup>
+		<lootgroup name="groupDementiveTools" count="1">
+			<item name="DementivemeleeToolAxeT1IronFireaxe"/>
+			<item name="DementivemeleeToolAxeT2SteelAxe"/>
+			<item name="DementivemeleeToolAxeT3Auger"/>
+			<item name="DementivemeleeToolAxeT3Chainsaw"/>
+			<item name="DementivemeleeToolArchitect"/>
+		</lootgroup>
+		<lootgroup name="groupDementiveAxes" count="1">
+			<item name="DementivemeleeToolAxeT1IronFireaxe"/>
+			<item name="DementivemeleeToolAxeT2SteelAxe"/>
+		</lootgroup>
+	</insertBefore>
+	<append xpath="/lootcontainers/lootgroup[@name='groupFireTruck03']">
+		<item group="groupDementiveAxes" loot_prob_template="DementiveRaresT3" force_prob="true"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupToolsT3']">
+		<item group="groupDementiveTools" loot_prob_template="DementiveRaresT3" force_prob="true"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestToolsT3']">
+		<item group="groupDementiveTools" loot_prob_template="DementiveRaresT3" force_prob="true"/>
+	</append>
+	<!-- Lootable from the following -->
+	<append xpath="//lootgroup[@name='groupSmallSafeLoot']">
+		<item group="groupDementiveAll" loot_prob_template="DementiveRaresT2" force_prob="true"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupGunSafeSecure']">
+		<item group="groupDementiveRanged" loot_prob_template="DementiveRaresT4" force_prob="true"/>
+	</append>
+	<!-- Locked Iron Chest -->
+	<append xpath="//lootgroup[@name='groupReinforcedChestT3']">
+		<item group="groupDementiveAll" loot_prob_template="DementiveRaresT3" force_prob="true"/>
+	</append>
+	<!-- Locked Small Hardened Chest -->
+	<append xpath="//lootgroup[@name='groupHardenedChestT4']">
+		<item group="groupDementiveAll" loot_prob_template="DementiveRaresT4" force_prob="true"/>
+	</append>
+	<!-- Locked Large Hardened Chest -->
+	<append xpath="//lootgroup[@name='groupHardenedChestT5']">
+		<item group="groupDementiveAll" loot_prob_template="DementiveRaresT5" force_prob="true"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupZpackBoss']">
+		<item group="groupDementiveAll" loot_prob_template="DementiveRaresT3" force_prob="true"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupZpackStrong']">
+		<item group="groupDementiveAll" loot_prob_template="DementiveRaresT2" force_prob="true"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupZpackReg']">
+		<item group="groupDementiveAll" loot_prob_template="DementiveRaresT1" force_prob="true"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupHiddenStash']">
+		<item group="groupDementiveAll" loot_prob_template="DementiveRaresT2" force_prob="true"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupBuriedWeaponChest']">
+		<item group="groupDementiveAll" loot_prob_template="DementiveRaresT2" force_prob="true"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupBuriedTreasure']">
+		<item group="groupDementiveAll" loot_prob_template="DementiveRaresT3" force_prob="true"/>
+		<item group="groupDementiveRanged" loot_prob_template="DementiveRaresT3" force_prob="true"/>
+		<item group="groupDementiveMelee" loot_prob_template="DementiveRaresT3" force_prob="true"/>
+		<item group="groupDementiveTools" loot_prob_template="DementiveRaresT3" force_prob="true"/>
+	</append>
+</Dementive>
