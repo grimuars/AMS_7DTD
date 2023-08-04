@@ -6,20 +6,20 @@
 	<!-- Пассивные баффы в зависимости от уровня игрока -->
 	<insertAfter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='PlayerExpGain' and @tags='Upgrading']">
 		<!-- До 50 уровня 10% опыта от торговли -->
-		<passive_effect name="PlayerExpGain" operation="base_set" value="0.1" tags="Selling">
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="-0.9" tags="Selling">
 			<requirement name="PlayerLevel" operation="LT" value="50"/>
 		</passive_effect>
 		<!-- До 50 уровня 50% опыта от добычи -->
 		<passive_effect name="PlayerExpGain" operation="perc_add" value="-0.5" tags="Harvesting">
 			<requirement name="PlayerLevel" operation="LT" value="50"/>
 		</passive_effect>
-		<!-- До 50 уровня в 2 раза больше опыта от убийств -->
-		<passive_effect name="PlayerExpGain" operation="perc_add" value="2" tags="Kill">
+		<!-- До 50 уровня в 3 раза больше опыта от убийств -->
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="3" tags="Kill">
 			<requirement name="PlayerLevel" operation="LT" value="50"/>
 		</passive_effect>
-		<!-- После 50 уровня - в 3 раза больше опыта за квесты -->
+		<!-- С 75 уровня - в 3 раза больше опыта за квесты -->
 		<passive_effect name="PlayerExpGain" operation="perc_add" value="3" tags="Quest">
-			<requirement name="PlayerLevel" operation="GTE" value="50"/>
+			<requirement name="PlayerLevel" operation="GTE" value="75"/>
 		</passive_effect>
 	</insertAfter>
 	<!--Увеличиваем параметры переносных пушек-->
@@ -79,7 +79,7 @@
 	<!-- Выпавшие вещмешки лежат дольше -->
 	<set xpath="/entity_classes/entity_class[@name='DroppedLootContainer']/property[@name='TimeStayAfterDeath']/@value">300</set>
 	<set xpath="/entity_classes/entity_class[starts-with(@name, 'EntityLootContainer')]/property[@name='TimeStayAfterDeath']/@value">1800</set>
-	<!-- Трупы зомби исчезают через 8 секунд -->
+	<!-- Трупы зомби исчезают через 6 секунд -->
 	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">6</set>
 	<!-- С босса-кабана падает гнилое мясо -->
 	<setattribute xpath="/entity_classes/entity_class[@name='animalBossGrace']//drop[1]" name="name">foodRottingFlesh</setattribute>
