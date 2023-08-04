@@ -649,6 +649,7 @@
 		<item name="challenge31Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="ec8f7f"/>
 			<property name="DescriptionKey" value="challenge31ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -670,6 +671,7 @@
 		<item name="challenge32Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="ec8f7f"/>
 			<property name="DescriptionKey" value="challenge32ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -691,6 +693,7 @@
 		<item name="challenge33Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="ec8f7f"/>
 			<property name="DescriptionKey" value="challenge33ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -712,6 +715,7 @@
 		<item name="challenge34Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="ec8f7f"/>
 			<property name="DescriptionKey" value="challenge34ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -733,6 +737,7 @@
 		<item name="challenge35Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="ec8f7f"/>
 			<property name="DescriptionKey" value="challenge35ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -754,6 +759,7 @@
 		<item name="challenge36Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="ec8f7f"/>
 			<property name="DescriptionKey" value="challenge36ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -775,6 +781,7 @@
 		<item name="challenge37Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="ec8f7f"/>
 			<property name="DescriptionKey" value="challenge37ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -796,6 +803,7 @@
 		<item name="challenge38Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="ec8f7f"/>
 			<property name="DescriptionKey" value="challenge38ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -817,6 +825,7 @@
 		<item name="challenge39Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="ec8f7f"/>
 			<property name="DescriptionKey" value="challenge39ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -838,6 +847,7 @@
 		<item name="challenge40Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
+			<property name="CustomIconTint" value="ec8f7f"/>
 			<property name="DescriptionKey" value="challenge40ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -859,7 +869,7 @@
 		<item name="challenge41Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
-			<property name="CustomIconTint" value="f04e1f"/>
+			<property name="CustomIconTint" value="a73d47"/>
 			<property name="DescriptionKey" value="challenge41ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -881,7 +891,7 @@
 		<item name="challenge42Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
-			<property name="CustomIconTint" value="f04e1f"/>
+			<property name="CustomIconTint" value="a73d47"/>
 			<property name="DescriptionKey" value="challenge42ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -903,7 +913,7 @@
 		<item name="challenge43Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
-			<property name="CustomIconTint" value="f04e1f"/>
+			<property name="CustomIconTint" value="a73d47"/>
 			<property name="DescriptionKey" value="challenge43ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -925,7 +935,7 @@
 		<item name="challenge44Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
-			<property name="CustomIconTint" value="f04e1f"/>
+			<property name="CustomIconTint" value="a73d47"/>
 			<property name="DescriptionKey" value="challenge44ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -947,7 +957,7 @@
 		<item name="challenge45Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
-			<property name="CustomIconTint" value="f04e1f"/>
+			<property name="CustomIconTint" value="a73d47"/>
 			<property name="DescriptionKey" value="challenge45ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -969,7 +979,7 @@
 		<item name="challenge46Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
-			<property name="CustomIconTint" value="f04e1f"/>
+			<property name="CustomIconTint" value="a73d47"/>
 			<property name="DescriptionKey" value="challenge46ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -991,7 +1001,7 @@
 		<item name="challenge47Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
-			<property name="CustomIconTint" value="f04e1f"/>
+			<property name="CustomIconTint" value="a73d47"/>
 			<property name="DescriptionKey" value="challenge47ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -1013,7 +1023,7 @@
 		<item name="challenge48Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
-			<property name="CustomIconTint" value="f04e1f"/>
+			<property name="CustomIconTint" value="a73d47"/>
 			<property name="DescriptionKey" value="challenge48ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -1035,7 +1045,7 @@
 		<item name="challenge49Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
-			<property name="CustomIconTint" value="f04e1f"/>
+			<property name="CustomIconTint" value="a73d47"/>
 			<property name="DescriptionKey" value="challenge49ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -1057,7 +1067,7 @@
 		<item name="challenge50Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
-			<property name="CustomIconTint" value="f04e1f"/>
+			<property name="CustomIconTint" value="a73d47"/>
 			<property name="DescriptionKey" value="challenge50ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -1072,48 +1082,6 @@
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
 				<property name="QuestGiven" value="challenge50Zombie"/>
-				<property name="Delay" value="0"/>
-				<property name="UseAnimation" value="false"/>
-			</property>
-		</item>
-		<item name="challenge51Zombie">
-			<property name="CreativeMode" value="None"/>
-			<property name="CustomIcon" value="questMaster"/>
-			<property name="DescriptionKey" value="challenge51ZombieDesc"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="HoldType" value="21"/>
-			<property name="Group" value="All,Quest"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mpaper"/>
-			<property name="SellableToTrader" value="false"/>
-			<property name="Stacknumber" value="50"/>
-			<property name="Weight" value="2"/>
-			<property name="FuelValue" value="2"/>
-			<property class="Action0">
-				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="challenge51Zombie"/>
-				<property name="Delay" value="0"/>
-				<property name="UseAnimation" value="false"/>
-			</property>
-		</item>
-		<item name="challenge52Zombie">
-			<property name="CreativeMode" value="None"/>
-			<property name="CustomIcon" value="questMaster"/>
-			<property name="DescriptionKey" value="challenge52ZombieDesc"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="HoldType" value="21"/>
-			<property name="Group" value="All,Quest"/>
-			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
-			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mpaper"/>
-			<property name="SellableToTrader" value="false"/>
-			<property name="Stacknumber" value="50"/>
-			<property name="Weight" value="2"/>
-			<property name="FuelValue" value="2"/>
-			<property class="Action0">
-				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="challenge52Zombie"/>
 				<property name="Delay" value="0"/>
 				<property name="UseAnimation" value="false"/>
 			</property>
