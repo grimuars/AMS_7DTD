@@ -1,0 +1,42 @@
+<VergilSpardaKillerQueen>
+	<!-- Modded Food in vending machines — what would reasonably be there, anyway -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='cannedfood']">
+		<item name="foodCanSoupTomato"/>
+		<item name="foodChips"/>
+		<item name="foodVanillaWafers"/>
+		<item name="foodChipsOopsClassic"/>
+		<item name="foodChipsOopsSourCream"/>
+		<item name="foodChipsNachiosBlue"/>
+		<item name="foodChipsNachiosRed"/>
+		<item name="foodBretzels"/>
+		<item name="foodBeefJerkyNicks"/>
+		<item name="foodPrimeGranola"/>
+		<item name="foodParadisPeanuts"/>
+		<item name="foodParadisAlmonds"/>
+		<item name="foodCrackersPeanutButter"/>
+		<item name="foodCrackersCreamCheese"/>
+	</append>
+	<!-- Modded Common Drinks in vending machines -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupDrinks']">
+		<item name="drinkSportDrink" count="1,2"/>
+		<item name="drinkSodaBrewCola" count="1,2"/>
+		<item name="drinkSodaCitrus" count="1,2"/>
+		<item name="drinkSodaDIETCola" count="1,2"/>
+		<item name="drinkSodaEnergyShot" count="1,2"/>
+		<item name="drinkSodaLemon" count="1,2"/>
+		<item name="drinkSodaPeppy" count="1,2"/>
+		<item name="drinkSodaREGCola" count="1,2"/>
+		<item name="drinkSodaRootBeer" count="1,2"/>
+		<item name="drinkSodaFizzCola" count="1,2"/>
+		<item name="drinkSodaDietFizzCola" count="0,1"/>
+		<item name="drinkSodaSirP" count="1,2"/>
+		<item name="drinkSodaFrasRootBeer" count="1,2"/>
+		<item name="drinkSodaCitrussy" count="1,2"/>
+		<item name="drinkOrangeQuest" count="1,2"/>
+	</append>
+	<!-- Modded Umcommon Drinks in vending machines -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupDrinksSpecial']">
+		<item name="drinkHerbalTonic" count="0,1"/>
+		<item name="drinkWineRed"/>
+	</append>
+</VergilSpardaKillerQueen>

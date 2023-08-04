@@ -1,0 +1,126 @@
+<configs>
+    <!-- Add new recipes for different types of beds. These will be craftable items in the game. -->
+	<append xpath="/recipes" >
+		<!-- Recipe for a large, comfortable bed -->
+		<recipe name="FeelLargeBed01" count="1" craft_area="workbench">
+			<ingredient name="resourceCloth" count="60"/>
+			<ingredient name="resourceCropCottonPlant" count="60"/>
+			<ingredient name="resourceSpring" count="25"/>
+			<ingredient name="resourceWood" count="35"/>
+			<ingredient name="resourceMetalPipe" count="12"/>
+		</recipe>
+		
+		<!-- Recipe for a hospital bed -->
+		<recipe name="FeelHospitalBed01" count="1" craft_area="workbench">
+			<ingredient name="resourceCloth" count="35"/>
+			<ingredient name="resourceCropCottonPlant" count="40"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceWood" count="5"/>
+			<ingredient name="resourceMetalPipe" count="30"/>
+		</recipe>
+		
+		<!-- Recipe for a bunk bed variant -->
+		<recipe name="FeelBunkBedVariantHelper" count="1">
+			<ingredient name="resourceCloth" count="35"/>
+			<ingredient name="resourceCropCottonPlant" count="40"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceWood" count="5"/>
+			<ingredient name="resourceMetalPipe" count="30"/>
+		</recipe>
+		
+		<!-- Recipe for a mattress variant -->
+		<recipe name="FeelMattressVariantHelper" count="1">
+			<ingredient name="resourceCloth" count="35"/>
+			<ingredient name="resourceCropCottonPlant" count="40"/>
+			<ingredient name="resourceSpring" count="10"/>
+		</recipe>
+		
+		<!-- Recipe for a gurney bed -->
+		<recipe name="gurneyBed" count="1" craft_area="workbench">
+			<ingredient name="resourceCloth" count="25"/>
+			<ingredient name="resourceCropCottonPlant" count="10"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceMetalPipe" count="20"/>
+		</recipe>
+		
+		<!-- Recipe for another type of hospital bed -->
+		<recipe name="hospitalBed" count="1" craft_area="workbench">
+			<ingredient name="resourceCloth" count="35"/>
+			<ingredient name="resourceCropCottonPlant" count="40"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceWood" count="5"/>
+			<ingredient name="resourceMetalPipe" count="30"/>
+		</recipe>
+		<!-- Рецепты для гробов-кроватей -->
+		<recipe name="cntCasketModernOpenWhite" count="1" craft_area="workbench">
+			<ingredient name="resourceCloth" count="80"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceWood" count="500"/>
+			<ingredient name="resourceMetalPipe" count="30"/>
+		</recipe>
+		<recipe name="cntCasketModernOpenBlue" count="1" craft_area="workbench">
+			<ingredient name="resourceCloth" count="80"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceWood" count="500"/>
+			<ingredient name="resourceMetalPipe" count="30"/>
+		</recipe>
+		<recipe name="cntCasketModernOpenBrown" count="1" craft_area="workbench">
+			<ingredient name="resourceCloth" count="80"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceWood" count="500"/>
+			<ingredient name="resourceMetalPipe" count="30"/>
+		</recipe>
+		<recipe name="cntCasketModernOpenRed" count="1" craft_area="workbench">
+			<ingredient name="resourceCloth" count="80"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceWood" count="500"/>
+			<ingredient name="resourceMetalPipe" count="30"/>
+		</recipe>
+		<recipe name="cntCasketModernOpenGreen" count="1" craft_area="workbench">
+			<ingredient name="resourceCloth" count="80"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceWood" count="500"/>
+			<ingredient name="resourceMetalPipe" count="30"/>
+		</recipe>
+		<recipe name="cntCasketModernOpenYellow" count="1" craft_area="workbench">
+			<ingredient name="resourceCloth" count="80"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceWood" count="500"/>
+			<ingredient name="resourceMetalPipe" count="30"/>
+		</recipe>
+		<recipe name="cntCasketModernOpenAqua" count="1" craft_area="workbench">
+			<ingredient name="resourceCloth" count="80"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceWood" count="500"/>
+			<ingredient name="resourceMetalPipe" count="30"/>
+		</recipe>
+		<recipe name="cntCasketModernOpenPurple" count="1" craft_area="workbench">
+			<ingredient name="resourceCloth" count="80"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceWood" count="500"/>
+			<ingredient name="resourceMetalPipe" count="30"/>
+		</recipe>
+		<recipe name="cntCasketModernOpenGrey" count="1" craft_area="workbench">
+			<ingredient name="resourceCloth" count="80"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceWood" count="500"/>
+			<ingredient name="resourceMetalPipe" count="30"/>
+		</recipe>
+		<recipe name="cntCasketModernOpenTan" count="1" craft_area="workbench">
+			<ingredient name="resourceCloth" count="80"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceWood" count="500"/>
+			<ingredient name="resourceMetalPipe" count="30"/>
+		</recipe>
+	</append>
+</configs>

@@ -1,0 +1,1001 @@
+<!-- lets pray I did this right... if you're here because you're nosy and I did something wrong or it's spaghetti code or it could be optimized please let me know because I am Stupid lol -->
+<!-- UPDATE 1.3.A AND B, REMOVED ALL INSTANCES OF CANS, JARS, AND RESOURCES BACK FROM DRINKING AND MOST FOODS. IT IS NOT A BUG -->
+<!-- BLUEPRINT/EXAMPLE ITEM NONFOOD (mostly for me)
+<item name="ammoGasCan">
+	<property name="Tags" value="gasoline"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MFuelBarrelMetal"/>
+	<property name="Stacknumber" value="10000"/>
+	<property name="FuelValue" value="2"/>
+	<property name="EconomicValue" value="10"/>
+	<property name="EconomicBundleSize" value="100"/>
+	<property name="Group" value="Resources,Chemicals,CFChemicals,Ammo"/>
+	<property name="UnlockedBy" value="perkGreaseMonkey,ammoGasCanSchematic"/>
+	<property name="CraftingIngredientTime" value=".05"/>
+</item> 
+-->
+<!-- Quick list of most available resources 
+	because I'm stupid and I have a terrible memory:
+
+resourceScrapIron, resourceScrapBrass, resourceScrapLead, resourceForgedIron, resourceForgedSteel
+resourceCrushedSand, resourceClayLump, resourceWood, resourceCobblestones, resourceCement, resourceConcreteMix
+resourceOilShale, resourceCoal, resourcePotassiumNitratePowder, resourceGunPowder
+resourceBone, resourceLeather, resourceFeather, resourceAnimalFat, resourceTestosteroneExtract
+resourceRockSmall, resourceSnowball
+resourceBrokenGlass, resourceScrapPolymers, resourceCloth, resourceMilitaryFiber, resourcePaper, resourceAcid, resourceNail, resourceSewingKit
+resourceElectricParts, resourceMechanicalParts, resourceOil, resourcePaint, resourceMetalPipe
+resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropShrysanthemumPlant, resourceCropCottomPlant, resourceCropGoldenrodPlant,resourceCropCoffeeBeans
+ -->
+<VergilSpardaKillerQueen>
+	<append xpath="/items">
+		<!-- FINDABLE ONLY (until further notice, anyway. One day I'll figure out recipes!) -->
+		<!-- DRINKS — SODA -->
+		<item name="drinkSodaBrewCola">
+			<!-- Brew-Cola -->
+			<property name="Extends" value="drinkJarBoiledWater"/>
+			<property name="DescriptionKey" value="drinkSodaBrewColaDesc"/>
+			<property name="DisplayType" value="water"/>
+			<!-- This is what shows up in the stats menu and also in hand I think -->
+			<property name="Stacknumber" value="24"/>
+			<!-- STK drink -->
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="32"/>
+			<!-- Subject to change based on feedback -->
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 0">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
+				<display_value name="dStaminaRegen" value=".05"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<item name="drinkSodaDIETCola">
+			<!-- Diet Fructosa Cola -->
+			<property name="Extends" value="drinkJarBoiledWater"/>
+			<property name="DescriptionKey" value="drinkSodaDIETColaDesc"/>
+			<property name="DisplayType" value="water"/>
+			<property name="Stacknumber" value="24"/>
+			<!-- STK drink -->
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="32"/>
+			<!-- Subject to change based on feedback -->
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 0">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
+				<display_value name="dStaminaRegen" value=".05"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<item name="drinkSodaCitrus">
+			<!-- Citrus Splash -->
+			<property name="Extends" value="drinkJarBoiledWater"/>
+			<property name="DescriptionKey" value="drinkSodaCitrusDesc"/>
+			<property name="DisplayType" value="water"/>
+			<property name="Stacknumber" value="24"/>
+			<!-- STK drink -->
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="32"/>
+			<!-- Subject to change based on feedback -->
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 0">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
+				<display_value name="dStaminaRegen" value=".05"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<item name="drinkSodaEnergyShot">
+			<!-- EnergyShot -->
+			<property name="Extends" value="drinkJarBoiledWater"/>
+			<property name="DescriptionKey" value="drinkSodaEnergyShotDesc"/>
+			<property name="DisplayType" value="water"/>
+			<property name="Stacknumber" value="24"/>
+			<!-- STK drink -->
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="32"/>
+			<!-- Subject to change based on feedback -->
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 0">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
+				<display_value name="dStaminaRegen" value=".05"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<item name="drinkSodaLemon">
+			<!-- Lemon Zip -->
+			<property name="Extends" value="drinkJarBoiledWater"/>
+			<property name="DescriptionKey" value="drinkSodaLemonDesc"/>
+			<property name="DisplayType" value="water"/>
+			<property name="Stacknumber" value="24"/>
+			<!-- STK drink -->
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="32"/>
+			<!-- Subject to change based on feedback -->
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 0">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
+				<display_value name="dStaminaRegen" value=".05"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<item name="drinkSodaPeppy">
+			<!-- Peppy PhD -->
+			<property name="Extends" value="drinkJarBoiledWater"/>
+			<property name="DescriptionKey" value="drinkSodaPeppyDesc"/>
+			<property name="DisplayType" value="water"/>
+			<property name="Stacknumber" value="24"/>
+			<!-- STK drink -->
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="32"/>
+			<!-- Subject to change based on feedback -->
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 0">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
+				<display_value name="dStaminaRegen" value=".05"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<item name="drinkSodaREGCola">
+			<!-- Fructosa Cola -->
+			<property name="Extends" value="drinkJarBoiledWater"/>
+			<property name="DescriptionKey" value="drinkSodaREGColaDesc"/>
+			<property name="DisplayType" value="water"/>
+			<property name="Stacknumber" value="24"/>
+			<!-- STK drink -->
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="32"/>
+			<!-- Subject to change based on feedback -->
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 0">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
+				<display_value name="dStaminaRegen" value=".05"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<item name="drinkSodaRootBeer">
+			<!-- Old Tyme Root Beer -->
+			<property name="Extends" value="drinkJarBoiledWater"/>
+			<property name="DescriptionKey" value="drinkSodaRootBeerDesc"/>
+			<property name="DisplayType" value="water"/>
+			<property name="Stacknumber" value="24"/>
+			<!-- STK drink -->
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="32"/>
+			<!-- Subject to change based on feedback -->
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 0">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
+				<display_value name="dStaminaRegen" value=".05"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<item name="drinkSodaStarCola">
+			<!-- 1.2 - Star Cola - thanks Schwanz9000! -->
+			<property name="Extends" value="drinkJarBoiledWater"/>
+			<property name="DescriptionKey" value="drinkSodaStarColaDesc"/>
+			<property name="DisplayType" value="water"/>
+			<property name="Stacknumber" value="24"/>
+			<!-- STK drink -->
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="32"/>
+			<!-- Subject to change based on feedback -->
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 0">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
+				<display_value name="dStaminaRegen" value=".05"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<item name="drinkSodaFizzCola">
+			<!-- 1.3 - Fizz Cola -->
+			<property name="Extends" value="drinkJarBoiledWater"/>
+			<property name="DescriptionKey" value="drinkSodaFizzColaDesc"/>
+			<property name="DisplayType" value="water"/>
+			<property name="Stacknumber" value="24"/>
+			<!-- STK drink -->
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="32"/>
+			<!-- Subject to change based on feedback -->
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 0">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
+				<display_value name="dStaminaRegen" value=".05"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<item name="drinkSodaDietFizzCola">
+			<!-- 1.3 - Diet Fizz Cola -->
+			<property name="Extends" value="drinkJarBoiledWater"/>
+			<property name="DescriptionKey" value="drinkSodaDietFizzColaDesc"/>
+			<property name="DisplayType" value="water"/>
+			<property name="Stacknumber" value="24"/>
+			<!-- STK drink -->
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="32"/>
+			<!-- Subject to change based on feedback -->
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 0">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
+				<display_value name="dStaminaRegen" value=".05"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<item name="drinkSodaSirP">
+			<!-- 1.3 - Sir P -->
+			<property name="Extends" value="drinkJarBoiledWater"/>
+			<property name="DescriptionKey" value="drinkSodaSirPDesc"/>
+			<property name="DisplayType" value="water"/>
+			<property name="Stacknumber" value="24"/>
+			<!-- STK drink -->
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="32"/>
+			<!-- Subject to change based on feedback -->
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 0">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
+				<display_value name="dStaminaRegen" value=".05"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<item name="drinkSodaFrasRootBeer">
+			<!-- 1.3 - Fras Root Beer -->
+			<property name="Extends" value="drinkJarBoiledWater"/>
+			<property name="DescriptionKey" value="drinkSodaFrasRootBeerDesc"/>
+			<property name="DisplayType" value="water"/>
+			<property name="Stacknumber" value="24"/>
+			<!-- STK drink -->
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="32"/>
+			<!-- Subject to change based on feedback -->
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 0">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
+				<display_value name="dStaminaRegen" value=".05"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<item name="drinkSodaCitrussy">
+			<!-- 1.3 - Citrussy -->
+			<property name="Extends" value="drinkJarBoiledWater"/>
+			<property name="DescriptionKey" value="drinkSodaCitrussyDesc"/>
+			<property name="DisplayType" value="water"/>
+			<property name="Stacknumber" value="24"/>
+			<!-- STK drink -->
+			<property name="Weight" value="24"/>
+			<property name="EconomicValue" value="32"/>
+			<!-- Subject to change based on feedback -->
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 0">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
+				<display_value name="dStaminaRegen" value=".05"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<!-- DRINKS — ORANGE QUEST - 1.3 -->
+		<!-- 3 quarter hydration as Mineral Water, half buffs, but cures dysentery by double -->
+		<item name="drinkOrangeQuest">
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+			<property name="DescriptionKey" value="drinkOrangeQuestDesc"/>
+			<property name="HoldType" value="3"/>
+			<property name="DisplayType" value="waterGoldenrodRedTea"/>
+			<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="10"/>
+			<!-- STK drink -->
+			<!-- <property name="Weight" value="10"/> -->
+			<property name="EconomicValue" value="75"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1"/>
+				<property name="Sound_start" value="player_drinking"/>
+				<!-- <property name="Create_item" value="drinkJarEmpty"/> -->
+			</property>
+			<effect_group tiered="false" name="Drink Tier Found">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="45"/>
+				<display_value name="dStaminaRegen" value=".08"/>
+				<display_value name="dEfficientDigestion" value=".08"/>
+				<display_value name="dDuration" value="360"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffRedTeaDuration" operation="add" value="363"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffRedTeaDuration" operation="set" value="1083">
+					<requirement name="CVarCompare" cvar="$buffRedTeaDuration" operation="GT" value="1083"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffRedTea"/>
+				<display_value name="dCureDysentery" value=".4"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDysenteryAddCurePerc" operation="add" value="40"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryAddCure"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<!--DRINKS — SPORTS DRINK -->
+		<item name="drinkSportDrink">
+			<property name="HoldType" value="3"/>
+			<property name="DisplayType" value="waterGoldenrodRedTea"/>
+			<property name="DescriptionKey" value="drinkSportDrinkDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mplastics"/>
+			<property name="Stacknumber" value="12"/>
+			<!-- STK drink -->
+			<property name="Weight" value="12"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+			<effect_group tiered="false" name="Drink Tier Found">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="30"/>
+				<display_value name="dStaminaRegen" value=".25"/>
+				<display_value name="dEfficientDigestion" value=".5"/>
+				<display_value name="dDuration" value="120"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffRedTeaDuration" operation="add" value="121"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffRedTeaDuration" operation="set" value="362">
+					<requirement name="CVarCompare" cvar="$buffRedTeaDuration" operation="GT" value="362"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffRedTea"/>
+				<display_value name="dCureDysentery" value=".1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDysenteryAddCurePerc" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryAddCure"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<!--DRINKS — HERBAL TONIC - 1.2 -->
+		<item name="drinkHerbalTonic">
+			<property name="HoldType" value="3"/>
+			<property name="DisplayType" value="drinkHerbalTonic"/>
+			<property name="DescriptionKey" value="drinkHerbalTonicDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Stacknumber" value="12"/>
+			<!-- STK drink -->
+			<property name="Weight" value="12"/>
+			<property name="EconomicValue" value="70"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+			<effect_group tiered="false">
+				<!-- Vitamin Effect, Halved -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffFatiguedTrigger"/>
+				<display_value name="dStopsWeakness" value="1"/>
+				<display_value name="dDiseaseResist" value="1"/>
+				<display_value name="dDuration" value="360"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugVitaminsDuration" operation="add" value="361"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugVitaminsDuration" operation="set" value="1081">
+					<requirement name="CVarCompare" cvar="$buffDrugVitaminsDuration" operation="GT" value="1081"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugVitamins"/>
+			</effect_group>
+			<effect_group tiered="false" name="Drink Tier Found">
+				<!-- Mega Crush Effect, Halved -->
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="30"/>
+				<display_value name="dRunSpeed" value=".25"/>
+				<display_value name="dDuration" value="60"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffMegaCrushDuration" operation="add" value="63"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffMegaCrushDuration" operation="set" value="181">
+					<requirement name="CVarCompare" cvar="$buffMegaCrushDuration" operation="GT" value="181"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffMegaCrush"/>
+			</effect_group>
+		</item>
+		<!-- DRINKS — ORANGE JUICE 1.2 -->
+		<item name="drinkOrangeJuice">
+			<property name="Extends" value="drinkSportDrink"/>
+			<property name="HoldType" value="3"/>
+			<property name="DescriptionKey" value="drinkOrangeJuiceDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="12"/>
+			<!-- STK drink -->
+			<property name="Weight" value="10"/>
+			<property name="EconomicValue" value="20"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+			<effect_group tiered="false" name="Drink Tier Found">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="40"/>
+				<display_value name="dStaminaRegen" value=".15"/>
+				<display_value name="dEfficientDigestion" value=".4"/>
+				<display_value name="dDuration" value="120"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffRedTeaDuration" operation="add" value="121"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffRedTeaDuration" operation="set" value="362">
+					<requirement name="CVarCompare" cvar="$buffRedTeaDuration" operation="GT" value="362"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffRedTea"/>
+				<display_value name="dCureDysentery" value=".05"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDysenteryAddCurePerc" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryAddCure"/>
+			</effect_group>
+		</item>
+		<!-- DRINKS — WINE -->
+		<item name="drinkWineRed">
+			<property name="HoldType" value="3"/>
+			<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="DescriptionKey" value="drinkWineRedDesc"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Weight" value="12"/>
+			<property name="Stacknumber" value="12"/>
+			<!-- STK drink -->
+			<property name="EconomicValue" value="75"/>
+			<property name="DisplayType" value="waterBeer"/>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking,Medical"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="2"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false" name="Drink Tier 2">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<display_value name="dStaminaRegen" value=".2"/>
+				<display_value name="dEntityDamageBrawling" value="1.5"/>
+				<display_value name="dStunResist" value="0.5"/>
+				<display_value name="dDuration" value="23"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="add" value="24"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="set" value="69">
+					<!-- haha nice -->
+					<requirement name="CVarCompare" cvar="$buffBeerDuration" operation="GT" value="138"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffBeer"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>
+		<!-- FOOD - CANNED -->
+		<item name="foodCanSeasoning">
+			<property name="Extends" value="foodCanMiso"/>
+			<property name="DescriptionKey" value="foodCanSeasoningDesc"/>
+			<property name="Stacknumber" value="10"/>
+			<!-- STK resource -->
+			<property name="EconomicValue" value="5"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="3"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-10"/>
+				<display_value name="$waterAmountAdd" value="-10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-10"/>
+				<display_value name="foodHealthAmount" value="-10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<item name="foodCanSoupTomato">
+			<property name="Extends" value="foodCanMiso"/>
+			<property name="DescriptionKey" value="foodCanSoupTomatoDesc"/>
+			<property name="EconomicValue" value="10"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<!-- FOOD - ALL CHIPS -->
+		<item name="foodChips">
+			<!-- Chips on Shelf Blocks, Diamond Brand -->
+			<property name="Extends" value="foodCanBeef"/>
+			<property name="DescriptionKey" value="foodChipsDesc"/>
+			<property name="EconomicValue" value="15"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<item name="foodChipsOopsClassic">
+			<!-- Oops All Air Classic -->
+			<property name="Extends" value="foodCanBeef"/>
+			<property name="DescriptionKey" value="foodChipsOopsClassicDesc"/>
+			<property name="EconomicValue" value="15"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="20"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<item name="foodChipsOopsSourCream">
+			<!-- Oops All Air Sour Cream + Onion (The superior flavor imo) -->
+			<property name="Extends" value="foodCanBeef"/>
+			<property name="DescriptionKey" value="foodChipsOopsSourCreamDesc"/>
+			<property name="EconomicValue" value="15"/>
+			<property class="Action0">
+				<!-- This is just so that you get resources when eating, because cans don't make sense for some items -->
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<item name="foodChipsNachiosBlue">
+			<!-- Nachios Good Flavor (Cool Ranch, Devs are right about this one) -->
+			<property name="Extends" value="foodCanBeef"/>
+			<property name="DescriptionKey" value="foodChipsNachiosBlueDesc"/>
+			<property name="EconomicValue" value="15"/>
+			<property class="Action0">
+				<!-- This is just so that you get resources when eating, because cans don't make sense for some items -->
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<item name="foodChipsNachiosRed">
+			<!-- Nachios Gross Cheese Flavor (accurate) -->
+			<property name="Extends" value="foodCanBeef"/>
+			<property name="DescriptionKey" value="foodChipsNachiosRedDesc"/>
+			<property name="EconomicValue" value="15"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="20"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<!-- FOOD - SNACKS -->
+		<item name="foodVanillaWafers">
+			<property name="Extends" value="foodCanBeef"/>
+			<property name="DescriptionKey" value="foodVanillaWafersDesc"/>
+			<property name="EconomicValue" value="15"/>
+			<property class="Action0">
+				<!-- This is just so that you get resources when eating, because cans don't make sense for some items -->
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<item name="foodBretzels">
+			<!-- Bretzels Hard Pretzels -->
+			<property name="Extends" value="foodCanMiso"/>
+			<property name="DescriptionKey" value="foodBretzelsDesc"/>
+			<property name="EconomicValue" value="15"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-15"/>
+				<display_value name="$waterAmountAdd" value="-15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<item name="foodBeefJerkyNicks">
+			<!-- Thick Nick's Beef Jerky -->
+			<property name="Extends" value="foodCanMiso"/>
+			<property name="DescriptionKey" value="foodBeefJerkyNicksDesc"/>
+			<property name="EconomicValue" value="15"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-10"/>
+				<display_value name="$waterAmountAdd" value="-10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<item name="foodPrimeGranola">
+			<!-- Prime Bars Granola bars -->
+			<property name="Extends" value="foodCanMiso"/>
+			<property name="DescriptionKey" value="foodPrimeGranolaDesc"/>
+			<property name="EconomicValue" value="15"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-20"/>
+				<display_value name="$waterAmountAdd" value="-20"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<item name="foodParadisPeanuts">
+			<!-- Paradis Nuts Peanuts -->
+			<property name="Extends" value="foodCanMiso"/>
+			<property name="DescriptionKey" value="foodParadisPeanutsDesc"/>
+			<property name="EconomicValue" value="15"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-3"/>
+				<display_value name="$waterAmountAdd" value="-3"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<item name="foodParadisAlmonds">
+			<!-- Paradis Nuts Almonds -->
+			<property name="Extends" value="foodCanMiso"/>
+			<property name="DescriptionKey" value="foodParadisAlmondsDesc"/>
+			<property name="EconomicValue" value="15"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-3"/>
+				<display_value name="$waterAmountAdd" value="-3"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<item name="foodCrackersPeanutButter">
+			<!-- Bretzels Hard Pretzels -->
+			<property name="Extends" value="foodCanMiso"/>
+			<property name="DescriptionKey" value="foodCrackersPeanutButterDesc"/>
+			<property name="EconomicValue" value="15"/>
+			<property name="Stacknumber" value="16"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-10"/>
+				<display_value name="$waterAmountAdd" value="-10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<item name="foodCrackersCreamCheese">
+			<!-- Bretzels Hard Pretzels -->
+			<property name="Extends" value="foodCanMiso"/>
+			<property name="DescriptionKey" value="foodCrackersCreamCheeseDesc"/>
+			<property name="EconomicValue" value="15"/>
+			<property name="Stacknumber" value="16"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-5"/>
+				<display_value name="$waterAmountAdd" value="-5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<!-- FOOD - CEREAL -->
+		<item name="foodDaBoxCereal">
+			<property name="Extends" value="foodCanBeef"/>
+			<property name="DescriptionKey" value="foodDaBoxCerealDesc"/>
+			<property name="EconomicValue" value="5"/>
+			<property class="Action0">
+				<!-- This is just so that you get resources when eating, because cans don't make sense for some items -->
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<!-- FOOD - CRAFTABLES -->
+		<item name="foodFlour">
+			<property name="Extends" value="foodCanBeef"/>
+			<property name="DescriptionKey" value="foodFlourDesc"/>
+			<property name="EconomicValue" value="10"/>
+			<property class="Action0">
+				<!-- This is just so that you get resources when eating, because cans don't make sense for some items -->
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-300"/>
+				<display_value name="foodHealthAmount" value="-00"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="100"/>
+				<display_value name="dDysenteryRisk" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<item name="foodWhiteBread">
+			<!-- 1.1 -->
+			<property name="Extends" value="foodPumpkinBread"/>
+			<property name="DescriptionKey" value="foodWhiteBreadDesc"/>
+			<property name="Stacknumber" value="50"/>
+			<!-- STK food -->
+			<property name="EconomicValue" value="60"/>
+			<property name="CustomIcon" value="foodWhiteBread"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="4"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<item name="foodButterSpread">
+			<!-- 1.2 -->
+			<property name="Extends" value="foodCanBeef"/>
+			<property name="DescriptionKey" value="foodButterSpreadDesc"/>
+			<property name="EconomicValue" value="25"/>
+			<property class="Action0">
+				<!-- This is just so that you get resources when eating, because cans don't make sense for some items -->
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="-15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<!-- FOOD - FROZEN (PERISHABLES)-->
+		<item name="foodFrozenOJCon">
+			<property name="Extends" value="foodCanMiso"/>
+			<property name="DescriptionKey" value="foodFrozenOJConDesc"/>
+			<property name="EconomicValue" value="5"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="40"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="32"/>
+				<display_value name="dDysenteryRisk" value=".32"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<!-- DRINKS: SIX PACK RANDOM ITEM, FINDABLE ONLY, NO RECIPES ALLOWED!! -->
+		<item name="drinksSixPack">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="drinksSixPack"/>
+			<property name="CustomIconTint" value="FFFFFF"/>
+			<property name="Stacknumber" value="5"/>
+			<!-- STK ammobundle high -->
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="drinksSixPackDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceScrapPolymers"/>
+				<property name="Create_item_count" value="4"/>
+				<property name="Random_item" value="drinkSodaBrewCola,drinkSodaCitrus,drinkSodaDIETCola,drinkSodaEnergyShot,drinkSodaLemon,drinkSodaPeppy,drinkSodaREGCola,drinkSodaRootBeer,drinkSodaStarcola,drinkSodaFizzCola,drinkSodaDietFizzCola,drinkSodaSirP,drinkSodaFrasRootBeer,drinkSodaCitrussy,drinkHerbalTonic,drinkCanMegaCrush"/>
+				<property name="Random_item_count" value="6,6,6,6,6,6,6,6,6,6,6,6,6,6,1-6,1-6"/>
+				<!-- Set chance (one number) or a random chance (1-6) to get the items -->
+				<property name="Random_count" value="1"/>
+				<!-- Amount of items you get from opening bundle. (this gives 6 of 1 soda, or 1 to 6 of mega crush. may take out if deemed too OP)-->
+			</property>
+		</item>
+	</append>
+</VergilSpardaKillerQueen>

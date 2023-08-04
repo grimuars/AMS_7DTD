@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="RadiationPoisoning"/>
+	<DisplayName value="Radiation Poisoning"/>
+	<Version value="1.1"/>
+	<Description value="Add radiation poisoning to the game and different ways to deal with it"/>
+	<Author value="Smadol99"/>
+	<Website value=""/>
+</xml>

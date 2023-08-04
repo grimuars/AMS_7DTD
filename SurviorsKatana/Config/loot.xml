@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_Melee']">
+		<item name="meleeTantoKnife" loot_prob_template="ProbT2Cap"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsMeleeScaled']">
+		<item name="meleeKatanaSword" loot_prob_template="ProbT3"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsMeleeScaledTPlus']">
+		<item name="meleeKatanaSword" loot_prob_template="ProbT3"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsMeleeScaledNoStone']">
+		<item name="meleeKatanaSword" loot_prob_template="ProbT3"/>
+	</append>
+
+	<append xpath="/lootcontainers">
+		<lootgroup name="groupQuestmeleeTantoKnife" count="all">
+			<item name="meleeTantoKnife"/>
+		</lootgroup>
+	</append>
+
+	<append xpath="/lootcontainers">
+		<lootgroup name="groupQuestmeleeKatanaSword" count="all">
+			<item name="meleeKatanaSword"/>
+		</lootgroup>
+	</append> 
+
+</configs>

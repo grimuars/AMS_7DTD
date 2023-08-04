@@ -1,0 +1,279 @@
+<configs>
+	<append xpath="/buffs">
+		<buff name="buffANBcharSpawn" hidden="true">
+			<stack_type value="ignore"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="cvarANBProtein" operation="set" target="self" value="70"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="cvarANBCarbs" operation="set" target="self" value="70"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="cvarANBGreens" operation="set" target="self" value="70"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="set" target="self" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="set" target="self" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="set" target="self" value="0"/>
+				<!-- Buff that slowly decrements nutrition values -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffANBOverTime">
+					<requirement name="!HasBuff" buff="buffANBOverTime"/>
+				</triggered_effect>
+				<!-- Buffs based on nutritional state -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffANBMalnurished">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="LTE" value="50"/>
+					<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="LTE" value="50"/>
+					<requirement name="!HasBuff" buff="buffANBMalnurished"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffANBMalnurished">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="LTE" value="50"/>
+					<requirement name="CVarCompare" target="self" cvar="cvarANBGreens" operation="LTE" value="50"/>
+					<requirement name="!HasBuff" buff="buffANBMalnurished"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffANBMalnurished">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="LTE" value="50"/>
+					<requirement name="CVarCompare" target="self" cvar="cvarANBGreens" operation="LTE" value="50"/>
+					<requirement name="!HasBuff" buff="buffANBMalnurished"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffANBHealthy">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="GTE" value="500"/>
+					<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="GTE" value="500"/>
+					<requirement name="CVarCompare" target="self" cvar="cvarANBGreens" operation="GTE" value="500"/>
+					<requirement name="!HasBuff" buff="buffANBHealthy"/>
+					<requirement name="!HasBuff" buff="buffANBVeryHealthy"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffANBVeryHealthy">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="GTE" value="900"/>
+					<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="GTE" value="900"/>
+					<requirement name="CVarCompare" target="self" cvar="cvarANBGreens" operation="GTE" value="900"/>
+					<requirement name="!HasBuff" buff="buffANBVeryHealthy"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffANBProteinHigh">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="GTE" value="900"/>
+					<requirement name="!HasBuff" buff="buffANBProteinHigh"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffANBCarbsHigh">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="GTE" value="900"/>
+					<requirement name="!HasBuff" buff="buffANBCarbsHigh"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffANBGreensHigh">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBGreens" operation="GTE" value="900"/>
+					<requirement name="!HasBuff" buff="buffANBGreensHigh"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<!-- If two or more nutrients drop below 50 -->
+		<buff name="buffANBMalnurished" name_key="buffANBMalnurishedName" description_key="buffANBMalnurishedDesc" icon="ui_game_symbol_drop">
+			<stack_type value="replace"/>
+			<update_rate value="2"/>
+			<effect_group>
+				<passive_effect name="StaminaChangeOT" operation="perc_subtract" value=".15"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffANBMalnurished">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="GT" value="50"/>
+					<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="GT" value="50"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffANBMalnurished">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="GT" value="50"/>
+					<requirement name="CVarCompare" target="self" cvar="cvarANBGreens" operation="GT" value="50"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffANBMalnurished">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="GT" value="50"/>
+					<requirement name="CVarCompare" target="self" cvar="cvarANBGreens" operation="GT" value="50"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<!-- Если все показатели питания выше 500 -->
+		<!--  showonhud="false" -->
+		<buff name="buffANBHealthy" name_key="buffANBHealthyName" description_key="buffANBHealthyDesc" icon="ui_game_symbol_block_repair">
+			<stack_type value="replace"/>
+			<update_rate value="2"/>
+			<effect_group>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".1"/>
+				<passive_effect name="HealthMax" operation="base_add" value="15"/>
+				<passive_effect name="StaminaMax" operation="base_add" value="15"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffANBHealthy">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="LT" value="500"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffANBHealthy">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="LT" value="500"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffANBHealthy">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBGreens" operation="LT" value="500"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<!-- Если все показатели питания выше 900 -->
+		<buff name="buffANBVeryHealthy" name_key="buffANBVeryHealthyName" description_key="buffANBVeryHealthyDesc" icon="ui_game_symbol_block_upgrade">
+			<stack_type value="replace"/>
+			<update_rate value="2"/>
+			<effect_group>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".15"/>
+				<passive_effect name="HealthMax" operation="base_add" value="30"/>
+				<passive_effect name="StaminaMax" operation="base_add" value="30"/>
+				<passive_effect name="HealthGain" operation="perc_add" value=".25"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffANBHealthy">
+					<requirement name="HasBuff" buff="buffANBHealthy"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffANBVeryHealthy">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="LT" value="900"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffANBVeryHealthy">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="LT" value="900"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffANBVeryHealthy">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBGreens" operation="LT" value="900"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<!-- Отдельные баффы для каждого вида питательных веществ, превысившего 900 -->
+		<buff name="buffANBProteinHigh" name_key="buffANBProteinHighName" description_key="buffANBProteinHighDesc" icon="ui_game_symbol_muscle">
+			<stack_type value="replace"/>
+			<update_rate value="2"/>
+			<effect_group>
+				<!-- <passive_effect name="DamageBonus" operation="base_add" value=".2"/> -->
+				<!-- 20% more damage -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15" tags="melee,arrow"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".15" tags="melee,arrow"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffANBProteinHigh">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="LT" value="900"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="buffANBCarbsHigh" name_key="buffANBCarbsHighANBName" description_key="buffANBCarbsHighANBDesc" icon="ui_game_symbol_run">
+			<stack_type value="replace"/>
+			<update_rate value="2"/>
+			<effect_group>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".15"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".15"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffANBCarbsHigh">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="LT" value="900"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="buffANBGreensHigh" name_key="buffANBGreensHighANBName" description_key="buffANBGreensHighANBDesc" icon="ui_game_symbol_science">
+			<stack_type value="replace"/>
+			<update_rate value="2"/>
+			<effect_group>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".15"/>
+				<passive_effect name="PhysicalDamageResist" operation="perc_add" value=".15"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffANBGreensHigh">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBGreens" operation="LT" value="900"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<!-- Этот бафф снижает питательность с течением времени -->
+		<buff name="buffANBOverTime" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="96"/>
+			<!-- 1 минут реального времени = 60 -->
+			<effect_group>
+				<!-- Slow decay -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="cvarANBProtein" operation="subtract" target="self" value="1">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="GTE" value="10"/>
+					<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="LTE" value="100"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="cvarANBCarbs" operation="subtract" target="self" value="1">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="GTE" value="10"/>
+					<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="LTE" value="100"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="cvarANBGreens" operation="subtract" target="self" value="1">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBGreens" operation="GTE" value="10"/>
+					<requirement name="CVarCompare" target="self" cvar="cvarANBGreens" operation="LTE" value="100"/>
+				</triggered_effect>
+				<!-- Normal decay -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="cvarANBProtein" operation="subtract" target="self" value="4">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="GT" value="100"/>
+					<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="LTE" value="800"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="cvarANBCarbs" operation="subtract" target="self" value="4">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="GT" value="100"/>
+					<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="LTE" value="800"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="cvarANBGreens" operation="subtract" target="self" value="4">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBGreens" operation="GT" value="100"/>
+					<requirement name="CVarCompare" target="self" cvar="cvarANBGreens" operation="LTE" value="800"/>
+				</triggered_effect>
+				<!-- Fast decay -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="cvarANBProtein" operation="subtract" target="self" value="16">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="GT" value="800"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="cvarANBCarbs" operation="subtract" target="self" value="16">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="GT" value="800"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="cvarANBGreens" operation="subtract" target="self" value="16">
+					<requirement name="CVarCompare" target="self" cvar="cvarANBGreens" operation="GT" value="800"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<!-- These buffs are triggered on eating and add nutrients over several seconds to emulate digestion -->
+		<buff name="buffHealProteinANB" name_key="buffHealProteinANBName" description_key="buffHealProteinANBDesc" icon="ui_game_symbol_hunger" showonhud="false">
+			<stack_type value="ignore"/>
+			<update_rate value=".1"/>
+			<display_value value="cvarANBProteinAdd"/>
+			<effect_group name="digestingProtein">
+				<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="LT" value="1000"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="cvarANBProtein" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="subtract" value="1"/>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHealProteinANB">
+					<requirement name="CVarCompare" cvar="cvarANBProteinAdd" operation="LT" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHealProteinANB">
+					<requirement name="CVarCompare" cvar="cvarANBProtein" operation="GT" value="998"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="set" value="0"/>
+			</effect_group>
+		</buff>
+		<buff name="buffHealCarbsANB" name_key="buffHealCarbsANBName" description_key="buffHealCarbsANBDesc" icon="ui_game_symbol_hunger" showonhud="false">
+			<stack_type value="ignore"/>
+			<update_rate value=".1"/>
+			<display_value value="cvarANBCarbsAdd"/>
+			<effect_group name="digestingCarbs">
+				<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="LT" value="1000"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="cvarANBCarbs" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="subtract" value="1"/>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHealCarbsANB">
+					<requirement name="CVarCompare" cvar="cvarANBCarbsAdd" operation="LT" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHealCarbsANB">
+					<requirement name="CVarCompare" cvar="cvarANBCarbs" operation="GT" value="998"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="set" value="0"/>
+			</effect_group>
+		</buff>
+		<buff name="buffHealGreensANB" name_key="buffHealGreensANBName" description_key="buffHealGreensANBDesc" icon="ui_game_symbol_hunger" showonhud="false">
+			<stack_type value="ignore"/>
+			<update_rate value=".1"/>
+			<display_value value="cvarANBGreensAdd"/>
+			<effect_group name="digestingGreens">
+				<requirement name="CVarCompare" target="self" cvar="cvarANBGreens" operation="LT" value="1000"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="cvarANBGreens" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="subtract" value="1"/>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHealGreensANB">
+					<requirement name="CVarCompare" cvar="cvarANBGreensAdd" operation="LT" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHealGreensANB">
+					<requirement name="CVarCompare" cvar="cvarANBGreens" operation="GT" value="998"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="set" value="0"/>
+			</effect_group>
+		</buff>
+	</append>
+	<append xpath="/buffs/buff[@name='buffProcessConsumables']/effect_group[2]">
+		<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffHealProteinANB">
+			<requirement name="CVarCompare" cvar="cvarANBProteinAdd" operation="GT" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffHealCarbsANB">
+			<requirement name="CVarCompare" cvar="cvarANBCarbsAdd" operation="GT" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffHealGreensANB">
+			<requirement name="CVarCompare" cvar="cvarANBGreensAdd" operation="GT" value="0"/>
+		</triggered_effect>
+	</append>
+	<!-- 	<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group[1]">
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffANBHealthy">
+			<requirement name="CVarCompare" target="self" cvar="cvarANBProtein" operation="GTE" value="92"/>
+			<requirement name="CVarCompare" target="self" cvar="cvarANBCarbs" operation="GTE" value="92"/>
+			<requirement name="!HasBuff" buff="buffANBHealthy"/>
+		</triggered_effect>
+	</append> -->
+</configs>

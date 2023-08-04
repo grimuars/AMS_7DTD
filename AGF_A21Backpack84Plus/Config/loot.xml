@@ -1,0 +1,28 @@
+<AGF-Backpack84>
+	<!--Large enough player backpack when players die, requires an update in windows.xml to work.-->
+	<set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">12,12</set>
+	<!--The size of the large storages (168 slots), requires an update in windows.xml to work.-->
+	<append xpath="/lootcontainers">
+		<lootcontainer name="agfStorageLarge" count="0" size="12,14" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest"/>
+	</append>
+	<!--This is me considering how to deal with the shrunken header sizes due to the smaller slot sizes.
+	<set xpath="//lootcontainer[@size='6,1']/@size">10,1</set>
+	<set xpath="//lootcontainer[@size='6,2']/@size">10,2</set>
+	<set xpath="//lootcontainer[@size='6,3']/@size">10,3</set>
+	<set xpath="//lootcontainer[@size='6,4']/@size">10,4</set>
+	<set xpath="//lootcontainer[@size='7,10']/@size">10,10</set>
+	<set xpath="//lootcontainer[@size='7,2']/@size">10,2</set>
+	<set xpath="//lootcontainer[@size='7,4']/@size">10,4</set>
+	<set xpath="//lootcontainer[@size='8,2']/@size">10,2</set>
+	<set xpath="//lootcontainer[@size='8,4']/@size">10,4</set>
+	<set xpath="//lootcontainer[@size='8,5']/@size">10,5</set>
+	<set xpath="//lootcontainer[@size='8,6']/@size">10,6</set>
+	<set xpath="//lootcontainer[@size='8,8']/@size">10,8</set>
+	<set xpath="//lootcontainer[@size='8,9']/@size">10,9</set>
+	<set xpath="//lootcontainer[@size='9,1']/@size">10,1</set>
+	<set xpath="//lootcontainer[@size='9,3']/@size">10,3</set>
+	<set xpath="//lootcontainer[@size='9,4']/@size">10,4</set>
+	<set xpath="//lootcontainer[@size='9,5']/@size">10,5</set>
+	<set xpath="//lootcontainer[@size='9,9']/@size">10,9</set>
+-->
+</AGF-Backpack84>

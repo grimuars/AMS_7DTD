@@ -1,0 +1,159 @@
+<AGF-Backpack84>
+	<!--Larger Versions of Chests, both secure and the non-secure ones.-->
+	<append xpath="/blocks">
+		<block name="cntSecureStorageChestLarge">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Tags" value="timecharge"/>
+			<property name="Class" value="SecureLoot"/>
+			<property name="CustomIcon" value="cntSecureStorageChest"/>
+			<property name="CustomIconTint" value="930CF8"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="StabilitySupport" value="false"/>
+			<!-- build restriction -->
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/woodenChestRotten_01Prefab Variant.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="FuelValue" value="300"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="LootList" value="agfStorageLarge"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="LPHardnessScale" value="8"/>
+			<property name="DowngradeBlock" value="cntStorageChestLarge"/>
+			<property name="Group" value="Basics,Building,advBuilding"/>
+			<property name="DescriptionKey" value="cntSecureStorageChestDesc"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		<block name="cntStorageChestLarge">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="Loot"/>
+			<property name="CustomIcon" value="cntSecureStorageChest"/>
+			<property name="CustomIconTint" value="930CF8"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="StabilitySupport" value="false"/>
+			<!-- build restriction -->
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/woodenChestRotten_01Prefab Variant.prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="LootList" value="agfStorageLarge"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		<block name="cntStorageGenericLarge">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="cntStorageGeneric"/>
+			<property name="CustomIconTint" value="930CF8"/>
+			<property name="Shape" value="New"/>
+			<property name="Model" value="cube"/>
+			<property name="DescriptionKey" value="cntStorageGenericDesc"/>
+			<property name="Tags" value="timecharge"/>
+			<property name="Class" value="SecureLoot"/>
+			<property name="LootList" value="agfStorageLarge"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="Texture" value="572"/>
+			<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
+			<property name="FuelValue" value="300"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<property name="DowngradeBlock" value="cntStorageGenericInsecureLarge"/>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		<block name="cntStorageGenericInsecureLarge">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="cntStorageHealth"/>
+			<property name="CustomIconTint" value="930CF8"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="agfStorageLarge"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="Texture" value="572"/>
+			<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		<block name="cntStorageGenericSignedLarge">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="930CF8"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/crate_storeSignablePrefab.prefab"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<!-- sign model, not needed for cube -->
+			<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
+			<property name="Tags" value="timecharge"/>
+			<property name="Class" value="SecureLootSigned"/>
+			<property name="LootList" value="agfStorageLarge"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="Texture" value="572"/>
+			<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
+			<property name="FuelValue" value="300"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<property name="DowngradeBlock" value="cntStorageGenericSignedInsecureLarge"/>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		<block name="cntStorageGenericSignedInsecureLarge">
+			<property name="CreativeMode" value="Test"/>
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="930CF8"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="agfStorageLarge"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="@:Entities/LootContainers/crate_storeSignablePrefab.prefab"/>
+			<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		<!--Build from one block-->
+		<block name="storageLargeVariantHelper">
+			<property name="Extends" value="cntStorageGenericSignedLarge"/>
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="930CF8"/>
+			<property name="DescriptionKey" value="storageLargeVariantHelperDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="cntStorageGenericSignedLarge,cntStorageGenericLarge,cntSecureStorageChestLarge"/>
+			<property name="FilterTags" value="MC_helpers,SC_residential"/>
+		</block>
+	</append>
+</AGF-Backpack84>

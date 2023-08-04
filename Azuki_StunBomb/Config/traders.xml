@@ -1,0 +1,6 @@
+<AzukiStunBomb>
+	<!-- Adds Stun bomb to trader items -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='thrownAmmo']">
+		<item name="thrownAmmoStunBomb" count="5,15"/>
+	</append>
+</AzukiStunBomb>

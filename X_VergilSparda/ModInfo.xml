@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="VergilSpardasVx4" />
+    <DisplayName value="VergilSpardas Verbose Volume of Various Victuals" />
+    <Version value="1.3.0.1" /> <!-- (Required) SemVer version of the mod. Has to be in the format major.minor[.build[.revision]] (i.e. build and revision can be left out, recommend using them though as typically done with Semantic Versioning -->
+    <Description value="Adds in the various food, tools, and misc items featured in the old and new vanilla block models. Huge work in progress." /> <!-- (Optional) More text to show on UIs -->
+    <Author value="VergilSparda" /> <!-- (Optional) Name(s) of the author(s) -->
+    <Website value="" /> <!-- (Optional) URL of a website of the mod -->
+</xml>

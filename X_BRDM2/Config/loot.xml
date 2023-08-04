@@ -1,0 +1,14 @@
+<configs>
+	<append xpath="/lootcontainers">
+		<lootcontainer name="BRDM2" count="0" size="10,9" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate"/>
+	</append>
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupScrapCommon']">
+		<lootgroup name="BRDM2group">
+			<item name="vehicleBRDM2chassis"/>
+			<item name="vehicleBRDM2accessories"/>
+		</lootgroup>
+	</insertBefore>
+	<append xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
+		<item group="BRDM2group" loot_prob_template="ProbT3"/>
+	</append>
+</configs>

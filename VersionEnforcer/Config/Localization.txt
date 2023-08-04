@@ -1,0 +1,4 @@
+﻿Key,File,Type,UsedInMainMenu,NoTranslate,english,russian
+authstate_customversion,UI,AuthenticationMessages,x,,Waiting for mods version verification...,Ожидайте верификации версий модов...
+auth_ModVersionMismatch,UI,AuthenticationMessages,x,,Mods: {0},Моды: {0}
+

@@ -1,0 +1,141 @@
+<configs>
+
+	<append xpath="/items">
+
+		<!-- Research Data Resource -->
+		<item name="resourceResearchData">
+			<property name="CustomIcon" value="resourceResearchData"/>
+			<property name="HoldType" value="31"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/bookPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceResearchData"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="CraftingIngredientTime" value=".5"/>
+		</item>
+
+	</append>
+
+
+	<!-- *** RECIPES -->
+	<append xpath="/items/item[@name='schematicNoQualityRecipeMaster']">
+		<property name="Weight" value="3"/>
+	</append>
+
+
+	<!-- *** SCHEMATICS -->
+	<set xpath="/items/item[@name='schematicMaster']/property[@name='Material']/@value">MresourceResearchData</set>
+	<set xpath="/items/item[@name='schematicMaster']/property[@name='Weight']/@value">5</set>
+
+
+	<!-- *** CRAFTING_SKILL_MAGAZINES -->
+	<append xpath="/items/item[@name='masterSkillMagazine']">
+		<property name="Weight" value="5"/>
+	</append>
+
+
+	<append xpath="/items/item[@name='harvestingToolsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RTools"/>
+	</append>
+
+	<append xpath="/items/item[@name='repairToolsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RTools"/>
+	</append>
+
+	<append xpath="/items/item[@name='salvageToolsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RTools"/>
+	</append>
+
+	<append xpath="/items/item[@name='knucklesSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='bladesSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='clubsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='sledgehammersSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='spearsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='bowsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='handgunsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='shotgunsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='riflesSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='machineGunsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='explosivesSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RWeapons"/>
+	</append>
+
+	<append xpath="/items/item[@name='roboticsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RScience"/>
+	</append>
+
+	<append xpath="/items/item[@name='armorSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RSArmor"/>
+	</append>
+
+	<append xpath="/items/item[@name='medicalSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RScience"/>
+	</append>
+
+	<append xpath="/items/item[@name='foodSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RFood"/>
+	</append>
+
+	<append xpath="/items/item[@name='seedSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RFood"/>
+	</append>
+
+	<append xpath="/items/item[@name='electricianSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RScience"/>
+	</append>
+
+	<append xpath="/items/item[@name='trapsSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RScience"/>
+	</append>
+
+	<append xpath="/items/item[@name='workstationSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RUtility"/>
+	</append>
+
+	<append xpath="/items/item[@name='vehiclesSkillMagazine']">
+		<property name="Group" value="Books,BooksOnly,TCReading,RUtility"/>
+	</append>
+
+
+	<!-- *** SKILL_BOOKS -->
+
+	<append xpath="/items/item[@name='bookFiremansAlmanacHeat']">
+		<property name="Weight" value="7"/>
+	</append>
+
+	
+
+</configs>

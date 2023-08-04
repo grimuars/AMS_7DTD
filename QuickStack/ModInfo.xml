@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="QuickStack"/>
+	<DisplayName value="QuickStack"/>
+	<Version value="1.6.3"/>
+	<Description value="Enables the player to quickly deposit/restock items from their inventory to nearby containers without the need to open them. Enables the player to lock specific slots."/>
+	<Author value="Westwud"/>
+	<Website value=""/>
+</xml>

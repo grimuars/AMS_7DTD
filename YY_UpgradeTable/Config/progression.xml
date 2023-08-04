@@ -1,0 +1,12 @@
+<!-- "Living off the land" perk tweaks to seeds -->
+<config>
+	<!-- Прописываем разблокировку стола обновления через журналы -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@name_key='workstationsT3-1,workstationsT3-2']">
+		<unlock_entry item="UpgradeTable" unlock_tier="1"/>
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="UpgradeTable"/>
+		</effect_group>
+	</append>
+</config>

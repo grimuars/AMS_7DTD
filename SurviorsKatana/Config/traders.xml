@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupMeleeAll']">
+		<item name="meleeTantoKnife" quality="2,4"/>
+		<item name="meleeKatanaSword" quality="2,4"/>
+	</append>
+</configs>

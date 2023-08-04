@@ -1,0 +1,21 @@
+<configs>
+
+  <append xpath="/Sounds">
+
+  <SoundDataNode name="Chicken6Sounds">
+  <AudioSource name="Sounds/AudioSource_VO" />
+  <Noise ID="3" range="3" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+  <AudioClip ClipName="#@modfolder:Resources/ChickenCoop.unity3d?Chicken1" />
+  <LocalCrouchVolumeScale name="1.0" />
+  <CrouchNoiseScale name="0.5" />
+  <NoiseScale name="1" />
+  <MaxVoices name="10" />
+  <MaxRepeatRate name="1.111" />
+  </SoundDataNode>
+  
+  </append>
+
+</configs>
+
+
+

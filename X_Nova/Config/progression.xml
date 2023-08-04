@@ -1,0 +1,6 @@
+<configs>
+	<append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@icon='vehicle4x4TruckPlaceable']/unlock_entry/@item">,vehicleNovachassis,vehicleNovaaccessories</append>
+	<append xpath="//crafting_skill[@name='craftingVehicles']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="70,100" value="1" tags="vehicleNovachassis,vehicleNovaaccessories"/>
+	</append>	
+ </configs>

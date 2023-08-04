@@ -1,0 +1,132 @@
+<VergilSpardaKillerQueen>
+	<append xpath="/recipes">
+		<!-- DRINKS — ORANGE JUICE -->
+		<recipe name="drinkOrangeJuice" count="4" craft_time="60" craft_area="campfire">
+			<ingredient name="foodFrozenOJCon" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="4"/>
+		</recipe>
+		<!-- FOOD — FLOUR -->
+		<recipe name="foodFlour" count="1" craft_time="25">
+			<ingredient name="foodCropCorn" count="5"/>
+			<ingredient name="resourceRockSmall" count="2"/>
+		</recipe>
+	</append>
+	<!-- Заменяем в рецептах кукурузные зёрна на муку -->
+	<!-- Cornmeal to Flour: foodBlueberryPie, foodPumpkinPie, foodPumpkinCheesecake, foodPumpkinBread, foodTunaFishGravyToast -->
+	<set xpath="/recipes/recipe[starts-with(@name, 'food') 
+								and not (contains(@name, 'Potato')) 
+								and not (contains(@name, 'Meat')) 
+								and not (contains(@name, 'Sham')) 
+								and not (contains(@name, 'Corn')) 
+								and not (contains(@name, 'Boiled')) 
+								and not (contains(@name, 'Stew')) 
+								and not (contains(@name, 'Shepards')) 
+								and not (contains(@name, 'Spaghetti')) 
+								and not (contains(@name, 'Bacon'))
+								and not (contains(@name, 'Tacos'))]/ingredient[@name='foodCornMeal']/@name">foodFlour</set>
+	<!-- Добавляем версии рецептов с маслом в костёр -->
+	<append xpath="/recipes">
+		<recipe name="foodSteakAndPotato" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="foodCropMushrooms" count="2"/>
+			<ingredient name="foodButterSpread" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodTunaFishGravyToast" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCanTuna" count="1"/>
+			<ingredient name="foodCornMeal" count="1"/>
+			<ingredient name="foodCornBread" count="2"/>
+			<ingredient name="foodButterSpread" count="3"/>
+			<ingredient name="foodCanPeas" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodButterSpread"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodSpaghetti" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCanBeef" count="1"/>
+			<ingredient name="foodCanPasta" count="1"/>
+			<ingredient name="foodCropMushrooms" count="1"/>
+			<ingredient name="foodButterSpread" count="3"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodButterSpread"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodShepardsPie" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCanLamb" count="1"/>
+			<ingredient name="foodCanPeas" count="1"/>
+			<ingredient name="foodCropCorn" count="1"/>
+			<ingredient name="foodButterSpread" count="3"/>
+			<ingredient name="foodCropPotato" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodButterSpread"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodGumboStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCanBeef" count="1"/>
+			<ingredient name="foodCanPeas" count="1"/>
+			<ingredient name="foodCanStock" count="1"/>
+			<ingredient name="foodButterSpread" count="3"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodButterSpread"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodMeatStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="foodCropCorn" count="2"/>
+			<ingredient name="foodButterSpread" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodHoboStew" count="1" craft_time="65" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodRottingFlesh" count="10"/>
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="foodCropCorn" count="2"/>
+			<ingredient name="foodButterSpread" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-2,-4" tags="foodRottingFlesh"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodPumpkinCheesecake" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCropPumpkin" count="1"/>
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="foodCornMeal" count="1"/>
+			<ingredient name="foodButterSpread" count="1"/>
+			<ingredient name="drinkJarBeer" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingTime" operation="perc_add" value="-.15"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodPumpkinPie" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCropPumpkin" count="2"/>
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="foodCornMeal" count="1"/>
+			<ingredient name="foodButterSpread" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="foodBlueberryPie" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCropBlueberries" count="5"/>
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="foodCornMeal" count="1"/>
+			<ingredient name="foodButterSpread" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodCropBlueberries"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodWhiteBread" count="1" craft_area="campfire" craft_time="400" craft_tool="toolCookingPot">
+			<ingredient name="foodFlour" count="1"/>
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="foodButterSpread" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+	</append>
+</VergilSpardaKillerQueen>

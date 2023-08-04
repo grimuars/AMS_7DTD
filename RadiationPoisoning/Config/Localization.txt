@@ -1,0 +1,20 @@
+Key,Source,Context,Changes,English,Russian
+drugIodinePils,drugs,Drug,New,"Iodine Pills","Йод-Актив"
+drugIodinePilsDesc,drugs,Drug,New,"Iodine Pills cure Radiation Poisoning and protect you from further contamination for 12 minutes.","Йод-Актив излечивает радиационное заражение и защищает вас от него на 12 минут."
+buffDrugIodinePils,buffs,Buff,New,"You took Iodine Pills",""Вы приняли Йод-Актив"
+buffDrugIodinePilsDesc,buffs,Buff,New,"You are protected from Radiation for a short period.","Вы защищены от радиации на короткий период"
+buffRadiation01,buffs,Buff,New,"Radiation","Радиация"
+buffRadiation01Name,buffs,Buff,New,"Radiation Poisoning","Радиационное отравление"
+buffRadiation01Desc,buffs,Buff,New,"You have been exposed to Radiation.\nGetting hit by Radiated Zombies or just beeing in the Wasteland will give you Radiation Poisoning.\nHigh level of contamination can cause different injuries and once it reaches 100% you will die.\nAvoid getting hit and escape from the wasteland to slowly recover.\nWearing a full Hazmat Suit will protect you from radiation.\nTaking Iodine Pills will cure the contamination and briefly protect you from radiation.\nGetting wet will increase the contamination and decontamination speed.","Получая урон или находясь в зоне Пустошей, вы подвергаетесь воздействию радиации.\nЧем выше уровень заражения - тем сильнее негативные эффекты, а по достижении 100% - вы умрёте.\nИзбегайте получения урона и покиньте Пустошь, чтобы активировать медленную дезактивацию.\nПолный комплект костюма РЗК защищает вас от радиации.\nПринятие Йод-Актива уменьшает заражение и защищает от радиации на короткое время.\nЕсли вы промокли - скорость заражения и дезактивации увеличивается."
+buffRadiation01Tooltip,buffs,Buff,New,"You are exposed to radiation.","Вы подвергаетесь воздействию радиации"
+buffRadSuit,buffs,Buff,New,"Radiation Protection","Радиационная защита"
+buffRadSuitName,buffs,Buff,New,"Radiation Protection","Радиационная защита"
+buffRadSuitDesc,buffs,Buff,New,"You have put on the Hazmat Suit and are protected from Radiation Exposure.","Благодаря костюму РЗК вы защищены от радиации"
+buffRadSuitTooltip,buffs,Buff,New,"You are protected from Radiation","Вы защищены от радиации"
+
+
+
+
+
+
+

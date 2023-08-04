@@ -1,0 +1,11 @@
+Key,English,Russian
+vehicleBRDM2chassis,BRDM-2 Chassis,Шасси БРДМ-2
+vehicleBRDM2chassisDesc,Parts needed to craft the BRDM-2.,Запчасти для создания БРДМ-2.
+vehicleBRDM2accessories,BRDM-2 Accessories,Детали БРДМ-2
+vehicleBRDM2accessoriesDesc,Parts needed to craft the BRDM-2.,Запчасти для создания БРДМ-2.
+vehicleBRDM2,BRDM-2,БРДМ-2
+vehicleBRDM2placeable,BRDM-2,БРДМ-2
+vehicleBRDM2placeableDesc,A Soviet armoured car in the Arizona.,Советский броневик на просторах Аризонщины.
+vehicleBRDM2desert,BRDM-2 Desert,БРДМ-2 Desert
+vehicleBRDM2desertplaceable,BRDM-2 Desert,БРДМ-2 Desert
+vehicleBRDM2desertplaceableDesc,A Soviet armoured car in the Arizona.,Советский броневик на просторах Аризонщины.

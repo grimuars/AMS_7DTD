@@ -1,5 +1,0 @@
-Key,Source,Context,Changes,English,German,Russian
-steelPolish,items,Item,New,Steel Polish,,Полироль
-steelPolishDesc,items,Item,New,"Polish used to upgrade Iron blocks to Stainless Steel.\nThis will greatly increase the durability of the block and make it shine.","Poliermittel, um Stahl noch härter zu machen!","Полироль позволяет улучшить блок до нержавеющей стали.\nПрочность блока вырастет и он будет сиять!"
-steelPolishBundle,items,Item,New,Box of Steel Polish,,Коробка с полиролью
-steelPolishDesc,items,Item,New,"Box of Steel Polish that will produce bottles when opened.",,"Коробка с упакованной полиролью."

@@ -1,0 +1,56 @@
+<configs>
+	<append xpath="/items">
+		<item name="vehicleMarauderchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="CustomIcon" value="Marauderchassis"/>
+			<property name="DescriptionKey" value="vehicleMarauderchassisDesc"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="TraderStageTemplate" value="vehicleTier4"/>
+		</item>
+		<item name="vehicleMarauderaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="CustomIcon" value="Marauderaccessories"/>
+			<property name="DescriptionKey" value="vehicleMarauderaccessoriesDesc"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="TraderStageTemplate" value="vehicleTier4"/>
+		</item>
+		<item name="vehicleMarauderplaceable">
+			<property name="Extends" value="vehicle4x4TruckPlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,canHaveCosmetic"/>
+			<property name="CustomIcon" value="Marauder"/>
+			<property name="DescriptionKey" value="vehicleMarauderplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Marauder1.unity3d?vehicleMarauder.prefab"/>
+			<property name="EconomicValue" value="40000"/>
+			<property name="TraderStageTemplate" value="vehicleTier5"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleMarauder"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="40000"/>
+			</effect_group>
+		</item>
+		<item name="vehicleMarauderblackplaceable">
+			<property name="Extends" value="vehicle4x4TruckPlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,canHaveCosmetic"/>
+			<property name="CustomIcon" value="Marauderblack"/>
+			<property name="DescriptionKey" value="vehicleMarauderblackplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Marauder1.unity3d?vehicleMarauderblack.prefab"/>
+			<property name="EconomicValue" value="40000"/>
+			<property name="TraderStageTemplate" value="vehicleTier5"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleMarauderblack"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="10000"/>
+			</effect_group>
+		</item>
+	</append>
+</configs>

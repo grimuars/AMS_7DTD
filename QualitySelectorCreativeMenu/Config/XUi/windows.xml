@@ -1,0 +1,10 @@
+<configs>
+	<append xpath="//window[@name='windowCreative2']/rect/panel[@name='header']">
+		<rect pos="350,100">
+			<filledsprite depth="101" name="durabilityBar" height="20" width="65" color="{durabilitycolor}" type="filled" pos="31, -93" fill="1"/>
+			<label depth="102" name="durabilityValue" pos="0,-104" width="125" height="32" text="{durabilitytext}" font_size="22" justify="center" effect="outline" visible="false"/>
+			<button depth="102" name="addQualityButton" style="icon22px, press" pos="112,-123" sprite="ui_game_symbol_arrow_menu" flip="Horizontally" pivot="center" sound="[paging_click]" visible="{hasdurability}" disabledcolor="[lightGrey]" enabled="{enableaddquality}"/>
+			<button depth="102" name="subtractQualityButton" style="icon22px, press" pos="14,-123" sprite="ui_game_symbol_arrow_menu" pivot="center" sound="[paging_click]" visible="{hasdurability}" disabledcolor="[lightGrey]" enabled="{enablesubtractquality}"/>
+		</rect>
+	</append>
+</configs>

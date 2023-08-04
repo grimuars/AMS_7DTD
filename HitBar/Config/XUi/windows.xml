@@ -1,0 +1,12 @@
+<configs>
+	<remove xpath="/windows/window[@name='windowTargetBar']/rect"/>
+	<append xpath="/windows/window[@name='windowTargetBar']">
+		<window name="windowTargetBar" controller="TargetBar" visibility="always">
+			<rect pos="-180,345" width="360" height="28" visible="{visible}">
+				<sprite depth="1" name="border" color="0,0,0,100" type="sliced" width="360" globalopacity="true"/>
+				<filledsprite depth="2" name="BarContent" type="filled" color="200,0,0,180" width="360" fill="{fill}" globalopacity="true"/>
+				<label depth="3" name="TextContent" pos="9,-4" font_size="20" color="[white]" justify="center" pivot="topleft" text="{name}:{currentwithmax}" height="30"/>
+			</rect>
+		</window>
+	</append>
+</configs>

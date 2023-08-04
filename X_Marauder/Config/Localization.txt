@@ -1,0 +1,11 @@
+Key,English,Russian
+vehicleMarauder,Marauder,Мародёр
+vehicleMarauderplaceable,Marauder,Мародёр
+vehicleMarauderplaceableDesc,Those zombies will be jealous of this ride!,Все зомби вам завидуют!
+vehicleMarauderblack,Marauder,Мародёр
+vehicleMarauderblackplaceable,Marauder,Мародёр
+vehicleMarauderblackplaceableDesc,Those zombies will be jealous of this ride!,Все зомби вам завидуют!
+vehicleMarauderchassis,Marauder Chassis,Шасси Мародёра
+vehicleMarauderchassisDesc,Parts needed to craft the Marauder.,Запчасти для создания Мародёра
+vehicleMarauderaccessories,Marauder Accessories,Детали Мародёра
+vehicleMarauderaccessoriesDesc,Parts needed to craft the Marauder.,Запчасти для создания Мародёра

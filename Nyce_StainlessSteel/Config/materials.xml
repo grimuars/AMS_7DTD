@@ -1,0 +1,20 @@
+<fgstainlessmod>
+		<!-- Making Stainless worth the effort -->
+	<set xpath="/materials/material[@id='MstainlessSteel']/property[@name='stability_glue']/@value">800</set>
+	<set xpath="/materials/material[@id='MstainlessSteel']/property[@name='explosionresistance']/@value">12</set>
+	<set xpath="/materials/material[@id='MstainlessSteel']/property[@name='MaxDamage']/@value">35000</set>
+	<append xpath="/materials">
+	<material id="Mstainlesssteel_shapes">
+		<property name="damage_category" value="metal" />
+		<property name="surface_category" value="metal" />
+		<property name="forge_category" value="iron" />
+		<property name="Hardness" type="float" value="1" />
+		<property name="stepsound" value="metal" />
+		<property name="stability_glue" value="800" />
+		<property name="Mass" type="int" value="20" />
+		<property name="explosionresistance" value="12" />
+		<property name="MaxDamage" value="35000" />
+		<property name="Experience" value="30" />
+	</material>	
+	</append>
+</fgstainlessmod>

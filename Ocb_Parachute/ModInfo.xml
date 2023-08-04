@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <Name value="OcbParachute" />
+  <DisplayName value="OCB Parachute" />
+  <Description value="Parachute from the sky or from buildings" />
+  <Website value="https://github.com/OCB7D2D/OcbParachute" />
+  <Author value="ocbMaurice" />
+  <Version value="0.4.0" />
+</xml>

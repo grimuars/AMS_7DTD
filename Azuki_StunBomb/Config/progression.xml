@@ -1,0 +1,11 @@
+<AzukiStunBomb>
+	<!-- Разблокируем стан-гранату через журналы -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']/display_entry[@name_key='explosivesT4']">
+		<unlock_entry item="thrownAmmoStunBomb" unlock_tier="1"/>
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="thrownAmmoStunBomb"/>
+		</effect_group>
+	</append>
+</AzukiStunBomb>

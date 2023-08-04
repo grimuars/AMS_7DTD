@@ -1,0 +1,32 @@
+<configs>
+	<append xpath="recipes">
+		<recipe name="apparelHazmatMask" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceMilitaryFiber" count="15"/>
+			<ingredient name="resourceGlue" count="10"/>
+			<ingredient name="resourcePE" count="10"/>
+			<ingredient name="resourceMetalPipe" count="4"/>
+		</recipe>
+		<recipe name="apparelHazmatJacket" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceMilitaryFiber" count="15"/>
+			<ingredient name="resourceGlue" count="10"/>
+			<ingredient name="resourcePE" count="10"/>
+			<ingredient name="resourceForgedSteel" count="4"/>
+		</recipe>
+		<recipe name="apparelHazmatGloves" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceMilitaryFiber" count="15"/>
+			<ingredient name="resourceGlue" count="10"/>
+			<ingredient name="resourcePE" count="10"/>
+		</recipe>
+		<recipe name="apparelHazmatPants" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceMilitaryFiber" count="15"/>
+			<ingredient name="resourceGlue" count="10"/>
+			<ingredient name="resourcePE" count="10"/>
+		</recipe>
+		<recipe name="apparelHazmatBoots" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceMilitaryFiber" count="15"/>
+			<ingredient name="resourceGlue" count="10"/>
+			<ingredient name="resourcePE" count="10"/>
+			<ingredient name="resourceForgedSteel" count="2"/>
+		</recipe>
+	</append>
+</configs>

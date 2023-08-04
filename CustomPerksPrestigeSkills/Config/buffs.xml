@@ -1,0 +1,27 @@
+<configs>
+
+    <append xpath="/buffs/buff[@name='buffPerkAbilityUpdate']">
+        <effect_group>
+
+            <!--perkHealingArts / health regen per tick-->
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="add" value=".5">
+				<requirement name="ProgressionLevel" progression_name="perkHealingArts" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="add" value=".9">
+				<requirement name="ProgressionLevel" progression_name="perkHealingArts" operation="Equals" value="2"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="add" value="1.2">
+				<requirement name="ProgressionLevel" progression_name="perkHealingArts" operation="Equals" value="3"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="add" value="1.4">
+				<requirement name="ProgressionLevel" progression_name="perkHealingArts" operation="Equals" value="4"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="medicRegHealthIncreaseSpeed" operation="add" value="1.5">
+				<requirement name="ProgressionLevel" progression_name="perkHealingArts" operation="Equals" value="5"/></triggered_effect>
+
+				
+			<!-- set max bleeding stacks that a player can apply -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$maxBleedCounter" operation="add" value="2">
+				<requirement name="ProgressionLevel" progression_name="perkBladeMastery" operation="Equals" value="5"/></triggered_effect>
+
+		</effect_group>
+
+
+    </append>
+</configs>

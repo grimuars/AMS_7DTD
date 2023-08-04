@@ -247,8 +247,6 @@
 		<property name="RepairTime" value="10"/>
 		<property name="RepairAmount" value="32000"/>
 	</append>
-	<!-- Деревянный лук -->
-	<set xpath="/items/item[@name='gunBowT1WoodenBow']/property[@name='RepairTools']/@value">gunBowT1WoodenBowParts</set>
 	<!-- Составной лук -->
 	<set xpath="/items/item[@name='gunBowT3CompoundBow']/property[@name='RepairTools']/@value">gunBowT1WoodenBowParts</set>
 	<!-- Железный Арбалет -->

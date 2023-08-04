@@ -1,0 +1,9 @@
+<configs>
+	<append xpath="/buffs">
+		<!-- Buff when parachute backpack is worn -->
+		<buff name="buffOcbParachute" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+		</buff>
+	</append>
+</configs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="HydroponicFarming"/>
+	<DisplayName value="Hydroponic Farming"/>
+	<Version value="1.6"/>
+	<Description value="Adds Hydroponic Farming to the game using the ingame models that Trader Jen has at her POI, Make seeds cheaper using the Hydroponic Seed Station and use the Hydroponic Growing Station to grow you seeds in to useable crops craft times are based on in game crop growth times. Living Off The Land perk aid in the crafting times and costs"/>
+	<Author value="WimpingEgo (modified by grimuars)"/>
+	<Website value="https://github.com/Wimpingego/7-Days-To-Die"/>
+</xml>

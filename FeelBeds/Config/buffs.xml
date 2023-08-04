@@ -1,0 +1,28 @@
+<config>
+    <!-- Creating new buffs for the player that will increase the player's health -->
+	<append xpath="/buffs">
+        <!-- The buffHealingBedFast buff increases the player's health by .11 every update and lasts 10 seconds -->
+		<buff name="buffHealingBedFast" name_key="buffHealingBedFastName" description_key="buffHealingBedFastDesc" icon="ui_game_symbol_add">
+			<stack_type value="ignore"/>
+			<duration value="10"/>
+			<effect_group>
+				<requirement name="CVarCompare" cvar=".NoHealingManager" operation="Equals" value="0"/>
+				<requirement name="CVarCompare" cvar="foodHealthAmount" operation="GTE" value="0"/>
+				<requirement name="!HasBuff" buff="buffHealingBedSlow"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value=".11"/>
+			</effect_group>
+		</buff>
+
+        <!-- The buffHealingBedSlow buff increases the player's health by .055 every update and lasts 10 seconds -->
+		<buff name="buffHealingBedSlow" name_key="buffHealingBedSlowName" description_key="buffHealingBedSlowDesc" icon="ui_game_symbol_add">
+			<stack_type value="ignore"/>
+			<duration value="10"/>
+			<effect_group>
+				<requirement name="CVarCompare" cvar=".NoHealingManager" operation="Equals" value="0"/>
+				<requirement name="CVarCompare" cvar="foodHealthAmount" operation="GTE" value="0"/>
+				<requirement name="!HasBuff" buff="buffHealingBedFast"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value=".055"/>
+			</effect_group>
+		</buff>
+	</append>
+</config>

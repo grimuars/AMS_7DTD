@@ -1,0 +1,3 @@
+Key,English,Russian
+UpgradeTable,Upgrade Table,Стол обновления
+UpgradeTableDesc,"On this table you can repair tools and weapons, as well as upgrade and downgrade them.","На этом столе вы можете ремонтировать инструменты и оружие, а также повышать и понижать их уровень."

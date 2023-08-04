@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="DeucesOvenWorkstation"/>
+	<DisplayName value="Deuces Oven Workstation"/>
+    <Description value="Added an oven workstation that is unlockable with the forged ahead perk."/>
+    <Author value="DropDaDeuce"/>
+    <Version value="0.0.0.1"/>
+	<Website value=""/>
+</xml>

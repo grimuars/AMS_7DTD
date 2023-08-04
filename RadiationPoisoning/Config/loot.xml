@@ -1,0 +1,29 @@
+<configs>
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='groupTreasureMaps']">
+		<lootgroup name="groupApparelHazmat1">
+			<item name="apparelHazmatBoots"/>
+			<item name="apparelHazmatPants"/>
+			<item name="apparelHazmatJacket"/>
+			<item name="apparelHazmatGloves"/>
+			<item name="apparelHazmatMask"/>
+		</lootgroup>
+	</insertAfter>
+	<append xpath="/lootcontainers/lootgroup[@name='groupApparelClothes']">
+		<item group="groupApparelHazmat1" loot_prob_template="low"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='survivalMedical']">
+		<item name="drugIodinePils" count="1" loot_prob_template="low"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestMedical']">
+		<item name="drugIodinePils" count="2,3" prob="1.5"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupMedicalUncommon']">
+		<item name="drugIodinePils" loot_prob_template="low"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupChemistryStationLoot02']">
+		<item name="drugIodinePils"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='airdropMedicine']">
+		<item name="drugIodinePils" count="1,2"/>
+	</append>
+</configs>

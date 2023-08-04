@@ -1,0 +1,5 @@
+<configs>
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry[@icon='foodPumpkinBread,foodPumpkinPie,foodPumpkinCheesecake,foodMeatStew,foodSteakAndPotato']/@icon">foodPumpkinBread,foodPumpkinPie,foodPumpkinCheesecake,foodMeatStew,foodSteakAndPotato,foodChickenStew,foodEggSandwich</set>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry/unlock_entry[@item='foodPumpkinCheesecake']/@item">,foodChickenStew,foodEggSandwich,foodEggQuiche</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/effect_group/passive_effect[@tags='foodPumpkinCheesecake']/@tags">,foodChickenStew,foodEggSandwich,foodEggQuiche</append>
+</configs>

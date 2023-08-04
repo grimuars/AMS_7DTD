@@ -1,0 +1,887 @@
+<Config>
+	<append xpath="/quests">
+		<!-- Zombie Challenge Quests -->
+		<quest id="challenge1Zombie">
+			<property name="name_key" value="1 - Провинциальные девушки"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge1ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Гнилая девушка - [228B22]3&#xA;[CD7F32]Разлагающаяся мать - [228B22]3&#xA;[CD7F32]Покойница - [228B22]9"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieArlene" value="3" phase="1"/>
+			<objective type="EntityKill" id="zombieDarlene" value="3" phase="1"/>
+			<objective type="EntityKill" id="zombieMarlene" value="9" phase="1"/>
+			<reward type="Exp" value="2000"/>
+			<reward type="Item" id="casinoCoin" value="2000"/>
+			<reward type="Item" id="ammoTicket" value="2"/>
+		</quest>
+		<quest id="challenge2Zombie">
+			<property name="name_key" value="2 - Три бугая"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge2ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Зараженный выживший - [228B22]3&#xA;[CD7F32]Гнойный труп - [228B22]3&#xA;[CD7F32]Распухший ходок - [228B22]4"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieBoe" value="3" phase="1"/>
+			<objective type="EntityKill" id="zombieJoe" value="3" phase="1"/>
+			<objective type="EntityKill" id="zombieMoe" value="4" phase="1"/>
+			<reward type="Exp" value="2000"/>
+			<reward type="Item" id="casinoCoin" value="2000"/>
+			<reward type="Item" id="ammoTicket" value="2"/>
+		</quest>
+		<quest id="challenge3Zombie">
+			<property name="name_key" value="3 - Он был скейтером"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge3ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Скейтер-зомби - [228B22]10"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieSkateboarder" value="10" phase="1"/>
+			<reward type="Exp" value="2000"/>
+			<reward type="Item" id="casinoCoin" value="2000"/>
+			<reward type="Item" id="ammoTicket" value="2"/>
+		</quest>
+		<quest id="challenge4Zombie">
+			<property name="name_key" value="4 - Девочки хотят развлечься"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge4ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Тусовщица - [228B22]10&#xA;"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombiePartyGirl" value="10" phase="1"/>
+			<reward type="Exp" value="2000"/>
+			<reward type="Item" id="casinoCoin" value="2000"/>
+			<reward type="Item" id="ammoTicket" value="2"/>
+		</quest>
+		<quest id="challenge5Zombie">
+			<property name="name_key" value="5 - Работа из дома"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge5ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Разнорабочий-зомби - [228B22]4&#xA;[CD7F32]Уборщик - [228B22]3&#xA;[CD7F32]Лесоруб-зомби - [228B22]3"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieUtilityWorker" value="4" phase="1"/>
+			<objective type="EntityKill" id="zombieJanitor" value="3" phase="1"/>
+			<objective type="EntityKill" id="zombieLumberjack" value="3" phase="1"/>
+			<reward type="Exp" value="2000"/>
+			<reward type="Item" id="casinoCoin" value="2000"/>
+			<reward type="Item" id="ammoTicket" value="2"/>
+		</quest>
+		<quest id="challenge6Zombie">
+			<property name="name_key" value="6 - Рождён дикарём"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge6ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Байкер - [228B22]10&#xA;"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieBiker" value="10" phase="1"/>
+			<reward type="Exp" value="2000"/>
+			<reward type="Item" id="casinoCoin" value="2000"/>
+			<reward type="Item" id="ammoTicket" value="2"/>
+		</quest>
+		<quest id="challenge7Zombie">
+			<property name="name_key" value="7 - Просто будь счастлив!"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge7ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Разлагающаяся туша - [228B22]3&#xA;[CD7F32]Потревоженный турист - [228B22]2&#xA;[CD7F32]Оживший труп - [228B22]3&#xA;[CD7F32]Том Кларк - [228B22]3"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieYo" value="3" phase="1"/>
+			<objective type="EntityKill" id="zombieFatHawaiian" value="2" phase="1"/>
+			<objective type="EntityKill" id="zombieSteve" value="3" phase="1"/>
+			<objective type="EntityKill" id="zombieTomClark" value="3" phase="1"/>
+			<reward type="Exp" value="2000"/>
+			<reward type="Item" id="casinoCoin" value="2000"/>
+			<reward type="Item" id="ammoTicket" value="2"/>
+		</quest>
+		<quest id="challenge8Zombie">
+			<property name="name_key" value="8 - Прыгай, прыгай, прыгай!"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge8ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Паук - [228B22]10"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieSpider" value="10" phase="1"/>
+			<reward type="Exp" value="2000"/>
+			<reward type="Item" id="casinoCoin" value="2000"/>
+			<reward type="Item" id="ammoTicket" value="2"/>
+		</quest>
+		<quest id="challenge9Zombie">
+			<property name="name_key" value="9 - Взять все дела на себя"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge9ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Бизнесмен - [228B22]3&#xA;[CD7F32]Чумная санитарка - [228B22]4&#xA;[CD7F32]Ликвидатор - [228B22]3"/>
+			<property name="difficulty" value="easy"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieBusinessMan" value="3" phase="1"/>
+			<objective type="EntityKill" id="zombieNurse" value="4" phase="1"/>
+			<objective type="EntityKill" id="zombieMaleHazmat" value="3" phase="1"/>
+			<reward type="Exp" value="2000"/>
+			<reward type="Item" id="casinoCoin" value="2000"/>
+			<reward type="Item" id="ammoTicket" value="2"/>
+		</quest>
+		<quest id="challenge10Zombie">
+			<property name="name_key" value="10 - Вот идёт мой герой"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge10ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Солдат - [228B22]7&#xA;[CD7F32]Зараженный коп - [228B22]3"/>
+			<property name="difficulty" value="easy"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieSoldier" value="7" phase="1"/>
+			<objective type="EntityKill" id="zombieFatCop" value="3" phase="1"/>
+			<reward type="Exp" value="2000"/>
+			<reward type="Item" id="casinoCoin" value="2000"/>
+			<reward type="Item" id="ammoTicket" value="2"/>
+		</quest>
+		<quest id="challenge11Zombie">
+			<property name="name_key" value="11 - Как птичка"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge11ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="login_rally_reset" value="false"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Зомби-стервятник - [228B22]15"/>
+			<property name="difficulty" value="easy"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="animalZombieVulture" value="15" phase="1"/>
+			<reward type="Exp" value="2000"/>
+			<reward type="Item" id="casinoCoin" value="2000"/>
+			<reward type="Item" id="ammoTicket" value="2"/>
+		</quest>
+		<quest id="challenge12Zombie">
+			<property name="name_key" value="12 - Неожиданная мутация"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge12ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Мутант - [228B22]10"/>
+			<property name="difficulty" value="easy"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieMutated" value="10" phase="1"/>
+			<reward type="Exp" value="3000"/>
+			<reward type="Item" id="casinoCoin" value="3000"/>
+			<reward type="Item" id="ammoTicket" value="3"/>
+		</quest>
+		<quest id="challenge13Zombie">
+			<property name="name_key" value="13 - Кто спустил псов с цепи?"/>
+			<property name="subtitle_key" value="Победите стаю волков"/>
+			<property name="description_key" value="challenge13ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте противников из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Волк - [228B22]5"/>
+			<property name="difficulty" value="easy"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="animalWolf" value="5" phase="1"/>
+			<reward type="Exp" value="3000"/>
+			<reward type="Item" id="casinoCoin" value="3000"/>
+			<reward type="Item" id="ammoTicket" value="3"/>
+		</quest>
+		<quest id="challenge14Zombie">
+			<property name="name_key" value="14 - Все собаки попадают в рай"/>
+			<property name="subtitle_key" value="Победите зомби-собак"/>
+			<property name="description_key" value="challenge14ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте противников из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Зомби-собака - [228B22]10"/>
+			<property name="difficulty" value="easy"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="animalZombieDog" value="10" phase="1"/>
+			<reward type="Exp" value="3000"/>
+			<reward type="Item" id="casinoCoin" value="3000"/>
+			<reward type="Item" id="ammoTicket" value="3"/>
+		</quest>
+		<quest id="challenge15Zombie">
+			<property name="name_key" value="15 - Свиномутантик"/>
+			<property name="subtitle_key" value="Победите кабана-мутанта"/>
+			<property name="description_key" value="challenge15ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте противников из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Кабан-мутант - [228B22]1"/>
+			<property name="difficulty" value="easy"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="animalBossGrace" value="1" phase="1"/>
+			<reward type="Exp" value="3000"/>
+			<reward type="Item" id="casinoCoin" value="3000"/>
+			<reward type="Item" id="ammoTicket" value="3"/>
+		</quest>
+		<quest id="challenge16Zombie">
+			<property name="name_key" value="16 - Дамы из маленького города"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge16ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Дикая гнилая девушка - [228B22]4&#xA;[CD7F32]Дикая мать - [228B22]3&#xA;[CD7F32]Дикая покойница - [228B22]3 "/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieArleneFeral" value="4" phase="1"/>
+			<objective type="EntityKill" id="zombieDarleneFeral" value="3" phase="1"/>
+			<objective type="EntityKill" id="zombieMarleneFeral" value="3" phase="1"/>
+			<reward type="Exp" value="3000"/>
+			<reward type="Item" id="casinoCoin" value="3000"/>
+			<reward type="Item" id="ammoTicket" value="3"/>
+		</quest>
+		<quest id="challenge17Zombie">
+			<property name="name_key" value="17 - Трое по триста"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge17ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Дикий зараженный выживший - [228B22]4&#xA;[CD7F32]Дикий гнойный труп - [228B22]3&#xA;[CD7F32]Дикий распухший ходок - [228B22]3"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieBoeFeral" value="4" phase="1"/>
+			<objective type="EntityKill" id="zombieJoeFeral" value="3" phase="1"/>
+			<objective type="EntityKill" id="zombieMoeFeral" value="3" phase="1"/>
+			<reward type="Exp" value="3000"/>
+			<reward type="Item" id="casinoCoin" value="3000"/>
+			<reward type="Item" id="ammoTicket" value="3"/>
+		</quest>
+		<quest id="challenge18Zombie">
+			<property name="name_key" value="18 - Скейтер без доски"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge18ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Дикий скейтер-зомби - [228B22]10"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieSkateboarderFeral" value="10" phase="1"/>
+			<reward type="Exp" value="3000"/>
+			<reward type="Item" id="casinoCoin" value="3000"/>
+			<reward type="Item" id="ammoTicket" value="3"/>
+		</quest>
+		<quest id="challenge19Zombie">
+			<property name="name_key" value="19 - Девочки очень хотят развлечься"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge19ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Дикая тусовщица - [228B22]10"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombiePartyGirlFeral" value="10" phase="1"/>
+			<reward type="Exp" value="3000"/>
+			<reward type="Item" id="casinoCoin" value="3000"/>
+			<reward type="Item" id="ammoTicket" value="3"/>
+		</quest>
+		<quest id="challenge20Zombie">
+			<property name="name_key" value="20 - Трудимся на удалёнке"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge20ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Дикий разнорабочий-зомби - [228B22]5&#xA;[CD7F32]Дикий уборщик - [228B22]5&#xA;[CD7F32]Безумный лесоруб - [228B22]3"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieUtilityWorkerFeral" value="5" phase="1"/>
+			<objective type="EntityKill" id="zombieJanitorFeral" value="5" phase="1"/>
+			<objective type="EntityKill" id="zombieLumberjackFeral" value="3" phase="1"/>
+			<reward type="Exp" value="3000"/>
+			<reward type="Item" id="casinoCoin" value="3000"/>
+			<reward type="Item" id="ammoTicket" value="3"/>
+		</quest>
+		<quest id="challenge21Zombie">
+			<property name="name_key" value="21 - Дикий и страстный"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge21ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Дикий байкер - [228B22]10"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieBikerFeral" value="10" phase="1"/>
+			<reward type="Exp" value="3000"/>
+			<reward type="Item" id="casinoCoin" value="3000"/>
+			<reward type="Item" id="ammoTicket" value="3"/>
+		</quest>
+		<quest id="challenge22Zombie">
+			<property name="name_key" value="22 - Всё будет хорошо!"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge22ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Дикая туша - [228B22]3&#xA;[CD7F32]Дикий турист - [228B22]3&#xA;[CD7F32]Дикий ползающий зомби - [228B22]4&#xA;[CD7F32]Дикий Том Кларк - [228B22]4"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieYoFeral" value="3" phase="1"/>
+			<objective type="EntityKill" id="zombieFatHawaiianFeral" value="3" phase="1"/>
+			<objective type="EntityKill" id="zombieSteveFeral" value="4" phase="1"/>
+			<objective type="EntityKill" id="zombieTomClarkFeral" value="4" phase="1"/>
+			<reward type="Exp" value="4000"/>
+			<reward type="Item" id="casinoCoin" value="4000"/>
+			<reward type="Item" id="ammoTicket" value="4"/>
+		</quest>
+		<quest id="challenge23Zombie">
+			<property name="name_key" value="23 - Прыг-скок"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge23ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Дикий паук - [228B22]10"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieSpiderFeral" value="10" phase="1"/>
+			<reward type="Exp" value="4000"/>
+			<reward type="Item" id="casinoCoin" value="4000"/>
+			<reward type="Item" id="ammoTicket" value="4"/>
+		</quest>
+		<quest id="challenge24Zombie">
+			<property name="name_key" value="24 - Я с этим справлюсь"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge24ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Дикий бизнесмен - [228B22]5&#xA;[CD7F32]Дикая санитарка - [228B22]5&#xA;[CD7F32]Дикий ликвидатор - [228B22]4"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieBusinessManFeral" value="5" phase="1"/>
+			<objective type="EntityKill" id="zombieNurseFeral" value="5" phase="1"/>
+			<objective type="EntityKill" id="zombieMaleHazmatFeral" value="4" phase="1"/>
+			<reward type="Exp" value="4000"/>
+			<reward type="Item" id="casinoCoin" value="4000"/>
+			<reward type="Item" id="ammoTicket" value="4"/>
+		</quest>
+		<quest id="challenge25Zombie">
+			<property name="name_key" value="25 - Куда подевался мой принц?"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge25ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Дикий солдат - [228B22]7&#xA;[CD7F32]Дикий коп - [228B22]3"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieSoldierFeral" value="7" phase="1"/>
+			<objective type="EntityKill" id="zombieFatCopFeral" value="3" phase="1"/>
+			<reward type="Exp" value="4000"/>
+			<reward type="Item" id="casinoCoin" value="4000"/>
+			<reward type="Item" id="ammoTicket" value="4"/>
+		</quest>
+		<quest id="challenge26Zombie">
+			<property name="name_key" value="26 - Мутирует без предупреждения"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge26ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Дикий мутант - [228B22]10"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieMutatedFeral" value="10" phase="1"/>
+			<reward type="Exp" value="4000"/>
+			<reward type="Item" id="casinoCoin" value="4000"/>
+			<reward type="Item" id="ammoTicket" value="4"/>
+		</quest>
+		<quest id="challenge27Zombie">
+			<property name="name_key" value="27 - Псы на свободе"/>
+			<property name="subtitle_key" value="Победите орду волков"/>
+			<property name="description_key" value="challenge27ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Сможете пережить орду волков?[FFFF00]&#xA;&#xA;Задача:&#xA;&#xA;[CD7F32]Ужасный волк - [228B22]6"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="animalDireWolf" value="6" phase="1"/>
+			<reward type="Exp" value="4000"/>
+			<reward type="Item" id="casinoCoin" value="4000"/>
+			<reward type="Item" id="ammoTicket" value="4"/>
+		</quest>
+		<quest id="challenge28Zombie">
+			<property name="name_key" value="28 - Деревенские красавицы"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge28ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученная гнилая девушка - [228B22]5&#xA;[CD7F32]Облученная мать - [228B22]5&#xA;[CD7F32]Облученная покойница - [228B22]5"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieArleneRadiated" value="5" phase="1"/>
+			<objective type="EntityKill" id="zombieDarleneRadiated" value="5" phase="1"/>
+			<objective type="EntityKill" id="zombieMarleneRadiated" value="5" phase="1"/>
+			<reward type="Exp" value="4000"/>
+			<reward type="Item" id="casinoCoin" value="4000"/>
+			<reward type="Item" id="ammoTicket" value="4"/>
+		</quest>
+		<quest id="challenge29Zombie">
+			<property name="name_key" value="29 - Трое из ларца"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge29ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученный зараженный выживший - [228B22]6&#xA;[CD7F32]Облученный гнойный труп - [228B22]6&#xA;[CD7F32]Облученный распухший ходок - [228B22]3"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieBoeRadiated" value="6" phase="1"/>
+			<objective type="EntityKill" id="zombieJoeRadiated" value="6" phase="1"/>
+			<objective type="EntityKill" id="zombieMoeRadiated" value="3" phase="1"/>
+			<reward type="Exp" value="4000"/>
+			<reward type="Item" id="casinoCoin" value="4000"/>
+			<reward type="Item" id="ammoTicket" value="4"/>
+		</quest>
+		<quest id="challenge30Zombie">
+			<property name="name_key" value="30 - Уличные выкрутасы"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge30ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученный скейтер-зомби - [228B22]15"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieSkateboarderRadiated" value="15" phase="1"/>
+			<reward type="Exp" value="4000"/>
+			<reward type="Item" id="casinoCoin" value="4000"/>
+			<reward type="Item" id="ammoTicket" value="4"/>
+		</quest>
+		<quest id="challenge31Zombie">
+			<property name="name_key" value="31 - Девочки хотят не просто развлечься"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge31ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученная тусовщица - [228B22]15"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombiePartyGirlRadiated" value="15" phase="1"/>
+			<reward type="Exp" value="4000"/>
+			<reward type="Item" id="casinoCoin" value="4000"/>
+			<reward type="Item" id="ammoTicket" value="4"/>
+		</quest>
+		<quest id="challenge32Zombie">
+			<property name="name_key" value="32 - Домашние дела"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge32ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученный разнорабочий-зомби - [228B22]5&#xA;[CD7F32]Облученный уборщик - [228B22]4&#xA;[CD7F32]Облученный лесоруб - [228B22]6"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieUtilityWorkerRadiated" value="5" phase="1"/>
+			<objective type="EntityKill" id="zombieJanitorRadiated" value="4" phase="1"/>
+			<objective type="EntityKill" id="zombieLumberjackRadiated" value="6" phase="1"/>
+			<reward type="Exp" value="5000"/>
+			<reward type="Item" id="casinoCoin" value="5000"/>
+			<reward type="Item" id="ammoTicket" value="5"/>
+		</quest>
+		<quest id="challenge33Zombie">
+			<property name="name_key" value="33 - Дикий и неотёсанный"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge33ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученный байкер - [228B22]15"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieBikerRadiated" value="15" phase="1"/>
+			<reward type="Exp" value="5000"/>
+			<reward type="Item" id="casinoCoin" value="5000"/>
+			<reward type="Item" id="ammoTicket" value="5"/>
+		</quest>
+		<quest id="challenge34Zombie">
+			<property name="name_key" value="34 - Не парься!"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge34ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученная туша - [228B22]5&#xA;[CD7F32]Облученный турист - [228B22]5&#xA;[CD7F32]Облученный труп - [228B22]2&#xA;[CD7F32]Облученный Том Кларк - [228B22]3"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieYoRadiated" value="5" phase="1"/>
+			<objective type="EntityKill" id="zombieFatHawaiianRadiated" value="5" phase="1"/>
+			<objective type="EntityKill" id="zombieSteveRadiated" value="2" phase="1"/>
+			<objective type="EntityKill" id="zombieTomClarkRadiated" value="3" phase="1"/>
+			<reward type="Exp" value="5000"/>
+			<reward type="Item" id="casinoCoin" value="5000"/>
+			<reward type="Item" id="ammoTicket" value="5"/>
+		</quest>
+		<quest id="challenge35Zombie">
+			<property name="name_key" value="35 - Распрыжка"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge35ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученный паук - [228B22]15"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieSpiderRadiated" value="15" phase="1"/>
+			<reward type="Exp" value="5000"/>
+			<reward type="Item" id="casinoCoin" value="5000"/>
+			<reward type="Item" id="ammoTicket" value="5"/>
+		</quest>
+		<quest id="challenge36Zombie">
+			<property name="name_key" value="36 - Мастер решать вопросы"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge36ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученный бизнесмен - [228B22]6&#xA;[CD7F32]Облученная чумная санитарка - [228B22]6&#xA;[CD7F32]Облученный ликвидатор - [228B22]3"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieBusinessManRadiated" value="6" phase="1"/>
+			<objective type="EntityKill" id="zombieNurseRadiated" value="6" phase="1"/>
+			<objective type="EntityKill" id="zombieMaleHazmatRadiated" value="3" phase="1"/>
+			<reward type="Exp" value="5000"/>
+			<reward type="Item" id="casinoCoin" value="5000"/>
+			<reward type="Item" id="ammoTicket" value="5"/>
+		</quest>
+		<quest id="challenge37Zombie">
+			<property name="name_key" value="37 - Горячие герои"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge37ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученный солдат - [228B22]12&#xA;[CD7F32]Облученный коп - [228B22]3"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieSoldierRadiated" value="12" phase="1"/>
+			<objective type="EntityKill" id="zombieFatCopRadiated" value="3" phase="1"/>
+			<reward type="Exp" value="5000"/>
+			<reward type="Item" id="casinoCoin" value="5000"/>
+			<reward type="Item" id="ammoTicket" value="5"/>
+		</quest>
+		<quest id="challenge38Zombie">
+			<property name="name_key" value="38 - Бро Упырь и его друзья"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge38ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Дикий упырь - [228B22]8&#xA;[CD7F32]Облученный упырь - [228B22]5"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieWightFeral" value="8" phase="1"/>
+			<objective type="EntityKill" id="zombieWightRadiated" value="6" phase="1"/>
+			<reward type="Exp" value="5000"/>
+			<reward type="Item" id="casinoCoin" value="5000"/>
+			<reward type="Item" id="ammoTicket" value="5"/>
+		</quest>
+		<quest id="challenge39Zombie">
+			<property name="name_key" value="39 - Три маленькие свинки"/>
+			<property name="subtitle_key" value="Победите мутировавших кабанов"/>
+			<property name="description_key" value="challenge39ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте противников из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Кабан-мутант - [228B22]3"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="animalBossGrace" value="3" phase="1"/>
+			<reward type="Exp" value="5000"/>
+			<reward type="Item" id="casinoCoin" value="5000"/>
+			<reward type="Item" id="ammoTicket" value="5"/>
+		</quest>
+		<quest id="challenge40Zombie">
+			<property name="name_key" value="40 - Омедведительно!"/>
+			<property name="subtitle_key" value="Победите медведей"/>
+			<property name="description_key" value="challenge40ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте противников из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Медведь - [228B22]5"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="animalBear" value="5" phase="1"/>
+			<reward type="Exp" value="5000"/>
+			<reward type="Item" id="casinoCoin" value="5000"/>
+			<reward type="Item" id="ammoTicket" value="5"/>
+		</quest>
+		<quest id="challenge41Zombie">
+			<property name="name_key" value="41 - Дамы на ринге"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge41ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученная гнилая девушка - [228B22]5&#xA;[CD7F32]Облученная тусовщица - [228B22]5&#xA;[CD7F32]Облученная чумная санитарка - [228B22]5&#xA;[CD7F32]Облученная мать - [228B22]3&#xA;[CD7F32]Облученная покойница - [228B22]3"/>
+			<property name="difficulty" value="insane"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieArleneRadiated" value="5" phase="1"/>
+			<objective type="EntityKill" id="zombiePartyGirlRadiated" value="5" phase="1"/>
+			<objective type="EntityKill" id="zombieNurseRadiated" value="5" phase="1"/>
+			<objective type="EntityKill" id="zombieDarleneRadiated" value="3" phase="1"/>
+			<objective type="EntityKill" id="zombieMarleneRadiated" value="3" phase="1"/>
+			<reward type="Exp" value="5000"/>
+			<reward type="Item" id="casinoCoin" value="5000"/>
+			<reward type="Item" id="ammoTicket" value="5"/>
+		</quest>
+		<quest id="challenge42Zombie">
+			<property name="name_key" value="42 - Роковая женщина"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge42ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученная толстуха - [228B22]15"/>
+			<property name="difficulty" value="insane"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieFemaleFatRadiated" value="15" phase="1"/>
+			<reward type="Exp" value="5000"/>
+			<reward type="Item" id="casinoCoin" value="5000"/>
+			<reward type="Item" id="ammoTicket" value="5"/>
+		</quest>
+		<quest id="challenge43Zombie">
+			<property name="name_key" value="43 - Ритмичная зачистка"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge43ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученный уборщик - [228B22]8&#xA;[CD7F32]Облученный ликвидатор - [228B22]7"/>
+			<property name="difficulty" value="insane"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieJanitorRadiated" value="8" phase="1"/>
+			<objective type="EntityKill" id="zombieMaleHazmatRadiated" value="7" phase="1"/>
+			<reward type="Exp" value="6000"/>
+			<reward type="Item" id="casinoCoin" value="6000"/>
+			<reward type="Item" id="ammoTicket" value="6"/>
+		</quest>
+		<quest id="challenge44Zombie">
+			<property name="name_key" value="44 - Сыны анархии"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge44ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученный байкер - [228B22]15"/>
+			<property name="difficulty" value="insane"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieBikerRadiated" value="15" phase="1"/>
+			<reward type="Exp" value="6000"/>
+			<reward type="Item" id="casinoCoin" value="6000"/>
+			<reward type="Item" id="ammoTicket" value="6"/>
+		</quest>
+		<quest id="challenge45Zombie">
+			<property name="name_key" value="45 - Больше не мой герой"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge45ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученный солдат - [228B22]10&#xA;[CD7F32]Облученный коп - [228B22]5"/>
+			<property name="difficulty" value="insane"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieSoldierRadiated" value="10" phase="1"/>
+			<objective type="EntityKill" id="zombieFatCopRadiated" value="5" phase="1"/>
+			<reward type="Exp" value="6000"/>
+			<reward type="Item" id="casinoCoin" value="6000"/>
+			<reward type="Item" id="ammoTicket" value="6"/>
+		</quest>
+		<quest id="challenge46Zombie">
+			<property name="name_key" value="46 - Возвращение Агента Орифлэйм"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge46ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученный бизнесмен - [228B22]15"/>
+			<property name="difficulty" value="insane"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieBusinessManRadiated" value="15" phase="1"/>
+			<reward type="Exp" value="6000"/>
+			<reward type="Item" id="casinoCoin" value="6000"/>
+			<reward type="Item" id="ammoTicket" value="6"/>
+		</quest>
+		<quest id="challenge47Zombie">
+			<property name="name_key" value="47 - Не DOOMай, стреляй"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge47ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученный тлеющий зомби - [228B22]15"/>
+			<property name="difficulty" value="insane"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieBurntRadiated" value="15" phase="1"/>
+			<reward type="Exp" value="6000"/>
+			<reward type="Item" id="casinoCoin" value="6000"/>
+			<reward type="Item" id="ammoTicket" value="6"/>
+		</quest>
+		<quest id="challenge48Zombie">
+			<property name="name_key" value="48 - Волчья пачка"/>
+			<property name="subtitle_key" value="Победите стаю волков"/>
+			<property name="description_key" value="challenge48ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте противников из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Ужасный волк - [228B22]10"/>
+			<property name="difficulty" value="insane"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="animalDireWolf" value="6" phase="1"/>
+			<reward type="Exp" value="6000"/>
+			<reward type="Item" id="casinoCoin" value="6000"/>
+			<reward type="Item" id="ammoTicket" value="6"/>
+		</quest>
+		<quest id="challenge49Zombie">
+			<property name="name_key" value="49 - Кокосовые медведи"/>
+			<property name="subtitle_key" value="Победите стаю зомби-медведей"/>
+			<property name="description_key" value="challenge49ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Сможете победить немного зомби-медведей?&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Медведь-зомби - [228B22]5"/>
+			<property name="difficulty" value="insane"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="animalZombieBear" value="4" phase="1"/>
+			<reward type="Exp" value="6000"/>
+			<reward type="Item" id="casinoCoin" value="6000"/>
+			<reward type="Item" id="ammoTicket" value="6"/>
+		</quest>
+		<quest id="challenge50Zombie">
+			<property name="name_key" value="50 - Гала-концерт"/>
+			<property name="subtitle_key" value="Победите орду зомби"/>
+			<property name="description_key" value="challenge50ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте зомби из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученный упырь - [228B22]7&#xA;[CD7F32]Облученный мутант - [228B22]7&#xA;[CD7F32]Облученный байкер - [228B22]7&#xA;[CD7F32]Облученный коп - [228B22]7&#xA;[CD7F32]Облученный паук - [228B22]7&#xA;[CD7F32]Облученный лесоруб - [228B22]5"/>
+			<property name="difficulty" value="insane"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="zombieWightRadiated" value="7" phase="1"/>
+			<objective type="EntityKill" id="zombieMutatedRadiated" value="7" phase="1"/>
+			<objective type="EntityKill" id="zombieBikerRadiated" value="7" phase="1"/>
+			<objective type="EntityKill" id="zombieFatCopRadiated" value="7" phase="1"/>
+			<objective type="EntityKill" id="zombieSpiderRadiated" value="7" phase="1"/>
+			<objective type="EntityKill" id="zombieLumberjackRadiated" value="5" phase="1"/>
+			<reward type="Exp" value="7000"/>
+			<reward type="Item" id="casinoCoin" value="7000"/>
+			<reward type="Item" id="ammoTicket" value="7"/>
+		</quest>
+		<!-- Мои собственные квесты -->
+		<quest id="challenge51Zombie">
+			<property name="name_key" value="51 - Ночной кусь"/>
+			<property name="subtitle_key" value="Победите стаю сильных стервятников"/>
+			<property name="description_key" value="challenge51ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте противников из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Облученный стервятник - [228B22]15"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="animalZombieVulture" value="15" phase="1"/>
+			<reward type="Exp" value="3000"/>
+			<reward type="Item" id="casinoCoin" value="3000"/>
+			<reward type="Item" id="ammoTicket" value="3"/>
+		</quest>
+		<quest id="challenge52Zombie">
+			<property name="name_key" value="52 - Цирковое представление"/>
+			<property name="subtitle_key" value="Победите сбежавших пум"/>
+			<property name="description_key" value="challenge51ZombieDesc"/>
+			<property name="icon" value="server_feral"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="[FF0000]Найдите и убейте противников из списка:&#xA;&#xA;[FFFF00]Задача:&#xA;&#xA;[CD7F32]Пума - [228B22]10"/>
+			<property name="difficulty" value="hard"/>
+			<property name="shareable" value="false"/>
+			<property name="login_rally_reset" value="false"/>
+			<objective type="EntityKill" id="animalMountainLion" value="10" phase="1"/>
+			<reward type="Exp" value="5000"/>
+			<reward type="Item" id="casinoCoin" value="5000"/>
+			<reward type="Item" id="ammoTicket" value="5"/>
+		</quest>
+	</append>
+</Config>

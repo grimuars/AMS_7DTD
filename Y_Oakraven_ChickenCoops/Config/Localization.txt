@@ -1,0 +1,34 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,russian
+
+CaughtChick,items,Item,,,Caught Chick,,Цыплёнок (пойман)
+CaughtChickDesc,items,Item,,,"Use 2 Caught Chicks, with right mouse click, on an Empty Chicken Coop to populate and activate the next stage.",,"Возьмите 2 пойманных цыплят и разместите их в пустом курятнике, кликнув на нём ПКМ"
+
+birdnestEmpty,blocks,Block,,,Empty Bird Nest,,Пустое гнездо
+WoodCoopEmpty,blocks,Block,,,Chicken Coop - Tin (Use 2 Caught Chicks),,Курятник - Олово (используйте 2 цыплят)
+WoodCoopEmptyDesc,blocks,Block,,,"Introduce 2 Caught Chicks to the Chicken Coop and over time they will grow and produce eggs and feathers. You can catch chicks in nests.",,"Отправьте 2 пойманных цыплят в курятник. Через некоторое время они вырастут и начнут приносить яйца и перья. Цыплят можно найти в гнёздах."
+WoodCoopChicks,blocks,Block,,,[66ff00]Growth Stage,,[66ff00]Растёт
+WoodCoopLaying,blocks,Block,,,[66ff00]Nesting Stage,,[66ff00]Гнездование
+WoodCoopWithEggs,blocks,Block,,,[66ff00]Ready for Gathering,,[66ff00]Готово к сбору
+ChickenCoopEmpty,blocks,Block,,,Chicken Coop - Fancy (Use 2 Caught Chicks),,Курятник - Милый (используйте 2 цыплят)
+ChickenCoopChicks,blocks,Block,,,[66ff00]Growth Stage,,[66ff00]Растёт
+ChickenCoopLaying,blocks,Block,,,[66ff00]Nesting Stage,,[66ff00]Гнездование
+ChickenCoopWithEggs,blocks,Block,,,[66ff00]Ready for Gathering,,[66ff00]Готово к сбору
+TinCoopEmpty,blocks,Block,,,Chicken Coop - Wooden (Use 2 Caught Chicks),,Курятник - Дерево (используйте 2 цыплят)
+TinCoopChicks,blocks,Block,,,[66ff00]Growth Stage,,[66ff00]Растёт
+TinCoopLaying,blocks,Block,,,[66ff00]Nesting Stage,,[66ff00]Гнездование
+TinCoopWithEggs,blocks,Block,,,[66ff00]Ready for Gathering,,[66ff00]Готово к сбору
+HouseCoopEmpty,blocks,Block,,,Chicken Coop - House (Use 2 Caught Chicks),,Курятник - Дом (используйте 2 цыплят)
+HouseCoopChicks,blocks,Block,,,[66ff00]Growth Stage,,[66ff00]Растёт
+HouseCoopLaying,blocks,Block,,,[66ff00]Nesting Stage,,[66ff00]Гнездование
+HouseCoopWithEggs,blocks,Block,,,[66ff00]Ready for Gathering,,[66ff00]Готово к сбору
+WoodCoopVariantHelper,blocks,Block,,,Chicken Coops,,Курятник
+
+GrownChicken,blocks,Block,,,Grown Domestic Chicken,,Взрослая домашняя курица
+GrownChickenDesc,blocks,Block,,,"A grown domestic chicken can be placed and harvested for resources, or made into a chicken stew.",,Из взрослой домашней курицы можно приготовить еду или разместить её в мире и разобрать на ресурсы.
+
+foodEggQuiche,items,Food,,,Quiche,,Киш
+foodEggQuicheDesc,items,Food,,,"This quiche will keep you regular as clockwork.",,"Этот пирог поможет вам работать, как часы"
+foodEggSandwich,items,Food,,,Egg Sandwich,,Бутерброд с яйцом
+foodEggSandwichDesc,items,Food,,,"The Queen of Hearts, she made some tarts, from chicken eggs, and zombie farts. She makes decent sandwiches too.",,"Сердец королева, пироговая дева, из куриных яиц и зомбей пердежа бутерброд приготовила - вот это да!"
+foodChickenStew,items,Food,,,Chicken Stew,,Тушёная с овощами курица
+foodChickenStewDesc,items,Food,,,"Chicken stew provides great sustenance and can put coop reared chickens to good use.",,"Тушёные цыплята прекрасно насыщают и дают курятнику ещё один смысл существования"
