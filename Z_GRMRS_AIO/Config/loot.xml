@@ -7,10 +7,6 @@
 	<set xpath="//lootprobtemplate[@name='med']/loot[@level='1,999999']/@prob">.14</set>
 	<set xpath="//lootprobtemplate[@name='medHigh']/loot[@level='1,999999']/@prob">.18</set>
 	<set xpath="//lootprobtemplate[@name='high']/loot[@level='1,999999']/@prob">.25</set>
-	<!-- Уменьшаем шансы на еду в луте -->
-	<!-- <setattribute xpath="lootcontainers/lootgroup[starts-with(@name,'groupFoodCommon')]" name="loot_prob_template">veryLow</setattribute>
-	<setattribute xpath="lootcontainers/lootgroup[starts-with(@name,'groupDrinksCommon')]" name="loot_prob_template">veryLow</setattribute>
-	<set xpath="//lootgroup[@name='groupBeerCooler01']//item[@name='drinkJarBeer']/@loot_prob_template">medLow</set> -->
 	<!-- Лут для тостера -->
 	<append xpath="/lootcontainers">
 		<lootcontainer name="cntToaster" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate">
