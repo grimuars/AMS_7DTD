@@ -605,22 +605,19 @@
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="challenge31ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
+			<property name="spawn_multiplier" value="4" param1="spawn_multiplier" />
+			<property name="gamestage_mod" value=".5"/>
+			<property name="gamestage_bonus" value="20"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
-			<!-- 1 - Выбрать POI -->
-			<objective type="RandomPOIGoto">
+			<objective type="ClosestPOIGoto">
 				<property name="phase" value="1"/>
-				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type" />
-				<property name="biome_filter" value="burnt_forest" param1="biome_filter" />
-				<property name="nav_object" value="quest" />
-				<property name="poi_tier" value="-1" param1="poi_tier" />
+				<property name="distance" value="100"/>
 			</objective>
-			<!-- 2 - Направить игрока к точке активации -->
 			<objective type="RallyPoint">
 				<property name="phase" value="2"/>
 				<property name="nav_object" value="rally"/>
 			</objective>
-			<!-- 3 - Очистить спящих в локации, оставаясь внутри радиуса -->
 			<objective type="ClearSleepers">
 				<property name="phase" value="3"/>
 				<property name="nav_object" value="sleeper_volume"/>
@@ -629,56 +626,8 @@
 				<property name="phase" value="3"/>
 				<property name="radius" value="25"/>
 			</objective>
-			<!-- 4 - Отбиться от первой волны -->
-			<action type="SpawnEnemy" id="zombieFemaleFat" value="2" phase="4"/>
-			<action type="SpawnEnemy" id="zombieMoe" value="2" phase="4"/>
-			<action type="SpawnEnemy" id="zombieMarlene" value="2" phase="4"/>
-			<!-- <action type="SpawnEnemy" id="zombieSteve" value="2" phase="4"/>
-			<action type="SpawnEnemy" id="zombieBusinessMan" value="2" phase="4"/> -->
-			<objective type="EntityKill" id="zombieFemaleFat" value="2" phase="4"/>
-			<objective type="EntityKill" id="zombieMoe" value="2" phase="4"/>
-			<objective type="EntityKill" id="zombieMarlene" value="2" phase="4"/>
-			<!-- <objective type="EntityKill" id="zombieSteve" value="2" phase="4"/>
-			<objective type="EntityKill" id="zombieBusinessMan" value="2" phase="4"/> -->
-			<objective type="POIStayWithin">
-				<property name="phase" value="4"/>
-				<property name="radius" value="25"/>
-			</objective>
-			<!-- 5 - Отбиться от второй волны -->
-			<action type="SpawnEnemy" id="zombieFemaleFat" value="2" phase="5"/>
-			<action type="SpawnEnemy" id="zombieJanitor" value="2" phase="5"/>
-			<action type="SpawnEnemy" id="zombieMoe" value="2" phase="5"/>
-			<!-- <action type="SpawnEnemy" id="zombieLab" value="2" phase="5"/>
-			<action type="SpawnEnemy" id="zombiePartyGirl" value="2" phase="5"/> -->
-			<objective type="EntityKill" id="zombieFemaleFat" value="2" phase="5"/>
-			<objective type="EntityKill" id="zombieJanitor" value="2" phase="5"/>
-			<objective type="EntityKill" id="zombieMoe" value="2" phase="5"/>
-			<!-- <objective type="EntityKill" id="zombieLab" value="2" phase="5"/>
-			<objective type="EntityKill" id="zombiePartyGirl" value="2" phase="5"/> -->
-			<objective type="POIStayWithin">
-				<property name="phase" value="5"/>
-				<property name="radius" value="25"/>
-			</objective>
-			<!-- 6 - Отбиться от третьей волны -->
-			<action type="SpawnEnemy" id="zombieFatHawaiian" value="2" phase="6"/>
-			<action type="SpawnEnemy" id="zombieUtilityWorker" value="2" phase="6"/>
-			<action type="SpawnEnemy" id="zombieFemaleFat" value="2" phase="6"/>
-			<!-- <action type="SpawnEnemy" id="zombieSkateboarder" value="2" phase="6"/>
-			<action type="SpawnEnemy" id="zombiePartyGirl" value="2" phase="6"/>
-			<action type="SpawnEnemy" id="zombieNurse" value="2" phase="6"/> -->
-			<objective type="EntityKill" id="zombieFatHawaiian" value="2" phase="6"/>
-			<objective type="EntityKill" id="zombieUtilityWorker" value="2" phase="6"/>
-			<objective type="EntityKill" id="zombieFemaleFat" value="2" phase="6"/>
-			<!-- <objective type="EntityKill" id="zombieSkateboarder" value="2" phase="6"/>
-			<objective type="EntityKill" id="zombiePartyGirl" value="2" phase="6"/>
-			<objective type="EntityKill" id="zombieNurse" value="2" phase="6"/> -->
-			<objective type="POIStayWithin">
-				<property name="phase" value="6"/>
-				<property name="radius" value="25"/>
-			</objective>
-			<!-- 7 - Разблокировать POI -->
 			<action type="UnlockPOI">
-				<property name="phase" value="7"/>
+				<property name="phase" value="4"/>
 			</action>
 			<!-- Получить награду -->
 			<reward type="Exp" value="7000"/>
@@ -696,15 +645,14 @@
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="challenge32ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
-			<property name="difficulty_tier" value="3"/>
+			<property name="spawn_multiplier" value="3" param1="spawn_multiplier" />
+			<property name="gamestage_mod" value="2"/>
+			<property name="gamestage_bonus" value="10"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
-			<objective type="RandomPOIGoto">
+			<objective type="ClosestPOIGoto">
 				<property name="phase" value="1"/>
-				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type"/>
-				<property name="biome_filter" value="burnt_forest" param1="biome_filter"/>
-				<property name="nav_object" value="quest"/>
-				<property name="poi_tier" value="-1" param1="poi_tier"/>
+				<property name="distance" value="100"/>
 			</objective>
 			<objective type="RallyPoint">
 				<property name="phase" value="2"/>
@@ -716,30 +664,10 @@
 			</objective>
 			<objective type="POIStayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<action type="SpawnEnemy" id="zombieBoe,zombieFemaleFat,zombieJanitor,zombieMarlene,zombieBusinessMan" value="5-7" phase="4"/>
-			<objective type="ObjectiveEntityKill" value="5" phase="4"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="4"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<action type="SpawnEnemy" id="zombieBurnt,zombieNurse,zombieMaleHazmat,zombieSkateboarder,zombiePartyGirl" value="5-7" phase="5"/>
-			<objective type="ObjectiveEntityKill" value="5" phase="5"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="5"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<action type="SpawnEnemy" id="zombieBiker" value="1" phase="6"/>
-			<action type="SpawnEnemy" id="zombieSoldier" value="1" phase="6"/>
-			<action type="SpawnEnemy" id="zombieJanitor,animalZombieDog,zombieLab,zombieNurse,zombieFatHawaiian" value="4-6" phase="6"/>
-			<objective type="ObjectiveEntityKill" value="6" phase="6"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="6"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
 			<action type="UnlockPOI">
-				<property name="phase" value="7"/>
+				<property name="phase" value="4"/>
 			</action>
 			<reward type="Exp" value="7000"/>
 			<reward type="Item" id="casinoCoin" value="7000"/>
@@ -755,57 +683,29 @@
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="challenge33ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
-			<property name="difficulty_tier" value="3"/>
+			<property name="spawn_multiplier" value="2" param1="spawn_multiplier" />
+			<property name="gamestage_mod" value="2"/>
+			<property name="gamestage_bonus" value="50"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
-			<!-- 1 - Выбрать POI -->
-			<objective type="RandomPOIGoto">
+			<objective type="ClosestPOIGoto">
 				<property name="phase" value="1"/>
-				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type"/>
-				<property name="biome_filter" value="burnt_forest" param1="biome_filter"/>
-				<property name="nav_object" value="quest"/>
-				<property name="poi_tier" value="-1" param1="poi_tier"/>
+				<property name="distance" value="100"/>
 			</objective>
-			<!-- 2 - Направить игрока к точке активации -->
 			<objective type="RallyPoint">
 				<property name="phase" value="2"/>
 				<property name="nav_object" value="rally"/>
 			</objective>
-			<!-- 3 - Очистить спящих в локации, оставаясь внутри радиуса -->
 			<objective type="ClearSleepers">
 				<property name="phase" value="3"/>
 				<property name="nav_object" value="sleeper_volume"/>
 			</objective>
 			<objective type="POIStayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
-			<!-- 4 - Отбиться от первой волны -->
-			<action type="SpawnEnemy" id="zombieNurse,zombiePartyGirl,animalZombieDog,zombieArlene,zombieFemaleFat" value="5-7" phase="4"/>
-			<objective type="ObjectiveEntityKill" value="5" phase="4"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="4"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<!-- 5 - Отбиться от второй волны -->
-			<action type="SpawnEnemy" id="zombieNurse,zombiePartyGirl,zombieDarlene,zombieArlene,zombieFemaleFat" value="5-7" phase="5"/>
-			<objective type="ObjectiveEntityKill" value="5" phase="5"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="5"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<!-- 6 - Отбиться от третьей волны -->
-			<action type="SpawnEnemy" id="zombiePartyGirlFeral" value="1" phase="6"/>
-			<action type="SpawnEnemy" id="zombieMarleneFeral" value="1" phase="6"/>
-			<action type="SpawnEnemy" id="zombieNurse,zombiePartyGirl,zombieDarlene,zombieArlene,zombieFemaleFat" value="4-6" phase="6"/>
-			<objective type="ObjectiveEntityKill" value="6" phase="6"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="6"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<!-- 7 - Разблокировать POI -->
 			<action type="UnlockPOI">
-				<property name="phase" value="7"/>
+				<property name="phase" value="4"/>
 			</action>
 			<!-- Получить награду -->
 			<reward type="Exp" value="7000"/>
@@ -822,57 +722,29 @@
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="challenge34ZombieOffer"/>
 			<property name="difficulty" value="hard"/>
-			<property name="difficulty_tier" value="4"/>
+			<property name="spawn_multiplier" value="3" param1="spawn_multiplier" />
+			<property name="gamestage_mod" value="3"/>
+			<property name="gamestage_bonus" value="50"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
-			<!-- 1 - Выбрать POI -->
-			<objective type="RandomPOIGoto">
+			<objective type="ClosestPOIGoto">
 				<property name="phase" value="1"/>
-				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type"/>
-				<property name="biome_filter" value="burnt_forest" param1="biome_filter"/>
-				<property name="nav_object" value="quest"/>
-				<property name="poi_tier" value="-1" param1="poi_tier"/>
+				<property name="distance" value="100"/>
 			</objective>
-			<!-- 2 - Направить игрока к точке активации -->
 			<objective type="RallyPoint">
 				<property name="phase" value="2"/>
 				<property name="nav_object" value="rally"/>
 			</objective>
-			<!-- 3 - Очистить спящих в локации, оставаясь внутри радиуса -->
 			<objective type="ClearSleepers">
 				<property name="phase" value="3"/>
 				<property name="nav_object" value="sleeper_volume"/>
 			</objective>
 			<objective type="POIStayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
-			<!-- 4 - Отбиться от первой волны -->
-			<action type="SpawnEnemy" id="zombieUtilityWorkerFeral,zombieYoFeral,zombieMoeFeral,zombieDarleneFeral,zombieFemaleFatFeral" value="3-4" phase="4"/>
-			<objective type="ObjectiveEntityKill" value="3" phase="4"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="4"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<!-- 5 - Отбиться от второй волны -->
-			<action type="SpawnEnemy" id="zombieSkateboarderFeral,zombieFatHawaiianFeral,zombieBusinessManFeral,zombieSteveFeral,zombieJoeFeral" value="3-4" phase="5"/>
-			<objective type="ObjectiveEntityKill" value="3" phase="5"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="5"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<!-- 6 - Отбиться от третьей волны -->
-			<action type="SpawnEnemy" id="zombieFatCopFeral" value="2" phase="6"/>
-			<action type="SpawnEnemy" id="animalZombieDog" value="5" phase="6"/>
-			<action type="SpawnEnemy" id="zombieUtilityWorkerFeral,zombieNurseFeral,zombieLabFeral,zombieJanitorFeral,zombieFemaleFatFeral" value="2-3" phase="6"/>
-			<objective type="ObjectiveEntityKill" value="9" phase="6"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="6"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<!-- 7 - Разблокировать POI -->
 			<action type="UnlockPOI">
-				<property name="phase" value="7"/>
+				<property name="phase" value="4"/>
 			</action>
 			<!-- Получить награду -->
 			<reward type="Exp" value="11000"/>
@@ -888,56 +760,29 @@
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="challenge35ZombieOffer"/>
 			<property name="difficulty" value="hard"/>
-			<property name="difficulty_tier" value="4"/>
+			<property name="spawn_multiplier" value="2" param1="spawn_multiplier" />
+			<property name="gamestage_mod" value="2"/>
+			<property name="gamestage_bonus" value="100"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
-			<!-- 1 - Выбрать POI -->
-			<objective type="RandomPOIGoto">
+			<objective type="ClosestPOIGoto">
 				<property name="phase" value="1"/>
-				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type"/>
-				<property name="biome_filter" value="burnt_forest" param1="biome_filter"/>
-				<property name="nav_object" value="quest"/>
-				<property name="poi_tier" value="-1" param1="poi_tier"/>
+				<property name="distance" value="100"/>
 			</objective>
-			<!-- 2 - Направить игрока к точке активации -->
 			<objective type="RallyPoint">
 				<property name="phase" value="2"/>
 				<property name="nav_object" value="rally"/>
 			</objective>
-			<!-- 3 - Очистить спящих в локации, оставаясь внутри радиуса -->
 			<objective type="ClearSleepers">
 				<property name="phase" value="3"/>
 				<property name="nav_object" value="sleeper_volume"/>
 			</objective>
 			<objective type="POIStayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
-			<!-- 4 - Отбиться от первой волны -->
-			<action type="SpawnEnemy" id="animalZombieDog,animalWolf" value="5-7" phase="4"/>
-			<objective type="ObjectiveEntityKill" value="5" phase="4"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="4"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<!-- 5 - Отбиться от второй волны -->
-			<action type="SpawnEnemy" id="animalZombieDog,animalWolf" value="5-7" phase="5"/>
-			<objective type="ObjectiveEntityKill" value="5" phase="5"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="5"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<!-- 6 - Отбиться от третьей волны -->
-			<action type="SpawnEnemy" id="animalDireWolf" value="2" phase="6"/>
-			<action type="SpawnEnemy" id="animalZombieDog,animalWolf" value="5-7" phase="6"/>
-			<objective type="ObjectiveEntityKill" value="7" phase="6"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="6"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<!-- 7 - Разблокировать POI -->
 			<action type="UnlockPOI">
-				<property name="phase" value="7"/>
+				<property name="phase" value="4"/>
 			</action>
 			<!-- Получить награду -->
 			<reward type="Exp" value="11000"/>
@@ -953,15 +798,14 @@
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="challenge36ZombieOffer"/>
 			<property name="difficulty" value="hard"/>
-			<property name="difficulty_tier" value="4"/>
-			<property name="shareable" value="false"/>
+			<property name="spawn_multiplier" value="3" param1="spawn_multiplier" />
+			<property name="gamestage_mod" value="2"/>
+			<property name="gamestage_bonus" value="50"/>
+			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
-			<objective type="RandomPOIGoto">
+			<objective type="ClosestPOIGoto">
 				<property name="phase" value="1"/>
-				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type"/>
-				<property name="biome_filter" value="burnt_forest" param1="biome_filter"/>
-				<property name="nav_object" value="quest"/>
-				<property name="poi_tier" value="-1" param1="poi_tier"/>
+				<property name="distance" value="100"/>
 			</objective>
 			<objective type="RallyPoint">
 				<property name="phase" value="2"/>
@@ -973,29 +817,10 @@
 			</objective>
 			<objective type="POIStayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<action type="SpawnEnemy" id="zombieSoldierFeral,zombieSpiderFeral,zombieNurseFeral,zombieMaleHazmatFeral,zombieLumberjackFeral" value="3-4" phase="4"/>
-			<objective type="ObjectiveEntityKill" value="3" phase="4"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="4"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<action type="SpawnEnemy" id="zombieJanitorFeral,zombieJoeFeral,zombieLumberjackFeral,zombieSkateboarderFeral,zombieYoFeral" value="3-4" phase="5"/>
-			<objective type="ObjectiveEntityKill" value="3" phase="5"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="5"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<action type="SpawnEnemy" id="zombieMutatedFeral" value="2" phase="6"/>
-			<action type="SpawnEnemy" id="zombieNurseFeral,zombieSoldierFeral,zombieLabFeral,zombieNurseFeral,zombieLumberjackFeral" value="3-4" phase="6"/>
-			<objective type="ObjectiveEntityKill" value="5" phase="6"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="6"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
 			<action type="UnlockPOI">
-				<property name="phase" value="7"/>
+				<property name="phase" value="4"/>
 			</action>
 			<reward type="Exp" value="11000"/>
 			<reward type="Item" id="casinoCoin" value="11000"/>
@@ -1010,15 +835,14 @@
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="challenge37ZombieOffer"/>
 			<property name="difficulty" value="insane"/>
-			<property name="difficulty_tier" value="5"/>
+			<property name="spawn_multiplier" value="2" param1="spawn_multiplier" />
+			<property name="gamestage_mod" value="4"/>
+			<property name="gamestage_bonus" value="200"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
-			<objective type="RandomPOIGoto">
+			<objective type="ClosestPOIGoto">
 				<property name="phase" value="1"/>
-				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type"/>
-				<property name="biome_filter" value="burnt_forest" param1="biome_filter"/>
-				<property name="nav_object" value="quest"/>
-				<property name="poi_tier" value="-1" param1="poi_tier"/>
+				<property name="distance" value="100"/>
 			</objective>
 			<objective type="RallyPoint">
 				<property name="phase" value="2"/>
@@ -1030,29 +854,10 @@
 			</objective>
 			<objective type="POIStayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<action type="SpawnEnemy" id="zombieJanitorRadiated,zombieBikerRadiated,zombieDarleneRadiated,zombieBusinessManRadiated,zombieFemaleFatRadiated" value="3-4" phase="4"/>
-			<objective type="ObjectiveEntityKill" value="3" phase="4"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="4"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<action type="SpawnEnemy" id="zombieLabRadiated,zombieJoeRadiated,zombieNurseRadiated,zombieSoldierRadiated,zombieMarleneRadiated" value="3-4" phase="5"/>
-			<objective type="ObjectiveEntityKill" value="3" phase="5"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="5"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<action type="SpawnEnemy" id="zombieWightRadiated" value="2" phase="6"/>
-			<action type="SpawnEnemy" id="zombieTomClarkRadiated,zombieSkateboarderRadiated,zombieLabRadiated,zombiePartyGirlRadiated,zombieBusinessManRadiated" value="3-4" phase="6"/>
-			<objective type="ObjectiveEntityKill" value="5" phase="6"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="6"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
 			<action type="UnlockPOI">
-				<property name="phase" value="7"/>
+				<property name="phase" value="4"/>
 			</action>
 			<reward type="Exp" value="19000"/>
 			<reward type="Item" id="casinoCoin" value="19000"/>
@@ -1068,15 +873,14 @@
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="challenge38ZombieOffer"/>
 			<property name="difficulty" value="insane"/>
-			<property name="difficulty_tier" value="5"/>
+			<property name="spawn_multiplier" value="4" param1="spawn_multiplier" />
+			<property name="gamestage_mod" value="2"/>
+			<property name="gamestage_bonus" value="100"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
-			<objective type="RandomPOIGoto">
+			<objective type="ClosestPOIGoto">
 				<property name="phase" value="1"/>
-				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type"/>
-				<property name="biome_filter" value="burnt_forest" param1="biome_filter"/>
-				<property name="nav_object" value="quest"/>
-				<property name="poi_tier" value="-1" param1="poi_tier"/>
+				<property name="distance" value="100"/>
 			</objective>
 			<objective type="RallyPoint">
 				<property name="phase" value="2"/>
@@ -1088,29 +892,10 @@
 			</objective>
 			<objective type="POIStayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<action type="SpawnEnemy" id="zombieWight" value="3-4" phase="4"/>
-			<objective type="ObjectiveEntityKill" value="3" phase="4"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="4"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<action type="SpawnEnemy" id="zombieWightFeral" value="3-4" phase="5"/>
-			<objective type="ObjectiveEntityKill" value="3" phase="5"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="5"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<action type="SpawnEnemy" id="zombieMutatedRadiated" value="2" phase="6"/>
-			<action type="SpawnEnemy" id="zombieWightRadiated,zombieFemaleFatRadiated" value="3-4" phase="6"/>
-			<objective type="ObjectiveEntityKill" value="5" phase="6"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="6"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
 			<action type="UnlockPOI">
-				<property name="phase" value="7"/>
+				<property name="phase" value="4"/>
 			</action>
 			<reward type="Exp" value="19000"/>
 			<reward type="Item" id="casinoCoin" value="19000"/>
@@ -1127,57 +912,12 @@
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="challenge39ZombieOffer"/>
 			<property name="difficulty" value="insane"/>
-			<property name="difficulty_tier" value="5"/>
-			<property name="shareable" value="true"/>
+			<property name="shareable" value="false"/>
 			<property name="login_rally_reset" value="false"/>
-			<!-- 1 - Выбрать POI -->
-			<objective type="RandomPOIGoto">
-				<property name="phase" value="1"/>
-				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type"/>
-				<property name="biome_filter" value="burnt_forest" param1="biome_filter"/>
-				<property name="nav_object" value="quest"/>
-				<property name="poi_tier" value="-1" param1="poi_tier"/>
-			</objective>
-			<!-- 2 - Направить игрока к точке активации -->
-			<objective type="RallyPoint">
-				<property name="phase" value="2"/>
-				<property name="nav_object" value="rally"/>
-			</objective>
-			<!-- 3 - Очистить спящих в локации, оставаясь внутри радиуса -->
-			<objective type="ClearSleepers">
-				<property name="phase" value="3"/>
-				<property name="nav_object" value="sleeper_volume"/>
-			</objective>
-			<objective type="POIStayWithin">
-				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<!-- 4 - Отбиться от первой волны -->
-			<action type="SpawnEnemy" id="zombieTomClarkRadiated,zombieLumberjackRadiated,animalZombieDog,zombieFatHawaiianRadiated,zombiePartyGirlFeral" value="5-7" phase="4"/>
-			<objective type="ObjectiveEntityKill" value="5" phase="4"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="4"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<!-- 5 - Отбиться от второй волны -->
-			<action type="SpawnEnemy" id="zombieTomClarkRadiated,zombieBurntRadiated,animalZombieDog,zombieMutatedRadiated,zombieMarleneRadiated" value="5-7" phase="5"/>
-			<objective type="ObjectiveEntityKill" value="5" phase="5"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="5"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<!-- 6 - Отбиться от третьей волны -->
-			<action type="SpawnEnemy" id="zombieMutatedRadiated" value="2" phase="6"/>
-			<action type="SpawnEnemy" id="zombieFatCopRadiated,zombieTomClarkRadiated,animalZombieDog,zombieNurseRadiated,zombieWightRadiated" value="5-7" phase="6"/>
-			<objective type="ObjectiveEntityKill" value="7" phase="6"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="6"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<!-- 7 - Разблокировать POI -->
-			<action type="UnlockPOI">
-				<property name="phase" value="7"/>
-			</action>
+			<property name="quest_hints" value="challenge39ZombieHint"/>
+			<!-- 1 - Ставим задачу -->
+			<objective type="EntityKill" id="animalZombieBear" value="1" phase="1"/>
+			<requirement type="Quests.Requirements.Holding" id="gunShotgunT1DoubleBarrel"/>
 			<!-- Получить награду -->
 			<reward type="Exp" value="19000"/>
 			<reward type="Item" id="casinoCoin" value="19000"/>
@@ -1193,55 +933,22 @@
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="challenge40ZombieOffer"/>
-			<property name="difficulty" value="insane"/>
-			<property name="difficulty_tier" value="5"/>
-			<property name="shareable" value="true"/>
+			<property name="difficulty" value="easy"/>
+			<property name="shareable" value="false"/>
 			<property name="login_rally_reset" value="false"/>
-			<objective type="RandomPOIGoto">
-				<property name="phase" value="1"/>
-				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type"/>
-				<property name="biome_filter" value="burnt_forest" param1="biome_filter"/>
-				<property name="nav_object" value="quest"/>
-				<property name="poi_tier" value="-1" param1="poi_tier"/>
+			<!-- Задача по сбору камней -->
+			<objective type="FetchKeep" id="resourceRockSmall" value="100" phase="1">
+			<modifier type="TrackBlocks">
+				<property name="block_index_name" value="quest_stone"/>
+				<property name="nav_object" value="quest_resource"/>
+				<property name="track_distance" value="20"/>
+			</modifier>
 			</objective>
-			<objective type="RallyPoint">
-				<property name="phase" value="2"/>
-				<property name="nav_object" value="rally"/>
-			</objective>
-			<objective type="ClearSleepers">
-				<property name="phase" value="3"/>
-				<property name="nav_object" value="sleeper_volume"/>
-			</objective>
-			<objective type="POIStayWithin">
-				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<action type="SpawnEnemy" id="zombieTomClarkRadiated,zombieTomClarkFeral,zombieSkateboarderRadiated,zombieLabRadiated,zombiePartyGirlFeral" value="3-4" phase="4"/>
-			<objective type="ObjectiveEntityKill" value="3" phase="4"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="4"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<action type="SpawnEnemy" id="zombieTomClarkRadiated,zombieWightFeral,zombiePartyGirlRadiated,zombieMutatedRadiated,zombieMarleneRadiated" value="3-4" phase="5"/>
-			<objective type="ObjectiveEntityKill" value="3" phase="5"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="5"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<action type="SpawnEnemy" id="animalZombieBear" value="2" phase="6"/>
-			<action type="SpawnEnemy" id="zombieYoRadiated,zombieTomClarkRadiated,zombieMaleHazmatRadiated,zombieNurseRadiated,zombieSkateboarderRadiated" value="3-4" phase="6"/>
-			<objective type="ObjectiveEntityKill" value="5" phase="6"/>
-			<objective type="POIStayWithin">
-				<property name="phase" value="6"/>
-				<property name="radius" value="100"/>
-			</objective>
-			<action type="UnlockPOI">
-				<property name="phase" value="7"/>
-			</action>
+			<!-- Выдаём награду -->
 			<reward type="Exp" value="5000"/>
 			<reward type="Item" id="casinoCoin" value="5000"/>
 			<reward type="Item" id="ammoTicket" value="4"/>
-			<reward type="Item" id="foodEggQuiche" value="5"/>
+			<reward type="Item" id="drinkWineRed" value="5"/>
 		</quest>
 		<!-- Испытание 41: Дамы на ринге -->
 		<quest id="challenge41Zombie">
@@ -1269,12 +976,15 @@
 				<property name="nav_object" value="rally"/>
 			</objective>
 			<!-- 3 - Спауним врагов и задаём границы зоны -->
-			<action type="SpawnEnemy" id="zombiePartyGirl" value="2" phase="3"/>
-			<action type="SpawnEnemy" id="zombieNurse,zombieMarlene,zombieFemaleFat,zombieDarlene,zombieArlene,zombieLab" value="8" phase="3"/>
-			<objective type="ObjectiveEntityKill" value="10" phase="3"/>
+			<action type="SpawnEnemy" id="zombiePartyGirl" value="5" phase="3"/>
+			<action type="SpawnEnemy" id="zombieNurse" value="3" phase="3"/>
+			<action type="SpawnEnemy" id="zombieMarlene" value="2" phase="3"/>
+			<objective type="EntityKill" id="zombiePartyGirl" value="5" phase="3"/>
+			<objective type="EntityKill" id="zombieNurse" value="3" phase="3"/>
+			<objective type="EntityKill" id="zombieMarlene" value="2" phase="3"/>
 			<objective type="StayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
 			<!-- 4 - Получаем награду -->
 			<reward type="Exp" value="5000"/>
@@ -1308,12 +1018,13 @@
 				<property name="nav_object" value="rally"/>
 			</objective>
 			<!-- 3 - Спауним врагов и задаём границы зоны -->
-			<action type="SpawnEnemy" id="zombieLumberjack" value="2" phase="3"/>
-			<action type="SpawnEnemy" id="zombieBoe,zombieJoe,zombieMoe,zombieSkateboarder,zombieSteve,zombieYo" value="8" phase="3"/>
-			<objective type="ObjectiveEntityKill" value="10" phase="3"/>
+			<action type="SpawnEnemy" id="zombieLumberjack" value="8" phase="3"/>
+			<action type="SpawnEnemy" id="zombieLumberjackFeral" value="2" phase="3"/>
+			<objective type="EntityKill" id="zombieLumberjack" value="8" phase="3"/>
+			<objective type="EntityKill" id="zombieLumberjackFeral" value="2" phase="3"/>
 			<objective type="StayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
 			<!-- 4 - Получаем награду -->
 			<reward type="Exp" value="5000"/>
@@ -1347,12 +1058,15 @@
 				<property name="nav_object" value="rally"/>
 			</objective>
 			<!-- 3 - Спауним врагов и задаём границы зоны -->
-			<action type="SpawnEnemy" id="zombieBiker" value="2" phase="3"/>
-			<action type="SpawnEnemy" id="zombieBurnt,zombiePartyGirl,zombieSpider,zombieSkateboarder,zombieTomClark,zombieMaleHazmat" value="8" phase="3"/>
-			<objective type="ObjectiveEntityKill" value="10" phase="3"/>
+			<action type="SpawnEnemy" id="zombieBiker" value="4" phase="3"/>
+			<action type="SpawnEnemy" id="zombieBurnt" value="2" phase="3"/>
+			<action type="SpawnEnemy" id="zombieSkateboarder" value="4" phase="3"/>
+			<objective type="EntityKill" id="zombieBiker" value="4" phase="3"/>
+			<objective type="EntityKill" id="zombieBurnt" value="2" phase="3"/>
+			<objective type="EntityKill" id="zombieSkateboarder" value="4" phase="3"/>
 			<objective type="StayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
 			<!-- 4 - Получаем награду -->
 			<reward type="Exp" value="7000"/>
@@ -1387,11 +1101,14 @@
 			</objective>
 			<!-- 3 - Спауним врагов и задаём границы зоны -->
 			<action type="SpawnEnemy" id="zombieJoeFeral" value="2" phase="3"/>
-			<action type="SpawnEnemy" id="zombieLab,zombieLabFeral,zombieSoldier,zombieTomClark,zombieTomClarkFeral,zombieMaleHazmat" value="8" phase="3"/>
-			<objective type="ObjectiveEntityKill" value="10" phase="3"/>
+			<action type="SpawnEnemy" id="zombieSoldier" value="6" phase="3"/>
+			<action type="SpawnEnemy" id="zombieTomClarkFeral" value="2" phase="3"/>
+			<objective type="EntityKill" id="zombieJoeFeral" value="2" phase="3"/>
+			<objective type="EntityKill" id="zombieSoldier" value="6" phase="3"/>
+			<objective type="EntityKill" id="zombieTomClarkFeral" value="2" phase="3"/>
 			<objective type="StayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
 			<!-- 4 - Получаем награду -->
 			<reward type="Exp" value="7000"/>
@@ -1426,11 +1143,14 @@
 			</objective>
 			<!-- 3 - Спауним врагов и задаём границы зоны -->
 			<action type="SpawnEnemy" id="animalZombieDog" value="4" phase="3"/>
-			<action type="SpawnEnemy" id="animalZombieVulture,zombieSoldier,zombieSoldierFeral,zombieMaleHazmat,zombieMaleHazmatFeral,zombieUtilityWorker" value="6" phase="3"/>
-			<objective type="ObjectiveEntityKill" value="10" phase="3"/>
+			<action type="SpawnEnemy" id="zombieSoldierFeral" value="3" phase="3"/>
+			<action type="SpawnEnemy" id="animalZombieVulture" value="3" phase="3"/>
+			<objective type="EntityKill" id="animalZombieDog" value="4" phase="3"/>
+			<objective type="EntityKill" id="zombieSoldierFeral" value="3" phase="3"/>
+			<objective type="EntityKill" id="animalZombieVulture" value="3" phase="3"/>
 			<objective type="StayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
 			<!-- 4 - Получаем награду -->
 			<reward type="Exp" value="7000"/>
@@ -1465,11 +1185,14 @@
 			</objective>
 			<!-- 3 - Спауним врагов и задаём границы зоны -->
 			<action type="SpawnEnemy" id="zombieFatCopFeral" value="2" phase="3"/>
-			<action type="SpawnEnemy" id="animalZombieDog,zombieFatCopFeral,zombieJanitorFeral,zombieLabFeral,zombieMaleHazmatFeral,zombiePartyGirlFeral" value="8" phase="3"/>
-			<objective type="ObjectiveEntityKill" value="10" phase="3"/>
+			<action type="SpawnEnemy" id="animalZombieDog" value="6" phase="3"/>
+			<action type="SpawnEnemy" id="zombiePartyGirlFeral" value="2" phase="3"/>
+			<objective type="EntityKill" id="zombieFatCopFeral" value="2" phase="3"/>
+			<objective type="EntityKill" id="animalZombieDog" value="6" phase="3"/>
+			<objective type="EntityKill" id="zombiePartyGirlFeral" value="2" phase="3"/>
 			<objective type="StayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
 			<!-- 4 - Получаем награду -->
 			<reward type="Exp" value="11000"/>
@@ -1502,12 +1225,13 @@
 				<property name="nav_object" value="rally"/>
 			</objective>
 			<!-- 3 - Спауним врагов и задаём границы зоны -->
-			<action type="SpawnEnemy" id="animalZombieBear" value="2" phase="3"/>
-			<action type="SpawnEnemy" id="animalZombieVulture,zombieSpiderFeral,zombieLumberjackFeral" value="8" phase="3"/>
-			<objective type="ObjectiveEntityKill" value="10" phase="3"/>
+			<action type="SpawnEnemy" id="animalZombieBear" value="4" phase="3"/>
+			<action type="SpawnEnemy" id="zombieLumberjackFeral" value="6" phase="3"/>
+			<objective type="EntityKill" id="animalZombieBear" value="4" phase="3"/>
+			<objective type="EntityKill" id="zombieLumberjackFeral" value="6" phase="3"/>
 			<objective type="StayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
 			<!-- 4 - Получаем награду -->
 			<reward type="Exp" value="19000"/>
@@ -1542,11 +1266,12 @@
 			</objective>
 			<!-- 3 - Спауним врагов и задаём границы зоны -->
 			<action type="SpawnEnemy" id="zombieWightRadiated" value="2" phase="3"/>
-			<action type="SpawnEnemy" id="zombieYoFeral,zombieNurseRadiated,zombieNurseFeral,zombieFemaleFatRadiated,zombieFemaleFat,zombieBurntFeral,zombieBikerFeral" value="8" phase="3"/>
-			<objective type="ObjectiveEntityKill" value="10" phase="3"/>
+			<action type="SpawnEnemy" id="zombieFemaleFatRadiated" value="8" phase="3"/>
+			<objective type="EntityKill" id="zombieWightRadiated" value="2" phase="3"/>
+			<objective type="EntityKill" id="zombieFemaleFatRadiated" value="8" phase="3"/>
 			<objective type="StayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
 			<!-- 4 - Получаем награду -->
 			<reward type="Exp" value="19000"/>
@@ -1581,11 +1306,12 @@
 			</objective>
 			<!-- 3 - Спауним врагов и задаём границы зоны -->
 			<action type="SpawnEnemy" id="zombieBurntRadiated" value="2" phase="3"/>
-			<action type="SpawnEnemy" id="zombieMutatedFeral,zombieMutatedRadiated,zombieJoeFeral,zombieFatHawaiianFeral,zombieFatHawaiianRadiated,zombieWightFeral,zombiePartyGirlFeral" value="8" phase="3"/>
-			<objective type="ObjectiveEntityKill" value="10" phase="3"/>
+			<action type="SpawnEnemy" id="zombiePartyGirlFeral" value="8" phase="3"/>
+			<objective type="EntityKill" id="zombieBurntRadiated" value="2" phase="3"/>
+			<objective type="EntityKill" id="zombiePartyGirlFeral" value="8" phase="3"/>
 			<objective type="StayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
 			<!-- 4 - Получаем награду -->
 			<reward type="Exp" value="19000"/>
