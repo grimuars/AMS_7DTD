@@ -1,64 +1,8 @@
 <ByHowlune>
-	<!--Cannot confirm if working, but will help with chunk load frequency if it does.-->
-	<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']">
-		<property name="IsChunkObserver" value="false"/>
-	</append>
 	<!--Potential to stop a lot of animation NetPackages being broadcasted-->
 	<remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@class='FallLandBehavior']"/>
 	<remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@class='DestroyBlockBehavior']"/>
 	<!--Every time a zombie spawns, it fires NetPackageAddRemoveBuff and begins unneccessary checks because of this. Most zombies don't last long enough for particle removal to matter.-->
 	<remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/effect_group/triggered_effect[@trigger='onSelfFirstSpawn' and @action='AddBuff']"/>
 	<remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='Buffs']"/>
-	<!--Everytime you hit radiateds, Buff, CVAR and health netpackages are firing. Convert into simpler system.-->
-	<remove xpath="/entity_classes/entity_class/effect_group/triggered_effect[@trigger='onOtherDamagedSelf' and @action='AddBuff']"/>
-	<set xpath="/entity_classes/entity_class/effect_group/triggered_effect[@trigger='onOtherDamagedSelf' and @cvar='RadiatedRegenAmount']/@cvar">.RadiatedRegenAmount</set>
-	<insertAfter xpath="/entity_classes/entity_class/effect_group/triggered_effect[@trigger='onOtherDamagedSelf' and @value='2.5']">
-		<passive_effect name="HealthChangeOT" operation="base_add" value="2.5">
-			<requirement name="StatComparePercCurrentToMax" stat="health" operation="LT" value=".8"/>
-			<requirement name="CVarCompare" cvar=".RadiatedRegenBlock" operation="LT" value="1"/>
-			<requirement name="CVarCompare" cvar=".RadiatedRegenAmount" operation="GT" value="0"/>
-		</passive_effect>
-	</insertAfter>
-	<insertAfter xpath="/entity_classes/entity_class/effect_group/triggered_effect[@trigger='onOtherDamagedSelf' and @value='4']">
-		<passive_effect name="HealthChangeOT" operation="base_add" value="4">
-			<requirement name="StatComparePercCurrentToMax" stat="health" operation="LT" value=".8"/>
-			<requirement name="CVarCompare" cvar=".RadiatedRegenBlock" operation="LT" value="1"/>
-			<requirement name="CVarCompare" cvar=".RadiatedRegenAmount" operation="GT" value="0"/>
-		</passive_effect>
-	</insertAfter>
-	<insertAfter xpath="/entity_classes/entity_class/effect_group/triggered_effect[@trigger='onOtherDamagedSelf' and @value='5']">
-		<passive_effect name="HealthChangeOT" operation="base_add" value="5">
-			<requirement name="StatComparePercCurrentToMax" stat="health" operation="LT" value=".8"/>
-			<requirement name="CVarCompare" cvar=".RadiatedRegenBlock" operation="LT" value="1"/>
-			<requirement name="CVarCompare" cvar=".RadiatedRegenAmount" operation="GT" value="0"/>
-		</passive_effect>
-	</insertAfter>
-	<insertAfter xpath="/entity_classes/entity_class/effect_group/triggered_effect[@trigger='onOtherDamagedSelf' and @value='4.5']">
-		<passive_effect name="HealthChangeOT" operation="base_add" value="4.5">
-			<requirement name="StatComparePercCurrentToMax" stat="health" operation="LT" value=".8"/>
-			<requirement name="CVarCompare" cvar=".RadiatedRegenBlock" operation="LT" value="1"/>
-			<requirement name="CVarCompare" cvar=".RadiatedRegenAmount" operation="GT" value="0"/>
-		</passive_effect>
-	</insertAfter>
-	<insertAfter xpath="/entity_classes/entity_class/effect_group/triggered_effect[@trigger='onOtherDamagedSelf' and @value='6']">
-		<passive_effect name="HealthChangeOT" operation="base_add" value="6">
-			<requirement name="StatComparePercCurrentToMax" stat="health" operation="LT" value=".8"/>
-			<requirement name="CVarCompare" cvar=".RadiatedRegenBlock" operation="LT" value="1"/>
-			<requirement name="CVarCompare" cvar=".RadiatedRegenAmount" operation="GT" value="0"/>
-		</passive_effect>
-	</insertAfter>
-	<insertAfter xpath="/entity_classes/entity_class/effect_group/triggered_effect[@trigger='onOtherDamagedSelf' and @value='8']">
-		<passive_effect name="HealthChangeOT" operation="base_add" value="6">
-			<requirement name="StatComparePercCurrentToMax" stat="health" operation="LT" value=".8"/>
-			<requirement name="CVarCompare" cvar=".RadiatedRegenBlock" operation="LT" value="1"/>
-			<requirement name="CVarCompare" cvar=".RadiatedRegenAmount" operation="GT" value="0"/>
-		</passive_effect>
-	</insertAfter>
-	<insertAfter xpath="/entity_classes/entity_class/effect_group/triggered_effect[@trigger='onOtherDamagedSelf' and @value='9']">
-		<passive_effect name="HealthChangeOT" operation="base_add" value="9">
-			<requirement name="StatComparePercCurrentToMax" stat="health" operation="LT" value=".8"/>
-			<requirement name="CVarCompare" cvar=".RadiatedRegenBlock" operation="LT" value="1"/>
-			<requirement name="CVarCompare" cvar=".RadiatedRegenAmount" operation="GT" value="0"/>
-		</passive_effect>
-	</insertAfter>
 </ByHowlune>

@@ -1,28 +1,4 @@
 <ByHowlune>
-	<!--Convert into new system for less Netpackages-->
-	<set xpath="/item_modifiers/item_modifier[@name='modGunMeleeRadRemover']/effect_group">
-		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" target_tags="radiated" cvar=".RadiatedRegenBlock" operation="set" value="1"/>
-	</set>
-	<!--Convert all mods that add buffs on equip to passives or cvars-->
-	<insertAfter xpath="/item_modifiers/item_modifier/effect_group/triggered_effect[@action='AddBuff' and @buff='buffHarvestXPBalance']">
-		<passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
-	</insertAfter>
-	<remove xpath="/item_modifiers/item_modifier/effect_group/triggered_effect[@action='AddBuff' and @buff='buffHarvestXPBalance']"/>
-	<remove xpath="/item_modifiers/item_modifier/effect_group/triggered_effect[@action='RemoveBuff' and @buff='buffHarvestXPBalance']"/>
-	<set xpath="/item_modifiers/item_modifier[@name='modArmorBandolier']/effect_group[1]">
-		<requirement name="ItemHasTags" tags="armorChest"/>
-		<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".15">
-			<requirement name="CVarCompare" cvar="$BandolierChest" operation="Equals" value="1"/>
-		</passive_effect>
-		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$BandolierChest" operation="set" value="1"/>
-		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$BandolierChest" operation="set" value="0"/>
-	</set>
-	<set xpath="/item_modifiers/item_modifier[@name='modArmorBandolier']/effect_group[2]">
-		<requirement name="ItemHasTags" tags="armorLegs"/>
-		<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".15">
-			<requirement name="CVarCompare" cvar="$BandolierChest" operation="Equals" value="0"/>
-		</passive_effect>
-	</set>
 	<!--Fix holosight dot on hinged weapons. Dot floats in place despite the sight being moved.-->
 	<set xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/item_property_overrides[@name='gunRifleT0PipeRifle']/property[@name='ScopeCameraOffset']/@value">-0.0001,-0.002,.1</set>
 	<set xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']/item_property_overrides[@name='gunHandgunT0PipePistol']/property[@name='ScopeCameraOffset']/@value">-0.0002,-.0025,.15</set>
