@@ -724,7 +724,7 @@
 			<property name="difficulty" value="hard"/>
 			<property name="spawn_multiplier" value="3" param1="spawn_multiplier" />
 			<property name="gamestage_mod" value="3"/>
-			<property name="gamestage_bonus" value="50"/>
+			<property name="gamestage_bonus" value="30"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
 			<objective type="ClosestPOIGoto">
@@ -875,7 +875,7 @@
 			<property name="difficulty" value="insane"/>
 			<property name="spawn_multiplier" value="4" param1="spawn_multiplier" />
 			<property name="gamestage_mod" value="2"/>
-			<property name="gamestage_bonus" value="100"/>
+			<property name="gamestage_bonus" value="300"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
 			<objective type="ClosestPOIGoto">
@@ -937,7 +937,7 @@
 			<property name="shareable" value="false"/>
 			<property name="login_rally_reset" value="false"/>
 			<!-- Задача по сбору камней -->
-			<objective type="FetchKeep" id="resourceRockSmall" value="100" phase="1">
+			<objective type="FetchKeep" id="resourceRockSmall" value="10000" phase="1">
 			<modifier type="TrackBlocks">
 				<property name="block_index_name" value="quest_stone"/>
 				<property name="nav_object" value="quest_resource"/>
