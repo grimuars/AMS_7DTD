@@ -8,7 +8,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge1ZombieOffer"/>
+			<property name="offer_key" value="challenge1ZombieOffer"/>
 			<property name="difficulty" value="veryeasy"/>
 			<property name="difficulty_tier" value="1"/>
 			<property name="shareable" value="false"/>
@@ -28,7 +28,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge2ZombieOffer"/>
+			<property name="offer_key" value="challenge2ZombieOffer"/>
 			<property name="difficulty" value="veryeasy"/>
 			<property name="difficulty_tier" value="1"/>
 			<property name="shareable" value="false"/>
@@ -48,7 +48,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge3ZombieOffer"/>
+			<property name="offer_key" value="challenge3ZombieOffer"/>
 			<property name="difficulty" value="veryeasy"/>
 			<property name="difficulty_tier" value="1"/>
 			<property name="shareable" value="false"/>
@@ -68,7 +68,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge4ZombieOffer"/>
+			<property name="offer_key" value="challenge4ZombieOffer"/>
 			<property name="difficulty" value="veryeasy"/>
 			<property name="difficulty_tier" value="1"/>
 			<property name="shareable" value="false"/>
@@ -86,7 +86,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge5ZombieOffer"/>
+			<property name="offer_key" value="challenge5ZombieOffer"/>
 			<property name="difficulty" value="easy"/>
 			<property name="difficulty_tier" value="2"/>
 			<property name="shareable" value="false"/>
@@ -106,7 +106,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge6ZombieOffer"/>
+			<property name="offer_key" value="challenge6ZombieOffer"/>
 			<property name="difficulty" value="easy"/>
 			<property name="difficulty_tier" value="2"/>
 			<property name="shareable" value="false"/>
@@ -126,7 +126,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge7ZombieOffer"/>
+			<property name="offer_key" value="challenge7ZombieOffer"/>
 			<property name="difficulty" value="easy"/>
 			<property name="difficulty_tier" value="2"/>
 			<property name="shareable" value="false"/>
@@ -146,7 +146,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge8ZombieOffer"/>
+			<property name="offer_key" value="challenge8ZombieOffer"/>
 			<property name="difficulty" value="veryeasy"/>
 			<property name="difficulty_tier" value="1"/>
 			<property name="shareable" value="false"/>
@@ -166,7 +166,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge9ZombieOffer"/>
+			<property name="offer_key" value="challenge9ZombieOffer"/>
 			<property name="difficulty" value="easy"/>
 			<property name="difficulty_tier" value="2"/>
 			<property name="shareable" value="false"/>
@@ -186,7 +186,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge10ZombieOffer"/>
+			<property name="offer_key" value="challenge10ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -208,7 +208,7 @@
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
 			<property name="login_rally_reset" value="false"/>
-			<property name="offer" value="challenge11ZombieOffer"/>
+			<property name="offer_key" value="challenge11ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -228,7 +228,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge12ZombieOffer"/>
+			<property name="offer_key" value="challenge12ZombieOffer"/>
 			<property name="difficulty" value="easy"/>
 			<property name="difficulty_tier" value="2"/>
 			<property name="shareable" value="false"/>
@@ -248,7 +248,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge13ZombieOffer"/>
+			<property name="offer_key" value="challenge13ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -268,7 +268,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge14ZombieOffer"/>
+			<property name="offer_key" value="challenge14ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -286,7 +286,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge15ZombieOffer"/>
+			<property name="offer_key" value="challenge15ZombieOffer"/>
 			<property name="difficulty" value="easy"/>
 			<property name="difficulty_tier" value="2"/>
 			<property name="shareable" value="false"/>
@@ -304,7 +304,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge16ZombieOffer"/>
+			<property name="offer_key" value="challenge16ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -324,7 +324,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge17ZombieOffer"/>
+			<property name="offer_key" value="challenge17ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -344,7 +344,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge18ZombieOffer"/>
+			<property name="offer_key" value="challenge18ZombieOffer"/>
 			<property name="difficulty" value="easy"/>
 			<property name="difficulty_tier" value="2"/>
 			<property name="shareable" value="false"/>
@@ -364,7 +364,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge19ZombieOffer"/>
+			<property name="offer_key" value="challenge19ZombieOffer"/>
 			<property name="difficulty" value="veryeasy"/>
 			<property name="difficulty_tier" value="1"/>
 			<property name="shareable" value="false"/>
@@ -382,7 +382,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge20ZombieOffer"/>
+			<property name="offer_key" value="challenge20ZombieOffer"/>
 			<property name="difficulty" value="easy"/>
 			<property name="difficulty_tier" value="2"/>
 			<property name="shareable" value="false"/>
@@ -402,7 +402,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge21ZombieOffer"/>
+			<property name="offer_key" value="challenge21ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -422,7 +422,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge22ZombieOffer"/>
+			<property name="offer_key" value="challenge22ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -444,7 +444,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge23ZombieOffer"/>
+			<property name="offer_key" value="challenge23ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -464,7 +464,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge24ZombieOffer"/>
+			<property name="offer_key" value="challenge24ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -484,7 +484,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge25ZombieOffer"/>
+			<property name="offer_key" value="challenge25ZombieOffer"/>
 			<property name="difficulty" value="easy"/>
 			<property name="difficulty_tier" value="2"/>
 			<property name="shareable" value="false"/>
@@ -504,7 +504,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge26ZombieOffer"/>
+			<property name="offer_key" value="challenge26ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -525,7 +525,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge27ZombieOffer"/>
+			<property name="offer_key" value="challenge27ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -545,7 +545,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge28ZombieOffer"/>
+			<property name="offer_key" value="challenge28ZombieOffer"/>
 			<property name="difficulty" value="hard"/>
 			<property name="difficulty_tier" value="4"/>
 			<property name="shareable" value="false"/>
@@ -562,7 +562,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge29ZombieOffer"/>
+			<property name="offer_key" value="challenge29ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -582,7 +582,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge30ZombieOffer"/>
+			<property name="offer_key" value="challenge30ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -603,53 +603,84 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge31ZombieOffer"/>
+			<property name="offer_key" value="challenge31ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
-			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
+			<!-- 1 - Выбрать POI -->
 			<objective type="RandomPOIGoto">
 				<property name="phase" value="1"/>
-				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type"/>
-				<property name="biome_filter" value="burnt_forest" param1="biome_filter"/>
-				<property name="nav_object" value="quest"/>
-				<property name="poi_tier" value="-1" param1="poi_tier"/>
+				<property name="biome_filter_type" value="SameBiome" param1="biome_filter_type" />
+				<property name="biome_filter" value="burnt_forest" param1="biome_filter" />
+				<property name="nav_object" value="quest" />
+				<property name="poi_tier" value="-1" param1="poi_tier" />
 			</objective>
+			<!-- 2 - Направить игрока к точке активации -->
 			<objective type="RallyPoint">
 				<property name="phase" value="2"/>
 				<property name="nav_object" value="rally"/>
 			</objective>
+			<!-- 3 - Очистить спящих в локации, оставаясь внутри радиуса -->
 			<objective type="ClearSleepers">
 				<property name="phase" value="3"/>
 				<property name="nav_object" value="sleeper_volume"/>
 			</objective>
 			<objective type="POIStayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
-			<action type="SpawnEnemy" id="zombieFemaleFat,zombieMoe,zombieMarlene,zombieSteve,zombieBusinessMan" value="5-7" phase="4"/>
-			<objective type="ObjectiveEntityKill" value="5" phase="4"/>
+			<!-- 4 - Отбиться от первой волны -->
+			<action type="SpawnEnemy" id="zombieFemaleFat" value="2" phase="4"/>
+			<action type="SpawnEnemy" id="zombieMoe" value="2" phase="4"/>
+			<action type="SpawnEnemy" id="zombieMarlene" value="2" phase="4"/>
+			<!-- <action type="SpawnEnemy" id="zombieSteve" value="2" phase="4"/>
+			<action type="SpawnEnemy" id="zombieBusinessMan" value="2" phase="4"/> -->
+			<objective type="EntityKill" id="zombieFemaleFat" value="2" phase="4"/>
+			<objective type="EntityKill" id="zombieMoe" value="2" phase="4"/>
+			<objective type="EntityKill" id="zombieMarlene" value="2" phase="4"/>
+			<!-- <objective type="EntityKill" id="zombieSteve" value="2" phase="4"/>
+			<objective type="EntityKill" id="zombieBusinessMan" value="2" phase="4"/> -->
 			<objective type="POIStayWithin">
 				<property name="phase" value="4"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
-			<action type="SpawnEnemy" id="zombieFemaleFat,zombieJanitor,zombieMoe,zombieLab,zombiePartyGirl" value="5-7" phase="5"/>
-			<objective type="ObjectiveEntityKill" value="5" phase="5"/>
+			<!-- 5 - Отбиться от второй волны -->
+			<action type="SpawnEnemy" id="zombieFemaleFat" value="2" phase="5"/>
+			<action type="SpawnEnemy" id="zombieJanitor" value="2" phase="5"/>
+			<action type="SpawnEnemy" id="zombieMoe" value="2" phase="5"/>
+			<!-- <action type="SpawnEnemy" id="zombieLab" value="2" phase="5"/>
+			<action type="SpawnEnemy" id="zombiePartyGirl" value="2" phase="5"/> -->
+			<objective type="EntityKill" id="zombieFemaleFat" value="2" phase="5"/>
+			<objective type="EntityKill" id="zombieJanitor" value="2" phase="5"/>
+			<objective type="EntityKill" id="zombieMoe" value="2" phase="5"/>
+			<!-- <objective type="EntityKill" id="zombieLab" value="2" phase="5"/>
+			<objective type="EntityKill" id="zombiePartyGirl" value="2" phase="5"/> -->
 			<objective type="POIStayWithin">
 				<property name="phase" value="5"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
-			<action type="SpawnEnemy" id="zombieFatHawaiian" value="1" phase="6"/>
-			<action type="SpawnEnemy" id="zombieFemaleFat" value="1" phase="6"/>
-			<action type="SpawnEnemy" id="zombieFatHawaiian,zombieUtilityWorker,zombieSkateboarder,zombiePartyGirl,zombieNurse" value="4-6" phase="6"/>
-			<objective type="ObjectiveEntityKill" value="6" phase="6"/>
+			<!-- 6 - Отбиться от третьей волны -->
+			<action type="SpawnEnemy" id="zombieFatHawaiian" value="2" phase="6"/>
+			<action type="SpawnEnemy" id="zombieUtilityWorker" value="2" phase="6"/>
+			<action type="SpawnEnemy" id="zombieFemaleFat" value="2" phase="6"/>
+			<!-- <action type="SpawnEnemy" id="zombieSkateboarder" value="2" phase="6"/>
+			<action type="SpawnEnemy" id="zombiePartyGirl" value="2" phase="6"/>
+			<action type="SpawnEnemy" id="zombieNurse" value="2" phase="6"/> -->
+			<objective type="EntityKill" id="zombieFatHawaiian" value="2" phase="6"/>
+			<objective type="EntityKill" id="zombieUtilityWorker" value="2" phase="6"/>
+			<objective type="EntityKill" id="zombieFemaleFat" value="2" phase="6"/>
+			<!-- <objective type="EntityKill" id="zombieSkateboarder" value="2" phase="6"/>
+			<objective type="EntityKill" id="zombiePartyGirl" value="2" phase="6"/>
+			<objective type="EntityKill" id="zombieNurse" value="2" phase="6"/> -->
 			<objective type="POIStayWithin">
 				<property name="phase" value="6"/>
-				<property name="radius" value="100"/>
+				<property name="radius" value="25"/>
 			</objective>
+			<!-- 7 - Разблокировать POI -->
 			<action type="UnlockPOI">
 				<property name="phase" value="7"/>
 			</action>
+			<!-- Получить награду -->
 			<reward type="Exp" value="7000"/>
 			<reward type="Item" id="casinoCoin" value="7000"/>
 			<reward type="Item" id="ammoTicket" value="8"/>
@@ -663,7 +694,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge32ZombieOffer"/>
+			<property name="offer_key" value="challenge32ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="true"/>
@@ -722,7 +753,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge33ZombieOffer"/>
+			<property name="offer_key" value="challenge33ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="true"/>
@@ -789,7 +820,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge34ZombieOffer"/>
+			<property name="offer_key" value="challenge34ZombieOffer"/>
 			<property name="difficulty" value="hard"/>
 			<property name="difficulty_tier" value="4"/>
 			<property name="shareable" value="true"/>
@@ -855,7 +886,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge35ZombieOffer"/>
+			<property name="offer_key" value="challenge35ZombieOffer"/>
 			<property name="difficulty" value="hard"/>
 			<property name="difficulty_tier" value="4"/>
 			<property name="shareable" value="true"/>
@@ -920,7 +951,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge36ZombieOffer"/>
+			<property name="offer_key" value="challenge36ZombieOffer"/>
 			<property name="difficulty" value="hard"/>
 			<property name="difficulty_tier" value="4"/>
 			<property name="shareable" value="false"/>
@@ -977,7 +1008,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge37ZombieOffer"/>
+			<property name="offer_key" value="challenge37ZombieOffer"/>
 			<property name="difficulty" value="insane"/>
 			<property name="difficulty_tier" value="5"/>
 			<property name="shareable" value="true"/>
@@ -1035,7 +1066,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge38ZombieOffer"/>
+			<property name="offer_key" value="challenge38ZombieOffer"/>
 			<property name="difficulty" value="insane"/>
 			<property name="difficulty_tier" value="5"/>
 			<property name="shareable" value="true"/>
@@ -1094,7 +1125,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge39ZombieOffer"/>
+			<property name="offer_key" value="challenge39ZombieOffer"/>
 			<property name="difficulty" value="insane"/>
 			<property name="difficulty_tier" value="5"/>
 			<property name="shareable" value="true"/>
@@ -1161,7 +1192,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge40ZombieOffer"/>
+			<property name="offer_key" value="challenge40ZombieOffer"/>
 			<property name="difficulty" value="insane"/>
 			<property name="difficulty_tier" value="5"/>
 			<property name="shareable" value="true"/>
@@ -1220,7 +1251,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge41ZombieOffer"/>
+			<property name="offer_key" value="challenge41ZombieOffer"/>
 			<property name="difficulty" value="easy"/>
 			<property name="difficulty_tier" value="2"/>
 			<property name="shareable" value="false"/>
@@ -1259,7 +1290,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge42ZombieOffer"/>
+			<property name="offer_key" value="challenge42ZombieOffer"/>
 			<property name="difficulty" value="easy"/>
 			<property name="difficulty_tier" value="2"/>
 			<property name="shareable" value="false"/>
@@ -1298,7 +1329,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge43ZombieOffer"/>
+			<property name="offer_key" value="challenge43ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -1337,7 +1368,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge44ZombieOffer"/>
+			<property name="offer_key" value="challenge44ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -1376,7 +1407,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge45ZombieOffer"/>
+			<property name="offer_key" value="challenge45ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="difficulty_tier" value="3"/>
 			<property name="shareable" value="false"/>
@@ -1415,7 +1446,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge46ZombieOffer"/>
+			<property name="offer_key" value="challenge46ZombieOffer"/>
 			<property name="difficulty" value="hard"/>
 			<property name="difficulty_tier" value="4"/>
 			<property name="shareable" value="false"/>
@@ -1453,7 +1484,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge47ZombieOffer"/>
+			<property name="offer_key" value="challenge47ZombieOffer"/>
 			<property name="difficulty" value="insane"/>
 			<property name="difficulty_tier" value="4"/>
 			<property name="shareable" value="false"/>
@@ -1492,7 +1523,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge48ZombieOffer"/>
+			<property name="offer_key" value="challenge48ZombieOffer"/>
 			<property name="difficulty" value="insane"/>
 			<property name="difficulty_tier" value="4"/>
 			<property name="shareable" value="false"/>
@@ -1531,7 +1562,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge49ZombieOffer"/>
+			<property name="offer_key" value="challenge49ZombieOffer"/>
 			<property name="difficulty" value="insane"/>
 			<property name="difficulty_tier" value="4"/>
 			<property name="shareable" value="false"/>
@@ -1570,7 +1601,7 @@
 			<property name="icon" value="server_feral"/>
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
-			<property name="offer" value="challenge50ZombieOffer"/>
+			<property name="offer_key" value="challenge50ZombieOffer"/>
 			<property name="difficulty" value="insane"/>
 			<property name="shareable" value="false"/>
 			<property name="login_rally_reset" value="false"/>
