@@ -3,7 +3,7 @@
 	<remove xpath="/items/item[@name='modVehicleSuperChargerSchematic']"/>
 	<!-- Удаляем карты сокровищ -->
 	<remove xpath="/items/item[contains(@name, 'qt_')]"/>
-	<!-- Уменьшаем урон по блокам -->
+	<!-- Уменьшаем урон по блокам для боеприпасов -->
 	<set xpath="/items/item[contains(@name, 'thrown')]//passive_effect[contains(@name, 'BlockDamage')]/@value">1</set>
 	<set xpath="/items/item[contains(@name, 'ammo')]//passive_effect[contains(@name, 'BlockDamage')]/@value">1</set>
 	<!-- Настраиваем крафт цемента в бетономешалке -->

@@ -9,6 +9,10 @@
 		<passive_effect name="PlayerExpGain" operation="perc_add" value="-0.9" tags="Selling">
 			<requirement name="PlayerLevel" operation="LT" value="50"/>
 		</passive_effect>
+		<!-- С 50 уровня 70% опыта от торговли -->
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="-0.3" tags="Selling">
+			<requirement name="PlayerLevel" operation="GTE" value="50"/>
+		</passive_effect>
 		<!-- До 50 уровня 50% опыта от добычи -->
 		<passive_effect name="PlayerExpGain" operation="perc_add" value="-0.5" tags="Harvesting">
 			<requirement name="PlayerLevel" operation="LT" value="50"/>
@@ -97,7 +101,7 @@
 		<drop event="Harvest" name="foodEgg" count="1" prob="0.1" tag="WasteTreasuresCompleteHarvest"/>
 	</insertAfter>
 	<!-- Изменения в здоровье зомби -->
-	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/effect_group[@name='Base Effects']//passive_effect[@operation='perc_add']/@value">-0.05,.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/effect_group[@name='Base Effects']//passive_effect[@operation='perc_add']/@value">-0.05,.35</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">230</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">638</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieWightRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1212</set>

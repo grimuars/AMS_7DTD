@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
 	<!-- Увеличиваем количество опыта на уровень -->
-	<set xpath="/progression/level[@max_level='300']/@exp_to_level">11000</set>
+	<set xpath="/progression/level[@max_level='300']/@exp_to_level">12000</set>
 	<!-- Увеличиваем стоимость части навыков до 2 очков -->
 	<setattribute xpath="/progression/perks/perk[@name='perkDemolitionsExpert']" name="base_skill_point_cost">2</setattribute>
 	<setattribute xpath="/progression/perks/perk[@name='perkJavelinMaster']" name="base_skill_point_cost">2</setattribute>

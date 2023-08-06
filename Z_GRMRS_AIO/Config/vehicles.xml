@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
-	<!-- Rework flight prerequisites -->
+	<!-- Гирокоптер взлетает вертикально -->
 	<set xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[@class= 'motor0']/property[@name= 'trigger']/@value">inputForward</set>
 	<set xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[@class= 'motor0']/property[@name= 'rpmMax']/@value">8</set>
 	<set xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[@class= 'motor0']/property[@name= 'rpmAccel_min_max']/@value">0.01, .3</set>
@@ -14,11 +14,10 @@
 	<set xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[@class= 'force2']/property[@name= 'force']/@value">0, .08, 0</set>
 	<set xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[@class= 'force3']/property[@name= 'force']/@value">0, .04, 0</set>
 	<set xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[contains(@class, 'wheel')]/property[@name= 'torqueScale_motor_brake']/@value">0, 1</set>
-	<!-- Add a seat for a best friend -->
+	<!-- Сиденье в гирокоптер -->
 	<insertAfter xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[@class= 'seat0']">
 		<property class="seat1">
 			<property name="position" value="0, -.05, .98"/>
-			<!-- best friends -->
 			<property name="rotation" value="-27, 0, 0"/>
 			<property name="exit" value="-1.3,0,-.7 ~ 1.3,0,.9 ~ 0,0,-2.4 ~ 0,0,2.4 ~ 0,2,0"/>
 		</property>

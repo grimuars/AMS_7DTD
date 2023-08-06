@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recipes>
-	<!-- Удаляем старый и тупой вариант хелпер для флагов -->
+	<!-- Удаляем старый вариант хелпер для флагов -->
 	<remove xpath="/recipes/recipe[@name='flagThick44BlockVariantHelper']"/>
 	<!-- Добавляем крафт угля -->
 	<append xpath="/recipes">
