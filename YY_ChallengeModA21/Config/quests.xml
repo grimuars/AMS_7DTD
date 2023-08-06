@@ -605,9 +605,9 @@
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="challenge31ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
-			<property name="spawn_multiplier" value="4" param1="spawn_multiplier" />
-			<property name="gamestage_mod" value=".5"/>
-			<property name="gamestage_bonus" value="20"/>
+			<property name="spawn_multiplier" value="1.5" param1="spawn_multiplier" />
+			<property name="gamestage_mod" value="2"/>
+			<property name="gamestage_bonus" value="50"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
 			<objective type="ClosestPOIGoto">
@@ -645,9 +645,9 @@
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="challenge32ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
-			<property name="spawn_multiplier" value="3" param1="spawn_multiplier" />
-			<property name="gamestage_mod" value="2"/>
-			<property name="gamestage_bonus" value="10"/>
+			<property name="spawn_multiplier" value="2" param1="spawn_multiplier" />
+			<property name="gamestage_mod" value="1.5"/>
+			<property name="gamestage_bonus" value="50"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
 			<objective type="ClosestPOIGoto">
@@ -684,8 +684,8 @@
 			<property name="offer_key" value="challenge33ZombieOffer"/>
 			<property name="difficulty" value="medium"/>
 			<property name="spawn_multiplier" value="2" param1="spawn_multiplier" />
-			<property name="gamestage_mod" value="2"/>
-			<property name="gamestage_bonus" value="50"/>
+			<property name="gamestage_mod" value="2.5"/>
+			<property name="gamestage_bonus" value="75"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
 			<objective type="ClosestPOIGoto">
@@ -721,10 +721,10 @@
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="challenge34ZombieOffer"/>
-			<property name="difficulty" value="hard"/>
-			<property name="spawn_multiplier" value="3" param1="spawn_multiplier" />
-			<property name="gamestage_mod" value="3"/>
-			<property name="gamestage_bonus" value="30"/>
+			<property name="difficulty" value="medium"/>
+			<property name="spawn_multiplier" value="2.5" param1="spawn_multiplier" />
+			<property name="gamestage_mod" value="2"/>
+			<property name="gamestage_bonus" value="75"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
 			<objective type="ClosestPOIGoto">
@@ -760,8 +760,8 @@
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="challenge35ZombieOffer"/>
 			<property name="difficulty" value="hard"/>
-			<property name="spawn_multiplier" value="2" param1="spawn_multiplier" />
-			<property name="gamestage_mod" value="2"/>
+			<property name="spawn_multiplier" value="2.5" param1="spawn_multiplier" />
+			<property name="gamestage_mod" value="3"/>
 			<property name="gamestage_bonus" value="100"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
@@ -799,8 +799,8 @@
 			<property name="offer_key" value="challenge36ZombieOffer"/>
 			<property name="difficulty" value="hard"/>
 			<property name="spawn_multiplier" value="3" param1="spawn_multiplier" />
-			<property name="gamestage_mod" value="2"/>
-			<property name="gamestage_bonus" value="50"/>
+			<property name="gamestage_mod" value="2.5"/>
+			<property name="gamestage_bonus" value="100"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
 			<objective type="ClosestPOIGoto">
@@ -835,9 +835,9 @@
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="challenge37ZombieOffer"/>
 			<property name="difficulty" value="insane"/>
-			<property name="spawn_multiplier" value="2" param1="spawn_multiplier" />
-			<property name="gamestage_mod" value="4"/>
-			<property name="gamestage_bonus" value="200"/>
+			<property name="spawn_multiplier" value="3" param1="spawn_multiplier" />
+			<property name="gamestage_mod" value="3.5"/>
+			<property name="gamestage_bonus" value="150"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
 			<objective type="ClosestPOIGoto">
@@ -873,9 +873,9 @@
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="challenge38ZombieOffer"/>
 			<property name="difficulty" value="insane"/>
-			<property name="spawn_multiplier" value="4" param1="spawn_multiplier" />
-			<property name="gamestage_mod" value="2"/>
-			<property name="gamestage_bonus" value="300"/>
+			<property name="spawn_multiplier" value="3.5" param1="spawn_multiplier" />
+			<property name="gamestage_mod" value="3"/>
+			<property name="gamestage_bonus" value="150"/>
 			<property name="shareable" value="true"/>
 			<property name="login_rally_reset" value="false"/>
 			<objective type="ClosestPOIGoto">
@@ -1265,10 +1265,10 @@
 				<property name="nav_object" value="rally"/>
 			</objective>
 			<!-- 3 - Спауним врагов и задаём границы зоны -->
-			<action type="SpawnEnemy" id="zombieWightRadiated" value="2" phase="3"/>
-			<action type="SpawnEnemy" id="zombieFemaleFatRadiated" value="8" phase="3"/>
-			<objective type="EntityKill" id="zombieWightRadiated" value="2" phase="3"/>
-			<objective type="EntityKill" id="zombieFemaleFatRadiated" value="8" phase="3"/>
+			<action type="SpawnEnemy" id="zombieWightRadiated" value="4" phase="3"/>
+			<action type="SpawnEnemy" id="zombieFemaleFatRadiated" value="6" phase="3"/>
+			<objective type="EntityKill" id="zombieWightRadiated" value="4" phase="3"/>
+			<objective type="EntityKill" id="zombieFemaleFatRadiated" value="6" phase="3"/>
 			<objective type="StayWithin">
 				<property name="phase" value="3"/>
 				<property name="radius" value="25"/>
@@ -1305,10 +1305,10 @@
 				<property name="nav_object" value="rally"/>
 			</objective>
 			<!-- 3 - Спауним врагов и задаём границы зоны -->
-			<action type="SpawnEnemy" id="zombieBurntRadiated" value="2" phase="3"/>
-			<action type="SpawnEnemy" id="zombiePartyGirlFeral" value="8" phase="3"/>
-			<objective type="EntityKill" id="zombieBurntRadiated" value="2" phase="3"/>
-			<objective type="EntityKill" id="zombiePartyGirlFeral" value="8" phase="3"/>
+			<action type="SpawnEnemy" id="zombieBurntRadiated" value="4" phase="3"/>
+			<action type="SpawnEnemy" id="zombiePartyGirlRadiated" value="6" phase="3"/>
+			<objective type="EntityKill" id="zombieBurntRadiated" value="4" phase="3"/>
+			<objective type="EntityKill" id="zombiePartyGirlRadiated" value="6" phase="3"/>
 			<objective type="StayWithin">
 				<property name="phase" value="3"/>
 				<property name="radius" value="25"/>
