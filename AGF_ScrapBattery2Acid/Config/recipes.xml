@@ -1,10 +1,8 @@
 <AGFVanillaPlus-ScrapBattery2Acid>
-	<!--adding acid as an item that scrapping can turn into.-->
+	<!-- adding acid as an item that scrapping can turn into. -->
 	<append xpath="/recipes">
-		<recipe name="resourceAcid" count="1" craft_time="30" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap">
+		<recipe name="resourceAcid" count="1" craft_time="60" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap">
 			<wildcard_forge_category/>
 		</recipe>
 	</append>
 </AGFVanillaPlus-ScrapBattery2Acid>
-
-

@@ -1,7 +1,5 @@
 <AGFVanillaPlus-ScrapBattery2Acid>
-
-		
-<!--BATTERIES SCRAP INTO ACID
+	<!--BATTERIES SCRAP INTO ACID
 	Feature: 	When you scrap a battery, you get 1 Acid.
 	
 	Default: 	When you scap a battery, you get some lead.
@@ -17,10 +15,10 @@
 	Code:		Modified carBattery material to support what it scraps into.
 				Modified carBattery weight to impact the amount of acid you get from scrapping.
 				Modified  resourceAcid weight to impact the amount of acid you get from scrapping a battery-->
-
-			<set xpath="/items/item[@name='carBattery']/property[@name='Material']/@value">MresourceAcid</set><!--Default = MresourceScrapLeadLarge-->
-			<set xpath="/items/item[@name='carBattery']/property[@name='Weight']/@value">2</set><!--Default = 160-->
-			<set xpath="/items/item[@name='resourceAcid']/property[@name='Weight']/@value">1</set><!--Default = 0-->
-
-
+	<set xpath="/items/item[@name='carBattery']/property[@name='Material']/@value">MresourceAcid</set>
+	<!--Default = MresourceScrapLeadLarge-->
+	<set xpath="/items/item[@name='carBattery']/property[@name='Weight']/@value">2</set>
+	<!--Default = 160-->
+	<set xpath="/items/item[@name='resourceAcid']/property[@name='Weight']/@value">1</set>
+	<!--Default = 0-->
 </AGFVanillaPlus-ScrapBattery2Acid>
