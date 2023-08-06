@@ -19,8 +19,9 @@
 	<insertAfter xpath="/quests/quest[@id='tier5_fetch_clear']/reward[@type='Item']">
 		<reward type="SkillPoints" value="1"/>
 	</insertAfter>
-	<!-- Убираем квесты на восстановление энергии и на закопанные припасы (т.к. земля = бедрок) -->
+	<!-- Убираем квесты на карты сокровищ, восстановление энергии и на закопанные припасы (т.к. земля = бедрок) -->
 	<remove xpath="//quest[contains(@id, '_buried_supplies')]"/>
+	<remove xpath="//quest[contains(@id, 'treasure_')]"/>
 	<remove xpath="/quests/quest[@id='tier2_restore_power']"/>
 	<remove xpath="/quests/quest[@id='tier3_restore_power']"/>
 	<remove xpath="/quests/quest[@id='tier4_restore_power']"/>
@@ -29,12 +30,12 @@
 	<set xpath="/quests/quest[@id='tier5_clear_infested']/variable[@name='spawn_multiplier']/@value">3</set>
 	<set xpath="/quests/quest[@id='tier5_clear_infested']/variable[@name='gamestage_mod']/@value">1</set>
 	<set xpath="/quests/quest[@id='tier5_clear_infested']/variable[@name='gamestage_bonus']/@value">50</set>
-	<set xpath="/quests/quest[@id='tier5_clear_infested']/reward[@type='Exp']/@value">60000</set>
+	<set xpath="/quests/quest[@id='tier5_clear_infested']/reward[@type='Exp']/@value">40000</set>
 	<!-- Усиливаем квесты нашествия 6 тира и повышаем награду -->
 	<set xpath="/quests/quest[@id='tier6_clear_infested']/variable[@name='spawn_multiplier']/@value">4</set>
 	<set xpath="/quests/quest[@id='tier6_clear_infested']/variable[@name='gamestage_mod']/@value">1</set>
 	<set xpath="/quests/quest[@id='tier6_clear_infested']/variable[@name='gamestage_bonus']/@value">100</set>
-	<set xpath="/quests/quest[@id='tier6_clear_infested']/reward[@type='Exp']/@value">120000</set>
+	<set xpath="/quests/quest[@id='tier6_clear_infested']/reward[@type='Exp']/@value">80000</set>
 	<!-- Добавляем новый стартовый квест -->
 	<append xpath="/quests">
 		<quest id="quest_visit_trader">

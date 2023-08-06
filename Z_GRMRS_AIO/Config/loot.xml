@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
+	<!-- Удаляем карты сокровищ из лута -->
+	<remove xpath="/lootcontainers/lootgroup[@name='groupTreasureMaps']"/>
 	<!-- Уменьшаем общую вероятность лута -->
 	<set xpath="//lootprobtemplate[@name='veryLow']/loot[@level='1,999999']/@prob">.02</set>
 	<set xpath="//lootprobtemplate[@name='low']/loot[@level='1,999999']/@prob">.06</set>
