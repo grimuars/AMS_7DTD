@@ -38,7 +38,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="DescriptionKey" value="drinkSodaBrewColaDesc"/>
 			<property name="DisplayType" value="water"/>
 			<!-- This is what shows up in the stats menu and also in hand I think -->
-			<property name="Stacknumber" value="24"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="24"/>
 			<property name="EconomicValue" value="32"/>
@@ -67,7 +67,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Extends" value="drinkJarBoiledWater"/>
 			<property name="DescriptionKey" value="drinkSodaDIETColaDesc"/>
 			<property name="DisplayType" value="water"/>
-			<property name="Stacknumber" value="24"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="24"/>
 			<property name="EconomicValue" value="32"/>
@@ -96,7 +96,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Extends" value="drinkJarBoiledWater"/>
 			<property name="DescriptionKey" value="drinkSodaCitrusDesc"/>
 			<property name="DisplayType" value="water"/>
-			<property name="Stacknumber" value="24"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="24"/>
 			<property name="EconomicValue" value="32"/>
@@ -125,7 +125,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Extends" value="drinkJarBoiledWater"/>
 			<property name="DescriptionKey" value="drinkSodaEnergyShotDesc"/>
 			<property name="DisplayType" value="water"/>
-			<property name="Stacknumber" value="24"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="24"/>
 			<property name="EconomicValue" value="32"/>
@@ -154,7 +154,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Extends" value="drinkJarBoiledWater"/>
 			<property name="DescriptionKey" value="drinkSodaLemonDesc"/>
 			<property name="DisplayType" value="water"/>
-			<property name="Stacknumber" value="24"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="24"/>
 			<property name="EconomicValue" value="32"/>
@@ -183,7 +183,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Extends" value="drinkJarBoiledWater"/>
 			<property name="DescriptionKey" value="drinkSodaPeppyDesc"/>
 			<property name="DisplayType" value="water"/>
-			<property name="Stacknumber" value="24"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="24"/>
 			<property name="EconomicValue" value="32"/>
@@ -212,7 +212,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Extends" value="drinkJarBoiledWater"/>
 			<property name="DescriptionKey" value="drinkSodaREGColaDesc"/>
 			<property name="DisplayType" value="water"/>
-			<property name="Stacknumber" value="24"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="24"/>
 			<property name="EconomicValue" value="32"/>
@@ -241,7 +241,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Extends" value="drinkJarBoiledWater"/>
 			<property name="DescriptionKey" value="drinkSodaRootBeerDesc"/>
 			<property name="DisplayType" value="water"/>
-			<property name="Stacknumber" value="24"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="24"/>
 			<property name="EconomicValue" value="32"/>
@@ -270,7 +270,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Extends" value="drinkJarBoiledWater"/>
 			<property name="DescriptionKey" value="drinkSodaStarColaDesc"/>
 			<property name="DisplayType" value="water"/>
-			<property name="Stacknumber" value="24"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="24"/>
 			<property name="EconomicValue" value="32"/>
@@ -299,7 +299,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Extends" value="drinkJarBoiledWater"/>
 			<property name="DescriptionKey" value="drinkSodaFizzColaDesc"/>
 			<property name="DisplayType" value="water"/>
-			<property name="Stacknumber" value="24"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="24"/>
 			<property name="EconomicValue" value="32"/>
@@ -328,7 +328,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Extends" value="drinkJarBoiledWater"/>
 			<property name="DescriptionKey" value="drinkSodaDietFizzColaDesc"/>
 			<property name="DisplayType" value="water"/>
-			<property name="Stacknumber" value="24"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="24"/>
 			<property name="EconomicValue" value="32"/>
@@ -357,7 +357,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Extends" value="drinkJarBoiledWater"/>
 			<property name="DescriptionKey" value="drinkSodaSirPDesc"/>
 			<property name="DisplayType" value="water"/>
-			<property name="Stacknumber" value="24"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="24"/>
 			<property name="EconomicValue" value="32"/>
@@ -386,7 +386,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Extends" value="drinkJarBoiledWater"/>
 			<property name="DescriptionKey" value="drinkSodaFrasRootBeerDesc"/>
 			<property name="DisplayType" value="water"/>
-			<property name="Stacknumber" value="24"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="24"/>
 			<property name="EconomicValue" value="32"/>
@@ -415,7 +415,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Extends" value="drinkJarBoiledWater"/>
 			<property name="DescriptionKey" value="drinkSodaCitrussyDesc"/>
 			<property name="DisplayType" value="water"/>
-			<property name="Stacknumber" value="24"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="24"/>
 			<property name="EconomicValue" value="32"/>
@@ -449,7 +449,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Mglass"/>
-			<property name="Stacknumber" value="10"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<!-- <property name="Weight" value="10"/> -->
 			<property name="EconomicValue" value="75"/>
@@ -487,7 +487,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Mplastics"/>
-			<property name="Stacknumber" value="12"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="12"/>
 			<property name="EconomicValue" value="50"/>
@@ -526,7 +526,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Mmetal"/>
-			<property name="Stacknumber" value="12"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="12"/>
 			<property name="EconomicValue" value="70"/>
@@ -570,7 +570,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Mglass"/>
-			<property name="Stacknumber" value="12"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="Weight" value="10"/>
 			<property name="EconomicValue" value="20"/>
@@ -605,7 +605,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="DescriptionKey" value="drinkWineRedDesc"/>
 			<property name="Material" value="Mglass"/>
 			<property name="Weight" value="12"/>
-			<property name="Stacknumber" value="12"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK drink -->
 			<property name="EconomicValue" value="75"/>
 			<property name="DisplayType" value="waterBeer"/>
@@ -638,7 +638,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 		<item name="foodCanSeasoning">
 			<property name="Extends" value="foodCanMiso"/>
 			<property name="DescriptionKey" value="foodCanSeasoningDesc"/>
-			<property name="Stacknumber" value="10"/>
+			<property name="Stacknumber" value="50"/>
 			<!-- STK resource -->
 			<property name="EconomicValue" value="5"/>
 			<effect_group tiered="false" name="Food Tier 0">
@@ -884,7 +884,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="Extends" value="foodCanMiso"/>
 			<property name="DescriptionKey" value="foodCrackersCreamCheeseDesc"/>
 			<property name="EconomicValue" value="15"/>
-			<property name="Stacknumber" value="16"/>
+			<property name="Stacknumber" value="50"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
@@ -1015,7 +1015,7 @@ resourceYuccaFibers, resourceCropHopsFlower, resourceCropAloeLeaf, resourceCropS
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="drinksSixPack"/>
 			<property name="CustomIconTint" value="FFFFFF"/>
-			<property name="Stacknumber" value="5"/>
+			<property name="Stacknumber" value="10"/>
 			<!-- STK ammobundle high -->
 			<property name="ItemTypeIcon" value="bundle"/>
 			<property name="DescriptionKey" value="drinksSixPackDesc"/>
