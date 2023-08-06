@@ -356,7 +356,7 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="15"/>
 	</append>
 	<append xpath="/items/item[@name='foodButterSpread']/effect_group[contains(@name, 'Tier')]">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="30"/>
 	</append>
 	<append xpath="/items/item[@name='foodFrozenOJCon']/effect_group[contains(@name, 'Tier')]">

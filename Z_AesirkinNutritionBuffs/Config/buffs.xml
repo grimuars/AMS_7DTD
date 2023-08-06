@@ -56,7 +56,7 @@
 				</triggered_effect>
 			</effect_group>
 		</buff>
-		<!-- If two or more nutrients drop below 50 -->
+		<!-- Если 2 или более вида питания менее 50 -->
 		<buff name="buffANBMalnurished" name_key="buffANBMalnurishedName" description_key="buffANBMalnurishedDesc" icon="ui_game_symbol_drop">
 			<stack_type value="replace"/>
 			<update_rate value="2"/>
