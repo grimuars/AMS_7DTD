@@ -1,8 +1,0 @@
-<lootableBarrels>
-	<append xpath="/lootcontainers">
-		<lootcontainer name="cntBarrelPlasticSingle00" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
-			<item name="drinkJarRiverWater" count="0,3" prob="1"/>
-			<item name="resourceScrapPolymers" count="12,24" prob="1"/>
-		</lootcontainer>
-	</append>
-</lootableBarrels>
