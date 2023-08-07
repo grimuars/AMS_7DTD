@@ -94,6 +94,18 @@
 			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
 		</block>
 	</append>
+	<!-- Уменьшаем выпадение электрики при разборке блоков -->
+	<set xpath="/blocks/block/drop[@event='Harvest' and @name='resourceElectricParts']/@count">1,5</set>
+	<!-- Можно поднимать ловушки -->
+	<append xpath="/blocks/block[@name='trapSpikesWoodDmg0']">
+		<property name="CanPickup" value="true" param1="trapSpikesWoodDmg0"/>
+	</append>
+	<append xpath="/blocks/block[@name='trapSpikesIronDmg0']">
+		<property name="CanPickup" value="true" param1="trapSpikesIronDmg0"/>
+	</append>
+	<append xpath="/blocks/block[@name='barbedFence']">
+		<property name="CanPickup" value="true"/>
+	</append>
 	<!-- Лутабельные мешки с трупами -->
 	<remove xpath="/blocks/block[@name='bodyBagBlack']"/>
 	<remove xpath="/blocks/block[@name='bodyBagYellow']"/>

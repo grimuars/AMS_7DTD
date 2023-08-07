@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<!-- *** FOREST_LOOT_HELPER -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntForestRandomLootHelper']">
+		<block name="mineCandyTin" prob=".0625"/>
+		<block name="mineCookingPot" prob=".0625"/>
+		<block name="mineAirFilter" prob=".0625"/>
+		<block name="mineHubcap" prob=".0625"/>
+	</append>
+	<!-- *** WASTELAND_LOOT_HELPER -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntWastelandRandomLootHelper']">
+		<block name="mineCandyTin" prob=".0625"/>
+		<block name="mineCookingPot" prob=".0625"/>
+		<block name="mineAirFilter" prob=".0625"/>
+		<block name="mineHubcap" prob=".0625"/>
+	</append>
+	<!-- *** DESERT_LOOT_HELPER -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntDesertRandomLootHelper']">
+		<block name="mineCandyTin" prob=".0625"/>
+		<block name="mineCookingPot" prob=".0625"/>
+		<block name="mineAirFilter" prob=".0625"/>
+		<block name="mineHubcap" prob=".0625"/>
+	</append>
+	<!-- *** BURNT_LOOT_HELPER -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntDesertRandomLootHelper']">
+		<block name="mineCandyTin" prob=".0625"/>
+		<block name="mineCookingPot" prob=".0625"/>
+		<block name="mineAirFilter" prob=".0625"/>
+		<block name="mineHubcap" prob=".0625"/>
+	</append>
+	<!-- *** BURNT_LOOT_HELPER -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntBurntForestRandomLootHelper']">
+		<block name="mineCandyTin" prob=".0625"/>
+		<block name="mineCookingPot" prob=".0625"/>
+		<block name="mineAirFilter" prob=".0625"/>
+		<block name="mineHubcap" prob=".0625"/>
+	</append>
+	<!-- *** HOUSE_LOOT_HELPER -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntHouseRandomLootHelper']">
+		<block name="mineCandyTin" prob=".0625"/>
+		<block name="mineCookingPot" prob=".0625"/>
+		<block name="mineAirFilter" prob=".0625"/>
+		<block name="mineHubcap" prob=".0625"/>
+	</append>
+	<!-- *** STREET_LOOT_HELPER -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntStreetRandomLootHelper']">
+		<block name="mineCandyTin" prob=".0625"/>
+		<block name="mineCookingPot" prob=".0625"/>
+		<block name="mineAirFilter" prob=".0625"/>
+		<block name="mineHubcap" prob=".0625"/>
+	</append>
+	<!-- *** YARD_LOOT_HELPER -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntYardRandomLootHelper']">
+		<block name="mineCandyTin" prob=".0625"/>
+		<block name="mineCookingPot" prob=".0625"/>
+		<block name="mineAirFilter" prob=".0625"/>
+		<block name="mineHubcap" prob=".0625"/>
+	</append>
+	<!-- *** GARAGE_LOOT_HELPER -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntGarageRandomLootHelper']">
+		<block name="mineCandyTin" prob=".0625"/>
+		<block name="mineCookingPot" prob=".0625"/>
+		<block name="mineAirFilter" prob=".0625"/>
+		<block name="mineHubcap" prob=".0625"/>
+	</append>
+</configs>
