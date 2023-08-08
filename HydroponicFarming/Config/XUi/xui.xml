@@ -1,6 +1,5 @@
 <configs>
-<append xpath="/xui/ruleset[@name='default']" >
-		
+	<append xpath="/xui/ruleset[@name='default']">
 		<window_group name="workstation_HydroponicVerticalFarm" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
@@ -8,7 +7,6 @@
 			<window name="windowTools_HVF"/>
 			<window name="windowOutput_HVF"/>
 			<window name="windowNonPagingHeader"/>
-		</window_group>		
-
-</append>
+		</window_group>
+	</append>
 </configs>
