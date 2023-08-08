@@ -1,5 +1,5 @@
 <configs>
-	<!-- Удаляем старый и тупой вариант хелпер для флагов -->
+	<!-- Удаляем старый вариант хелпер для флагов -->
 	<remove xpath="/blocks/block[@name='flagThick44BlockVariantHelper']"/>
 	<!-- Лутабельные бочки -->
 	<append xpath="/blocks/block[@name='cntBarrelPlasticSingle00']">
@@ -29,7 +29,7 @@
 	<!-- <set xpath="/blocks/block[@name='cntDewCollector']/property[@name='MaxConvertTime']/@value">10800</set> -->
 	<!-- original value 36000 -->
 	<!-- Коллектор собирает мутную воду (что логично) -->
-	<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='ConvertToItem']/@value">drinkJarRiverWater</set>
+	<!-- <set xpath="/blocks/block[@name='cntDewCollector']/property[@name='ConvertToItem']/@value">drinkJarRiverWater</set> -->
 	<!-- Активируем подбор мусора -->
 	<append xpath="/blocks/block[@name='garbage_decor1']">
 		<property name="CanPickup" value="true" param1="resourceCloth"/>

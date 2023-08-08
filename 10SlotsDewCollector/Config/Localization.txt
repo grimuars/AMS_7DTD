@@ -1,0 +1,5 @@
+Key,File,Type,english,russian
+
+cntDewCollector,blocks,block,Well,Колодец
+dewCollectorDesc,blocks,block,"Accumulates relatively clean water from the water-bearing layers of the soil.\nCollected water should be boiled or filtered.\n\nRepair with Scrap Polymers and Wood.","Со временем накапливает относительно чистую воду из водносных слоёв почвы.\nСобранную воду необходимо кипятить или фильтровать.\n\nРемонтируется с помощью синтетического мусора и дерева."
+xuiDewCollector,UI,XUI,Well,Колодец

@@ -7,7 +7,7 @@
 		</recipe>
 		<!-- FOOD — FLOUR -->
 		<recipe name="foodFlour" count="1" craft_time="25">
-			<ingredient name="foodCropCorn" count="5"/>
+			<ingredient name="foodCropWheat" count="5"/>
 			<ingredient name="resourceRockSmall" count="2"/>
 		</recipe>
 	</append>
