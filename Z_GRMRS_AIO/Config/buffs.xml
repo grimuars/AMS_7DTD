@@ -45,6 +45,4 @@
 			<requirement name="HasBuff" buff="buffWaterPurifier"/>
 		</effect_group>
 	</append>
-	<!-- Налобный фонарь нельзя ставить на "мягкие" шлемы -->
-	<set xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']/@blocked_tags">noMods,clothing,padded</set>
 </configs>

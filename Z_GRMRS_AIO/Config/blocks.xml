@@ -175,4 +175,65 @@
 			<property name="Model" value="Entities/Misc/body_bag_yellow_fliesPrefab"/>
 		</block>
 	</append>
+	<!-- Скорость передвижения зависит от поверхности -->
+	<append xpath="/blocks/block[@name='terrStone']">
+		<property name="MovementFactor" value="1.0"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrBedrock']">
+		<property name="MovementFactor" value="1.0"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrDirt']">
+		<property name="MovementFactor" value="0.90"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrForestGround']">
+		<property name="MovementFactor" value="0.90"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrBurntForestGround']">
+		<property name="MovementFactor" value="0.87"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrDesertGround']">
+		<property name="MovementFactor" value="0.80"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrSand']">
+		<property name="MovementFactor" value="0.80"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrSandStone']">
+		<property name="MovementFactor" value="0.85"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrSnow']">
+		<property name="MovementFactor" value="0.70"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrTopSoil']">
+		<property name="MovementFactor" value="0.95"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrDestroyedStone']">
+		<property name="MovementFactor" value="0.9"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrDestroyedWoodDebris']">
+		<property name="MovementFactor" value="0.9"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrGravel']">
+		<property name="MovementFactor" value="1.05"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrAsphalt']">
+		<property name="MovementFactor" value="1.15"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrConcrete']">
+		<property name="MovementFactor" value="1.15"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrOreIron']">
+		<property name="MovementFactor" value="1.0"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrOreLead']">
+		<property name="MovementFactor" value="1.0"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrOreCoal']">
+		<property name="MovementFactor" value="1.0"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrOrePotassiumNitrate']">
+		<property name="MovementFactor" value="1.0"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrOreOilDeposit']">
+		<property name="MovementFactor" value="1.0"/>
+	</append>
 </configs>

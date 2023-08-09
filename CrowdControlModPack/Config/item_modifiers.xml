@@ -1,7 +1,7 @@
 <!-- Add Nicad Battery mod and add Rad regen removal -->
 <configs>
 	<append xpath="/item_modifiers">
-		<item_modifier name="modGunMeleeNiCdBatteryDA" installable_tags="melee,gun,pistol,shotgun,revolver,launcher,tool" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
+		<item_modifier name="modGunMeleeNiCdBatteryDA" installable_tags="melee,gun,pistol,shotgun,revolver,tool" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="CustomIcon" value="modGunMeleeNiCdBattery"/>
 			<property name="CustomIconTint" value="#7d41bd"/>
