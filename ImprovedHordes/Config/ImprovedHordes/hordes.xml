@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hordes>
+	<horde type="wandering_enemy"> <!-- Define wandering horde parameters -->
+		<merge />
+		<groups> <!-- Define possible groups for wandering hordes-->
+			<group name="Zombies">
+				<gs min="0" increaseEvery="5"> <!-- Increase entity count by 1 every 5 game stages -->
+					<entity time="day" biomes="wasteland" group="ZombiesWasteland" minCount="3" maxCount="8"/>
+					<entity time="night" biomes="wasteland" group="ZombiesWastelandNight" minCount="3" maxCount="8"/>
+			
+					<entity time="day" biomes="pine_forest,snow,desert,burnt_forest" group="ZombiesAll" minCount="3" maxCount="8"/>
+					<entity time="night" biomes="pine_forest,snow,desert,burnt_forest" group="ZombiesNight" minCount="3" maxCount="8"/>
+				</gs>
+				
+				<gs min="70" increaseEvery="8">
+					<entity time="day" biomes="wasteland" group="IHZombiesAllFeralWasteland" minCount="1" maxCount="10"/>
+					<entity time="night" biomes="wasteland" group="ZombiesWastelandNight" minCount="1" maxCount="10"/>
+				
+					<entity time="day" chance="0.8" biomes="pine_forest,snow,desert,burnt_forest" group="IHZombiesAllFeral" minCount="1" maxCount="10"/>
+					<entity time="night" chance="0.8" biomes="pine_forest,snow,desert,burnt_forest" group="IHZombiesAllFeralNight" minCount="1" maxCount="10"/>
+				</gs>
+				
+				<!-- Radiated Zombies -->
+				<gs min="180" increaseEvery="5">
+					<entity time="day" chance="0.4" biomes="wasteland" group="IHZombiesAllRadiatedWasteland" minCount="1" maxCount="20"/>
+					<entity time="night" chance="0.4" biomes="wasteland" group="IHZombiesAllRadiatedWastelandNight" minCount="1" maxCount="20"/>
+				
+					<entity time="day" chance="0.2" biomes="pine_forest,snow,desert,burnt_forest" group="IHZombiesAllRadiated" minCount="1" maxCount="20"/>
+					<entity time="night" chance="0.2" biomes="pine_forest,snow,desert,burnt_forest" group="IHZombiesAllRadiatedNight" minCount="1" maxCount="20"/>
+				</gs>
+			</group>
+		</groups>
+	</horde>
+	
+	<horde type="wandering_animal">
+		<merge />
+		<groups>
+			<group name="Stags" weight="0.25">
+				<entity name="animalStag" minCount="1" maxCount="2"/>
+				<entity name="animalDoe" minCount="2" maxCount="4"/>
+			</group>
+			
+			<group name="Chickens">
+				<entity name="animalChicken" minCount="3" maxCount="5"/>
+			</group>
+			
+			<group name="Rabbits">
+				<entity name="animalRabbit" minCount="2" maxCount="4"/>
+			</group>
+		</groups>
+	</horde>
+	
+	<horde type="wandering_animal_enemy">
+		<merge />
+		<groups>
+			<group name="Wolves" weight="0.1">
+				<entity biomes="desert,snow" name="animalCoyote" minCount="1" maxCount="2"/>
+				<entity biomes="pine_forest,burnt_forest" name="animalWolf" minCount="2" maxCount="4"/>
+
+				<entity time="night" chance="0.25" biomes="pine_forest,desert,wasteland,burnt_forest" name="animalDireWolf" minCount="1" maxCount="2"/>
+				<entity biomes="snow" name="animalMountainLion" minCount="1" maxCount="2"/>
+			</group>
+			
+			<group name="Bears" weight="0.05">
+				<entity biomes="pine_forest,snow" name="animalBear" minCount="1" maxCount="2"/>
+					
+				<entity time="night" biomes="wasteland,burnt_forest" name="animalZombieBear" minCount="1" maxCount="2"/>
+			</group>
+			
+						
+			<group name="ZombieDogs" weight="0.2">
+				<entity chance="0.1" biomes="wasteland,pine_forest" name="animalZombieDog" minCount="1" maxCount="5"/>
+			</group>
+			
+			<group name="Vultures" weight="0.01">
+				<entity biomes="wasteland,desert,burnt_forest" name="animalZombieVulture" minCount="1" maxCount="3"/>
+				
+				<entity biomes="wasteland" name="animalZombieVultureRadiated" minCount="1" maxCount="2"/>
+			</group>
+			
+			<group name="Boars" weight="0.01">
+				<entity name="animalBoar" minCount="3" maxCount="4"/>
+			</group>
+		</groups>
+	</horde>
+	
+	<horde type="screamer">
+		<!-- Define list of hordes that this horde can merge with. Hordes of the same type can usually merge. Screamers are an exception. -->
+		<merge>
+			<horde type="wandering_enemy"/>
+		</merge>
+		
+		<groups>
+			<group name="Screamer">
+				<gs min="0" max="75">
+					<entity name="zombieScreamer" minCount="1" maxCount="1"/>
+				</gs>
+				
+				<gs min="75" max="200">
+					<entity name="zombieScreamerFeral" minCount="1" maxCount="1"/>
+				</gs>
+				
+				<gs min="200">
+					<entity name="zombieScreamerRadiated" minCount="1" maxCount="1"/>
+				</gs>
+			</group>
+		</groups>
+	</horde>
+</hordes>
