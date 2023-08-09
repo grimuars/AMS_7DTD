@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
+	<!-- *** GRASS_VS_WHEAT -->
+	<append xpath="/blockplaceholders">
+		<placeholder name="plantedWheatHarvestRandomHelper">
+			<block name="plantedWheat3Harvest" prob=".03" randomrotation="true"/>
+			<block name="air" prob=".87"/>
+			<block name="treeSnowyGrassDiagonal" prob=".431" biome="snow" randomrotation="true"/>
+			<block name="treeTallGrassDiagonal" prob=".431" biome="pine_forest" randomrotation="true"/>
+			<block name="treeBrownGrassDiagonal" prob=".431" biome="desert" randomrotation="true"/>
+			<block name="treeBrownGrassDiagonal" prob=".431" biome="water" randomrotation="true"/>
+			<block name="treeBrownGrassDiagonal" prob=".431" biome="wasteland" randomrotation="true"/>
+			<block name="treeBrownGrassDiagonal" prob=".431" biome="burnt_forest" randomrotation="true"/>
+		</placeholder>
+	</append>
 	<!-- *** FOREST_LOOT_HELPER -->
 	<append xpath="/blockplaceholders/placeholder[@name='cntForestRandomLootHelper']">
 		<block name="mineCandyTin" prob=".0625"/>

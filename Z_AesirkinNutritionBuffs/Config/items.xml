@@ -363,9 +363,4 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="5"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="5"/>
 	</append>
-	<!-- Пшеница -->
-	<append xpath="/items/item[@name='foodCropWheat']/effect_group[contains(@name, 'Tier')]">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="1"/>
-	</append>
 </configs>

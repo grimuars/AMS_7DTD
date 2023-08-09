@@ -5,7 +5,7 @@
 		<block name="plantedWheat1">
 			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="wheatseed"/>
+			<property name="CustomIcon" value="wheatitem"/>
 			<property name="PlantGrowing.Next" value="plantedWheat2"/>
 			<property name="UnlockedBy" value="craftingSeeds"/>
 			<property name="Shape" value="ModelEntity"/>
@@ -24,8 +24,9 @@
 			<property name="PlantGrowing.Next" value="plantedWheat3HarvestPlayer"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/Wheat.unity3d?WheatPrefab2"/>
-			<property name="CustomIcon" value="wheatseed"/>
+			<property name="CustomIcon" value="wheatitem"/>
 			<property name="Texture" value="20"/>
+			<property name="Material" value="Mcorn"/>
 			<drop event="Destroy" name="plantedWheat1" count="1"/>
 			<property name="SortOrder1" value="B953"/>
 			<property name="SortOrder2" value="0001"/>
@@ -33,11 +34,11 @@
 		<!-- Стадия 3 -->
 		<block name="plantedWheat3Harvest">
 			<property name="Extends" value="cropsHarvestableMaster"/>
-			<property name="CustomIcon" value="wheatseed"/>
+			<property name="CustomIcon" value="wheatitem"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/Wheat.unity3d?WheatPrefab3"/>
-			<drop event="Harvest" name="foodCropWheat" count="1" tag="wildCropsHarvest"/>
-			<drop event="Harvest" name="foodCropWheat" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<drop event="Harvest" name="resourceCropWheatPlant" count="1" tag="wildCropsHarvest"/>
+			<drop event="Harvest" name="resourceCropWheatPlant" prob="0.5" count="1" tag="bonusCropHarvest"/>
 			<property name="SortOrder1" value="B953"/>
 			<property name="SortOrder2" value="0002"/>
 		</block>
@@ -45,7 +46,7 @@
 		<block name="plantedWheatHarvestRandomHelper">
 			<property name="Extends" value="plantedWheat3Harvest" param1="MultiBlockDim"/>
 			<property name="CreativeMode" value="Dev"/>
-			<property name="CustomIcon" value="wheatseed"/>
+			<property name="CustomIcon" value="wheatitem"/>
 			<property name="CustomIconTint" value="ff8080"/>
 			<property name="ItemTypeIcon" value="other"/>
 			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
@@ -58,11 +59,11 @@
 		<block name="plantedWheat3HarvestPlayer">
 			<property name="Extends" value="plantedWheat3Harvest"/>
 			<property name="CreativeMode" value="None"/>
-			<property name="CustomIcon" value="wheatseed"/>
+			<property name="CustomIcon" value="wheatitem"/>
 			<property name="DescriptionKey" value="plantedWheat3HarvestDesc"/>
-			<drop event="Harvest" name="foodCropWheat" count="2" tag="cropHarvest"/>
-			<drop event="Harvest" name="foodCropWheat" prob="0.5" count="1" tag="bonusCropHarvest"/>
-			<drop event="Destroy" name="plantedWheat1" count="1" prob="0.5"/>
+			<drop event="Harvest" name="resourceCropWheatPlant" count="2" tag="cropHarvest"/>
+			<drop event="Harvest" name="resourceCropWheatPlant" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="DowngradeBlock" value="plantedWheat1"/>
 			<property name="SortOrder1" value="B953"/>
 			<property name="SortOrder2" value="0004"/>
 		</block>
@@ -78,9 +79,10 @@
 			<property name="CreativeMode" value="Player"/>
 			<property name="DescriptionKey" value="dewCollectorDesc"/>
 			<property name="Material" value="MFuelBarrelPolymer"/>
+			<property name="CustomIcon" value="well"/>
 			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="#@modfolder:Resources/Well.unity3d?WellPrefab"/>
-			<property name="MultiBlockDim" value="2,3,2"/>
+			<property name="Model" value="#@modfolder:Resources/Well.unity3d?Brunnen"/>
+			<!-- <property name="MultiBlockDim" value="2,3,2"/> -->
 			<property name="ImposterExchange" value="imposterBlock" param1="116"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="Place" value="TowardsPlacerInverted"/>

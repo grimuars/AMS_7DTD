@@ -6,8 +6,8 @@
 			<ingredient name="drinkJarBoiledWater" count="4"/>
 		</recipe>
 		<!-- FOOD — FLOUR -->
-		<recipe name="foodFlour" count="1" craft_time="25">
-			<ingredient name="foodCropWheat" count="5"/>
+		<recipe name="foodFlour" count="1" craft_time="30">
+			<ingredient name="resourceCropWheatPlant" count="10"/>
 			<ingredient name="resourceRockSmall" count="2"/>
 		</recipe>
 	</append>

@@ -540,8 +540,8 @@
 			</effect_group>
 		</recipe>
 		<!-- FOOD — FLOUR -->
-		<recipe name="foodFlour" count="1" craft_area="DeucesOven" craft_time="25">
-			<ingredient name="foodCropWheat" count="5"/>
+		<recipe name="foodFlour" count="1" craft_area="DeucesOven" craft_time="30">
+			<ingredient name="resourceCropWheatPlant" count="10"/>
 			<ingredient name="resourceRockSmall" count="2"/>
 			<effect_group>
 				<passive_effect name="CraftingTime" operation="perc_add" value="-.15"/>

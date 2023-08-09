@@ -23,6 +23,8 @@
 			<property name="CustomIcon" value="DementivemeleeWpnBladeHellHound"/>
 			<property name="EconomicValue" value="3000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property class="Action0">
 				<property name="Class" value="DynamicMelee"/>
 				<property name="Damage_type" value="Piercing"/>
@@ -115,6 +117,8 @@
 			<property name="CustomIcon" value="DementivegunRocketFinale"/>
 			<property name="EconomicValue" value="3000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property class="Action0">
 				<property name="Class" value="Launcher"/>
 				<property name="Delay" value=".8"/>
@@ -192,6 +196,8 @@
 			<property name="EconomicValue" value="3000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
 			<property name="DescriptionKey" value="DementivegunTrifectaDesc"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property class="Action0">
 				<property name="Class" value="Launcher"/>
 				<property name="Hitmask_override" value="Arrow"/>
@@ -277,6 +283,8 @@
 			<property name="CustomIcon" value="DementivegunPacifier"/>
 			<property name="EconomicValue" value="3000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property class="Action0">
 				<property name="Class" value="Catapult"/>
 				<!-- Catapult might not be the best name for it but it can also be used for a slingshot -->
@@ -365,6 +373,8 @@
 			<property name="CustomIcon" value="DementivemeleeToolArchitect"/>
 			<property name="EconomicValue" value="3000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property class="Action0">
 				<property name="Class" value="DynamicMelee"/>
 				<property name="Sound_start" value="impact_driver_swinglight"/>
@@ -423,6 +433,8 @@
 			<property name="CustomIcon" value="DementiveHughsGlock"/>
 			<property name="EconomicValue" value="1000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementiveHughsGlock">
 				<passive_effect name="MaxRange" operation="base_set" value="65" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="22" tags="perkGunslinger,9mmGun"/>
@@ -476,6 +488,8 @@
 			<property name="Extends" value="gunHandgunT3DesertVulture"/>
 			<property name="CustomIcon" value="DementiveDesertRedeemer"/>
 			<property name="EconomicValue" value="2000"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementiveDesertRedeemer">
 				<passive_effect name="MaxRange" operation="base_set" value="55" tags="perkGunslinger"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="30" tags="perkGunslinger"/>
@@ -528,6 +542,8 @@
 			<property name="CustomIcon" value="DementivegunHandgunT2Magnum44"/>
 			<property name="EconomicValue" value="1500"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 			<effect_group name="DementivegunHandgunT2Magnum44">
 				<passive_effect name="MaxRange" operation="base_set" value="80" tags="perkGunslinger"/>
@@ -581,6 +597,8 @@
 			<property name="CustomIcon" value="DementivegunHandgunT3SMG5"/>
 			<property name="EconomicValue" value="2000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivegunHandgunT3SMG5">
 				<passive_effect name="MaxRange" operation="base_set" value="85" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="45" tags="perkGunslinger,9mmGun"/>
@@ -634,6 +652,8 @@
 			<property name="CustomIcon" value="DementivegunMGT1AK47"/>
 			<property name="EconomicValue" value="1000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivegunMGT1AK47">
 				<passive_effect name="MaxRange" operation="base_set" value="115" tags="perkMachineGunner"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="85" tags="perkMachineGunner"/>
@@ -690,6 +710,8 @@
 			<property name="CustomIcon" value="DementivegunMGT2TacticalAR"/>
 			<property name="EconomicValue" value="1500"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivegunMGT2TacticalAR">
 				<passive_effect name="MaxRange" operation="base_set" value="110" tags="perkMachineGunner"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="55" tags="perkMachineGunner"/>
@@ -744,6 +766,8 @@
 			<property name="Extends" value="gunMGT3M60"/>
 			<property name="CustomIcon" value="DementivegunMGT3M60"/>
 			<property name="EconomicValue" value="2000"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivegunMGT3M60">
 				<passive_effect name="MaxRange" operation="base_set" value="95" tags="perkMachineGunner"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="55" tags="perkMachineGunner"/>
@@ -799,6 +823,8 @@
 			<property name="CustomIcon" value="DementivegunRifleT1HuntingRifle"/>
 			<property name="EconomicValue" value="1000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivegunRifleT1HuntingRifle">
 				<passive_effect name="MaxRange" operation="base_set" value="160" tags="perkDeadEye"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="75" tags="perkDeadEye"/>
@@ -853,6 +879,8 @@
 			<property name="CustomIcon" value="DementivegunRifleT2LeverActionRifle"/>
 			<property name="EconomicValue" value="1500"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivegunRifleT2LeverActionRifle">
 				<passive_effect name="MaxRange" operation="base_set" value="160" tags="perkDeadEye"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="65" tags="perkDeadEye"/>
@@ -909,6 +937,8 @@
 			<property name="CustomIcon" value="DementivegunRifleT3SniperRifle"/>
 			<property name="EconomicValue" value="2000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivegunRifleT3SniperRifle">
 				<passive_effect name="MaxRange" operation="base_set" value="170" tags="perkDeadEye"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="75" tags="perkDeadEye"/>
@@ -963,6 +993,8 @@
 			<property name="CustomIcon" value="DementivegunShotgunT1DoubleBarrel"/>
 			<property name="EconomicValue" value="1000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivegunShotgunT1DoubleBarrel">
 				<passive_effect name="MaxRange" operation="base_set" value="40" tags="perkBoomstick"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="15" tags="perkBoomstick"/>
@@ -1009,6 +1041,8 @@
 			<property name="CustomIcon" value="DementivegunShotgunT2PumpShotgun"/>
 			<property name="EconomicValue" value="1500"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,bottomAttachments,attStrength,perkBoomstick,modGunShotgunTubeExtenderMagazine,attachmentsIncluded,canHaveCosmetic,shotgunSkill"/>
 			<effect_group name="DementivegunShotgunT2PumpShotgun">
 				<passive_effect name="MaxRange" operation="base_set" value="60" tags="perkBoomstick"/>
@@ -1058,6 +1092,8 @@
 			<property name="CustomIcon" value="DementivegunShotgunT3AutoShotgun"/>
 			<property name="EconomicValue" value="2000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivegunShotgunT3AutoShotgun">
 				<passive_effect name="MaxRange" operation="base_set" value="40" tags="perkBoomstick"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="12" tags="perkBoomstick"/>
@@ -1106,6 +1142,8 @@
 			<property name="CustomIcon" value="DementivemeleeToolAxeT1IronFireaxe"/>
 			<property name="EconomicValue" value="700"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivemeleeToolAxeT1IronFireaxe">
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="70" tags="perkMiner69r,axe"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="17.9" tags="primary"/>
@@ -1156,6 +1194,8 @@
 			<property name="CustomIcon" value="DementivemeleeToolAxeT2SteelAxe"/>
 			<property name="EconomicValue" value="1500"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivemeleeToolAxeT2SteelAxe">
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkMiner69r,axe"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="28.9" tags="primary"/>
@@ -1206,6 +1246,8 @@
 			<property name="CustomIcon" value="DementivemeleeToolAxeT3Chainsaw"/>
 			<property name="EconomicValue" value="2000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivemeleeToolAxeT3Chainsaw">
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="350" tags="perkMiner69r"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="5500,12000" tier="1,6" tags="perkMiner69r"/>
@@ -1267,6 +1309,8 @@
 			<property name="CustomIcon" value="DementivemeleeToolAxeT3Auger"/>
 			<property name="EconomicValue" value="2000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivemeleeToolAxeT3Auger">
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="350" tags="perkMiner69r"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="5500,12000" tier="1,6" tags="perkMiner69r"/>
@@ -1326,6 +1370,8 @@
 			<property name="CustomIcon" value="DementivemeleeWpnBatonT2StunBaton"/>
 			<property name="EconomicValue" value="1000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivemeleeWpnBatonT2StunBaton">
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="80" tags="perkElectrocutioner,perkFlurryOfIntellect"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="13.5" tags="primary"/>
@@ -1524,6 +1570,8 @@
 			<property name="CustomIcon" value="DementivemeleeWpnClubT3SteelClub"/>
 			<property name="EconomicValue" value="1200"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivemeleeWpnClubT3SteelClub">
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="90" tags="perkPummelPete,perkFlurryOfStrength"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="14.7" tags="primary"/>
@@ -1564,6 +1612,8 @@
 			<property name="CustomIcon" value="DementivemeleeWpnKnucklesT3SteelKnuckles"/>
 			<property name="EconomicValue" value="800"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivemeleeWpnKnucklesT3SteelKnuckles">
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="140" tags="perkBrawler,perkFlurryOfFortitude"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="7.2" tags="primary"/>
@@ -1615,6 +1665,8 @@
 			<property name="CustomIcon" value="DementivemeleeWpnSledgeT3SteelSledgehammer"/>
 			<property name="EconomicValue" value="2000"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivemeleeWpnSledgeT3SteelSledgehammer">
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="35" tags="perkSkullCrusher,perkFlurryOfStrength"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="35" tags="primary"/>
@@ -1654,6 +1706,8 @@
 			<property name="CustomIcon" value="DementivemeleeWpnSpearT3SteelSpear"/>
 			<property name="EconomicValue" value="1500"/>
 			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="TintColor" value="139,0,0"/>
+			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<effect_group name="DementivemeleeWpnSpearT3SteelSpear">
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkJavelinMaster"/>
 				<display_value name="dTargetArmor" value="-.5"/>

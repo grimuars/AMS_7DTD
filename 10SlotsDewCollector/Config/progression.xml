@@ -1,4 +1,8 @@
 <configs>
+	<!-- Водяной фильтр -->
 	<csv xpath="//crafting_skill[@name='craftingWorkstations']/display_entry/unlock_entry[@item='cntDewCollector']/@item" delim="," op="add">resourceWaterFilter</csv>
 	<csv xpath="//crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@tags='cntDewCollector']/@tags" delim="," op="add">resourceWaterFilter</csv>
+	<!-- Пшеница -->
+	<csv xpath="//crafting_skill[@name='craftingSeeds']/display_entry/unlock_entry[@item='plantedCorn1']/@item" delim="," op="add">plantedWheat1</csv>
+	<csv xpath="//crafting_skill[@name='craftingSeeds']/effect_group/passive_effect[@tags='plantedCorn1']/@tags" delim="," op="add">plantedWheat1</csv>
 </configs>

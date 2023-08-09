@@ -40,9 +40,11 @@
 	<append xpath="/buffs/buff/effect_group/triggered_effect[@action='Ragdoll']/requirement/@tags">,player</append>
 	<!-- При использовании очистителя воды, если игрок мокрый, жажда восстанавливается -->
 	<append xpath="/buffs/buff[@name='buffElementWet']">
-	<effect_group>
-		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="water" operation="add" value="1"/>
-		<requirement name="HasBuff"  buff="buffWaterPurifier"/>
-	</effect_group>
-</append>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="water" operation="add" value="1"/>
+			<requirement name="HasBuff" buff="buffWaterPurifier"/>
+		</effect_group>
+	</append>
+	<!-- Налобный фонарь нельзя ставить на "мягкие" шлемы -->
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']/@blocked_tags">noMods,clothing,padded</set>
 </configs>

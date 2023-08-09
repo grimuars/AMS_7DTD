@@ -2,6 +2,11 @@
 <configs>
 	<!-- Удаляем карты сокровищ из лута -->
 	<remove xpath="/lootcontainers/lootgroup[@name='groupTreasureMaps']"/>
+	<remove xpath="/lootcontainers//item[contains (@group, 'groupTreasureMaps')]"/>
+	<!-- Убираем из лута модификацию на ускорение -->
+	<remove xpath="/lootcontainers/lootgroup/item[contains(@name,'modVehicleSuperCharger')]"/>
+	<!--Отключаем жроны -->
+	<remove xpath="/lootcontainers/lootgroup/item[contains(@name,'Drone')]"/>
 	<!-- Уменьшаем общую вероятность лута -->
 	<set xpath="//lootprobtemplate[@name='veryLow']/loot[@level='1,999999']/@prob">.02</set>
 	<set xpath="//lootprobtemplate[@name='low']/loot[@level='1,999999']/@prob">.06</set>
@@ -20,7 +25,6 @@
 	<append xpath="/lootcontainers">
 		<lootgroup name="lootBodyBagSingle">
 			<item group="groupApparelClothes" count="1" prob=".20"/>
-			<item group="groupTreasureMaps" prob=".01"/>
 			<item group="groupSmallAmmoLowHigh" count="1,2" prob=".30"/>
 			<item group="groupWeaponsRangedScaled" prob=".09"/>
 			<item group="groupValuablesSmall" prob=".10"/>
@@ -44,8 +48,4 @@
 			<item name="foodShamSandwich" count="0,2" prob="0.5"/>
 		</lootcontainer>
 	</append>
-	<!-- Убираем из лута модификацию на ускорение -->
-	<remove xpath="/lootcontainers/lootgroup/item[contains(@name,'modVehicleSuperCharger')]"/>
-	<!--Отключаем жроны -->
-	<remove xpath="/lootcontainers/lootgroup/item[contains(@name,'Drone')]"/>
 </configs>

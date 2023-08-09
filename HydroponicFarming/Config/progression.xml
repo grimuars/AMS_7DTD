@@ -1,60 +1,54 @@
 <!-- "Living off the land" perk tweaks to seeds -->
 <config>
-	
-	<remove xpath="/progression/perks/perk[@name='perkLivingOffTheLand']" />
-	
+	<remove xpath="/progression/perks/perk[@name='perkLivingOffTheLand']"/>
 	<append xpath="/progression/perks">
-		
-	<perk name="perkLivingOffTheLand" max_level="4" parent="skillFortitudeSurvival" name_key="perkLivingOffTheLandName" desc_key="perkLivingOffTheLandDesc" icon="ui_game_symbol_tree">
-		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="1" desc_key="reqFortitudeLevel01"/></level_requirements>
-		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="3" desc_key="reqFortitudeLevel03"/></level_requirements>
-		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/></level_requirements>
-		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="7" desc_key="reqFortitudeLevel07"/></level_requirements>
-		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="reqFortitudeLevel10"/></level_requirements>
-
-		<effect_group>
-			<passive_effect name="CraftingTier" operation="base_set" level="0,4" value="0,4" tags="perkLivingOffTheLandCrafting"/><!-- fake crafting perk that is used to scale resources -->
-			
-			<passive_effect name="CraftingTime" operation="perc_add" level="3,4" value="-0.25,-0.5" tags="hvfCrafting"/>
-
-			<passive_effect name="HarvestCount" operation="perc_add" level="1,2,3,4" value="1,1,2,2" tags="cropHarvest,wildCropsHarvest"/>
-			<passive_effect name="HarvestCount" operation="base_set" level="2,3,4" value="1,1,1" tags="bonusCropHarvest"/>
-
-			<!-- Increase the chance to find seeds with each perk rank -->
-			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="seedSkill"/>
-
-			<!-- Increase the chance to find seed crafting skill magazines with each perk rank up to crafting skill 20 -->
-			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="seedCSM">
-				<requirement name="ProgressionLevel" progression_name="craftingSeeds" operation="LT" value="20"/>
-			</passive_effect>
-
-			<!-- Once seed crafting skill reaches 20, set the probability bonus of finding seed crafting skill magazines to 0 -->
-			<passive_effect name="LootProb" operation="base_set" level="1,5" value="0,0" tags="seedCSM">
-				<requirement name="ProgressionLevel" progression_name="craftingSeeds" operation="Equals" value="20"/>
-			</passive_effect>
-
-			<effect_description level="1" desc_key="perkLivingOffTheLandRank1Desc" long_desc_key="perkLivingOffTheLandRank1LongDesc"/>
-			<effect_description level="2" desc_key="perkLivingOffTheLandRank2Desc" long_desc_key="perkLivingOffTheLandRank2LongDesc"/>
-			<effect_description level="3" desc_key="perkLivingOffTheLandRank3Desc" long_desc_key="perkLivingOffTheLandRank3LongDesc"/>
-			<effect_description level="4" desc_key="perkLivingOffTheLandRank4Desc" long_desc_key="perkLivingOffTheLandRank4LongDesc"/>
-			<effect_description level="5" desc_key="perkLivingOffTheLandRank5Desc" long_desc_key="perkLivingOffTheLandRank5LongDesc"/>
-		</effect_group>
-	</perk>
-	
+		<perk name="perkLivingOffTheLand" max_level="4" parent="skillFortitudeSurvival" name_key="perkLivingOffTheLandName" desc_key="perkLivingOffTheLandDesc" icon="ui_game_symbol_tree">
+			<level_requirements level="1">
+				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="1" desc_key="reqFortitudeLevel01"/>
+			</level_requirements>
+			<level_requirements level="2">
+				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="3" desc_key="reqFortitudeLevel03"/>
+			</level_requirements>
+			<level_requirements level="3">
+				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/>
+			</level_requirements>
+			<level_requirements level="4">
+				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="7" desc_key="reqFortitudeLevel07"/>
+			</level_requirements>
+			<level_requirements level="5">
+				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="reqFortitudeLevel10"/>
+			</level_requirements>
+			<effect_group>
+				<passive_effect name="CraftingTier" operation="base_set" level="0,4" value="0,4" tags="perkLivingOffTheLandCrafting"/>
+				<!-- fake crafting perk that is used to scale resources -->
+				<passive_effect name="CraftingTime" operation="perc_add" level="3,4" value="-0.25,-0.5" tags="hvfCrafting"/>
+				<passive_effect name="HarvestCount" operation="perc_add" level="1,2,3,4" value="1,1,2,2" tags="cropHarvest,wildCropsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set" level="2,3,4" value="1,1,1" tags="bonusCropHarvest"/>
+				<!-- Increase the chance to find seeds with each perk rank -->
+				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="seedSkill"/>
+				<!-- Increase the chance to find seed crafting skill magazines with each perk rank up to crafting skill 20 -->
+				<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="seedCSM">
+					<requirement name="ProgressionLevel" progression_name="craftingSeeds" operation="LT" value="20"/>
+				</passive_effect>
+				<!-- Once seed crafting skill reaches 20, set the probability bonus of finding seed crafting skill magazines to 0 -->
+				<passive_effect name="LootProb" operation="base_set" level="1,5" value="0,0" tags="seedCSM">
+					<requirement name="ProgressionLevel" progression_name="craftingSeeds" operation="Equals" value="20"/>
+				</passive_effect>
+				<effect_description level="1" desc_key="perkLivingOffTheLandRank1Desc" long_desc_key="perkLivingOffTheLandRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkLivingOffTheLandRank2Desc" long_desc_key="perkLivingOffTheLandRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkLivingOffTheLandRank3Desc" long_desc_key="perkLivingOffTheLandRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkLivingOffTheLandRank4Desc" long_desc_key="perkLivingOffTheLandRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkLivingOffTheLandRank5Desc" long_desc_key="perkLivingOffTheLandRank5LongDesc"/>
+			</effect_group>
+		</perk>
 	</append>
-
-<!-- Прописываем разблокировку гидропонной установки через журналы -->
-
+	<!-- Прописываем разблокировку гидропонной установки через журналы -->
 	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@name_key='workstationsT4']">
-		<unlock_entry item="HydroponicVerticalFarm" unlock_tier="1" />
+		<unlock_entry item="HydroponicVerticalFarm" unlock_tier="1"/>
 	</append>
-		
 	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']">
-
-        <effect_group>
-            <passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="HydroponicVerticalFarm"/>
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="HydroponicVerticalFarm"/>
 		</effect_group>
-		
 	</append>
-	
 </config>

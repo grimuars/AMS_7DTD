@@ -1,10 +1,11 @@
 <recipes>
 	<!-- Удаляем рецепт коллектора -->
 	<remove xpath="/recipes/recipe[@name='cntDewCollector']"/>
+	<!-- Новые рецепты -->
 	<append xpath="/recipes">
 		<!-- Семена пшеницы -->
 		<recipe name="plantedWheat1" count="3" craft_time="1" tags="learnable">
-			<ingredient name="foodCropWheat" count="1"/>
+			<ingredient name="resourceCropWheatPlant" count="1"/>
 		</recipe>
 		<!-- Новый крафт "колодца" -->
 		<recipe name="cntDewCollector" count="1" tags="learnable,workbenchCrafting">

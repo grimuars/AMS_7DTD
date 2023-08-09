@@ -1,80 +1,69 @@
 <Configs>
 	<append xpath="/recipes">
-
-<!-- *** HYDROPONICE VERTICAL FARM RECIPES -->
-
-	<recipe name="HydroponicVerticalFarm" count="1" craft_time="300" craft_area="workbench" tags="learnable,craftingWorkstations">
-		<ingredient name="toolBeaker" count="1"/>
-		<ingredient name="resourceMechanicalParts" count="300"/>
-		<ingredient name="resourceForgedSteel" count="200"/>
-		<ingredient name="resourceHeadlight" count="8"/>
-		<ingredient name="farmPlotBlockVariantHelper" count="10"/>
-	</recipe>
-
-	<recipe	name="resourceCropAloeLeaf" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
-		<ingredient name="plantedAloe1" count="5"/>
-		<ingredient name="drinkJarBoiledWater" count="20"/>
-	</recipe>
-
-	<recipe	name="foodCropBlueberries" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
-		<ingredient name="plantedBlueberry1" count="5"/>
-		<ingredient name="drinkJarBoiledWater" count="20"/>
-	</recipe>
-
-	<recipe	name="resourceCropChrysanthemumPlant" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
-		<ingredient name="plantedChrysanthemum1" count="5"/>
-		<ingredient name="drinkJarBoiledWater" count="20"/>
-	</recipe>
-
-	<recipe	name="resourceCropCoffeeBeans" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
-		<ingredient name="plantedCoffee1" count="5"/>
-		<ingredient name="drinkJarBoiledWater" count="20"/>
-	</recipe>
-
-	<recipe	name="foodCropCorn" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
-		<ingredient name="plantedCorn1" count="5"/>
-		<ingredient name="drinkJarBoiledWater" count="20"/>
-	</recipe>
-
-	<recipe	name="resourceCropCottonPlant" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
-		<ingredient name="plantedCotton1" count="5"/>
-		<ingredient name="drinkJarBoiledWater" count="20"/>
-	</recipe>
-
-	<recipe	name="resourceCropGoldenrodPlant" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
-		<ingredient name="plantedGoldenrod1" count="5"/>
-		<ingredient name="drinkJarBoiledWater" count="20"/>
-	</recipe>
-
-	<recipe	name="foodCropGraceCorn" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
-		<ingredient name="plantedGraceCorn1" count="5"/>
-		<ingredient name="drinkJarBoiledWater" count="20"/>
-	</recipe>
-
-	<recipe	name="resourceCropHopsFlower" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
-		<ingredient name="plantedHop1" count="5"/>
-		<ingredient name="drinkJarBoiledWater" count="20"/>
-	</recipe>	
-
-	<recipe	name="foodCropMushrooms" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
-		<ingredient name="plantedMushroom1" count="5"/>
-		<ingredient name="drinkJarBoiledWater" count="20"/>
-	</recipe>
-
-	<recipe	name="foodCropPotato" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
-		<ingredient name="plantedPotato1" count="5"/>
-		<ingredient name="drinkJarBoiledWater" count="20"/>
-	</recipe>
-
-	<recipe	name="foodCropYuccaFruit" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
-		<ingredient name="plantedYucca1" count="5"/>
-		<ingredient name="drinkJarBoiledWater" count="20"/>
-	</recipe>	
-
-	<recipe	name="foodCropPumpkin" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
-		<ingredient name="plantedPumpkin1" count="5"/>
-		<ingredient name="drinkJarBoiledWater" count="20"/>
-	</recipe>	
-
+		<!-- *** HYDROPONICE VERTICAL FARM RECIPES -->
+		<recipe name="HydroponicVerticalFarm" count="1" craft_time="300" craft_area="workbench" tags="learnable,craftingWorkstations">
+			<ingredient name="toolBeaker" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="300"/>
+			<ingredient name="resourceForgedSteel" count="200"/>
+			<ingredient name="resourceHeadlight" count="8"/>
+			<ingredient name="farmPlotBlockVariantHelper" count="10"/>
+		</recipe>
+		<recipe name="resourceCropAloeLeaf" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
+			<ingredient name="plantedAloe1" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="20"/>
+		</recipe>
+		<recipe name="foodCropBlueberries" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
+			<ingredient name="plantedBlueberry1" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="20"/>
+		</recipe>
+		<recipe name="resourceCropChrysanthemumPlant" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
+			<ingredient name="plantedChrysanthemum1" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="20"/>
+		</recipe>
+		<recipe name="resourceCropCoffeeBeans" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
+			<ingredient name="plantedCoffee1" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="20"/>
+		</recipe>
+		<recipe name="foodCropCorn" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
+			<ingredient name="plantedCorn1" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="20"/>
+		</recipe>
+		<recipe name="resourceCropCottonPlant" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
+			<ingredient name="plantedCotton1" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="20"/>
+		</recipe>
+		<recipe name="resourceCropGoldenrodPlant" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
+			<ingredient name="plantedGoldenrod1" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="20"/>
+		</recipe>
+		<recipe name="foodCropGraceCorn" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
+			<ingredient name="plantedGraceCorn1" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="20"/>
+		</recipe>
+		<recipe name="resourceCropHopsFlower" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
+			<ingredient name="plantedHop1" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="20"/>
+		</recipe>
+		<recipe name="foodCropMushrooms" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
+			<ingredient name="plantedMushroom1" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="20"/>
+		</recipe>
+		<recipe name="foodCropPotato" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
+			<ingredient name="plantedPotato1" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="20"/>
+		</recipe>
+		<recipe name="foodCropYuccaFruit" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
+			<ingredient name="plantedYucca1" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="20"/>
+		</recipe>
+		<recipe name="foodCropPumpkin" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
+			<ingredient name="plantedPumpkin1" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="20"/>
+		</recipe>
+		<!-- Пшеница -->
+		<recipe name="resourceCropWheatPlant" count="20" craft_time="7560" craft_area="HydroponicVerticalFarm" craft_tool="bucketRiverWater" tags="hvfCrafting">
+			<ingredient name="plantedWheat1" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="20"/>
+		</recipe>
 	</append>
 </Configs>	
