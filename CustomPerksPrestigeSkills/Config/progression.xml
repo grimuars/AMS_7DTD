@@ -34,18 +34,23 @@
 		<perk name="perkHealingArts" parent="skillMental" name_key="HealingArtsName" desc_key="HealingArtsDesc" icon="cp_healingarts">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+				<requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqLevel10"/>
 			</level_requirements>
 			<level_requirements level="2">
 				<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/>
+				<requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqLevel20"/>
 			</level_requirements>
 			<level_requirements level="3">
 				<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel06"/>
+				<requirement name="PlayerLevel" operation="GTE" value="30" desc_key="reqLevel30"/>
 			</level_requirements>
 			<level_requirements level="4">
 				<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="reqIntellectLevel07"/>
+				<requirement name="PlayerLevel" operation="GTE" value="40" desc_key="reqLevel40"/>
 			</level_requirements>
 			<level_requirements level="5">
 				<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel08"/>
+				<requirement name="PlayerLevel" operation="GTE" value="50" desc_key="reqLevel50"/>
 			</level_requirements>
 			<effect_group>
 				<!--health per tick regulated in buffs.xml-->
@@ -59,18 +64,23 @@
 		<perk name="perkArmorSpecialist" parent="skillMental" name_key="ArmorSpecialistName" desc_key="ArmorSpecialistDesc" icon="cp_armorspecialist">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="reqPerceptionLevel04"/>
+				<requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqLevel10"/>
 			</level_requirements>
 			<level_requirements level="2">
 				<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/>
+				<requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqLevel20"/>
 			</level_requirements>
 			<level_requirements level="3">
 				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
+				<requirement name="PlayerLevel" operation="GTE" value="30" desc_key="reqLevel30"/>
 			</level_requirements>
 			<level_requirements level="4">
 				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="7" desc_key="reqFortitudeLevel07"/>
+				<requirement name="PlayerLevel" operation="GTE" value="40" desc_key="reqLevel40"/>
 			</level_requirements>
 			<level_requirements level="5">
 				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="8" desc_key="reqFortitudeLevel08"/>
+				<requirement name="PlayerLevel" operation="GTE" value="50" desc_key="reqLevel50"/>
 			</level_requirements>
 			<effect_group>
 				<passive_effect name="DegradationPerUse" operation="perc_add" level="1" value="-.10" tags="heavyArmorDeg,lightArmorDeg"/>

@@ -71,7 +71,7 @@
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="140" tags="perkDeepCuts,perkFlurryOfAgility"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="19.2" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="900,1600" tier="1,6" tags="perkDeepCuts"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkDeepCuts"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkDeepCuts"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.3" tags="perkDeepCuts"/>
 				<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkDeepCuts"/>
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
@@ -187,7 +187,7 @@
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2.2" tags="perkDemolitionsExpert"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value=".4" tags="perkDemolitionsExpert"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="150,330" tier="1,6" tags="perkDemolitionsExpert"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkDemolitionsExpert"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkDemolitionsExpert"/>
 			</effect_group>
 		</item>
 		<item name="DementivegunTrifecta">
@@ -265,7 +265,7 @@
 				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-1" tags="perkArchery"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="1" tags="perkArchery"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="400,600" tier="1,6" tags="perkArchery"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkArchery"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkArchery"/>
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
@@ -355,7 +355,7 @@
 				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.2" tags="perkArchery"/>
 				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".2" tags="perkArchery"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="400,800" tier="1,6" tags="perkArchery"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkArchery"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkArchery"/>
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
@@ -399,7 +399,7 @@
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="150" tags="perkSalvageOperations"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="22.7" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="1200,2000" tier="1,6" tags="perkSalvageOperations"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkSalvageOperations"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkSalvageOperations"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.4" tags="perkSalvageOperations"/>
 				<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkSalvageOperations"/>
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
@@ -480,7 +480,7 @@
 				<passive_effect name="WeaponHandling" operation="base_set" value=".95" tags="perkGunslinger"/>
 				<!-- crosshair reset speed -->
 				<passive_effect name="DegradationMax" operation="base_set" value="500,900" tier="1,6" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkGunslinger,9mmGun"/>
 			</effect_group>
 		</item>
 		<!-- Desert Redeemer -->
@@ -533,7 +533,7 @@
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="3.2" tags="perkGunslinger"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value=".75" tags="perkGunslinger"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="500,800" tier="1,6" tags="perkGunslinger"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkGunslinger"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkGunslinger"/>
 			</effect_group>
 		</item>
 		<!-- Golden Eye REWORKED -->
@@ -587,7 +587,7 @@
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="3.2" tags="perkGunslinger"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value=".7" tags="perkGunslinger"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="150,300" tier="1,6" tags="perkGunslinger"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkGunslinger"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkGunslinger"/>
 				<!-- <triggered_effect trigger="onSelfEquipStart" action="CVarLogValue" cvar="onSelfEquipStartMagnum"/> -->
 			</effect_group>
 		</item>
@@ -643,7 +643,7 @@
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.2" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value=".85" tags="perkGunslinger"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="2600,4200" tier="1,6" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkGunslinger,9mmGun"/>
 			</effect_group>
 		</item>
 		<!-- Red Army AK-47 -->
@@ -698,7 +698,7 @@
 				<passive_effect name="WeaponHandling" operation="base_set" value=".8" tags="perkMachineGunner"/>
 				<!-- ak47 -->
 				<passive_effect name="DegradationMax" operation="base_set" value="600,900" tier="1,6" tags="perkMachineGunner,perkBookAutoWeapons"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkMachineGunner,perkBookAutoWeapons"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkMachineGunner,perkBookAutoWeapons"/>
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
@@ -755,7 +755,7 @@
 				<passive_effect name="WeaponHandling" operation="base_set" value=".8" tags="perkMachineGunner"/>
 				<!-- ak47 -->
 				<passive_effect name="DegradationMax" operation="base_set" value="500,1400" tier="1,6" tags="perkMachineGunner,perkBookAutoWeapons"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkMachineGunner,perkBookAutoWeapons"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkMachineGunner,perkBookAutoWeapons"/>
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
@@ -811,7 +811,7 @@
 				<passive_effect name="WeaponHandling" operation="base_set" value=".85" tags="perkMachineGunner"/>
 				<!-- M60 -->
 				<passive_effect name="DegradationMax" operation="base_set" value="2000,5000" tier="1,6" tags="perkMachineGunner,perkBookAutoWeapons"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkMachineGunner,perkBookAutoWeapons"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkMachineGunner,perkBookAutoWeapons"/>
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
@@ -869,7 +869,7 @@
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="50" tags="perkDeadEye"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value=".75" tags="perkDeadEye"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="320,500" tier="1,6" tags="perkDeadEye"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkDeadEye"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkDeadEye"/>
 				<passive_effect name="DamageModifier" operation="base_add" value="50" tags="head"/>
 			</effect_group>
 		</item>
@@ -927,7 +927,7 @@
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="11" tags="perkDeadEye"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value=".8" tags="perkDeadEye"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="650,950" tier="1,6" tags="perkDeadEye"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkDeadEye"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkDeadEye"/>
 				<passive_effect name="DamageModifier" operation="base_add" value="300" tags="head"/>
 			</effect_group>
 		</item>
@@ -983,7 +983,7 @@
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="11" tags="perkDeadEye"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value=".8" tags="perkDeadEye"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="800,1500" tier="1,6" tags="perkDeadEye"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkDeadEye"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkDeadEye"/>
 				<passive_effect name="DamageModifier" operation="base_add" value="200" tags="head"/>
 			</effect_group>
 		</item>
@@ -1031,7 +1031,7 @@
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2" tags="perkBoomstick"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value="1.8" tags="perkBoomstick"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="150,300" tier="1,6" tags="perkBoomstick"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkBoomstick"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkBoomstick"/>
 				<display_value name="dStatStunEffect" value="4"/>
 			</effect_group>
 		</item>
@@ -1082,7 +1082,7 @@
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2" tags="perkBoomstick"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value="1.8" tags="perkBoomstick"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="450,700" tier="1,6" tags="perkBoomstick"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkBoomstick"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkBoomstick"/>
 				<display_value name="dStatStunEffect" value="4"/>
 			</effect_group>
 		</item>
@@ -1132,7 +1132,7 @@
 				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2" tags="perkBoomstick"/>
 				<passive_effect name="WeaponHandling" operation="base_set" value="1.8" tags="perkBoomstick"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="800,2000" tier="1,6" tags="perkBoomstick"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkBoomstick"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkBoomstick"/>
 				<display_value name="dStatStunEffect" value="4"/>
 			</effect_group>
 		</item>
@@ -1148,7 +1148,7 @@
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="70" tags="perkMiner69r,axe"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="17.9" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="800,1200" tier="1,6" tags="perkMiner69r"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkMiner69r"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkMiner69r"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.8" tags="perkMiner69r"/>
 				<passive_effect name="BlockRange" operation="base_set" value="3.6" tags="perkMiner69r"/>
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
@@ -1200,7 +1200,7 @@
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkMiner69r,axe"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="28.9" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="1400,2600" tier="1,6" tags="perkMiner69r"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkMiner69r"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkMiner69r"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.8" tags="perkMiner69r"/>
 				<passive_effect name="BlockRange" operation="base_set" value="3.6" tags="perkMiner69r"/>
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
@@ -1251,7 +1251,7 @@
 			<effect_group name="DementivemeleeToolAxeT3Chainsaw">
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="350" tags="perkMiner69r"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="5500,12000" tier="1,6" tags="perkMiner69r"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkMiner69r"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkMiner69r"/>
 				<passive_effect name="MaxRange" operation="base_set" value="3.6" tags="perkMiner69r"/>
 				<passive_effect name="BlockRange" operation="base_set" value="3.6" tags="perkMiner69r"/>
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
@@ -1314,7 +1314,7 @@
 			<effect_group name="DementivemeleeToolAxeT3Auger">
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="350" tags="perkMiner69r"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="5500,12000" tier="1,6" tags="perkMiner69r"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkMiner69r"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkMiner69r"/>
 				<passive_effect name="MaxRange" operation="base_set" value="3.6" tags="perkMiner69r"/>
 				<passive_effect name="BlockRange" operation="base_set" value="3.6" tags="perkMiner69r"/>
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
@@ -1376,7 +1376,7 @@
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="80" tags="perkElectrocutioner,perkFlurryOfIntellect"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="13.5" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="900,1200" tier="1,6" tags="perkElectrocutioner"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkElectrocutioner"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkElectrocutioner"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.6" tags="perkElectrocutioner"/>
 				<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkElectrocutioner"/>
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
@@ -1576,7 +1576,7 @@
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="90" tags="perkPummelPete,perkFlurryOfStrength"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="14.7" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="1100,5000" tier="1,6" tags="perkPummelPete"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkPummelPete"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkPummelPete"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.6" tags="perkPummelPete"/>
 				<passive_effect name="BlockRange" operation="base_set" value="3.2" tags="perkPummelPete"/>
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
@@ -1618,7 +1618,7 @@
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="140" tags="perkBrawler,perkFlurryOfFortitude"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="7.2" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="800,3200" tier="1,6" tags="perkBrawler"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkBrawler"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkBrawler"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkBrawler"/>
 				<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkBrawler"/>
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
@@ -1671,7 +1671,7 @@
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="35" tags="perkSkullCrusher,perkFlurryOfStrength"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="35" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="3000,7000" tier="1,6" tags="perkSkullCrusher"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkSkullCrusher"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkSkullCrusher"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.7" tags="perkSkullCrusher"/>
 				<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkSkullCrusher"/>
 				<passive_effect name="DismemberChance" operation="base_add" value=".15" tags="perkSkullCrusher,primary"/>
@@ -1714,7 +1714,7 @@
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="75" tags="perkJavelinMaster,perkFlurryOfPerception"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="20.4" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="750,1300" tier="1,6" tags="perkJavelinMaster"/>
-				<passive_effect name="DegradationPerUse" operation="base_set" value="0.1" tags="perkJavelinMaster"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkJavelinMaster"/>
 				<passive_effect name="BlockRange" operation="base_set" value="2" tags="perkJavelinMaster"/>
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,4,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>

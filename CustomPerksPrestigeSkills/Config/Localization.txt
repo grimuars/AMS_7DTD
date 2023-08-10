@@ -1,4 +1,11 @@
 ﻿Key,Source,Context,Changes,English,russian
+
+reqLevel10,progression,,,Character Level 10,Уровень персонажа 10
+reqLevel20,progression,,,Character Level 20,Уровень персонажа 20
+reqLevel30,progression,,,Character Level 30,Уровень персонажа 30
+reqLevel40,progression,,,Character Level 40,Уровень персонажа 40
+reqLevel50,progression,,,Character Level 50,Уровень персонажа 50
+
 attprestige,progression,Attribute,New,Prestige Perks,Навыки престижа
 attPrestigeNeme,progression,Attribute,New,Prestige Skills,Навыки престижа
 attPrestigeDesc,progression,Attribute,New,Spend some of that redundant skill points on some neat extra effects!,Потратьте очки опыта на что-то новенькое!

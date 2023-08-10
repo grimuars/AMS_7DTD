@@ -6,15 +6,15 @@
 	<!-- Пассивные баффы в зависимости от уровня игрока -->
 	<insertAfter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='PlayerExpGain' and @tags='Upgrading']">
 		<!-- До 50 уровня 10% опыта от торговли -->
-		<passive_effect name="PlayerExpGain" operation="perc_add" value="-0.9" tags="Selling">
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="0.1" tags="Selling">
 			<requirement name="PlayerLevel" operation="LT" value="50"/>
 		</passive_effect>
 		<!-- С 50 уровня 70% опыта от торговли -->
-		<passive_effect name="PlayerExpGain" operation="perc_add" value="-0.3" tags="Selling">
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="0.7" tags="Selling">
 			<requirement name="PlayerLevel" operation="GTE" value="50"/>
 		</passive_effect>
 		<!-- До 50 уровня 30% опыта от добычи -->
-		<passive_effect name="PlayerExpGain" operation="perc_add" value="-0.7" tags="Harvesting">
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="0.3" tags="Harvesting">
 			<requirement name="PlayerLevel" operation="LT" value="50"/>
 		</passive_effect>
 		<!-- До 50 уровня в 3 раза больше опыта от убийств -->
@@ -71,14 +71,14 @@
 		<property name="SizeScale" value="1.5"/>
 	</insertAfter>
 	<!-- Увеличиваем шанс дропа вещмешков с зомби -->
-	<set xpath="/entity_classes/entity_class[starts-with(@name, 'zombieTemplate')]/property[@name='LootDropProb']/@value">.06</set>
-	<set xpath="/entity_classes/entity_class[contains(@name, 'Feral')]/property[@name='LootDropProb']/@value">.12</set>
+	<set xpath="/entity_classes/entity_class[starts-with(@name, 'zombieTemplate')]/property[@name='LootDropProb']/@value">.04</set>
+	<set xpath="/entity_classes/entity_class[contains(@name, 'Feral')]/property[@name='LootDropProb']/@value">.08</set>
 	<append xpath="/entity_classes/entity_class[contains(@name, 'Radiated')]">
-		<property name="LootDropProb" value=".18"/>
+		<property name="LootDropProb" value=".12"/>
 	</append>
-	<set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/property[@name='LootDropProb']/@value">.24</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/property[@name='LootDropProb']/@value">.16</set>
 	<append xpath="/entity_classes/entity_class[@name='zombieWightRadiated']">
-		<property name="LootDropProb" value=".3"/>
+		<property name="LootDropProb" value=".25"/>
 	</append>
 	<!-- Выпавшие вещмешки лежат дольше -->
 	<set xpath="/entity_classes/entity_class[@name='DroppedLootContainer']/property[@name='TimeStayAfterDeath']/@value">300</set>
