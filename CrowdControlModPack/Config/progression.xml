@@ -1,7 +1,12 @@
 <configs>
-	<append xpath="/progression/perks/book[@name='perkRangersComplete']">
+	<append xpath="/progression/perks/book[@name='perkSniperComplete']">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoBundle762mmBulletXP,ammoBundle9mmBulletXP"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoBundle762mmBulletXP"/>
+		</effect_group>
+	</append>
+	<append xpath="/progression/perks/book[@name='perkPistolPeteComplete']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoBundle9mmBulletXP"/>
 		</effect_group>
 	</append>
 	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@name_key='electricianT3']">

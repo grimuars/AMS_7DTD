@@ -1,5 +1,5 @@
 <ByHowlune>
-	<!--Ensures fire is removed from player after death.-->
+	<!-- Проверяем, что игрок не горит после смерти -->
 	<append xpath="/buffs/buff[@name='buffIsOnFire' or @name='buffBurningElement']">
 		<effect_group name="clearafterdeath">
 			<triggered_effect trigger="onSelfRespawn" action="RemoveBuff" buff="buffIsOnFire"/>
@@ -10,20 +10,20 @@
 			<triggered_effect trigger="onSelfRespawn" action="RemoveBuff" buff="buffBurningElement"/>
 		</effect_group>
 	</append>
-	<!--Sprain sometimes glitches through death-->
+	<!-- Кровотечение порой багается после возрождения -->
 	<append xpath="/buffs/buff[@name='buffLegSprained']">
 		<effect_group name="clearsprainafterdeath">
 			<triggered_effect trigger="onSelfRespawn" action="RemoveBuff" buff="buffLegSprained"/>
 		</effect_group>
 	</append>
-	<!--Nightvision screen effect fix. Crouching sometimes removes it.-->
+	<!-- Фикс ночного зрения (иногда перестаёт работать в приседе) -->
 	<append xpath="/buffs/buff[@name='buffCrouching']/effect_group/triggered_effect[@action='ModifyScreenEffect']">
 		<requirement name="WornItems" tags="nvgs" operation="LT" value="1"/>
 	</append>
 	<!--Pimps say PlayerItemCount is expensive, so let's get rid of it. Players spam jump often enough for this to be checking way too often.-->
 	<!-- <remove xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group/triggered_effect[@cvar='.impactSpeed' and @value='-.114']"/> -->
 	<append xpath="/buffs">
-		<!--Fix for nightvision overlay sometimes disappearing. Constantly refreshes screen effect.-->
+		<!-- Фикс для периодически пропадающего эффекта ночного зрения. Эффект постоянно обновляется -->
 		<buff name="buffNightVision" hidden="true">
 			<stack_type value="ignore"/>
 			<duration value="0"/>

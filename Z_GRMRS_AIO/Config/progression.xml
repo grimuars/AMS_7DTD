@@ -2,6 +2,26 @@
 <configs>
 	<!-- Увеличиваем количество опыта на уровень -->
 	<set xpath="/progression/level[@max_level='300']/@exp_to_level">12000</set>
+	<!-- 1-й уровень перков требует дополнительно 15-й уровень -->
+	<append xpath="/progression/perks/perk[contains (@name, 'perk')]/level_requirements[@level='1']">
+		<requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqLevel15"/>
+	</append>
+	<!-- 2-й уровень перков требует дополнительно 35-й уровень -->
+	<append xpath="/progression/perks/perk[contains (@name, 'perk')]/level_requirements[@level='2']">
+		<requirement name="PlayerLevel" operation="GTE" value="35" desc_key="reqLevel35"/>
+	</append>
+	<!-- 3-й уровень перков требует дополнительно 55-й уровень -->
+	<append xpath="/progression/perks/perk[contains (@name, 'perk')]/level_requirements[@level='3']">
+		<requirement name="PlayerLevel" operation="GTE" value="55" desc_key="reqLevel55"/>
+	</append>
+	<!-- 4-й уровень перков требует дополнительно 75-й уровень -->
+	<append xpath="/progression/perks/perk[contains (@name, 'perk')]/level_requirements[@level='4']">
+		<requirement name="PlayerLevel" operation="GTE" value="75" desc_key="reqLevel75"/>
+	</append>
+	<!-- 5-й уровень перков требует дополнительно 95-й уровень -->
+	<append xpath="/progression/perks/perk[contains (@name, 'perk')]/level_requirements[@level='5']">
+		<requirement name="PlayerLevel" operation="GTE" value="95" desc_key="reqLevel95"/>
+	</append>
 	<!-- Увеличиваем стоимость части навыков до 2 очков -->
 	<setattribute xpath="/progression/perks/perk[@name='perkDemolitionsExpert']" name="base_skill_point_cost">2</setattribute>
 	<setattribute xpath="/progression/perks/perk[@name='perkJavelinMaster']" name="base_skill_point_cost">2</setattribute>

@@ -1,5 +1,5 @@
 <ByHowlune>
-	<!--Limits fuel slots in workstations to 1 to limit their uptime-->
+	<!-- Слоты топлива на рабочих станция уменьшены до 1 -->
 	<set xpath="/windows/window[@name='windowFuel']/rect/rect/grid/@cols">1</set>
 	<set xpath="/windows/window[@name='windowFuel']/rect/grid/@cols">1</set>
 	<set xpath="/windows/window[@name='windowFuel']/rect/@pos">75,-43</set>

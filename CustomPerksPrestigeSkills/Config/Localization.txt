@@ -1,11 +1,5 @@
 ﻿Key,Source,Context,Changes,English,russian
 
-reqLevel10,progression,,,Character Level 10,Уровень персонажа 10
-reqLevel20,progression,,,Character Level 20,Уровень персонажа 20
-reqLevel30,progression,,,Character Level 30,Уровень персонажа 30
-reqLevel40,progression,,,Character Level 40,Уровень персонажа 40
-reqLevel50,progression,,,Character Level 50,Уровень персонажа 50
-
 attprestige,progression,Attribute,New,Prestige Perks,Навыки престижа
 attPrestigeNeme,progression,Attribute,New,Prestige Skills,Навыки престижа
 attPrestigeDesc,progression,Attribute,New,Spend some of that redundant skill points on some neat extra effects!,Потратьте очки опыта на что-то новенькое!
@@ -63,7 +57,7 @@ WeaponSpecialistRank3LongDesc,progression,skills,New,"Decrease the wearout of yo
 WeaponSpecialistRank4LongDesc,progression,skills,New,"Decrease the wearout of your weapon by an additional 25%",Уменьшает износ оружия на 25%.
 WeaponSpecialistRank5LongDesc,progression,skills,New,"Decrease the wearout of your weapon by an additional 30%",Уменьшает износ оружия на 30%.
 
-WeaponHandlingName,progression,skills,New,Weapon Handling,Прицел не нужен
+WeaponHandlingName,progression,skills,New,No Need For A Scope,Прицел не нужен
 WeaponHandlingDesc,progression,skills,New,Increase your weapon handling,"Улучшает наведение при стрельбе от бедра (ADS)"
 WeaponHandlingRank1Desc,progression,skills,New,+10% Weapon Handling,На 10% улучшает наведение при стрельбе от бедра
 WeaponHandlingRank2Desc,progression,skills,New,+16% Weapon Handling,На 16% улучшает наведение при стрельбе от бедра
@@ -76,7 +70,7 @@ WeaponHandlingRank3LongDesc,progression,skills,New,Increase your weapon handling
 WeaponHandlingRank4LongDesc,progression,skills,New,Increase your weapon handling by 23%,Улучшает наведение при стрельбе от бедра на 23%.
 WeaponHandlingRank5LongDesc,progression,skills,New,Increase your weapon handling by 25%,Улучшает наведение при стрельбе от бедра на 25%.
 
-LargerMagazinesName,progression,skills,New,Larger Magazines,Архиватор патронов
+LargerMagazinesName,progression,skills,New,Ammo Archiver,Архиватор патронов
 LargerMagazinesDesc,progression,skills,New,Increase your clip size.,"Увеличивает ёмкость оружейных обойм. Не спрашивайте как, но влезает больше."
 LargerMagazinesRank1Desc,progression,skills,New,+10% Larger Magazines,В обойме на 10% патронов больше
 LargerMagazinesRank2Desc,progression,skills,New,+16% Larger Magazines,В обойме на 16% патронов больше
@@ -89,7 +83,7 @@ LargerMagazinesRank3LongDesc,progression,skills,New,Increase your Magazine Size 
 LargerMagazinesRank4LongDesc,progression,skills,New,Increase your Magazine Size by 23%,Увеличивает обоймы на 23%.
 LargerMagazinesRank5LongDesc,progression,skills,New,Increase your Magazine Size by 25%,Увеличивает обоймы на 25%.
 
-ReloadSpeedName,progression,skills,New,Reload Speed,"Щёлк-щёлк"
+ReloadSpeedName,progression,skills,New,"Click, click, click","Щёлк-щёлк"
 ReloadSpeedDesc,progression,skills,New,All this reloading earned you some nimble fingers. Reload even faster now.,"Сотни и тысячи перезарядок сделали ваши пальцы ловкими. Теперь этот жизненно важный процесс происходит быстрее."
 ReloadSpeedRank1Desc,progression,skills,New,+8% Reload Speed,+8% к скорости перезарядки
 ReloadSpeedRank2Desc,progression,skills,New,+11% Reload Speed,+11% к скорости перезарядки
@@ -102,7 +96,7 @@ ReloadSpeedRank3LongDesc,progression,skills,New,Increase your reload speed by 14
 ReloadSpeedRank4LongDesc,progression,skills,New,Increase your reload speed by 17%,Уменьшает скорость перезарядки на 17%.
 ReloadSpeedRank5LongDesc,progression,skills,New,Increase your reload speed by 20%,Уменьшает скорость перезарядки на 20%.
 
-MaximumHealthName,progression,skills,New,Maximum Health,Здоровяк
+MaximumHealthName,progression,skills,New,Big Guy,Здоровяк
 MaximumHealthDesc,progression,skills,New,Increase your hardiness and thus your maximum health.,Вы пышете здоровьем и сияете жизненной силой.
 MaximumHealthRank1Desc,progression,skills,New,+20 Maximum Health,+20 к максимальному здоровью
 MaximumHealthRank2Desc,progression,skills,New,+40 Maximum Health,+40 к максимальному здоровью
@@ -115,7 +109,7 @@ MaximumHealthRank3LongDesc,progression,skills,New,Increase your maximum health b
 MaximumHealthRank4LongDesc,progression,skills,New,Increase your maximum health by 80,+80 к максимальному здоровью
 MaximumHealthRank5LongDesc,progression,skills,New,Increase your maximum health by 100,+100 к максимальному здоровью
 
-MaximumStaminaName,progression,skills,New,Maximum Stamina,Непрерывность
+MaximumStaminaName,progression,skills,New,Continuity,Непрерывность
 MaximumStaminaDesc,progression,skills,New,Increase your endurance and thus your maximum stamina.,Ваша выносливость даёт вам возможность работать без перерыва.
 MaximumStaminaRank1Desc,progression,skills,New,+20 Maximum Stamina,+20 к запасу выносливости
 MaximumStaminaRank2Desc,progression,skills,New,+40 Maximum Stamina,+40 к запасу выносливости
@@ -128,7 +122,7 @@ MaximumStaminaRank3LongDesc,progression,skills,New,Increase your maximum Stamina
 MaximumStaminaRank4LongDesc,progression,skills,New,Increase your maximum Stamina by 80,Увеличивает максимальную выносливость на 80.
 MaximumStaminaRank5LongDesc,progression,skills,New,Increase your maximum Stamina by 100,Увеличивает максимальную выносливость на 100.
 
-DamageResistanceName,progression,skills,New,Damage Resistance,Закалённый
+DamageResistanceName,progression,skills,New,Hardened,Закалённый
 DamageResistanceDesc,progression,skills,New,Increase your hardiness and thus your resistance to damage.,"Жизнь вас не только потрепала, но и закалила. Ваше сопротивление урону выросло."
 DamageResistanceRank1Desc,progression,skills,New,+4.8% Damage Resistance,+4.8% к сопротивлению урону
 DamageResistanceRank2Desc,progression,skills,New,+9.6% Damage Resistance,+9.6% к сопротивлению урону
@@ -141,7 +135,7 @@ DamageResistanceRank3LongDesc,progression,skills,New,Increase your Damage Resist
 DamageResistanceRank4LongDesc,progression,skills,New,Increase your Damage Resistance by 16.8%.,Увеличивает сопротивление урону на 16.8%.
 DamageResistanceRank5LongDesc,progression,skills,New,Increase your Damage Resistance by 20%.,Увеличивает сопротивление урону на 20%.
 
-VigorName,progression,skills,New,Vigor,Экономист
+VigorName,progression,skills,New,We Need To Be Thrifty,Экономист
 VigorDesc,progression,skills,New,Swinging stuff around the whole time accustomed you to them so now it's less exerting. Lose less Stamina per melee swing.,"Вы долго размахивали всем подряд туда-сюда и наконец поняли, как эффективно экономить выносливость."
 VigorRank1Desc,progression,skills,New,-3% Stamina Loss,-3% к потере выносливости
 VigorRank2Desc,progression,skills,New,-6% Stamina Loss,-6% к потере выносливости
@@ -154,7 +148,7 @@ VigorRank3LongDesc,progression,skills,New,Lose 9% less stamina while swinging me
 VigorRank4LongDesc,progression,skills,New,Lose 12% less stamina while swinging melee tools and weapons,Теряйте на 12% меньше выносливости при использовании инструментов и оружия ближнего боя.
 VigorRank5LongDesc,progression,skills,New,Lose 15% less stamina while swinging melee tools and weapons,Теряйте на 15% меньше выносливости при использовании инструментов и оружия ближнего боя.
 
-ConstancyName,progression,skills,New,Constancy,Бегун из Нотр-дама
+ConstancyName,progression,skills,New,The Notre Dame Jogger,Бегун из Нотр-дама
 ConstancyDesc,progression,skills,New,All this cardio workout increased your endurance vastly. Regenerate more stamina at all times.,Кардиотренировки начали приносить плоды. Ваша выносливость восстанавливается быстрее.
 ConstancyRank1Desc,progression,skills,New,+3% Stamina Regeneration,+3% к восстановлению выносливости
 ConstancyRank2Desc,progression,skills,New,+6% Stamina Regeneration,+6% к восстановлению выносливости
@@ -167,7 +161,7 @@ ConstancyRank3LongDesc,progression,skills,New,Regenerate 9% more stamina at all 
 ConstancyRank4LongDesc,progression,skills,New,Regenerate 12% more stamina at all times,Восстанавливайте выносливость на 12% быстрее.
 ConstancyRank5LongDesc,progression,skills,New,Regenerate 15% more stamina at all times,Восстанавливайте выносливость на 15% быстрее.
 
-RecuperateName,progression,skills,New,Recuperate,Регенератор
+RecuperateName,progression,skills,New,Regenerator,Регенератор
 RecuperateDesc,progression,skills,New,You've got a very healthy body and can regenerate even faster than other people.,Прекрасно развитое тело позволяет вам излечиваться быстрее других людей.
 RecuperateRank1Desc,progression,skills,New,+0.03 Health Regeneration/sec.,+0.03 к восстановлению здоровья в секунду
 RecuperateRank2Desc,progression,skills,New,+0.06 Health Regeneration/sec.,+0.06 к восстановлению здоровья в секунду
@@ -180,8 +174,8 @@ RecuperateRank3LongDesc,progression,skills,New,Regenerate an additional 0.09 hea
 RecuperateRank4LongDesc,progression,skills,New,Regenerate an additional 0.12 health per second at all times,Восстанавливайте дополнительно 0.12 единиц здоровья в секунду.
 RecuperateRank5LongDesc,progression,skills,New,Regenerate an additional 0.15 health per second at all times,Восстанавливайте дополнительно 0.15 единиц здоровья в секунду.
 
-MiningMasteryName,progression,skills,New,Mining Mastery,Сам себе шахтёр
-MiningMasteryDesc,progression,skills,New,You've acquired the knowledge to better learn how to gather more resources while mining.,"Все эти бесконечные копания в шахтах 24/7 научили вас добывать с помощью инструментов ещё лучше."
+MiningMasteryName,progression,skills,New,"Self-Employed Miner",Сам себе шахтёр
+MiningMasteryDesc,progression,skills,New,"You've acquired the knowledge to better learn how to gather more resources while mining.","Все эти бесконечные копания в шахтах 24/7 научили вас добывать с помощью инструментов ещё лучше."
 MiningMasteryRank1Desc,progression,skills,New,"+6% more stone, ore and lumber\n+10% Block Damage","На 6% больше камня, руд и дерева при добыче инструментами\n+10% к урону по блокам"
 MiningMasteryRank2Desc,progression,skills,New,"+12% more stone, ore and lumber\n+10% Block Damage","На 12% больше камня, руд и дерева при добыче инструментами\n+10% к урону по блокам"
 MiningMasteryRank3Desc,progression,skills,New,"+18% more stone, ore and lumber\n+10% Block Damage","На 18% больше камня, руд и дерева при добыче инструментами\n+10% к урону по блокам"
@@ -193,7 +187,7 @@ MiningMasteryRank3LongDesc,progression,skills,New,"Gather rate of stone, ores an
 MiningMasteryRank4LongDesc,progression,skills,New,"Gather rate of stone, ores and lumber increased by 24%\nIncrease any block damage you cause by 10%.","Добыча камня, руд и дерева на 24% эффективнее.\nУрон по блокам увеличен на 10%."
 MiningMasteryRank5LongDesc,progression,skills,New,"Gather rate of stone, ores and lumber increased by 30%\nIncrease any block damage you cause by 20%.","Добыча камня, руд и дерева на 30% эффективнее.\nУрон по блокам увеличен на 20%."
 
-ClubMasteryName,progression,skills,New,Club Mastery,Дубинобой
+ClubMasteryName,progression,skills,New,Bludgeonbuster,Дубинобой
 ClubMasteryDesc,progression,skills,New,You've mastered the arts of the club.,Оттачивайте мастерство дубить битой и бить дубиной.
 ClubMasteryRank1Desc,progression,skills,New,"+6% Entity Damage, Attack Speed","+6% к скорости атаки и урону по врагам для бит и дубин"
 ClubMasteryRank2Desc,progression,skills,New,"+12% Entity Damage, Attack Speed","+12% к скорости атаки и урону по врагам для бит и дубин"
@@ -206,7 +200,7 @@ ClubMasteryRank3LongDesc,progression,skills,New,"Increase your entity damage and
 ClubMasteryRank4LongDesc,progression,skills,New,"Increase your entity damage and attack speed with clubs by 24%","Урон по врагам и скорость атаки для бит и дубин увеличиваются на 24%."
 ClubMasteryRank5LongDesc,progression,skills,New,"Increase your entity damage and attack speed with clubs by 30%. Damage is increased by an additional 15% if you hit a target while sprinting.","Урон по врагам и скорость атаки битами и дубинами увеличиваются на 30%. Урон дополнительно вырастает на 15%, если вы бьёте цель на бегу."
 
-SledgeMasteryName,progression,skills,New,Sledge Mastery,Кувалдомэтр
+SledgeMasteryName,progression,skills,New,Sledgehammer Maestro,Кувалдомэтр
 SledgeMasteryDesc,progression,skills,New,You've mastered the arts of the sledgehammer.,"Кувалды - ваш конёк."
 SledgeMasteryRank1Desc,progression,skills,New,"+6% Entity Damage, Attack Speed","+6% к скорости атаки и урону по врагам кувалдами"
 SledgeMasteryRank2Desc,progression,skills,New,"+12% Entity Damage, Attack Speed","+12% к скорости атаки и урону по врагам кувалдами"
@@ -219,7 +213,7 @@ SledgeMasteryRank3LongDesc,progression,skills,New,Increase your entity damage an
 SledgeMasteryRank4LongDesc,progression,skills,New,Increase your entity damage and attack speed with sledgehammers by 24%.,"Увеличивает урон по врагам и скорость атаки кувалдами на 24%."
 SledgeMasteryRank5LongDesc,progression,skills,New,Increase your entity damage and attack speed with sledgehammers by 30%.,"Увеличивает урон по врагам и скорость атаки кувалдами на 30%."
 
-BrawlingMasteryName,progression,skills,New,Brawling Mastery,Эксперт по фистингу
+BrawlingMasteryName,progression,skills,New,Fisting Expert,Эксперт по фистингу
 BrawlingMasteryDesc,progression,skills,New,You've mastered the arts of brawling.,"Вы знаете, как проникнуть кулаками в глубь противника"
 BrawlingMasteryRank1Desc,progression,skills,New,"+6% Entity Damage, Attack Speed","+6% к скорости атаки и урону по врагам кулаками и кастетами"
 BrawlingMasteryRank2Desc,progression,skills,New,"+12% Entity Damage, Attack Speed","+12% к скорости атаки и урону по врагам кулаками и кастетами"
@@ -232,8 +226,8 @@ BrawlingMasteryRank3LongDesc,progression,skills,New,"Increase your entity damage
 BrawlingMasteryRank4LongDesc,progression,skills,New,"Increase your entity damage and attack speed with your fists and knuckles by 24%","Увеличивает скорость атаки и урон кулаками и кастетами на 24%."
 BrawlingMasteryRank5LongDesc,progression,skills,New,"Increase your entity damage and attack speed with your fists and knuckles by 30%. Also you are able to move 10% faster while using your fists or knuckles.","Увеличивает скорость атаки и урон кулаками и кастетами на 30%. Экипировав оружие этого типа, вы движетесь быстрее на 10%."
 
-BladeMasteryName,progression,skills,New,Blade Mastery,Мастер художественного реза
-BladeMasteryDesc,progression,skills,New,You've mastered the arts of the blade.,"После встречи с вашими клинками получаются только произведения искусства. Пусть и неприглядные."
+BladeMasteryName,progression,skills,New,Master Of Artistic Carving,Мастер художественного реза
+BladeMasteryDesc,progression,skills,New,"You've mastered the arts of the blade.","После встречи с вашими клинками получаются только произведения искусства. Пусть и неприглядные."
 BladeMasteryRank1Desc,progression,skills,New,"+6% Entity Damage, Attack Speed","+6% к скорости атаки и урону по врагам от оружия с лезвием"
 BladeMasteryRank2Desc,progression,skills,New,"+12% Entity Damage, Attack Speed","+12% к скорости атаки и урону по врагам от оружия с лезвием"
 BladeMasteryRank3Desc,progression,skills,New,"+18% Entity Damage, Attack Speed","+18% к скорости атаки и урону по врагам от оружия с лезвием"
@@ -245,7 +239,7 @@ BladeMasteryRank3LongDesc,progression,skills,New,"Increase your entity damage an
 BladeMasteryRank4LongDesc,progression,skills,New,"Increase your entity damage and attack speed with bladed weapons by 24%","Скорость атаки и урон по врагу от оружия с лезвием увеличивается на 24%."
 BladeMasteryRank5LongDesc,progression,skills,New,"Increase your entity damage and attack speed with bladed weapons by 30%. Also increase the maximum stacks of bleed you can apply by 2.","Скорость атаки и урон по врагу от оружия с лезвием увеличивается на 30%. Вы можете наложить 2 дополнительных эффекта кровотечения."
 
-BatonMasteryName,progression,skills,New,Baton Mastery,Электрошлонгофикатор
+BatonMasteryName,progression,skills,New,Electroschlongograph,Электрошлонгофикатор
 BatonMasteryDesc,progression,skills,New,You've mastered the arts of the baton.,"У вас большой, длинный и красивый шлонг. Ах да, ещё он больно бьёт электричеством."
 BatonMasteryRank1Desc,progression,skills,New,"+6% Entity Damage, Attack Speed","+6% к скорости атаки и урону по врагам жезлами"
 BatonMasteryRank2Desc,progression,skills,New,"+12% Entity Damage, Attack Speed","+12% к скорости атаки и урону по врагам жезлами"
@@ -258,7 +252,7 @@ BatonMasteryRank3LongDesc,progression,skills,New,"Increase your entity damage an
 BatonMasteryRank4LongDesc,progression,skills,New,"Increase your entity damage and attack speed with stun batons by 24%","Увеличивает урон и скорость атаки жезлами на 24%."
 BatonMasteryRank5LongDesc,progression,skills,New,"Increase your entity damage and attack speed with stun batons by 30%. Also gives you an additional chance of 15% to knock down enemies.","Увеличивает урон и скорость атаки жезлами на 30%. Добавляет 15% к шансу опрокинуть врага."
 
-SpearMasteryName,progression,skills,New,Spear Mastery,Великий удлинитель
+SpearMasteryName,progression,skills,New,The Great Extender,Великий удлинитель
 SpearMasteryDesc,progression,skills,New,You've mastered the arts of the spear.,Вы прекрасно обращаетесь с копьями
 SpearMasteryRank1Desc,progression,skills,New,"+6% Entity Damage, Range, Attack Speed","+6% к урону, скорости и дальности атаки копий"
 SpearMasteryRank2Desc,progression,skills,New,"+12% Entity Damage, Range, Attack Speed","+12% к урону, скорости и дальности атаки копий"
@@ -271,7 +265,7 @@ SpearMasteryRank3LongDesc,progression,skills,New,"Increase your entity damage, r
 SpearMasteryRank4LongDesc,progression,skills,New,"Increase your entity damage, range and attack speed with spears by 24%","Урон, скорость и дальность атаки копий увеличиваются на 24%."
 SpearMasteryRank5LongDesc,progression,skills,New,"Increase your entity damage, range and attack speed with spears by 30%.","Урон, скорость и дальность атаки копий увеличиваются на 30%."
 
-SalvagerName,progression,skills,New,Disassembling Knowledge,Вселенский разборщик
+SalvagerName,progression,skills,New,The Universal Disassembler,Вселенский разборщик
 SalvagerDesc,progression,skills,New,You've acquired the knowledge to better learn how to gather more resources while salvaging mechanical and electrical objects.,"Вы натренировались разбирать всё, что угодно до последнего винтика."
 SalvagerRank1Desc,progression,skills,New,"+6% more Salvage, Block Damage and Attack Speed","+6% к получаемым ресурсам, урону по блокам и скорости атаки инструментами."
 SalvagerRank2Desc,progression,skills,New,"+12% more Salvage, Block Damage and Attack Speed","+12% к получаемым ресурсам, урону по блокам и скорости атаки инструментами."
@@ -284,7 +278,7 @@ SalvagerRank3LongDesc,progression,skills,New,"Gather rate of salvage, block dama
 SalvagerRank4LongDesc,progression,skills,New,"Gather rate of salvage, block damage and attack speed with disassembling tools is increased by 24%.","Получаемые с помощью инструментов для разбора ресурсы, а также урон по блокам и скорость атаки увеличены на 24%."
 SalvagerRank5LongDesc,progression,skills,New,"Gather rate of salvage, block damage and attack speed with disassembling tools is increased by 30%.","Получаемые с помощью инструментов для разбора ресурсы, а также урон по блокам и скорость атаки увеличены на 30%."
 
-ExplosivesMasteryName,progression,skills,New,Explosives Mastery,"Гранаты, фугасы, взрываю красиво"
+ExplosivesMasteryName,progression,skills,New,"Grenades And Mines, All Explodes Nice!","Гранаты, фугасы, взрываю красиво!"
 ExplosivesMasteryDesc,progression,skills,New,"You really do love fireworks, right? Vastly increase your damage with explosives.","Вы действительно любите фейерверки. Вся взрывчатка наносит повышенный урон"
 ExplosivesMasteryRank1Desc,progression,skills,New,"+6% Entity Damage, Weapon Handling, Reload Speed.","+6% к урону по врагам, удобству прицеливания и перезарядке взрывчатки"
 ExplosivesMasteryRank2Desc,progression,skills,New,"+12% Entity Damage, Weapon Handling, Reload Speed.","+12% к урону по врагам, удобству прицеливания и перезарядке взрывчатки"
@@ -297,7 +291,7 @@ ExplosivesMasteryRank3LongDesc,progression,skills,New,"Increase your entity dama
 ExplosivesMasteryRank4LongDesc,progression,skills,New,"Increase your entity damage, weapon handling and reload speed with explosives by 24%","Увеличивает урон по врагам, удобство прицеливания и скорость перезарядки для всей взрывчатки на 24%."
 ExplosivesMasteryRank5LongDesc,progression,skills,New,"Increase entity damage, weapon handling and reload speed with explosives by 30%. Explosives have an additional 10% chance to dismember.","Увеличивает урон по врагам, удобство прицеливания и скорость перезарядки для всей взрывчатки на 30%. Шанс расчленения выше на 10%."
 
-BowMasteryName,progression,skills,New,Bow Mastery,Робин Excellent
+BowMasteryName,progression,skills,New,Robin Excellent,Робин Excellent
 BowMasteryDesc,progression,skills,New,You've mastered the arts of the bow.,Вы достигли мастерства в обращении с луком.
 BowMasteryRank1Desc,progression,skills,New,"+6% Fire Rate, Entity Damage, Weapon Handling, Reload Speed.","+6% к скорости стрельбы, удобству прицеливания, урону по врагам и скорости перезарядки луков/арбалетов."
 BowMasteryRank2Desc,progression,skills,New,"+12% Fire Rate, Entity Damage, Weapon Handling, Reload Speed.","+12% к скорости стрельбы, удобству прицеливания, урону по врагам и скорости перезарядки луков/арбалетов."
@@ -310,7 +304,7 @@ BowMasteryRank3LongDesc,progression,skills,New,"Increase your fire rate, entity 
 BowMasteryRank4LongDesc,progression,skills,New,"Increase your fire rate, entity damage, weapon handling and reload speed with bows by 24%","Увеличивает скорость стрельбы, удобство прицеливания и урон по врагам на 24%."
 BowMasteryRank5LongDesc,progression,skills,New,"Increase your fire rate, entity damage, weapon handling and reload speed with bows by 30%.","Увеличивает скорость стрельбы, удобство прицеливания и урон по врагам на 30%."
 
-RifleMasteryName,progression,skills,New,Rifle Mastery,Винторез
+RifleMasteryName,progression,skills,New,Riflescrew,Винторез
 RifleMasteryDesc,progression,skills,New,You've mastered the arts of the rifle.,"Любые винтовки идеально ложатся вам в руки. Кроме автоматических."
 RifleMasteryRank1Desc,progression,skills,New,"+6% Fire Rate, Entity Damage, Weapon Handling, Reload Speed.","+6% к скорости стрельбы, удобству прицеливания, урону по врагам и скорости перезарядки винтовок."
 RifleMasteryRank2Desc,progression,skills,New,"+12% Fire Rate, Entity Damage, Weapon Handling, Reload Speed.","+12% к скорости стрельбы, удобству прицеливания, урону по врагам и скорости перезарядки винтовок."
@@ -323,7 +317,7 @@ RifleMasteryRank3LongDesc,progression,skills,New,"Increase your fire rate, entit
 RifleMasteryRank4LongDesc,progression,skills,New,"Increase your fire rate, entity damage, weapon handling and reload speed with rifles by 24%","Скорость стрельбы, удобство прицеливания, урон по врагам и скорость перезарядки не автоматических винтовок увеличиваются на 24%."
 RifleMasteryRank5LongDesc,progression,skills,New,"Increase your fire rate, entity damage, weapon handling and reload speed with rifles by 30% and ignore an additional 20% of the targets armor.","Скорость стрельбы, удобство прицеливания, урон по врагам и скорость перезарядки не автоматических винтовок увеличиваются на 30%. При попадании игнорируется 20% брони цели."
 
-MGMasteryName,progression,skills,New,MG Mastery,"Ррр-ра-та-та-та!"
+MGMasteryName,progression,skills,New,"Rrr-ra-ta-ta-ta-ta-ta!","Ррр-ра-та-та-та!"
 MGMasteryDesc,progression,skills,New,You've mastered the arts of automatic rifles.,Вы достигли мастерства в обращении с автоматическим оружием.
 MGMasteryRank1Desc,progression,skills,New,"+6% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size.","+6% к скорости стрельбы, урону по врагам, удобству прицеливания, скорости перезарядки и размеру обоймы автоматического оружия."
 MGMasteryRank2Desc,progression,skills,New,"+12% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size.","+12% к скорости стрельбы, урону по врагам, удобству прицеливания, скорости перезарядки и размеру обоймы автоматического оружия."
@@ -336,7 +330,7 @@ MGMasteryRank3LongDesc,progression,skills,New,"Increase your fire rate, entity d
 MGMasteryRank4LongDesc,progression,skills,New,"Increase your fire rate, entity damage, weapon handling, clip size and reload speed with machine guns by 24%","Скорость стрельбы, урон по врагам, удобство прицеливания, скорость перезарядки и размер обоймы автоматического оружия увеличиваются на 24%."
 MGMasteryRank5LongDesc,progression,skills,New,"Increase your fire rate, entity damage, weapon handling, clip size and reload speed with machine guns by 30%. Also reduce their degradation by 12,5%.","Скорость стрельбы, урон по врагам, удобство прицеливания, скорость перезарядки и размер обоймы автоматического оружия увеличиваются на 30%. Износ оружия такого типа уменьшается на 12,5%."
 
-SidearmMasteryName,progression,skills,New,Sidearm Mastery,Самая быстрая рука
+SidearmMasteryName,progression,skills,New,The Fastest Hand,Самая быстрая рука
 SidearmMasteryDesc,progression,skills,New,You've mastered the arts of sidearms.,"Пистолеты и их разновидности знакомы вам, как свои пять пальцев."
 SidearmMasteryRank1Desc,progression,skills,New,"+6% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size.","+6% к скорости стрельбы, урона по врагам, удобству прицеливания, скорости перезарядки и размеру обоймы ПП и пистолетов"
 SidearmMasteryRank2Desc,progression,skills,New,"+12% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size.","+12% к скорости стрельбы, урона по врагам, удобству прицеливания, скорости перезарядки и размеру обоймы ПП и пистолетов"
@@ -349,7 +343,7 @@ SidearmMasteryRank3LongDesc,progression,skills,New,"Increase your fire rate, ent
 SidearmMasteryRank4LongDesc,progression,skills,New,"Increase your fire rate, entity damage, weapon handling, clip size, reload speed with sidearms by 24%","Скорость стрельбы, урон по врагам, удобство прицеливания, скорость перезарядки и размер обоймы пистолетов и ПП увеличиваются на 24%."
 SidearmMasteryRank5LongDesc,progression,skills,New,"Increase your fire rate, entity damage, weapon handling, clip size, reload speed with sidearms by 30% and reduce their spread by an additional 12,5%.","Скорость стрельбы, урон по врагам, удобство прицеливания, скорость перезарядки и размер обоймы пистолетов и ПП увеличиваются на 30%. Точность повышается на 12,5%"
 
-ShotgunMasteryName,progression,skills,New,Shotgun Mastery,"Уже-не-бомж с дробовиком"
+ShotgunMasteryName,progression,skills,New,"Already-not-a-bomber With A Shotgun","Уже-не-бомж с дробовиком"
 ShotgunMasteryDesc,progression,skills,New,You've mastered the arts of the shotgun.,Мастерство дробовика вы отточили до смертельного совершенства.
 ShotgunMasteryRank1Desc,progression,skills,New,"+6% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size.","+6% к скорости стрельбы, урону по врагам, удобству прицеливания, скорости перезарядки и размеру обоймы дробовиков."
 ShotgunMasteryRank2Desc,progression,skills,New,"+12% Fire Rate, Entity Damage, Weapon Handling, Reload Speed, Clip Size.","+12% к скорости стрельбы, урону по врагам, удобству прицеливания, скорости перезарядки и размеру обоймы дробовиков."
@@ -362,7 +356,7 @@ ShotgunMasteryRank3LongDesc,progression,skills,New,"Increase your fire rate, ent
 ShotgunMasteryRank4LongDesc,progression,skills,New,"Increase your fire rate, entity damage, weapon handling, clip size and reload speed with shotguns by 24%","Скорость стрельбы, урон по врагам, удобство прицеливания, скорость перезарядки и размер обоймы у дробовиков увеличены на 24%."
 ShotgunMasteryRank5LongDesc,progression,skills,New,"Increase your fire rate, entity damage, weapon handling, clip size and reload speed with shotguns by 30%. Increase the maximum range at which shotguns deal full damage by 2m.","Скорость стрельбы, урон по врагам, удобство прицеливания, скорость перезарядки и размер обоймы у дробовиков увеличены на 30%. Дальность, на которой дробовики наносят полный урон, больше на 2 м"
 
-SneakDamageName,progression,skills,New,Sneak Damage,Тихо и больно
+SneakDamageName,progression,skills,New,Quietly And Painfully,Тихо и больно
 SneakDamageDesc,progression,skills,New,Increase your Sneak Damage against unaware enemies.,Урон исподтишка по ничего не подозревающим врагам увеличивается.
 SneakDamageRank1Desc,progression,skills,New,+20% Sneak Damage,+20% к урону исподтишка
 SneakDamageRank2Desc,progression,skills,New,+40% Sneak Damage,+40% к урону исподтишка
@@ -375,7 +369,7 @@ SneakDamageRank3LongDesc,progression,skills,New,Increase Sneak Damage by 60%,У�
 SneakDamageRank4LongDesc,progression,skills,New,Increase Sneak Damage by 80%,Урон исподтишка увеличивается на 80%.
 SneakDamageRank5LongDesc,progression,skills,New,Increase Sneak Damage by 100%,Урон исподтишка увеличивается на 100%.
 
-StealthName,progression,skills,New,Stealth,Скрытень
+StealthName,progression,skills,New,Stealthy,Скрытень
 StealthDesc,progression,skills,New,You're a sneaky mongrel thus enemies have an even harder time to detect you.,"Вас гораздо сложнее обнаружить, а ещё вы почему-то более умело обращаетесь с отмычками."
 StealthDamageRank1Desc,progression,skills,New,-4% visibility and noise\nLockpicks are 3% more efficient,"-4% к заметности и производимому шуму\nОтмычки на 3% эффективнее."
 StealthDamageRank2Desc,progression,skills,New,-8% visibility and noise\nLockpicks are 6% more efficient,"-8% к заметности и производимому шуму\nОтмычки на 6% эффективнее."

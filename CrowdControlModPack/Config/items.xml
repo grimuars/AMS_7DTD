@@ -104,7 +104,7 @@ MD XP 762
 			<property name="CustomIconTint" value="6699ff"/>
 			<property name="EconomicValue" value="1600"/>
 			<property name="TraderStageTemplate" value="ammoTier2"/>
-			<property name="UnlockedBy" value="perkSniperComplete"/>
+			<property name="UnlockedBy" value="perkPistolPeteComplete"/>
 			<!-- BOOK_PERK -->
 			<property class="Action0">
 				<property name="Create_item" value="ammo9mmBulletXP"/>

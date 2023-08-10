@@ -1,5 +1,5 @@
 <ByHowlune>
-	<!--Grass density halved.-->
+	<!-- Плотность травы уменьшена вдвое -->
 	<set xpath="/worldgeneration/biomes/biome/decorations/decoration[@blockname='treeShortGrass' and @prob='.8']/@prob">.4</set>
 	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='treeShortGrass' and @prob='.95']/@prob">.45</set>
 	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@blockname='treeShortGrass' and @prob='.85']/@prob">.40</set>
