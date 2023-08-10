@@ -1,21 +1,19 @@
 <configs>
-
-<!-- HYDROPONICE VERTICAL FARM UI LIST -->
-
+	<!-- HYDROPONICE VERTICAL FARM UI LIST -->
 	<append xpath="/items/item[@name='resourceCropAloeLeaf']/property[@name='Group']/@value">,HVF</append>
-	<append xpath="/items/item[@name='foodCropBlueberries']/property[@name='Group']/@value">,HVF</append>	
+	<append xpath="/items/item[@name='foodCropBlueberries']/property[@name='Group']/@value">,HVF</append>
 	<append xpath="/items/item[@name='resourceCropChrysanthemumPlant']/property[@name='Group']/@value">,HVF</append>
 	<append xpath="/items/item[@name='resourceCropCoffeeBeans']/property[@name='Group']/@value">,HVF</append>
 	<append xpath="/items/item[@name='foodCropCorn']/property[@name='Group']/@value">,HVF</append>
 	<append xpath="/items/item[@name='resourceCropCottonPlant']/property[@name='Group']/@value">,HVF</append>
-	<append xpath="/items/item[@name='resourceCropGoldenrodPlant']/property[@name='Group']/@value">,HVF</append>	
-	<append xpath="/items/item[@name='foodCropGraceCorn']/property[@name='Group']/@value">,HVF</append>	
+	<append xpath="/items/item[@name='resourceCropGoldenrodPlant']/property[@name='Group']/@value">,HVF</append>
+	<append xpath="/items/item[@name='foodCropGraceCorn']/property[@name='Group']/@value">,HVF</append>
 	<append xpath="/items/item[@name='resourceCropHopsFlower']/property[@name='Group']/@value">,HVF</append>
 	<append xpath="/items/item[@name='foodCropMushrooms']/property[@name='Group']/@value">,HVF</append>
 	<append xpath="/items/item[@name='foodCropPotato']/property[@name='Group']/@value">,HVF</append>
 	<append xpath="/items/item[@name='foodCropYuccaFruit']/property[@name='Group']/@value">,HVF</append>
 	<append xpath="/items/item[@name='foodCropPumpkin']/property[@name='Group']/@value">,HVF</append>
-	
-<!-- HYDROPONICE VERTICAL FARM UI LIST -->	
-
+	<!-- Пшеница -->
+	<append xpath="/items/item[@name='resourceCropWheatPlant']/property[@name='Group']/@value">,HVF</append>
+	<!-- HYDROPONICE VERTICAL FARM UI LIST -->
 </configs>

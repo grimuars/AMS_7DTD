@@ -1,13 +1,13 @@
 <fgstainlessmod>
-		<!-- We need to be able to use tools to upgrade -->
-	<append xpath="/items/item/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,steelPolish</append>	
-		<!-- Add new items -->
+	<!-- We need to be able to use tools to upgrade -->
+	<append xpath="/items/item/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">,steelPolish</append>
+	<!-- Add new items -->
 	<append xpath="/items">
 		<item name="steelPolish">
 			<properly name="Extends" value="resourceLockPick"/>
 			<property name="HoldType" value="45"/>
 			<property name="CustomIcon" value="resourceOil"/>
-			<property name="CustomIconTint" value="FF0000" />
+			<property name="CustomIconTint" value="FF0000"/>
 			<property name="DescriptionKey" value="steelPolishDesc"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -17,12 +17,11 @@
 			<property name="EconomicValue" value="2"/>
 			<property name="EconomicBundleSize" value="1"/>
 			<property name="Group" value="Resources"/>
-		</item>	
-		
-    	<item name="steelPolishBundle">
+		</item>
+		<item name="steelPolishBundle">
 			<property name="Extends" value="resourceLockPickBundle"/>
 			<property name="CustomIcon" value="resourceOil"/>
-			<property name="CustomIconTint" value="FF0000" />
+			<property name="CustomIconTint" value="FF0000"/>
 			<property name="DescriptionKey" value="steelPolishBundleDesc"/>
 			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
 			<property name="SellableToTrader" value="false"/>
@@ -31,7 +30,6 @@
 				<property name="Create_item" value="steelPolish"/>
 				<property name="Create_item_count" value="50"/>
 			</property>
-			
-        </item>
+		</item>
 	</append>
 </fgstainlessmod>

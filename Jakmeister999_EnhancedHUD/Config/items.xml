@@ -1,8 +1,6 @@
 <configs>
-    
-    <set xpath="/items/item[@name='schematicMaster']/property[@name='AltItemTypeIcon']/@value">check</set>
-    <insertAfter xpath="/items/item[@name='schematicMaster']/property[@name='AltItemTypeIcon']">
-        <property name="AltItemTypeIconColor" value="0,256,0" />
-    </insertAfter>
-
+	<set xpath="/items/item[@name='schematicMaster']/property[@name='AltItemTypeIcon']/@value">check</set>
+	<insertAfter xpath="/items/item[@name='schematicMaster']/property[@name='AltItemTypeIcon']">
+		<property name="AltItemTypeIconColor" value="0,256,0"/>
+	</insertAfter>
 </configs>

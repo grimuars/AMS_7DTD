@@ -1,97 +1,90 @@
 <config>
-    <!-- Here we're adding a fast healing buff to the existing bed02 block -->
-	<append xpath="/blocks/block[@name='bed02']" >
+	<!-- Here we're adding a fast healing buff to the existing bed02 block -->
+	<append xpath="/blocks/block[@name='bed02']">
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedFast"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-	
-    <!-- Adding a slow healing buff to the bedroll block -->
-	<append xpath="/blocks/block[@name='bedroll']" >
+	<!-- Adding a slow healing buff to the bedroll block -->
+	<append xpath="/blocks/block[@name='bedroll']">
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedSlow"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-	
-    <!-- Adding a slow healing buff to the bunkBedMade block -->
-	<append xpath="/blocks/block[@name='bunkBedMade']" >
+	<!-- Adding a slow healing buff to the bunkBedMade block -->
+	<append xpath="/blocks/block[@name='bunkBedMade']">
 		<property name="Class" value="SleepingBag"/>
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedSlow"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-
-    <!-- Adding a slow healing buff to the mattressFlatThin block -->
-	<append xpath="/blocks/block[@name='mattressFlatThin']" >
+	<!-- Adding a slow healing buff to the mattressFlatThin block -->
+	<append xpath="/blocks/block[@name='mattressFlatThin']">
 		<property name="Class" value="SleepingBag"/>
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedSlow"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-
-    <!-- Adding a slow healing buff to the gurneyBed block -->
-	<append xpath="/blocks/block[@name='gurneyBed']" >
+	<!-- Adding a slow healing buff to the gurneyBed block -->
+	<append xpath="/blocks/block[@name='gurneyBed']">
 		<property name="Class" value="SleepingBag"/>
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedSlow"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-
-    <!-- Adding a slow healing buff to the hospitalBed block -->
-	<append xpath="/blocks/block[@name='hospitalBed']" >
+	<!-- Adding a slow healing buff to the hospitalBed block -->
+	<append xpath="/blocks/block[@name='hospitalBed']">
 		<property name="Class" value="SleepingBag"/>
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedSlow"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-	
 	<!-- Гробы-кровати -->
-	<append xpath="/blocks/block[@name='cntCasketModernOpenWhite']" >
+	<append xpath="/blocks/block[@name='cntCasketModernOpenWhite']">
 		<property name="Class" value="SleepingBag"/>
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedSlow"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenBlue']" >
+	<append xpath="/blocks/block[@name='cntCasketModernOpenBlue']">
 		<property name="Class" value="SleepingBag"/>
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedSlow"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenBrown']" >
+	<append xpath="/blocks/block[@name='cntCasketModernOpenBrown']">
 		<property name="Class" value="SleepingBag"/>
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedSlow"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenRed']" >
+	<append xpath="/blocks/block[@name='cntCasketModernOpenRed']">
 		<property name="Class" value="SleepingBag"/>
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedSlow"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenGreen']" >
+	<append xpath="/blocks/block[@name='cntCasketModernOpenGreen']">
 		<property name="Class" value="SleepingBag"/>
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedSlow"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenYellow']" >
+	<append xpath="/blocks/block[@name='cntCasketModernOpenYellow']">
 		<property name="Class" value="SleepingBag"/>
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedSlow"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenAqua']" >
+	<append xpath="/blocks/block[@name='cntCasketModernOpenAqua']">
 		<property name="Class" value="SleepingBag"/>
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedSlow"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenPurple']" >
+	<append xpath="/blocks/block[@name='cntCasketModernOpenPurple']">
 		<property name="Class" value="SleepingBag"/>
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedSlow"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenGrey']" >
+	<append xpath="/blocks/block[@name='cntCasketModernOpenGrey']">
 		<property name="Class" value="SleepingBag"/>
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedSlow"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenTan']" >
+	<append xpath="/blocks/block[@name='cntCasketModernOpenTan']">
 		<property name="Class" value="SleepingBag"/>
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedSlow"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-	
-    <!-- Creating new blocks and extending the properties of existing blocks -->
+	<!-- Creating new blocks and extending the properties of existing blocks -->
 	<append xpath="/blocks">
 		<block name="FeelLargeBed01">
 			<property name="Extends" value="bed02"/>
@@ -104,8 +97,7 @@
 			<property name="CustomIcon" value="HospitalBed01"/>
 			<property name="ModelOffset" value="0,.5,0"/>
 		</block>
-
-        <!-- Creating new blocks with specific characteristics and settings for CreativeMode -->
+		<!-- Creating new blocks with specific characteristics and settings for CreativeMode -->
 		<!-- These blocks are based on existing blocks and have a selection of alternate placements -->
 		<block name="FeelBunkBedVariantHelper">
 			<property name="Extends" value="bunkBedMade"/>
