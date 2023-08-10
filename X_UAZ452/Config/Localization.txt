@@ -1,6 +1,0 @@
-Key,English,Russian
-vehicleUAZ452chassis,UAZ 452 Chassis,Шасси УАЗ-452
-vehicleUAZ452chassisDesc,Parts needed to craft the UAZ 452,Запчасти для создания УАЗ-452
-vehicleUAZ452,UAZ 452,УАЗ-452
-vehicleUAZ452placeable,UAZ 452,УАЗ-452
-vehicleUAZ452placeableDesc,Blend right in with the apocalypse!,Вписывается в атмосферу апокалипсиса!

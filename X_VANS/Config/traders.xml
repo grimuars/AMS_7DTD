@@ -1,0 +1,17 @@
+<configs>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupVehicles']">
+		<!-- УАЗ -->
+		<item name="vehicleUAZ452chassis"/>
+		<item name="vehicleUAZ452placeable"/>
+		<!-- БРДМ-2 -->
+		<item name="vehicleBRDM2chassis"/>
+		<item name="vehicleBRDM2accessories"/>
+		<item name="vehicleBRDM2placeable"/>
+		<item name="vehicleBRDM2desertplaceable"/>
+		<!-- Мародёр -->
+		<item name="vehicleMarauderchassis"/>
+		<item name="vehicleMarauderaccessories"/>
+		<item name="vehicleMarauderplaceable"/>
+		<item name="vehicleMarauderblackplaceable"/>
+	</append>
+</configs>

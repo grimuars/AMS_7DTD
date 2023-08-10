@@ -30,12 +30,12 @@
 	<set xpath="/quests/quest[@id='tier5_clear_infested']/variable[@name='spawn_multiplier']/@value">3</set>
 	<set xpath="/quests/quest[@id='tier5_clear_infested']/variable[@name='gamestage_mod']/@value">1</set>
 	<set xpath="/quests/quest[@id='tier5_clear_infested']/variable[@name='gamestage_bonus']/@value">150</set>
-	<set xpath="/quests/quest[@id='tier5_clear_infested']/reward[@type='Exp']/@value">40000</set>
+	<set xpath="/quests/quest[@id='tier5_clear_infested']/reward[@type='Exp']/@value">30000</set>
 	<!-- Усиливаем квесты нашествия 6 тира и повышаем награду -->
 	<set xpath="/quests/quest[@id='tier6_clear_infested']/variable[@name='spawn_multiplier']/@value">4</set>
 	<set xpath="/quests/quest[@id='tier6_clear_infested']/variable[@name='gamestage_mod']/@value">1</set>
 	<set xpath="/quests/quest[@id='tier6_clear_infested']/variable[@name='gamestage_bonus']/@value">300</set>
-	<set xpath="/quests/quest[@id='tier6_clear_infested']/reward[@type='Exp']/@value">80000</set>
+	<set xpath="/quests/quest[@id='tier6_clear_infested']/reward[@type='Exp']/@value">60000</set>
 	<!-- Добавляем новый стартовый квест -->
 	<append xpath="/quests">
 		<quest id="quest_visit_trader">
@@ -64,5 +64,5 @@
 		</quest>
 	</append>
 	<!-- Делаем безопасную зону квеста больше -->
-	<set xpath="quests//objective[contains(@type, 'StayWithin')]/property[@name='radius']/@value">100</set>
+	<set xpath="quests//objective[contains(@type, 'StayWithin')]/property[@name='radius']/@value">50</set>
 </quests>

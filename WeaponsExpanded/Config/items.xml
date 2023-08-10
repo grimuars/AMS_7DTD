@@ -83,7 +83,7 @@
 				<!-- random EntityDmg -->
 				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeepCuts"/>
 				<!-- tier bonus -->
-				<passive_effect name="BlockDamage" operation="base_set" value="32" tags="perkDeepCuts"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkDeepCuts"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="perkDeepCuts"/>
 				<!-- random BlockDmg -->
 				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkDeepCuts"/>
@@ -717,7 +717,7 @@
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="55" tags="perkMachineGunner"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkMachineGunner"/>
 				<!-- random effective rng -->
-				<passive_effect name="BlockDamage" operation="base_add" value="5" tags="perkMachineGunner"/>
+				<passive_effect name="BlockDamage" operation="base_add" value="1" tags="perkMachineGunner"/>
 				<!-- damage offset -->
 				<passive_effect name="EntityDamage" operation="base_set" value="67" tags="perkMachineGunner"/>
 				<!-- damage offset -->
@@ -773,7 +773,7 @@
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="55" tags="perkMachineGunner"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkMachineGunner"/>
 				<!-- random effective rng -->
-				<passive_effect name="BlockDamage" operation="base_add" value="4" tags="perkMachineGunner"/>
+				<passive_effect name="BlockDamage" operation="base_add" value="1" tags="perkMachineGunner"/>
 				<!-- damage offset -->
 				<passive_effect name="EntityDamage" operation="base_set" value="88" tags="perkMachineGunner"/>
 				<!-- damage offset -->
@@ -1388,7 +1388,7 @@
 				<!-- random EntityDmg -->
 				<passive_effect name="EntityDamage" operation="perc_add" value=".15,.6" tier="2,6" tags="perkElectrocutioner"/>
 				<!-- tier bonus -->
-				<passive_effect name="BlockDamage" operation="base_set" value="20" tags="perkElectrocutioner"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkElectrocutioner"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkElectrocutioner"/>
 				<!-- tier bonus -->
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="earth"/>
@@ -1588,7 +1588,7 @@
 				<!-- random EntityDmg -->
 				<passive_effect name="EntityDamage" operation="perc_add" value=".15,.6" tier="2,6" tags="perkPummelPete"/>
 				<!-- tier bonus -->
-				<passive_effect name="BlockDamage" operation="base_set" value="56" tags="perkPummelPete"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkPummelPete"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="perkPummelPete"/>
 				<!-- random BlockDmg -->
 				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkPummelPete"/>
@@ -1629,7 +1629,7 @@
 				<!-- random EntityDmg -->
 				<passive_effect name="EntityDamage" operation="perc_add" value=".15,.55" tier="2,6" tags="perkBrawler"/>
 				<!-- tier bonus -->
-				<passive_effect name="BlockDamage" operation="base_set" value="9" tags="perkBrawler"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkBrawler"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="perkBrawler"/>
 				<!-- random BlockDmg -->
 				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkBrawler"/>
@@ -1725,7 +1725,7 @@
 				<!-- random EntityDmg -->
 				<passive_effect name="EntityDamage" operation="perc_add" value=".15,.55" tier="2,6" tags="perkJavelinMaster"/>
 				<!-- tier bonus -->
-				<passive_effect name="BlockDamage" operation="base_set" value="23" tags="perkJavelinMaster"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkJavelinMaster"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="-.04,.04" tags="perkJavelinMaster"/>
 				<!-- random BlockDmg -->
 				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkJavelinMaster"/>

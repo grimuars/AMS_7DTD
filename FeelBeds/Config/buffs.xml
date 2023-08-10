@@ -9,7 +9,7 @@
 				<requirement name="CVarCompare" cvar=".NoHealingManager" operation="Equals" value="0"/>
 				<requirement name="CVarCompare" cvar="foodHealthAmount" operation="GTE" value="0"/>
 				<requirement name="!HasBuff" buff="buffHealingBedSlow"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value=".11"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value=".22"/>
 			</effect_group>
 		</buff>
 		<!-- The buffHealingBedSlow buff increases the player's health by .055 every update and lasts 10 seconds -->
@@ -20,7 +20,7 @@
 				<requirement name="CVarCompare" cvar=".NoHealingManager" operation="Equals" value="0"/>
 				<requirement name="CVarCompare" cvar="foodHealthAmount" operation="GTE" value="0"/>
 				<requirement name="!HasBuff" buff="buffHealingBedFast"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value=".055"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value=".11"/>
 			</effect_group>
 		</buff>
 	</append>

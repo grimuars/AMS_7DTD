@@ -41,7 +41,7 @@
 			<ingredient name="ammoTicket" count="22"/>
 		</recipe>
 		<!-- Уникальное оружие -->
-		<!-- <recipe name="DementivemeleeWpnBladeHellHound" count="1">
+		<recipe name="DementivemeleeWpnBladeHellHound" count="1">
 			<ingredient name="ammoTicket" count="5000"/>
 		</recipe>
 		<recipe name="DementivegunRocketFinale" count="1">
@@ -121,6 +121,6 @@
 		</recipe>
 		<recipe name="DementivemeleeWpnSledgeT3SteelSledgehammer" count="1">
 			<ingredient name="ammoTicket" count="5000"/>
-		</recipe> -->
+		</recipe>
 	</append>
 </config>

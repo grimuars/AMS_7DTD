@@ -20,13 +20,11 @@
 	<!-- ********************* APPENDED LOOT CONTAINERS (I THINK?) ********************* -->
 	<!-- Canned Goods -->
 	<append xpath="/lootcontainers/lootgroup[@name='cannedfood']">
-		<item name="foodCanSeasoning" count="1,5"/>
 		<item name="foodCanSoupTomato" count="1,5"/>
 		<item name="foodButterSpread" count="1,5"/>
 	</append>
 	<!-- Dumpster Food -->
 	<append xpath="/lootcontainers/lootgroup[@name='groupDumpsterFood']">
-		<item name="foodCanSeasoning" count="1,5"/>
 		<item name="foodCanSoupTomato" count="1,5"/>
 		<item name="foodChips" count="1,5"/>
 		<item name="foodChipsOopsSourCream" count="1,5"/>
@@ -96,19 +94,16 @@
 	</append>
 	<!-- Uncommon Foods -->
 	<append xpath="/lootcontainers/lootgroup[@name='groupFoodUncommon']">
-		<item name="foodCanSeasoning" count="1,5"/>
 		<item name="foodDaBoxCereal" count="1,5"/>
 		<item name="foodButterSpread" count="1,5"/>
 		<item name="foodWhiteBread" count="1,5"/>
 	</append>
 	<append xpath="/lootcontainers/lootgroup[@name='groupFoodTrashUncommon']">
-		<item name="foodCanSeasoning" count="1,5"/>
 		<item name="foodDaBoxCereal" count="1,5"/>
 		<item name="foodButterSpread" count="1,5"/>
 		<item name="foodWhiteBread" count="1,5"/>
 	</append>
 	<append xpath="/lootcontainers/lootgroup[@name='shamwaySafeFiller']">
-		<item name="foodCanSeasoning" count="1,5"/>
 		<item name="foodDaBoxCereal" count="1,5"/>
 		<item name="foodButterSpread" count="1,5"/>
 		<item name="foodWhiteBread" count="1,5"/>

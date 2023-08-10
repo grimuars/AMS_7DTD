@@ -1,0 +1,29 @@
+Key,English,Russian
+
+vehicleUAZ452chassis,UAZ 452 Chassis,Шасси УАЗ-452
+vehicleUAZ452chassisDesc,Parts needed to craft the UAZ 452,Запчасти для создания УАЗ-452
+vehicleUAZ452,UAZ 452,УАЗ-452
+vehicleUAZ452placeable,UAZ 452,УАЗ-452
+vehicleUAZ452placeableDesc,"Blend right in with the apocalypse!","Вписывается в атмосферу апокалипсиса!"
+
+vehicleBRDM2chassis,BRDM-2 Chassis,Шасси БРДМ-2
+vehicleBRDM2chassisDesc,Parts needed to craft the BRDM-2.,Запчасти для создания БРДМ-2.
+vehicleBRDM2accessories,BRDM-2 Accessories,Детали БРДМ-2
+vehicleBRDM2accessoriesDesc,Parts needed to craft the BRDM-2.,Запчасти для создания БРДМ-2.
+vehicleBRDM2,BRDM-2,БРДМ-2
+vehicleBRDM2placeable,BRDM-2,БРДМ-2
+vehicleBRDM2placeableDesc,A Soviet armoured car in the Arizona.,"Советский броневик на просторах Аризонщины."
+vehicleBRDM2desert,BRDM-2 Desert,БРДМ-2 Desert
+vehicleBRDM2desertplaceable,BRDM-2 Desert,БРДМ-2 Desert
+vehicleBRDM2desertplaceableDesc,"A Soviet armoured car in the Arizona.","Советский броневик на просторах Аризонщины."
+
+vehicleMarauder,Marauder,Мародёр
+vehicleMarauderplaceable,Marauder,Мародёр
+vehicleMarauderplaceableDesc,"Those zombies will be jealous of this ride!","Все зомби вам завидуют!"
+vehicleMarauderblack,Marauder,Мародёр
+vehicleMarauderblackplaceable,Marauder,Мародёр
+vehicleMarauderblackplaceableDesc,"Those zombies will be jealous of this ride!","Все зомби вам завидуют!"
+vehicleMarauderchassis,Marauder Chassis,Шасси Мародёра
+vehicleMarauderchassisDesc,"Parts needed to craft the Marauder.","Запчасти для создания Мародёра"
+vehicleMarauderaccessories,Marauder Accessories,"Детали Мародёра"
+vehicleMarauderaccessoriesDesc,Parts needed to craft the Marauder.,"Запчасти для создания Мародёра"

@@ -1,2 +1,2 @@
 Key,english,russian
-craftableLightsVariantHelper,Craftable Lights,Освещение
+craftableLightsVariantHelper,Craftable Lights,Создаваемое освещение

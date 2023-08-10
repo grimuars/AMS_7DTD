@@ -279,11 +279,6 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="5"/>
 	</append>
 	<!-- Снеки и закуски -->
-	<append xpath="/items/item[@name='foodCanSeasoning']/effect_group[contains(@name, 'Tier')]">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="30"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="5"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="15"/>
-	</append>
 	<append xpath="/items/item[@name='foodCanSoupTomato']/effect_group[contains(@name, 'Tier')]">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="30"/>
@@ -346,10 +341,6 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBCarbsAdd" operation="add" value="15"/>
 	</append>
 	<!-- Хлеб, масло и мука -->
-	<append xpath="/items/item[@name='foodFlour']/effect_group[contains(@name, 'Tier')]">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="1"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="1"/>
-	</append>
 	<append xpath="/items/item[@name='foodWhiteBread']/effect_group[contains(@name, 'Tier')]">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBProteinAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cvarANBGreensAdd" operation="add" value="5"/>

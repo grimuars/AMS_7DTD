@@ -531,7 +531,7 @@
 				<passive_effect name="CraftingTime" operation="perc_add" value="-.15"/>
 			</effect_group>
 		</recipe>
-		<!-- DRINKS — ORANGE JUICE -->
+		<!-- Апельсиновый сок -->
 		<recipe name="drinkOrangeJuice" count="4" craft_area="DeucesOven" craft_time="60">
 			<ingredient name="foodFrozenOJCon" count="1"/>
 			<ingredient name="drinkJarBoiledWater" count="4"/>
@@ -539,7 +539,7 @@
 				<passive_effect name="CraftingTime" operation="perc_add" value="-.15"/>
 			</effect_group>
 		</recipe>
-		<!-- FOOD — FLOUR -->
+		<!-- Мука -->
 		<recipe name="foodFlour" count="1" craft_area="DeucesOven" craft_time="30">
 			<ingredient name="resourceCropWheatPlant" count="10"/>
 			<ingredient name="resourceRockSmall" count="2"/>
@@ -547,6 +547,7 @@
 				<passive_effect name="CraftingTime" operation="perc_add" value="-.15"/>
 			</effect_group>
 		</recipe>
+		<!-- Белый хлеб -->
 		<recipe name="foodWhiteBread" count="1" craft_area="DeucesOven" craft_time="400" craft_tool="toolCookingPot">
 			<ingredient name="foodFlour" count="1"/>
 			<ingredient name="foodEgg" count="1"/>

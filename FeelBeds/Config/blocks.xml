@@ -1,4 +1,6 @@
 <config>
+	<!-- Устанавливаем стоимость кроватей и гробов (слишком дорогие и их слишком много) -->
+	<set xpath="/blocks/block[contains (@name, 'bed') or contains (@name, 'mattress') or contains (@name, 'Bed') or contains (@name, 'cntCasket')]/property[@name='EconomicValue']/@value">200</set>
 	<!-- Here we're adding a fast healing buff to the existing bed02 block -->
 	<append xpath="/blocks/block[@name='bed02']">
 		<property name="BuffsWhenWalkedOn" value="buffHealingBedFast"/>
