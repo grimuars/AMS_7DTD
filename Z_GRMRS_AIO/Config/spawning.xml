@@ -3,44 +3,44 @@
 	<setattribute xpath="/spawning/biome[@name='pine_forest']/spawn[@time='Day' and @entitygroup='ZombiesAll']" name="maxcount">4</setattribute>
 	<setattribute xpath="/spawning/biome[@name='pine_forest']/spawn[@time='Night' and @entitygroup='ZombiesNight']" name="maxcount">12</setattribute>
 	<setattribute xpath="/spawning/biome[@name='pine_forest']/spawn[@time='Night' and @entitygroup='EnemyAnimalsForest']" name="maxcount">6</setattribute>
-	<setattribute xpath="/spawning/biome[@name='pine_forest']/spawn[@time='Day' and @entitygroup='ZombiesAll']" name="respawndelay">0.75</setattribute>
-	<setattribute xpath="/spawning/biome[@name='pine_forest']/spawn[@time='Night' and @entitygroup='ZombiesNight']" name="respawndelay">0.65</setattribute>
-	<setattribute xpath="/spawning/biome[@name='pine_forest']/spawn[@time='Day' and @entitygroup='ZombiesForestDowntown']" name="respawndelay">0.65</setattribute>
-	<setattribute xpath="/spawning/biome[@name='pine_forest']/spawn[@time='Night' and @entitygroup='ZombiesForestDowntownNight']" name="respawndelay">0.65</setattribute>
+	<setattribute xpath="/spawning/biome[@name='pine_forest']/spawn[@time='Day' and @entitygroup='ZombiesAll']" name="respawndelay">0.25</setattribute>
+	<setattribute xpath="/spawning/biome[@name='pine_forest']/spawn[@time='Night' and @entitygroup='ZombiesNight']" name="respawndelay">0.15</setattribute>
+	<setattribute xpath="/spawning/biome[@name='pine_forest']/spawn[@time='Day' and @entitygroup='ZombiesForestDowntown']" name="respawndelay">0.25</setattribute>
+	<setattribute xpath="/spawning/biome[@name='pine_forest']/spawn[@time='Night' and @entitygroup='ZombiesForestDowntownNight']" name="respawndelay">0.15</setattribute>
 	<!-- Горелый биом -->
 	<setattribute xpath="/spawning/biome[@name='burnt_forest']/spawn[@time='Day' and @entitygroup='ZombiesBurntForest']" name="maxcount">8</setattribute>
 	<setattribute xpath="/spawning/biome[@name='burnt_forest']/spawn[@time='Night' and @entitygroup='ZombiesNight']" name="maxcount">12</setattribute>
 	<setattribute xpath="/spawning/biome[@name='burnt_forest']/spawn[@time='Night' and @entitygroup='EnemyAnimalsBurntForest']" name="maxcount">6</setattribute>
-	<setattribute xpath="/spawning/biome[@name='burnt_forest']/spawn[@time='Day' and @entitygroup='ZombiesAll']" name="respawndelay">0.45</setattribute>
-	<setattribute xpath="/spawning/biome[@name='burnt_forest']/spawn[@time='Any' and @entitygroup='WildGameForest']" name="respawndelay">0.35</setattribute>
-	<setattribute xpath="/spawning/biome[@name='burnt_forest']/spawn[@time='Night' and @entitygroup='ZombiesNight']" name="respawndelay">0.35</setattribute>
-	<setattribute xpath="/spawning/biome[@name='burnt_forest']/spawn[@time='Night' and @entitygroup='ZombiesDowntown']" name="respawndelay">0.35</setattribute>
-	<setattribute xpath="/spawning/biome[@name='burnt_forest']/spawn[@time='Day' and @entitygroup='ZombiesDowntown']" name="respawndelay">0.45</setattribute>
+	<setattribute xpath="/spawning/biome[@name='burnt_forest']/spawn[@time='Day' and @entitygroup='ZombiesAll']" name="respawndelay">0.35</setattribute>
+	<setattribute xpath="/spawning/biome[@name='burnt_forest']/spawn[@time='Any' and @entitygroup='WildGameForest']" name="respawndelay">0.25</setattribute>
+	<setattribute xpath="/spawning/biome[@name='burnt_forest']/spawn[@time='Night' and @entitygroup='ZombiesNight']" name="respawndelay">0.25</setattribute>
+	<setattribute xpath="/spawning/biome[@name='burnt_forest']/spawn[@time='Night' and @entitygroup='ZombiesDowntown']" name="respawndelay">0.25</setattribute>
+	<setattribute xpath="/spawning/biome[@name='burnt_forest']/spawn[@time='Day' and @entitygroup='ZombiesDowntown']" name="respawndelay">0.35</setattribute>
 	<!-- Пустыня -->
 	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Any' and @entitygroup='ZombiesAll']" name="maxcount">6</setattribute>
 	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Night' and @entitygroup='ZombiesNight']" name="maxcount">12</setattribute>
 	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Any' and @entitygroup='EnemyAnimalsDesert']" name="maxcount">6</setattribute>
-	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Day' and @entitygroup='ZombiesAll']" name="respawndelay">0.55</setattribute>
-	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Any' and @entitygroup='ZombiesAll']" name="respawndelay">0.55</setattribute>
-	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Night' and @entitygroup='ZombiesNight']" name="respawndelay">0.45</setattribute>
-	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Day' and @entitygroup='ZombiesDowntown']" name="respawndelay">0.55</setattribute>
-	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Night' and @entitygroup='ZombiesDowntown']" name="respawndelay">0.45</setattribute>
-	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Any' and @entitygroup='WildGameForest']" name="respawndelay">0.65</setattribute>
-	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Any' and @entitygroup='EnemyAnimalsDesert']" name="respawndelay">0.65</setattribute>
+	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Day' and @entitygroup='ZombiesAll']" name="respawndelay">0.25</setattribute>
+	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Any' and @entitygroup='ZombiesAll']" name="respawndelay">0.25</setattribute>
+	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Night' and @entitygroup='ZombiesNight']" name="respawndelay">0.15</setattribute>
+	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Day' and @entitygroup='ZombiesDowntown']" name="respawndelay">0.25</setattribute>
+	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Night' and @entitygroup='ZombiesDowntown']" name="respawndelay">0.15</setattribute>
+	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Any' and @entitygroup='WildGameForest']" name="respawndelay">0.35</setattribute>
+	<setattribute xpath="/spawning/biome[@name='desert']/spawn[@time='Any' and @entitygroup='EnemyAnimalsDesert']" name="respawndelay">0.35</setattribute>
 	<!-- Пустошь -->
 	<setattribute xpath="/spawning/biome[@name='wasteland']/spawn[@time='Day' and @entitygroup='ZombiesWasteland']" name="maxcount">10</setattribute>
 	<setattribute xpath="/spawning/biome[@name='wasteland']/spawn[@time='Night' and @entitygroup='ZombiesWastelandNight']" name="maxcount">14</setattribute>
 	<setattribute xpath="/spawning/biome[@name='wasteland']/spawn[@time='Any' and @entitygroup='EnemyAnimalsWasteland']" name="maxcount">6</setattribute>
-	<setattribute xpath="/spawning/biome[@name='wasteland']/spawn[@time='Day' and @entitygroup='ZombiesWasteland']" name="respawndelay">0.45</setattribute>
-	<setattribute xpath="/spawning/biome[@name='wasteland']/spawn[@time='Night' and @entitygroup='ZombiesWastelandNight']" name="respawndelay">0.35</setattribute>
-	<setattribute xpath="/spawning/biome[@name='wasteland']/spawn[@time='Any' and @entitygroup='EnemyAnimalsWasteland']" name="respawndelay">0.45</setattribute>
+	<setattribute xpath="/spawning/biome[@name='wasteland']/spawn[@time='Day' and @entitygroup='ZombiesWasteland']" name="respawndelay">0.35</setattribute>
+	<setattribute xpath="/spawning/biome[@name='wasteland']/spawn[@time='Night' and @entitygroup='ZombiesWastelandNight']" name="respawndelay">0.25</setattribute>
+	<setattribute xpath="/spawning/biome[@name='wasteland']/spawn[@time='Any' and @entitygroup='EnemyAnimalsWasteland']" name="respawndelay">0.35</setattribute>
 	<!-- Снег -->
 	<setattribute xpath="/spawning/biome[@name='snow']/spawn[@time='Any' and @entitygroup='SnowZombies']" name="maxcount">6</setattribute>
 	<setattribute xpath="/spawning/biome[@name='snow']/spawn[@time='Night' and @entitygroup='ZombiesNight']" name="maxcount">12</setattribute>
 	<setattribute xpath="/spawning/biome[@name='snow']/spawn[@time='Any' and @entitygroup='EnemyAnimalsSnow']" name="maxcount">6</setattribute>
-	<setattribute xpath="/spawning/biome[@name='snow']/spawn[@time='Day' and @entitygroup='ZombiesAll']" name="respawndelay">0.65</setattribute>
-	<setattribute xpath="/spawning/biome[@name='snow']/spawn[@time='Day' and @entitygroup='ZombiesDowntown']" name="respawndelay">0.65</setattribute>
-	<setattribute xpath="/spawning/biome[@name='snow']/spawn[@time='Night' and @entitygroup='ZombiesDowntown']" name="respawndelay">0.55</setattribute>
-	<setattribute xpath="/spawning/biome[@name='snow']/spawn[@time='Night' and @entitygroup='ZombiesNight']" name="respawndelay">0.55</setattribute>
-	<setattribute xpath="/spawning/biome[@name='snow']/spawn[@time='Any' and @entitygroup='WildGameForest']" name="respawndelay">0.65</setattribute>
+	<setattribute xpath="/spawning/biome[@name='snow']/spawn[@time='Day' and @entitygroup='ZombiesAll']" name="respawndelay">0.35</setattribute>
+	<setattribute xpath="/spawning/biome[@name='snow']/spawn[@time='Day' and @entitygroup='ZombiesDowntown']" name="respawndelay">0.35</setattribute>
+	<setattribute xpath="/spawning/biome[@name='snow']/spawn[@time='Night' and @entitygroup='ZombiesDowntown']" name="respawndelay">0.25</setattribute>
+	<setattribute xpath="/spawning/biome[@name='snow']/spawn[@time='Night' and @entitygroup='ZombiesNight']" name="respawndelay">0.25</setattribute>
+	<setattribute xpath="/spawning/biome[@name='snow']/spawn[@time='Any' and @entitygroup='WildGameForest']" name="respawndelay">0.35</setattribute>
 </ProjectMayhem>

@@ -184,5 +184,11 @@
 	<!-- Пауки прыгают на меньшую дистанцию -->
 	<set xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='JumpMaxDistance']/@value">2.8, 4.8</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']/property[@name='JumpMaxDistance']/@value">4.6, 6.6</set>
+	<!-- Увеличенный аггро -->
+	<setattribute xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AINoiseSeekDist']" name="value">70</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='SightRange']" name="value">90</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='SightRange']" name="value">90</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AINoiseSeekDist']" name="value">70</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='animalZombieVulture']/property[@name='SightRange']" name="value">90</setattribute>
 </configs>
 

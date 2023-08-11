@@ -22,8 +22,8 @@ MD XP 762
 				<passive_effect name="EntityDamage" operation="base_add" value="-3">
 					<requirement name="ItemHasTags" tags="perkMachineGunner"/>
 				</passive_effect>
-				<passive_effect name="BlockDamage" operation="base_set" value="10" tags="perkDeadEye,perkMachineGunner"/>
-				<passive_effect name="BlockDamage" operation="base_add" value="14" tags="barrelExplosive"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkDeadEye,perkMachineGunner"/>
+				<passive_effect name="BlockDamage" operation="base_add" value="1" tags="barrelExplosive"/>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkDeadEye,perkMachineGunner"/>
 				<display_value name="dTargetArmor" value="-.5"/>
 				<passive_effect name="EntityPenetrationCount" operation="base_set" value="2"/>
@@ -73,8 +73,8 @@ MD XP 762
 			<!-- BOOK_PERK -->
 			<effect_group name="ammo9mmBulletAP" tiered="false">
 				<passive_effect name="EntityDamage" operation="base_set" value="120" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkGunslinger"/>
-				<passive_effect name="BlockDamage" operation="base_add" value="16" tags="barrelExplosive"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="1" tags="perkGunslinger"/>
+				<passive_effect name="BlockDamage" operation="base_add" value="1" tags="barrelExplosive"/>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkGunslinger"/>
 				<display_value name="dTargetArmor" value="-.5"/>
 				<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" tags="perkGunslinger"/>
