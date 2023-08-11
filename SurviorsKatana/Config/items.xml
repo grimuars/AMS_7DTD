@@ -90,7 +90,7 @@
 				<!--<passive_effect name="BlockDamage" operation="perc_add" value="6" tags="blockButcher"/>-->
 			</effect_group>
 			<effect_group name="Power Attack">
-				<passive_effect name="EntityDamage" operation="base_add" value="6" tags="secondary"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="5" tags="secondary"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 				<passive_effect name="AttacksPerMinute" operation="base_add" value="-65" tags="secondary"/>

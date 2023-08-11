@@ -15,7 +15,7 @@
 	<!--Backpack Adjustments-->
 	<remove xpath="/windows/window[@name='windowBackpack']"/>
 	<append xpath="/windows">
-	<window name="windowBackpack" width="675" height="342" panel="Center" controller="BackpackWindow" cursor_area="true">
+		<window name="windowBackpack" width="675" height="342" panel="Center" controller="BackpackWindow" cursor_area="true">
 			<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
 				<sprite depth="3" name="windowIcon" style="icon32px" pivot="center" pos="21,-21" sprite="ui_game_symbol_backpack"/>
 				<label depth="3" name="windowName" pos="42,-6" width="250" height="32" text="INVENTORY" text_key="xuiInventory" font_size="32"/>
@@ -77,10 +77,10 @@
 	<set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@cols">15</set>
 	<!--Inventory Updates-->
 	<!--Utilizing a different stack style but SPECIFICALLY for backpack only-->
-	<!-- <remove xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/backpack_item_stack"/>
+	<remove xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/backpack_item_stack"/>
 	<append xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']">
 		<backpack_item_stackAGF name="0"/>
-	</append> -->
+	</append>
 	<!--Utilizing a different stack style but SPECIFICALLY for Loot Containers Only-->
 	<set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@cell_width">56</set>
 	<set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@cell_height">56</set>
@@ -134,6 +134,12 @@
 	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/grid[@name='parts']/@pos">154,-271</set>
 	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/grid[@name='parts']/@cell_width">74</set>
 	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/grid[@name='parts']/@cols">7</set>
+	<!--adjustments to make the active buff window match the width of the new backpack-->
+	<set xpath="/windows/window[@name='buffInfoPanel']/@width">675</set>
+	<set xpath="/windows/window[@name='buffInfoPanel']/rect/rect/sprite[@width='603']/@width">675</set>
+	<set xpath="/windows/window[@name='buffInfoPanel']/rect/rect/rect/@width">520</set>
+	<set xpath="/windows/window[@name='buffInfoPanel']/rect/rect/rect/sprite[@name='backgroundMain']/@width">525</set>
+	<set xpath="/windows/window[@name='buffInfoPanel']/rect/rect/rect/rect/label/@width">512</set>
 </AGF-Backpack84>
 
 

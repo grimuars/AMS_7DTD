@@ -17,8 +17,8 @@
 		<passive_effect name="PlayerExpGain" operation="perc_add" value="0.3" tags="Harvesting">
 			<requirement name="PlayerLevel" operation="LT" value="50"/>
 		</passive_effect>
-		<!-- До 50 уровня в 3 раза больше опыта от убийств -->
-		<passive_effect name="PlayerExpGain" operation="perc_add" value="3" tags="Kill">
+		<!-- До 50 уровня в 2 раза больше опыта от убийств -->
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="2" tags="Kill">
 			<requirement name="PlayerLevel" operation="LT" value="50"/>
 		</passive_effect>
 		<!-- С 75 уровня - в 3 раза больше опыта за квесты -->
@@ -185,10 +185,10 @@
 	<set xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='JumpMaxDistance']/@value">2.8, 4.8</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']/property[@name='JumpMaxDistance']/@value">4.6, 6.6</set>
 	<!-- Увеличенный аггро -->
-	<setattribute xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AINoiseSeekDist']" name="value">70</setattribute>
-	<setattribute xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='SightRange']" name="value">90</setattribute>
-	<setattribute xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='SightRange']" name="value">90</setattribute>
-	<setattribute xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AINoiseSeekDist']" name="value">70</setattribute>
-	<setattribute xpath="/entity_classes/entity_class[@name='animalZombieVulture']/property[@name='SightRange']" name="value">90</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AINoiseSeekDist']" name="value">90</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='SightRange']" name="value">110</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='SightRange']" name="value">110</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AINoiseSeekDist']" name="value">90</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='animalZombieVulture']/property[@name='SightRange']" name="value">110</setattribute>
 </configs>
 

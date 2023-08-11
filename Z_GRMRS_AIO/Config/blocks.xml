@@ -249,4 +249,8 @@
 	<append xpath="/blocks/block[@name='terrOreOilDeposit']">
 		<property name="MovementFactor" value="1.0"/>
 	</append>
+	<!-- Объявления торговцев голосом Джен -->
+	<set xpath="/blocks/block[@name='loudspeaker']/property[@name='OpenSound']/@value">trader_jenlikeannounceopen</set>
+	<set xpath="/blocks/block[@name='loudspeaker']/property[@name='CloseSound']/@value">trader_jenlikeannounceclosed</set>
+	<set xpath="/blocks/block[@name='loudspeaker']/property[@name='WarningSound']/@value">trader_jenlikeannounceclosing</set>
 </configs>

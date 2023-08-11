@@ -58,5 +58,5 @@
 	<!-- <set xpath="/worldglobal/environment/property[@name='ambientGroundScale']/@value">.4, .1</set> -->
 	<set xpath="/worldglobal/environment/property[@name='ambientSkyScale']/@value">1, .4</set>
 	<!-- Уменьшаем резкость динамического освещения внутри помещений -->
-	<set xpath="/worldglobal/environment/property[10]/@value">.9, .4</set>
+	<set xpath="/worldglobal/environment/property[10]/@value">.8, .4</set>
 </configs>

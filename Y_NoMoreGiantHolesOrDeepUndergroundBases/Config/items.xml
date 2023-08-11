@@ -1,7 +1,7 @@
 <Configs>
 	<append xpath="/items/item[contains(@name, 'meleeToolPickT1')]/effect_group[contains(@name, 'meleeToolPickT1')]">
-		<passive_effect name="PlayerExpGain" operation="perc_add" value="-.45" tags="Harvesting"/>
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="-.75" tags="Harvesting"/>
 	</append>
-	<set xpath="items/item [contains(@name, 'meleeToolPick')]/effect_group[contains(@name, 'meleeToolPickT2')]/passive_effect[@name='PlayerExpGain'and(@value='-.1')]/@value">-.45</set>
-	<set xpath="items/item [contains(@name, 'meleeToolPick')]/effect_group[contains(@name, 'meleeToolPickT3')]/passive_effect[@name='PlayerExpGain'and(@value='-.3')]/@value">-.45</set>
+	<set xpath="items/item [contains(@name, 'meleeToolPick')]/effect_group[contains(@name, 'meleeToolPickT2')]/passive_effect[@name='PlayerExpGain'and(@value='-.1')]/@value">-.75</set>
+	<set xpath="items/item [contains(@name, 'meleeToolPick')]/effect_group[contains(@name, 'meleeToolPickT3')]/passive_effect[@name='PlayerExpGain'and(@value='-.3')]/@value">-.75</set>
 </Configs>

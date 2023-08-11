@@ -8,12 +8,12 @@
 	<!--Отключаем жроны -->
 	<remove xpath="/lootcontainers/lootgroup/item[contains(@name,'Drone')]"/>
 	<!-- Уменьшаем общую вероятность лута -->
-	<set xpath="//lootprobtemplate[@name='veryLow']/loot[@level='1,999999']/@prob">.02</set>
-	<set xpath="//lootprobtemplate[@name='low']/loot[@level='1,999999']/@prob">.06</set>
-	<set xpath="//lootprobtemplate[@name='medLow']/loot[@level='1,999999']/@prob">.1</set>
-	<set xpath="//lootprobtemplate[@name='med']/loot[@level='1,999999']/@prob">.14</set>
-	<set xpath="//lootprobtemplate[@name='medHigh']/loot[@level='1,999999']/@prob">.18</set>
-	<set xpath="//lootprobtemplate[@name='high']/loot[@level='1,999999']/@prob">.25</set>
+	<set xpath="//lootprobtemplate[@name='veryLow']/loot[@level='1,999999']/@prob">.01</set>
+	<set xpath="//lootprobtemplate[@name='low']/loot[@level='1,999999']/@prob">.05</set>
+	<set xpath="//lootprobtemplate[@name='medLow']/loot[@level='1,999999']/@prob">.09</set>
+	<set xpath="//lootprobtemplate[@name='med']/loot[@level='1,999999']/@prob">.13</set>
+	<set xpath="//lootprobtemplate[@name='medHigh']/loot[@level='1,999999']/@prob">.17</set>
+	<set xpath="//lootprobtemplate[@name='high']/loot[@level='1,999999']/@prob">.24</set>
 	<!-- Лут для пластиковых бочек -->
 	<append xpath="/lootcontainers">
 		<lootcontainer name="cntBarrelPlasticSingle00" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
