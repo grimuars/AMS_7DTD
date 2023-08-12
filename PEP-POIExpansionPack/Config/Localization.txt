@@ -1,0 +1,381 @@
+key,english
+PEP_4Apartments_TopMinder,Top Airbnb Foursome
+PEP_7EndStore_Jackelmyer,Jackelmyer's 7 End Store
+PEP_A16_abandoned_house_01,The Ech Residence
+PEP_A16_abandoned_house_02,The Wheel Residence
+PEP_A16_abandoned_house_03,The Caeldan Residence
+PEP_A16_abandoned_house_04,The KySoto Residence
+PEP_A16_abandoned_house_05,Erik's Residence
+PEP_A16_abandoned_house_06,Myth's Residence
+PEP_A16_abandoned_house_07,The Krunch Residence
+PEP_A16_abandoned_house_08,The Grumpy Residence
+PEP_A16_cave_01,Man Cave of Not Caring
+PEP_A16_cave_02,MC's Moderate Man Cave
+PEP_A16_cave_03,Mordekaiser's Man Cave
+PEP_A16_cave_04,Tobic's Wicked Man Cave
+PEP_A16_fire_station_01,Abandoned Firestation
+PEP_A16_houseblue1,The Norris Residence
+PEP_A16_housebrick1,The Jenkins Residence
+PEP_A16_housegreen1,The Astley Residence
+PEP_A16_houseranchblue1,The Mitchnik Residence
+PEP_A16_houseranchtan1,The Floyd Residence
+PEP_A16_houseranchtan2,The Hendrix Residence
+PEP_A16_houseranchwhite1,The Bowie Residence
+PEP_A16_housestucco2,The Jefferson Residence
+PEP_A16_housestucco3,The Morrison Residence
+PEP_A16_housetan2,The Ozric Residence
+PEP_A16_housetanpyramid2,The Puck Residence
+PEP_A16_housewhite1,The Rizzo Residence
+PEP_A16_housewhite1basement,The Logue Residence
+PEP_A16_housewhite2,The Johnson Residence
+PEP_A16_housewhitepyramid1,Fuck House
+PEP_A16_housewhitepyramid2,The Peterson Residence
+PEP_A18_store_book_lg_01,Crack-a-Book
+PEP_A18_store_book_sm_01,Petite Crack-a-Book
+PEP_A18_store_grocery_lg_01,Super Shamway
+PEP_A18_store_grocery_sm_01,Shamway
+PEP_A18_store_gun_lg_01,Super Shotgun Messiah
+PEP_A18_store_gun_sm_01,Shotgun Messiah
+PEP_A18_store_hardware_lg_01,Working Stiff for Business
+PEP_A18_store_hardware_sm_01,Working Stiff
+PEP_A18_store_pharmacy_sm_01,Pop-N-Pills Mini-Mart
+PEP_A19_bar_theater_01,Dobbers Bar and Theater
+PEP_A19_bombshelter_lg_01,Alex Jones Prep Bunker
+PEP_A19_Crack_A_Tower,Crack-a-Book Tower
+PEP_A19_fire_station_02,Firestation North
+PEP_A19_house_old_spanish_01,Viejo Hogar Profundo
+PEP_A19_prison_01,Juvenile Correctional Facility
+PEP_A19_school_daycare_01,Poopy Pants Daycare
+PEP_A19_school_k6_01,Favales Academy
+PEP_A19_store_pawn_01,Vick's Pawn Shop
+PEP_A20_water_tower_01,Water Tower #4
+PEP_A20_water_tower_02,Water Tower #5
+PEP_A20_water_tower_03,Water Tower #6
+PEP_abandoned_trader_bob_lemonpie,Trader Bob?
+PEP_abandoned_trader_hugh_Lemonpie,Trader Hugh?
+PEP_abandoned_trader_jen_lemonpie,Trader Jen?
+PEP_abandoned_trader_joel_lemonpie,Trader Joel?
+PEP_abandoned_trader_rekt_lemonpie,Trader Rekt?
+PEP_Adam_House_Z1_DMC,Adam's DMC House
+PEP_Airport_01_Zyncosa,International Zyncosa Airport
+PEP_airport_rundown_gt,Rundown GT Airport
+PEP_Alms_house_ex_vanilla_ornate03,Alms House Ornate03
+PEP_AmityvilleHorrorHouse_Swolk,Amityville Horror House
+PEP_AnarchyHighriseLab_NLEagle,Anarchy Highrise Lab
+PEP_Ancient_Apache_Ground__BLAPLAYGIRL,Ancient Apache Grounds 
+PEP_ancient_tomb_bigstep70,Ancient Bigstep Tomb
+PEP_Apartment_Gertle,Gertle's Cheesy Apartments 
+PEP_Apartment_Spider,Spider's Luxury Apartments
+PEP_Apartment_Stores_Laz_Man,Lazman Commercial Apartments
+PEP_Apartments_01_Zyncosa,High End Zyncosa Apartments
+PEP_Apartments_Batman,Apartments of Disbelief
+PEP_Apaxco_Industrial_(Gouki-KrunchEdit),Apaxco Building Materials 
+PEP_Army_01_Zyncosa,Military Missile Launch Site
+PEP_Army_02_Zyncosa,Incognito Army Base
+PEP_Army_03_Zyncosa,Small Military Site
+PEP_Army_Airport_01_(Krunch-Ouch-Pille-NLBE),Small Military Airport
+PEP_army_camp_universal,Fort Universal
+PEP_ArtGallery_Wsiegel,Art Gallery For Old People
+PEP_Asylum_Wsiegel,Asylum For The Insane
+PEP_Badonkadonk_CaptainandMental,Toilet Paper Factory
+PEP_Bank_Guppycur,Guppycur Savings Bank
+PEP_Bank_Limodor,Limodor Investment Bank
+PEP_Basement01_PVWolfgang,Wolfgang's Hidden Basement
+PEP_Baskins_Nauti_Angel,Baskins Nauti Angel
+PEP_Bike_Shop_War3zuk,Cheap Bike Shop
+PEP_Bills_1_Theodryck,Theodryck's Bills Incorporated
+PEP_Blue_House_TopMinder_and_Pille,Open Door Policy
+PEP_Book_Stop_Hydroponic,Hydroponic's Book Stop
+PEP_Bookstore_Kayido,Kayido's Tiny Book Store
+PEP_BoxingGym_KamR,Boxing Gym: Kamr
+PEP_Boys_Only_Hotel__SWAG,Boys Only Hotel Swag
+PEP_bridgesideapartmentsA16_Batman,Bridge Side Batman Apartments
+PEP_Brownstones_House_Laz_Man,Brownstones Laz Man Housing
+PEP_Bunker_Pille,Pille's Bunker Of Comfort
+PEP_burialshrine_snake0567,Snakes Burial Shrine
+PEP_burntshell_Evilracc0on,Burnt Residence #3
+PEP_Burrows_Nauti_Angel,Nauti's Burrow Farm
+PEP_Bus_Depot_Hydroponic,Bus Depot: Hydroponic
+PEP_Cabin_Sudo,Sudo's Fancy Cabin
+PEP_Cantine_Limodor,Limodor's Five Star Cantine
+PEP_CanucksCoffee_Genosis,Canucks Coffee Genosis
+PEP_Canyon_Cave_War3zuk,Shady Canyon Cave
+PEP_Car_Dealership_new_p1ut0nium,Premium Car Dealership
+PEP_Car_Dealership_old_P1ut0nium,Affordable Car Dealership
+PEP_Cattle_Yard_Mana_Gobarg,Mana Gobarg's Cattle Yard
+PEP_Cattle_Yard1_Mana_Gobarg,Mana Gobarg's Cattle Yard
+PEP_Cave1_NAGGcommunity,Nagg's Community Cave
+PEP_CDC_Mission_TheFootpad,Center for Disease Control 
+PEP_Cell_Tower_LuckyStar,Cellular Tower #1
+PEP_celltower_2_axebeard,Cellular Tower #2
+PEP_celltower_2_waste_axebeard,Fallen Cellular Tower
+PEP_ChemicalDepot_Lemonpie,Chemical Depot
+PEP_Church_01_LazMan,Church of the Laz Man
+PEP_Church_Guppycur,Church of the Guppy
+PEP_cityhouse3_Kam,Old Apartment Building
+PEP_CityPark_Spider,Spider Bright City Park
+PEP_Cliff_House_War3zuk,Sunny Cliff House
+PEP_Container_house_Evilracc0on,Raccoon's Evil Container House
+PEP_ConvenienceStore1_Guppycur,Guppy Mart Convenience
+PEP_Coronado_barn_lg_Slaan,Sven and Bobs Clownschool
+PEP_Coronado_cornfield_crash_Slaan,Slaans Bustour Crash Site
+PEP_Coronado_cornfield_missle_silo_Slaan,Slaans Coronado Missle Silo
+PEP_Coronado_farmedField_Slaan,Abandoned Farm Field
+PEP_Coronado_farmSheds_Slaan,Abandoned Farm Sheds
+PEP_Coronado_shamway_plant_Slaan,Shamway Production Plant
+PEP_CountyJail_Volar,County Jail Volar
+PEP_CQC_HOUSE_Evilracc0on,CQC House: Evilraccoon
+PEP_CQC_HOUSE_XXX,CQC House: XXX
+PEP_cult_Evilracc0on,Sacrificial Cultist Temple
+PEP_Dark_Mausoleum32_LuckyStar,Dark Mausoleum
+PEP_Dave_Home_2_DMC,Daves DMC Home
+PEP_deerstand_2_axebeard,Deerstand
+PEP_Diverse_01_Zyncosa,Zyn's Cosy Hideout
+PEP_Doctors_Office_Bostonlondon,Doctor Boston London
+PEP_donut_shop_bigstep70,Donut Shop Bigstep
+PEP_Dormerhouse_TopMinder,Dormer House TopMinder
+PEP_DriveIn_NAGG_Genosis,Drive In Movie Theater
+PEP_DriveIn_Wsiegel,Drive In Movie Theater #2
+PEP_drivethru_bigstep70,The Snack Shack Drive Thru
+PEP_ExcavatorMassGrave_Pille,Excavator Party For 50
+PEP_exfarmstead_owl79,Owl's 79th Farmstead
+PEP_Experimentalhouse_TopMinder,Minder's Top Notch House
+PEP_Farm_BigC90210,The Big C Farm
+PEP_Firedepartment_Guppycur,Firestation West
+PEP_Firehouse_Warsaken,Firestation South
+PEP_Firestation_Slick50,Firestation East
+PEP_Firewatchtower_SciFiFlippa,Fire Watchtower
+PEP_Flagstonemansion_sm_elitelex,Lex's Flagstone Mansion
+PEP_flighttower_NLEagle,Flight Tower: Dutch Eagle
+PEP_fp_house_medium_002_Frank_Souza,Frank Souza's Humble Home
+PEP_Frat_house_EvilRacc0on,Favales Academy Frat House
+PEP_fuelstation_NLEagle,Fuel Purification Station
+PEP_FuneralHome_Wsiegel,Funeral Home: W.Siegel
+PEP_FuneralParlor_Zombieman,Funeral Parlor: Zombieman
+PEP_GasnWash32_LuckyStar,Gas 'n Wash
+PEP_GasStation_Warsaken,Abandoned Gas Station 
+PEP_Glass_factory_big_Khyber,Khyber Glass Factory
+PEP_Graveyard_Hydroponic,Recently Disturbed Graveyard
+PEP_greenhouse_01_FLESHUS,Fleshus Corp. Green Housing
+PEP_Guarantine_Post_NLEagle,Quarantine Post: Dutch Eagle
+PEP_Guildhall_ex_vanilla_ornate01,Ornate Guild Hall
+PEP_HarbingerLabs_Riahsaurus_Rex,Harbinger Labs
+PEP_Haulier_lg_Limodor,Large Limodorian Haulier
+PEP_Haulier_md_Limodor,Medium Limodorian Haulier
+PEP_HBW_Metro_Station_Hydroponic,HBW Metro Station
+PEP_Hicks_Family_Diner_Hydroponic,Hicks Family Diner
+PEP_hideout_axebeard,Axebeards Secret Hideout
+PEP_hideout_TopMinder_and_Pille,Picknick Hideout
+PEP_Hightop_Curbolt,Social Club De Bilderberg
+PEP_HNHouse_Hernan,The Hernan Residency
+PEP_Hobbit_Limodor,Limodor's Hobbit Hideout
+PEP_homestead_Mana,Gobarg's Country Homestead
+PEP_Hospital_Wsiegel,Wsiegels Brainworm Memorial
+PEP_Hostel_TopMinder,Hostel TopMinder
+PEP_Hotel_01_Zyncosa,Hotel Zyncosa
+PEP_Hotel_Construction_Site_01_Zyncosa,Hotel Zyncosa Construction
+PEP_House_04_Zyncosa,The Zyncosa Residence
+PEP_House_05_Zyncosa,The Jackson Residence
+PEP_House_06_Zyncosa,The Flintstone Residence
+PEP_House_08_Zyncosa,The White Residence
+PEP_House_09_Zyncosa,The Escobar Residence
+PEP_House_11_Zyncosa,The Thatcher Residence
+PEP_House_AF01P_19x35_Nodabba,The Nodabba Residence
+PEP_House_AF02P_17x16_Nodabba,The Allen Residence
+PEP_House_AF02R_19x35_Nodabba,The Martinez Residence
+PEP_House_AF03R_37x53_Nodabba,The Harris Residence
+PEP_House_AF04P_15x15_Nodabba,The Anderson Residence
+PEP_House_AF04R_15x15_Nodabba,The Brown Residence
+PEP_House_AF05P_14x19_Nodabba,The Lee Residence
+PEP_House_AF05R_14x17_Nodabba,The Miller Residence
+PEP_House_AF06R_29x30_Nodabba,The Campbell Residence
+PEP_House_Burnt_001_Krunch,October's Last Fire
+PEP_House_Burnt_002_Krunch,Burnt Residence #2
+PEP_House_Burnt_004_Krunch,Burnt Residence #4
+PEP_House_Burnt_005_Krunch,Burnt Residence #5
+PEP_House_Burnt_006_Krunch,Burnt Residence #6
+PEP_House_Burnt_007_Krunch,Burnt Residence #7
+PEP_House_Burnt_008_Krunch,Burnt Residence #8
+PEP_House_LastI,The Lastl Residence
+PEP_house_modern_01_Kam,The Kam Residence
+PEP_house_modern_02_Kam,The Jones Residence
+PEP_house_modern_03_Kam,The Taylor Residence
+PEP_house_modern_04_Kam,The Williams Residence
+PEP_house_modern_05_Kam,The Müller Residence
+PEP_house_old_tudor_06_Pille,The Pille Residence
+PEP_House_ShoNuff,The Shonuff Residence
+PEP_house_suburb_01_LazMan,The Laz Man Residence
+PEP_house01_Guppycur,The Guppycur Residence
+PEP_house02_Guppycur,The Schmidt Residence
+PEP_house03_Guppycur,The Schneider Residence
+PEP_house04_Guppycur,The Fischer Residence
+PEP_house05_Guppycur,The Weber Residence
+PEP_house2_Curbolt,The Curbolt Residence
+PEP_house3_Curbolt,The Gomez Residence 
+PEP_house4_Curbolt,The Sanchez Residence
+PEP_house7_Curbolt,The Fournier Residence
+PEP_housewhiteblue_owl79,The Guillaume Residence
+PEP_Hunters_rest_Evilracc0on,Hunters Rest: Evil Raccoon
+PEP_Hydro_Plant_LuckyStar,Water Treatment Plant
+PEP_Industry_01_Zyncosa,Beton Blocks Holdings Ltd.
+PEP_Industry_02_Zyncosa,Car Slaughterhouse
+PEP_Industry_03_Zyncosa,Water Treatment Plant #2
+PEP_Industry_04_Zyncosa,Small Concrete Factory
+PEP_Industry_06_Zyncosa,Military Chemical Depot
+PEP_Industry_07_Zyncosa,Industrial-Military Complex
+PEP_Info_Center_LuckyStar,DMV Info Center
+PEP_InsaneAsylum_Genosis,Psychiatric Hospital: Genosis
+PEP_Italo_Restaurant_axebeard,Italo Axebeard Restaurant
+PEP_IZEA_market_Genosis,IZEA Mega Market
+PEP_JoJos_JSDoctor,JoJos Diner
+PEP_Junkyard_Hydroponic,Junkyard Parking Lot
+PEP_KarenHouse_Kayido,The Kayido Residence
+PEP_Knolby_Cabin_1981_Klaus0Engel,Knolby Cabin
+PEP_KooshieMart_Kayido,Kooshie Mart
+PEP_kuldbrickhouse_Kuldiin,The Nguyen Residence
+PEP_kuldlargehouse_Kuldiin,The Kuldiin Residence
+PEP_LakesideLodge_Kam,Lakeside Kam Lodge
+PEP_Leisure01_Zyncosa,Zyncosa's Leisure Castle
+PEP_Library_NAGG,The Nagg Library
+PEP_Library_War3zuk,The War3zuk Library
+PEP_Lighthouse_NAGG,Abandoned Lighthouse
+PEP_LittleLeagueBaseball_Curmudgeon,Little League Baseball 
+PEP_LumberMill_IceJudge,Small Lumber Mill
+PEP_Mall_DOD,DOD Super Mall
+PEP_Manorhouse_WereWulfen,WereWulfen Manor House
+PEP_mass_grave_2_Evilracc0on,Mass Grave
+PEP_McDonalds_BigC90210,McDonald's #90210
+PEP_McDowell_restaurant_LazMan,McDowell Restaurant
+PEP_Military_Camp_War3zuk,Military War Camp
+PEP_MinderManor_TopMinder,Minder Residency Manor
+PEP_Mine1_NAGG_DaphyDuck91,Rick's Danger Mining
+PEP_MiniBikeRaceTrack_Spider,Mini Bike Race Track
+PEP_MiniMall_Spider,Mini Mall
+PEP_ModernArtGallery_Pille_TopMinder,Modern Art Gallery
+PEP_Modernhouse02_TopMinder,The Fraser Residency
+PEP_modernvilla_owl79,The Hamilton Residency
+PEP_MonsterFlexGym_Swolk,Monster Flex Gym
+PEP_moonshiner_Evilracc0on,Raccoon Moonshine and Co.
+PEP_Motel_Limodor,Musky Limodor Motel
+PEP_Multi_Storey_War3zuk,Multi Storey
+PEP_MultiStore_ANT,Multi Store
+PEP_nationalparkLodge_Laz_Man,National Park Lodge
+PEP_Nicehouse_BigC90210,The Thompson Residency
+PEP_NSiteMissileSilo_Ephoie,Nuclear Missile Silo
+PEP_Nuclear_Powerplant_Rocky,Small Nuclear Powerplant
+PEP_Nuka_Factory_bdubyah,The Nuka Factory
+PEP_Nuket0wn_Limodor,Nuke Town Community
+PEP_Office_Wsiegel,Wsiegel Ltd. Office
+PEP_Oil_PumpJack_Hydroponic,Desolated Oil Pumpjack
+PEP_Orphanage_ex_vanilla_ornate02,Lost Hope Orphanage
+PEP_Overlook_Hotel_Master_Quagmire1428,Quagmires Overlook Hotel
+PEP_Paintballarena_Jackelmyer,Shootn Balls Paintball Park
+PEP_Pantilehouse_TopMinder,The Torqqed Residency
+PEP_Park_Bostonlondon,Small Park
+PEP_PersianMansion_saeid,Saeid's Persian Mansion
+PEP_PetStore_Jackelmyer,Fluffy Bottoms Pet Store
+PEP_PG_BusStstion_Dragoness,Bus Station Remains
+PEP_Plant_Wsiegel,Hydro Plant
+PEP_Power_Station_LuckyStar,Power Station
+PEP_powerplant_Kam,Large Nuclear Powerplant 
+PEP_prefabhome1_Riahsaurus_Rex,The Riahsaurus Residency
+PEP_Prison_Limodur,High Security Prison
+PEP_Prison1_Curbolt,Curbolt Prison
+PEP_Public_Pool_Warsaken,Pissy Waters Public Pool
+PEP_QuietPinesSpecial_hernan,The Hernan Estate
+PEP_RaceTrack_Guppycur,Guppys Moto Sports Track
+PEP_Rangercabin_Guppycur,Guppycurs Ranger Cabin
+PEP_Recycling_Limodor,Limodor Recycling Ltd. 
+PEP_red_mesa_alpha_labs_Pille,Red Mesa Alpha Compound
+PEP_RedCatDiner_Najax,Red Cat Diner
+PEP_Redhouse_TopMinder,Minder's Top Estate
+PEP_remnant_waste_01_LazMan,Small Redneck Hideout
+PEP_remnant_waste_02_LazMan,Remnant Redneck Hideout
+PEP_ResearchStation_NLEagle,Research Station: Dutch Eagle
+PEP_Resident_Evil_Mansion__Frantic_Dan,Frantic Dan's Mansion
+PEP_Restaurant_Gertle,Gertle's Noble Foods
+PEP_ritualsite_1_axebeard,Forgotten Ritual Site
+PEP_ritualsite_2_axebeard,Fresh Ritual Site
+PEP_RoadHouse_Mana_Gobarg,Gobargs Gas 'n Grub
+PEP_RocketLaunchPad_Saeid,Rocket Launch Pad
+PEP_Roundhouse_TopMinder,Corporate Colosseum
+PEP_Safehouse_Limodor,Failed Safehouse
+PEP_Sawmill_Pille,Wood Processing Plant
+PEP_SC_Bunker_Rhapsodos,Tiny Bunker
+PEP_SC_steakhouse01_Dragoness,Steakhouse Dragoness Grill
+PEP_School_LazMan,Small Elementary School
+PEP_Science_lab_kinklade,Army Research Facility
+PEP_seafoodshop_Guppycur,Guppy Seafood Shop
+PEP_serial_killer_01_FLESHUS,The Fleshus Residency
+PEP_sewer_layout_Evilracc0on,Covefe Sewer Coffee
+PEP_shantytown_Evilracc0on,Shady Shanty Town
+PEP_ShoppingCenter_Galleria_Laz_Man,Galleria Shopping Center
+PEP_Shoppingcenter_TopMinder,Shopping Center
+PEP_Shrub_Conservatory_Werewulfen,Shrubs Conservatory
+PEP_SkiResort_Bar_NLEagle,Here-4-Beer Ski Resort 
+PEP_skyhigh_Gobarg_Mana,Gobarg Corp. Skyhigh Plaza
+PEP_Skyscraper_05_Pepps_Tower_Krunch,Reasonably Tall Skyscraper
+PEP_Sky-Twintowers_TopMinder,Sky Twin Towers
+PEP_SlavCo_SuperMarket_Hydroponic,SlavCo Super Market
+PEP_Small_Cafe_1_Bostonlondon,Small Café
+PEP_Small_House_ThetruJames,James Humble House
+PEP_SmallWoodhouse_TopMinder,Minders Humble Home
+PEP_Split_Level_CraterCreator,The Crater Residence
+PEP_Stonehouse_TopMinder,The Nelson Residence
+PEP_Storage_ShoNuff,Shonuff's Storage Palace
+PEP_Store_Automotive_sm_Laz_Man,Laz Pass-n-Gass Man
+PEP_storeset1_Guppycur,Guppys Sextoy Rental Service
+PEP_storeset2_Guppycur,Small Raided Store
+PEP_Strip_Mall_Large_shops_Hydroponic,Large Strip Mall
+PEP_StripClub_Wsiegel,Abandoned Strip Club
+PEP_stripmall_axebeard,Sunup Plaza Stripmall
+PEP_Stripmall_Guppycur,Forgotten Stripmall
+PEP_SUBDAY_Swolk,Subday Restaurant
+PEP_Subway_NAGG_Rick,Underground Subway Station
+PEP_Supermarket_01_Zyncosa,Outdoor Multi Store
+PEP_Supermarket_02_Zyncosa,Mini Shamway
+PEP_Supermarket_03_Zyncosa,Mini Pop-N-Pills
+PEP_Supermarket_04_Zyncosa,Mini Shotgun Messiah
+PEP_Supermarket_05_Zyncosa,Mini Crack-A-Book
+PEP_Supermarket_06_Zyncosa,Mini Working Stiff
+PEP_Supermarket_07_Zyncosa,Zyncosa's Private Stash
+PEP_Supermarket_08_Zyncosa,Mega Mall: Zyncosa
+PEP_SuperStore_Volar,Volar Super Store
+PEP_TacoBele_Swolk,Taco Bele
+PEP_Tank_Garage_LuckyStar,Lucky Tank Garage
+PEP_Tavern_Limodor,Limodors Tavern
+PEP_TheMill_MoNKeYest1,Millstead The Monkey Yest
+PEP_timbershop_magoli,Magoli's Old Timbershop
+PEP_TittyTwister_Sorrowthief,The Titty Twister
+PEP_TownHall_Guppycur,Country Town Hall
+PEP_townsquare_snake0567,The Snake Estate
+PEP_townvilla_owl79,The Owl Residency
+PEP_Trailer_Sorrowthief,Rekts Abanoned Trailer
+PEP_Trailerhousemix01,The Sato Residency
+PEP_Trailerhousemix02,The Tanaka Residency
+PEP_Trailerhousemix03,The Yamamoto Residency
+PEP_Trailerhousemix03_SandyBeaches,The Murphy Residency
+PEP_Trailerhousemix04,The Collins Residency
+PEP_Trailerhousemix04_SandyBeaches,The Sandy Beaches Estate
+PEP_trainstationRiah_Riahsaurus_Rex,Old Train Station
+PEP_UFO_NAGG_Ryan,Unidentified Flying Object
+PEP_UnionStation_BuLLeTZ,Union Info Centre
+PEP_Utility_Combo_LuckyStar,Electrical Substation
+PEP_Vet_Clinic_Firecat,Jaws 'n Claws Clinic
+PEP_Villa_Limodor,The Ferreira Estate
+PEP_Villa_TopMinder,The Teixeira Estate
+PEP_Walcart_Swolk,Walcart Super Center
+PEP_Wank_Bank_Hydroponic,Wank Bank Savings Ltd. 
+PEP_Warehouse_Batman,Warezhouze Storage Corp.
+PEP_Warehouse_Illidua,Stiffs Toys Cargo Center
+PEP_warehouse_NLEagle,Small Army Warehouse
+PEP_watchtower_01_FLESHUS,Wooden Watch Tower
+PEP_watchtower_02_FLESHUS,Concrete Watch Tower
+PEP_WaterPark1_NAGGcommunity,Whale SeaWorld Park
+PEP_Wooden_Palisade_LuckyStar,Wooden Palisade
+PEP_Wooden_Store_Guppycur,Old Wooden Store
+PEP_Woodhouse_TopMinder,The Shchulz Residency
+PEP_WulftownA_WereWulfen,The Were Wulfen Estate
+PEP_WulftownCD_WereWulfen,The Hoffmann Estate
+PEP_WWHouse_IceJudge,The Becker Residency
+PEP_ZombieZoo_Wsiegel,Zombie Zoo
