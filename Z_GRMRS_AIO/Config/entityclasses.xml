@@ -9,12 +9,12 @@
 		<passive_effect name="PlayerExpGain" operation="perc_add" value="0.1" tags="Selling">
 			<requirement name="PlayerLevel" operation="LT" value="50"/>
 		</passive_effect>
-		<!-- С 50 уровня 70% опыта от торговли -->
-		<passive_effect name="PlayerExpGain" operation="perc_add" value="0.7" tags="Selling">
+		<!-- С 50 уровня 50% опыта от торговли -->
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="0.5" tags="Selling">
 			<requirement name="PlayerLevel" operation="GTE" value="50"/>
 		</passive_effect>
-		<!-- До 50 уровня 30% опыта от добычи -->
-		<passive_effect name="PlayerExpGain" operation="perc_add" value="0.3" tags="Harvesting">
+		<!-- До 50 уровня 20% опыта от добычи -->
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="0.2" tags="Harvesting">
 			<requirement name="PlayerLevel" operation="LT" value="50"/>
 		</passive_effect>
 		<!-- До 50 уровня в 2 раза больше опыта от убийств -->

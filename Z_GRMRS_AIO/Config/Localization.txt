@@ -19,3 +19,6 @@ reqLevel35,progression,,,Character Level 35,Уровень персонажа 35
 reqLevel55,progression,,,Character Level 55,Уровень персонажа 55
 reqLevel75,progression,,,Character Level 75,Уровень персонажа 75
 reqLevel95,progression,,,Character Level 95,Уровень персонажа 95
+
+lblContextCraftCount,UI,Item Context Menu,,Count,,"Кол-во"
+modGunShotgunTubeExtenderMagazineDesc,item_modifiers,Mod,,"Increases magazine capacity for pump shotguns by 37,5%.","Увеличивает ёмкость магазина помпового ружья на 37,5%".
