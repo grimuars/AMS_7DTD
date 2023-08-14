@@ -354,15 +354,15 @@
 	</append>
 	<!-- Стеклянные стрелы -->
 	<append xpath="/recipes">
-		<recipe name="ammoArrowFiberglass" count="1" craft_area="workbench">
-			<ingredient name="resourceArrowHeadFiberglass" count="1"/>
-			<ingredient name="resourceScrapPolymers" count="4"/>
-			<ingredient name="resourceMechanicalParts" count="2"/>
+		<recipe name="ammoArrowFiberglass" count="2" craft_area="workbench">
+			<ingredient name="resourceArrowHeadFiberglass" count="2"/>
+			<ingredient name="resourcePE" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
 		</recipe>
-		<recipe name="ammoCrossbowBoltFiberglass" count="1" craft_area="workbench">
-			<ingredient name="resourceArrowHeadFiberglass" count="1"/>
-			<ingredient name="resourceScrapPolymers" count="4"/>
-			<ingredient name="resourceMechanicalParts" count="2"/>
+		<recipe name="ammoCrossbowBoltFiberglass" count="2" craft_area="workbench">
+			<ingredient name="resourceArrowHeadFiberglass" count="2"/>
+			<ingredient name="resourcePE" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="4"/>
 		</recipe>
 		<recipe name="resourceArrowHeadFiberglass" count="6" craft_area="workbench" tags="learnable">
 			<ingredient name="resourceBrokenGlass" count="12"/>
@@ -371,12 +371,12 @@
 		</recipe>
 		<recipe name="ammoBundleArrowFiberglass" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
 			<ingredient name="resourceArrowHeadFiberglass" count="240"/>
-			<ingredient name="resourceScrapPolymers" count="960"/>
+			<ingredient name="resourcePE" count="480"/>
 			<ingredient name="resourceMechanicalParts" count="480"/>
 		</recipe>
 		<recipe name="ammoBundleCrossbowBoltFiberglass" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
 			<ingredient name="resourceArrowHeadFiberglass" count="240"/>
-			<ingredient name="resourceScrapPolymers" count="960"/>
+			<ingredient name="resourcePE" count="480"/>
 			<ingredient name="resourceMechanicalParts" count="480"/>
 		</recipe>
 	</append>

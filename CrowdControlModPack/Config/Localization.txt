@@ -2,7 +2,7 @@ Key,File,Type,UsedInMainMenu,NoTranslate,english,russian
 modGunMeleeNiCdBatteryDA,item_modifiers,Mod,,,Crowd Control Module,Модуль контроля толпы
 modGunMeleeNiCdBatteryDADesc,item_modifiers,Mod,,,"Give zombies a buzz and stop Rad health regen. Can be used with melee and most firearms (except bows and crossbows).","Наносит электрический урон, вызывает шок и останавливает регенерацию облучённых зомби. Можно использовать с оружием ближнего боя, инструментами и оружием дальнего боя (кроме луков и арбалетов)."
 ammo762mmBulletXP,items,item,,,Ammo 7.62mm XP,"Интенсивные патроны 7,62 мм"
-ammo762mmBulletXPDesc,items,item,,,Not your average round, these pack a punch. 135 base damage to entities,"Особые боеприпасы с увеличенным уроном."
+ammo762mmBulletXPDesc,items,item,,,Not your average round, these pack a punch.,"Особые боеприпасы с увеличенным уроном."
 ammoBundle762mmBulletXP,items,item,,,Box of 7.62mm XP,"Коробка интенсивных патронов 7,62 мм"
 ammo9mmBulletXP,items,item,,,Ammo 9mm XP,"Интенсивные патроны 9 мм"
 ammo9mmBulletXPDesc,items,item,,,Not your average round, these pack a punch.,"Особые боеприпасы с увеличенным уроном."

@@ -320,7 +320,7 @@
 			</property>
 			<effect_group name="ammoArrowFiberglass" tiered="false">
 				<!-- ammoArrowIron -->
-				<passive_effect name="EntityDamage" operation="base_set" value="48" tags="perkArchery"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="70" tags="perkArchery"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="7" tags="perkArchery"/>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.7"/>
 				<display_value name="dTargetArmor" value="-.7"/>
@@ -365,7 +365,7 @@
 			<property name="StickyForwardDirection" value="0,0,1"/>
 			<effect_group name="ammoCrossbowBoltSteelAP" tiered="false">
 				<!-- ammoCrossbowBoltSteelAP -->
-				<passive_effect name="EntityDamage" operation="base_set" value="67" tags="perkArchery"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="90" tags="perkArchery"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkArchery"/>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.75"/>
 				<display_value name="dTargetArmor" value="-.75"/>
@@ -415,7 +415,7 @@
 			<property name="CustomIcon" value="ui_game_symbol_AAfiberglassarrowhead"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="MmilitaryFiber"/>
-			<property name="Stacknumber" value="500"/>
+			<property name="Stacknumber" value="1000"/>
 			<!-- STK resource -->
 			<property name="UnlockedBy" value="perkRangersAPAmmo"/>
 			<property name="EconomicValue" value="120"/>
@@ -424,6 +424,9 @@
 		</item>
 	</append>
 	<!-- Добавляем стеклянные стрелы в боеприпасы для оружия -->
-	<append xpath="/items/item[contains (@name, 'Bow') or contains (@name, 'Pacifier') and not(contains(@name, 'Crossbow'))]/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowFiberglass</append>
+	<append xpath="/items/item[@name='Pacifier']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowFiberglass</append>
+	<append xpath="/items/item[@name='gunBowT0PrimitiveBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowFiberglass</append>
+	<append xpath="/items/item[@name='gunBowT1WoodenBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowFiberglass</append>
+	<append xpath="/items/item[@name='gunBowT3CompoundBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowFiberglass</append>
 	<append xpath="/items/item[contains (@name, 'Crossbow') or contains (@name, 'Trifecta')]/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoCrossbowBoltFiberglass</append>
 </configs>

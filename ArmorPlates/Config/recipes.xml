@@ -30,15 +30,15 @@
 			<ingredient name="resourceSewingKit" count="1"/>
 		</recipe>
 		<!-- Требуемые ресурсы -->
-		<recipe name="resourceTitanium" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
-			<ingredient name="resourceCoal" count="10"/>
-			<ingredient name="resourceForgedSteel" count="4"/>
+		<recipe name="resourceTitanium" count="5" craft_area="chemistryStation" tags="chemStationCrafting">
+			<ingredient name="resourceCoal" count="40"/>
+			<ingredient name="resourceForgedSteel" count="20"/>
 		</recipe>
-		<recipe name="resourcePE" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+		<recipe name="resourcePE" count="5" craft_area="chemistryStation" tags="chemStationCrafting">
 			<ingredient name="resourceScrapPolymers" count="30"/>
 			<ingredient name="resourceOilShale" count="30"/>
 		</recipe>
-		<recipe name="resourceSiC" count="1" craft_area="chemistryStation" tags="chemStationCrafting">
+		<recipe name="resourceSiC" count="5" craft_area="chemistryStation" tags="chemStationCrafting">
 			<ingredient name="resourceCoal" count="150"/>
 			<ingredient name="resourceCrushedSand" count="50"/>
 			<ingredient name="resourceOilShale" count="10"/>

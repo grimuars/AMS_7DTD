@@ -1,5 +1,5 @@
 <ProjectMayhem>
-	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage/spawn/@maxAlive">60</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage/spawn/@maxAlive">40</set>
 	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='01']/spawn/@num">20</set>
 	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='02']/spawn/@num">21</set>
 	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='03']/spawn/@num">22</set>

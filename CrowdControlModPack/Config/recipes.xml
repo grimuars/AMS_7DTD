@@ -13,6 +13,7 @@
 			<ingredient name="resourceGunPowder" count="16"/>
 			<ingredient name="resourceElectricParts" count="6"/>
 			<ingredient name="resourceBulletCasing" count="2"/>
+			<ingredient name="resourceTitanium" count="2"/>
 		</recipe>
 		<recipe name="ammoBundle762mmBulletXP" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting">
 			<ingredient name="ammo762mmBulletXP" count="1000"/>
@@ -22,14 +23,16 @@
 			<ingredient name="resourceGunPowder" count="6400"/>
 			<ingredient name="resourceElectricParts" count="2400"/>
 			<ingredient name="resourceBulletCasing" count="800"/>
+			<ingredient name="resourceTitanium" count="800"/>
 		</recipe>
-		<recipe name="ammo9mmBulletXP" count="1" craft_time="2" craft_area="workbench" tags="workbenchCrafting">
+		<recipe name="ammo9mmBulletXP" count="2" craft_time="2" craft_area="workbench" tags="workbenchCrafting">
 			<ingredient name="resourceBulletTip" count="4"/>
 			<ingredient name="resourceGunPowder" count="16"/>
 			<ingredient name="resourceElectricParts" count="6"/>
 			<ingredient name="resourceBulletCasing" count="2"/>
+			<ingredient name="resourceTitanium" count="2"/>
 		</recipe>
-		<recipe name="ammoBundle9mmBulletXP" count="60" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<recipe name="ammoBundle9mmBulletXP" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting">
 			<ingredient name="ammo9mmBulletXP" count="1000"/>
 		</recipe>
 		<recipe name="ammoBundle9mmBulletXP" count="1" craft_time="60" craft_area="workbench" tags="learnable,workbenchCrafting">
@@ -37,6 +40,7 @@
 			<ingredient name="resourceGunPowder" count="6400"/>
 			<ingredient name="resourceElectricParts" count="2400"/>
 			<ingredient name="resourceBulletCasing" count="800"/>
+			<ingredient name="resourceTitanium" count="800"/>
 		</recipe>
 	</append>
 </configs>
