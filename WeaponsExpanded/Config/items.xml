@@ -18,6 +18,21 @@
 		□ ReloadSpeedMultiplier - Reload faster
 		□ WeaponHandling - How well does the weapon handle? Only set the one with the base_set operation. -->
 	<append xpath="/items">
+		<!-- Фейковый ремнабор для имитации невозможности починки -->
+		<item name="resourceRepairKitSpecial">
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="resourceRepairKit"/>
+			<property name="CustomIconTint" value="7fffd4"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="25"/>
+			<property name="EconomicValue" value="186"/>
+			<property name="RepairTime" value="3"/>
+			<property name="RepairAmount" value="32000"/>
+			<property name="Group" value="Resources"/>
+		</item>
 		<item name="DementivemeleeWpnBladeHellHound">
 			<property name="Extends" value="meleeWpnBladeT3Machete"/>
 			<property name="CustomIcon" value="DementivemeleeWpnBladeHellHound"/>
@@ -26,7 +41,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<property class="Action0">
 				<property name="Class" value="DynamicMelee"/>
 				<property name="Damage_type" value="Piercing"/>
@@ -122,7 +137,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<property class="Action0">
 				<property name="Class" value="Launcher"/>
 				<property name="Delay" value=".8"/>
@@ -203,7 +218,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<property class="Action0">
 				<property name="Class" value="Launcher"/>
 				<property name="Hitmask_override" value="Arrow"/>
@@ -292,7 +307,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<property class="Action0">
 				<property name="Class" value="Catapult"/>
 				<!-- Catapult might not be the best name for it but it can also be used for a slingshot -->
@@ -384,7 +399,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<property class="Action0">
 				<property name="Class" value="DynamicMelee"/>
 				<property name="Sound_start" value="impact_driver_swinglight"/>
@@ -446,7 +461,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementiveHughsGlock">
 				<passive_effect name="MaxRange" operation="base_set" value="65" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="22" tags="perkGunslinger,9mmGun"/>
@@ -503,7 +518,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementiveDesertRedeemer">
 				<passive_effect name="MaxRange" operation="base_set" value="55" tags="perkGunslinger"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="30" tags="perkGunslinger"/>
@@ -559,7 +574,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 			<effect_group name="DementivegunHandgunT2Magnum44">
 				<passive_effect name="MaxRange" operation="base_set" value="80" tags="perkGunslinger"/>
@@ -616,7 +631,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivegunHandgunT3SMG5">
 				<passive_effect name="MaxRange" operation="base_set" value="85" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="45" tags="perkGunslinger,9mmGun"/>
@@ -673,7 +688,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivegunMGT1AK47">
 				<passive_effect name="MaxRange" operation="base_set" value="115" tags="perkMachineGunner"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="85" tags="perkMachineGunner"/>
@@ -733,7 +748,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivegunMGT2TacticalAR">
 				<passive_effect name="MaxRange" operation="base_set" value="110" tags="perkMachineGunner"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="55" tags="perkMachineGunner"/>
@@ -791,7 +806,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivegunMGT3M60">
 				<passive_effect name="MaxRange" operation="base_set" value="95" tags="perkMachineGunner"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="55" tags="perkMachineGunner"/>
@@ -850,7 +865,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivegunRifleT1HuntingRifle">
 				<passive_effect name="MaxRange" operation="base_set" value="160" tags="perkDeadEye"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="75" tags="perkDeadEye"/>
@@ -908,7 +923,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivegunRifleT2LeverActionRifle">
 				<passive_effect name="MaxRange" operation="base_set" value="160" tags="perkDeadEye"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="65" tags="perkDeadEye"/>
@@ -968,7 +983,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivegunRifleT3SniperRifle">
 				<passive_effect name="MaxRange" operation="base_set" value="170" tags="perkDeadEye"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="75" tags="perkDeadEye"/>
@@ -1026,7 +1041,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivegunShotgunT1DoubleBarrel">
 				<passive_effect name="MaxRange" operation="base_set" value="40" tags="perkBoomstick"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="15" tags="perkBoomstick"/>
@@ -1076,7 +1091,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,bottomAttachments,attStrength,perkBoomstick,modGunShotgunTubeExtenderMagazine,attachmentsIncluded,canHaveCosmetic,shotgunSkill"/>
 			<effect_group name="DementivegunShotgunT2PumpShotgun">
 				<passive_effect name="MaxRange" operation="base_set" value="60" tags="perkBoomstick"/>
@@ -1129,7 +1144,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivegunShotgunT3AutoShotgun">
 				<passive_effect name="MaxRange" operation="base_set" value="40" tags="perkBoomstick"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="12" tags="perkBoomstick"/>
@@ -1181,7 +1196,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivemeleeToolAxeT1IronFireaxe">
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="70" tags="perkMiner69r,axe"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="17.9" tags="primary"/>
@@ -1235,7 +1250,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivemeleeToolAxeT2SteelAxe">
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkMiner69r,axe"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="28.9" tags="primary"/>
@@ -1289,7 +1304,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivemeleeToolAxeT3Chainsaw">
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="350" tags="perkMiner69r"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="5500,12000" tier="1,6" tags="perkMiner69r"/>
@@ -1354,7 +1369,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivemeleeToolAxeT3Auger">
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="350" tags="perkMiner69r"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="5500,12000" tier="1,6" tags="perkMiner69r"/>
@@ -1417,7 +1432,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivemeleeWpnBatonT2StunBaton">
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="80" tags="perkElectrocutioner,perkFlurryOfIntellect"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="13.5" tags="primary"/>
@@ -1619,7 +1634,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivemeleeWpnClubT3SteelClub">
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="90" tags="perkPummelPete,perkFlurryOfStrength"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="14.7" tags="primary"/>
@@ -1663,7 +1678,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivemeleeWpnKnucklesT3SteelKnuckles">
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="140" tags="perkBrawler,perkFlurryOfFortitude"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="7.2" tags="primary"/>
@@ -1718,7 +1733,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivemeleeWpnSledgeT3SteelSledgehammer">
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="35" tags="perkSkullCrusher,perkFlurryOfStrength"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="35" tags="primary"/>
@@ -1761,7 +1776,7 @@
 			<property name="TintColor" value="139,0,0"/>
 			<property name="UMA.Overlay0Tint" value="139,0,0"/>
 			<property name="DegradationBreaksAfter" value="true"/>
-			<property name="RepairTools" value="foolsCapAdmin"/>
+			<property name="RepairTools" value="resourceRepairKitSpecial"/>
 			<effect_group name="DementivemeleeWpnSpearT3SteelSpear">
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkJavelinMaster"/>
 				<display_value name="dTargetArmor" value="-.5"/>

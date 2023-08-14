@@ -48,4 +48,34 @@
 			<item name="foodShamSandwich" count="0,2" prob="0.5"/>
 		</lootcontainer>
 	</append>
+	<!-- Лут со стеклянными стрелами -->
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='group9mmSmall']">
+		<lootgroup name="groupResourceArrowHeadFiberglassSmall">
+			<item name="resourceArrowHeadFiberglass" count="2,4" loot_stage_count_mod="0.01"/>
+		</lootgroup>
+		<lootgroup name="groupResourceArrowHeadFiberglassMedium">
+			<item name="resourceArrowHeadFiberglass" count="4,6" loot_stage_count_mod="0.01"/>
+		</lootgroup>
+		<lootgroup name="groupResourceArrowHeadFiberglassLarge">
+			<item name="resourceArrowHeadFiberglass" count="6,10" loot_stage_count_mod="0.01"/>
+		</lootgroup>
+		<lootgroup name="groupFiberglassArrowMedium">
+			<item name="resourceArrowHeadFiberglass" count="4,6" loot_stage_count_mod="0.01"/>
+		</lootgroup>
+		<lootgroup name="groupFiberglassArrowLarge">
+			<item name="resourceArrowHeadFiberglass" count="6,10" loot_stage_count_mod="0.01"/>
+		</lootgroup>
+	</insertAfter>
+	<append xpath="/lootcontainers/lootgroup[@name='groupAmmoResourcesSmall']">
+		<item group="groupResourceArrowHeadFiberglassSmall"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupAmmoResourcesMedium']">
+		<item group="groupResourceArrowHeadFiberglassMedium"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupAmmoMedium']">
+		<item group="groupFiberglassArrowMedium" loot_prob_template="ProbT3"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupAmmoLarge']">
+		<item group="groupFiberglassArrowLarge" loot_prob_template="ProbT2Cap"/>
+	</append>
 </configs>

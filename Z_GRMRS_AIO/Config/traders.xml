@@ -85,4 +85,17 @@
 	<set xpath="//trader_info[@id='2']/@open_time">4:05</set>
 	<set xpath="//trader_info[@id='7']/@open_time">4:05</set>
 	<set xpath="//trader_info[@id='8']/@open_time">4:05</set>
+	<!-- Стеклянные стрелы -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='ammoSupplies']">
+		<item name="resourceArrowHeadFiberglass" count="4,12" prob="0.05"/>
+		<!-- 5 -->
+	</append>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='ammoArrowsBolts']">
+		<item name="ammoArrowFiberglass" count="10,25"/>
+		<item name="ammoCrossbowBoltFiberglass" count="10,25"/>
+	</append>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='ammoAll']">
+		<item name="ammoArrowFiberglass" count="10,25"/>
+		<item name="ammoCrossbowBoltFiberglass" count="10,25"/>
+	</append>
 </config>

@@ -86,7 +86,7 @@
 	<!-- Убираем модификацию ускорения транспорта -->
 	<remove xpath="//recipe[@name='modVehicleSuperCharger']"/>
 	<!-- Отключаем дроны -->
-	<remove xpath="//recipe[contains(@name,'Drone')]" />
+	<remove xpath="//recipe[contains(@name,'Drone')]"/>
 	<!--Увеличиваем крафт семян-->
 	<set xpath="/recipes/recipe[@name='plantedAloe1']/@count">3</set>
 	<set xpath="/recipes/recipe[@name='plantedAloe1']/ingredient[@name='resourceCropAloeLeaf']/@count">1</set>
@@ -350,6 +350,34 @@
 	<append xpath="/recipes">
 		<recipe name="flagBlockVariantHelper" count="1">
 			<ingredient name="resourceCloth" count="50"/>
+		</recipe>
+	</append>
+	<!-- Стеклянные стрелы -->
+	<append xpath="/recipes">
+		<recipe name="ammoArrowFiberglass" count="1" craft_area="workbench">
+			<ingredient name="resourceArrowHeadFiberglass" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="2"/>
+		</recipe>
+		<recipe name="ammoCrossbowBoltFiberglass" count="1" craft_area="workbench">
+			<ingredient name="resourceArrowHeadFiberglass" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+			<ingredient name="resourceMechanicalParts" count="2"/>
+		</recipe>
+		<recipe name="resourceArrowHeadFiberglass" count="6" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceBrokenGlass" count="12"/>
+			<ingredient name="resourceMilitaryFiber" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="6"/>
+		</recipe>
+		<recipe name="ammoBundleArrowFiberglass" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceArrowHeadFiberglass" count="240"/>
+			<ingredient name="resourceScrapPolymers" count="960"/>
+			<ingredient name="resourceMechanicalParts" count="480"/>
+		</recipe>
+		<recipe name="ammoBundleCrossbowBoltFiberglass" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceArrowHeadFiberglass" count="240"/>
+			<ingredient name="resourceScrapPolymers" count="960"/>
+			<ingredient name="resourceMechanicalParts" count="480"/>
 		</recipe>
 	</append>
 </recipes>

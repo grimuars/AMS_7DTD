@@ -5,6 +5,10 @@
 	<setattribute xpath="/buffs/buff[@name='buffFatigued']" name="remove_on_death">false</setattribute>
 	<setattribute xpath="/buffs/buff[@name='buffLaceration']" name="remove_on_death">false</setattribute>
 	<setattribute xpath="/buffs/buff[@name='buffInjuryConcussion']" name="remove_on_death">false</setattribute>
+	<!-- Вероятность сломать конечность при падении повышена -->
+	<insertAfter xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group/triggered_effect[@trigger='onSelfBuffStart'][@value='@_fallSpeed']">
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".impactSpeed" operation="add" value=".05656"/>
+	</insertAfter>
 	<!-- Убираем паузу восстановления выносливости при силовой атаке-->
 	<set xpath="//buff[@name='buffPowerAttackStaminaStunt']/duration/@value">0.01</set>
 	<set xpath="//buff[@name='buffStatusCheck01']/effect_group//triggered_effect[2]/@value">28800</set>

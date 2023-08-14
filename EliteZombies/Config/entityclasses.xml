@@ -31,15 +31,15 @@
 			<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 			<!-- Gameplay -->
 			<!-- <property name="Buffs" value="zombieRadiatedBuff80"/> -->
-			<property name="SizeScale" value="1.18"/>
-			<property name="ExperienceGain" value="3500"/>
+			<property name="SizeScale" value="1.25"/>
+			<property name="ExperienceGain" value="3000"/>
 			<!-- XP strong radiated -->
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 			<property name="LootDropProb" value=".5"/>
 			<!-- Radiated -->
 			<property name="MoveSpeedAggro" value="1, 1.5"/>
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="3500"/>
+				<passive_effect name="HealthMax" operation="base_set" value="3000"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 				<!-- Zombie HP scale -->
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>-->
@@ -81,15 +81,15 @@
 			<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 			<!-- Gameplay -->
 			<!-- <property name="Buffs" value="zombieRadiatedBuff80"/> -->
-			<property name="SizeScale" value="1.18"/>
-			<property name="ExperienceGain" value="3500"/>
+			<property name="SizeScale" value="1.25"/>
+			<property name="ExperienceGain" value="3000"/>
 			<!-- XP strong radiated -->
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 			<property name="LootDropProb" value=".5"/>
 			<!-- Radiated -->
 			<propertyname name="MoveSpeedAggro" value="1, 1.5"/>
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="3500"/>
+				<passive_effect name="HealthMax" operation="base_set" value="3000"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 				<!-- Zombie HP scale -->
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>-->
@@ -124,15 +124,15 @@
 			<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 			<!-- Gameplay -->
 			<!-- <property name="Buffs" value="zombieRadiatedBuff80"/> -->
-			<property name="SizeScale" value="1.18"/>
-			<property name="ExperienceGain" value="3500"/>
+			<property name="SizeScale" value="1.25"/>
+			<property name="ExperienceGain" value="3000"/>
 			<!-- XP strong radiated -->
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 			<property name="LootDropProb" value=".5"/>
 			<!-- Radiated -->
 			<property name="MoveSpeedAggro" value="1, 1.5"/>
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="3500"/>
+				<passive_effect name="HealthMax" operation="base_set" value="3000"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 				<!-- Zombie HP scale -->
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>-->
@@ -167,15 +167,15 @@
 			<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 			<!-- Gameplay -->
 			<!-- <property name="Buffs" value="zombieRadiatedBuff80"/> -->
-			<property name="SizeScale" value="1.18"/>
-			<property name="ExperienceGain" value="3500"/>
+			<property name="SizeScale" value="1.25"/>
+			<property name="ExperienceGain" value="3000"/>
 			<!-- XP strong radiated -->
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 			<property name="LootDropProb" value=".5"/>
 			<!-- Radiated -->
 			<property name="MoveSpeedAggro" value="1, 1.4"/>
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="3500"/>
+				<passive_effect name="HealthMax" operation="base_set" value="3000"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 				<!-- Zombie HP scale -->
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>-->
@@ -210,15 +210,15 @@
 			<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 			<!-- Gameplay -->
 			<!-- <property name="Buffs" value="zombieRadiatedBuff80"/> -->
-			<property name="SizeScale" value="1.18"/>
-			<property name="ExperienceGain" value="3500"/>
+			<property name="SizeScale" value="1.25"/>
+			<property name="ExperienceGain" value="3000"/>
 			<!-- XP strong radiated -->
 			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
 			<property name="LootDropProb" value=".5"/>
 			<!-- Radiated -->
 			<property name="MoveSpeedAggro" value="1, 1.2"/>
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="3500"/>
+				<passive_effect name="HealthMax" operation="base_set" value="3000"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 				<!-- Zombie HP scale -->
 				<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>-->
@@ -254,7 +254,7 @@
 			<property name="SoundFootstepModifier" value="bear_footstep"/>
 			<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 			<!-- Gameplay -->
-			<property name="SizeScale" value="1.18"/>
+			<property name="SizeScale" value="1.25"/>
 			<property name="HandItem" value="meleeHandZombieDemolition"/>
 			<property name="JumpMaxDistance" value="1, 2"/>
 			<property name="PainResistPerHit" value=".5"/>
@@ -264,7 +264,7 @@
 			<property name="Explosion.BlockDamage" value="8000"/>
 			<property name="Explosion.EntityDamage" value="800"/>
 			<property name="Explosion.DamageBonus.earth" value=".1"/>
-			<property name="StompsSpikes" value="true"/>
+			<property name="StompsSpikes" value="false"/>
 			<property name="ExplodeDelay" value="2"/>
 			<property name="ExplodeHealthThreshold" value="0"/>
 			<!-- Disable Health explosion -->

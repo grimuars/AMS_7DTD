@@ -293,4 +293,136 @@
 	<set xpath="/items/item[@name='gunBotT2JunkTurret']/property[@name='RepairTools']/@value">gunBotRoboticsParts</set>
 	<!-- Мусорный Молот -->
 	<set xpath="/items/item[@name='gunBotT1JunkSledge']/property[@name='RepairTools']/@value">gunBotRoboticsParts</set>
+	<!-- Стеклянные стрелы -->
+	<append xpath="/items">
+		<item name="ammoArrowFiberglass">
+			<property name="Extends" value="ammoArrowSteelAP"/>
+			<property name="DisplayType" value="ammoArrowAP"/>
+			<property name="CustomIcon" value="ui_game_symbol_AAfiberglassarrow"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AANewArrows.unity3d?momoeArrow.Prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="IsSticky" value="true"/>
+			<property name="StickyOffset" value=".5"/>
+			<property name="StickyColliderUp" value="1"/>
+			<property name="StickyColliderRadius" value=".5"/>
+			<property name="StickyColliderLength" value="2.1"/>
+			<property name="StickyForwardDirection" value="0,0,1"/>
+			<property name="Material" value="MmilitaryFiber"/>
+			<property name="EconomicValue" value="68"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="TraderStageTemplate" value="ammoTier3"/>
+			<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+			<property class="Action1">
+				<property name="Gravity" value="-3.25"/>
+			</property>
+			<effect_group name="ammoArrowFiberglass" tiered="false">
+				<!-- ammoArrowIron -->
+				<passive_effect name="EntityDamage" operation="base_set" value="48" tags="perkArchery"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="7" tags="perkArchery"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.7"/>
+				<display_value name="dTargetArmor" value="-.7"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="60" tags="perkArchery"/>
+			</effect_group>
+			<effect_group name="perkPenetrator" tiered="false">
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/>
+				</passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/>
+				</passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/>
+				</passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/>
+				</passive_effect>
+			</effect_group>
+		</item>
+		<!-- Стеклянные болты -->
+		<item name="ammoCrossbowBoltFiberglass">
+			<property name="Material" value="MmilitaryFiber"/>
+			<property name="Extends" value="ammoCrossbowBoltIron"/>
+			<property name="DisplayType" value="ammoArrowAP"/>
+			<property name="CustomIcon" value="ui_game_symbol_AAfiberglassbolt"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AANewArrows.unity3d?T4YellowFGlassBolt.Prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="57"/>
+			<property name="UnlockedBy" value="perkRangersAPAmmo"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="TraderStageTemplate" value="ammoTier3"/>
+			<property name="IsSticky" value="true"/>
+			<property name="StickyOffset" value=".25"/>
+			<property name="StickyColliderUp" value="2"/>
+			<property name="StickyColliderRadius" value=".1"/>
+			<property name="StickyColliderLength" value="1.0"/>
+			<property name="StickyForwardDirection" value="0,0,1"/>
+			<effect_group name="ammoCrossbowBoltSteelAP" tiered="false">
+				<!-- ammoCrossbowBoltSteelAP -->
+				<passive_effect name="EntityDamage" operation="base_set" value="67" tags="perkArchery"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkArchery"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.75"/>
+				<display_value name="dTargetArmor" value="-.75"/>
+				<passive_effect name="BlockDamage" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="87" tags="perkArchery"/>
+			</effect_group>
+			<effect_group name="perkPenetrator" tiered="false">
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/>
+				</passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/>
+				</passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/>
+				</passive_effect>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
+					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/>
+				</passive_effect>
+			</effect_group>
+		</item>
+		<!-- Коробка стеклянных стрел -->
+		<item name="ammoBundleArrowFiberglass">
+			<property name="Extends" value="ammoBundleArrowStone"/>
+			<property name="CustomIcon" value="ui_game_symbol_AAfiberglassarrow"/>
+			<property name="EconomicValue" value="1760"/>
+			<property name="TraderStageTemplate" value="ammoTier3"/>
+			<property class="Action0">
+				<property name="Create_item" value="ammoArrowFiberglass"/>
+			</property>
+		</item>
+		<!-- Коробка стеклянных болтов -->
+		<item name="ammoBundleCrossbowBoltFiberglass">
+			<property name="Extends" value="ammoBundleCrossbowBoltStone"/>
+			<property name="CustomIcon" value="ui_game_symbol_AAfiberglassbolt"/>
+			<property name="EconomicValue" value="1760"/>
+			<property name="TraderStageTemplate" value="ammoTier3"/>
+			<property class="Action0">
+				<property name="Create_item" value="ammoCrossbowBoltFiberglass"/>
+			</property>
+		</item>
+		<!-- Стеклянный наконечник -->
+		<item name="resourceArrowHeadFiberglass">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="CustomIcon" value="ui_game_symbol_AAfiberglassarrowhead"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MmilitaryFiber"/>
+			<property name="Stacknumber" value="500"/>
+			<!-- STK resource -->
+			<property name="UnlockedBy" value="perkRangersAPAmmo"/>
+			<property name="EconomicValue" value="120"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="Group" value="Ammo/Weapons,Ammo"/>
+		</item>
+	</append>
+	<!-- Добавляем стеклянные стрелы в боеприпасы для оружия -->
+	<append xpath="/items/item[contains (@name, 'Bow') or contains (@name, 'Pacifier') and not(contains(@name, 'Crossbow'))]/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowFiberglass</append>
+	<append xpath="/items/item[contains (@name, 'Crossbow') or contains (@name, 'Trifecta')]/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoCrossbowBoltFiberglass</append>
 </configs>

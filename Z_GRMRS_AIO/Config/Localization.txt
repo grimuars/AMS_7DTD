@@ -22,3 +22,16 @@ reqLevel95,progression,,,Character Level 95,Уровень персонажа 95
 
 lblContextCraftCount,UI,Item Context Menu,,Count,,"Кол-во"
 modGunShotgunTubeExtenderMagazineDesc,item_modifiers,Mod,,"Increases magazine capacity for pump shotguns by 37,5%.","Увеличивает ёмкость магазина помпового ружья на 37,5%".
+
+perkTreasureHunterDesc,progression,perk Per,,"In this cruel world, experience is the ultimate weapon. Learn how to train effectively to learn and evolve faster.","В этом жестоком мире опыт - главное оружие. Научитесь эффективно учиться и развиваться быстрее."
+perkTreasureHunterName,progression,perk Per,,EXP Hunter,Охотник за опытом
+perkTreasureHunterRank1Desc,progression,perk Per,,Schoolboy,Школьник
+perkTreasureHunterRank1LongDesc,progression,perk Per,,Get 10% more experience for every action.,Получайте на 10% больше опыта за каждое действие.
+perkTreasureHunterRank2Desc,progression,perk Per,,Student,Студент
+perkTreasureHunterRank2LongDesc,progression,perk Per,,Get 20% more experience for every action.,Получайте на 20% больше опыта за каждое действие.
+perkTreasureHunterRank3Desc,progression,perk Per,,Postgraduate,Аспирант
+perkTreasureHunterRank3LongDesc,progression,perk Per,,Get 30% more experience for every action.,Получайте на 30% больше опыта за каждое действие.
+perkTreasureHunterRank4Desc,progression,perk Per,,Junior Researcher,Младший научный сотрудник
+perkTreasureHunterRank4LongDesc,progression,perk Per,,Get 40% more experience for every action.,Получайте на 40% больше опыта за каждое действие.
+perkTreasureHunterRank5Desc,progression,perk Per,,Professor,Профессор
+perkTreasureHunterRank5LongDesc,progression,perk Per,,Get 50% more experience for every action.,Получайте на 50% больше опыта за каждое действие.
