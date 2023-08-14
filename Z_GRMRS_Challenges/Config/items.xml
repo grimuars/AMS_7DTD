@@ -825,7 +825,7 @@
 		<item name="challenge39Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
-			<property name="CustomIconTint" value="ec8f7f"/>
+			<property name="CustomIconTint" value="00ffdc"/>
 			<property name="DescriptionKey" value="challenge39ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -847,7 +847,7 @@
 		<item name="challenge40Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
-			<property name="CustomIconTint" value="ec8f7f"/>
+			<property name="CustomIconTint" value="00ffdc"/>
 			<property name="DescriptionKey" value="challenge40ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>
@@ -1067,7 +1067,7 @@
 		<item name="challenge50Zombie">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="questMaster"/>
-			<property name="CustomIconTint" value="a73d47"/>
+			<property name="CustomIconTint" value="00ffdc"/>
 			<property name="DescriptionKey" value="challenge50ZombieDesc"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="HoldType" value="21"/>

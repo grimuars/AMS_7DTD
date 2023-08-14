@@ -101,6 +101,6 @@
 	<remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingRobotics']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunBotT3JunkDrone']"/>
 	<remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingRobotics']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunBotT3JunkDrone']"/>
 	<!-- Стеклянные стрелы -->
-	<append xpath="/progression/perks/book[@name='perkRangersAPAmmo']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,resourceArrowHeadFiberglass</append>
+	<append xpath="/progression/perks/book[@name='perkRangersAPAmmo']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,resourceArrowHeadFiberglass,ammoCrossbowBoltFiberglass,ammoArrowFiberglass</append>
 	<append xpath="/progression/perks/book[@name='perkRangersComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,ammoBundleArrowFiberglass,ammoBundleCrossbowBoltFiberglass</append>
 </configs>

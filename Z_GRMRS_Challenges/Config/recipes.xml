@@ -1,44 +1,64 @@
 <config>
 	<append xpath="recipes">
-		<!-- Боеприпасы -->
+		<!-- 9 мм -->
 		<recipe name="ammoBundle9mmBulletBall" count="1">
-			<ingredient name="ammoTicket" count="10"/>
+			<ingredient name="ammoTicket" count="20"/>
+		</recipe>
+		<recipe name="ammoBundle9mmBulletHP" count="1">
+			<ingredient name="ammoTicket" count="25"/>
 		</recipe>
 		<recipe name="ammoBundle9mmBulletAP" count="1">
-			<ingredient name="ammoTicket" count="14"/>
-		</recipe>
-		<recipe name="ammoBundle44MagnumBulletBall" count="1">
-			<ingredient name="ammoTicket" count="10"/>
-		</recipe>
-		<recipe name="ammoBundle44MagnumBulletAP" count="1">
-			<ingredient name="ammoTicket" count="14"/>
-		</recipe>
-		<recipe name="ammoBundle762mmBulletBall" count="1">
-			<ingredient name="ammoTicket" count="10"/>
-		</recipe>
-		<recipe name="ammoBundle762mmBulletAP" count="1">
-			<ingredient name="ammoTicket" count="14"/>
-		</recipe>
-		<recipe name="ammoBundleShotgunShell" count="1">
-			<ingredient name="ammoTicket" count="10"/>
-		</recipe>
-		<recipe name="ammoBundleShotgunSlug" count="1">
-			<ingredient name="ammoTicket" count="14"/>
-		</recipe>
-		<recipe name="ammoBundleShotgunBreachingSlug" count="1">
-			<ingredient name="ammoTicket" count="22"/>
+			<ingredient name="ammoTicket" count="30"/>
 		</recipe>
 		<recipe name="ammoBundle9mmBulletXP" count="1">
-			<ingredient name="ammoTicket" count="42"/>
+			<ingredient name="ammoTicket" count="40"/>
+		</recipe>
+		<!-- Магнум .44 -->
+		<recipe name="ammoBundle44MagnumBulletBall" count="1">
+			<ingredient name="ammoTicket" count="20"/>
+		</recipe>
+		<recipe name="ammoBundle44MagnumBulletHP" count="1">
+			<ingredient name="ammoTicket" count="25"/>
+		</recipe>
+		<recipe name="ammoBundle44MagnumBulletAP" count="1">
+			<ingredient name="ammoTicket" count="30"/>
+		</recipe>
+		<!-- 7.62 -->
+		<recipe name="ammoBundle762mmBulletBall" count="1">
+			<ingredient name="ammoTicket" count="20"/>
+		</recipe>
+		<recipe name="ammoBundle762mmBulletHP" count="1">
+			<ingredient name="ammoTicket" count="25"/>
+		</recipe>
+		<recipe name="ammoBundle762mmBulletAP" count="1">
+			<ingredient name="ammoTicket" count="30"/>
 		</recipe>
 		<recipe name="ammoBundle762mmBulletXP" count="1">
-			<ingredient name="ammoTicket" count="42"/>
+			<ingredient name="ammoTicket" count="40"/>
 		</recipe>
+		<!-- Патроны для дробовика -->
+		<recipe name="ammoBundleShotgunShell" count="1">
+			<ingredient name="ammoTicket" count="20"/>
+		</recipe>
+		<recipe name="ammoBundleShotgunSlug" count="1">
+			<ingredient name="ammoTicket" count="30"/>
+		</recipe>
+		<recipe name="ammoBundleShotgunBreachingSlug" count="1">
+			<ingredient name="ammoTicket" count="30"/>
+		</recipe>
+		<!-- Взрывные стрелы -->
 		<recipe name="ammoBundleArrowExploding" count="1">
-			<ingredient name="ammoTicket" count="22"/>
+			<ingredient name="ammoTicket" count="30"/>
 		</recipe>
 		<recipe name="ammoBundleCrossbowBoltExploding" count="1">
-			<ingredient name="ammoTicket" count="22"/>
+			<ingredient name="ammoTicket" count="30"/>
+		</recipe>
+		<!-- Стеклянные стрелы -->
+		<recipe name="ammoBundleArrowFiberglass" count="1">
+			<ingredient name="ammoTicket" count="40"/>
+		</recipe>
+		<recipe name="ammoBundleCrossbowBoltFiberglass" count="1">
+			<ingredient name="ammoTicket" count="40"/>
 		</recipe>
 		<!-- Уникальное оружие -->
 		<recipe name="DementivemeleeWpnBladeHellHound" count="1">

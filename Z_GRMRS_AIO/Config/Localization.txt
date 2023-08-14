@@ -35,3 +35,9 @@ perkTreasureHunterRank4Desc,progression,perk Per,,Junior Researcher,Младши
 perkTreasureHunterRank4LongDesc,progression,perk Per,,Get 40% more experience for every action.,Получайте на 40% больше опыта за каждое действие.
 perkTreasureHunterRank5Desc,progression,perk Per,,Professor,Профессор
 perkTreasureHunterRank5LongDesc,progression,perk Per,,Get 50% more experience for every action.,Получайте на 50% больше опыта за каждое действие.
+
+ammoArrowFiberglass,items,Ammo,,Fiberglass Arrow (Ammo),Стеклянная стрела (боеприпасы)
+resourceArrowHeadFiberglass,items,Item,,Fiberglass Arrowhead,Стеклянный наконечник
+ammoCrossbowBoltFiberglass,items,Ammo,,Fiberglass Bolt (Ammo),Стеклянный болт для арбалета (боеприпасы)
+ammoBundleArrowFiberglass,items,Ammo,,Box of Fiberglass Arrows (300),Коробка стеклянных стрел (300)
+ammoBundleCrossbowBoltFiberglass,items,Ammo,,Box of Fiberglass Bolts (300),Коробка стеклянных болтов (300)

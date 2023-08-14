@@ -312,6 +312,7 @@
 			<property name="Material" value="MmilitaryFiber"/>
 			<property name="EconomicValue" value="68"/>
 			<property name="EconomicBundleSize" value="5"/>
+			<property name="UnlockedBy" value="perkRangersAPAmmo"/>
 			<property name="TraderStageTemplate" value="ammoTier3"/>
 			<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
 			<property class="Action1">
