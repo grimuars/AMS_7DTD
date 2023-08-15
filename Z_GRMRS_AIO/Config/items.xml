@@ -424,9 +424,18 @@
 		</item>
 	</append>
 	<!-- Добавляем стеклянные стрелы в боеприпасы для оружия -->
-	<append xpath="/items/item[@name='Pacifier']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowFiberglass</append>
+	<append xpath="/items/item[@name='DementivegunPacifier']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowFiberglass</append>
 	<append xpath="/items/item[@name='gunBowT0PrimitiveBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowFiberglass</append>
 	<append xpath="/items/item[@name='gunBowT1WoodenBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowFiberglass</append>
 	<append xpath="/items/item[@name='gunBowT3CompoundBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowFiberglass</append>
 	<append xpath="/items/item[contains (@name, 'Crossbow') or contains (@name, 'Trifecta')]/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoCrossbowBoltFiberglass</append>
+	<!-- Удаляем дальние атаки у стервятников -->
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieVultureRadiated']/property[@class='Action1']"/>
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieVultureRadiated']/effect_group[@name='meleeHandAnimalZombieVulture']/passive_effect[@name='MagazineSize']"/>
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieVultureRadiated']/effect_group[@name='meleeHandAnimalZombieVulture']/passive_effect[@name='BurstRoundCount']"/>
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieVultureRadiated']/effect_group[@name='meleeHandAnimalZombieVulture']/passive_effect[@name='SpreadDegreesVertical']"/>
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieVultureRadiated']/effect_group[@name='meleeHandAnimalZombieVulture']/passive_effect[@name='SpreadDegreesHorizontal']"/>
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieVultureRadiated']/effect_group[@name='meleeHandAnimalZombieVulture']/passive_effect[@name='SpreadMultiplierIdle']"/>
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieVultureRadiated']/effect_group[@name='meleeHandAnimalZombieVulture']/passive_effect[@name='DamageFalloffRange']"/>
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieVultureRadiated']/effect_group[@name='meleeHandAnimalZombieVulture']/passive_effect[@name='MaxRange']"/>
 </configs>

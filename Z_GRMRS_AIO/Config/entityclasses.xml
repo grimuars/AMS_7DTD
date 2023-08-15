@@ -192,5 +192,22 @@
 	<setattribute xpath="/entity_classes/entity_class[@name='animalZombieVulture']/property[@name='SightRange']" name="value">90</setattribute>
 	<!-- Демолишеры не ломают ловушки с 1 удара -->
 	<setattribute xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='StompsSpikes']" name="value">false</setattribute>
+	<!-- Копы не используют дальние атаки -->
+	<set xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='AITask']/@value">
+	BreakBlock|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|
+	</set>
+	<!-- Мутанты не используют дальние атаки -->
+	<set xpath="/entity_classes/entity_class[@name='zombieMutated']/property[@name='AITask']/@value">
+	BreakBlock|
+	DestroyArea|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|
+	</set>
 </configs>
 

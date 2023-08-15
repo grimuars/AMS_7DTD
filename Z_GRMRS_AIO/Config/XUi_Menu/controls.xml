@@ -1,0 +1,5 @@
+﻿<Danzo>
+	<setattribute xpath="//label" name="effect">outline</setattribute>
+	<setattribute xpath="//label" name="effect_color">[black]</setattribute>
+	<setattribute xpath="//label" name="effect_distance">1,1</setattribute>
+</Danzo>
