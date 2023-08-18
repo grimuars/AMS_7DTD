@@ -1,0 +1,27 @@
+<styles>
+	<append xpath="/styles/global">
+		<style_entry name="Color0" value="0,0,0,0"/>
+		<style_entry name="Color1" value="0,0,0,0"/>
+		<style_entry name="Color2" value="0,0,0,0"/>
+		<style_entry name="red" value="255,0,0"/>
+	</append>
+	<append xpath="/styles">
+		<style name="stackBack" type="sprite">
+			<style_entry name="atlas" value="UIIconR"/>
+			<style_entry name="depth" value="1"/>
+			<style_entry name="sprite" value="Rstack18"/>
+			<style_entry name="type" value="sliced"/>
+			<style_entry name="width" value="80"/>
+			<style_entry name="height" value="80"/>
+		</style>
+		<style name="scrollbar" type="sprite">
+			<style_entry name="depth" value="15"/>
+			<style_entry name="color" value="255,0,0"/>
+			<style_entry name="atlas" value="UIScrollR"/>
+			<style_entry name="sprite" value="Rscroll1"/>
+		</style>
+		<style name="scroll">
+			<style_entry name="on_scroll" value="true"/>
+		</style>
+	</append>
+</styles>

@@ -1,9 +1,0 @@
-﻿Key,File,Type,UsedInMainMenu,NoTranslate,english,russian
-quest_buried_supplies_response,Quest,Quest Info,,,"Buried Supplies ([DECEA3]{treasure.distance} {treasure.direction}[-])","Закопанные припасы ([DECEA3]{treasure.distance} {treasure.direction}[-])"
-quest_clear_response,Quest,Quest Info,,,"Clear at [FFB931]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])","Очистить [FFB931]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])"
-quest_fetch_response,Quest,Quest Info,,,"Fetch at [FFB931]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])","Принести из [FFB931]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])"
-quest_fetch_clear_response,Quest,Quest Info,,,"Fetch / Clear at [FFB931]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])","Принести / Очистить [FFB931]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])"
-quest_restore_power_response,Quest,Quest Info,,,"[DB0006](Night Only)[-] Restore Power at [FFB931]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])","[DB0006](Ночью)[-] Восстановить питание в [FFB931]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])"
-quest_infestation_response,Quest,Quest Info,,,"Infested Clear at [FFB931]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])","Нашествие в [FFB931]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])"
-quest_next_trader_description,Quest,Quest Info,,,"Head to [FFB931]{goto.name}[-] and open a new trade route.","Отправляйтесь к [FFB931]{goto.name}[-] и откройте новый торговый маршрут."
-quest_next_trader_response,Quest,Quest Info,,,"Opening Trade Routes ([DECEA3]{goto.distance} {goto.direction}[-])","Открытие торгового маршрута ([DECEA3]{goto.distance} {goto.direction}[-])"

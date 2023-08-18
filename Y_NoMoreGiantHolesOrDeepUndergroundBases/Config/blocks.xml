@@ -362,6 +362,14 @@
 		<property name="DisplayInfo" value="Description"/>
 		<property name="DescriptionKey" value="stoneResourceDesc"/>
 	</append>
+	<append xpath="/blocks/block[@name='terrAsphalt']">
+		<property name="DisplayInfo" value="Description"/>
+		<property name="DescriptionKey" value="stoneResourceDesc"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrDestroyedStone']">
+		<property name="DisplayInfo" value="Description"/>
+		<property name="DescriptionKey" value="stoneResourceDesc"/>
+	</append>
 	<append xpath="/blocks/block[@name='terrGravel']">
 		<property name="DisplayInfo" value="Description"/>
 		<property name="DescriptionKey" value="gravelResourceDesc"/>

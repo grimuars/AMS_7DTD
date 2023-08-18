@@ -1,0 +1,54 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,russian
+
+xuiChangeLogHeaderHUD,UI,Menu,x,,ChangeLog - SMXhud - 21.0.317.0
+xuiChangeLogHUD,UI,Menu,x,,[AF1E19]*[-]  CHANGE: Updated for A21.\n[AF1E19]*[-]  CHANGE: Updated ModInfo.xml to v2.\n[AF1E19][-]  \n[AF1E19][-]  \n[AF1E19][-]  \n[AF1E19][-]  \n,[AF1E19]*[-]  Изменения: Обновления для A21.\n[AF1E19]*[-]  Изменения: Версия ModInfo.xml обновлена до v2.\n[AF1E19][-]  \n[AF1E19][-]  \n[AF1E19][-]  \n[AF1E19][-]  \n
+
+itemTooltipFocusedOne,UI,Use Prompt,,,{0} Collect: {1},0} Собрать: {1}
+itemTooltipFocusedSeveral,UI,Use Prompt,,,{0} Collect: {2} of {1},{0} Собрать: {2} из {1}
+lootEntity,UI,Use Prompt,,,{0} Search {1} ([3F8117]Untouched[-]),{0}: обыскать тело ({1}) ([3F8117]нетронуто[-])
+lootTooltipEmpty,UI,Use Prompt,,,[AF1E19]Empty[-] {1},{1}: [AF1E19]пусто[-]
+lootTooltipNew,UI,Use Prompt,,,{0} Search {1} ([3F8117]Untouched[-]) ,{0}: обыскать ({1}) ([3F8117]нетронуто[-])
+lootTooltipTouched,UI,Use Prompt,,,{0} Search {1} ,{0}: обыскать ({1})
+questBlockActivate,UI,Use Prompt,,,Press {{0}} to Activate: {1},"Нажмите {{0}}, чтобы задействовать: {1}"
+questRallyActivate,UI,Use Prompt,,,Press {{0}} to Start Quest: [FF9018]{1}[-],"Нажмите {{0}}, чтобы начать задание: [FF9018]{1}[-]"
+tooltipInteract,UI,Use Prompt,,,Hold {0} to interact with {1},{1}: Для взаимодействия удерживайте {0}
+vendingMachineActivate,UI,Use Prompt,,,{0} to interact with {1},{1}: {0} для взаимодействия
+tooltipJammed,UI,Menu,,,{0} Use {1} ([AF1E19]Jammed[-]),{0} Использовать {1} ([AF1E19]заклинило[-])
+tooltipLocked,UI,Menu,,,{0} Use {1} ([AF1E19]Locked[-]),{0} Использовать {1} ([AF1E19]заперто[-])
+tooltipUnlocked,UI,Menu,,,{0} Use {1} ([3F8117]Unlocked[-]),{0} Использовать {1} ([3F8117]открыто[-])
+xuiOpeningLoot,UI,Use Prompt,,,Searching...,Поиск...
+
+
+xuiCompassWindowHUD,UI,,,,Compass Window.,Компас
+
+xuiUnspentSkillpointsHUD,UI,,,,You have unspent skillpoints!,"У вас есть свободные очки навыков!"
+
+xuiCurrentDayHUD,UI,,,,Have a nice day!,"Приятного дня!"
+xuiCurrentTimeHUD,UI,,,,We hope you are having the time of your life!,"Надеемся, у вас есть время для жизни!"
+
+xuiMapElevationHUD,UI,,,,Elevation.,Высота
+xuiMapTempHUD,UI,,,,Ambient Temperature.,Температура окружающей среды
+xuiCoreTempHUD,UI,,,,Player Temperature.,Температура игрока
+
+xuiCurrentAmmoCountHUD,UI,,,,Current Magazine Size.,Размер обоймы
+xuiTotalAmmoCountHUD,UI,,,,Total Ammunition Stock.,Всего боеприпасов
+
+xuiElevationHUD,UI,,,,Elevation.,Высота
+
+xuiToolBlockDamageHUD,UI,,,,Tool Block Damage.,Урон инструмента по блоку
+xuiMeleeEntityDamageHUD,UI,,,,Melee Entity Damage.,Урон в ближнем бою
+
+xuiCarryCapacityHUD,UI,,,,Encumbrance: Current unlocked backpack slots.,"Перегрузка: Ячеек рюкзака открыто"
+xuiLootStageHUD,UI,,,,Lootstage: The higher the stage the better the loot.,"Уровень добычи: Чем выше уровень, тем лучше лут"
+
+xuiStealthBarHUD,UI,,,,Stealth.,Скрытность
+xuiHealthBarHUD,UI,,,,Health.,Здоровье
+xuiStaminaBarHUD,UI,,,,Stamina.,Выносливость
+xuiHungerBarHUD,UI,,,,Hunger.,Голод
+xuiThirstBarHUD,UI,,,,Thirst.,Жажда
+
+xuiVehicleHealthBarHUD,UI,,,,Mechanical State.,Состояние транспорта
+xuiVehicleFuelHUD,UI,,,,Fuel Level.,Уровень топлива
+
+xuiTwitchIntegrationHUD,UI,,,,Twitch Integration.,Интеграция Twitch
+xuiQuestTrackerHUD,UI,,,,Quest Tracker.,Отслеживание квестов

@@ -33,7 +33,7 @@
 		</window>
 	</append>
 	<!-- Панель здоровья противников -->
-	<remove xpath="/windows/window[@name='windowTargetBar']/rect"/>
+	<!-- <remove xpath="/windows/window[@name='windowTargetBar']/rect"/>
 	<append xpath="/windows/window[@name='windowTargetBar']">
 		<window name="windowTargetBar" controller="TargetBar" visibility="always">
 			<rect pos="-180,345" width="360" height="28" visible="{visible}">
@@ -42,7 +42,7 @@
 				<label depth="3" name="TextContent" pos="9,-4" font_size="20" color="[white]" justify="center" pivot="topleft" text="{name}:{currentwithmax}" height="30"/>
 			</rect>
 		</window>
-	</append>
+	</append> -->
 	<!-- Тень в шрифтах -->
 	<setattribute xpath="//label" name="effect">outline</setattribute>
 	<setattribute xpath="//label" name="effect_color">[black]</setattribute>
