@@ -5,25 +5,17 @@
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']/@value">AMSStarterPack</set>
 	<!-- Пассивные баффы в зависимости от уровня игрока -->
 	<insertAfter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='PlayerExpGain' and @tags='Upgrading']">
-		<!-- До 50 уровня 10% опыта от торговли -->
-		<passive_effect name="PlayerExpGain" operation="perc_add" value="0.1" tags="Selling">
-			<requirement name="PlayerLevel" operation="LT" value="50"/>
-		</passive_effect>
-		<!-- С 50 уровня 50% опыта от торговли -->
-		<passive_effect name="PlayerExpGain" operation="perc_add" value="0.5" tags="Selling">
-			<requirement name="PlayerLevel" operation="GTE" value="50"/>
-		</passive_effect>
-		<!-- До 50 уровня 20% опыта от добычи -->
-		<passive_effect name="PlayerExpGain" operation="perc_add" value="0.2" tags="Harvesting">
-			<requirement name="PlayerLevel" operation="LT" value="50"/>
-		</passive_effect>
-		<!-- До 50 уровня в 2 раза больше опыта от убийств -->
+		<!-- 10% опыта от торговли -->
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="0.1" tags="Selling"/>
+		<!-- 50% опыта от добычи -->
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="0.5" tags="Harvesting"/>
+		<!-- До 55 уровня в 2 раза больше опыта от убийств -->
 		<passive_effect name="PlayerExpGain" operation="perc_add" value="2" tags="Kill">
-			<requirement name="PlayerLevel" operation="LT" value="50"/>
+			<requirement name="PlayerLevel" operation="LT" value="55"/>
 		</passive_effect>
-		<!-- С 75 уровня - в 3 раза больше опыта за квесты -->
+		<!-- С 55 уровня - в 3 раза больше опыта за квесты -->
 		<passive_effect name="PlayerExpGain" operation="perc_add" value="3" tags="Quest">
-			<requirement name="PlayerLevel" operation="GTE" value="75"/>
+			<requirement name="PlayerLevel" operation="GTE" value="55"/>
 		</passive_effect>
 	</insertAfter>
 	<!--Увеличиваем параметры переносных пушек-->
@@ -31,7 +23,7 @@
 	<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='PitchRange']/@value">150</set>
 	<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='YawRange']/@value">150</set>
 	<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='RaySpread']/@value">.025</set>
-	<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='MaxOwnerDistance']/@value">500</set>
+	<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='MaxOwnerDistance']/@value">200</set>
 	<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='TurnSpeed']/@value">45</set>
 	<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='WakeUpTime']/@value">0.2</set>
 	<!-- Отключаем анимацию смерти зомби -->

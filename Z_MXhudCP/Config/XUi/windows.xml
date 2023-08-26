@@ -3,7 +3,7 @@
 	<remove xpath="/windows/window[@name='windowTargetBar']"/>
 	<append xpath="/windows">
 		<window name="windowTargetBar" controller="SMXcore.TargetBar, SMXcore" visibility="never">
-			<rect name="smxhud_targetframe_normal_content" pos="0,-120" size="420,80" visible="{isnotboss}">
+			<rect name="smxhud_targetframe_normal_content" pos="0,-180" size="420,80" visible="{isnotboss}">
 				<sprite name="border" depth="1" pos="0,0" width="400" height="50" sprite="smxhud_targetframe_background" pivot="center" color="[smxhud_element_background]" globalopacitymod="1.8"/>
 				<sprite name="smxhud_targetframe_frameseparator" depth="5" pos="0,7" width="375" height="3" sprite="smxlib_separation_line_1" pivot="center" rotation="0" color="[smxhud_unitframe_separation]" globalopacitymod="1.8"/>
 				<sprite name="smxhud_targetframe_frameseparator" depth="5" pos="0,-17" width="325" height="3" sprite="smxlib_separation_line_1" pivot="center" rotation="0" color="[smxhud_unitframe_separation]" globalopacitymod="1.8"/>
@@ -14,7 +14,7 @@
 				<label name="TextContent" depth="4" pos="0,20" height="30" style="smxcore_label_normal" text="{name}" font_size="22" pivot="center" justify="center" color="[smxhud_element_labelcolor_1]"/>
 				<label name="TextContent" depth="4" pos="0,-6" height="30" style="smxcore_label_normal" text="{currentwithmax}" font_size="16" pivot="center" justify="center" color="[smxhud_element_labelcolor_1]"/>
 			</rect>
-			<rect name="smxhud_targetframe_boss_content" pos="0,-120" size="420,80" visible="{isboss}">
+			<rect name="smxhud_targetframe_boss_content" pos="0,-180" size="420,80" visible="{isboss}">
 				<sprite name="border" depth="1" pos="0,0" width="500" height="50" sprite="smxhud_targetframe_background" pivot="center" color="[smxhud_element_background]" globalopacitymod="1.8"/>
 				<sprite name="smxhud_targetframe_frameseparator" depth="5" pos="0,7" width="475" height="5" sprite="smxlib_separation_line_1" pivot="center" rotation="0" color="[smxhud_unitframe_separation]" globalopacitymod="1.8"/>
 				<sprite name="smxhud_targetframe_frameseparator" depth="5" pos="0,-17" width="425" height="5" sprite="smxlib_separation_line_1" pivot="center" rotation="0" color="[smxhud_unitframe_separation]" globalopacitymod="1.8"/>

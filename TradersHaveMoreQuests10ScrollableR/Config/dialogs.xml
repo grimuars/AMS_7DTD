@@ -1,0 +1,44 @@
+<dialogs>
+	<insertAfter xpath="//dialog[@id='trader']/statement[@id='currentjobs1']/quest_entry[@listindex='4']">
+		<quest_entry listindex="5" tier="1"/>
+		<quest_entry listindex="6" tier="1"/>
+		<quest_entry listindex="7" tier="1"/>
+		<quest_entry listindex="8" tier="1"/>
+		<quest_entry listindex="9" tier="1"/>
+	</insertAfter>
+	<insertAfter xpath="//dialog[@id='trader']/statement[@id='currentjobs2']/quest_entry[@listindex='4']">
+		<quest_entry listindex="5" tier="2"/>
+		<quest_entry listindex="6" tier="2"/>
+		<quest_entry listindex="7" tier="2"/>
+		<quest_entry listindex="8" tier="2"/>
+		<quest_entry listindex="9" tier="2"/>
+	</insertAfter>
+	<insertAfter xpath="//dialog[@id='trader']/statement[@id='currentjobs3']/quest_entry[@listindex='4']">
+		<quest_entry listindex="5" tier="3"/>
+		<quest_entry listindex="6" tier="3"/>
+		<quest_entry listindex="7" tier="3"/>
+		<quest_entry listindex="8" tier="3"/>
+		<quest_entry listindex="9" tier="3"/>
+	</insertAfter>
+	<insertAfter xpath="//dialog[@id='trader']/statement[@id='currentjobs4']/quest_entry[@listindex='4']">
+		<quest_entry listindex="5" tier="4"/>
+		<quest_entry listindex="6" tier="4"/>
+		<quest_entry listindex="7" tier="4"/>
+		<quest_entry listindex="8" tier="4"/>
+		<quest_entry listindex="9" tier="4"/>
+	</insertAfter>
+	<insertAfter xpath="//dialog[@id='trader']/statement[@id='currentjobs5']/quest_entry[@listindex='4']">
+		<quest_entry listindex="5" tier="5"/>
+		<quest_entry listindex="6" tier="5"/>
+		<quest_entry listindex="7" tier="5"/>
+		<quest_entry listindex="8" tier="5"/>
+		<quest_entry listindex="9" tier="5"/>
+	</insertAfter>
+	<insertAfter xpath="//dialog[@id='trader']/statement[@id='currentjobs6']/quest_entry[@listindex='4']">
+		<quest_entry listindex="5" tier="6"/>
+		<quest_entry listindex="6" tier="6"/>
+		<quest_entry listindex="7" tier="6"/>
+		<quest_entry listindex="8" tier="6"/>
+		<quest_entry listindex="9" tier="6"/>
+	</insertAfter>
+</dialogs>

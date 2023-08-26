@@ -1,6 +1,6 @@
 <MoreArmorPlates>
 	<append xpath="/items">
-		<!-- Схемы для бронеплит -->
+		<!-- SCHEMATICS FOR THE ARMOR PLATES -->
 		<item name="modArmorPlatingSteelSchematic">
 			<property name="Extends" value="schematicNoQualityMaster"/>
 			<property name="CreativeMode" value="Player"/>
@@ -41,7 +41,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="200"/>
 			</effect_group>
 		</item>
-		<!-- Ресурсы для крафта -->
+		<!-- Resources Required for craft -->
 		<item name="resourceTitanium">
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
