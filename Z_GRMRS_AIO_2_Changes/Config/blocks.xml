@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks_aio_2>
+	<!-- Тестирование функционала SCore -->
+	<!-- Зомби стараются обходить ловушки -->
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedZombieFeatures']/property[@name='SmarterEntities']/@value">true</set>
+	<!-- Уменьшение времени загрузки для UMA -->
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedZombieFeatures']/property[@name='LowerResolutionUMA']/@value">true</set>
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedZombieFeatures']/property[@name='UMATweaks']/@value">true</set>
+	<!-- Уменьшение разрешения UMA -->
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedZombieFeatures']/property[@name='EntityPooling']/@value">true</set>
+	<!-- Автозавершение испытаний -->
+	<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='AutoRedeemChallenges']/@value">true</set>
+	<!-- 1 Убираем отображение моделей и следов после падения блоков -->
+	<remove xpath="//block/drop[@event='Fall']"/>
+	<remove xpath="//block/property[@name='ShowModelOnFall']"/>
+	<append xpath="//block[starts-with(@name,'terr')]">
+		<property name="ShowModelOnFall" value="false"/>
+	</append>
+	<!-- 2 Лутабельные бочки -->
+	<append xpath="/blocks/block[@name='cntBarrelPlasticSingle00']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='cntBarrelPlasticSingle00'/>
+	</append>
+	<append xpath="/blocks/block[@name='cntBarrelPlasticSingle45']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='cntBarrelPlasticSingle00'/>
+	</append>
+	<append xpath="/blocks/block[@name='cntBarrelPlasticQuadA']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='cntBarrelPlasticSingle00'/>
+	</append>
+	<append xpath="/blocks/block[@name='cntBarrelPlasticQuadB']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='cntBarrelPlasticSingle00'/>
+	</append>
+	<!-- 3 Усиливаем ловушки -->
+	<!-- Деревянные -->
+	<set xpath="blocks/block[@name='trapSpikesWoodMaster']/property[@name='MaxDamage']/@value">200</set>
+	<set xpath="blocks/block[@name='trapSpikesWoodMaster']/property[@name='Damage']/@value">30</set>
+	<set xpath="blocks/block[@name='trapSpikesWoodMaster']/property[@name='Damage_received']/@value">20</set>
+	<append xpath="/blocks/block[@name='trapSpikesWoodDmg2']">
+		<property name="Damage" value="10"/>
+	</append>
+	<!-- Железные -->
+	<set xpath="blocks/block[@name='trapSpikesScrapIronMaster']/property[@name='MaxDamage']/@value">400</set>
+	<set xpath="blocks/block[@name='trapSpikesScrapIronMaster']/property[@name='Damage']/@value">50</set>
+	<set xpath="blocks/block[@name='trapSpikesScrapIronMaster']/property[@name='Damage_received']/@value">20</set>
+	<append xpath="/blocks/block[@name='trapSpikesIronDmg2']">
+		<property name="Damage" value="20"/>
+	</append>
+	<!-- С лезвиями -->
+	<set xpath="/blocks/block[@name='bladeTrap']/property[@name='Damage']/@value">100</set>
+	<set xpath="/blocks/block[@name='bladeTrap']/property[@name='DamageReceived']/@value">1</set>
+	<!-- Колючая проволока -->
+	<set xpath="blocks/block[@name='barbedFence']/property[@name='MaxDamage']/@value">100</set>
+	<set xpath="blocks/block[@name='barbedFence']/property[@name='Damage_received']/@value">5</set>
+	<set xpath="blocks/block[@name='barbedFence']/property[@name='Damage']/@value">5</set>
+	<!-- Ловушки с лезвиями можно собрать, разобрав -->
+	<remove xpath="/blocks/block[@name='bladeTrap']/drop[@event='Harvest']"/>
+	<remove xpath="/blocks/block[@name='bladeTrap']/drop[@event='Destroy']"/>
+	<append xpath="/blocks/block[@name='bladeTrap']">
+		<drop event="Destroy" name="resourceScrapIron" count="1"/>
+		<drop event="Harvest" name="bladeTrap" count="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="0"/>
+		<drop event="Harvest" name="resourceElectricParts" count="0"/>
+		<drop event="Harvest" name="resourceScrapIron" count="0"/>
+		<drop event="Harvest" name="resourceForgedSteel" count="0"/>
+	</append>
+	<!-- Аналогично для электрозаборов -->
+	<remove xpath="/blocks/block[@name='electricfencepost']/drop[@event='Harvest']"/>
+	<remove xpath="/blocks/block[@name='electricfencepost']/drop[@event='Destroy']"/>
+	<append xpath="/blocks/block[@name='electricfencepost']">
+		<drop event="Destroy" name="resourceScrapIron" count="1"/>
+		<drop event="Harvest" name="electricfencepost" count="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceElectricParts" count="0"/>
+		<drop event="Harvest" name="resourceScrapIron" count="0"/>
+		<drop event="Harvest" name="resourceForgedIron" count="0"/>
+	</append>
+	<!-- 4 Мины при взрыве ломают ноги -->
+	<append xpath="/blocks/block[@name='mineCandyTin']">
+		<property name="Explosion.Buff" value="triggerBrokenLeg"/>
+	</append>
+	<append xpath="/blocks/block[@name='mineCookingPot']">
+		<property name="Explosion.Buff" value="triggerBrokenLeg"/>
+	</append>
+	<append xpath="/blocks/block[@name='mineHubcap']">
+		<property name="Explosion.Buff" value="triggerBrokenLeg"/>
+	</append>
+	<append xpath="/blocks/block[@name='mineAirFilter']">
+		<property name="Explosion.Buff" value="triggerBrokenLeg"/>
+	</append>
+	<!-- 5 Мины наносят больший урон в большем радиусе -->
+	<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='Explosion.EntityDamage']/@value">400</set>
+	<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='Explosion.RadiusEntities']/@value">10</set>
+	<set xpath="/blocks/block[@name='mineCookingPot']/property[@name='Explosion.EntityDamage']/@value">600</set>
+	<set xpath="/blocks/block[@name='mineCookingPot']/property[@name='Explosion.RadiusEntities']/@value">8</set>
+	<set xpath="/blocks/block[@name='mineHubcap']/property[@name='Explosion.EntityDamage']/@value">800</set>
+	<set xpath="/blocks/block[@name='mineHubcap']/property[@name='Explosion.RadiusBlocks']/@value">8</set>
+	<set xpath="/blocks/block[@name='mineAirFilter']/property[@name='Explosion.EntityDamage']/@value">1000</set>
+	<set xpath="/blocks/block[@name='mineAirFilter']/property[@name='Explosion.RadiusBlocks']/@value">9</set>
+	<!-- 6 Урон по блокам от мин равен 1 -->
+	<set xpath="/blocks/block[contains (@name, 'mine')]/property[@name='Explosion.BlockDamage']/@value">1</set>
+	<!-- 7 Активируем подбор мусора и декалей -->
+	<append xpath="/blocks/block[@name='garbage_decor1']">
+		<property name="CanPickup" value="true" param1="resourceCloth"/>
+	</append>
+	<append xpath="/blocks/block[@name='garbage_decor2']">
+		<property name="CanPickup" value="true" param1="resourceScrapPolymers"/>
+	</append>
+	<append xpath="/blocks/block[@name='garbage_decor3']">
+		<property name="CanPickup" value="true" param1="resourceBrokenGlass"/>
+	</append>
+	<append xpath="/blocks/block[@name='glassDebris01']">
+		<property name="CanPickup" value="true" param1="resourceBrokenGlass"/>
+	</append>
+	<append xpath="/blocks/block[@name='newspaperDecor01']">
+		<property name="CanPickup" value="true" param1="resourcePaper"/>
+	</append>
+	<append xpath="/blocks/block[@name='rubbishDecor01']">
+		<property name="CanPickup" value="true" param1="resourcePaper"/>
+	</append>
+	<append xpath="/blocks/block[@name='rubbishDecor02']">
+		<property name="CanPickup" value="true" param1="resourceScrapPolymers"/>
+	</append>
+	<append xpath="/blocks/block[@name='rubbishDecor06']">
+		<property name="CanPickup" value="true" param1="resourceScrapPolymers"/>
+	</append>
+	<append xpath="/blocks/block[@name='rubbishDecor08']">
+		<property name="CanPickup" value="true" param1="resourceRockSmall"/>
+	</append>
+	<append xpath="/blocks/block[@name='bloodDecor01']">
+		<property name="CanPickup" value="true" param1="foodRottingFlesh"/>
+	</append>
+	<!-- Разбросанное бельё поднимается на Е -->
+	<append xpath="/blocks/block[@name='laundryLoose']">
+		<property name="CanPickup" value="true" param1="resourceCloth"/>
+	</append>
+	<!-- РАБОЧИЕ СТАНЦИИ, КОЛЛЕКТОРЫ, ХРАНИЛИЩА -->
+	<!-- 8 При сломе крафтовые станции не уничтожаются -->
+	<remove xpath="/blocks/block[@name='forge']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='forge']/drop[@event='Harvest']"/>
+	<append xpath="/blocks/block[@name='forge']">
+		<drop event="Destroy" name="resourceRockSmall" count="1"/>
+		<drop event="Destroy" name="forge" count="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceRockSmall" count="0" tool_category="Disassemble"/>
+	</append>
+	<!-- *** -->
+	<remove xpath="/blocks/block[@name='workbench']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='workbench']/drop[@event='Harvest']"/>
+	<append xpath="/blocks/block[@name='workbench']">
+		<drop event="Destroy" name="resourceWood" count="1"/>
+		<drop event="Destroy" name="workbench" count="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceWood" count="0" tool_category="Disassemble"/>
+	</append>
+	<!-- *** -->
+	<remove xpath="/blocks/block[@name='cementMixer']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='cementMixer']/drop[@event='Harvest']"/>
+	<append xpath="/blocks/block[@name='cementMixer']">
+		<drop event="Destroy" name="resourceScrapIron" count="1"/>
+		<drop event="Destroy" name="cementMixer" count="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="0" tool_category="Disassemble"/>
+	</append>
+	<!-- *** -->
+	<remove xpath="/blocks/block[@name='chemistryStation']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='chemistryStation']/drop[@event='Harvest']"/>
+	<append xpath="/blocks/block[@name='chemistryStation']">
+		<drop event="Destroy" name="resourceScrapPolymers" count="1"/>
+		<drop event="Destroy" name="chemistryStation" count="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapPolymers" count="0" tool_category="Disassemble"/>
+	</append>
+	<!-- *** -->
+	<remove xpath="/blocks/block[@name='cntDewCollector']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='cntDewCollector']/drop[@event='Harvest']"/>
+	<append xpath="/blocks/block[@name='cntDewCollector']">
+		<drop event="Destroy" name="resourceScrapPolymers" count="1"/>
+		<drop event="Destroy" name="cntDewCollector" count="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapPolymers" count="0" tool_category="Disassemble"/>
+	</append>
+	<!-- *** -->
+	<remove xpath="/blocks/block[@name='generatorbank']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='generatorbank']/drop[@event='Harvest']"/>
+	<append xpath="/blocks/block[@name='generatorbank']">
+		<drop event="Destroy" name="resourceScrapIron" count="1"/>
+		<drop event="Destroy" name="generatorbank" count="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="0" tool_category="Disassemble"/>
+	</append>
+	<!-- *** -->
+	<remove xpath="/blocks/block[@name='batterybank']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='batterybank']/drop[@event='Harvest']"/>
+	<append xpath="/blocks/block[@name='batterybank']">
+		<drop event="Destroy" name="resourceScrapIron" count="1"/>
+		<drop event="Destroy" name="batterybank" count="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="0" tool_category="Disassemble"/>
+	</append>
+	<!-- *** -->
+	<remove xpath="/blocks/block[@name='solarbank']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='solarbank']/drop[@event='Harvest']"/>
+	<append xpath="/blocks/block[@name='solarbank']">
+		<drop event="Destroy" name="resourceScrapIron" count="1"/>
+		<drop event="Destroy" name="solarbank" count="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="0" tool_category="Disassemble"/>
+	</append>
+	<!-- Добавляем рабочим станциям вращение под всеми углами -->
+	<set xpath="/blocks/block[@name='workbench']/property[@name='OnlySimpleRotations']/@value">false</set>
+	<append xpath="/blocks/block[@name='workbench']">
+		<property name="AllowedRotations" value="All"/>
+	</append>
+	<set xpath="/blocks/block[@name='chemistryStation']/property[@name='OnlySimpleRotations']/@value">false</set>
+	<append xpath="/blocks/block[@name='chemistryStation']">
+		<property name="AllowedRotations" value="All"/>
+	</append>
+	<set xpath="/blocks/block[@name='forge']/property[@name='OnlySimpleRotations']/@value">false</set>
+	<append xpath="/blocks/block[@name='forge']">
+		<property name="AllowedRotations" value="All"/>
+	</append>
+	<set xpath="/blocks/block[contains(@name, 'WritableCrate')]/property[@name='AllowedRotations']/@value">All</set>
+	<!-- Некоторые сломанные и пустые блоки в мире можно чинить -->
+	<append xpath="/blocks/block[@name='cntCollapsedDewCollector']">
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="cntDewCollector"/>
+			<property name="Item" value="resourceScrapPolymers"/>
+			<property name="ItemCount" value="300"/>
+			<property name="UpgradeHitCount" value="5"/>
+		</property>
+		<property name="UpgradeSound" value="place_block_wood"/>
+	</append>
+	<!-- Корректный разбор сломанных коллекторов воды -->
+	<remove xpath="/blocks/block[@name='cntCollapsedDewCollector']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='cntCollapsedDewCollector']/drop[@event='Harvest']"/>
+	<append xpath="/blocks/block[@name='cntCollapsedDewCollector']">
+		<drop event="Destroy" name="resourceScrapPolymers" count="3,8"/>
+		<drop event="Destroy" name="resourceScrapIron" count="1,5" />
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="10,15" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMetalPipe" count="1,3" tag="salvageHarvest"/>
+		<drop event="Harvest" name="toolDewFilter" count="1" prob="0.05" tag="salvageHarvest"/>
+	</append>
+	<!-- Подбираемые ящики -->
+	<!-- Деревянный -->
+	<remove xpath="/blocks/block[@name='cntWoodWritableCrate']/property[@name='DowngradeBlock']" optional="true"/>
+	<remove xpath="/blocks/block[@name='cntWoodWritableCrate']/drop[@event='Destroy']"/>
+	<append xpath="/blocks/block[@name='cntWoodWritableCrate']">
+		<drop event="Destroy" name="resourceWood" count="1"/>
+		<drop event="Destroy" name="cntWoodWritableCrate" count="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapPolymers" count="0" tool_category="Disassemble"/>
+	</append>
+	<!-- Железный -->
+	<remove xpath="/blocks/block[@name='cntIronWritableCrate']/property[@name='DowngradeBlock']" optional="true"/>
+	<remove xpath="/blocks/block[@name='cntIronWritableCrate']/drop[@event='Destroy']"/>
+	<append xpath="/blocks/block[@name='cntIronWritableCrate']">
+		<drop event="Destroy" name="resourceScrapIron" count="1"/>
+		<drop event="Destroy" name="cntIronWritableCrate" count="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="0" tool_category="Disassemble"/>
+	</append>
+	<!-- Стальной -->
+	<remove xpath="/blocks/block[@name='cntSteelWritableCrate']/property[@name='DowngradeBlock']" optional="true"/>
+	<remove xpath="/blocks/block[@name='cntSteelWritableCrate']/drop[@event='Destroy']"/>
+	<append xpath="/blocks/block[@name='cntSteelWritableCrate']">
+		<drop event="Destroy" name="resourceScrapIron" count="1"/>
+		<drop event="Destroy" name="cntSteelWritableCrate" count="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="0" tool_category="Disassemble"/>
+	</append>
+	<!-- 9 Обыскиваемый тостер -->
+	<append xpath="/blocks/block[@name='cntToaster']">
+		<property name="Class" value="Loot"/>
+		<property name='LootList' value='cntToaster'/>
+	</append>
+	<!-- 10 Лут с шин -->
+	<!-- <set xpath="/blocks/block[@name='decoCarTireSmallFlat']//drop[@event='Destroy']/@count">5,10</set>
+	<set xpath="/blocks/block[@name='decoCarTireFlat']//drop[@event='Destroy']/@count">10,15</set>
+	<set xpath="/blocks/block[@name='decoCarTirePile']//drop[@event='Destroy']/@count">15,20</set> -->
+	<!-- 11 При разборе колёс в мире можно получить колесо -->
+	<!-- <append xpath="/blocks/block[@name='decoCarWheelFlat']">
+		<drop event="Harvest" name="vehicleWheels" count="1" prob="0.2" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoCarWheelFlat02']">
+		<drop event="Harvest" name="vehicleWheels" count="1" prob="0.2" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoCarWheelOffset01']">
+		<drop event="Harvest" name="vehicleWheels" count="1" prob="0.2" tag="salvageHarvest"/>
+	</append> -->
+	<!-- 12 Уменьшаем выпадение электрики при разборке блоков -->
+	<set xpath="/blocks/block[not (contains(@name, 'Trap')) and not (contains(@name, 'fencepost'))]/drop[@event='Harvest' and @name='resourceElectricParts']/@count">1,3</set>
+	<!-- 13 Можно поднимать ловушки -->
+	<append xpath="/blocks/block[@name='trapSpikesWoodDmg0']">
+		<property name="CanPickup" value="true" param1="trapSpikesWoodDmg0"/>
+	</append>
+	<append xpath="/blocks/block[@name='trapSpikesIronDmg0']">
+		<property name="CanPickup" value="true" param1="trapSpikesIronDmg0"/>
+	</append>
+	<!-- 13.1 Колючая проволока -->
+	<append xpath="/blocks/block[@name='barbedWireSheet']">
+		<property name="CanPickup" value="true"/>
+	</append>
+		<append xpath="/blocks/block[@name='barbedFence']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<append xpath="/blocks/block[@name='barbedWireSpindle']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- 14 Скорость передвижения зависит от поверхности -->
+	<append xpath="/blocks/block[@name='terrStone']">
+		<property name="MovementFactor" value="1.0"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrBedrock']">
+		<property name="MovementFactor" value="1.0"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrDirt']">
+		<property name="MovementFactor" value="0.90"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrForestGround']">
+		<property name="MovementFactor" value="0.90"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrBurntForestGround']">
+		<property name="MovementFactor" value="0.87"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrDesertGround']">
+		<property name="MovementFactor" value="0.80"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrSand']">
+		<property name="MovementFactor" value="0.80"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrSandStone']">
+		<property name="MovementFactor" value="0.85"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrSnow']">
+		<property name="MovementFactor" value="0.70"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrTopSoil']">
+		<property name="MovementFactor" value="0.95"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrDestroyedStone']">
+		<property name="MovementFactor" value="0.9"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrDestroyedWoodDebris']">
+		<property name="MovementFactor" value="0.9"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrGravel']">
+		<property name="MovementFactor" value="1.05"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrAsphalt']">
+		<property name="MovementFactor" value="1.15"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrConcrete']">
+		<property name="MovementFactor" value="1.15"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrOreIron']">
+		<property name="MovementFactor" value="1.0"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrOreLead']">
+		<property name="MovementFactor" value="1.0"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrOreCoal']">
+		<property name="MovementFactor" value="1.0"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrOrePotassiumNitrate']">
+		<property name="MovementFactor" value="1.0"/>
+	</append>
+	<append xpath="/blocks/block[@name='terrOreOilDeposit']">
+		<property name="MovementFactor" value="1.0"/>
+	</append>
+	<!-- 15 Отключаем анимацию падения деревьев -->
+	<append xpath="/blocks/block[@name='treeMaster']">
+		<property name="FallOver" value="false"/>
+	</append>
+	<append xpath="/blocks/block[@name='treeAzalea']">
+		<property name="FallOver" value="false"/>
+	</append>
+	<!-- 16 Устанавливаем стоимость кроватей и гробов (слишком дорогие и их слишком много) -->
+	<set xpath="/blocks/block[contains (@name, 'bed') or contains (@name, 'Bed')]/property[@name='EconomicValue']/@value">400</set>
+	<set xpath="/blocks/block[contains (@name, 'mattress')]/property[@name='EconomicValue']/@value">200</set>
+	<append xpath="/blocks/block[@name='cntCasketModernRandomHelper']">
+		<property name="EconomicValue" value="600"/>
+	</append>
+	<!-- 17 Дикие растения будут собираться на Е -->
+	<append xpath="/blocks/block[@name='plantedMushroom3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedYucca3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedCotton3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedCoffee3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedGoldenrod3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedAloe3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedBlueberry3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedPotato3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedChrysanthemum3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedCorn3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedGraceCorn3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedHop3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedPumpkin3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<!-- 18 Растения на делянках растут быстрее -->
+	<set xpath="blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">30</set>
+	<set xpath="blocks/block[@name='treeMasterGrowing']/property[@name='PlantGrowing.GrowthRate']/@value">60</set>
+	<!-- 19 Пересадка семян -->
+	<append xpath="/blocks/block[@name='plantedCorn2']">
+		<property name="Material" value="Mcorn"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedMushroom2']">
+		<property name="Material" value="Mmushrooms"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedPumpkin2']">
+		<property name="Material" value="Mcorn"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedGraceCorn2']">
+		<property name="Material" value="Mcorn"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedYucca2']">
+		<property name="Material" value="Mcorn"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedAloe2']">
+		<property name="Material" value="Mcorn"/>
+	</append>
+	<!-- 20 Сажаем семена после сбора растения -->
+	<append xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedCotton1"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedCoffee3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedCoffee1"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedGoldenrod3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedGoldenrod1"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedAloe3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedAloe1"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedBlueberry3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedBlueberry1"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedPotato3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedPotato1"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedChrysanthemum3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedChrysanthemum1"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedGraceCorn1"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedHop3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedHop1"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedYucca1"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedCorn1"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedMushroom1"/>
+	</append>
+	<append xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']">
+		<property name="DowngradeBlock" value="plantedPumpkin1"/>
+	</append>
+	<!-- 21 Убираем получение семян при уничтожении растения -->
+	<remove xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='plantedCoffee3HarvestPlayer']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='plantedGoldenrod3HarvestPlayer']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='plantedAloe3HarvestPlayer']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='plantedBlueberry3HarvestPlayer']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='plantedPotato3HarvestPlayer']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='plantedChrysanthemum3HarvestPlayer']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='plantedHop3HarvestPlayer']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']/drop[@event='Destroy']"/>
+	<!-- Размер стака для мин -->
+	<set xpath="/blocks/block[starts-with(@name, 'mine')]/property[@name='Stacknumber']/@value">50</set>
+	<!-- Кресла и стулья -->
+	<set xpath="/blocks/block[@name='officeChair01']/property[@name='Stacknumber']/@value">100</set>
+	<set xpath="/blocks/block[@name='woodChair1']/property[@name='Stacknumber']/@value">100</set>
+	<set xpath="/blocks/block[@name='oldChair1']/property[@name='Stacknumber']/@value">100</set>
+	<set xpath="/blocks/block[@name='chairFoldingMetalUnfoldedWhite']/property[@name='Stacknumber']/@value">100</set>
+	<set xpath="/blocks/block[@name='chairFoldingMetalFoldedLeaningWhite']/property[@name='Stacknumber']/@value">100</set>
+	<set xpath="/blocks/block[@name='chairFoldingMetalFoldedFallenWhite']/property[@name='Stacknumber']/@value">100</set>
+	<set xpath="/blocks/block[@name='chairCampingWhite']/property[@name='Stacknumber']/@value">100</set>
+	<!-- Семена и саженцы -->
+	<insertAfter xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='Material']">
+		<property name="Stacknumber" value="500"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='treeMaster']/property[@name='Material']">
+		<property name="Stacknumber" value="500"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='woodLogPillar100']/property[@name='MaxDamage']">
+		<property name="Stacknumber" value="500"/>
+	</insertAfter>
+	<!-- Изменяем ресурсы при разборе некоторых блоков -->
+	<!-- Шкафы -->
+	<append xpath="/blocks/block[starts-with(@name, 'cntFootlocker') or starts-with (@name,'cntCabinet') or starts-with (@name,'cntCupboard') or starts-with (@name,'counterHollow') or starts-with (@name,'cntCounter') and not(contains(@name, 'Player'))]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="4,8" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceNail" count="1,3" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Краны -->
+	<append xpath="/blocks/block[@name='faucet02']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceMetalPipe" count="0,1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="10,30" tag="WasteTreasuresSinkHarvest"/>
+		<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+	</append>
+	<append xpath="/blocks/block[@name='showerHead']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceMetalPipe" count="0,1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="10,30" tag="WasteTreasuresSinkHarvest"/>
+		<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+	</append>
+	<append xpath="/blocks/block[@name='showerHead02']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceMetalPipe" count="0,1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="10,30" tag="WasteTreasuresSinkHarvest"/>
+		<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+	</append>
+	<append xpath="/blocks/block[@name='showerHandle01']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceMetalPipe" count="0,1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="10,30" tag="WasteTreasuresSinkHarvest"/>
+		<drop event="Destroy" name="resourceScrapIron" count="2,4"/>
+	</append>
+	<!-- Душевые лейки -->
+	<append xpath="/blocks/block[@name='faucetBrass02']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceMetalPipe" count="0,1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapBrass" count="20,50" tag="WasteTreasuresSinkHarvest"/>
+		<drop event="Destroy" name="resourceScrapBrass" count="2,4"/>
+	</append>
+	<!-- Дверь ванной (глухая) -->
+	<append xpath="/blocks/block[@name='bathroomStallDoor']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='bathroomStallWall']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[starts-with(@name, 'bathroomStallSCT')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="5,8" tag="salvageHarvest"/>
+	</append>
+	<!-- Шкафчик для лекарств -->
+	<append xpath="/blocks/block[@name='cntMedicineCabinetFaucetOpen']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="2,4" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceBrokenGlass" count="2,6" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceNail" count="1,3" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntPillCaseEmpty']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="6,8" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceBrokenGlass" count="2,6" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceNail" count="1,3" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Зеркала -->
+	<append xpath="/blocks/block[@name='wallMirror']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceBrokenGlass" count="2,6" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='wallMirrorBroken']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceBrokenGlass" count="2,6" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntMedicineCabinetOpen']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="2,4" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceBrokenGlass" count="2,6" tag="salvageHarvest"/>
+	</append>
+	<!-- Корзины для мусора (пластик) -->
+	<append xpath="/blocks/block[starts-with(@name, 'cntbasketLaundryEmpty') or starts-with (@name,'cntbinTrashRolling') or starts-with (@name,'cntBinTrashPlasticEmpty') and not(contains(@name, 'Player'))]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="6,8" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntBruteStyleTrashCanEmpty']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="12,16" tag="salvageHarvest"/>
+	</append>
+	<!-- Корзины для мусора (металл) -->
+	<append xpath="/blocks/block[@name='cntBinTrashMetalEmptyWhite']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="6,8" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntFancyGarbageCan']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="12,18" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntDomedTrashCanEmpty']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="12,18" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntDomedTrashCanCornerEmpty']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="12,18" tag="salvageHarvest"/>
+	</append>
+	<!-- Большие мусорные баки -->
+	<append xpath="/blocks/block[@name='cntDumpster']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="60,80" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntDumpsterFlies']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="60,80" tag="salvageHarvest"/>
+	</append>
+	<!-- Мусорки на колёсах -->
+	<set xpath="/blocks/block[@name='cntTiltTruckEmpty']/drop[@event='Harvest'][@name='resourceMechanicalParts']/@count">1,2</set>
+	<set xpath="/blocks/block[@name='cntTiltTruckEmpty']/drop[@event='Harvest'][@name='resourceScrapPolymers']/@count">12,14</set>
+	<set xpath="/blocks/block[@name='cntTiltTruckEmpty']/drop[@event='Harvest'][@name='resourceScrapPolymers']/@tag">salvageHarvest</set>
+	<!-- Тележки уборщика -->
+	<set xpath="/blocks/block[@name='cntUtilityCartEmpty']/drop[@event='Harvest'][@name='resourceMechanicalParts']/@count">2,4</set>
+	<remove xpath="/blocks/block[@name='cntUtilityCartEmpty']/drop[@event='Destroy'][@name='resourceScrapPolymers']"/>
+	<append xpath="/blocks/block[@name='cntUtilityCartEmpty']">
+		<drop event="Harvest" name="resourceScrapPolymers" count="5,12" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceScrapPolymers" count="2,4"/>
+	</append>
+	<set xpath="/blocks/block[@name='cntJanitorCartEmpty']/drop[@event='Harvest'][@name='resourceMechanicalParts']/@count">2,4</set>
+	<remove xpath="/blocks/block[@name='cntJanitorCartEmpty']/drop[@event='Destroy'][@name='resourceScrapPolymers']"/>
+	<append xpath="/blocks/block[@name='cntJanitorCartEmpty']">
+		<drop event="Harvest" name="resourceScrapPolymers" count="5,12" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceScrapPolymers" count="2,4"/>
+	</append>
+	<!-- Переносной холодильник -->
+	<append xpath="/blocks/block[@name='cntCoolerRandomLootHelper']">
+		<drop event="Harvest" name="resourceScrapPolymers" count="4,8" tag="salvageHarvest"/>
+	</append>
+	<!-- Кулер -->
+	<append xpath="/blocks/block[@name='cntWaterCoolerFull']">
+		<drop event="Harvest" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapPolymers" count="8,16" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntWaterCoolerBottle']">
+		<drop event="Harvest" name="resourceScrapPolymers" count="4,6" tag="salvageHarvest"/>
+	</append>
+	<!-- Изолятор -->
+	<append xpath="/blocks/block[@name='utilityInsulator']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceBrokenGlass" count="1,3" tag="salvageHarvest"/>
+	</append>
+	<!-- Духовка -->
+	<append xpath="/blocks/block[@name='cntwallOvenEmptyWhite']">
+		<drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
+	</append>
+	<!-- Стиральная машина -->
+	<set xpath="/blocks/block[@name='cntDishwasherFullWhite']/drop[@event='Harvest'][@name='resourceMechanicalParts']/@count">3,5</set>
+	<set xpath="/blocks/block[@name='cntDishwasherFullWhite']/drop[@event='Harvest'][@name='resourceElectricParts']/@count">2,4</set>
+	<set xpath="/blocks/block[@name='cntWasherOpen']/drop[@event='Harvest'][@name='resourceMechanicalParts']/@count">3,5</set>
+	<set xpath="/blocks/block[@name='cntWasherOpen']/drop[@event='Harvest'][@name='resourceElectricParts']/@count">2,4</set>
+	<!-- Микрофоны -->
+	<append xpath="/blocks/block[@name='microphoneWithStand']">
+		<drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='microphoneWithStandFallen']">
+		<drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
+	</append>
+	<!-- Серверная стойка -->
+	<append xpath="/blocks/block[@name='decoServerRackWhite']">
+		<drop event="Harvest" name="resourceElectricParts" count="16,28" tag="salvageHarvest"/>
+	</append>
+	<!-- Колёсные колпаки (не мины) -->
+	<append xpath="/blocks/block[@name='hubcapNoMine']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="7,12" tag="salvageHarvest"/>
+	</append>
+	<!-- Бамперы -->
+	<append xpath="/blocks/block[@name='decoCarBackBumperUpright']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="8,16" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceElectricParts" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Автодвери -->
+	<append xpath="/blocks/block[@name='decoCarFrontDoorFlat']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceElectricParts" count="1,2" prob="0.5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Радиаторы -->
+	<remove xpath="/blocks/block[@name='decoCarRadiatorFlat']/drop[@event='Destroy']"/>
+	<append xpath="/blocks/block[@name='decoCarRadiatorFlat']">
+		<drop event="Destroy" name="resourceScrapBrass" count="3,8"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceRadiator" count="1" tag="salvageHarvest"/>
+	</append>
+	<!-- Автосиденья -->
+	<append xpath="/blocks/block[@name='decoCarSeatUpright']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="15,20" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceLeather" count="1,2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceCloth" count="3,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Крыло автомобиля -->
+	<append xpath="/blocks/block[@name='decoCarFenderFlat']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="10,20" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceElectricParts" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Капот автомобиля -->
+	<append xpath="/blocks/block[@name='decoCarHoodFlat']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="10,20" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceElectricParts" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Крышка багажника -->
+	<append xpath="/blocks/block[@name='decoCarTrunkLidFlat']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="10,20" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="salvageHarvest"/>
+	</append>
+	<!-- Запчасти от машины в куче -->
+	<append xpath="/blocks/block[@name='decoCarPartsRamp']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="10,20" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMetalPipe" count="1,2" prob="0.5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Шины -->
+	<!-- Одиночные маленькие шины -->
+	<append xpath="/blocks/block[starts-with(@name, 'decoCarTireSmallF')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="6,12" tag="salvageHarvest"/>
+	</append>
+	<!-- Одиночные шины -->
+	<append xpath="/blocks/block[starts-with(@name, 'decoCarTireF')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="10,18" tag="salvageHarvest"/>
+	</append>
+	<!-- Кучи/стопки шин -->
+	<append xpath="/blocks/block[starts-with(@name, 'decoCarTireP') or starts-with(@name, 'decoCarTireS')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="22,28" tag="salvageHarvest"/>
+	</append>
+	<!-- Колесо -->
+	<append xpath="/blocks/block[starts-with(@name, 'decoCarWheelF') or starts-with(@name, 'decoCarWheelO')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="vehicleWheels" count="1" prob="0.25" tag="salvageHarvest"/>
+	</append>
+	<!-- Почтовые ящики -->
+	<append xpath="/blocks/block[starts-with(@name, 'cntMailBox') and not(contains(@name, 'Player'))]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="6,10" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceWood" count="4,8" tag="salvageHarvest"/>
+	</append>
+	<!-- Почтовые ящики в домах -->
+	<append xpath="/blocks/block[@name='apartmentMailboxClosed']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="20,30" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='apartmentSmallMailboxClosedWhite']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="12,18" tag="salvageHarvest"/>
+	</append>
+	<!-- Тумбочки -->
+	<append xpath="/blocks/block[starts-with(@name, 'cntNightstand') and not(contains(@name, 'Player')) and not(contains(@name, 'Closed'))]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="4,8" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceNail" count="1,3" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Деревянные письменные столы -->
+	<append xpath="/blocks/block[@name='cntDeskWoodEmpty']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="15,25" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="2,4" prob="0.5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceNail" count="1,3" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Железные письменные столы -->
+	<append xpath="/blocks/block[@name='cntDeskMetalEmptyWhite']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="15,25" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Зонты от солнца -->
+	<append xpath="/blocks/block[@name='umbrellaTableDownWhite']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="2,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceCloth" count="6,9" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Стулья -->
+	<append xpath="/blocks/block[starts-with(@name, 'woodChair1')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="2,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="1,2" prob="0.5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceNail" count="1,3" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='oldChair1']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceCloth" count="3,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="4,6" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='oldChair1Broken']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceCloth" count="2,4" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="3,5" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='chairFoldingMetalUnfoldedWhite']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="4,6" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='chairFoldingMetalFoldedLeaningWhite']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="4,6" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='chairFoldingMetalFoldedFallenWhite']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="4,6" tag="salvageHarvest"/>
+	</append>
+	<!-- Барные стулья -->
+	<append xpath="/blocks/block[@name='barStool']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceLeather" count="1,2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="6,9" tag="salvageHarvest"/>
+	</append>
+	<!-- Скамейки -->
+	<append xpath="/blocks/block[@name='parkBenchA']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="12,18" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="8,10" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceNail" count="1,3" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='parkBenchB']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="8,12" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="6,8" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceNail" count="1,3" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Инвалидное кресло -->
+	<append xpath="/blocks/block[@name='wheelchairWhite']">
+		<drop event="Harvest" name="resourceMechanicalParts" count="1,2" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Стойка для капельницы -->
+	<append xpath="/blocks/block[@name='standIV']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
+	</append>
+	<!-- Банкомат -->
+	<append xpath="/blocks/block[@name='cntATMInsecure']">
+		<drop event="Harvest" name="resourceElectricParts" count="5,12" tag="salvageHarvest"/>
+	</append>
+	<!-- Магазинные полки -->
+	<append xpath="/blocks/block[starts-with(@name, 'cntStoreShelfSingle') and contains(@name, 'Empty')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="4,10" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[starts-with(@name, 'cntStoreShelfDouble') and contains(@name, 'Empty')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="6,14" tag="salvageHarvest"/>
+	</append>
+	<!-- Стеллажи -->
+	<append xpath="/blocks/block[starts-with(@name, 'cntShelvesWood') or starts-with(@name, 'cntShelvesFree') and contains(@name, 'Empty')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="8,18" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="4,8" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceNail" count="1,3" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[starts-with(@name, 'cntShelvesMetal') and contains(@name, 'Empty')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="4,12" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[starts-with(@name, 'cntMilitaryMetalShelves') and contains(@name, 'Empty')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="4,12" tag="salvageHarvest"/>
+	</append>
+	<!-- Полки для оружия -->
+	<append xpath="/blocks/block[starts-with(@name, 'cntGunRackSmall') or starts-with(@name, 'cntGunRackLarge') and contains(@name, 'Empty')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="4,12" tag="salvageHarvest"/>
+	</append>
+	<!-- Полки для электроники -->
+	<append xpath="/blocks/block[starts-with(@name, 'cntStoreShelfElectronicsSingle') and contains(@name, 'Empty')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="4,10" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[starts-with(@name, 'cntStoreShelfElectronicsDouble') and contains(@name, 'Empty')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="6,12" tag="salvageHarvest"/>
+	</append>
+	<!-- Вешалки для одежды -->
+	<append xpath="/blocks/block[starts-with(@name, 'cntClothesRack') and contains(@name, 'Empty')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="5,8" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[starts-with(@name, 'cntClothesShelf') and contains(@name, 'Empty')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="8,16" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[starts-with(@name, 'cntClothesShelf') and contains(@name, 'Empty')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="8,16" tag="salvageHarvest"/>
+	</append>
+	<!-- Корзина для покупок -->
+	<append xpath="/blocks/block[@name='cntShoppingBasketEmptyWhite']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="5,10" tag="salvageHarvest"/>
+	</append>
+	<!-- Мусорная корзина для ТЦ -->
+	<append xpath="/blocks/block[@name='cntTrashBinCommercialWhite']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="4,8" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceWood" count="5,10" tag="salvageHarvest"/>
+	</append>
+	<!-- школьная парта -->
+	<append xpath="/blocks/block[@name='schoolDesk01White']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="5,12" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='schoolDesk02White']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="5,12" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='schoolDesk03White']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="5,12" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='schoolSeat01White']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="4,10" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="3,8" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='schoolSeat02White']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="4,10" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="3,8" tag="salvageHarvest"/>
+	</append>
+	<!-- Шкафчики -->
+	<append xpath="/blocks/block[@name='cntLockersShortOpen']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="5,15" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntLockersTallOpen']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntLockersTallDoubleOpen']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="15,25" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntLockersTallMixOpen']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntLockersTallMixLinkOpen']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="salvageHarvest"/>
+	</append>
+	<!-- Ванные -->
+	<append xpath="/blocks/block[@name='cntBathTubEmpty']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapBrass" count="5,15" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Мебель фаст-фуда (в т.ч. ресторанные столы) -->
+	<append xpath="/blocks/block[@name='fastFoodBooth']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="4,8" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="2,4" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceNail" count="1,3" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='fastFoodBoothBenchWhite']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="4,8" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="2,4" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceNail" count="1,3" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Столики -->
+	<append xpath="/blocks/block[@name='decoTableRound']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="2,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapPolymers" count="1,3" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='metalTablePillar0.025CTR']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="2,5" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoPicnicTable']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="4,8" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="2,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceNail" count="1,3" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<remove xpath="/blocks/block[@name='officeDesk']/drop[@event='Harvest']"/>
+	<append xpath="/blocks/block[@name='officeDesk']">
+		<drop event="Destroy" name="resourceWood" count="1,3"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="4,8" tag="lumberjackHarvest"/>
+		<drop event="Harvest" name="resourceWood" count="2,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapIron" count="2,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceNail" count="1,3" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='officeTable']">
+		<drop event="Harvest" name="resourceScrapPolymers" count="1,4" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceNail" count="1,3" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Бильярдный стол -->
+	<append xpath="/blocks/block[@name='decoPoolTable']">
+		<drop event="Destroy" name="resourceWood" count="1,3"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceWood" count="2,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapPolymers" count="2,5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceNail" count="2,6" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	<!-- Бак для пропана -->
+	<append xpath="/blocks/block[@name='tankPropaneWhite']">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapIron" count="15,25" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMechanicalParts" count="1,3" prob="0.5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceScrapPolymers" count="1,3" prob="0.5" tag="salvageHarvest"/>
+	</append>
+</blocks_aio_2>

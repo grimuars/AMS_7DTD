@@ -1,0 +1,12 @@
+<config>
+	<append xpath="/quests/quest[@id='quest_tier3complete']">
+		<reward type="LootItem" id="groupQuestDirtBikeParts" ischosen="true" value="4"/>
+	</append>
+	<append xpath="/quests/quest[@id='quest_tier4complete']">
+		<reward type="LootItem" id="groupQuestUAZ452Parts" ischosen="true" value="5"/>
+	</append>
+	<append xpath="/quests/quest[@id='quest_tier5complete']">
+		<reward type="LootItem" id="groupQuestHumveeParts" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupQuestMarauderParts" ischosen="true" value="6"/>
+	</append>
+</config>

@@ -1,0 +1,11 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="recycler" count="1" craft_area="workbench" craft_time="240" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="150"/>
+			<ingredient name="resourceLegendaryParts" count="6"/>
+			<ingredient name="resourceMechanicalParts" count="800"/>
+			<ingredient name="resourceElectricParts" count="240"/>
+			<ingredient name="resourceOil" count="80"/>
+		</recipe>
+	</append>
+</configs>

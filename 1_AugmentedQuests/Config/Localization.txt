@@ -1,0 +1,7 @@
+﻿Key,English,Russian
+
+quest_clear_response,"Clear at [DECEA3]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])","Очистить: [DECEA3]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])"
+quest_fetch_response,"Fetch at [DECEA3]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])","Принести: [DECEA3]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])"
+quest_fetch_clear_response,"Fetch/Clear at [DECEA3]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])","Принести и очистить: [DECEA3]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])"
+quest_restore_power_response,"Restore Power at [DECEA3]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])","Запустить генератор: [DECEA3]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])"
+quest_infestation_response,"Infestation at [DECEA3]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])","Нашествие: [DECEA3]{poi.name}[-] ([DECEA3]{poi.distance} {poi.direction}[-])"

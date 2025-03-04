@@ -1,0 +1,3 @@
+<CATUI>
+	<set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">11,11</set>	
+</CATUI>

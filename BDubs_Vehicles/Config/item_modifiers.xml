@@ -1,0 +1,12 @@
+﻿<configs>  
+	<append xpath="/item_modifiers">
+		<item_modifier name="modVehicleHumveeDoors" installable_tags="vbody" modifier_tags="doors" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="TraderStageTemplate" value="modsTier2"/>
+			<property name="CustomIcon" value="Humveedoors"/>
+			<effect_group tiered="false">
+				<passive_effect name="VehicleFuelUsePer" operation="perc_set" value=".5"/>
+			</effect_group>
+		</item_modifier>
+	</append>
+</configs>

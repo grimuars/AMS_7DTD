@@ -1,0 +1,35 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,russian
+buffMiningTipDisplayDesc,buffs,Buff,,,Ore deposits will respawn in 5 minutes.,"Подземные рудные месторождения иногда можно опознать по выходу рудных валунов на поверхность."
+buffMiningTipDisplayName,buffs,Buff,,,Mining Tip,"Подсказка о добыче руды"
+buffMiningTipDisplayTooltip,buffs,Buff,,,This ore deposit will respawn in 5 minutes.,"Похоже, здесь залежи руды."
+
+perkArtOfMiningCompleteDesc,progression,perk  book,,,"Have a 20% chance to do 10x more damage to any ore.","Вероятность 20% нанести десятикратный урон по любой руде."
+perkArtOfMiningCompleteLongDesc,progression,perk  book,,,"One Shot: You can't find the glory hole muckin around. Crack rock like a pro with this tip. With a mining tool you have a 20% chance to do 10x more damage to any ore.","С одного выстрела: Валяя дурака, шахту не найдешь. Работайте с горными породами как профессионал. При использовании горного инструмента вероятность 20% нанести десятикратный урон по любой руде."
+perkArtOfMiningAvalancheDesc,progression,perk  book,,,"Mining tools in your hands deal 20% more damage to enemies. Damage from blocks falling on you reduced by 95%.","Инструменты для добычи в ваших руках наносят на 20% больше урона врагам. Урон от упавших на вас блоков уменьшен на 95%."
+perkArtOfMiningAvalancheLongDesc,progression,perk  book,,,"In this strange world, you can't dig a big mine and drop several tons of rock on yourself because you forgot to set up supports. However, there is still a chance to get hit on the head by something falling and heavy. To protect against such surprises, the mining tools in your hands deal 20% more damage to enemies, and the damage from blocks falling on you is reduced by 95%.","В этом странном мире нельзя выкопать большую шахту и обвалить на себя несколько тонн породы, забыв установить подпорки. Однако шанс получить по голове чем-то падающим и тяжёлым всё равно есть. Для защиты от подобных неожиданностей инструменты для добычи в ваших руках наносят на 20% больше урона врагам, а урон от упавших на вас блоков уменьшен на 95%."
+
+rockResource,blocks,Block,,,Stone Boulder,"Ресурс: Булыжники"
+rockResource02,blocks,Block,,,Stone Boulder,"Ресурс: Булыжники"
+rockResourceRespawner,blocks,Block,,,Stone Boulder Respawner,"Источник камня"
+rockResource02Respawner,blocks,Block,,,Stone Boulder Respawner,"Источник камня"
+rockResourceDesc,blocks,Block,,,"Stone Boulder\n \nThis boulder will respawn within 15 minutes of being destroyed.","Источник камня\nВозродится через 15 минут после добычи."
+oreIronBoulderRespawner,blocks,Block,,,"Iron Boulder Respawner","Источник железа"
+oreIronBoulderRespawnerDesc,blocks,Block,,,"Iron Boulder\nThis boulder will respawn within 15 minutes of being destroyed.","Источник железа\nВозродится через 15 минут после добычи."
+oreLeadBoulderRespawner,blocks,Block,,,"Lead Boulder","Источник свинца"
+oreLeadBoulderRespawnerDesc,blocks,Block,,,"Lead Boulder\nThis boulder will respawn within 15 minutes of being destroyed.","Источник свинца\nВозродится через 15 минут после добычи."
+oreCoalBoulderRespawner,blocks,Block,,,"Coal Boulder","Источник угля"
+oreCoalBoulderRespawnerDesc,blocks,Block,,,"Coal Boulder\nThis boulder will respawn within 15 minutes of being destroyed.","Источник угля\nВозродится через 15 минут после добычи."
+orePotassiumNitrateBoulderRespawner,blocks,Block,,,"Potassium Nitrate Boulder","Источник селитры"
+orePotassiumNitrateBoulderRespawnerDesc,blocks,Block,,,"Potassium Nitrate Boulder\nThis boulder will respawn within 15 minutes of being destroyed.","Источник селитры\nВозродится через 15 минут после добычи."
+oreShaleBoulderRespawner,blocks,Block,,,"Oil Shale Boulder","Источник нефтяного сланца"
+oreShaleBoulderRespawnerDesc,blocks,Block,,,"Oil Shale Boulder\nThis boulder will respawn within 15 minutes of being destroyed.","Источник нефтяного сланца\nВозродится через 15 минут после добычи."
+resourceRespawnerDesc,blocks,Block,,,"This boulder will respawn within 15 minutes of being destroyed","Ресурс возродится через 15 минут после добычи"
+oreVeinDesc,blocks,Block,,,"You are no longer able to mine ore veins! You can only mine the ore boulders on the surface.","Рудные жилы больше нельзя копать, добывайте источники ресурсов на поверхности"
+
+stoneResourceDesc,blocks,Block,,,"Can't Mine","Нельзя добыть"
+gravelResourceDesc,blocks,Block,,,"Can't Mine","Нельзя добыть"
+
+Stone,blocks,Block,,,Stone (crafted),"Камень (искусственный)"
+Gravel,blocks,Block,,,Gravel (crafted),"Гравий (искусственный)"
+
+modMeleeGraveDiggerDesc,item_modifiers,mod,,,"Turn your shovel into a deadly weapon!\n\nIncreases ground shovel damage by 25%.\nIncreases shovel damage against enemies by 25%.\nHas a 10% chance to apply bleeding to the target on a power shovel attack.\nReduces stamina loss when using shovels by 20%.\n\nRemember: leveling up is nothing, the shovel is everything!","Превратите вашу лопату в смертельное оружие!\n\nУвеличивает на 25% урон лопат по земле. Шанс оглушить цель при атаке лопатой 20%. Увеличивает на 25% урон лопат по противникам. С шансом в 10% позволяет наложить на цель кротечение при силовой атаке лопатой. Уменьшает потери выносливости при использовании лопат на 20%.\n\nПомните: прокачка - ничто, лопата - всё!"

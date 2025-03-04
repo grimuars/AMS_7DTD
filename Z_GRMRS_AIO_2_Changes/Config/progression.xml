@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<progression_aio_2>
+	<!-- 1 Увеличиваем количество опыта на уровень -->
+	<set xpath="/progression/level[@max_level='300']/@exp_to_level">12000</set>
+	<!-- 2 Удаляем бонусы для лута при изучении перков -->
+	<remove xpath="/progression/perks/perk[*]/effect_group[*]/passive_effect[@name='LootProb']"/>
+	<!-- 3 Бонус перка на турели под новые параметры -->
+	<set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='MagazineSize'][@value='10,50']/@value">360,1800</set>
+	<set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='EntityDamage'][@value='.1,.2,.3,.4,.4']/@value">.2,.4,.6,.8,1.1</set>
+	<!-- 4 Устанавливаем перкам дополнительные характеристики для изучения -->
+	<!-- *** PERCEPTION: PERKS -->
+	<!-- *** DEAD_EYE -->
+	<append xpath="/progression/perks/perk[@name='perkDeadEye']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkDeadEye']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
+	</append>
+	<!-- *** DEMOLITIONS_EXPERT -->
+	<append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
+	</append>
+	<!-- *** JAVELIN_MASTER -->
+	<append xpath="/progression/perks/perk[@name='perkJavelinMaster']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkJavelinMaster']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="6" desc_key="reqStrengthLevel06"/>
+	</append>
+	<!-- *** FLURRY_OF_PERCEPTION -->
+	<append xpath="/progression/perks/perk[@name='perkFlurryOfPerception']/level_requirements[@level='2']">
+		<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="4" desc_key="reqAgilityLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkFlurryOfPerception']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="6" desc_key="reqAgilityLevel06"/>
+	</append>
+	<!-- *** INFILTRATOR -->
+	<append xpath="/progression/perks/perk[@name='perkInfiltrator']/level_requirements[@level='2']">
+		<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="4" desc_key="reqAgilityLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkInfiltrator']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="6" desc_key="reqAgilityLevel06"/>
+	</append>
+	<!-- *** ANIMAL_TRACKER -->
+	<append xpath="/progression/perks/perk[@name='perkAnimalTracker']/level_requirements[@level='2']">
+		<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkAnimalTracker']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+	</append>
+	<!-- *** PENETRATOR -->
+	<append xpath="/progression/perks/perk[@name='perkPenetrator']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkPenetrator']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="6" desc_key="reqStrengthLevel06"/>
+	</append>
+	<!-- *** LUCKY_LOOTER -->
+	<append xpath="/progression/perks/perk[@name='perkLuckyLooter']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkLuckyLooter']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel06"/>
+	</append>
+	<!-- *** SALVAGE_OPERATIONS -->
+	<append xpath="/progression/perks/perk[@name='perkSalvageOperations']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkSalvageOperations']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel06"/>
+	</append>
+	<!-- *** STRENGTH: PERKS -->
+	<!-- *** BOOMSTICK -->
+	<append xpath="/progression/perks/perk[@name='perkBoomstick']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkBoomstick']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
+	</append>
+	<!-- *** PUMMEL_PETE -->
+	<append xpath="/progression/perks/perk[@name='perkPummelPete']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkPummelPete']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
+	</append>
+	<!-- *** SKULL_CRUSHER -->
+	<append xpath="/progression/perks/perk[@name='perkSkullCrusher']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkSkullCrusher']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
+	</append>
+	<!-- *** FLURRY_OF_STRENGTH -->
+	<append xpath="/progression/perks/perk[@name='perkFlurryOfStrength']/level_requirements[@level='2']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkFlurryOfStrength']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
+	</append>
+	<!-- *** HEAVY_ARMOR -->
+	<append xpath="/progression/perks/perk[@name='perkHeavyArmor']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkHeavyArmor']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
+	</append>
+	<!-- *** PACK_MULE -->
+	<append xpath="/progression/perks/perk[@name='perkPackMule']/level_requirements[@level='2']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="2" desc_key="reqFortitudeLevel02"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkPackMule']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkPackMule']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkPackMule']/level_requirements[@level='5']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="8" desc_key="reqFortitudeLevel08"/>
+	</append>
+	<!-- *** MASTER_CHEF -->
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/level_requirements[@level='2']">
+		<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="4" desc_key="reqAgilityLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel04"/>
+	</append>
+	<!-- *** MINER69R -->
+	<append xpath="/progression/perks/perk[@name='perkMiner69r']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkMiner69r']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
+	</append>
+	<!-- *** MOTHER_LODE -->
+	<append xpath="/progression/perks/perk[@name='perkMotherLode']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkMotherLode']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel06"/>
+	</append>
+	<!-- *** FORTITUDE: PERKS -->
+	<!-- *** BRAWLER -->
+	<append xpath="/progression/perks/perk[@name='perkBrawler']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="4" desc_key="reqAgilityLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkBrawler']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="6" desc_key="reqAgilityLevel06"/>
+	</append>
+	<!-- *** MACHINE_GUNNER -->
+	<append xpath="/progression/perks/perk[@name='perkMachineGunner']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkMachineGunner']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="6" desc_key="reqStrengthLevel06"/>
+	</append>
+	<!-- *** FLURRY_OF_FORTITUDE -->
+	<append xpath="/progression/perks/perk[@name='perkFlurryOfFortitude']/level_requirements[@level='2']">
+		<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="4" desc_key="reqAgilityLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkFlurryOfFortitude']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="6" desc_key="reqAgilityLevel06"/>
+	</append>
+	<!-- *** THE_HUNTSMAN -->
+	<append xpath="/progression/perks/perk[@name='perkTheHuntsman']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkTheHuntsman']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel06"/>
+	</append>
+	<!-- *** WELL_INSULATED -->
+	<append xpath="/progression/perks/perk[@name='perkWellInsulated']/level_requirements[@level='2']">
+		<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkWellInsulated']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel06"/>
+	</append>
+	<!-- *** LIVING_OFF_THE_LAND -->
+	<append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/level_requirements[@level='2']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="reqPerceptionLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel04"/>
+	</append>
+	<!-- *** PAIN_TOLERANCE -->
+	<append xpath="/progression/perks/perk[@name='perkPainTolerance']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkPainTolerance']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="6" desc_key="reqStrengthLevel06"/>
+	</append>
+	<!-- *** HEALING_FACTOR -->
+	<append xpath="/progression/perks/perk[@name='perkHealingFactor']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkHealingFactor']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="6" desc_key="reqStrengthLevel06"/>
+	</append>
+	<!-- *** SLOW_METABOLISM -->
+	<append xpath="/progression/perks/perk[@name='perkSlowMetabolism']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="reqPerceptionLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkSlowMetabolism']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="6" desc_key="reqPerceptionLevel06"/>
+	</append>
+	<!-- *** RULE_ONE_CARDIO -->
+	<append xpath="/progression/perks/perk[@name='perkRuleOneCardio']/level_requirements[@level='2']">
+		<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="4" desc_key="reqAgilityLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkRuleOneCardio']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="6" desc_key="reqStrengthLevel06"/>
+	</append>
+	<!-- *** AGILITY: PERKS -->
+	<!-- *** ARCHERY -->
+	<append xpath="/progression/perks/perk[@name='perkArchery']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkArchery']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="6" desc_key="reqStrengthLevel06"/>
+	</append>
+	<!-- *** GUNSLINGER -->
+	<append xpath="/progression/perks/perk[@name='perkGunslinger']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="reqPerceptionLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkGunslinger']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="6" desc_key="reqPerceptionLevel06"/>
+	</append>
+	<!-- *** DEEP_CUTS -->
+	<append xpath="/progression/perks/perk[@name='perkDeepCuts']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkDeepCuts']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="6" desc_key="reqStrengthLevel06"/>
+	</append>
+	<!-- *** FLURRY_OF_AGILITY -->
+	<append xpath="/progression/perks/perk[@name='perkFlurryOfAgility']/level_requirements[@level='2']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkFlurryOfAgility']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
+	</append>
+	<!-- *** RUN_AND_GUN -->
+	<append xpath="/progression/perks/perk[@name='perkRunAndGun']/level_requirements[@level='2']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkRunAndGun']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
+	</append>
+	<!-- *** MEDIUM_ARMOR -->
+	<append xpath="/progression/perks/perk[@name='perkMediumArmor']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkMediumArmor']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
+	</append>
+	<!-- *** PARKOUR -->
+	<append xpath="/progression/perks/perk[@name='perkParkour']/level_requirements[@level='2']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkParkour']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+	</append>
+	<!-- *** HIDDEN_STRIKE -->
+	<append xpath="/progression/perks/perk[@name='perkHiddenStrike']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkHiddenStrike']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
+	</append>
+	<!-- *** FROM_THE_SHADOWS -->
+	<append xpath="/progression/perks/perk[@name='perkFromTheShadows']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkFromTheShadows']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="6" desc_key="reqPerceptionLevel06"/>
+	</append>
+	<!-- *** INTELLECT: PERKS -->
+	<!-- *** ELECTROCUTIONER -->
+	<append xpath="/progression/perks/perk[@name='perkElectrocutioner']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkElectrocutioner']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="6" desc_key="reqStrengthLevel06"/>
+	</append>
+	<!-- *** TURRETS -->
+	<append xpath="/progression/perks/perk[@name='perkTurrets']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkTurrets']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
+	</append>
+	<!-- *** FLURRY_OF_INTELLECT -->
+	<append xpath="/progression/perks/perk[@name='perkFlurryOfIntellect']/level_requirements[@level='2']">
+		<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="4" desc_key="reqAgilityLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkFlurryOfIntellect']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="6" desc_key="reqAgilityLevel06"/>
+	</append>
+	<!-- *** BETTER_BARTER -->
+	<append xpath="/progression/perks/perk[@name='perkBetterBarter']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="reqPerceptionLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkBetterBarter']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="6" desc_key="reqPerceptionLevel06"/>
+	</append>
+	<!-- *** DARING_ADVENTURER -->
+	<append xpath="/progression/perks/perk[@name='perkDaringAdventurer']/level_requirements[@level='2']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="reqPerceptionLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkDaringAdventurer']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="5" desc_key="reqPerceptionLevel05"/>
+	</append>
+	<!-- *** CHARISMATIC_NATURE -->
+	<append xpath="/progression/perks/perk[@name='perkCharismaticNature']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="reqPerceptionLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkCharismaticNature']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="6" desc_key="reqPerceptionLevel06"/>
+	</append>
+	<!-- *** PHYSICIAN -->
+	<append xpath="/progression/perks/perk[@name='perkPhysician']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="reqPerceptionLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkPhysician']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="6" desc_key="reqPerceptionLevel06"/>
+	</append>
+	<!-- *** ADVANCED_ENGINEERING -->
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="reqPerceptionLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="6" desc_key="reqPerceptionLevel06"/>
+	</append>
+	<!-- *** GREASE_MONKEY -->
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/level_requirements[@level='4']">
+		<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
+	</append>
+	<!-- *** LOCK_PICKING -->
+	<append xpath="/progression/perks/perk[@name='perkLockPicking']/level_requirements[@level='2']">
+		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="reqPerceptionLevel04"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkLockPicking']/level_requirements[@level='3']">
+		<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="4" desc_key="reqAgilityLevel04"/>
+	</append>
+	<!-- 5 Добавляем уровни в требования для изучения перков -->
+	<!-- 1-й уровень перков требует дополнительно 15-й уровень -->
+	<append xpath="/progression/perks/perk[contains (@name, 'perk')]/level_requirements[@level='1']">
+		<requirement name="PlayerLevel" operation="GTE" value="15" desc_key="reqLevel15"/>
+	</append>
+	<!-- 2-й уровень перков требует дополнительно 35-й уровень -->
+	<append xpath="/progression/perks/perk[contains (@name, 'perk')]/level_requirements[@level='2']">
+		<requirement name="PlayerLevel" operation="GTE" value="35" desc_key="reqLevel35"/>
+	</append>
+	<!-- 3-й уровень перков требует дополнительно 55-й уровень -->
+	<append xpath="/progression/perks/perk[contains (@name, 'perk')]/level_requirements[@level='3']">
+		<requirement name="PlayerLevel" operation="GTE" value="55" desc_key="reqLevel55"/>
+	</append>
+	<!-- 4-й уровень перков требует дополнительно 75-й уровень -->
+	<append xpath="/progression/perks/perk[contains (@name, 'perk')]/level_requirements[@level='4']">
+		<requirement name="PlayerLevel" operation="GTE" value="75" desc_key="reqLevel75"/>
+	</append>
+	<!-- 5-й уровень перков требует дополнительно 95-й уровень -->
+	<append xpath="/progression/perks/perk[contains (@name, 'perk')]/level_requirements[@level='5']">
+		<requirement name="PlayerLevel" operation="GTE" value="95" desc_key="reqLevel95"/>
+	</append>
+	<!-- 6 Отключаем дроны -->
+	<remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingRobotics']/display_entry[@item='gunBotT3JunkDrone']"/>
+	<remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingRobotics']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunBotT3JunkDrone']"/>
+	<remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingRobotics']/effect_group/passive_effect[@name='CraftingTier' and @tags='gunBotT3JunkDrone']"/>
+	<!-- 7 Изменения в перке Глубокие раны -->
+	<!-- Кровотечение от основной атаки -->
+	<set xpath="//perk[@name='perkDeepCuts']/effect_group[@name='primary, always']">
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1">
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="9" target="other"/>
+			<requirement name="ItemHasTags" tags="perkDeepCuts"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1">
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="2"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="12" target="other"/>
+			<requirement name="ItemHasTags" tags="perkDeepCuts"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="2">
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="3"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="15" target="other"/>
+			<requirement name="ItemHasTags" tags="perkDeepCuts"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="2">
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="4"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="18" target="other"/>
+			<requirement name="ItemHasTags" tags="perkDeepCuts"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="3">
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="5"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="21" target="other"/>
+			<requirement name="ItemHasTags" tags="perkDeepCuts"/>
+		</triggered_effect>
+	</set>
+	<!-- Кровотечение от силовой атаки -->
+	<remove xpath="//perk[@name='perkDeepCuts']/effect_group[@name='Secondary']"/>
+	<append xpath="//perk[@name='perkDeepCuts']">
+		<effect_group name="Secondary">
+			<requirement name="ItemHasTags" tags="perkDeepCuts"/>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="0"/>
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="1" target="other"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="0"/>
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="GTE" value="1" target="other"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="set" value="2">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="2" target="other"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="2">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="GTE" value="2" target="other"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="set" value="4">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="2"/>
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="4" target="other"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="2">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="2"/>
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="GTE" value="4" target="other"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="set" value="6">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="3"/>
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="6" target="other"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="3">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="3"/>
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="GTE" value="6" target="other"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="set" value="8">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="4"/>
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="8" target="other"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="4">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="4"/>
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="GTE" value="8" target="other"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="set" value="10">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="5"/>
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="10" target="other"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="5">
+				<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="5"/>
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="GTE" value="10" target="other"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+	<!-- 8 Увеличиваем стоимость части навыков до 2-4 очков -->
+	<setattribute xpath="/progression/perks/perk[@name='perkDemolitionsExpert']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkJavelinMaster']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkInfiltrator']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkPenetrator']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkLuckyLooter']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkTreasureHunter']" name="base_skill_point_cost">3</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkBoomstick']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkPummelPete']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkSkullCrusher']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkHeavyArmor']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkMiner69r']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkMotherLode']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkBrawler']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkMachineGunner']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkTheHuntsman']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkWellInsulated']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkPainTolerance']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkRuleOneCardio']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkArchery']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkGunslinger']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkDeepCuts']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkRunAndGun']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkParkour']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkElectrocutioner']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkTurrets']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkBetterBarter']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkCharismaticNature']" name="base_skill_point_cost">2</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkPhysician']" name="base_skill_point_cost">4</setattribute>
+	<setattribute xpath="/progression/perks/perk[@name='perkAdvancedEngineering']" name="base_skill_point_cost">2</setattribute>
+	<!-- 9 Опыт от электрических ловушек получает вся группа -->
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+		<passive_effect name="ElectricalTrapXP" operation="base_set" level="1,2,3,4,5" value=".1,.2,.3,.4,.5" target="selfOtherPlayers" target_tags="ally,party" range="300"/>
+	</append>
+	<!-- Добавляем новые бандлы в разблокировку существующими перками -->
+	<append xpath="/progression/perks/book[@name='perkArtOfMiningPallets']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceScrapBrassBundle,resourceClayLumpBundle,resourceCrushedSandBundle,resourceScrapPolymersBundle"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="resourceCobblestonesBundle,resourceForgedIronBundle,resourceArrowHeadIronBundle,ammoDartIronBundle"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1" tags="resourceCementBundle,resourceConcreteMixBundle"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="resourceForgedSteelBundle,resourceBuckshotBundle,resourceBulletCasingBundle,resourceBulletTipBundle,resourceArrowHeadSteelAPBundle"/>
+	</append>
+	<!-- Бандлы энергопатронов -->
+	<!-- <append xpath="/progression/perks/book[@name='perkSniperComplete']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoEnergyRifleRoundBundle"/>
+		</effect_group>
+	</append>
+	<append xpath="/progression/perks/book[@name='perkPistolPeteComplete']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoEnergyRoundBundle"/>
+		</effect_group>
+	</append>
+	<append xpath="/progression/perks/book[@name='perkEnforcerComplete']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoEnergyMagnumRoundBundle"/>
+		</effect_group>
+	</append>
+	<append xpath="/progression/perks/book[@name='perkShotgunMessiahComplete']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoEnergyShellBundle"/>
+		</effect_group>
+	</append> -->
+</progression_aio_2>

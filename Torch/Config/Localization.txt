@@ -1,7 +1,0 @@
-﻿Key,File,Type,UsedInMainMenu,NoTranslate,english,russian
-
-loadingTipTorchCulling_title,UI,Loading Screen,x,,Torch Light Occlusion Culling,"Torch - Скрытие световой окклюзии"
-loadingTipTorchCulling,UI,Loading Screen,x,,"Torch uses Occlusion Culling to remove lights that are not visible in the final frame, increasing performance in areas with lots of lights with few being visible","Torch использует технологию Occlusion Culling, чтобы убрать источники света, не видимые в кадре. Это позволяет улучшить производительность игры в местах с большим количеством источников света."
-loadingTipTorchShadowMaps_title,UI,Loading Screen,x,,Torch Shadowmap Caching,"Torch - Кэширование теней"
-loadingTipTorchShadowMaps,UI,Loading Screen,x,,"Torch caches the Shadowmaps created from the lights to be used in future frames, increasing performance","Torch кэширует карты теней, создаваемые для источников света, чтобы использовать их в будущих кадрах и увеличить производительность рендеринга."
-

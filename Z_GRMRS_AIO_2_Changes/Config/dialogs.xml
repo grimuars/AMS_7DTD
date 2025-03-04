@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dialogs_aio_2>
+    <!-- Убираем ограничение по количеству квестов за день -->
+	<!-- <remove xpath="/dialogs/dialog[@id='trader']/response[@id='jobsnone']" />
+    <remove xpath="/dialogs/dialog[@id='trader']/response[contains(@id, 'jobshave')]/requirement[@type='QuestStatus']" /> -->
+</dialogs_aio_2>

@@ -1,8 +1,0 @@
-<fgstainlessmod>
-	<append xpath="/recipes">
-		<recipe name="steelPolish" count="20" craft_area="chemistryStation" tags="chemistryStation" craft_time="20">
-			<ingredient name="resourceOil" count="2"/>
-			<ingredient name="resourceForgedSteel" count="25"/>
-		</recipe>
-	</append>
-</fgstainlessmod>

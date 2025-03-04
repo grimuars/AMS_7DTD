@@ -1,0 +1,88 @@
+<Zilox>
+	<!-- onSelfItemRepaired has been hooked up and can be used to trigger game events and triggered effects -->
+	<append xpath="/items/item[starts-with(@name, 'armor') and not (contains(@name, 'Parts')) and not (contains(@name, 'Magazine'))]">
+		<property name="RepairDegradeAmount" value="1"/>
+		<!-- How many quality levels the item degreades by on repair -->
+		<property name="RepairDegradeChance" value="0.15"/>
+		<!-- The probability that the item will lose a quality level/levels on repair -->
+		<property name="RepairQualityOneBreaksAfter" value="false"/>
+		<!-- Will the item break after its repaired at quality 1. -->
+		<effect_group name="IQD">
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="minDegradeAmount" operation="set" value="1"/>
+			<!-- Качество предмета не может опуститься ниже 1 -->
+		</effect_group>
+	</append>
+	<append xpath="/items/item[starts-with(@name, 'gun') and not (contains(@name, 'Parts')) and not (contains(@name, 'Magazine'))]">
+		<property name="RepairDegradeAmount" value="1"/>
+		<!-- How many quality levels the item degreades by on repair -->
+		<property name="RepairDegradeChance" value="0.15"/>
+		<!-- The probability that the item will lose a quality level/levels on repair -->
+		<property name="RepairQualityOneBreaksAfter" value="false"/>
+		<!-- Will the item break after its repaired at quality 1. -->
+		<effect_group name="IQD">
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="minDegradeAmount" operation="set" value="1"/>
+			<!-- Качество предмета не может опуститься ниже 1 -->
+		</effect_group>
+	</append>
+	<append xpath="/items/item[starts-with(@name, 'meleeWpn') and not (contains(@name, 'Parts'))]">
+		<property name="RepairDegradeAmount" value="1"/>
+		<!-- How many quality levels the item degreades by on repair -->
+		<property name="RepairDegradeChance" value="0.15"/>
+		<!-- The probability that the item will lose a quality level/levels on repair -->
+		<property name="RepairQualityOneBreaksAfter" value="false"/>
+		<!-- Will the item break after its repaired at quality 1. -->
+		<effect_group name="IQD">
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="minDegradeAmount" operation="set" value="1"/>
+			<!-- Качество предмета не может опуститься ниже 1 -->
+		</effect_group>
+	</append>
+	<append xpath="/items/item[starts-with (@name, 'meleeTool') and not (contains(@name, 'Parts'))]">
+		<property name="RepairDegradeAmount" value="1"/>
+		<!-- How many quality levels the item degreades by on repair -->
+		<property name="RepairDegradeChance" value="0.15"/>
+		<!-- The probability that the item will lose a quality level/levels on repair -->
+		<property name="RepairQualityOneBreaksAfter" value="false"/>
+		<!-- Will the item break after its repaired at quality 1. -->
+		<effect_group name="IQD">
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="minDegradeAmount" operation="set" value="1"/>
+			<!-- Качество предмета не может опуститься ниже 1 -->
+		</effect_group>
+	</append>
+	<!-- Применяем к новому оружию -->
+	<append xpath="/items/item[@name='meleeTantoKnife']">
+		<property name="RepairDegradeAmount" value="1"/>
+		<!-- How many quality levels the item degreades by on repair -->
+		<property name="RepairDegradeChance" value="0.15"/>
+		<!-- The probability that the item will lose a quality level/levels on repair -->
+		<property name="RepairQualityOneBreaksAfter" value="false"/>
+		<!-- Will the item break after its repaired at quality 1. -->
+		<effect_group name="IQD">
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="minDegradeAmount" operation="set" value="1"/>
+			<!-- Качество предмета не может опуститься ниже 1 -->
+		</effect_group>
+	</append>
+	<append xpath="/items/item[@name='meleeKatanaSword']">
+		<property name="RepairDegradeAmount" value="1"/>
+		<!-- How many quality levels the item degreades by on repair -->
+		<property name="RepairDegradeChance" value="0.15"/>
+		<!-- The probability that the item will lose a quality level/levels on repair -->
+		<property name="RepairQualityOneBreaksAfter" value="false"/>
+		<!-- Will the item break after its repaired at quality 1. -->
+		<effect_group name="IQD">
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="minDegradeAmount" operation="set" value="1"/>
+			<!-- Качество предмета не может опуститься ниже 1 -->
+		</effect_group>
+	</append>
+	<append xpath="/items/item[@name='Magbow']">
+		<property name="RepairDegradeAmount" value="1"/>
+		<!-- How many quality levels the item degreades by on repair -->
+		<property name="RepairDegradeChance" value="0.15"/>
+		<!-- The probability that the item will lose a quality level/levels on repair -->
+		<property name="RepairQualityOneBreaksAfter" value="false"/>
+		<!-- Will the item break after its repaired at quality 1. -->
+		<effect_group name="IQD">
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="minDegradeAmount" operation="set" value="1"/>
+			<!-- Качество предмета не может опуститься ниже 1 -->
+		</effect_group>
+	</append>
+</Zilox>

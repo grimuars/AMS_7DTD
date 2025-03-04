@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT3_Archery']">
+		<item name="Magbow" loot_quality_template="QLTemplateT3"/>
+	</append>
+	<append xpath="/lootcontainers">
+		<lootgroup name="groupQuestMagbow" count="all">
+			<item name="Magbow"/>
+		</lootgroup>
+	</append>
+</configs>

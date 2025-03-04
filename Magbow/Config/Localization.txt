@@ -1,0 +1,6 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,russian
+Magbow,Items,Gun,,,"Magbow [73E9B2]Т4[-]","Колдун [73E9B2]Т4[-]"
+MagbowDesc,Items,Gun,,,"A stealthy and powerful semi-automatic Crossbow, with origins unknown.\n\nScrap to Bow / Crossbow Parts.","Тихий и мощный полуавтоматический арбалет неизвестного происхождения.\n\nРазбирается на части лука / арбалета."
+MagbowScopeLarge,Items,Gun,,,Magbow 8x Scope,"Прицел 8х для Колдуна"
+MagbowScopeLargeDesc,Items,Gun,,,Can craft into normal 8x Scope,"Может быть переделан в обычный 8x прицел"
+MagbowSchematic,Items,Gun,,,Magbow Schematic,"Схема Колдуна"

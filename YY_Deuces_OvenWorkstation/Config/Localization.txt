@@ -1,4 +1,0 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english,russian
-DeucesOven,blocks,Workstation,,,Deuces Oven,"Духовой шкаф"
-ovenDesc,blocks,Workstation,,,"Used for cooking food faster than a campfire and as a heat source.. Unlock more recipes by adding a cooking pot and cooking grill.","Используется для более быстрого, чем на костре, приготовления еды и в качестве источника тепла. Гриль и кастрюля позволяют готовить более сложные блюда."
-workstationsT3-2,progression,Attribute,,,Tier 3: Oven,"Уровень 3: духовой шкаф"

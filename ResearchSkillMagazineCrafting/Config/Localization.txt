@@ -1,5 +1,0 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english,russian
-researchbench,blocks,block,,,"Research Bench","Исследовательский верстак"
-researchbenchDesc,blocks,block,,,"Used to compile Research Data from scrapping Skill Magazines, Books, and Schematics.\n\nRepair with Scrap Iron, Mechanical Parts, and Wood.","Используется для создания данных исследований путём разбора книг, схем и журналов.\n\nРемонтируется с помощью железа, механических частей и дерева."
-resourceResearchData,items,item,,,"Research Data","Данные исследований"
-resourceResearchDataDesc,items,item,,,"Excerpts salvaged from Skill Magazines, Books, and Schematics. Can be compiled at a Research Bench to create new Skill Magazines.","Концентрированные знания из книг, схем и журналов. Позволяют создать новые журналы на исследовательском верстаке."

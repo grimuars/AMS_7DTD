@@ -1,4 +1,0 @@
-<sprites>
-	<sprite name="ui_ai_ttborder" bordertop="13" borderright="18" borderbottom="13" borderleft="18"/>
-	<sprite name="ui_ai_ttfill" bordertop="13" borderright="18" borderbottom="13" borderleft="18"/>
-</sprites>

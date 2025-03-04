@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <Name value="FPS_Power_and_Light_R1" />
+    <DisplayName value="FPS Power and Light R1" />
+    <Version value="1.0.1" /> 
+    <Description value="Adds craftable power items and lighting supplies." />
+    <Author value="fatrap" />
+    <Website value="" />
+</xml>

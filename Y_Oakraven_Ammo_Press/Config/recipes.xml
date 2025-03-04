@@ -1,0 +1,12 @@
+<configs>
+	<append xpath="/recipes">
+		<!-- AMMO PRESS -->
+		<recipe name="ammopress" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="120"/>
+			<ingredient name="resourceMechanicalParts" count="50"/>
+			<ingredient name="resourceScrapPolymers" count="200"/>
+			<ingredient name="resourceGlue" count="8"/>
+			<ingredient name="resourceWood" count="100"/>
+		</recipe>
+	</append>
+</configs>

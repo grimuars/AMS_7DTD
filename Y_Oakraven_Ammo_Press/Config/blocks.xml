@@ -1,0 +1,68 @@
+<configs>
+	<append xpath="/blocks">
+		<!-- *** AMMOPRESS -->
+		<block name="ammopress">
+			<!-- Class -->
+			<property name="Class" value="Workstation"/>
+			<property class="Workstation">
+				<property name="Modules" value="output"/>
+				<property name="Collide" value="melee,bullet,arrow,rocket"/>
+				<property name="CraftingAreaRecipes" value="ammopress"/>
+			</property>
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<!-- UI_Info -->
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ammopress"/>
+			<property name="DescriptionKey" value="ammopressDesc"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="WorkstationIcon" value="ui_game_symbol_ammopress"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="DisplayInfo" value="Name"/>
+			<!-- Visual -->
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/OakAmmoPress.unity3d?OakAmmoPress"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<!-- Placement -->
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="AllowedRotations" value="All"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<!-- Value -->
+			<property name="Weight" value="0"/>
+			<property name="EconomicValue" value="2000"/>
+			<property name="TraderStageTemplate" value="midTier1"/>
+			<property name="SellableToTrader" value="false"/>
+			<!-- ammopress -->
+			<!-- Interaction -->
+			<property name="MaxDamage" value="800"/>
+			<property name="HeatMapStrength" value="2"/>
+			<!-- Torch -->
+			<property name="HeatMapTime" value="500"/>
+			<!-- Default comparable 5000 -->
+			<property name="HeatMapFrequency" value="100"/>
+			<!-- Default comparable 1000 -->
+			<property name="OpenSound" value="open_workbench"/>
+			<property name="CloseSound" value="close_workbench"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="25"/>
+				<property name="resourceMechanicalParts" value="20"/>
+			</property>
+			<drop event="Destroy" name="resourceScrapIron" count="1"/>
+			<drop event="Destroy" name="ammopress" count="1" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceScrapIron" count="0" tool_category="Disassemble"/>
+			<!-- Sorting -->
+			<property name="SortOrder1" value="B281"/>
+			<property name="SortOrder2" value="0300"/>
+			<property name="Group" value="Building,TCScience,advBuilding"/>
+			<property name="Tags" value="workstationSkill,twitch_workstation"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+	</append>
+</configs>

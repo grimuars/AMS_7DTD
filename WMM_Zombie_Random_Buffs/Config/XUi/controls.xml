@@ -1,0 +1,30 @@
+﻿<controls>
+	<insertAfter xpath="/controls/waypoint_entry" >
+		<zombie_buff_icon>
+			<rect controller="XUiC_WMMZombieBuffIcon, WMMZombieRandomBuffs" >
+				<sprite depth="2" name="Icon" size="29,29" pivot="center" globalopacity="true"/>
+			</rect>
+		</zombie_buff_icon>
+	</insertAfter>
+
+	<insertAfter xpath="/controls/waypoint_entry" >
+		<buffLevel>
+			<rect height="28">
+				<sprite depth="8" sprite="menu_empty3px" height="28" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="1" color="${backgroundcolor}" type="sliced" />
+				<label depth="3" pos="10,-6" width="168" font_size="16" text="${textcontent}" justify="left" color="[darkestGrey]" />
+			</rect>
+		</buffLevel>
+	</insertAfter>
+
+	<insertAfter xpath="/controls/waypoint_entry" >
+		<buffIcon>
+			<rect height="33">
+				<sprite depth="8" sprite="menu_empty3px" height="36" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="1" color="[mediumGrey]" type="sliced" />
+				<sprite depth="3" name="Icon" pivot="center" pos="18,-18" size="28,28" sprite="${bufficon}" />
+				<label depth="3" pos="37,-10" width="168" font_size="16" text="${textcontent}" justify="left" color="[white]" />
+			</rect>
+		</buffIcon>
+	</insertAfter>
+</controls>

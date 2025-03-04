@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<biomes_aio_1>
+	<!-- Добавляем брёвна с пчёлами в генерацию мира -->
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.442']/decorations">
+		<decoration type="block" blockname="BeeStumpBees" prob="0.0003" rotatemax="7"/>
+	</append>
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/decorations">
+		<decoration type="block" blockname="BeeStumpBees" prob="0.0003" rotatemax="7"/>
+	</append>
+	<append xpath="/worldgeneration/biomes/biome[@name='desert']/decorations">
+		<decoration type="block" blockname="BeeStumpBees" prob="0.00001" rotatemax="7"/>
+	</append>
+</biomes_aio_1>

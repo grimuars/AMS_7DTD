@@ -1,0 +1,130 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+FPSPoweredLightVariantHelper,blocks,Block,,,FPS Powered Light
+FPSPoweredLightVariantHelperDesc,blocks,Block,,,"A collection of light sources that require power.  Put the crafted block on your toolbelt, hold the Reload key and select the SHAPE entry from the radial menu."
+
+FPSPoweredlightDesc,blocks,Block,,,"A placeable light source that requires power."
+
+FPSPoweredlightPorchWhite,blocks,Block,,,FPS White Porch Light
+FPSPoweredlightPorchBrown,blocks,Block,,,FPS Brown Porch Light
+FPSPoweredlightPorchYellow,blocks,Block,,,FPS Yellow Porch Light
+FPSPoweredlightPorchGreen,blocks,Block,,,FPS Green Porch Light
+FPSPoweredlightPorchGrey,blocks,Block,,,FPS Grey Porch Light
+FPSPoweredlightPorchBlack,blocks,Block,,,FPS Black Porch Light
+FPSPoweredlightWallGooseneckWhite,blocks,Block,,,FPS White Gooseneck Light
+FPSPoweredlightWallGooseneckBrown,blocks,Block,,,FPS Brown Gooseneck Light
+FPSPoweredlightWallGooseneckRed,blocks,Block,,,FPS Red Gooseneck Light
+FPSPoweredlightWallGooseneckOrange,blocks,Block,,,FPS Orange Gooseneck Light
+FPSPoweredlightWallGooseneckYellow,blocks,Block,,,FPS Yellow Gooseneck Light
+FPSPoweredlightWallGooseneckGreen,blocks,Block,,,FPS Green Gooseneck Light
+FPSPoweredlightWallGooseneckBlue,blocks,Block,,,FPS Blue Gooseneck Light
+FPSPoweredlightWallGooseneckPurple,blocks,Block,,,FPS Purple Gooseneck Light
+FPSPoweredlightWallGooseneckGrey,blocks,Block,,,FPS Grey Gooseneck Light
+FPSPoweredlightWallGooseneckBlack,blocks,Block,,,FPS Black Gooseneck Light
+FPSPoweredlightWallGooseneckPink,blocks,Block,,,FPS Pink Gooseneck Light
+FPSPoweredlightWallGooseneckArmyGreen,blocks,Block,,,FPS Army Green Gooseneck Light
+FPSPoweredlightCeilingBulbMountWhite,blocks,Block,,,FPS White Light Bulb Flush Mount
+FPSPoweredlightCeilingBulbMountBlack,blocks,Block,,,FPS Black Light Bulb Flush Mount
+FPSPoweredlightCeilingBulbMount_2x2White,blocks,Block,,,FPS White Light Bulb Flush Mount 2x2
+FPSPoweredlightCeilingBulbMount_2x2Black,blocks,Block,,,Black Light Bulb Flush Mount 2x2
+FPSPoweredlightCeilingBulbSocketWhite,blocks,Block,,,FPS White Light Bulb Socket
+FPSPoweredlightCeilingBulbSocketBlack,blocks,Block,,,FPS Black Light Bulb Socket
+FPSPoweredlightCeilingBulbSocket_2x2White,blocks,Block,,,FPS White Light Bulb Socket 2x2
+FPSPoweredlightCeilingBulbSocket_2x2Black,blocks,Block,,,FPS Black Light Bulb Socket 2x2
+FPSPoweredceilingLight02,blocks,Block,,,FPS Silver Dome Light
+FPSPoweredceilingLight02_2x2,blocks,Block,,,FPS Silver Dome Light 2x2
+FPSPoweredceilingLight02Brass,blocks,Block,,,FPS Brass Dome Light
+FPSPoweredceilingLight02Brass_2x2,blocks,Block,,,FPS Brass Dome Light 2x2
+FPSPoweredceilingLight04,blocks,Block,,,FPS Warehouse Ceiling Light
+FPSPoweredceilingLight05,blocks,Block,,,FPS Silver Glass Light
+FPSPoweredceilingLight05Brass,blocks,Block,,,FPS Brass Glass Light
+FPSPoweredrecessedLight,blocks,Block,,,FPS Recessed Light
+FPSPoweredrecessedLight_2x2,blocks,Block,,,FPS Recessed Light 2x2
+FPSPoweredrecessedLightOffset,blocks,Block,,,FPS Recessed Light Offset
+FPSPoweredrecessedLight_2x2Offset,blocks,Block,,,FPS Recessed Light 2x2 Offset
+FPSPoweredlightCeiling07,blocks,Block,,,FPS Fluorescent Light
+FPSPoweredlightCeiling07_2x2,blocks,Block,,,FPS Fluorescent Light 2x2
+FPSPoweredfluorescentLight,blocks,Block,,,FPS Fluorescent Light
+FPSPoweredtrackLight,blocks,Block,,,FPS Track Light
+FPSPoweredlightPanelLEDWhite,blocks,Block,,,FPS White LED Light Panel
+FPSPoweredlightPanelLEDSilver,blocks,Block,,,FPS Silver LED Light Panel
+FPSPoweredlightPanelLEDGrey,blocks,Block,,,FPS Grey LED Light Panel
+FPSPoweredlightPanelLEDBlack,blocks,Block,,,FPS Black LED Light Panel
+FPSPoweredlightPanelLEDOffsetWhite,blocks,Block,,,FPS White LED Light Panel, Offset 01
+FPSPoweredlightPanelLEDOffsetSilver,blocks,Block,,,FPS Silver LED Light Panel, Offset 01
+FPSPoweredlightPanelLEDOffsetGrey,blocks,Block,,,FPS Grey LED Light Panel, Offset 01
+FPSPoweredlightPanelLEDOffsetBlack,blocks,Block,,,Black LED Light Panel, Offset 01
+FPSPoweredlightPanelLEDOffset02White,blocks,Block,,,FPS White LED Light Panel, Offset 02
+FPSPoweredlightPanelLEDOffset02Silver,blocks,Block,,,FPS Silver LED Light Panel, Offset 02
+FPSPoweredlightPanelLEDOffset02Grey,blocks,Block,,,FPS Grey LED Light Panel, Offset 02
+FPSPoweredlightPanelLEDOffset02Black,blocks,Block,,,FPS Black LED Light Panel, Offset 02
+FPSPoweredindustrialLight01,blocks,Block,,,FPS Industrial Light 01
+FPSPoweredlightIndustrial,blocks,Block,,,FPS Industrial Light 02
+FPSPoweredlightIndustrialRed,blocks,Block,,,FPS Red Industrial Light
+FPSPoweredlightIndustrialMountedWall,blocks,Block,,,FPS Industrial Mounted Wall Light
+FPSPoweredlightIndustrialMountedWallRed,blocks,Block,,,FPS Red Industrial Mounted Wall Light
+FPSPoweredlightIndustrialHangingWhite,blocks,Block,,,FPS White Industrial Hanging Light
+FPSPoweredlightIndustrialHangingBrown,blocks,Block,,,FPS Brown Industrial Hanging Light
+FPSPoweredlightIndustrialHangingGrey,blocks,Block,,,FPS Grey Industrial Hanging Light
+FPSPoweredlightIndustrialHangingBlack,blocks,Block,,,FPS Black Industrial Hanging Light
+FPSPoweredlightSconce,blocks,Block,,,FPS Sconce Light
+FPSPoweredlightSconce_2x1,blocks,Block,,,FPS Sconce Light 2x1
+FPSPoweredceilingFanLight,blocks,Block,,,FPS Ceiling Fan Light
+FPSPoweredendTableLamp,blocks,Block,,,FPS End Table Lamp
+FPSPoweredsignExitLight,blocks,Block,,,FPS Exit Sign Ceiling Mount Centered
+FPSPoweredsignExitLightOffset,blocks,Block,,,FPS Exit Sign Ceiling Mount Offset
+FPSPoweredsignExitFrameMount,blocks,Block,,,FPS Exit Sign Frame Mount
+FPSPoweredsignExitFrameMountHigh,blocks,Block,,,FPS Exit Sign Frame Mount High
+FPSPoweredsignExitFrameMount2mCentered,blocks,Block,,,FPS Exit Sign Frame Mount 2m Centered
+FPSPoweredsignExitFrameMountHigh2mCentered,blocks,Block,,,FPS Exit Sign Frame Mount High 2m Centered
+FPSPoweredsignExitWallMount,blocks,Block,,,FPS Exit Sign Wall Mount
+FPSPoweredsignExitWallMountHigh,blocks,Block,,,FPS Exit Sign Wall Mount High
+FPSPoweredroadBarricadeLight,blocks,Block,,,FPS Road Barricade Light
+FPSPowereddeskLampLight,blocks,Block,,,FPS Brass Desk Lamp 
+FPSPowereddeskLampLight02White,blocks,Block,,,FPS White Desk Lamp
+FPSPowereddeskLampLight02Brown,blocks,Block,,,FPS Brown Desk Lamp
+FPSPowereddeskLampLight02Red,blocks,Block,,,FPS Red Desk Lamp
+FPSPowereddeskLampLight02Orange,blocks,Block,,,FPS Orange Desk Lamp
+FPSPowereddeskLampLight02Yellow,blocks,Block,,,FPS Yellow Desk Lamp
+FPSPowereddeskLampLight02Green,blocks,Block,,,FPS Green Desk Lamp
+FPSPowereddeskLampLight02Blue,blocks,Block,,,FPS Blue Desk Lamp
+FPSPowereddeskLampLight02BPurple,blocks,Block,,,FPS Purple Desk Lamp
+FPSPowereddeskLampLight02BGrey,blocks,Block,,,FPS Grey Desk Lamp
+FPSPowereddeskLampLight02Black,blocks,Block,,,FPS Black Desk Lamp
+FPSPowereddeskLampLight02Pink,blocks,Block,,,FPS Pink Desk Lamp
+FPSPoweredtableLampLight01White,blocks,Block,,,FPS White Table Lamp
+FPSPoweredtableLampLight01Brown,blocks,Block,,,FPS Brown Table Lamp
+FPSPoweredtableLampLight01Red,blocks,Block,,,FPS Red Table Lamp
+FPSPoweredtableLampLight01Orange,blocks,Block,,,FPS Orange Table Lamp
+FPSPoweredtableLampLight01Yellow,blocks,Block,,,FPS Yellow Table Lamp
+FPSPoweredtableLampLight01Green,blocks,Block,,,FPS Green Table Lamp
+FPSPoweredtableLampLight01Blue,blocks,Block,,,FPS Blue Table Lamp
+FPSPoweredtableLampLight01Purple,blocks,Block,,,FPS Purple Table Lamp
+FPSPoweredtableLampLight01Grey,blocks,Block,,,FPS Grey Table Lamp
+FPSPoweredtableLampLight01Black,blocks,Block,,,FPS Black Table Lamp
+FPSPoweredtableLampLight01Pink,blocks,Block,,,FPS Pink Table Lamp
+FPSPoweredtableLampLight01CenteredWhite,blocks,Block,,,FPS White Table Lamp Centered
+FPSPoweredtableLampLight01CenteredBrown,blocks,Block,,,FPS Brown Table Lamp Centered
+FPSPoweredtableLampLight01CenteredRed,blocks,Block,,,FPS Red Table Lamp Centered
+FPSPoweredtableLampLight01CenteredOrange,blocks,Block,,,FPS Orange Table Lamp Centered
+FPSPoweredtableLampLight01CenteredYellow,blocks,Block,,,FPS Yellow Table Lamp Centered
+FPSPoweredtableLampLight01CenteredGreen,blocks,Block,,,FPS Green Table Lamp Centered
+FPSPoweredtableLampLight01CenteredBlue,blocks,Block,,,FPS Blue Table Lamp Centered
+FPSPoweredtableLampLight01CenteredPurple,blocks,Block,,,FPS Purple Table Lamp Centered
+FPSPoweredtableLampLight01CenteredGrey,blocks,Block,,,FPS Grey Table Lamp Centered
+FPSPoweredtableLampLight01CenteredBlack,blocks,Block,,,FPS Black Table Lamp Centered
+FPSPoweredtableLampLight01CenteredPink,blocks,Block,,,FPS Pink Table Lamp Centered
+FPSPoweredtableLampLight01TippedOverWhite,blocks,Block,,,FPS White Table Lamp Tipped Over
+FPSPoweredtableLampLight01TippedOverBrown,blocks,Block,,,FPS Brown Table Lamp Tipped Over
+FPSPoweredtableLampLight01TippedOverRed,blocks,Block,,,FPS Red Table Lamp Tipped Over
+FPSPoweredtableLampLight01TippedOverOrange,blocks,Block,,,FPS Orange Table Lamp Tipped Over
+FPSPoweredtableLampLight01TippedOverYellow,blocks,Block,,,FPS Yellow Table Lamp Tipped Over
+FPSPoweredtableLampLight01TippedOverGreen,blocks,Block,,,FPS Green Table Lamp Tipped Over
+FPSPoweredtableLampLight01TippedOverBlue,blocks,Block,,,FPS Blue Table Lamp Tipped Over
+FPSPoweredtableLampLight01TippedOverPurple,blocks,Block,,,FPS Purple Table Lamp Tipped Over
+FPSPoweredtableLampLight01TippedOverGrey,blocks,Block,,,FPS Grey Table Lamp Tipped Over
+FPSPoweredtableLampLight01TippedOverBlack,blocks,Block,,,FPS Black Table Lamp Tipped Over
+FPSPoweredtableLampLight01TippedOverPink,blocks,Block,,,FPS Pink Table Lamp Tipped Over
+FPSPoweredworkLightPOI,blocks,Block,,,FPS Work Light
+FPSPoweredstreetLight01,blocks,Block,,,FPS Pole Mounted Street Light
+FPSPoweredstreetLightClassic,blocks,Block,,,FPS Classic Street Light

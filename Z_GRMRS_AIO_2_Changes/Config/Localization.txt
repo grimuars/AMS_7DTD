@@ -1,0 +1,546 @@
+Key,File,Type,UsedInMainMenu,english,russian
+
+resourceBurningDesc,items,Item,,"Special fuel briquettes ensure combustion for up to 600 minutes. Recommended for stable operation and safety of workstations.","Специальные топливные брикеты обеспечивают горение вплоть до 600 минут. Рекомендованы к использованию для стабильной работы и сохранности рабочих станций."
+resourceCoal600,items,Item,,"Coal Fuel Briquette","Угольный топливный брикет"
+resourceWood600,items,Item,,"Wood Fuel Briquette","Древесный топливный брикет"
+
+lblContextCraftCount,UI,Item Context Menu,,Count,Кол-во
+
+resourceArmorCraftingKit,items,Item,,Armor Crafting Kit,Комплект создания брони
+
+forgelow,blocks,Block,,Artisan Forge,Кустарная кузница
+forgelowDesc,blocks,Block,,"You repaired this forge by spending a lot of valuable resources. It works poorly but meets basic needs. Durability is reduced. You will get almost nothing if you dismantle it.","Вы починили эту кузницу, потратив множество ценных ресурсов. Она плохо работает, но базовые потребности обеспечивает. Прочность уменьшена. При разборе вы почти ничего не получите."
+workbenchlow,blocks,Block,,Artisan Workbench,Кустарный верстак
+workbenchlowDesc,blocks,Block,,"You repaired this workbench by spending a lot of valuable resources. It works poorly but meets basic needs. Durability is reduced. You will get almost nothing if you dismantle it.","Вы починили этот верстак, потратив множество ценных ресурсов. Он плохо работает, но базовые потребности обеспечивает. Прочность уменьшена. При разборе вы почти ничего не получите."
+cementMixerlow,blocks,Block,,Artisan Cement Mixer,Кустарная бетономешалка
+cementMixerlowDesc,blocks,Block,,"You repaired this mixer by spending a lot of valuable resources. It works poorly but meets basic needs. Durability is reduced. You will get almost nothing if you dismantle it.","Вы починили эту бетономешалку, потратив множество ценных ресурсов. Она плохо работает, но базовые потребности обеспечивает. Прочность уменьшена. При разборе вы почти ничего не получите."
+chemistryStationlow,blocks,Block,,Artisan Chemical Station,Кустарная химстанция
+chemistryStationlowDesc,blocks,Block,,"You repaired this chemistry station by spending a lot of valuable resources. It works poorly but meets basic needs. Durability is reduced. You will get almost nothing if you dismantle it.","Вы починили эту химстанцию, потратив множество ценных ресурсов. Она плохо работает, но базовые потребности обеспечивает. Прочность уменьшена. При разборе вы почти ничего не получите."
+
+foodRawChickenMeat,items,Item,,Raw Chicken Meat,Сырое куриное мясо
+foodRawChickenMeatDesc,items,Item,,"A whole chicken. No chemicals, GMOs, or other marketing scare tactics from the past.","Куриная тушка. Без химии, ГМО и прочих маркетинговых пугалок из прошлого."
+
+zombieDemolition,entityclasses,Entity,,Demolition,Разрушитель
+animalChickenHostile,entityclasses,Entity,,Mad Chicken,Курица-убийца
+
+OaksCooker,blocks,Block,,Oakraven Cooker,Большая печь Oakraven
+OaksCookerDesc,blocks,Block,,"The Oakraven Cooker allows players to combine recipe ingredients into meals, beverages, and resources.","Печи Oakraven позволяют готовить еду, напитки и различные ресурсы."
+PotStove,blocks,Block,,Oakraven Pot Stove,Печь с горшком Oakraven
+PotStoveDesc,blocks,Block,,"The Oakraven Pot Stove allows players to combine recipe ingredients into meals, beverages, and resources.","Печи Oakraven позволяют готовить еду, напитки и различные ресурсы."
+IronStove,blocks,Block,,Oakraven Iron Stove,Железная печь Oakraven
+IronStoveDesc,blocks,Block,,"The Oakraven Iron Stove allows players to combine recipe ingredients into meals, beverages, and resources.","Печи Oakraven позволяют готовить еду, напитки и различные ресурсы."
+StoneStove,blocks,Block,,Oakraven Stone Stove,Каменная печь Oakraven
+StoneStoveDesc,blocks,Block,,"The Oakraven Stone Stove allows players to combine recipe ingredients into meals, beverages, and resources.","Печи Oakraven позволяют готовить еду, напитки и различные ресурсы."
+CookerVariantHelper,blocks,Block,,Oakraven Cookers,Печи Oakraven
+
+CaughtChick,items,Item,,Caught Chick,Цыплёнок (пойман)
+CaughtChickDesc,items,Item,,"Use 2 Caught Chicks, with right mouse click, on an Empty Chicken Coop to populate and activate the next stage.","Возьмите 2 пойманных цыплят и разместите их в пустом курятнике, кликнув на нём ПКМ"
+
+birdnestEmpty,blocks,Block,,Empty Bird Nest,Пустое гнездо (проверьте его позже)
+IvyCoopEmpty,blocks,Block,,Chicken Coop - Ivy (Use 2 Caught Chicks),Курятник - Плющ (используйте 2 цыплят)
+IvyCoopEmptyDesc,blocks,Block,,"Introduce 2 Caught Chicks to the Chicken Coop and over time they will grow and produce eggs and feathers. Search nests and chop down trees to find chicks.","Отправьте 2 пойманных цыплят в курятник. Через некоторое время они вырастут и начнут приносить яйца и перья. Цыплят можно найти в гнёздах."
+IvyCoopChicks,blocks,Block,,[66ff00]Growth Stage,Курятник: [66ff00]Цыплята растут
+IvyCoopLaying,blocks,Block,,[66ff00]Nesting Stage,Курятник: [66ff00]Гнездование
+IvyCoopWithEggs,blocks,Block,,[66ff00]Ready for Gathering,[66ff00]Готово к сбору
+BarrelCoopEmpty,blocks,Block,,Chicken Coop - Barrel (Use 2 Caught Chicks),Курятник - Бочка (используйте 2 цыплят)
+BarrelCoopChicks,blocks,Block,,[66ff00]Growth Stage,Курятник: [66ff00]Цыплята растут
+BarrelCoopLaying,blocks,Block,,[66ff00]Nesting Stage,Курятник: [66ff00]Гнездование
+BarrelCoopWithEggs,blocks,Block,,[66ff00]Ready for Gathering,[66ff00]Готово к сбору
+StatueCoopEmpty,blocks,Block,,Chicken Coop - Statue (Use 2 Caught Chicks),Курятник - Статуя (используйте 2 цыплят)
+StatueCoopChicks,blocks,Block,,[66ff00]Growth Stage,Курятник: [66ff00]Цыплята растут
+StatueCoopLaying,blocks,Block,,[66ff00]Nesting Stage,Курятник: [66ff00]Гнездование
+StatueCoopWithEggs,blocks,Block,,[66ff00]Ready for Gathering,Курятник: [66ff00]Готово к сбору
+GrainCoopEmpty,blocks,Block,,Chicken Coop - Grain (Use 2 Caught Chicks),Курятник - Ферма (используйте 2 цыплят)
+GrainCoopChicks,blocks,Block,,[66ff00]Growth Stage,Курятник: [66ff00]Цыплята растут
+GrainCoopLaying,blocks,Block,,[66ff00]Nesting Stage,Курятник: [66ff00]Гнездование
+GrainCoopWithEggs,blocks,Block,,[66ff00]Ready for Gathering,Курятник: [66ff00]Готово к сбору
+ChickenCoopVariantHelper,blocks,Block,,Chicken Coops,Курятник
+
+GrownChicken,blocks,Block,,Grown Domestic Chicken,Взрослая домашняя курица
+GrownChickenDesc,blocks,Block,,"A grown domestic chicken can be placed on the ground and butchered for resources.","Взрослую курицу можно разместить в мире и убить, разделав на ресурсы."
+
+foodEggQuiche,items,Food,,Quiche,Киш
+foodEggQuicheDesc,items,Food,,"This quiche will keep you regular as clockwork.","Этот пирог поможет вам работать, как часы"
+foodEggSandwich,items,Food,,Egg Sandwich,Бутерброд с яйцом
+foodEggSandwichDesc,items,Food,,"The Queen of Hearts, she made some tarts, from chicken eggs, and zombie farts. She makes decent sandwiches too.","Сердец королева, пироговая дева, из куриных яиц и зомбей пердежа бутерброд приготовила - вот это да!"
+foodChickenStew,items,Food,,Chicken Stew,Тушёная с овощами курица
+foodChickenStewDesc,items,Food,,"Chicken stew provides great sustenance and can put coop reared chickens to good use.","Тушёные цыплята прекрасно насыщают и дают курятнику ещё один смысл существования"
+foodWheatFlour,items,Food,,Wheat Flour,Пшеничная мука
+foodWheatFlourDesc,items,Food,,"Wheat Flour can be added to recipes.",Используется для приготовления различных блюд
+
+plantedWheat1,blocks,Farming,,Wheat (Seed),Пшеница (семя)
+plantedWheat2,blocks,Farming,,Wheat (Midling),Пшеница (растёт)
+plantedWheat3Harvest,blocks,Farming,,Wheat (Harvest),Пшеница (готово к сбору)
+plantedWheat3HarvestDesc,blocks,Farming,,Wheat (Harvest),Пшеница (готово к сбору)
+plantedWheat3HarvestPlayer,blocks,Farming,,Wheat (Harvest),Пшеница (готово к сбору)
+plantedWheatHarvestRandomHelper,blocks,Farming,,= Wheat = Random Helper,= Пшеница = Помощник по размещению
+
+foodBagOfRice,items,Farming,,Bag Of Rice,Мешочек с рисом
+foodBagOfRiceDesc,items,Farming,,"A Bag of Rice while not edible can be made into a variety of meals.","Рис нельзя употреблять сам по себе, но для готовки - самое то."
+foodDough,items,Food,,Dough,Тесто
+foodDoughDesc,items,Food,,"Ready-made dough. You kneaded it according to all the rules of the post-apocalypse, remembering to proof it and maintain the right temperature. It’s so perfect that it would ascend to heaven, if not for your plans to bake something delicious out of it.","Готовое тесто. Вы замесили его по всем правилам постапокалипсиса, не забыли о расстойке и температурном режиме. Оно настолько идеально, что вознеслось бы на небо, не планируй вы испечь из него что-нибудь вкусное."
+foodBread,items,Food,,Wheat Bread,Пшеничный хлеб
+foodBreadDesc,items,Food,,"Homemade wheat bread. It doesn’t compare to store-bought... especially now, when the stores aren’t open.","Самодельный пшеничный хлеб. Не сравнится с покупным... особенно сейчас, когда магазины не работают."
+
+foodCropWheat,items,Farming,,Wheat,Пшеница
+foodCropWheatDesc,items,Farming,,"Wheat can be crafted into seeds or used in several recipes.","Можно есть, перерабатывать в семена или использовать в рецептах."
+
+foodChickenFriedRice,items,Food,,Chicken Fried Rice,Курица с рисом
+foodChickenFriedRiceDesc,items,Food,,"A serving of Chicken Fried Rice a hearty and quick meal with simple ingredients.","Обжаренная курица с рисом прекрасно подойдёт в качестве полезного и здорового питания."
+foodHotdog,items,Food,,Hotdog,Хот-дог
+foodHotdogDesc,items,Food,,"The main dish of every self-respecting city dweller. A hot dog, which has nothing to do with dogs. Well, at least not anymore.","Основное блюдо каждого уважающего себя горожанина. Горячая собака, не имеющая никакого отношения к собакам. Ну, по крайней мере, раньше."
+foodHamburger,items,Food,,Hamburger,Гамбургер
+foodHamburgerDesc,items,Food,,"A homemade patty, ancient cheese, animal fat — and all of this on a bun with imaginary sesame seeds!","Самодельная котлета, стародавний сыр, животный жир - и всё это на булочке с воображаемым кунжутом!"
+foodCheese,items,Food,,Cheese,Сыр
+foodCheeseDesc,items,Food,,"This cheese has survived the apocalypse, decay, radiation, zombies, rats, and long nights alone with grim thoughts about the future. Now you've found it, and YOU it definitely won't survive.","Этот сыр пережил апокалипсис, разложение, радиацию, зомби, крыс и длинные ночи наедине с мрачными мыслями о будущем. Теперь его нашли вы и ВАС он точно не переживёт."
+foodShamSandwichFresh,items,Food,,Fresh Sham Sandwich,Свежий бутерброд с ветчиной
+foodShamSandwichFreshDesc,items,Food,,"This sandwich shines with the natural freshness of real industrial ham, complemented by the delicate aroma of cheese and homemade bread. Try to eat it quickly, while you still believe in the previous sentence.","Этот бутерброд сияет природной свежестью настоящей промышленной ветчины, оттенённой нежным ароматом сыра и самодельного хлеба. Постарайтесь съесть его побыстрее, пока верите в предыдущую фразу."
+drinkBlueberryJuice,items,Food,,Blueberry Juice,Черничный сок
+drinkBlueberryJuiceDesc,items,Food,,"Freshly squeezed blueberry juice. All rumors that it’s diluted with water are purely rumors, and if you spread them, the blueberry police will come for you.","Свежевыжатый черничный сок. Все слухи, что он разбавлен водой, являются исключительно слухами и если вы будете их распространять - за вами приедет черничная полиция."
+foodBeefTaco,items,Food,,Beef Taco,Мясные тако
+foodBeefTacoDesc,items,Food,,"Nowadays, no one knows if you can really put meat in tacos anymore. Don't ask questions, eat while it tastes good!","Сейчас уже никто не знает, действительно ли в тако можно класть мясо. Прочь вопросы, ешь, пока вкусно!"
+drinkBlueberrySmoothie,items,Food,,Blueberry Smoothie, Черничный смузи
+drinkBlueberrySmoothieDesc,items,Food,,"Blueberry smoothie. It's like yucca, but with blueberries.","Черничный смузи. Как из юкки, только черничный."
+foodChickenParmesan,items,Food,,Chicken Parmesaian,Сырная курица
+foodChickenParmesanDesc,items,Food,,"Chicken and cheese come together, diving into a hot, passionate relationship, where fresh eggs play a key role. You're already covered in goosebumps in anticipation of delicious food.","Курица и сыр встречаются вместе, погружаясь в горячие, страстные отношения, в которых не последнюю роль играют свежие яйца. Вы уже в пупырышках от предвкушения вкусной еды."
+
+foodT1-1,progression,Attribute,,Tier 1: Grilled Corn,Tier 1: Кукуруза на гриле
+foodT1-2,progression,Attribute,,Tier 1: Baked Potato,Tier 1: Печёный картофель
+foodT1-3,progression,Attribute,,Tier 1: Boiled Egg,Tier 1: Варёное яйцо
+foodT1-4,progression,Attribute,,Tier 1: Sunflower Butter,Tier 1: Кукурузный хлеб
+foodT1-5,progression,Attribute,,Tier 1: Goldenrod Tea,Ур. 1: Чай из золотарника
+foodT1-6,progression,Attribute,,Tier 1: Grilled Meat,Ур. 1: Мясо на гриле
+foodT1-7,progression,Attribute,,Tier 1: Dough and Wheat Bread,Ур. 1: Тесто и хлеб
+
+foodT2-1,progression,Attribute,,Tier 2: Boiled Meat,Ур. 2: Отварное мясо
+foodT2-2,progression,Attribute,,Tier 2: Red Tea,Ур. 2: Красный чай
+foodT2-3,progression,Attribute,,Tier 2: Bacon And Eggs,Ур. 2: Яйца и бекон
+foodT2-4,progression,Attribute,,Tier 2: ChickenFriedRice,Ур. 2: Курица с рисом
+foodT2-5,progression,Attribute,,Tier 2: Pumpkin Bread and Honey Bread,Ур. 2: Тыквенный и медовый хлеб
+
+foodT3-1,progression,Attribute,,Tier 3: Yucca Juice,Ур. 3: Сок из юкки
+foodT3-2,progression,Attribute,,Tier 3: Sham Sandwich Fresh,Ур. 3: Свежий сэндвич с ветчиной и Бутерброд с яйцом
+foodT3-3,progression,Attribute,,Tier 3: Hot Dog,Ур. 3: Хот-дог
+foodT3-4,progression,Attribute,,Tier 3: Blueberry Juice,Ур. 3: Черничный сок
+foodT3-5,progression,Attribute,,Tier 3: Yucca Smoothie,Ур. 3: Смузи из юкки
+
+foodT4-1,progression,Attribute,,Tier 4: Blueberry Pie,Ур. 4: Черничный пирог
+foodT4-2,progression,Attribute,,Tier 4: Coffee,Ур. 4: Кофе
+foodT4-3,progression,Attribute,,Tier 4: Beef Taco,Ур. 4: Мясные тако
+foodT4-4,progression,Attribute,,Tier 4: Hamburger,Ур. 4: Гамбургер
+foodT4-5,progression,Attribute,,Tier 4: Blueberry Smoothie,Ур. 4: Черничный смузи
+
+foodT5-1,progression,Attribute,,Tier 5: Steak And Potato,Ур. 5: Картофель с мясом
+foodT5-2,progression,Attribute,,Tier 5: Vegetable Stew,Ур. 5: Овощное рагу
+foodT5-3,progression,Attribute,,Tier 5: Chicken Stew and Hobo Stew,Ур. 5: Рагу бродяги и Куриное рагу
+foodT5-4,progression,Attribute,,Tier 5: Honey Beer,Ур. 5: Медовое пиво
+
+foodT6-1,progression,Attribute,,Tier 6: Chili Dog,Ур. 6: Чили-дог
+foodT6-2,progression,Attribute,,Tier 6: FishTacos,Ур. 6: Рыбные тако
+foodT6-3,progression,Attribute,,Tier 6: Sham Chowder,Ур. 6: Похлёбка из Срама
+foodT6-4,progression,Attribute,,Tier 6: Beer,Ур. 6: Пиво
+
+foodT7-1,progression,Attribute,,Tier 7: Tuna Fish Gravy Toast,Ур. 7: Бутерброд с тунцом
+foodT7-2,progression,Attribute,,Tier 7: Pumpkin Pie,Ур. 7: Тыквенный пирог
+foodT7-3,progression,Attribute,,Tier 7: Grandpas Awesome Sauce,Ур. 7: Дедушкин эликсир
+foodT7-4,progression,Attribute,,Tier 7: Chicken Parmesan,Ур. 7: Сырная курица
+foodT7-5,progression,Attribute,,Tier 7: Pumpkin Cheesecake,Ур. 7: Тыквенный чизкейк
+foodT7-6,progression,Attribute,,Tier 7: MegaCrush,Ур. 7: Мегадавка
+
+foodT8-1,progression,Attribute,,Tier 8: Shepards Pie,Ур. 8: Пастуший пирог
+foodT8-2,progression,Attribute,,Tier 8: Honey Pumpkin Pie,Ур. 8: Тыквенный медовик
+foodT8-3,progression,Attribute,,Tier 8: Blueberry Bread Pudding,Ур. 8: Черничный пудинг
+foodT8-4,progression,Attribute,,Tier 8: Meat Stew,Ур. 8: Мясное рагу
+
+foodT9-1,progression,Attribute,,Tier 9: Quiche and Spaghetti,Ур. 9: Киш и Спагетти
+foodT9-2,progression,Attribute,,Tier 9: Grandpas Learning Elixir,Ур. 9: Дедушкин учебный эликсир
+foodT9-3,progression,Attribute,,Tier 9: Gumbo Stew,Ур. 9: Рагу Гамбо
+
+seedsT1-1,progression,Attribute,,Tier 1: Goldenrod,Ур. 1: Золотарник
+seedsT1-2,progression,Attribute,,Tier 1: Chrysanthemum,Ур. 1: Хризантема
+seedsT1-3,progression,Attribute,,Tier 1: Yucca,Ур. 1: Юкка
+seedsT1-4,progression,Attribute,,Tier 1: Aloe,Ур. 1: Алоэ
+
+seedsT2-1,progression,Attribute,,Tier 2: Blueberry,Ур. 2: Черника
+seedsT2-2,progression,Attribute,,Tier 2: Potato,Ур. 2: Картофель
+seedsT2-3,progression,Attribute,,Tier 2: Mushroom,Ур. 2: Грибы
+
+seedsT3-1,progression,Attribute,,Tier 3: Cotton,Ур. 3: Хлопок
+seedsT3-2,progression,Attribute,,Tier 3: Corn,Ур. 3: Кукуруза
+seedsT3-3,progression,Attribute,,Tier 3: Wheat,Ур. 3: Пшеница
+
+seedsT4-1,progression,Attribute,,Tier 4: Pumpkin,Ур. 4: Тыква
+seedsT4-2,progression,Attribute,,Tier 4: Hop,Ур. 4: Хмель
+seedsT4-3,progression,Attribute,,Tier 4: Coffee,Ур. 4: Кофе
+
+meleeKatanaSword,items,Melee,,Survivor's Katana,Катана Выжившего
+meleeKatanaSwordDesc,items,Melee,,"Based off the famous Japanese Katana. Though not the same quality, it can compete with it fairly well!\nHas a 10% base chance to dismember limbs and harvests a little better.\n\nRepair with Repair Kits.","Создана по образу и подобию японской катаны. Несмотря на не самое идеальное качество, это лучшее, что можно найти в текущих условиях!\nИмеет базовый шанс расчленения 10% и немного лучше в разделке животных, чем другие клинки."
+
+meleeTantoKnife,items,Melee,,Tanto,Танто
+meleeTantoKnifeDesc,items,Melee,,"A Tanto was a very common knife for the Japanese. It never failed them and was of the upmost top quality of blades.\nHas a base 10% base chance to dismember limbs and harvests a little better.\n\nRepair with Repair Kits.","Танто - обычный японский нож, однако его создатели всегда следовали традициям качества и надёжности.\nИмеет базовый шанс расчленения 10% и немного лучше в разделке животных, чем другие ножи."
+
+partsKatanaBlade,items,Part,,Katana Blade,Лезвие катаны
+partsKatanaHandle,items,Part,,Katana Handle,Рукоять катаны
+partsKatanaSpacer,items,Part,,Katana Spacer,Гарда катаны
+
+modGunMeleeNiCdBatteryDA,item_modifiers,Mod,,Crowd Control Module,"Модуль контроля толпы [73E9B2]Контроль[-]"
+modGunMeleeNiCdBatteryDADesc,item_modifiers,Mod,,"Give zombies a buzz and stop Rad health regen. Can be used with melee and most firearms (except bows and crossbows).","Наносит электрический урон, вызывает шок и останавливает регенерацию облучённых зомби. Можно использовать с оружием ближнего боя, инструментами и оружием дальнего боя (кроме луков и арбалетов)."
+
+ammo762mmBulletXP,items,item,,"Ammo 7.62mm XP","Интенсивные патроны 7,62 мм"
+ammo762mmBulletXPDesc,items,item,,"Not your average round, these pack a punch.","Особые боеприпасы с увеличенным уроном. Дороги в крафте, но оно того стоит."
+ammoBundle762mmBulletXP,items,item,,"Box of 7.62mm XP","Коробка интенсивных патронов 7,62 мм"
+
+ammo9mmBulletXP,items,item,,Ammo 9mm XP,"Интенсивные патроны 9 мм"
+ammo9mmBulletXPDesc,items,item,,"Not your average round, these pack a punch.","Особые боеприпасы с увеличенным уроном. Дороги в крафте, но оно того стоит."
+ammoBundle9mmBulletXP,items,item,,Box of 9mm XP,"Коробка интенсивных патронов 9 мм"
+
+ammo44MagnumBulletXP,items,item,,"Ammo .44 Magnum XP","Интенсивные патроны .44 Магнум"
+ammo44MagnumBulletXPDesc,items,item,,"Not your average round, these pack a punch.","Особые боеприпасы с увеличенным уроном. Дороги в крафте, но оно того стоит."
+ammoBundle44MagnumBulletXP,items,item,,"Box of .44 Magnum XP","Коробка интенсивных патронов .44 Магнум"
+
+ammoShotgunShellXP,items,item,,"Shotgun XP Shells","Интенсивные патроны для дробовика"
+ammoShotgunShellXPDesc,items,item,,"Not your average round, these pack a punch.","Особые боеприпасы с увеличенным уроном. Дороги в крафте, но оно того стоит."
+ammoBundleShotgunShellXP,items,item,,"Box of Shotgun XP Shells","Коробка интенсивных патронов для дробовика"
+
+drinkJarEmpty,items,Food,,Empty Water Jar,Пустая банка
+drinkJarEmptyDesc,items,Food,,An empty glass jar can be filled at water sources using the secondary action or used in other recipes.,Пустую стеклянную банку можно наполнить водой с помощью дополнительного действия или использовать в различных рецептах.
+
+AMSStarterPack,items,Item,,"AMS - Server Starter Bundle","AMS - Стартовый Серверный Набор"
+AMSStarterPackDesc,items,Item,,"Hello, Survivor! To make your immersion into the Land of Harmful Zombies easier and more enjoyable, we give you this little gift. Spend it wisely!","Привет, Выживший! Чтобы погружение в Страну Вредных Зомби прошло легче и приятнее, дарим тебе этот небольшой подарок. Используй его с умом!"
+
+bucketRiverWaterCooking,items,Item,,"Bucket of Boiled Water","Ведро кипячёной воды"
+questRewardBoiledWaterBundleDesc,items,Item,,"This bucket contains five drinks of water, 'open' to obtain the drinks.","Это ведро позволит наполнить пять бутылок воды. Просто... откройте его."
+drugWaterCleanerPills,items,Item,,"Water purification tablets","Таблетки для очистки воды"
+drugWaterCleanerPillsDesc,items,Item,,"This hellish mixture of plant ingredients and natural materials somehow miraculously can purify contaminated water during the boiling process. This trick doesn't work with murky water.","Эта адская смесь растительных компонентов и природных материалов каким-то чудом способна очистить заражённую воду в процессе кипячения. С мутной водой этот фокус не работает."
+
+flagBlockVariantHelper,blocks,block,,Flags,Флаги
+flagBlockVariantHelperDesc,blocks,block,,"Allows you to place one of several flags variants.","Позволяет разместить один из нескольких вариантов флагов на выбор."
+
+reqLevel15,progression,,Character Level 15,Уровень персонажа 15
+reqLevel35,progression,,Character Level 35,Уровень персонажа 35
+reqLevel55,progression,,Character Level 55,Уровень персонажа 55
+reqLevel75,progression,,Character Level 75,Уровень персонажа 75
+reqLevel95,progression,,Character Level 95,Уровень персонажа 95
+
+buffBedrollHealingName,buffs,buff,,Healing Bedroll,Лечение во сне
+buffBedsHealingName,buffs,buff,,Healing Hospital Gurney,"Лечение во сне +"
+
+buffBedrollHealingDesc,buffs,buff,,"Healing Bedroll.\nRefilling Health\nRefreshing Stamina.","Лечение во сне.\nВосстанавливает здоровье\nВосстанавливает выносливость."
+buffBedsHealingDesc,buffs,buff,,"Healing Hospital Gurney.\nHealing Wounds\nRefilling Health\nRefreshing Stamina.\nRemoving Hunger.\nRestoring Hydration.","Лечение во сне +.\nИзлечивает часть травм\nВосстанавливает здоровье\nВосстанавливает выносливость."
+
+ToolTipBedrollHealing,buffs,buff,,Healing Bedroll,Лечение от спальника
+ToolTipBedsHealing,buffs,buff,,Healing Hospital Gurney,Лечение от кровати
+
+FeelLargeBed01,items,item,,"Beautiful Large Bed","Красивая большая кровать"
+FeelHospitalBed01,items,item,,"Feel Hospital Bed","Удобная больничная кровать"
+FeelBunkBedVariantHelper,items,item,,"Feel Bunk Bed Variant Helper","Кровати из бункера"
+FeelMattressVariantHelper,items,item,,"Feel Mattress Variant Helper","Матрасы"
+
+DisplayValueBedrollHealing,buffs,buff,,First Aid,ПП
+DisplayValueBedsHealing,buffs,buff,,"First Aid +","ПП +"
+
+quest_intro_buried_supplies,Quest,Quest Info,,Just Talk To Trader,Разговор с торговцем
+quest_intro_buried_supplies_offer,Quest,Quest Info,,"You don't need to bring anything, dig or suffer. Just talk to the trader again.","Ничего не нужно приносить, копать и страдать. Просто поговорите с торговцем ещё раз."
+quest_intro_buried_supplies_response,Quest,Quest Info,,Just Talk To Trader ([DECEA3]right in front of you[-]),Разговор с торговцем ([DECEA3]прямо перед вами[-])
+
+perkTreasureHunterDesc,progression,perk Per,,"In this cruel world, experience is the ultimate weapon. Learn how to train effectively to learn and evolve faster.","В этом жестоком мире опыт - главное оружие. Научитесь эффективно учиться и развиваться быстрее."
+perkTreasureHunterName,progression,perk Per,,EXP Hunter,Охотник за опытом
+perkTreasureHunterRank1Desc,progression,perk Per,,Schoolboy,Школьник
+perkTreasureHunterRank1LongDesc,progression,perk Per,,Get 10% more experience for every action.,Получайте на 10% больше опыта за каждое действие.
+perkTreasureHunterRank2Desc,progression,perk Per,,Student,Студент
+perkTreasureHunterRank2LongDesc,progression,perk Per,,Get 20% more experience for every action.,Получайте на 20% больше опыта за каждое действие.
+perkTreasureHunterRank3Desc,progression,perk Per,,Postgraduate,Аспирант
+perkTreasureHunterRank3LongDesc,progression,perk Per,,Get 30% more experience for every action.,Получайте на 30% больше опыта за каждое действие.
+perkTreasureHunterRank4Desc,progression,perk Per,,Junior Researcher,Младший научный сотрудник
+perkTreasureHunterRank4LongDesc,progression,perk Per,,Get 40% more experience for every action.,Получайте на 40% больше опыта за каждое действие.
+perkTreasureHunterRank5Desc,progression,perk Per,,Professor,Профессор
+perkTreasureHunterRank5LongDesc,progression,perk Per,,Get 50% more experience for every action.,Получайте на 50% больше опыта за каждое действие.
+
+modGunBarrelExtender,item_modifiers,mod,,Barrel Extender Mod,"Модификация «Удлиненный ствол» [73E9B2]Ствол[-]"
+modGunBarrelExtenderDesc,item_modifiers,mod,"Increases damage, range and aimed accuracy but makes the weapon more unwieldy when fired from the hip.","Увеличивает урон, дистанцию и точность наводки оружия, но делает неудобной стрельбу от бедра.\nМожно установить на роботизированную пушку.\nНесовместима с другими модификациями такого же типа."
+modGunMuzzleBrake,item_modifiers,mod,,Muzzle Brake Mod,"Модификация «Дульный тормоз» [73E9B2]Ствол[-]"
+modGunMuzzleBrakeDesc,item_modifiers,mod,"Отводит пороховые газы, уменьшая отдачу.\nМожно установить на роботизированную пушку\nНесовместима с другими модификациями такого же типа."
+modGunSoundSuppressorSilencer,item_modifiers,mod,,Silencer Mod,"Модификация «Глушитель» [73E9B2]Ствол[-]"
+modGunSoundSuppressorSilencerDesc,item_modifiers,mod,,A sound suppressor greatly reduces the firing sound but reduces maximum range and damage.\nWorks best with small calibers and guns with a low rate of fire.\nWill not work on a revolver.,"Глушитель значительно снижает громкость выстрела, но уменьшает максимальную дальность стрельбы и урон.\nНаиболее эффективен при стрельбе из малокалиберного оружия на короткие дистанции, хотя установить можно на большинство оружия со стволом.\nНесовместима с другими модификациями такого же типа."
+modGunLaserSight,item_modifiers,mod,,Laser Sight Mod,"Модификация «Лазерный целеуказатель» [73E9B2]Обвес[-]"
+modGunLaserSightDesc,item_modifiers,mod,,Helps with aiming quickly and increases accuracy when firing from the hip.\nInstalls into any firearm or crossbow.\n\nPress F to activate. Hold F to activate multiple items.,"Помогает быстрому наведению и увеличивает точность при стрельбе от бедра.\nУстанавливается на любое огнестрельное оружие или арбалет.\n\nДля включения нажмите клавишу F. Удерживайте клавишу F для включения нескольких предметов.\nНесовместима с другими модификациями такого же типа."
+modGunFlashlight,item_modifiers,mod,,Weapon Flashlight Mod,"Модификация «Тактический фонарь» [73E9B2]Обвес[-]"
+modGunFlashlightDesc,item_modifiers,mod,,Installs into any firearm or crossbow.\n\nPress F to activate. Hold F to activate multiple items.,"Устанавливается на огнестрельное оружие или арбалет.\n\nДля включения нажмите клавишу F. Удерживайте клавишу F для включения нескольких предметов.\nНесовместима с другими модификациями такого же типа."
+modGunScopeSmall,item_modifiers,mod,,Scope 2x Mod,"Модификация «2-кратный оптический прицел» [73E9B2]Прицел[-]"
+modGunScopeSmallDesc,item_modifiers,mod,,Increases visual magnification when aiming.\nInstalls into small firearms and crossbows.,"Увеличивает изображение во время прицела.\nУстанавливается на короткоствольное огнестрельное оружие и арбалеты.\nНесовместима с другими модификациями такого же типа."
+modGunScopeMedium,item_modifiers,mod,,Scope 4x Mod,"Модификация «4-кратный оптический прицел» [73E9B2]Прицел[-]"
+modGunScopeMediumDesc,item_modifiers,mod,,Increases visual magnification when aiming.\nInstalls into medium sized firearms and crossbows.,"Увеличивает изображение во время прицела.\nУстанавливается на огнестрельное оружие средней длины и арбалеты.\nНесовместима с другими модификациями такого же типа."
+modGunScopeLarge,item_modifiers,mod,,Scope 8x Mod,"Модификация «8-кратный оптический прицел» [73E9B2]Прицел[-]"
+modGunScopeLargeDesc,item_modifiers,mod,,Increases visual magnification when aiming.\nInstalls into long rifles.,"Увеличивает изображение во время прицела.\nУстанавливается на длинноствольное огнестрельное оружие.\nНесовместима с другими модификациями такого же типа"
+modGunReflexSight,item_modifiers,mod,,Reflex Sight Mod,"Модификация «Коллиматорный прицел» [73E9B2]Прицел[-]"
+modGunReflexSightDesc,item_modifiers,mod,,This sight is designed for fast target acquisition and improves weapon handling.,"Прицел создан для быстрого обнаружения цели. Улучшает управляемость оружия.\nУстанавливается на почти всё оружие дальнего боя, кроме луков и арбалетов.\nНесовместима с другими модификациями такого же типа."
+modGunTriggerGroupSemi,item_modifiers,mod,,Trigger Group: Semi Mod,"Спусковой механизм: Модификация «Полуавтоматический» [73E9B2]УСМ[-]"
+modGunTriggerGroupSemiDesc,item_modifiers,mod,,Modifies the trigger group to fire semi-auto only.\nIncreases the rate of fire and slightly increases recoil.,"Переводит спусковой механизм в режим стрельбы одиночными патронами.\nУвеличивает скорострельность и немного повышает отдачу.\nНесовместима с другими модификациями такого же типа."
+modGunTriggerGroupBurst3,item_modifiers,mod,,Trigger Group: Burst Mod,"Спусковой механизм: Модификация «Очередь с отсечкой» [73E9B2]УСМ[-]"
+modGunTriggerGroupBurst3Desc,item_modifiers,mod,,Modifies the trigger group to fire 3 round bursts.\nIncreases the rate of fire and slightly increases recoil.,"Переводит спусковой механизм в режим автоматической стрельбы с отсечкой в три патрона.\nУвеличивает скорострельность и немного повышает отдачу.\nНесовместима с другими модификациями такого же типа."
+modGunTriggerGroupAutomatic,item_modifiers,mod,,Trigger Group: Full Auto Mod,"Спусковой механизм: Модификация «Автоматический» [73E9B2]УСМ[-]"
+modGunTriggerGroupAutomaticDesc,item_modifiers,mod,,Modifies the trigger group to fire full auto only.\nIncreases the rate of fire and slightly increases recoil.,"Переводит спусковой механизм в режим автоматического огня.\nУвеличивает скорострельность и немного повышает отдачу.\nТакже можно установить на роботизированную пушку.\nНесовместима с другими модификациями такого же типа."
+modGunBipod,item_modifiers,mod,,Bipod Mod,"Модификация «Сошка» [73E9B2]Упор[-]"
+modGunBipodDesc,item_modifiers,mod,,Increases accuracy and handling when aiming weapons.,"Увеличивает точность оружия и управляемость при наведении.\nНельзя установить на короткоствольное оружие."
+modGunForegrip,item_modifiers,mod,,Fore Grip Mod,"Модификация «Передняя рукоятка» [73E9B2]Рукоять[-]"
+modGunForegripDesc,item_modifiers,mod,,Improves handling and accuracy when firing weapons from the hip or while moving.,"Улучшает управляемость и точность при стрельбе из огнестрельного оружия от бедра или в движении.\nТакже можно установить на роботизированную пушку.\nНесовместима с другими модификациями такого же типа."
+modGunRetractingStock,item_modifiers,mod,,Retracting Stock Mod,"Модификация «Складной приклад» [73E9B2]Рукоять[-]"
+modGunRetractingStockDesc,item_modifiers,mod,,Improves weapon handling while moving or firing from the hip because the weapon becomes more manageable in close quarters.,"Улучшает управляемость оружия при стрельбе в движении и от бедра, оружие становится удобнее для стрельбы на короткие дистанции.\nНесовместима с другими модификациями такого же типа."
+modShotgunSawedOffBarrel,item_modifiers,mod,,Sawed-Off Shotgun Mod,"Модификация «Обрез» [73E9B2]Ствол[-]"
+modShotgunSawedOffBarrelDesc,item_modifiers,mod,,Increases projectile spread.,"Увеличивает разброс дроби.\nТолько для дробовиков.\nНесовместима с другими модификациями такого же типа."
+modGunDuckbill,item_modifiers,mod,,Shotgun Duckbill Mod,"Модификация «Веерная дульная насадка» [73E9B2]Ствол[-]"
+modGunDuckbillDesc,item_modifiers,mod,,Modifies the spread to a horizontal pattern instead of the normal round one.,"Изменяет шаблон разброса дроби с радиального на горизонтальный.\nПодходит для дробовиков и роботизированных пушек.\nНесовместима с другими модификациями такого же типа."
+modGunChoke,item_modifiers,mod,,Shotgun Choke Mod,"Модификация «Чок для дробовика» [73E9B2]Ствол[-]"
+modGunChokeDesc,item_modifiers,mod,,Tightens the shotgun's spread.,"Уменьшает разброс оружия.\nПодходит для дробовиков и роботизированных пушек.\nНесовместима с другими модификациями такого же типа."
+modGunMagazineExtender,item_modifiers,mod,,Magazine Extender Mod,"Модификация «Увеличенный магазин» [73E9B2]Обойма[-]"
+modGunMagazineExtenderDesc,item_modifiers,mod,,Increases magazine capacity.,"Увеличивает ёмкость магазина.\nТакже можно установить на роботизированную пушку.\nНесовместима с другими модификациями такого же типа."
+modGunDrumMagazineExtender,item_modifiers,mod,,Drum Magazine Mod,"Модификация «Барабанный магазин» [73E9B2]Обойма[-]"
+modGunDrumMagazineExtenderDesc,item_modifiers,mod,,This large drum magazine doubles ammo capacity on machine guns but is a little slower to reload.,"Этот большой барабанный магазин удваивает емкость стандартного магазина, но немного замедляет перезарядку.\nМожно установить на пулемёты и автоматические дробовики.\nНесовместима с другими модификациями такого же типа."
+modGunShotgunTubeExtenderMagazine,item_modifiers,mod,,Shotgun Tube Extender Mod,"Модификация ствола «Увеличенный магазин» [73E9B2]Ствол[-]"
+modGunShotgunTubeExtenderMagazineDesc,item_modifiers,mod,"Increases magazine capacity for pump shotguns by 3 shells.,,Увеличивает ёмкость магазина помпового ружья на 3 патрона.\nНесовместима с другими модификациями такого же типа."
+modGunCrippleEm,item_modifiers,mod,,Cripple 'Em Mod,"Модификация «Разрывные пули» [73E9B2]Калечащий[-]"
+modGunCrippleEmDesc,item_modifiers,mod,,20% chance to cripple a leg on a bipedal target.,,20% вероятность искалечить ногу двуногой цели.\nСовместима с большинством оружия дальнего боя.\nНесовместима с другими модификациями такого же типа."
+modGunBowPolymerString,item_modifiers,mod,,Polymer String Mod,"Модификация «Синтетическая тетива» [73E9B2]Скорость[-]"
+modGunBowPolymerStringDesc,item_modifiers,mod,,Arrows and Bolts fly quicker and further with this modification.,"С ней стрелы и болты летят быстрее и дальше.\nНесовместима с другими модификациями такого же типа."
+modGunBowArrowRest,item_modifiers,mod,,Arrow Rest Mod,"Модификация «Полка для стрельбы» [73E9B2]Точность[-]"
+modGunBowArrowRestDesc,item_modifiers,mod,,An arrow rest improves the accuracy of a bow.,"Полка для стрельбы увеличивает точность лука.\nНесовместима с другими модификациями такого же типа."
+modGunMeleeTheHunter,item_modifiers,mod,,The Hunter Mod,"Модификация «Охотник» [73E9B2]Спец[-]"
+modGunMeleeTheHunterDesc,item_modifiers,mod,,+25% more damage to all animals.,"+25% урон по всем животным.\nПодходит для большинства инструментов и оружия."
+modGunMeleeRadRemover,item_modifiers,mod,,Rad Remover Mod,"Модификация «Подавитель радиации» [73E9B2]Спец[-]"
+modGunMeleeRadRemoverDesc,item_modifiers,mod,,Will disable the regeneration ability of radiated zombies for 90 seconds.,"Блокирует регенеративные способности облученных зомби на 90 секунд.\nПодходит для большинства инструментов и оружия."
+modGunMeleeNiCdBattery,item_modifiers,mod,,NiCd Battery Mod,"Модификация «Никель-кадмиевый аккумулятор» [73E9B2]Спец[-]"
+modGunMeleeNiCdBatteryDesc,item_modifiers,mod,,A shocking addition to weapons.,"Оглушающее дополнение к оружию.\nПодходит для большинства инструментов и оружия."
+modGunMeleeFlammableOil,item_modifiers,mod,,Flammable Oil Mod,"Модификация «Горючее масло» [73E9B2]Спец[-]"
+modGunMeleeFlammableOilDesc,item_modifiers,mod,,Can set enemies on fire.,"Может поджечь врагов.\nПодходит для большинства инструментов и оружия."
+modGunMeleeLiquidNitrogen,item_modifiers,mod,,Liquid Nitrogen Mod,"Модификация «Жидкий азот» [73E9B2]Спец[-]"
+modGunMeleeLiquidNitrogenDesc,item_modifiers,mod,,Briefly freezes enemies.,"Замораживает врагов на короткое время.\nПодходит для большинства инструментов и оружия."
+modMeleeTemperedBlade,item_modifiers,mod,,Tempered Blade Mod,"Модификация «Закаленная сталь» [73E9B2]Лезвие[-]"
+modMeleeTemperedBladeDesc,item_modifiers,mod,,This blade modification increases block damage by 10% and lowers degradation by 15%.,"С этой модификацией лезвия урон по блокам повышается на 10%, а само оружие приходит в негодность на 15% медленнее.\nМожно установить на топоры, кастеты, оружие с лезвием, копья и лопаты.\nНесовместима с другими модификациями такого же типа."
+modMeleeSerratedBlade,item_modifiers,mod,,Serrated Blade Mod,"Модификация «Зазубренное лезвие» [73E9B2]Лезвие[-]"
+modMeleeSerratedBladeDesc,item_modifiers,mod,,10% chance to cause a Bleeding Wound on a regular attack.,"С вероятностью 10% наносит кровоточащую рану при обычной атаке.\nМожно установить на топоры, кастеты, оружие с лезвием, копья и лопаты.\nНесовместима с другими модификациями такого же типа."
+modMeleeWeightedHead,item_modifiers,mod,,Weighted Head Mod,"Модификация «Утяжелитель» [73E9B2]Наконечник[-]"
+modMeleeWeightedHeadDesc,item_modifiers,mod,,A modification for all melee weapons and tools.\nAdds a chance to stun and slow victims.\n\nKnives and machetes do not have a head that can be weighted.,"Модификация для любого оружия ближнего боя и инструмента.\nДобавляет вероятность оглушить или замедлить жертву.\n\nУ ножей и мачете нет наконечника, который можно взвесить.\nПодходит для роботизированного молота.\nНесовместима с другими модификациями такого же типа."
+modMeleeStructuralBrace,item_modifiers,mod,,Structural Brace Mod,"Модификация «Конструктивное усиление» [73E9B2]Прочность[-]"
+modMeleeStructuralBraceDesc,item_modifiers,mod,,This modification for melee weapons and tools lowers degradation by 25%.,"С этой модификацией оружие ближнего боя, инструменты и луки/арбалеты приходят в негодность на 25% медленнее.\nНесовместима с другими модификациями такого же типа."
+modMeleeErgonomicGrip,item_modifiers,mod,,Ergonomic Grip Mod,"Модификация «Эргономичная рукоять» [73E9B2]Выживание[-]"
+modMeleeErgonomicGripDesc,item_modifiers,mod,,Decreases melee stamina usage by 10% and increases weapon handling of bows by 10%.,"Снижает расход выносливости для оружия ближнего боя на 10% и увеличивает управляемость луков на 10%.\nНесовместима с другими модификациями такого же типа."
+modMeleeFortifyingGrip,item_modifiers,mod,,Fortifying Grip Mod,"Модификация «Усиленная рукоять» [73E9B2]Выживание[-]"
+modMeleeFortifyingGripDesc,item_modifiers,mod,,When health is below 50% gain 1 hit point every 5 seconds.,"Восстанавливает 1 ОЖ каждые 5 секунд, когда уровень здоровья опускается ниже 50%.\nПодходит для большинства инструментов и оружия ближнего боя.\nНесовместима с другими модификациями такого же типа."
+modMeleeClubBarbedWire,item_modifiers,mod,,Barbed Wire Mod,"Модификация «Колючая проволока» [73E9B2]Оглушение[-]"
+modMeleeClubBarbedWireDesc,item_modifiers,mod,"20% chance to cause bleeding damage, 40% with power attacks.\nCan be installed in clubs.","С вероятностью 20% (при силовых атаках - 40%) вызывает кровотечение.\nМожно наматывать на дубины.\nНесовместима с другими модификациями такого же типа."
+modMeleeClubMetalSpikes,item_modifiers,mod,,Metal Spikes Mod,"Модификация «Металлические шипы» [73E9B2]Оглушение[-]"
+modMeleeClubMetalSpikesDesc,item_modifiers,mod,,Each successive hit lowers enemies armor rating 20%.\nCan be installed in clubs.,,Каждое успешное попадание снижает показатель брони противника на 20%.\nМожно установить на дубины.\nНесовместима с другими модификациями такого же типа."
+modMeleeClubMetalChain,item_modifiers,mod,,Metal Chain Mod,"Модификация «Стальная цепь» [73E9B2]Оглушение[-]"
+modMeleeClubMetalChainDesc,item_modifiers,mod,,10% chance to knock down opponents.\nCan be installed in clubs.,"С вероятностью 10% позволяет сбить противника с ног.\nМожно наматывать на дубины.\nНесовместима с другими модификациями такого же типа."
+modMeleeClubBurningShaft,item_modifiers,mod,,Burning Shaft Mod,"Модификация «Пылающий прут» [73E9B2]Оглушение[-]"
+modMeleeClubBurningShaftDesc,item_modifiers,mod,,A melee item can double as a light source and set enemies on fire.\nCan be installed in melee tools and weapons that have a long shaft or blade.,"Предмет для ближнего боя, может использоваться для освещения и для поджигания врагов.\nМожно установить на предметы для ближнего боя и оружие с длинным древком или клинком.\nНесовместима с другими модификациями такого же типа."
+modMeleeFiremansAxeMod,item_modifiers,mod,,Fireman's Axe Mod,"Модификация «Пожарный топор» [73E9B2]Добыча[-]"
+modMeleeFiremansAxeModDesc,item_modifiers,mod,,Deal 25% more damage to blocks but 25% less damage to enemies.,"Модификация «Пожарный топор».  Наносит на 25% больше урона по блокам, но на 25% меньше урона врагам.\nУстанавливается на топоры."
+modMeleeGraveDigger,item_modifiers,mod,,Grave Digger Mod,"Модификация «Расхититель могил» [73E9B2]Урон от лопат[-]"
+modMeleeBunkerBuster,item_modifiers,mod,,Bunker Buster Mod,"Модификация «Подрывник» [73E9B2]Добыча[-]"
+modMeleeBunkerBusterDesc,item_modifiers,mod,,25% more damage against stone.,"Увеличивает на 25% урон по камню и каменным конструкциям.\nПодходит для большинства инструментов и оружия ближнего боя."
+modMeleeIronBreaker,item_modifiers,mod,,Iron Breaker Mod,"Модификация «Железолом» [73E9B2]Добыча[-]"
+modMeleeIronBreakerDesc,item_modifiers,mod,,15% more damage against iron.,"Увеличивает на 15% урон по железу, а также железным/стальным конструкциям.\nПодходит для большинства инструментов и оружия ближнего боя."
+modMeleeWoodSplitter,item_modifiers,mod,,Wood Splitter Mod,"Модификация «Колун» [73E9B2]Добыча[-]"
+modMeleeWoodSplitterDesc,item_modifiers,mod,,15% more damage against wood.,"Увеличивает на 15% урон по дереву и конструкциям из него.\nПодходит для большинства инструментов и оружия ближнего боя."
+modMeleeDiamondTip,item_modifiers,mod,,Diamond Blade Tip Mod,"Модификация «Алмазное напыление» [73E9B2]Прочность[-]"
+modMeleeDiamondTipDesc,item_modifiers,mod,,Any hand tool or bladed weapon degrades 40% slower with this modification.,"С этой модификацией ручной инструмент, кастеты, копья и оружие с лезвием приходят в негодность на 40% медленнее.\nНесовместима с другими модификациями такого же типа."
+modMeleeStunBatonRepulsor,item_modifiers,mod,,Stun Baton Repulsor Mod,"Модификация «Репульсор оглушающего жезла» [73E9B2]Отбрасывание[-]"
+modMeleeStunBatonRepulsorDesc,item_modifiers,mod,,Install this mod into a stun baton and send zombies flying on the charged hit.,"Установите эту модификацию на оглушающий жезл и разбрасывайте зомби ударами электричества.\nНесовместима с другими модификациями такого же типа."
+modFuelTankSmall,item_modifiers,mod,,Motor Tool Small Tank Mod,"Модификация «Малый бак бензоинструмента» [73E9B2]Топливо[-]"
+modFuelTankSmallDesc,item_modifiers,mod,,Increases tank size by 50% for chainsaws and augers.,"Увеличивает объем бака бензопил и буров на 50%.\nНесовместима с другими модификациями такого же типа."
+modFuelTankLarge,item_modifiers,mod,,Motor Tool Large Tank Mod,"Модификация «Большой бак бензоинструмента» [73E9B2]Топливо[-]"
+modFuelTankLargeDesc,item_modifiers,mod,,Increases tank size by 100% for chainsaws and augers.,"Увеличивает объем бака бензопил и буров на 100%.\nНесовместима с другими модификациями такого же типа."
+
+meleeToolRepairT0StoneAxe,items,Tool,,"Stone Axe [73E9B2]Т0[-]","Каменный топор [73E9B2]Т0[-]"
+meleeToolRepairT0StoneAxeDesc,items,Tool,,"A primitive tool useful for cutting wood, mining stone, repairing & upgrading walls, doors & windows. Not the best weapon.\n\nScrap to Small Stone.","Простейший инструмент для рубки дерева, добычи камня, ремонта и улучшения стен, дверей, окон. Не лучшее оружие.\n\nРазломайте, чтобы получить маленький камень."
+meleeToolRepairT0TazasStoneAxe,items,Tool,,"Taza's Stone Axe [73E9B2]Т0[-]","Каменный топор Тазы [73E9B2]Т0[-]"
+meleeToolRepairT0TazasStoneAxeDesc,items,Tool,,"Taza's stone axe is a rare, powerful, ancient Indian artifact. The Apache believed those who wielded it were invincible in battle.","Каменный топор Тазы – редкий древний мощный индейский артефакт. Апачи верили, что тот, кто держит этот топор, неуязвим в битве."
+meleeToolRepairT1ClawHammer,items,Tool,,"Claw Hammer [73E9B2]Т1[-]","Молоток-гвоздодёр [73E9B2]Т1[-]"
+meleeToolRepairT1ClawHammerDesc,items,Tool,,The claw hammer is great for repairing and upgrading base walls and not bad as a weapon.\n\nScrap to Iron.,"Молоток-гвоздодёр отлично подходит для ремонта и усовершенствования стен. Он неплох и в качестве оружия.\n\nРазбирается на железо."
+meleeToolRepairT3Nailgun,items,Tool,,"Nailgun [73E9B2]Т3[-]","Гвоздомёт [73E9B2]Т3[-]"
+meleeToolRepairT3NailgunDesc,items,Tool,,The nail gun is the best tool for repairing and upgrading base walls and not a bad weapon to boot if you have nails.\n\nScrap to Mechanical parts.,"Гвоздомёт – лучший инструмент для ремонта и усовершенствования стен, к тому же неплохое оружие, если у вас есть гвозди.\n\nРазбирается на механические части."
+meleeToolAxeT1IronFireaxe,items,Tool,,"Iron Fireaxe [73E9B2]Т1[-]","Железный пожарный топор [73E9B2]Т1[-]"
+meleeToolAxeT1IronFireaxeDesc,items,Tool,,The fireaxe is good for harvesting wood.\n\nScrap to Iron.,"Пожарный топор хорош для добычи дерева.\n\nРазбирается на железо."
+meleeToolAxeT2SteelAxe,items,Tool,,"Steel Axe [73E9B2]Т2[-]","Стальной топор [73E9B2]Т2[-]"
+meleeToolAxeT2SteelAxeDesc,items,Tool,,The steel axe has a durable blade and is great for harvesting wood.\n\nScrap to Steel Tool parts.,"Стальной топор имеет более прочное лезвие и отлично подходит для добычи дерева.\n\nРазбирается на части стального инструмента."
+meleeToolPickT1IronPickaxe,items,Tool,,"Iron Pickaxe  [73E9B2]Т1[-]","Железная кирка [73E9B2]Т1[-]"
+meleeToolPickT1IronPickaxeDesc,items,Tool,,The iron pickaxe is great for breaking stone and harvesting minerals.\n\nScrap to Iron.,"Железная кирка хороша для дробления камня и добычи полезных ископаемых.\n\nРазбирается на железо."
+meleeToolPickT2SteelPickaxe,items,Tool,,"Steel Pickaxe [73E9B2]Т3[-]","Стальная кирка [73E9B2]Т3[-]"
+meleeToolPickT2SteelPickaxeDesc,items,Tool,,The steel pickaxe is best for breaking stone and harvesting minerals.\n\nScrap to Steel Tool parts.,Стальная кирка лучше всего подходит для дробления камня и добычи полезных ископаемых.\n\nРазбирается на части стального инструмента.
+meleeToolShovelT0StoneShovel,items,Tool,,"Stone Shovel [73E9B2]Т0[-]","Каменная лопата [73E9B2]Т0[-]"
+meleeToolShovelT0StoneShovelDesc,items,Tool,,"The stone shovel is a primitive tool useful for digging dirt, sand or snow.\n\nScrap to Small Stone.","Каменная лопата — простейший инструмент для того, чтобы копать землю, песок, снег.\n\nРазломайте, чтобы получить маленький камень."
+meleeToolShovelT1IronShovel,items,Tool,,"Iron Shovel [73E9B2]Т1[-]","Железная лопата [73E9B2]Т1[-]"
+meleeToolShovelT1IronShovelDesc,items,Tool,,"The iron shovel is great for digging through earth, sand or snow.\n\nScrap to Iron.","Железная лопата хорошо подходит для того, чтобы копать землю, песок, снег.\n\nРазбирается на железо."
+meleeToolShovelT2SteelShovel,items,Tool,,"Steel Shovel [73E9B2]Т2[-]","Стальная лопата [73E9B2]Т2[-]"
+meleeToolShovelT2SteelShovelDesc,items,Tool,,"The steel shovel is very durable and the ideal tool for digging through earth, sand or snow.\n\nScrap to Steel Tool parts.","Стальная лопата — очень прочная, идеально подходит для того, чтобы копать землю, песок, снег.\n\nРазбирается на части стального инструмента."
+meleeToolAxeT3Chainsaw,items,Tool,,"Chainsaw [73E9B2]Т3[-]","Бензопила [73E9B2]Т3[-]"
+meleeToolAxeT3ChainsawDesc,items,Tool,,Chop down the biggest trees or zombies faster than Paul Bunyan with this great chainsaw that uses gasoline for fuel.\n\nRepair with a Repair Kit.\nScrap to Motor Tool Parts.,"С этой чудесной бензопилой можно валить огромные деревья или зомби быстрее, чем Пол Баньян.\n\nРазбирается на части бензоинструмента."
+meleeToolPickT3Auger,items,Tool,,"Auger [73E9B2]Т3[-]","Бур [73E9B2]Т3[-]"
+meleeToolPickT3AugerDesc,items,Tool,,Rock out with your auger out and be the envy of every miner when they see you sporting this sexy gas-powered auger.\n\nScrap to Motor Tool Parts.,"Отрывайтесь с этим прекрасным буром, заставьте других шахтёров вам завидовать при одном взгляде на этот пленительный бензиновый бур у вас в руках.\n\nРазбирается на части бензоинструмента."
+meleeToolSalvageT1Wrench,items,Tool,,"Wrench [73E9B2]Т1[-]","Гаечный ключ [73E9B2]Т1[-]"
+meleeToolSalvageT1WrenchDesc,items,Tool,,"Great for disassembling mechanical devices like cars, air conditioners and more.\n\nScrap to Iron.","Отлично подходит для разбора механических устройств вроде машин, кондиционеров и тому подобного.\n\nРазбирается на железо."
+meleeToolSalvageT2Ratchet,items,Tool,,"Ratchet [73E9B2]Т2[-]","Ключ-трещотка [73E9B2]Т2[-]"
+meleeToolSalvageT2RatchetDesc,items,Tool,,"Great for disassembling mechanical devices like cars, air conditioners and more.\n\nRepair with a Repair Kit.\nScrap to Steel Tool Parts.","Отлично подходит для разбора механических устройств вроде машин, кондиционеров и тому подобного.\n\nРазбирается на части стального инструмента."
+meleeToolSalvageT3ImpactDriver,items,Tool,,"Impact Driver [73E9B2]Т3[-]","Гайковёрт [73E9B2]Т3[-]"
+meleeToolSalvageT3ImpactDriverDesc,items,Tool,,"Great for disassembling mechanical devices like cars, air conditioners and more.\n\nScrap to Motor Tool Parts.","Отлично подходит для разбора механических устройств вроде машин, кондиционеров и тому подобного.\n\nРазбирается на части бензоинструмента."
+meleeWpnBladeT0BoneKnife,items,Melee,,"Bone Knife [73E9B2]Т0[-]","Костяной нож [73E9B2]Т0[-]"
+meleeWpnBladeT0BoneKnifeDesc,items,Melee,,This primitive makeshift weapon is also useful for gutting animals.\nPower attacks cause at least 2 Bleeding Wound.\n\nScrap to Bone.,"Это примитивное самодельное оружие можно использовать для потрошения животных.\nСиловая атака, в отличие от обычной, наносит как минимум 2 кровоточащих раны.\n\nРазломайте, чтобы получить кости."
+meleeWpnBladeT1HuntingKnife,items,Melee,,"Hunting Knife [73E9B2]Т1[-]","Охотничий нож [73E9B2]Т1[-]"
+meleeWpnBladeT1HuntingKnifeDesc,items,Melee,,Great for slashing zombies and gutting animals for meat.\nPower attacks cause at least 2 Bleeding Wound.\n\nScrap to Iron.,"Незаменим для кромсания зомби и разделки животных на мясо.\nСиловая атака, в отличие от обычной, наносит как минимум 2 кровоточащих раны.\n\nРазбирается на железо."
+meleeWpnBladeT1CandyKnife,items,Melee,,"Candy Cane Knife [73E9B2]Т1[-]","Нож из карамельной трости [73E9B2]Т1[-]"
+meleeWpnBladeT1CandyKnifeDesc,items,Melee,,"Time to get into a festive and stabby mood!\nPower attacks cause at least 2 Bleeding Wound.","Время для праздничного маниакального настроения!\nСиловая атака, в отличие от обычной, наносит как минимум 2 кровоточащих раны."
+meleeWpnBladeT3Machete,items,Melee,,"Machete [73E9B2]Т3[-]","Мачете [73E9B2]Т3[-]"
+meleeWpnBladeT3MacheteDesc,items,Melee,,Great for chopping zombies and sometimes trees and gutting animals for meat.\nPower attacks cause at least 2 Bleeding Wound.\n\nScrap to Machete parts.,"Незаменимо для рубки зомби, временами – деревьев, и разделки животных на мясо.\nСиловая атака, в отличие от обычной, наносит как минимум 2 кровоточащих раны.\n\nРазбирается на части мачете."
+meleeWpnClubT0WoodenClub,items,Melee,,"Wooden Club [73E9B2]Т0[-]","Деревянная дубинка [73E9B2]Т0[-]"
+meleeWpnClubT0WoodenClubDesc,items,Melee,,A wooden club. Good for breaking knees and skulls.\n\nScrap to Wood.,"Деревянная дубинка. Хорошо подходит для того, чтобы ломать колени и черепа... кому-то не очень сильному.\n\nРазбирается на дерево."
+meleeWpnClubT1BaseballBat,items,Melee,,"Baseball Bat [73E9B2]Т1[-]","Бейсбольная бита [73E9B2]Т1[-]"
+meleeWpnClubT1BaseballBatDesc,items,Melee,,This club was used in gladiatorial games of the past that were held in huge arenas.\n\nScrap to Wood.,"В прошлом эта дубинка использовалась в битвах гладиаторов на огромных аренах.\n\nРазбирается на дерево."
+meleeWpnClubT1CandyClub,items,Melee,,"Candy Cane Club [73E9B2]Т1[-]","Дубинка из карамельной трости [73E9B2]Т1[-]"
+meleeWpnClubT1CandyClubDesc,items,Melee,,"Happy beatdown days!","Счастливого дня избиения!"
+meleeWpnClubT3SteelClub,items,Melee,,"Steel Club [73E9B2]Т3[-]","Стальная дубина [73E9B2]Т3[-]"
+meleeWpnClubT3SteelClubDesc,items,Melee,,Steel clubs are very durable and hard-hitting.\n\nScrap to Steel Club Parts.,"Очень прочная стальная дубина, способная наносить мощные удары.\n\nРазбирается на части стальной дубины."
+meleeWpnBatonT0PipeBaton,items,Melee,,"Pipe Baton [73E9B2]Т0[-]","Дубинка из трубы [73E9B2]Т0[-]"
+meleeWpnBatonT0PipeBatonDesc,items,Melee,,This baton crafted from junk is light weight but still packs a decent punch.\n\nScrap to Iron.,"Эта сделанная из хлама дубинка лёгкая, но неплохо бьёт в умелых руках.\n\nРазбирается на железо."
+meleeWpnBatonT2StunBaton,items,Melee,,"Stun Baton [73E9B2]Т2[-]","Оглушающий жезл [73E9B2]Т2[-]"
+meleeWpnBatonT2StunBatonDesc,items,Melee,,Goes zap.\n\nScrap to Stun Baton parts.,Электрошокер.\n\nРазбирается на части оглушающего жезла.
+meleeWpnSpearT0StoneSpear,items,Melee,,"Stone Spear [73E9B2]Т0[-]","Каменное копьё [73E9B2]Т0[-]"
+meleeWpnSpearT0StoneSpearDesc,items,Melee,,Spears have more range than other melee weapons.\n\nScrap to Small Stone.,"Копья позволяют держать врагов на большем расстоянии, чем другое оружие ближнего боя.\n\nРазбирается на маленький камень."
+meleeWpnSpearT1IronSpear,items,Melee,,"Iron Spear [73E9B2]Т1[-]","Железное копьё [73E9B2]Т1[-]"
+meleeWpnSpearT1IronSpearDesc,items,Melee,,Spears have more range than other melee weapons.\n\nScrap to Iron.,"Копья позволяют держать врагов на большем расстоянии, чем другое оружие ближнего боя.\n\nРазбирается на железо."
+meleeWpnSpearT3SteelSpear,items,Melee,,"Steel Spear [73E9B2]Т3[-]","Стальное копьё [73E9B2]Т3[-]"
+meleeWpnSpearT3SteelSpearDesc,items,Melee,,Spears have more range than other melee weapons.\n\nScrap to Steel Spear parts.,"Копья позволяют держать врагов на большем расстоянии, чем другое оружие ближнего боя.\n\nРазбирается на части стального копья."
+meleeWpnSledgeT0StoneSledgehammer,items,Melee,,"Stone Sledgehammer [73E9B2]Т0[-]","Каменная кувалда [73E9B2]Т0[-]"
+meleeWpnSledgeT0StoneSledgehammerDesc,items,Melee,,The sledgehammer is one of the best weapons for cracking skulls.\n\nScrap to Small Stone.,"Кувалды — лучшее оружие для дробления черепов.\n\nРазломайте, чтобы получить маленький камень."
+meleeWpnSledgeT1IronSledgehammer,items,Melee,,"Iron Sledgehammer [73E9B2]Т1[-]","Железная кувалда [73E9B2]Т1[-]"
+meleeWpnSledgeT1IronSledgehammerDesc,items,Melee,,The sledgehammer is one of the best weapons for cracking skulls.\n\nRepair with a Repair Kit.\nScrap to Iron.,"Кувалды, пожалуй, лучшее оружие для того, чтобы дробить головы.\n\nРазбирается на железо."
+meleeWpnSledgeT3SteelSledgehammer,items,Melee,,"Steel Sledgehammer [73E9B2]Т3[-]","Стальная кувалда [73E9B2]Т3[-]"
+meleeWpnSledgeT3SteelSledgehammerDesc,items,Melee,,The sledgehammer is one of the best weapons for cracking skulls.\n\nScrap to Steel Sledgehammer parts.,"Кувалды, пожалуй, лучшее оружие для того, чтобы дробить головы.\n\nРазбирается на части стальной кувалды."
+meleeWpnKnucklesT0LeatherKnuckles,items,Melee,,"Knuckle Wraps [73E9B2]Т0[-]","Кожаная обмотка [73E9B2]Т0[-]"
+meleeWpnKnucklesT0LeatherKnucklesDesc,items,Melee,,Leather knuckle wraps to protect your hands and put some weight into those swings.\n\nScrap to Leather.,"Кожаные ремни, намотанные на руки, защищают кисти и добавляют веса при ударах.\n\nРазломайте, чтобы получить кожу."
+meleeWpnKnucklesT1IronKnuckles,items,Melee,,"Iron Knuckles [73E9B2]Т1[-]","Железный кастет [73E9B2]Т1[-]"
+meleeWpnKnucklesT1IronKnucklesDesc,items,Melee,,Protect your hands and put some weight into those swings.\n\nScrap to Iron.,Защищает кисти рук и добавляет веса при ударах.\n\nРазбирается на железо.
+meleeWpnKnucklesT3SteelKnuckles,items,Melee,,"Steel Knuckles [73E9B2]Т3[-]","Стальной кастет [73E9B2]Т3[-]"
+meleeWpnKnucklesT3SteelKnucklesDesc,items,Melee,,Protect your hands and put some weight into those swings. These blades can also be useful for gutting animals.\n\nScrap to Steel Knuckles parts.,Защищает кисти рук и добавляет веса при ударах. Его лезвиями удобно потрошить животных.\n\nРазбирается на части стального кастета.
+gunHandgunT0PipePistol,items,Gun,,"Pipe Pistol [73E9B2]Т0[-]","Пистолет из трубы [73E9B2]Т0[-]"
+gunHandgunT0PipePistolDesc,items,Gun,,A home-made pistol firing 9mm ammo.\n\nScrap to Iron.,Самодельный пистолет под патроны 9 мм.\n\nРазбирается на железо.
+gunHandgunT1Pistol,items,Gun,,"Pistol [73E9B2]Т1[-]","Пистолет [73E9B2]Т1[-]"
+gunHandgunT1PistolDesc,items,Gun,,A basic pistol that uses 9mm ammo.\n\nScrap to Handgun Parts.,"Стандартный пистолет, использующий патроны калибра 9 мм.\n\nРазбирается на части пистолета."
+gunHandgunT3SMG5,items,Gun,,"SMG-5 [73E9B2]Т3[-]","ПП-5 [73E9B2]Т3[-]"
+gunHandgunT3SMG5Desc,items,Gun,,This submachine gun uses 9mm ammo.\n\nScrap to Handgun Parts.,"Этот пистолет-пулемёт использует патроны калибра 9 мм.\n\nРазбирается на части пистолета."
+gunHandgunT2Magnum44,items,Gun,,".44 Magnum [73E9B2]Т2[-]","Револьвер .44 Magnum [73E9B2]Т2[-]"
+gunHandgunT2Magnum44Desc,items,Gun,,The .44 Magnum is the king of handguns. It's the most powerful but makes the most noise. Wield this bad boy and make Clint proud.\n\nScrap to Handgun Parts.,"Револьвер .44 Magnum – король в своём классе. Он самый убойный, но и самый шумный. Заполучи этого красавца, пусть Клинт гордится тобой.\n\nРазбирается на части пистолета."
+gunHandgunT3DesertVulture,items,Gun,,".44 Desert Vulture [73E9B2]Т3[-]","«Пустынный стервятник» калибра .44 [73E9B2]Т3[-]"
+gunHandgunT3DesertVultureDesc,items,Gun,,This heavy pistol uses .44 Magnum ammo.\n\nScrap to Handgun Parts.,"Этот тяжёлый пистолет использует патроны .44 Magnum.\n\nРазбирается на части пистолета."
+gunShotgunT0PipeShotgun,items,Gun,,"Pipe Shotgun [73E9B2]Т0[-]","Дробовик из трубы [73E9B2]Т0[-]"
+gunShotgunT0PipeShotgunDesc,items,Gun,,A home-made gun firing shotgun shells.\nEffective at very close ranges.\n\nScrap to Iron.,"Самодельное ружьё под патроны для дробовика.\nЭффективно на очень близких дистанциях.\n\nРазбирается на железо."
+gunShotgunT1DoubleBarrel,items,Gun,,"Double Barrel Shotgun [73E9B2]Т1[-]","Двустволка [73E9B2]Т1[-]"
+gunShotgunT1DoubleBarrelDesc,items,Gun,,"A rusty old double barrel shotgun, great for close range carnage.\n\nScrap to Shotgun Parts.","Старая ржавая двустволка идеальна для кровопролития на коротких дистанциях.\n\nРазбирается на части дробовика."
+gunShotgunT2PumpShotgun,items,Gun,,"Pump Shotgun [73E9B2]Т2[-]","Помповое ружьё [73E9B2]Т2[-]"
+gunShotgunT2PumpShotgunDesc,items,Gun,,A long-barreled shotgun with pump action loading .\n\nScrap to Shotgun Parts.,"Длинноствольный помповый дробовик.\n\nРазбирается на части дробовика."
+gunShotgunT3AutoShotgun,items,Gun,,"Auto Shotgun [73E9B2]Т3[-]","Автоматический дробовик [73E9B2]Т3[-]"
+gunShotgunT3AutoShotgunDesc,items,Gun,,This semi automatic shotgun is a rare and devasting short range weapon capable of making minced meat out of anything in its path.\n\nScrap to Shotgun Parts.,"Полуавтоматический дробовик редкое и разрушительное на коротких дистанциях оружие, способное превратить в фарш всё на своем пути.\n\nРазбирается на части дробовика."
+gunRifleT0PipeRifle,items,Gun,,"Pipe Rifle [73E9B2]Т0[-]","Винтовка из трубы [73E9B2]Т0[-]"
+gunRifleT0PipeRifleDesc,items,Gun,,A home-made rifle firing 7.62mm ammo.\n\nScrap to Iron.,"Самодельная винтовка под патроны 7,62 мм.\n\nРазбирается на железо."
+gunRifleT1HuntingRifle,items,Gun,,"Hunting Rifle [73E9B2]Т1[-]","Охотничье ружьё [73E9B2]Т1[-]"
+gunRifleT1HuntingRifleDesc,items,Gun,,This common farmer's hunting rifle uses 7.62mm ammo.\n\nScrap to Rifle parts.,"Распространённое среди фермеров охотничье ружьё использует патроны калибра 7,62 мм.\n\nРазбирается на части ружья."
+gunRifleT2LeverActionRifle,items,Gun,,"Lever Action Rifle [73E9B2]Т2[-]","Винтовка рычажного действия [73E9B2]Т2[-]"
+gunRifleT2LeverActionRifleDesc,items,Gun,,This Lever Action rifle uses 7.62mm ammo and is your first choice if you want to make that shot count.\n\nScrap to Rifle parts.,"Винтовка рычажного действия использует патроны 7,62 мм. Это лучший выбор, если вы хотите, чтобы с вашими выстрелами считались.\n\nРазбирается на детали винтовки."
+gunRifleT3SniperRifle,items,Gun,,"Sniper Rifle [73E9B2]Т3[-]","Снайперская винтовка [73E9B2]Т3[-]"
+gunRifleT3SniperRifleDesc,items,Gun,,"This high precision, long ranged rifle is perfect for sniping enemies at great distances.\n\nScrap to Rifle parts.",Высокоточная винтовка с большой дальностью стрельбы идеальна для уничтожения противника с дистанции.\n\nРазбирается на части винтовки.
+gunMGT0PipeMachineGun,items,Gun,,"Pipe Machine Gun [73E9B2]Т0[-]","Автомат из трубы [73E9B2]Т0[-]"
+gunMGT0PipeMachineGunDesc,items,Gun,,A home-made automatic weapon firing 7.62mm ammo.\n\nScrap to Iron.,"Самодельное автоматическое оружие под патроны 7,62 мм.\n\nРазбирается на железо."
+gunMGT1AK47,items,Gun,,"AK-47 Machine Gun [73E9B2]Т1[-]","Автомат АК-47 [73E9B2]Т1[-]"
+gunMGT1AK47Desc,items,Gun,,This badass AK-47 Machine Gun uses 7.62mm ammo.\n\nScrap to Machine Gun Parts.,"Этот чумовой автомат использует патроны калибра 7,62 мм.\n\nРазбирается на части автоматического оружия."
+gunMGT2TacticalAR,items,Gun,,"Tactical Assault Rifle [73E9B2]Т2[-]","Тактическая штурмовая винтовка [73E9B2]Т2[-]"
+gunMGT2TacticalARDesc,items,Gun,,This Tactical Assault Rifle uses 7.62mm ammo.\n\nScrap to Machine Gun Parts.,"Тактическая штурмовая винтовка использует патроны калибра 7,62 мм.\n\nРазбирается на части автоматического оружия."
+gunMGT3M60,items,Gun,,"M60 Machine Gun [73E9B2]Т3[-]","Пулемёт М60 [73E9B2]Т3[-]"
+gunMGT3M60Desc,items,Gun,,Machine guns are somewhat cumbersome to use but excel at automatic fire. This one uses 7.62mm ammo.\n\nScrap to Machine Gun Parts.,"Пулемёты несколько громоздки, но идеальны для автоматической стрельбы. Этот использует патроны калибра 7,62 мм.\n\nРазбирается на части автоматического оружия."
+gunExplosivesT3RocketLauncher,items,Gun,,"Rocket Launcher [73E9B2]Т3[-]","Гранатомёт [73E9B2]Т3[-]"
+gunExplosivesT3RocketLauncherDesc,items,Gun,,A Rocket Launcher shoots rocket propelled grenades.\n\nScrap to Rocket Launcher parts.,"Гранатомёт стреляет реактивными гранатами.\n\nРазбирается на части гранатомёта."
+gunBowT0PrimitiveBow,items,Gun,,"Primitive Bow [73E9B2]Т0[-]","Простейший лук [73E9B2]Т0[-]"
+gunBowT0PrimitiveBowDesc,items,Gun,,Good for hunting and killing zombies. Uses arrows for ammunition.\nHold reload to use alternate ammo.\n\nScrap to Wood.,"Хорош для охоты или отстрела зомби в тренированных руках. В качестве боеприпасов использует стрелы (кроме зажигательных или взрывных).\nУдерживайте клавишу перезарядки, чтобы сменить тип боеприпаса.\n\nРазбирается на дерево."
+gunBowT1WoodenBow,items,Gun,,"Wooden Bow [73E9B2]Т1[-]","Деревянный лук [73E9B2]Т1[-]"
+gunBowT1WoodenBowDesc,items,Gun,,Good for hunting and killing zombies. Uses arrows for ammunition.\nHold reload to use alternate ammo.\n\nScrap to Bow / Crossbow Parts.,"Хорош для охоты или отстрела зомби. В качестве боеприпасов использует стрелы.\nУдерживайте клавишу перезарядки, чтобы сменить тип боеприпаса.\n\nРазбирается на части лука / арбалета."
+gunBowT3CompoundBow,items,Gun,,"Compound Bow [73E9B2]Т3[-]","Композитный лук [73E9B2]Т3[-]"
+gunBowT3CompoundBowDesc,items,Gun,,A compound bow does more damage and arrows fly straighter which makes it easier to aim.\n\nScrap to Bow / Crossbow Parts.,"Композитный лук наносит больший урон, стрелы летят ровнее, что упрощает прицеливание.\n\nРазбирается на части лука / арбалета."
+gunBowT1IronCrossbow,items,Gun,,"Iron Crossbow [73E9B2]Т1[-]","Железный арбалет [73E9B2]Т1[-]"
+gunBowT1IronCrossbowDesc,items,Gun,,A crossbow is slow to reload but does more damage than a bow.\nThis weapon can be fired underwater.\nHold reload to use alternate ammo.\n\nScrap to Bow / Crossbow Parts.,"Арбалет медленнее перезаряжается, но наносит больше урона, чем лук.\nЭто оружие может стрелять под водой.\nУдерживайте клавишу перезарядки, чтобы сменить тип боеприпаса.\n\nРазбирается на части лука / арбалета."
+gunBowT3CompoundCrossbow,items,Gun,,"Compound Crossbow [73E9B2]Т3[-]","Композитный арбалет [73E9B2]Т3[-]"
+gunBotT1JunkSledge,items,Gun,,"Robotic Sledge [73E9B2]Т1[-]","Роботизированный молот [73E9B2]Т1[-]"
+gunBotT1JunkSledgeDesc,items,Gun,,You may not be good at punching but you have the technology.\nYou can also deploy this on the ground using the Secondary action.\n\nScrap to Robotics Parts.,"Может быть, вы не сильны в кулачном бою, зато разбираетесь в технике.\nЕго можно установить на землю с помощью дополнительного действия.\n\nРазбирается на роботизированные части."
+gunBotT2JunkTurret,items,Gun,,"Robotic Turret [73E9B2]Т2[-]","Роботизированная пушка [73E9B2]Т2[-]"
+gunBotT2JunkTurretDesc,items,Gun,,This contraption can be fired and reloaded like a gun. It uses Robotic Turret Ammo for ammunition.\nYou can also deploy it on the ground using the Secondary action.\n\nScrap to Robotics Parts.,"Из этой штуки можно стрелять. Перезаряжается как винтовка. В качестве боеприпасов использует патроны для роботизированной пушки.\nМожно установить на землю с помощью дополнительного действия.\n\nРазбирается на части роботизированной пушки."
+
+armorClothGroupDesc,items,Clothes,,Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\n\nScrap to cloth.,"Лёгкая броня будет немного стеснять ваши движения и обеспечит определенную защиту от повреждений.\nНе защищает от погодных условий.\n\nРазбирается на ткань."
+armorLeatherGroupDesc,items,Clothes,,Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\n\nScrap to leather.,"Лёгкая броня будет немного стеснять ваши движения и обеспечит определенную защиту от повреждений.\nНе защищает от погодных условий.\n\nРазбирается на кожу."
+armorMilitaryGroupDesc,items,Clothes,,Light armor will encumber you a little and provides some protection against damage.\nIt will not protect you from the weather.\n\nScrap to military armor parts.,"Лёгкая броня будет немного стеснять ваши движения и обеспечит определенную защиту от повреждений.\nНе защищает от погодных условий.\n\nРазбирается на части армейской брони."
+armorScrapDesc,items,Clothes,,Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\n\nScrap to Iron.,"Тяжёлая броня будет стеснять ваши движения, но обеспечит надежную защиту от повреждений.\nНе защищает от погодных условий.\n\nРазбирается на железо."
+armorHeavyGroupDesc,items,Clothes,,Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\n\nScrap to Iron.,"Тяжёлая броня будет стеснять ваши движения, но обеспечит надежную защиту от повреждений.\nНе защищает от погодных условий.\n\nРазбирается на железо."
+armorSteelGroupDesc,items,Clothes,,Heavy armor will encumber you but provides good protection against damage.\nIt will not protect you from the weather.\n\nScrap to steel armor parts.,"Тяжёлая броня будет стеснять ваши движения, но она обеспечивает надежную защиту от повреждений.\nНе защищает от погодных условий.\n\nРазбирается на части стальной брони."
+armorFootballHelmetDesc,items,Clothes,,Get great concussive & puncture defense & you can cheer for your favorite team as if organized football still existed.\n\nScrap to scrap polymers.,"Вы получите отличную защиту от ударов и проколов. Если бы футбольные матчи еще проводились, вы бы могли поддержать свою команду.\n\nРазбирается на полимеры."
+
+resourceScrapBrassBundle,items,Item,,Stack of Brass (10000),Запас латуни (10000)
+resourceScrapBrassBundleDesc,items,Item,,This is a compact stack of brass. Use this item to open and unpack it.,"Компактно упакованная латунь. Откройте, чтобы получить содержимое."
+resourceClayLumpBundle,items,Item,,Stack of Clay (10000),Запас глины (10000)
+resourceClayLumpBundleDesc,items,Item,,This is a compact stack of clay. Use this item to open and unpack it.,"Компактно упакованная глина. Откройте, чтобы получить содержимое."
+resourceCrushedSandBundle,items,Item,,Stack of Crushed Sand (10000),Запас песка (10000)
+resourceCrushedSandBundleDesc,items,Item,,This is a compact stack of crushed sand. Use this item to open and unpack it.,"Компактно упакованный песок. Откройте, чтобы получить содержимое."
+resourceCementBundle,items,Item,,Stack of Cement (10000),Запас цемента (10000)
+resourceCementBundleDesc,items,Item,,This is a compact stack of cement. Use this item to open and unpack it.,"Компактно упакованный цемент. Откройте, чтобы получить содержимое."
+resourcePaperBundle,items,Item,,Stack of Paper (1000),Запас бумаги (1000)
+resourcePaperBundleDesc,items,Item,,This is a compact stack of paper. Use this item to open and unpack it.,"Компактно упакованная бумага. Откройте, чтобы получить содержимое."
+resourceScrapPolymersBundle,items,Item,,Stack of Polymers (1000),Запас синтетического мусора (1000)
+resourceScrapPolymersBundleDesc,items,Item,,This is a compact stack of polymers. Use this item to open and unpack it.,"Компактно упакованный синтетический мусор. Откройте, чтобы получить содержимое."
+resourceCobblestonesBundle,items,Item,,Stack of Cobblestones (10000),Запас булыжников (10000)
+resourceCobblestonesBundleDesc,items,Item,,This is a compact stack of cobblestones. Use this item to open and unpack it.,"Компактно упакованные булыжники. Откройте, чтобы получить содержимое."
+resourceConcreteMixBundle,items,Item,,Stack of Concrete Mix (1000),Запас бетона (1000)
+resourceConcreteMixBundleDesc,items,Item,,This is a compact stack of concrete mix. Use this item to open and unpack it.,"Компактно упакованный бетон. Откройте, чтобы получить содержимое."
+resourceForgedIronBundle,items,Item,,Stack of Forged Iron (1000),Запас слитков железа (1000)
+resourceForgedIronBundleDesc,items,Item,,This is a compact stack of forged iron. Use this item to open and unpack it.,"Компактно упакованные слитки железа. Откройте, чтобы получить содержимое."
+resourceForgedSteelBundle,items,Item,,Stack of Forged Steel (1000),Запас слитков стали (1000)
+resourceForgedSteelBundleDesc,items,Item,,This is a compact stack of forged steel. Use this item to open and unpack it.,"Компактно упакованные слитки стали. Откройте, чтобы получить содержимое."
+resourceBuckshotBundle,items,Ammo,,Stack of Buckshot (1000),Запас крупной дроби (1000)
+resourceBuckshotBundleDesc,items,Ammo,,This is a compact stack of buckshot. Use this item to open and unpack it.,"Компактно упакованная крупная дробь. Откройте, чтобы получить содержимое."
+resourceBulletCasingBundle,items,Item,,Stack of Bullet Casing (1000),Запас гильз (1000)
+resourceBulletCasingBundleDesc,items,Item,,This is a compact stack of bullet casing. Use this item to open and unpack it.,"Компактно упакованные гильзы. Откройте, чтобы получить содержимое."
+resourceBulletTipBundle,items,Item,,Stack of Bullet Tip (1000),Запас пуль (1000)
+resourceBulletTipBundleDesc,items,Item,,This is a compact stack of bullet tip. Use this item to open and unpack it.,"Компактно упакованные пули. Откройте, чтобы получить содержимое."
+resourceArrowHeadIronBundle,items,Item,,Stack of Iron Arrowhead (1000),Запас железных наконечников (1000)
+resourceArrowHeadIronBundleDesc,items,Item,,This is a compact stack of iron arrowhead. Use this item to open and unpack it.,"Компактно упакованные железные наконечники. Откройте, чтобы получить содержимое."
+resourceArrowHeadSteelAPBundle,items,Item,,Stack of Steel Arrowhead (1000),Запас стальных наконечников (1000)
+resourceArrowHeadSteelAPBundleDesc,items,Item,,This is a compact stack of steel arrowhead. Use this item to open and unpack it.,"Компактно упакованные стальные наконечники. Откройте, чтобы получить содержимое."
+ammoDartIronBundle,items,Ammo,,Box of Iron Dart (1000),Запас железных дротиков (1000)
+ammoDartIronBundleDesc,items,Ammo,,Crafting boxes of ammo costs fewer resources.\n\nUse this item to take the ammo out of the box so that you can load it into a trap.,"Создание упакованных боеприпасов тратит меньше ресурсов.\n\nОткройте, чтобы получить содержимое и зарядить его в ловушку."
+
+resourceCoalBundle,items,Item,,Stack of Coal (10000),Запас угля (10000)
+resourceLeadBundle,items,Item,,Stack of Lead (10000),Запас свинца (10000)
+resourceOilShaleBundle,items,Item,,Stack of Oil Shale (10000),Запас горючего сланца (10000)
+resourcePotassiumNitratePowderBundle,items,Item,,Stack of Nitrate Powder (10000),Запас порошковой селитры (10000)
+resourceRockSmallBundle,items,Item,,Stack of Small Stone (10000),Запас маленьких камней (10000)
+resourceScrapIronBundle,items,Item,,Stack of Iron (10000),Запас железа (10000)
+resourceWoodBundle,items,Item,,Stack of Wood (10000),Запас дерева (10000)
+
+ammoBundleArrowExploding,items,Ammo,,Box of Exploding Arrows (300),Коробка взрывных стрел (300)
+ammoBundleArrowFlaming,items,Ammo,,Box of Flaming Arrows (300),Коробка зажигательных стрел (300)
+ammoBundleArrowIron,items,Ammo,,Box of Iron Arrows (300),Коробка железных стрел (300)
+ammoBundleArrowSteelAP,items,Ammo,,Box of Steel Arrows (300),Коробка стальных стрел (300)
+ammoBundleArrowStone,items,Ammo,,Box of Stone Arrows (300),Коробка каменных стрел (300)
+ammoBundleCrossbowBoltExploding,items,Ammo,,Box of Exploding Crossbow Bolts (300),Коробка взрывных болтов (300)
+ammoBundleCrossbowBoltFlaming,items,Ammo,,Box of Flaming Crossbow Bolts (300),Коробка зажигательных болтов (300)
+ammoBundleCrossbowBoltIron,items,Ammo,,Box of Iron Crossbow Bolts (300),Коробка железных болтов (300)
+ammoBundleCrossbowBoltSteelAP,items,Ammo,,Box of Steel Crossbow Bolts (300),Коробка стальных болтов (300)
+ammoBundleCrossbowBoltStone,items,Ammo,,Box of Stone Crossbow Bolts (300),Коробка каменных болтов (300)
+
+ammoBundle44MagnumBulletAP,items,Ammo,,Box of AP .44 Magnum Ammo (1000),Коробка бронебойных патронов .44 Magnum (1000)
+ammoBundle44MagnumBulletBall,items,Ammo,,Box of .44 Magnum Ammo (1000),Коробка патронов .44 Magnum (1000)
+ammoBundle44MagnumBulletHP,items,Ammo,,Box of HP .44 Magnum Ammo (1000),Коробка экспансивных патронов .44 Magnum (1000)
+ammoBundle762mmBulletAP,items,Ammo,,Box of AP 7.62mm Ammo (1000),"Коробка бронебойных патронов 7,62 мм (1000)"
+ammoBundle762mmBulletBall,items,Ammo,,Box of 7.62mm Ammo (1000),"Коробка патронов 7,62 мм (1000)"
+ammoBundle762mmBulletHP,items,Ammo,,Box of HP 7.62mm Ammo (1000),"Коробка экспансивных патронов 7,62 мм (1000)"
+ammoBundle9mmBulletAP,items,Ammo,,Box of AP 9mm Ammo (1000),"Коробка бронебойных патронов 9 мм (1000)"
+ammoBundle9mmBulletBall,items,Ammo,,Box of 9mm Ammo (1000),"Коробка патронов 9 мм (1000)"
+ammoBundle9mmBulletHP,items,Ammo,,Box of HP 9mm Ammo (1000),"Коробка экспансивных патронов 9 мм (1000)"
+ammoBundleShotgunBreachingSlug,items,Ammo,,Box of Shotgun Breaching Slugs (1000),Коробка патронов с разделённым пороховым зарядом для дробовика (1000)
+ammoBundleShotgunShell,items,Ammo,,Box of Shotgun Shells (1000),Коробка патронов для дробовика (1000)
+ammoBundleShotgunSlug,items,Ammo,,Box of Shotgun AP Slugs (1000),Коробка бронебойных патронов для дробовика (1000)

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="HornOpensDoors_A88" />
+    <DisplayName value="Horn Opens Doors" />
+    <Description value="Vehicles horn open and closes doors." />
+    <Author value="Area88" />
+	<Website value="" />
+	<Version value="1.0.2" />
+</xml>

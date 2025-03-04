@@ -1,0 +1,100 @@
+<configs>
+	<append xpath="/blocks">
+		<block name="DirtBike_b">
+			<property name="Material" value="Mmetal"/>
+			<property name="IsTerrainDecoration" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="#@modfolder:Resources/db1.unity3d?Dirt_Bike_b.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="CustomIcon" value="DirtBike"/>
+			<property name="Stabilitysupport" value="false"/>
+			<property name="CanPickup" value="false"/>
+			<property name="MaxDamage" value="350"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="EconomicValue" value="1000"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+			</property>
+			<property name="FilterTags" value="fdecor"/>
+			<property name="SortOrder1" value="70a0"/>
+		</block>
+		<block name="Humvee_b">
+			<property name="Material" value="Mmetal"/>
+			<property name="IsTerrainDecoration" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="#@modfolder:Resources/Hummer.unity3d?Humvee1_b.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="CustomIcon" value="Humvee"/>
+			<property name="Stabilitysupport" value="false"/>
+			<property name="CanPickup" value="false"/>
+			<property name="MaxDamage" value="350"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="EconomicValue" value="1000"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+			</property>
+			<property name="FilterTags" value="fdecor"/>
+			<property name="SortOrder1" value="70a0"/>
+		</block>
+		<block name="Marauder_b">
+			<property name="Material" value="Mmetal"/>
+			<property name="IsTerrainDecoration" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="#@modfolder:Resources/Marauder1.unity3d?vehicleMarauder_b.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="CustomIcon" value="Marauder"/>
+			<property name="Stabilitysupport" value="false"/>
+			<property name="CanPickup" value="false"/>
+			<property name="MaxDamage" value="350"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="EconomicValue" value="1000"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+			</property>
+			<property name="FilterTags" value="fdecor"/>
+			<property name="SortOrder1" value="70a0"/>
+		</block>
+		<block name="UAZ_b">
+			<property name="Material" value="Mmetal"/>
+			<property name="IsTerrainDecoration" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="#@modfolder:Resources/UAZ1.unity3d?UAZ_b"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="CustomIcon" value="UAZ"/>
+			<property name="Stabilitysupport" value="false"/>
+			<property name="CanPickup" value="false"/>
+			<property name="MaxDamage" value="350"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="EconomicValue" value="1000"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+			</property>
+			<property name="FilterTags" value="fdecor"/>
+			<property name="SortOrder1" value="70a0"/>
+		</block>
+	</append>
+</configs>

@@ -1,0 +1,55 @@
+Key,English,Russian
+
+vehicleDirtBike,Dirty Bike,Засранец
+vehicleDirtBikeplaceable,Dirty Bike,Засранец
+vehicleDirtBikeplaceableDesc,"A dirt Dirty bike. And no neighbors to complain about it. Sweet!","Грязный байк Засранец. И не нужно переживать о том, что подумают соседи!"
+vehicleDirtBikeChassis,Dirty Bike Chassis,"Засранец: Шасси"
+vehicleDirtBikeChassisDesc,Parts needed to craft the Dirty Bike.,"Необходимо для создания Засранца."
+vehicleDirtBikeParts,Dirty Bike Parts,"Засранец: Запчасти"
+vehicleDirtBikePartsDesc,Parts needed to craft the Dirty Bike.,"Необходимо для создания Засранца."
+
+vehicleMarauder,Marauder,Мародёр
+vehicleMarauderplaceable,Marauder,Мародёр
+vehicleMarauderplaceableDesc,"Those zombies will be jealous of this ride!","И все зомби вам завидуют!"
+vehicleMarauderblack,Marauder,Мародёр
+vehicleMarauderblackplaceable,Marauder,Мародёр
+vehicleMarauderblackplaceableDesc,"Those zombies will be jealous of this ride!","И все зомби вам завидуют!"
+vehicleMarauderchassis,Marauder Chassis,"Мародёр: Шасси"
+vehicleMarauderchassisDesc,Parts needed to craft the Marauder.,"Необходимо для создания Мародёра."
+vehicleMarauderaccessories,Marauder Accessories,"Мародёр: Запчасти"
+vehicleMarauderaccessoriesDesc,Parts needed to craft the Marauder.,"Необходимо для создания Мародёра."
+
+vehicleUAZaccessories,UAZ 452 Accessories,"УАЗ 452: Запчасти"
+vehicleUAZaccessoriesDesc,Parts needed to craft the UAZ 452.,"Необходимо для создания УАЗ 452."
+vehicleUAZ452chassis,UAZ 452 Chassis,"УАЗ 452: Шасси"
+vehicleUAZ452chassisDesc,Parts needed to craft the UAZ 452.,"Необходимо для создания УАЗ 452."
+vehicleUAZ452,UAZ 452,УАЗ 452
+vehicleUAZ452placeable,UAZ 452,УАЗ 452
+vehicleUAZ452placeableDesc,Blend right in with the apocalypse!,"Прекрасно вписывается в апокалипсис!"
+
+vehicleHumveechassis,Humvee Chassis,"Хамви: Шасси"
+vehicleHumveechassisDesc,Parts needed to craft the Humvee.,"Необходимо для создания Хамви."
+vehicleHumveebody,Humvee Body,"Хамви: Корпус"
+vehicleHumveebodyDesc,Parts needed to craft the Humvee.,"Необходимо для создания Хамви."
+vehicleHumvee,Humvee,Хамви
+vehicleHumveeplaceable,Humvee,Хамви
+vehicleHumveeplaceableDesc,Military surplus at its finest!,"Идеальная военная поддержка!"
+vehicleHumveeTopless,Humvee,Хамви
+vehicleHumveeToplessplaceable,Humvee (Topless),Хамви (Открытый)
+vehicleHumveeToplessplaceableDesc,"Military surplus at its finest!","Идеальная военная поддержка!"
+modVehicleHumveeDoors,Humvee Doors,Двери для Хамви
+modVehicleHumveeDoorsDesc,Equip this mod to your Humvee if you want it to have doors.,"Если вам требуются двери на Хамви, установите на него эту модификацию."
+
+vehicleDirtBikeChassisSchematic,Dirt Bike Chassis Schematic,Схема шасси для Засранца
+vehicleDirtBikePartsSchematic,Dirt Bike Parts Schematic,Схема запчастей для Засранца
+vehicleHumveechassisSchematic,Humvee Chassis Schematic,Схема шасси для Хамви
+vehicleHumveebodySchematic,Humvee Body Schematic,Схема корпуса для Хамви
+vehicleMarauderchassisSchematic,Marauder Chassis Schematic,Схема шасси для Мародёра
+vehicleMarauderaccessoriesSchematic,Marauder Accessories Schematic,Схема запчастей для Мародёра
+vehicleUAZ452chassisSchematic,UAZ 452 Chassis Schematic,Схема шасси для УАЗ 452
+vehicleUAZ452accessoriesSchematic,UAZ 452 Accessories Schematic,Схема запчастей для УАЗ 452
+
+questRewardDirtBikePartsBundle,Dirt Bike Parts Bundle,Коробка с запчастями для Засранца
+questRewardHumveePartsBundle,Humvee Parts Bundle,Коробка с запчастями для Хамви
+questRewardMarauderPartsBundle,Marauder Parts Bundle,Коробка с запчастями для Мародёра
+questRewardUAZ452PartsBundle,UAZ 452 Parts Bundle,Коробка с запчастями для УАЗ 452

@@ -1,0 +1,1403 @@
+<FPS>
+	<set xpath="/blocks/block[@name='batterybank']/property[@name='Material']/@value">Mmetal_hard</set>
+	<set xpath="/blocks/block[@name='batterybank']/property[@name='MaxPower']/@value">3600</set>
+	<set xpath="/blocks/block[@name='batterybank']/property[@name='InputPerTick']/@value">1</set>
+	<set xpath="/blocks/block[@name='batterybank']/property[@name='ChargePerInput']/@value">6</set>
+	<set xpath="/blocks/block[@name='batterybank']/property[@name='OutputPerStack']/@value">600</set>
+	<set xpath="/blocks/block[@name='solarbank']/property[@name='Material']/@value">Mmetal_hard</set>
+	<set xpath="/blocks/block[@name='solarbank']/property[@name='OutputPerStack']/@value">400</set>
+	<set xpath="/blocks/block[@name='solarbank']/property[@name='MaxPower']/@value">2400</set>
+	<set xpath="/blocks/block[@name='generatorbank']/property[@name='Material']/@value">Mmetal_hard</set>
+	<set xpath="/blocks/block[@name='generatorbank']/property[@name='OutputPerStack']/@value">600</set>
+	<set xpath="/blocks/block[@name='generatorbank']/property[@name='MaxPower']/@value">3600</set>
+	<append xpath="/blocks">
+		<block name="FPSPoweredlightPorchWhite">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="lightPorchWhite"/>
+			<property name="CustomIconTint" value="ABABA4"/>
+			<property name="TintColor" value="ABABA4"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Lighting/lightPorchPrefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacer90"/>
+			<property name="HandleFace" value="South"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_electrical,MC_building,SC_lighting,A21_NEW"/>
+		</block>
+		<block name="FPSPoweredLightVariantHelper">
+			<property name="Extends" value="FPSPoweredlightPorchWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="electricwirerelay"/>
+			<property name="CustomIconTint" value="705454"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="FPSPoweredLightVariantHelperDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="electricwirerelay,switch,pressureplate,pressureplateLong,tripwirepost,motionsensor,electrictimerrelay,speaker,electricfencepost,FPSPoweredlightPorchWhite,FPSPoweredlightPorchBrown,FPSPoweredlightPorchYellow,FPSPoweredlightPorchGreen,FPSPoweredlightPorchGrey,FPSPoweredlightPorchBlack,FPSPoweredlightWallGooseneckWhite,FPSPoweredlightWallGooseneckBrown,FPSPoweredlightWallGooseneckRed,FPSPoweredlightWallGooseneckOrange,FPSPoweredlightWallGooseneckYellow,FPSPoweredlightWallGooseneckGreen,FPSPoweredlightWallGooseneckBlue,FPSPoweredlightWallGooseneckPurple,FPSPoweredlightWallGooseneckGrey,FPSPoweredlightWallGooseneckBlack,FPSPoweredlightWallGooseneckPink,FPSPoweredlightWallGooseneckArmyGreen,FPSPoweredlightCeilingBulbMountWhite,FPSPoweredlightCeilingBulbMountBlack,FPSPoweredlightCeilingBulbMount_2x2White,FPSPoweredlightCeilingBulbMount_2x2Black,FPSPoweredlightCeilingBulbSocketWhite,FPSPoweredlightCeilingBulbSocketBlack,FPSPoweredlightCeilingBulbSocket_2x2White,FPSPoweredlightCeilingBulbSocket_2x2Black,FPSPoweredceilingLight02,FPSPoweredceilingLight02_2x2,FPSPoweredceilingLight02Brass,FPSPoweredceilingLight02Brass_2x2,FPSPoweredceilingLight04,FPSPoweredceilingLight05,FPSPoweredceilingLight05Brass,FPSPoweredrecessedLight,FPSPoweredrecessedLight_2x2,FPSPoweredrecessedLightOffset,FPSPoweredrecessedLight_2x2Offset,FPSPoweredlightCeiling07,FPSPoweredlightCeiling07_2x2,FPSPoweredfluorescentLight,FPSPoweredlightPanelLEDWhite,FPSPoweredlightPanelLEDSilver,FPSPoweredlightPanelLEDGrey,FPSPoweredlightPanelLEDBlack,FPSPoweredlightPanelLEDOffsetWhite,FPSPoweredlightPanelLEDOffsetSilver,FPSPoweredlightPanelLEDOffsetGrey,FPSPoweredlightPanelLEDOffsetBlack,FPSPoweredlightPanelLEDOffset02White,FPSPoweredlightPanelLEDOffset02Silver,FPSPoweredlightPanelLEDOffset02Grey,FPSPoweredlightPanelLEDOffset02Black,FPSPoweredtrackLight,FPSPoweredindustrialLight01,FPSPoweredlightIndustrial,FPSPoweredlightIndustrialRed,FPSPoweredlightIndustrialMountedWall,FPSPoweredlightIndustrialMountedWallRed,FPSPoweredlightIndustrialHangingWhite,FPSPoweredlightIndustrialHangingBrown,FPSPoweredlightIndustrialHangingGrey,FPSPoweredlightIndustrialHangingBlack,FPSPoweredlightSconce,FPSPoweredlightSconce_2x1,FPSPoweredceilingFanLight,FPSPoweredendTableLamp,FPSPoweredsignExitLight,FPSPoweredsignExitLightOffset,FPSPoweredsignExitFrameMount,FPSPoweredsignExitFrameMountHigh,FPSPoweredsignExitFrameMount2mCentered,FPSPoweredsignExitFrameMountHigh2mCentered,FPSPoweredsignExitWallMount,FPSPoweredsignExitWallMountHigh,FPSPoweredroadBarricadeLight,FPSPowereddeskLampLight,FPSPowereddeskLampLight02White,FPSPowereddeskLampLight02Brown,FPSPowereddeskLampLight02Red,FPSPowereddeskLampLight02Orange,FPSPowereddeskLampLight02Yellow,FPSPowereddeskLampLight02Green,FPSPowereddeskLampLight02Blue,FPSPowereddeskLampLight02BPurple,FPSPowereddeskLampLight02BGrey,FPSPowereddeskLampLight02Black,FPSPowereddeskLampLight02Pink,FPSPoweredtableLampLight01White,FPSPoweredtableLampLight01Brown,FPSPoweredtableLampLight01Red,FPSPoweredtableLampLight01Orange,FPSPoweredtableLampLight01Yellow,FPSPoweredtableLampLight01Green,FPSPoweredtableLampLight01Blue,FPSPoweredtableLampLight01Purple,FPSPoweredtableLampLight01Grey,FPSPoweredtableLampLight01Black,FPSPoweredtableLampLight01Pink,FPSPoweredtableLampLight01CenteredWhite,FPSPoweredtableLampLight01CenteredBrown,FPSPoweredtableLampLight01CenteredRed,FPSPoweredtableLampLight01CenteredOrange,FPSPoweredtableLampLight01CenteredYellow,FPSPoweredtableLampLight01CenteredGreen,FPSPoweredtableLampLight01CenteredBlue,FPSPoweredtableLampLight01CenteredPurple,FPSPoweredtableLampLight01CenteredGrey,FPSPoweredtableLampLight01CenteredBlack,FPSPoweredtableLampLight01CenteredPink,FPSPoweredtableLampLight01TippedOverWhite,FPSPoweredtableLampLight01TippedOverBrown,FPSPoweredtableLampLight01TippedOverRed,FPSPoweredtableLampLight01TippedOverOrange,FPSPoweredtableLampLight01TippedOverYellow,FPSPoweredtableLampLight01TippedOverGreen,FPSPoweredtableLampLight01TippedOverBlue,FPSPoweredtableLampLight01TippedOverPurple,FPSPoweredtableLampLight01TippedOverGrey,FPSPoweredtableLampLight01TippedOverBlack,FPSPoweredtableLampLight01TippedOverPink,FPSPoweredworkLightPOI,FPSPoweredstreetLight01,FPSPoweredstreetLightClassic"/>
+		</block>
+		<block name="FPSPoweredlightPorchBrown">
+			<property name="Extends" value="FPSPoweredlightPorchWhite"/>
+			<property name="CustomIcon" value="lightPorchWhite"/>
+			<property name="CustomIconTint" value="7E6356"/>
+			<property name="TintColor" value="7E6356"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+		<block name="FPSPoweredlightPorchYellow">
+			<property name="Extends" value="FPSPoweredlightPorchWhite"/>
+			<property name="CustomIcon" value="lightPorchWhite"/>
+			<property name="CustomIconTint" value="8F8672"/>
+			<property name="TintColor" value="8F8672"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+		<block name="FPSPoweredlightPorchGreen">
+			<property name="Extends" value="FPSPoweredlightPorchWhite"/>
+			<property name="CustomIcon" value="lightPorchWhite"/>
+			<property name="CustomIconTint" value="6C8A83"/>
+			<property name="TintColor" value="6C8A83"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+		<block name="FPSPoweredlightPorchGrey">
+			<property name="Extends" value="FPSPoweredlightPorchWhite"/>
+			<property name="CustomIcon" value="lightPorchWhite"/>
+			<property name="CustomIconTint" value="939999"/>
+			<property name="TintColor" value="939999"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+		<block name="FPSPoweredlightPorchBlack">
+			<property name="Extends" value="FPSPoweredlightPorchWhite"/>
+			<property name="CustomIcon" value="lightPorchWhite"/>
+			<property name="CustomIconTint" value="5E5E5E"/>
+			<property name="TintColor" value="5E5E5E"/>
+			<property name="SortOrder2" value="0009"/>
+		</block>
+		<block name="FPSPoweredlightWallGooseneckWhite">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="807E73"/>
+			<property name="TintColor" value="807E73"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Electrical/lightWallGooseneckPrefab"/>
+			<property name="ModelOffset" value="0,.55,0"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="South"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B201"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="FilterTags" value="MC_building,SC_lighting,A21_NEW"/>
+		</block>
+		<block name="FPSPoweredlightWallGooseneckBrown">
+			<property name="Extends" value="FPSPoweredlightWallGooseneckWhite"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="5B544B"/>
+			<property name="TintColor" value="5B544B"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+		<block name="FPSPoweredlightWallGooseneckRed">
+			<property name="Extends" value="FPSPoweredlightWallGooseneckWhite"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="705454"/>
+			<property name="TintColor" value="705454"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+		<block name="FPSPoweredlightWallGooseneckOrange">
+			<property name="Extends" value="FPSPoweredlightWallGooseneckWhite"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="806D4F"/>
+			<property name="TintColor" value="806D4F"/>
+			<property name="SortOrder2" value="0003"/>
+		</block>
+		<block name="FPSPoweredlightWallGooseneckYellow">
+			<property name="Extends" value="FPSPoweredlightWallGooseneckWhite"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="7B795E"/>
+			<property name="TintColor" value="7B795E"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+		<block name="FPSPoweredlightWallGooseneckGreen">
+			<property name="Extends" value="FPSPoweredlightWallGooseneckWhite"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="516354"/>
+			<property name="TintColor" value="516354"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+		<block name="FPSPoweredlightWallGooseneckBlue">
+			<property name="Extends" value="FPSPoweredlightWallGooseneckWhite"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="515E63"/>
+			<property name="TintColor" value="515E63"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+		<block name="FPSPoweredlightWallGooseneckPurple">
+			<property name="Extends" value="FPSPoweredlightWallGooseneckWhite"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="605963"/>
+			<property name="TintColor" value="605963"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+		<block name="FPSPoweredlightWallGooseneckGrey">
+			<property name="Extends" value="FPSPoweredlightWallGooseneckWhite"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="606060"/>
+			<property name="TintColor" value="606060"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+		<block name="FPSPoweredlightWallGooseneckBlack">
+			<property name="Extends" value="FPSPoweredlightWallGooseneckWhite"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="353535"/>
+			<property name="TintColor" value="353535"/>
+			<property name="SortOrder2" value="0009"/>
+		</block>
+		<block name="FPSPoweredlightWallGooseneckPink">
+			<property name="Extends" value="FPSPoweredlightWallGooseneckWhite"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="806C7E"/>
+			<property name="TintColor" value="806C7E"/>
+			<property name="SortOrder2" value="0010"/>
+		</block>
+		<block name="FPSPoweredlightWallGooseneckArmyGreen">
+			<property name="Extends" value="FPSPoweredlightWallGooseneckWhite"/>
+			<property name="CustomIcon" value="lightWallGooseneckWhite"/>
+			<property name="CustomIconTint" value="424E43"/>
+			<property name="TintColor" value="424E43"/>
+			<property name="SortOrder2" value="0011"/>
+		</block>
+		<block name="FPSPoweredlightCeilingBulbMountWhite">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="Place"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="CustomIcon" value="lightCeilingBulbMountWhite"/>
+			<property name="CustomIconTint" value="D9D2CF"/>
+			<property name="TintColor" value="D9D2CF"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Model" value="Entities/Lighting/lightCeilingBulbMountPrefab"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+		<block name="FPSPoweredlightCeilingBulbMountBlack">
+			<property name="Extends" value="FPSPoweredlightCeilingBulbMountWhite"/>
+			<property name="CustomIcon" value="lightCeilingBulbMountWhite"/>
+			<property name="CustomIconTint" value="3D3D3D"/>
+			<property name="TintColor" value="3D3D3D"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+		<block name="FPSPoweredlightCeilingBulbMount_2x2White">
+			<property name="Extends" value="FPSPoweredlightCeilingBulbMountWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="CustomIcon" value="lightCeilingBulbMountWhite"/>
+			<property name="CustomIconTint" value="D9D2CF"/>
+			<property name="TintColor" value="D9D2CF"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="MultiBlockDim" value="2,1,2"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0020"/>
+		</block>
+		<block name="FPSPoweredlightCeilingBulbMount_2x2Black">
+			<property name="Extends" value="FPSPoweredlightCeilingBulbMount_2x2White"/>
+			<property name="CustomIcon" value="lightCeilingBulbMountWhite"/>
+			<property name="CustomIconTint" value="3D3D3D"/>
+			<property name="TintColor" value="3D3D3D"/>
+			<property name="SortOrder2" value="0021"/>
+		</block>
+		<block name="FPSPoweredlightCeilingBulbSocketWhite">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="Place"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="CustomIcon" value="lightCeilingBulbSocketWhite"/>
+			<property name="CustomIconTint" value="D9D2CF"/>
+			<property name="TintColor" value="D9D2CF"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Model" value="Entities/Lighting/lightCeilingBulbSocketPrefab"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0040"/>
+		</block>
+		<block name="FPSPoweredlightCeilingBulbSocketBlack">
+			<property name="Extends" value="FPSPoweredlightCeilingBulbSocketWhite"/>
+			<property name="CustomIcon" value="lightCeilingBulbSocketWhite"/>
+			<property name="CustomIconTint" value="3D3D3D"/>
+			<property name="TintColor" value="3D3D3D"/>
+			<property name="SortOrder2" value="0041"/>
+		</block>
+		<block name="FPSPoweredlightCeilingBulbSocket_2x2White">
+			<property name="Extends" value="FPSPoweredlightCeilingBulbSocketWhite"/>
+			<property name="CustomIcon" value="lightCeilingBulbSocketWhite"/>
+			<property name="CustomIconTint" value="D9D2CF"/>
+			<property name="TintColor" value="D9D2CF"/>
+			<property name="MultiBlockDim" value="2,1,2"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0060"/>
+		</block>
+		<block name="FPSPoweredlightCeilingBulbSocket_2x2Black">
+			<property name="Extends" value="FPSPoweredlightCeilingBulbSocket_2x2White"/>
+			<property name="CustomIcon" value="lightCeilingBulbSocketWhite"/>
+			<property name="CustomIconTint" value="3D3D3D"/>
+			<property name="TintColor" value="3D3D3D"/>
+			<property name="SortOrder2" value="0061"/>
+		</block>
+		<block name="FPSPoweredceilingLight02">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="Place"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="CustomIcon" value="ceilingLight02"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Model" value="Entities/Lighting/lightCeilingPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="TintColor" value="999999"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0100"/>
+		</block>
+		<block name="FPSPoweredceilingLight02_2x2">
+			<property name="Extends" value="FPSPoweredceilingLight02"/>
+			<property name="CustomIcon" value="ceilingLight02"/>
+			<property name="MultiBlockDim" value="2,1,2"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0101"/>
+		</block>
+		<block name="FPSPoweredceilingLight02Brass">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="Place"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="CustomIcon" value="ceilingLight02Brass"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Model" value="Entities/Lighting/lightCeilingPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="TintColor" value="968C61"/>
+			<property name="HandleFace" value="Top"/>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0102"/>
+		</block>
+		<block name="FPSPoweredceilingLight02Brass_2x2">
+			<property name="Extends" value="FPSPoweredceilingLight02Brass"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ceilingLight02Brass"/>
+			<property name="MultiBlockDim" value="2,1,2"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0103"/>
+		</block>
+		<block name="FPSPoweredceilingLight04">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="TintColor,Place"/>
+			<property name="CustomIcon" value="ceilingLight04"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight04Prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0200"/>
+		</block>
+		<block name="FPSPoweredceilingLight05">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="TintColor,Place"/>
+			<property name="CustomIcon" value="ceilingLight05"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight05Prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0201"/>
+		</block>
+		<block name="FPSPoweredceilingLight05Brass">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="TintColor,Place"/>
+			<property name="CustomIcon" value="ceilingLight05Brass"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight05BrassPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0202"/>
+		</block>
+		<block name="FPSPoweredrecessedLight">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="TintColor,Place"/>
+			<property name="CustomIcon" value="recessedLight"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Model" value="Entities/Lighting/lightCanFlushPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0300"/>
+		</block>
+		<block name="FPSPoweredrecessedLight_2x2">
+			<property name="Extends" value="FPSPoweredrecessedLight"/>
+			<property name="CustomIcon" value="recessedLight"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="MultiBlockDim" value="2,1,2"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0301"/>
+		</block>
+		<block name="FPSPoweredrecessedLightOffset">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="TintColor,Place"/>
+			<property name="CustomIcon" value="recessedLight"/>
+			<property name="ItemTypeIcon" value="block_repair"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Model" value="Entities/Lighting/lightCanFlushPrefab"/>
+			<property name="ModelOffset" value="0,1,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0302"/>
+		</block>
+		<block name="FPSPoweredrecessedLight_2x2Offset">
+			<property name="Extends" value="FPSPoweredrecessedLightOffset"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="CustomIcon" value="recessedLight"/>
+			<property name="ItemTypeIcon" value="block_repair"/>
+			<property name="MultiBlockDim" value="2,1,2"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0303"/>
+		</block>
+		<block name="FPSPoweredlightCeiling07">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="lightCeiling07"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Electrical/lightCeiling2Prefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0400"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_electrical,MC_building,SC_lighting,A21_NEW"/>
+		</block>
+		<block name="FPSPoweredlightCeiling07_2x2">
+			<property name="Extends" value="FPSPoweredlightCeiling07"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="CustomIcon" value="lightCeiling07"/>
+			<property name="MultiBlockDim" value="2,1,2"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0401"/>
+		</block>
+		<block name="FPSPoweredfluorescentLight">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="fluorescentLight"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Lighting/fluorescentLightPrefab"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0402"/>
+			<property name="FilterTags" value="MC_building,SC_lighting"/>
+		</block>
+		<block name="FPSPoweredtrackLight">
+			<property name="Extends" value="FPSPoweredfluorescentLight"/>
+			<property name="CustomIcon" value="trackLight"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Model" value="Entities/Lighting/trackLightPrefab"/>
+			<property name="MultiBlockDim" value="1,1,3"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0700"/>
+		</block>
+		<block name="FPSPoweredlightPanelLEDWhite">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="CCCCCC"/>
+			<property name="TintColor" value="CCCCCC"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Electrical/lightPanelLEDPrefab"/>
+			<property name="ModelOffset" value="0,.545,0"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0600"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_electrical,MC_building,SC_lighting,A21_NEW"/>
+		</block>
+		<block name="FPSPoweredlightPanelLEDSilver">
+			<property name="Extends" value="FPSPoweredlightPanelLEDWhite"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="938D87"/>
+			<property name="TintColor" value="938D87"/>
+			<property name="SortOrder2" value="0601"/>
+		</block>
+		<block name="FPSPoweredlightPanelLEDGrey">
+			<property name="Extends" value="FPSPoweredlightPanelLEDWhite"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="555351"/>
+			<property name="TintColor" value="555351"/>
+			<property name="SortOrder2" value="0602"/>
+		</block>
+		<block name="FPSPoweredlightPanelLEDBlack">
+			<property name="Extends" value="FPSPoweredlightPanelLEDWhite"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="1F1C1B"/>
+			<property name="TintColor" value="1F1C1B"/>
+			<property name="SortOrder2" value="0603"/>
+		</block>
+		<block name="FPSPoweredlightPanelLEDOffsetWhite">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="CCCCCC"/>
+			<property name="ItemTypeIcon" value="block_repair"/>
+			<property name="TintColor" value="CCCCCC"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Electrical/lightPanelLEDPrefab"/>
+			<property name="ModelOffset" value="0,1.045,0"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0610"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="FilterTags" value="MC_building,SC_lighting,A21_NEW"/>
+		</block>
+		<block name="FPSPoweredlightPanelLEDOffsetSilver">
+			<property name="Extends" value="FPSPoweredlightPanelLEDOffsetWhite"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="938D87"/>
+			<property name="ItemTypeIcon" value="block_repair"/>
+			<property name="TintColor" value="938D87"/>
+			<property name="SortOrder2" value="0611"/>
+		</block>
+		<block name="FPSPoweredlightPanelLEDOffsetGrey">
+			<property name="Extends" value="FPSPoweredlightPanelLEDOffsetWhite"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="555351"/>
+			<property name="ItemTypeIcon" value="block_repair"/>
+			<property name="TintColor" value="555351"/>
+			<property name="SortOrder2" value="0612"/>
+		</block>
+		<block name="FPSPoweredlightPanelLEDOffsetBlack">
+			<property name="Extends" value="FPSPoweredlightPanelLEDOffsetWhite"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="1F1C1B"/>
+			<property name="ItemTypeIcon" value="block_repair"/>
+			<property name="TintColor" value="1F1C1B"/>
+			<property name="SortOrder2" value="0613"/>
+		</block>
+		<block name="FPSPoweredlightPanelLEDOffset02White">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="CCCCCC"/>
+			<property name="ItemTypeIcon" value="block_damage"/>
+			<property name="TintColor" value="CCCCCC"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Electrical/lightPanelLEDPrefab"/>
+			<property name="ModelOffset" value="0,-.455,0"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0610"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="FilterTags" value="MC_building,SC_lighting,A21_NEW"/>
+		</block>
+		<block name="FPSPoweredlightPanelLEDOffset02Silver">
+			<property name="Extends" value="FPSPoweredlightPanelLEDOffset02White"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="938D87"/>
+			<property name="ItemTypeIcon" value="block_damage"/>
+			<property name="TintColor" value="938D87"/>
+			<property name="SortOrder2" value="0611"/>
+		</block>
+		<block name="FPSPoweredlightPanelLEDOffset02Grey">
+			<property name="Extends" value="FPSPoweredlightPanelLEDOffset02White"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="555351"/>
+			<property name="ItemTypeIcon" value="block_damage"/>
+			<property name="TintColor" value="555351"/>
+			<property name="SortOrder2" value="0612"/>
+		</block>
+		<block name="FPSPoweredlightPanelLEDOffset02Black">
+			<property name="Extends" value="FPSPoweredlightPanelLEDOffset02White"/>
+			<property name="CustomIcon" value="lightPanelLEDWhite"/>
+			<property name="CustomIconTint" value="1F1C1B"/>
+			<property name="ItemTypeIcon" value="block_damage"/>
+			<property name="TintColor" value="1F1C1B"/>
+			<property name="SortOrder2" value="0613"/>
+		</block>
+		<block name="FPSPoweredindustrialLight01">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="industrialLight01"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Electrical/lightWallPrefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="South"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0800"/>
+			<property name="FilterTags" value="MC_building,SC_lighting"/>
+		</block>
+		<block name="FPSPoweredlightIndustrial">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="lightIndustrial"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Electrical/lightIndustrialPrefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="0900"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="FilterTags" value="MC_building,SC_lighting,A21_NEW"/>
+		</block>
+		<block name="FPSPoweredlightIndustrialRed">
+			<property name="Extends" value="FPSPoweredlightIndustrial"/>
+			<property name="Model" value="Entities/Electrical/lightIndustrialRedPrefab"/>
+			<property name="SortOrder2" value="0901"/>
+		</block>
+		<block name="FPSPoweredlightIndustrialMountedWall">
+			<property name="Extends" value="FPSPoweredlightIndustrial"/>
+			<property name="Model" value="Entities/Electrical/lightIndustrialMountedWallPrefab"/>
+			<property name="HandleFace" value="South"/>
+			<property name="SortOrder2" value="0902"/>
+		</block>
+		<block name="FPSPoweredlightIndustrialMountedWallRed">
+			<property name="Extends" value="FPSPoweredlightIndustrial"/>
+			<property name="Model" value="Entities/Electrical/lightIndustrialMountedWallRedPrefab"/>
+			<property name="HandleFace" value="South"/>
+			<property name="SortOrder2" value="0903"/>
+		</block>
+		<block name="FPSPoweredlightIndustrialHangingWhite">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="lightIndustrialHangingWhite"/>
+			<property name="CustomIconTint" value="A3A399"/>
+			<property name="TintColor" value="A3A399"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Electrical/lightIndustrialHangingPrefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1000"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="FilterTags" value="MC_building,SC_lighting,A21_NEW"/>
+		</block>
+		<block name="FPSPoweredlightIndustrialHangingBrown">
+			<property name="Extends" value="FPSPoweredlightIndustrialHangingWhite"/>
+			<property name="CustomIcon" value="lightIndustrialHangingWhite"/>
+			<property name="CustomIconTint" value="76685B"/>
+			<property name="TintColor" value="76685B"/>
+			<property name="SortOrder2" value="1001"/>
+		</block>
+		<block name="FPSPoweredlightIndustrialHangingGrey">
+			<property name="Extends" value="FPSPoweredlightIndustrialHangingWhite"/>
+			<property name="CustomIcon" value="lightIndustrialHangingWhite"/>
+			<property name="CustomIconTint" value="848989"/>
+			<property name="TintColor" value="848989"/>
+			<property name="SortOrder2" value="1008"/>
+		</block>
+		<block name="FPSPoweredlightIndustrialHangingBlack">
+			<property name="Extends" value="FPSPoweredlightIndustrialHangingWhite"/>
+			<property name="CustomIcon" value="lightIndustrialHangingWhite"/>
+			<property name="CustomIconTint" value="555555"/>
+			<property name="TintColor" value="555555"/>
+			<property name="SortOrder2" value="1009"/>
+		</block>
+		<block name="FPSPoweredlightSconce">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="lightSconce"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Electrical/lightSconcePrefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="LODCullScale" value="0.5"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacer90"/>
+			<property name="HandleFace" value="South"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1100"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="FilterTags" value="MC_building,SC_lighting,A21_NEW"/>
+		</block>
+		<block name="FPSPoweredlightSconce_2x1">
+			<property name="Extends" value="FPSPoweredlightSconce"/>
+			<property name="CustomIcon" value="lightSconce"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1101"/>
+		</block>
+		<block name="FPSPoweredceilingFanLight">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="ceilingFanLight"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Electrical/fanCeilingPrefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Top"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1400"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="FilterTags" value="MC_building,SC_lighting,A21_NEW"/>
+		</block>
+		<block name="FPSPoweredendTableLamp">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="HandleFace"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="CustomIcon" value="endTableLamp"/>
+			<property name="Stacknumber" value="3"/>
+			<property name="Model" value="Entities/Lighting/endTableLampPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1701"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+		</block>
+		<block name="FPSPoweredsignExitLight">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="HandleFace"/>
+			<property name="CustomIcon" value="signExitLight"/>
+			<property name="Model" value="Entities/Lighting/signExitPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1800"/>
+		</block>
+		<block name="FPSPoweredsignExitLightOffset">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="HandleFace"/>
+			<property name="CustomIcon" value="signExitLightOffset"/>
+			<property name="Model" value="Entities/Lighting/signExitOffsetPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1801"/>
+		</block>
+		<block name="FPSPoweredsignExitFrameMount">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="HandleFace"/>
+			<property name="CustomIcon" value="signExitFrameMount"/>
+			<property name="Model" value="Entities/Lighting/signExitFrameMountPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1802"/>
+		</block>
+		<block name="FPSPoweredsignExitFrameMountHigh">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="HandleFace"/>
+			<property name="CustomIcon" value="signExitFrameMountHigh"/>
+			<property name="Model" value="Entities/Lighting/signExitFrameMountHighPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1803"/>
+		</block>
+		<block name="FPSPoweredsignExitFrameMount2mCentered">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="HandleFace"/>
+			<property name="CustomIcon" value="signExitFrameMount"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Model" value="Entities/Lighting/signExitFrameMountPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1804"/>
+		</block>
+		<block name="FPSPoweredsignExitFrameMountHigh2mCentered">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="HandleFace"/>
+			<property name="CustomIcon" value="signExitFrameMountHigh"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Model" value="Entities/Lighting/signExitFrameMountHighPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1805"/>
+		</block>
+		<block name="FPSPoweredsignExitWallMount">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="HandleFace"/>
+			<property name="CustomIcon" value="signExitWallMount"/>
+			<property name="Model" value="Entities/Lighting/signExitWallMountPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1806"/>
+		</block>
+		<block name="FPSPoweredsignExitWallMountHigh">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="HandleFace"/>
+			<property name="CustomIcon" value="signExitWallMountHigh"/>
+			<property name="Model" value="Entities/Lighting/signExitWallMountHighPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1807"/>
+		</block>
+		<block name="FPSPoweredroadBarricadeLight">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="HandleFace"/>
+			<property name="CustomIcon" value="roadBarricadeLight"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Model" value="Entities/Signs/barricadePrefab"/>
+			<property name="MultiBlockDim" value="3,2,1"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1900"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="FilterTags" value="MC_outdoor,SC_signs,SC_lighting"/>
+		</block>
+		<block name="FPSPowereddeskLampLight">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="HandleFace"/>
+			<property name="CustomIcon" value="deskLampLight"/>
+			<property name="Model" value="Entities/Lighting/desk_lampPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="2000"/>
+		</block>
+		<block name="FPSPowereddeskLampLight02White">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="A0A0A0"/>
+			<property name="TintColor" value="A0A0A0"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Lighting/lampDeskPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="1"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="2100"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="FilterTags" value="MC_building,SC_lighting,A21_NEW"/>
+		</block>
+		<block name="FPSPowereddeskLampLight02Brown">
+			<property name="Extends" value="FPSPowereddeskLampLight02White"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="71675D"/>
+			<property name="TintColor" value="71675D"/>
+			<property name="SortOrder2" value="2101"/>
+		</block>
+		<block name="FPSPowereddeskLampLight02Red">
+			<property name="Extends" value="FPSPowereddeskLampLight02White"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="8C7470"/>
+			<property name="TintColor" value="8C7470"/>
+			<property name="SortOrder2" value="2102"/>
+		</block>
+		<block name="FPSPowereddeskLampLight02Orange">
+			<property name="Extends" value="FPSPowereddeskLampLight02White"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="95836F"/>
+			<property name="TintColor" value="95836F"/>
+			<property name="SortOrder2" value="2103"/>
+		</block>
+		<block name="FPSPowereddeskLampLight02Yellow">
+			<property name="Extends" value="FPSPowereddeskLampLight02White"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="9B9875"/>
+			<property name="TintColor" value="9B9875"/>
+			<property name="SortOrder2" value="2104"/>
+		</block>
+		<block name="FPSPowereddeskLampLight02Green">
+			<property name="Extends" value="FPSPowereddeskLampLight02White"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="6F7D66"/>
+			<property name="TintColor" value="6F7D66"/>
+			<property name="SortOrder2" value="2105"/>
+		</block>
+		<block name="FPSPowereddeskLampLight02Blue">
+			<property name="Extends" value="FPSPowereddeskLampLight02White"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="6A7C7D"/>
+			<property name="TintColor" value="6A7C7D"/>
+			<property name="SortOrder2" value="2106"/>
+		</block>
+		<block name="FPSPowereddeskLampLight02BPurple">
+			<property name="Extends" value="FPSPowereddeskLampLight02White"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="6E6C78"/>
+			<property name="TintColor" value="6E6C78"/>
+			<property name="SortOrder2" value="2107"/>
+		</block>
+		<block name="FPSPowereddeskLampLight02BGrey">
+			<property name="Extends" value="FPSPowereddeskLampLight02White"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="727272"/>
+			<property name="TintColor" value="727272"/>
+			<property name="SortOrder2" value="2108"/>
+		</block>
+		<block name="FPSPowereddeskLampLight02Black">
+			<property name="Extends" value="FPSPowereddeskLampLight02White"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="474747"/>
+			<property name="TintColor" value="474747"/>
+			<property name="SortOrder2" value="2109"/>
+		</block>
+		<block name="FPSPowereddeskLampLight02Pink">
+			<property name="Extends" value="FPSPowereddeskLampLight02White"/>
+			<property name="CustomIcon" value="deskLampLight02White"/>
+			<property name="CustomIconTint" value="857480"/>
+			<property name="TintColor" value="857480"/>
+			<property name="SortOrder2" value="2110"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01White">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="CCCCCC"/>
+			<property name="TintColor" value="CCCCCC"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Material" value="Mmetal_thin"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Lighting/lampTablePrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="1"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="2200"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="FilterTags" value="MC_building,SC_lighting,A21_NEW"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01Brown">
+			<property name="Extends" value="FPSPoweredtableLampLight01White"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="978879"/>
+			<property name="TintColor" value="978879"/>
+			<property name="SortOrder2" value="2201"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01Red">
+			<property name="Extends" value="FPSPoweredtableLampLight01White"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="B79495"/>
+			<property name="TintColor" value="B79495"/>
+			<property name="SortOrder2" value="2202"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01Orange">
+			<property name="Extends" value="FPSPoweredtableLampLight01White"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="F4CA8B"/>
+			<property name="TintColor" value="F4CA8B"/>
+			<property name="SortOrder2" value="2203"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01Yellow">
+			<property name="Extends" value="FPSPoweredtableLampLight01White"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="FFF79D"/>
+			<property name="TintColor" value="FFF79D"/>
+			<property name="SortOrder2" value="2204"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01Green">
+			<property name="Extends" value="FPSPoweredtableLampLight01White"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="92B091"/>
+			<property name="TintColor" value="92B091"/>
+			<property name="SortOrder2" value="2205"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01Blue">
+			<property name="Extends" value="FPSPoweredtableLampLight01White"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="A8B8B8"/>
+			<property name="TintColor" value="A8B8B8"/>
+			<property name="SortOrder2" value="2206"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01Purple">
+			<property name="Extends" value="FPSPoweredtableLampLight01White"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="B7AEBE"/>
+			<property name="TintColor" value="B7AEBE"/>
+			<property name="SortOrder2" value="2207"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01Grey">
+			<property name="Extends" value="FPSPoweredtableLampLight01White"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="BBBBBB"/>
+			<property name="TintColor" value="BBBBBB"/>
+			<property name="SortOrder2" value="2208"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01Black">
+			<property name="Extends" value="FPSPoweredtableLampLight01White"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="767676"/>
+			<property name="TintColor" value="767676"/>
+			<property name="SortOrder2" value="2209"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01Pink">
+			<property name="Extends" value="FPSPoweredtableLampLight01White"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="F4D7F8"/>
+			<property name="TintColor" value="F4D7F8"/>
+			<property name="SortOrder2" value="2210"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01CenteredWhite">
+			<property name="Extends" value="FPSPoweredtableLampLight01White"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="CCCCCC"/>
+			<property name="TintColor" value="CCCCCC"/>
+			<property name="Model" value="Entities/Lighting/lampTableCenteredPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="2300"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01CenteredBrown">
+			<property name="Extends" value="FPSPoweredtableLampLight01CenteredWhite"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="978879"/>
+			<property name="TintColor" value="978879"/>
+			<property name="SortOrder2" value="2301"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01CenteredRed">
+			<property name="Extends" value="FPSPoweredtableLampLight01CenteredWhite"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="B79495"/>
+			<property name="TintColor" value="B79495"/>
+			<property name="SortOrder2" value="2302"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01CenteredOrange">
+			<property name="Extends" value="FPSPoweredtableLampLight01CenteredWhite"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="F4CA8B"/>
+			<property name="TintColor" value="F4CA8B"/>
+			<property name="SortOrder2" value="2303"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01CenteredYellow">
+			<property name="Extends" value="FPSPoweredtableLampLight01CenteredWhite"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="FFF79D"/>
+			<property name="TintColor" value="FFF79D"/>
+			<property name="SortOrder2" value="2304"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01CenteredGreen">
+			<property name="Extends" value="FPSPoweredtableLampLight01CenteredWhite"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="92B091"/>
+			<property name="TintColor" value="92B091"/>
+			<property name="SortOrder2" value="2305"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01CenteredBlue">
+			<property name="Extends" value="FPSPoweredtableLampLight01CenteredWhite"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="A8B8B8"/>
+			<property name="TintColor" value="A8B8B8"/>
+			<property name="SortOrder2" value="2306"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01CenteredPurple">
+			<property name="Extends" value="FPSPoweredtableLampLight01CenteredWhite"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="B7AEBE"/>
+			<property name="TintColor" value="B7AEBE"/>
+			<property name="SortOrder2" value="2307"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01CenteredGrey">
+			<property name="Extends" value="FPSPoweredtableLampLight01CenteredWhite"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="BBBBBB"/>
+			<property name="TintColor" value="BBBBBB"/>
+			<property name="SortOrder2" value="2308"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01CenteredBlack">
+			<property name="Extends" value="FPSPoweredtableLampLight01CenteredWhite"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="767676"/>
+			<property name="TintColor" value="767676"/>
+			<property name="SortOrder2" value="2309"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01CenteredPink">
+			<property name="Extends" value="FPSPoweredtableLampLight01CenteredWhite"/>
+			<property name="CustomIcon" value="tableLampLight01White"/>
+			<property name="CustomIconTint" value="F4D7F8"/>
+			<property name="TintColor" value="F4D7F8"/>
+			<property name="SortOrder2" value="2310"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01TippedOverWhite">
+			<property name="Extends" value="FPSPoweredtableLampLight01White" param1="CustomIcon"/>
+			<property name="CustomIcon" value="tableLampLight01TippedOverWhite"/>
+			<property name="CustomIconTint" value="CCCCCC"/>
+			<property name="TintColor" value="CCCCCC"/>
+			<property name="Model" value="Entities/Lighting/lampTableTippedOverPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="2400"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01TippedOverBrown">
+			<property name="Extends" value="FPSPoweredtableLampLight01TippedOverWhite"/>
+			<property name="CustomIcon" value="tableLampLight01TippedOverWhite"/>
+			<property name="CustomIconTint" value="978879"/>
+			<property name="TintColor" value="978879"/>
+			<property name="SortOrder2" value="2401"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01TippedOverRed">
+			<property name="Extends" value="FPSPoweredtableLampLight01TippedOverWhite"/>
+			<property name="CustomIcon" value="tableLampLight01TippedOverWhite"/>
+			<property name="CustomIconTint" value="B79495"/>
+			<property name="TintColor" value="B79495"/>
+			<property name="SortOrder2" value="2402"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01TippedOverOrange">
+			<property name="Extends" value="FPSPoweredtableLampLight01TippedOverWhite"/>
+			<property name="CustomIcon" value="tableLampLight01TippedOverWhite"/>
+			<property name="CustomIconTint" value="F4CA8B"/>
+			<property name="TintColor" value="F4CA8B"/>
+			<property name="SortOrder2" value="2403"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01TippedOverYellow">
+			<property name="Extends" value="FPSPoweredtableLampLight01TippedOverWhite"/>
+			<property name="CustomIcon" value="tableLampLight01TippedOverWhite"/>
+			<property name="CustomIconTint" value="FFF79D"/>
+			<property name="TintColor" value="FFF79D"/>
+			<property name="SortOrder2" value="2404"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01TippedOverGreen">
+			<property name="Extends" value="FPSPoweredtableLampLight01TippedOverWhite"/>
+			<property name="CustomIcon" value="tableLampLight01TippedOverWhite"/>
+			<property name="CustomIconTint" value="92B091"/>
+			<property name="TintColor" value="92B091"/>
+			<property name="SortOrder2" value="2405"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01TippedOverBlue">
+			<property name="Extends" value="FPSPoweredtableLampLight01TippedOverWhite"/>
+			<property name="CustomIcon" value="tableLampLight01TippedOverWhite"/>
+			<property name="CustomIconTint" value="A8B8B8"/>
+			<property name="TintColor" value="A8B8B8"/>
+			<property name="SortOrder2" value="2406"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01TippedOverPurple">
+			<property name="Extends" value="FPSPoweredtableLampLight01TippedOverWhite"/>
+			<property name="CustomIcon" value="tableLampLight01TippedOverWhite"/>
+			<property name="CustomIconTint" value="B7AEBE"/>
+			<property name="TintColor" value="B7AEBE"/>
+			<property name="SortOrder2" value="2407"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01TippedOverGrey">
+			<property name="Extends" value="FPSPoweredtableLampLight01TippedOverWhite"/>
+			<property name="CustomIcon" value="tableLampLight01TippedOverWhite"/>
+			<property name="CustomIconTint" value="BBBBBB"/>
+			<property name="TintColor" value="BBBBBB"/>
+			<property name="SortOrder2" value="2408"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01TippedOverBlack">
+			<property name="Extends" value="FPSPoweredtableLampLight01TippedOverWhite"/>
+			<property name="CustomIcon" value="tableLampLight01TippedOverWhite"/>
+			<property name="CustomIconTint" value="767676"/>
+			<property name="TintColor" value="767676"/>
+			<property name="SortOrder2" value="2409"/>
+		</block>
+		<block name="FPSPoweredtableLampLight01TippedOverPink">
+			<property name="Extends" value="FPSPoweredtableLampLight01TippedOverWhite"/>
+			<property name="CustomIcon" value="tableLampLight01TippedOverWhite"/>
+			<property name="CustomIconTint" value="F4D7F8"/>
+			<property name="TintColor" value="F4D7F8"/>
+			<property name="SortOrder2" value="2410"/>
+		</block>
+		<block name="FPSPoweredworkLightPOI">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="HandleFace"/>
+			<property name="CustomIcon" value="workLightPOI"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Model" value="Entities/Lighting/work_lightPrefab"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="2500"/>
+		</block>
+		<block name="FPSPoweredstreetLight01">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RequiredPower" value="4"/>
+			<property name="Light" value="0.5"/>
+			<property name="IndexName" value="POILight"/>
+			<property name="CustomIcon" value="streetLight01"/>
+			<property name="DescriptionKey" value="FPSPoweredlightDesc"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Lighting/lightStreetLamp01Prefab"/>
+			<property name="ImposterExchange" value="streetLightImposter"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="2600"/>
+			<property name="Group" value="Science"/>
+			<property name="FilterTags" value="MC_building,SC_lighting,MC_outdoor,SC_decor"/>
+		</block>
+		<block name="FPSPoweredstreetLightClassic">
+			<property name="Extends" value="FPSPoweredlightPorchWhite" param1="TintColor,HandleFace"/>
+			<property name="CustomIcon" value="streetLightClassic"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Model" value="Entities/Electrical/lightStreetClassicPrefab"/>
+			<property name="MultiBlockDim" value="1,5,1"/>
+			<property name="ImposterExchange" value="imposterDontBlockCTRPole" param1="169"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="EconomicValue" value="76"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="2"/>
+				<property name="resourceScrapPolymers" value="2"/>
+			</property>
+			<drop event="Destroy" name="FPSPoweredLightVariantHelper" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="2606"/>
+		</block>
+	</append>
+</FPS>

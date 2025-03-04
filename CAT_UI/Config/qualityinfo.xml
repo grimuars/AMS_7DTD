@@ -1,0 +1,19 @@
+<CATUI>
+    <!-- 装备品质，原始Junk和Common趋于雷同，改成鲜艳色（暗黑4）：灰、白、绿、蓝、紫、橙、粉 -->
+    <append xpath="/qualityinfo">
+        <!--Broken-->
+        <quality key="0" color="999999" />
+        <!--Junk -->
+        <quality key="1" color="FFFFFF" />
+        <!--Common-->
+        <quality key="2" color="00FF00" />
+        <!--Uncommon-->
+        <quality key="3" color="0066FF" />
+        <!--Rare-->
+        <quality key="4" color="DD00FF" />
+        <!--Epic-->
+        <quality key="5" color="FFBB00" />
+        <!--Legendary-->
+        <quality key="6" color="FF0000" />
+    </append>
+</CATUI>

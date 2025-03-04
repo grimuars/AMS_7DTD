@@ -1,0 +1,11 @@
+﻿<windows>
+	<insertAfter xpath="/windows/window[@name='windowTargetBar']">
+		<window name="windowZombieBuffs">
+			<rect width="300" height="30" pos="250,-195">
+				<grid padding="8,8" pos="0, 0" pivot="center" rows="1" cols="10" cell_width="29" cell_height="29" repeat_content="true" controller="XUiC_WMMZombieBuffIconList, WMMZombieRandomBuffs">
+					<zombie_buff_icon/>
+				</grid>
+			</rect>
+		</window>
+	</insertAfter>
+</windows>

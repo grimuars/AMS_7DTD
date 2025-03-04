@@ -1,0 +1,438 @@
+<lootablePallets>
+	<append xpath="/lootcontainers">
+		<lootcontainer name="palletBrownBoxesBase" count="2" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourcePaper" count="1,3" prob="1"/>
+			<item name="resourceScrapPolymers" count="3,6" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBricksBase" count="2" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceRockSmall" count="50" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletTarpBaseWhite" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceRockSmall" count="10,30" prob="0.2"/>
+			<item name="resourceCrushedSand" count="10,30" prob="0.2"/>
+			<item name="resourceClayLump" count="10,30" prob="0.2"/>
+			<item name="resourceCobblestones" count="10,30" prob="0.2"/>
+		</lootcontainer>
+		<lootcontainer name="palletTarpTileWhite" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceRockSmall" count="10,30" prob="0.2"/>
+			<item name="resourceCrushedSand" count="10,30" prob="0.2"/>
+			<item name="resourceClayLump" count="10,30" prob="0.2"/>
+			<item name="resourceCobblestones" count="10,30" prob="0.2"/>
+		</lootcontainer>
+		<lootcontainer name="palletCompressedCardboard" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourcePaper" count="25" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletCans" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceScrapIron" count="25" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletEmpty" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceWood" count="1,5" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletEmptyStack" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceWood" count="10,30" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="OSBWoodStack" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceWood" count="20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="plywoodStack" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceWood" count="10,30" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="woodPlanksStack" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceWood" count="10,30" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="dryWallStack" count="3" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceRockSmall" count="8" prob="1"/>
+			<item name="resourcePaper" count="4" prob="1"/>
+			<item name="resourceCrushedSand" count="10" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="metalPipeStack" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceMetalPipe" count="8" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="metalPipeStackLoose" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceMetalPipe" count="4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="bricksStack" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceRockSmall" count="50" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletCartonMilitaryBase" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceScrapIron" count="5,10" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletCartonMilitaryTileCovered" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceScrapPolymers" count="3,6" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagCowFeedBaseFull" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="plantedCorn1" count="3,5" prob="1"/>
+			<item name="foodCropWheat" count="3,5" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagCowFeedTile" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="plantedCorn1" count="3,5" prob="1"/>
+			<item name="foodCropWheat" count="3,5" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagCowFeedBaseMed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="plantedCorn1" count="2,4" prob="1"/>
+			<item name="foodCropWheat" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagCowFeedCapMed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="plantedCorn1" count="2,3" prob="1"/>
+			<item name="foodCropWheat" count="2,3" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagCowFeedCapSml" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="plantedCorn1" count="1,2" prob="1"/>
+			<item name="foodCropWheat" count="1,2" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagCowFeedSingleBent" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="plantedCorn1" count="1" prob="1"/>
+			<item name="foodCropWheat" count="1,2" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagCowFeedSingleFlat" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="plantedCorn1" count="1" prob="1"/>
+			<item name="foodCropWheat" count="1,2" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagFlourBaseFull" count="2" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="foodCornMeal" count="3,5" prob="1"/>
+			<item name="foodWheatFlour" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagFlourTile" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="foodCornMeal" count="3,5" prob="1"/>
+			<item name="foodWheatFlour" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagFlourBaseMed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="foodCornMeal" count="2,4" prob="1"/>
+			<item name="foodWheatFlour" count="1,3" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagFlourCapMed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="foodCornMeal" count="2,3" prob="1"/>
+			<item name="foodWheatFlour" count="1,3" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagFlourCapSml" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="foodCornMeal" count="1,2" prob="1"/>
+			<item name="foodWheatFlour" count="1,2" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagFlourSingleBent" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="foodCornMeal" count="1" prob="1"/>
+			<item name="foodWheatFlour" count="1" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagFlourSingleFlat" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="foodCornMeal" count="1" prob="1"/>
+			<item name="foodWheatFlour" count="1" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagSandBaseFull" count="2" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCrushedSand" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagSandTile" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCrushedSand" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagSandBaseMed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCrushedSand" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagSandCapMed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCrushedSand" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagSandCapSml" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCrushedSand" count="6,12" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagSandSingleBent" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCrushedSand" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagSandSingleFlat" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCrushedSand" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagConcreteBaseFull" count="2" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCement" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagConcreteTile" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCement" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagConcreteBaseMed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCement" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagConcreteCapMed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCement" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagConcreteBaseSml" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCement" count="6,12" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagConcreteCapSml" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCement" count="6,12" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagConcreteSingleBent" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCement" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagConcreteSingleFlat" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCement" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagFertilizerBaseFull" count="2" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourcePotassiumNitratePowder" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagFertilizerTile" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourcePotassiumNitratePowder" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagFertilizerBaseMed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourcePotassiumNitratePowder" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagFertilizerCapMed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourcePotassiumNitratePowder" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagFertilizerCapSml" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourcePotassiumNitratePowder" count="6,12" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagFertilizerSingleBent" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourcePotassiumNitratePowder" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagFertilizerSingleFlat" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourcePotassiumNitratePowder" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseFullWhite" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourcePotassiumNitratePowder" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankTileWhite" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourcePotassiumNitratePowder" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseMedWhite" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourcePotassiumNitratePowder" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapMedWhite" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourcePotassiumNitratePowder" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapSmlWhite" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourcePotassiumNitratePowder" count="6,12" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleBentWhite" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourcePotassiumNitratePowder" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleFlatWhite" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourcePotassiumNitratePowder" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseFullBrown" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankTileBrown" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseMedBrown" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapMedBrown" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapSmlBrown" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="6,12" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleBentBrown" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleFlatBrown" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseFullRed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankTileRed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseMedRed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapMedRed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapSmlRed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="6,12" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleBentRed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleFlatRed" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseFullOrange" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankTileOrange" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseMedOrange" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapMedOrange" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapSmlOrange" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="6,12" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleBentOrange" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleFlatOrange" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseFullYellow" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankTileYellow" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseMedYellow" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapMedYellow" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapSmlYellow" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="6,12" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleBentYellow" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleFlatYellow" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseFullGreen" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankTileGreen" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseMedGreen" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapMedGreen" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapSmlGreen" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="6,12" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleBentGreen" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleFlatGreen" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseFullBlue" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankTileBlue" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseMedBlue" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapMedBlue" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapSmlBlue" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="6,12" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleBentBlue" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleFlatBlue" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseFullPurple" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankTilePurple" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseMedPurple" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapMedPurple" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapSmlPurple" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="6,12" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleBentPurple" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleFlatPurple" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseFullGrey" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankTileGrey" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseMedGrey" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapMedGrey" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapSmlGrey" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="6,12" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleBentGrey" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleFlatGrey" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseFullBlack" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCoal" count="5,8" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankTileBlack" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCoal" count="5,8" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseMedBlack" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCoal" count="3,6" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapMedBlack" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCoal" count="3,6" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapSmlBlack" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCoal" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleBentBlack" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCoal" count="1,2" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleFlatBlack" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceCoal" count="1,2" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseFullPink" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankTilePink" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseMedPink" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapMedPink" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapSmlPink" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="6,12" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleBentPink" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleFlatPink" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseFullArmyGreen" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankTileArmyGreen" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="30,40" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankBaseMedArmyGreen" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapMedArmyGreen" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="15,20" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankCapSmlArmyGreen" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="6,12" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleBentArmyGreen" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+		<lootcontainer name="palletBagBlankSingleFlatArmyGreen" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="resourceClayLump" count="2,4" prob="1"/>
+		</lootcontainer>
+	</append>
+</lootablePallets>

@@ -1,0 +1,4 @@
+<loot>
+	<!-- Vehicle Loot Alarm Buff -->
+	<setattribute xpath="//lootcontainer[@name='ambulance' or @name='armyTruck' or @name='cars' or @name='cntSemiTruck01White' or @name='farmTruck' or @name='fireTruck' or @name='mopowerTruck' or @name='workingStiffsTruck']" name="buff">vehicle_loot_alarm</setattribute>
+</loot>

@@ -1,0 +1,21 @@
+<CATUI>
+    <!-- 修改技能-技能书的icon为道具图标 -->
+	<setattribute xpath="//skills/book_group[@name='skillArtOfMining']" name="icon">bookArtOfMiningLuckyStrike</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillAutoWeapons']" name="icon">bookAutoWeaponsDamage</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillBatterUp']" name="icon">bookBatterUpBigHits</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillBarBrawling']" name="icon">bookBarBrawling1BasicMoves</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillFiremansAlmanac']" name="icon">bookFiremansAlmanacHeat</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillGreatHeist']" name="icon">bookTheGreatHeistSafes</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillHuntingJournal']" name="icon">bookHuntingJournalBears</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillLuckyLooter']" name="icon">bookLuckyLooterDukes</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillEnforcer']" name="icon">bookEnforcerDamage</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillNightStalker']" name="icon">bookNightStalkerStealthDamage</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillPistolPete']" name="icon">bookPistolPeteTakeAim</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillArchery']" name="icon">bookRangersArrowRecovery</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillShotguns']" name="icon">bookShotgunMessiahDamage</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillSniper']" name="icon">bookSniperDamage</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillSpearHunter']" name="icon">bookSpearHunter1Damage</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillUrbanCombat']" name="icon">bookUrbanCombatLanding</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillTechJunkie']" name="icon">bookTechJunkie1Damage</setattribute>
+	<setattribute xpath="//skills/book_group[@name='skillWasteTreasures']" name="icon">bookWasteTreasuresHoney</setattribute>
+</CATUI>

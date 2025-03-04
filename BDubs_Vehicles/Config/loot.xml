@@ -1,0 +1,58 @@
+<configs>
+	<append xpath="/lootcontainers">
+		<lootcontainer name="BDvehicleL1" count="0" size="9,6" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate"></lootcontainer>
+		<lootcontainer name="BDvehicleL2" count="0" size="9,8" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate"></lootcontainer>
+		<lootcontainer name="BDvehicleL3" count="0" size="9,9" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate"></lootcontainer>
+		<lootcontainer name="BDvehicleXL1" count="0" size="10,9" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate"></lootcontainer>
+		<lootcontainer name="BDvehicleXL2" count="0" size="10,9" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate"></lootcontainer>
+		<lootcontainer name="BDvehicleXL3" count="0" size="10,9" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate"></lootcontainer>
+	</append>
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupScrapCommon']">
+		<lootgroup name="UAZ452group">
+			<item name="vehicleUAZ452chassis"/>
+			<item name="vehicleUAZaccessories"/>
+			<item name="vehicleWheels"/>
+			<item name="smallEngine"/>
+			<item name="carBattery"/>
+		</lootgroup>
+		<lootgroup name="Maraudergroup">
+			<item name="vehicleMarauderchassis"/>
+			<item name="vehicleMarauderaccessories"/>
+			<item name="vehicleWheels"/>
+			<item name="smallEngine"/>
+			<item name="carBattery"/>
+		</lootgroup>
+		<lootgroup name="DirtBikegroup">
+			<item name="vehicleDirtBikeChassis"/>
+			<item name="vehicleDirtBikeParts"/>
+			<item name="vehicleWheels"/>
+			<item name="smallEngine"/>
+			<item name="carBattery"/>
+		</lootgroup>
+		<lootgroup name="Humveegroup">
+			<item name="vehicleHumveechassis"/>
+			<item name="vehicleHumveebody"/>
+			<item name="vehicleWheels"/>
+			<item name="smallEngine"/>
+			<item name="carBattery"/>
+		</lootgroup>
+		<lootgroup name="groupQuestHumveeParts" count="all">
+			<item name="questRewardHumveePartsBundle"/>
+		</lootgroup>
+		<lootgroup name="groupQuestMarauderParts" count="all">
+			<item name="questRewardMarauderPartsBundle"/>
+		</lootgroup>
+		<lootgroup name="groupQuestDirtBikeParts" count="all">
+			<item name="questRewardDirtBikePartsBundle"/>
+		</lootgroup>
+		<lootgroup name="groupQuestUAZ452Parts" count="all">
+			<item name="questRewardUAZ452PartsBundle"/>
+		</lootgroup>
+	</insertBefore>
+	<append xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
+		<item group="UAZ452group" loot_prob_template="ProbT3"/>
+		<item group="Maraudergroup" loot_prob_template="ProbT3"/>
+		<item group="DirtBikegroup" loot_prob_template="ProbT3"/>
+		<item group="Humveegroup" loot_prob_template="ProbT3"/>
+	</append>
+</configs>

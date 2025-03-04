@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entityclasses_aio_2>
+	<!-- Пассивные баффы в зависимости от уровня игрока -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='PlayerExpGain' and @tags='Upgrading']">
+		<!-- 10% опыта от торговли -->
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="-.9" tags="Selling"/>
+		<!-- 25% опыта от добычи -->
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="-.75" tags="Harvesting"/>
+		<!-- До 55 уровня в 3 раза больше опыта от убийств -->
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="3" tags="Kill">
+			<requirement name="PlayerLevel" operation="LT" value="55"/>
+		</passive_effect>
+		<!-- С 55 уровня - в 5 раз больше опыта за квесты и в 2 раза больше - за убийства -->
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="5" tags="Quest">
+			<requirement name="PlayerLevel" operation="GTE" value="55"/>
+		</passive_effect>
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="2" tags="Kill">
+			<requirement name="PlayerLevel" operation="GTE" value="55"/>
+		</passive_effect>
+	</insertAfter>
+	<!-- Баланс потерь воды/еды -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[@name='food/water balancing']">
+		<!-- Хил вызывает потерю воды -->
+		<passive_effect name="WaterLossPerHealthPointGained" operation="base_set" value="0.04"/>
+		<!-- Хил вызывает потерю еды -->
+		<passive_effect name="FoodLossPerHealthPointGained" operation="base_set" value=".55"/>
+		<!-- Потеря воды 80/час -->
+		<passive_effect name="WaterChangeOT" operation="base_subtract" value=".00556"/>
+		<!-- Восстановление выносливости тратит воду -->
+		<passive_effect name="WaterLossPerStaminaPointGained" operation="base_set" value="0.00327"/>
+		<!-- Потеря сытости 60/час -->
+		<passive_effect name="FoodChangeOT" operation="base_subtract" value=".00417"/>
+		<!-- Восстановление выносливости тратит сытость -->
+		<passive_effect name="FoodLossPerStaminaPointGained" operation="base_set" value="0.00394"/>
+	</set>
+	<!--Увеличиваем параметры переносных пушек-->
+	<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='MaxDistance']/@value">30</set>
+	<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='PitchRange']/@value">150</set>
+	<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='YawRange']/@value">150</set>
+	<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='RaySpread']/@value">.025</set>
+	<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='MaxOwnerDistance']/@value">200</set>
+	<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='TurnSpeed']/@value">45</set>
+	<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='WakeUpTime']/@value">0.2</set>
+	<!-- Отключаем анимацию смерти зомби -->
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateSlimFemale']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArlene']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMarlene']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieNurse']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieJoe']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBoe']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieJanitor']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMoe']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLab']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieDarlene']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieYo']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjack']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFemaleFat']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSoldier']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamer']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<!-- Отключаем анимацию смерти для животных -->
+	<set xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<set xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='HasDeathAnim' 			and @value='true']/@value">false</set>
+	<!-- Уменьшаем таймер респа -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='TimeStayAfterDeath'][@value='10']/@value">3</set>
+	<!-- Увеличиваем размер некоторых монстров -->
+	<set xpath="/entity_classes/entity_class[@name='animalZombieVulture']/property[@name='SizeScale']/@value">1.5</set>
+	<set xpath="/entity_classes/entity_class[@name='animalZombieVultureRadiated']/property[@name='SizeScale']/@value">1.8</set>
+	<insertAfter xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='Mass']">
+		<property name="SizeScale" value="1.5"/>
+	</insertAfter>
+	<insertAfter xpath="/entity_classes/entity_class[@name='animalRabbit']/property[@name='Mass']">
+		<property name="SizeScale" value="1.5"/>
+	</insertAfter>
+	<!-- Увеличиваем шанс дропа вещмешков с зомби -->
+	<set xpath="/entity_classes/entity_class[starts-with(@name, 'zombieTemplate')]/property[@name='LootDropProb']/@value">.04</set>
+	<set xpath="/entity_classes/entity_class[contains(@name, 'Feral')]/property[@name='LootDropProb']/@value">.08</set>
+	<append xpath="/entity_classes/entity_class[contains(@name, 'Radiated')]">
+		<property name="LootDropProb" value=".12"/>
+	</append>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/property[@name='LootDropProb']/@value">.16</set>
+	<append xpath="/entity_classes/entity_class[@name='zombieWightRadiated']">
+		<property name="LootDropProb" value=".25"/>
+	</append>
+	<!-- Выпавшие вещмешки лежат дольше -->
+	<set xpath="/entity_classes/entity_class[@name='DroppedLootContainer']/property[@name='TimeStayAfterDeath']/@value">300</set>
+	<set xpath="/entity_classes/entity_class[starts-with(@name, 'EntityLootContainer')]/property[@name='TimeStayAfterDeath']/@value">1800</set>
+	<!-- Трупы зомби исчезают через 6 секунд -->
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">6</set>
+	<!-- С босса-кабана падает гнилое мясо -->
+	<setattribute xpath="/entity_classes/entity_class[@name='animalBossGrace']//drop[1]" name="name">foodRottingFlesh</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='animalBossGrace']//drop[2]" name="name">foodRottingFlesh</setattribute>
+	<!-- Трупы животных остаются лежать дольше -->
+	<set xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='TimeStayAfterDeath']/@value">600</set>
+	<set xpath="/entity_classes/entity_class[@name='animalStag']/property[@name='TimeStayAfterDeath']/@value">600</set>
+	<set xpath="/entity_classes/entity_class[@name='animalTemplateTimid']/property[@name='TimeStayAfterDeath']/@value">600</set>
+	<!-- Шанс получить яйцо с курицы при разделке -->
+	<insertAfter xpath="//entity_class[@name='animalChicken']//drop[@event='Harvest'][@name='resourceBone']">
+		<drop event="Harvest" name="foodEgg" tag="butcherHarvest" count="1" prob="0.1"/>
+	</insertAfter>
+	<insertAfter xpath="//entity_class[@name='animalChicken']//drop[@event='Harvest'][@name='resourceBone']">
+		<drop event="Harvest" name="foodEgg" count="1" prob="0.1" tag="WasteTreasuresCompleteHarvest"/>
+	</insertAfter>
+	<!-- Изменения в здоровье зомби -->
+	<!-- Базовый шаблон -->
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/effect_group[@name='Base Effects']//passive_effect[@operation='perc_add']/@value">-.35,.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">250</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateSlimFemale']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">225</set>
+	<!-- Гнилая девушка -->
+	<set xpath="/entity_classes/entity_class[@name='zombieArlene']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">350</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">700</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1200</set>
+	<!-- Покойница -->
+	<set xpath="/entity_classes/entity_class[@name='zombieMarlene']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">350</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMarleneFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">700</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMarleneRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1200</set>
+	<!-- Тусовщица -->
+	<set xpath="/entity_classes/entity_class[@name='zombiePartyGirl']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">350</set>
+	<set xpath="/entity_classes/entity_class[@name='zombiePartyGirlFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">700</set>
+	<set xpath="/entity_classes/entity_class[@name='zombiePartyGirlRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1200</set>
+	<!-- Медсестра -->
+	<set xpath="/entity_classes/entity_class[@name='zombieNurse']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">350</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieNurseFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">700</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieNurseRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1200</set>
+	<!-- Гнойный труп -->
+	<set xpath="/entity_classes/entity_class[@name='zombieJoe']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">350</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieJoeFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">700</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieJoeRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1200</set>
+	<!-- Оживший труп -->
+	<set xpath="/entity_classes/entity_class[@name='zombieSteve']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">350</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSteveFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">700</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSteveRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1200</set>
+	<!-- Том Кларк -->
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClark']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">250</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClarkFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">600</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClarkRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1100</set>
+	<!-- Бизнесмен -->
+	<set xpath="/entity_classes/entity_class[@name='zombieBusinessMan']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">350</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBusinessManFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">700</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBusinessManRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1400</set>
+	<!-- Сгоревший -->
+	<set xpath="/entity_classes/entity_class[@name='zombieBurnt']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">350</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">700</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1400</set>
+	<!-- Паук -->
+	<set xpath="/entity_classes/entity_class[@name='zombieSpider']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">200</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">600</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1100</set>
+	<!-- Зараженный выживший -->
+	<set xpath="/entity_classes/entity_class[@name='zombieBoe']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">400</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBoeFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">750</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBoeRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1300</set>
+	<!-- Химзащита -->
+	<set xpath="/entity_classes/entity_class[@name='zombieMaleHazmatFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">750</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMaleHazmatRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1300</set>
+	<!-- Уборщик -->
+	<set xpath="/entity_classes/entity_class[@name='zombieJanitor']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">400</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieJanitorFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">750</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieJanitorRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1300</set>
+	<!-- Заключённый -->
+	<set xpath="/entity_classes/entity_class[@name='zombieInmate']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">400</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieInmateFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">750</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieInmateRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1300</set>
+	<!-- Ходок -->
+	<set xpath="/entity_classes/entity_class[@name='zombieMoe']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">400</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMoeFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">750</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMoeRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1300</set>
+	<!-- Лаборантка -->
+	<set xpath="/entity_classes/entity_class[@name='zombieLab']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">400</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLabFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">750</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLabRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1300</set>
+	<!-- Дикая мать -->
+	<set xpath="/entity_classes/entity_class[@name='zombieDarlene']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">400</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieDarleneFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">750</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieDarleneRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1300</set>
+	<!-- Туша -->
+	<set xpath="/entity_classes/entity_class[@name='zombieYo']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">400</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieYoFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">750</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieYoRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1300</set>
+	<!-- Разнорабочий -->
+	<set xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">400</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">750</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1500</set>
+	<!-- Байкер -->
+	<set xpath="/entity_classes/entity_class[@name='zombieBiker']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">750</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBikerFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1100</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBikerRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">2000</set>
+	<!-- Дровосек -->
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjack']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">650</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1150</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">2100</set>
+	<!-- Большая мамаша -->
+	<set xpath="/entity_classes/entity_class[@name='zombieFemaleFat']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">650</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFemaleFatFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1150</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">2100</set>
+	<!-- Турист -->
+	<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">650</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiianFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1150</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiianRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">2100</set>
+	<!-- Игрок в боулинг -->
+	<set xpath="/entity_classes/entity_class[@name='zombieBowler']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">650</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBowlerFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1150</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBowlerRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">2100</set>
+	<!-- Коп -->
+	<set xpath="/entity_classes/entity_class[@name='zombieFatCop']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">650</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1150</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">2100</set>
+	<!-- Скейтер -->
+	<set xpath="/entity_classes/entity_class[@name='zombieSkateboarder']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">450</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSkateboarderFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">900</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSkateboarderRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1600</set>
+	<!-- Солдат -->
+	<set xpath="/entity_classes/entity_class[@name='zombieSoldier']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">450</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSoldierFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1000</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSoldierRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1800</set>
+	<!-- Упырь -->
+	<set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1400</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">2600</set>
+	<!-- Крикуша -->
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamer']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">400</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">450</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">700</set>
+	<!-- Мутант -->
+	<set xpath="/entity_classes/entity_class[@name='zombieMutated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">800</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">1100</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedRadiated']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">2000</set>
+	<!-- Разрушитель -->
+	<set xpath="/entity_classes/entity_class[@name='zombieDemolition']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">2000</set>
+	<!-- Ползун -->
+	<set xpath="/entity_classes/entity_class[@name='zombieSteveCrawler']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">300</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSteveCrawlerFeral']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">400</set>
+	<!-- Пауки прыгают на меньшую дистанцию -->
+	<set xpath="/entity_classes/entity_class[@name='zombieSpider']/property[@name='JumpMaxDistance']/@value">2.8, 4.8</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']/property[@name='JumpMaxDistance']/@value">4.6, 6.6</set>
+	<!-- Увеличенный аггро -->
+	<setattribute xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AINoiseSeekDist']" name="value">30</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='SightRange']" name="value">50</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='SightRange']" name="value">70</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AINoiseSeekDist']" name="value">50</setattribute>
+	<setattribute xpath="/entity_classes/entity_class[@name='animalZombieVulture']/property[@name='SightRange']" name="value">90</setattribute>
+	<!-- Зомби больше не умеют пользоваться лестницами -->
+	<!-- <setattribute xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='CanClimbLadders']" name="value">false</setattribute> -->
+	<!-- Демолишеры не ломают ловушки с 1 удара -->
+	<setattribute xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='StompsSpikes']" name="value">false</setattribute>
+	<!-- Копы не используют дальние атаки -->
+	<set xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='AITask']/@value">
+	BreakBlock|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|
+	</set>
+	<!-- Мутанты не используют дальние атаки -->
+	<set xpath="/entity_classes/entity_class[@name='zombieMutated']/property[@name='AITask']/@value">
+	BreakBlock|
+	DestroyArea|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|
+	</set>
+	<!-- Мяса с животных меньше -->
+	<set xpath="/entity_classes/entity_class[@name='animalStag']/drop[@event='Harvest' and @name='foodRawMeat'and @tag='butcherHarvest']/@count">15</set>
+	<set xpath="/entity_classes/entity_class[@name='animalDoe']/drop[@event='Harvest' and @name='foodRawMeat'and @tag='butcherHarvest']/@count">10</set>
+	<set xpath="/entity_classes/entity_class[@name='animalRabbit']/drop[@event='Harvest' and @name='foodRawMeat'and @tag='butcherHarvest']/@count">5</set>
+	<set xpath="/entity_classes/entity_class[@name='animalBear']/drop[@event='Harvest' and @name='foodRawMeat'and @tag='butcherHarvest']/@count">25</set>
+	<set xpath="/entity_classes/entity_class[@name='animalWolf']/drop[@event='Harvest' and @name='foodRawMeat'and @tag='butcherHarvest']/@count">13</set>
+	<set xpath="/entity_classes/entity_class[@name='animalCoyote']/drop[@event='Harvest' and @name='foodRawMeat'and @tag='butcherHarvest']/@count">6</set>
+	<set xpath="/entity_classes/entity_class[@name='animalMountainLion']/drop[@event='Harvest' and @name='foodRawMeat'and @tag='butcherHarvest']/@count">13</set>
+	<set xpath="/entity_classes/entity_class[@name='animalSnake']/drop[@event='Harvest' and @name='foodRawMeat'and @tag='butcherHarvest']/@count">5</set>
+	<set xpath="/entity_classes/entity_class[@name='animalBoar']/drop[@event='Harvest' and @name='foodRawMeat'and @tag='butcherHarvest']/@count">15</set>
+	<!-- С кур падает куриное мясо -->
+	<remove xpath="/entity_classes/entity_class[@name='animalChicken']/drop[@event='Harvest' and @name='foodRawMeat']"/>
+	<append xpath="/entity_classes/entity_class[@name='animalChicken']">
+		<drop event="Harvest" name="foodRawChickenMeat" count="0" tool_category="Butcher"/>
+		<drop event="Harvest" name="foodRawChickenMeat" tag="butcherHarvest" count="1"/>
+	</append>
+	<!-- Перьев с животных меньше -->
+	<set xpath="/entity_classes/entity_class[@name='animalChicken']/drop[@event='Harvest' and @name='resourceFeather'and @tag='butcherHarvest']/@count">8</set>
+	<set xpath="/entity_classes/entity_class[@name='animalChickenHostile']/drop[@event='Harvest' and @name='resourceFeather'and @tag='butcherHarvest']/@count">8</set>
+	<set xpath="/entity_classes/entity_class[@name='animalZombieVulture']/drop[@event='Harvest' and @name='resourceFeather'and @tag='butcherHarvest']/@count">6</set>
+	<set xpath="/entity_classes/entity_class[@name='animalZombieVultureRadiated']/drop[@event='Harvest' and @name='resourceFeather'and @tag='butcherHarvest']/@count">15</set>
+	<!-- Скорость атаки зомби ниже и зависит от времени суток -->
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AttackTimeoutNight']/@value">1.2</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AttackTimeoutDay']/@value">1.6</set>
+	<append xpath="/entity_classes/entity_class[@name='zombieTemplateShort']">
+		<property name="AttackTimeoutDay" value="1.5"/>
+		<property name="AttackTimeoutNight" value="1.1"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='zombieBiker']">
+		<property name="AttackTimeoutDay" value="1.8"/>
+		<property name="AttackTimeoutNight" value="1.4"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='zombieLumberjack']">
+		<property name="AttackTimeoutDay" value="1.8"/>
+		<property name="AttackTimeoutNight" value="1.4"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='zombieFemaleFat']">
+		<property name="AttackTimeoutDay" value="2"/>
+		<property name="AttackTimeoutNight" value="1.6"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']">
+		<property name="AttackTimeoutDay" value="2"/>
+		<property name="AttackTimeoutNight" value="1.6"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='zombieFatCop']">
+		<property name="AttackTimeoutDay" value="2"/>
+		<property name="AttackTimeoutNight" value="1.6"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='zombieMutated']">
+		<property name="AttackTimeoutDay" value="2"/>
+		<property name="AttackTimeoutNight" value="1.6"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='zombieDemolition']">
+		<property name="AttackTimeoutDay" value="2"/>
+		<property name="AttackTimeoutNight" value="1.6"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='animalBear']">
+		<property name="AttackTimeoutDay" value="2"/>
+		<property name="AttackTimeoutNight" value="2"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='animalZombieBear']">
+		<property name="AttackTimeoutDay" value="2.5"/>
+		<property name="AttackTimeoutNight" value="2"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='animalZombieVulture']">
+		<property name="AttackTimeoutDay" value="1.8"/>
+		<property name="AttackTimeoutNight" value="1.4"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='animalZombieDog']">
+		<property name="AttackTimeoutDay" value="1.8"/>
+		<property name="AttackTimeoutNight" value="1.4"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='animalBossGrace']">
+		<property name="AttackTimeoutDay" value="2.5"/>
+		<property name="AttackTimeoutNight" value="2.5"/>
+	</append>
+	<!-- Повышение урона от хедшотов -->
+	<append xpath="/entity_classes/entity_class[@name='playerMale']">
+		<effect_group>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.17">
+				<requirement name="HitLocation" body_parts="Head"/>
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/>
+				<requirement name="IsAlive" target="other"/>
+			</passive_effect>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.34">
+				<requirement name="HitLocation" body_parts="Head"/>
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/>
+				<requirement name="IsAlive" target="other"/>
+			</passive_effect>
+			<passive_effect name="DamageModifier" operation="perc_add" value="0.5">
+				<requirement name="HitLocation" body_parts="Head"/>
+				<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/>
+				<requirement name="IsAlive" target="other"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	<!-- Скорость передвижения кур понижена -->
+	<set xpath="/entity_classes/entity_class[@name='animalChicken']/property[@name='MoveSpeedPanic']/@value">.8</set>
+	<!-- Больше случайности к скорости зомби -->
+	<setattribute xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='MoveSpeedRand']" name="value">-.4, .45</setattribute>
+</entityclasses_aio_2>

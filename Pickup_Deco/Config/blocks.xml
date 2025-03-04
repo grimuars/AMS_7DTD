@@ -1,0 +1,1115 @@
+<configs>
+	<!-- *** WALL_CLOCKS -->
+	<append xpath="/blocks/block[@name='wallClock']">
+		<property name="CanPickup" value="true" param1="wallClock"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='wallClockBroken']">
+		<property name="CanPickup" value="true" param1="wallClockBroken"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="40"/>
+	</append>
+	<!-- *** MICROPHONES -->
+	<append xpath="/blocks/block[@name='microphoneWithStand']">
+		<property name="CanPickup" value="true" param1="microphoneWithStand"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="150"/>
+	</append>
+	<!-- *** HAM_RADIO -->
+	<append xpath="/blocks/block[@name='radioHam']">
+		<property name="CanPickup" value="true" param1="radioHam"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="150"/>
+	</append>
+	<!-- *** COMPUTER_GEAR -->
+	<append xpath="/blocks/block[@name='decoComputerDeskTopPC']">
+		<property name="CanPickup" value="true" param1="decoComputerDeskTopPC"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="250"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoComputerMonitorKeyboardMousePC']">
+		<property name="CanPickup" value="true" param1="decoComputerMonitorKeyboardMousePC"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="200"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoComputerMonitorKeyboardMouse']">
+		<property name="CanPickup" value="true" param1="decoComputerMonitorKeyboardMouse"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="150"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoComputerMonitorKeyboardMouse2']">
+		<property name="CanPickup" value="true" param1="decoComputerMonitorKeyboardMouse2"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="150"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoComputerMonitor']">
+		<property name="CanPickup" value="true" param1="decoComputerMonitor"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="150"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoLaptop']">
+		<property name="CanPickup" value="true" param1="decoLaptop"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="250"/>
+	</append>
+	<!-- *** SERVER_RACKS -->
+	<append xpath="/blocks/block[@name='decoServerRackWhite']">
+		<property name="CanPickup" value="true" param1="decoServerRackWhite"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="800"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoServerRackBrown']">
+		<property name="CanPickup" value="true" param1="decoServerRackBrown"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="800"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoServerRackRed']">
+		<property name="CanPickup" value="true" param1="decoServerRackRed"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="800"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoServerRackOrange']">
+		<property name="CanPickup" value="true" param1="decoServerRackOrange"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="800"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoServerRackYellow']">
+		<property name="CanPickup" value="true" param1="decoServerRackYellow"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="800"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoServerRackGreen']">
+		<property name="CanPickup" value="true" param1="decoServerRackGreen"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="800"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoServerRackBlue']">
+		<property name="CanPickup" value="true" param1="decoServerRackBlue"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="800"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoServerRackGrey']">
+		<property name="CanPickup" value="true" param1="decoServerRackGrey"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="800"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoServerRackArmyGreen']">
+		<property name="CanPickup" value="true" param1="decoServerRackArmyGreen"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="800"/>
+	</append>
+	<!-- *** CANDELABRA_LIGHTS -->
+	<set xpath="/blocks/block[@name='candelabraLight']/property[@name='TakeDelay']/@value">5</set>
+	<append xpath="/blocks/block[@name='candelabraLight']">
+		<property name="CanPickup" value="true" param1="candelabraLight"/>
+	</append>
+	<append xpath="/blocks/block[@name='candelabraLightSmall']">
+		<property name="CanPickup" value="true" param1="candelabraLightSmall"/>
+	</append>
+	<!-- *** CHANDELIER_LIGHTS -->
+	<set xpath="/blocks/block[@name='chandelierLight']/property[@name='TakeDelay']/@value">5</set>
+	<append xpath="/blocks/block[@name='chandelierLight']">
+		<property name="CanPickup" value="true" param1="chandelierLight"/>
+		<property name="EconomicValue" value="600"/>
+	</append>
+	<append xpath="/blocks/block[@name='chandelierLight2x2']">
+		<property name="CanPickup" value="true" param1="chandelierLight2x2"/>
+		<property name="EconomicValue" value="1200"/>
+	</append>
+	<!-- *** FRAMED_PICTURES -->
+	<append xpath="/blocks/block[@name='pictureCanvas_01a']">
+		<property name="CanPickup" value="true" param1="pictureCanvas_01a"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureCanvas_01b']">
+		<property name="CanPickup" value="true" param1="pictureCanvas_01b"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureCanvas_01c']">
+		<property name="CanPickup" value="true" param1="pictureCanvas_01c"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureCanvas_01d']">
+		<property name="CanPickup" value="true" param1="pictureCanvas_01d"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureCanvas_01e']">
+		<property name="CanPickup" value="true" param1="pictureCanvas_01e"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureCanvas_01f']">
+		<property name="CanPickup" value="true" param1="pictureCanvas_01f"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureCanvas_01g']">
+		<property name="CanPickup" value="true" param1="pictureCanvas_01g"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureCanvas_01h']">
+		<property name="CanPickup" value="true" param1="pictureCanvas_01h"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureCanvas_01i']">
+		<property name="CanPickup" value="true" param1="pictureCanvas_01i"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureCanvas_01j']">
+		<property name="CanPickup" value="true" param1="pictureCanvas_01j"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01a']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01a"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01b']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01b"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01c']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01c"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01d']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01d"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01e']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01e"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01f']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01f"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01g']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01g"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01h']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01h"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01i']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01i"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01j']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01j"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01k']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01k"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01l']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01l"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01m']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01m"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01n']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01n"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01o']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01o"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01p']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01p"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01q']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01q"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01r']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01r"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01s']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01s"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01t']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01t"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01u']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01u"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01v']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01v"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrame_01w']">
+		<property name="CanPickup" value="true" param1="pictureFrame_01w"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrameCarrier']">
+		<property name="CanPickup" value="true" param1="pictureFrameCarrier"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrameTank']">
+		<property name="CanPickup" value="true" param1="pictureFrameTank"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrameGunSchematic']">
+		<property name="CanPickup" value="true" param1="pictureFrameGunSchematic"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFrameJetGirls']">
+		<property name="CanPickup" value="true" param1="pictureFrameJetGirls"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<!-- *** CALENDARS_AND_POSTERS -->
+	<append xpath="/blocks/block[@name='calendar2034']">
+		<property name="CanPickup" value="true" param1="calendar2034"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='posterCalendarWorkingStiff']">
+		<property name="CanPickup" value="true" param1="posterCalendarWorkingStiff"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='posterBlueprintPistol']">
+		<property name="CanPickup" value="true" param1="posterBlueprintPistol"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='posterBlueprintRifle']">
+		<property name="CanPickup" value="true" param1="posterBlueprintRifle"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<!-- *** BACKER_PAINTINGS -->
+	<append xpath="/blocks/block[@name='paintingBen']">
+		<property name="CanPickup" value="true" param1="paintingBen"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="150"/>
+	</append>
+	<append xpath="/blocks/block[@name='paintingLorien']">
+		<property name="CanPickup" value="true" param1="paintingLorien"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="150"/>
+	</append>
+	<append xpath="/blocks/block[@name='paintingDerek']">
+		<property name="CanPickup" value="true" param1="paintingDerek"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="150"/>
+	</append>
+	<append xpath="/blocks/block[@name='paintingNoah']">
+		<property name="CanPickup" value="true" param1="paintingNoah"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="150"/>
+	</append>
+	<append xpath="/blocks/block[@name='paintingDuke']">
+		<property name="CanPickup" value="true" param1="paintingDuke"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="150"/>
+	</append>
+	<append xpath="/blocks/block[@name='paintingKen']">
+		<property name="CanPickup" value="true" param1="paintingKen"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="150"/>
+	</append>
+	<!-- *** WILD_WEST_DECOR -->
+	<append xpath="/blocks/block[@name='decoCowSkull']">
+		<property name="CanPickup" value="true" param1="decoCowSkull"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='horseshoe_01']">
+		<property name="CanPickup" value="true" param1="horseshoe_01"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<set xpath="/blocks/block[@name='horseshoe_01']/property[@name='EconomicValue']/@value">50</set>
+	<append xpath="/blocks/block[@name='horseshoe_02']">
+		<property name="CanPickup" value="true" param1="horseshoe_02"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='horseshoe_03']">
+		<property name="CanPickup" value="true" param1="horseshoe_03"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<!-- *** CHURCH_BELLS -->
+	<append xpath="/blocks/block[@name='churchBell']">
+		<property name="CanPickup" value="true" param1="churchBell"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='churchBell1x2x1']">
+		<property name="CanPickup" value="true" param1="churchBell1x2x1"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='churchBellHanging']">
+		<property name="CanPickup" value="true" param1="churchBellHanging"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='churchBellHanging1x2x1']">
+		<property name="CanPickup" value="true" param1="churchBellHanging1x2x1"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<!-- *** WINE_BOTTLES -->
+	<append xpath="/blocks/block[@name='decoWineBottle']">
+		<property name="CanPickup" value="true" param1="decoWineBottle"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="10"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoWineBottleCorner']">
+		<property name="CanPickup" value="true" param1="decoWineBottleCorner"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoWineBottleShelfRow']">
+		<property name="CanPickup" value="true" param1="decoWineBottleShelfRow"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<!-- *** PIANO -->
+	<append xpath="/blocks/block[@name='piano']">
+		<property name="CanPickup" value="true" param1="piano"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<!-- *** POOL_TABLES -->
+	<append xpath="/blocks/block[@name='decoPoolTable']">
+		<property name="CanPickup" value="true" param1="decoPoolTable"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="400"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoPoolTableBlue']">
+		<property name="CanPickup" value="true" param1="decoPoolTableBlue"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<!-- *** PET_EQUIPMENT -->
+	<append xpath="/blocks/block[@name='decoReptileTerrarium']">
+		<property name="CanPickup" value="true" param1="decoReptileTerrarium"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="400"/>
+	</append>
+	<set xpath="/blocks/block[@name='decoReptileTerrarium']/property[@name='EconomicValue']/@value">250</set>
+	<append xpath="/blocks/block[@name='decoClassicDogHouse']">
+		<property name="CanPickup" value="true" param1="decoClassicDogHouse"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoLargePetCage']">
+		<property name="CanPickup" value="true" param1="decoLargePetCage"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="50"/>
+	</append>
+	<!-- *** GYM_EQUIPMENT -->
+	<append xpath="/blocks/block[@name='decoStationaryBike']">
+		<property name="CanPickup" value="true" param1="decoStationaryBike"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="300"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoTreadmill']">
+		<property name="CanPickup" value="true" param1="decoTreadmill"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="300"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoWeightBar']">
+		<property name="CanPickup" value="true" param1="decoWeightBar"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="400"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoBenchPress']">
+		<property name="CanPickup" value="true" param1="decoBenchPress"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="200"/>
+	</append>
+	<!-- *** MEDICAL_EQUIPMENT -->
+	<append xpath="/blocks/block[@name='standIV']">
+		<property name="CanPickup" value="true" param1="standIV"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<!-- *** MANNEQUINS -->
+	<append xpath="/blocks/block[@name='decoMannequinMale']">
+		<property name="CanPickup" value="true" param1="decoMannequinMale"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoMannequinFemale']">
+		<property name="CanPickup" value="true" param1="decoMannequinFemale"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoMannequinMilitaryCommando']">
+		<property name="CanPickup" value="true" param1="decoMannequinMilitaryCommando"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='woodenBear']">
+		<property name="CanPickup" value="true" param1="woodenBear"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="200"/>
+	</append>
+	<append xpath="/blocks/block[@name='rugBear']">
+		<property name="CanPickup" value="true" param1="rugBear"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="150"/>
+	</append>
+	<!-- *** ROAD_SIGNS -->
+	<append xpath="/blocks/block[@name='signRoadStop']">
+		<property name="CanPickup" value="true" param1="signRoadStop"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signRoadWork']">
+		<property name="CanPickup" value="true" param1="signRoadWork"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signRoadStop4way']">
+		<property name="CanPickup" value="true" param1="signRoadStop4way"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signRoadSpeed55']">
+		<property name="CanPickup" value="true" param1="signRoadSpeed55"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signCrossWalkYellowHanging']">
+		<property name="CanPickup" value="true" param1="signCrossWalkYellowHanging"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signCrossWalkYellow']">
+		<property name="CanPickup" value="true" param1="signCrossWalkYellow"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signRoadRoughSurface']">
+		<property name="CanPickup" value="true" param1="signRoadRoughSurface"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signRoadSpeed25']">
+		<property name="CanPickup" value="true" param1="signRoadSpeed25"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signRoadSpeed25noTrucks']">
+		<property name="CanPickup" value="true" param1="signRoadSpeed25noTrucks"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signRoadSpeed35']">
+		<property name="CanPickup" value="true" param1="signRoadSpeed35"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signRoadSpeed45']">
+		<property name="CanPickup" value="true" param1="signRoadSpeed45"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signRoadSpeed65']">
+		<property name="CanPickup" value="true" param1="signRoadSpeed65"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signDoNotEnter']">
+		<property name="CanPickup" value="true" param1="signDoNotEnter"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signDoNotEnterHanging']">
+		<property name="CanPickup" value="true" param1="signDoNotEnterHanging"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signNoParking']">
+		<property name="CanPickup" value="true" param1="signNoParking"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signPrivateProperty']">
+		<property name="CanPickup" value="true" param1="signPrivateProperty"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signNotice']">
+		<property name="CanPickup" value="true" param1="signNotice"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signNeighborhoodWatch']">
+		<property name="CanPickup" value="true" param1="signNeighborhoodWatch"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signRoadSlow']">
+		<property name="CanPickup" value="true" param1="signRoadSlow"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSlowHanging']">
+		<property name="CanPickup" value="true" param1="signSlowHanging"/>
+		<property name="TakeDelay" value="5"/>
+		<property name="EconomicValue" value="100"/>
+	</append>
+	<!-- *** SHOP_SIGNS -->
+	<remove xpath="/blocks/block[@name='signNeonColdBeer']/drop[@event='Harvest']"/>
+	<remove xpath="/blocks/block[@name='signNeonColdBeer']/drop[@event='Destroy']"/>
+	<remove xpath="/blocks/block[@name='signOpenWallMountChain']/drop[@event='Harvest']"/>
+	<remove xpath="/blocks/block[@name='signOpenWallMountChain']/drop[@event='Destroy']"/>
+	<!--======== Makes neon signs salvageable, powerable, and pickupable =========-->
+	<append xpath="/blocks/block[@name='signOpenWallMountChain']">
+		<drop event="Destroy" name="opensignBlockVariantHelper" count="1" tag="salvageHarvest"/>
+		<property name="Class" value="PoweredLight"/>
+		<property name="TakeDelay" value="3"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	</append>
+	<append xpath="/blocks/block[@name='signNeonColdBeer']">
+		<drop event="Destroy" name="signNeonColdBeer" count="1" tag="salvageHarvest"/>
+		<property name="Class" value="PoweredLight"/>
+		<property name="TakeDelay" value="3"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	</append>
+	<append xpath="/blocks">
+		<block name="opensignBlockVariantHelper">
+			<property name="Extends" value="signOpenWallMountChain"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="signOpenWallMountChain"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="signOpenWallMountChain,signOpenWallMountFrame,signOpenSideMount,signOpenCeilingMount"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+			<property name="CustomIcon" value="signOpenWallMountChain"/>
+		</block>
+	</append>
+	<!-- *** SHOP_SIGN_POST_OFFICE -->
+	<append xpath="/blocks/block[@name='signShopPostOfficeSign']">
+		<property name="CanPickup" value="true" param1="signShopPostOfficeSign"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signShopPostOfficeSignLit']">
+		<property name="CanPickup" value="true" param1="signShopPostOfficeSignLit"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signShopPostOfficeSignWall']">
+		<property name="CanPickup" value="true" param1="signShopPostOfficeSignWall"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signShopPostOfficeSignWallLit']">
+		<property name="CanPickup" value="true" param1="signShopPostOfficeSignWallLit"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<!-- *** BULLETIN_BOARDS -->
+	<append xpath="/blocks/block[@name='signBulletinBoard01']">
+		<property name="CanPickup" value="true" param1="signBulletinBoard01"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signBulletinBoard02']">
+		<property name="CanPickup" value="true" param1="signBulletinBoard02"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signBookSaleAd']">
+		<property name="CanPickup" value="true" param1="signBookSaleAd"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signBread01']">
+		<property name="CanPickup" value="true" param1="signBread01"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signBread02']">
+		<property name="CanPickup" value="true" param1="signBread02"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signCigaretteAd']">
+		<property name="CanPickup" value="true" param1="signCigaretteAd"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<!-- *** DINER_MENU -->
+	<append xpath="/blocks/block[@name='signDinersMenu']">
+		<property name="CanPickup" value="true" param1="signDinersMenu"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signDinersMenu2m']">
+		<property name="CanPickup" value="true" param1="signDinersMenu2m"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signDinersMenu2mCentered']">
+		<property name="CanPickup" value="true" param1="signDinersMenu2mCentered"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signLaborDaySaleAd']">
+		<property name="CanPickup" value="true" param1="signLaborDaySaleAd"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signMegaCrushAd']">
+		<property name="CanPickup" value="true" param1="signMegaCrushAd"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<!-- *** SAFETY_SIGNS -->
+	<append xpath="/blocks/block[@name='signNotice01']">
+		<property name="CanPickup" value="true" param1="signNotice01"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signNotice02']">
+		<property name="CanPickup" value="true" param1="signNotice02"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signNotice03']">
+		<property name="CanPickup" value="true" param1="signNotice03"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signNotice04']">
+		<property name="CanPickup" value="true" param1="signNotice04"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSafetyWorkProtection']">
+		<property name="CanPickup" value="true" param1="signSafetyWorkProtection"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<!-- *** SALE_SIGNS -->
+	<append xpath="/blocks/block[@name='signSale01']">
+		<property name="CanPickup" value="true" param1="signSale01"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSale02']">
+		<property name="CanPickup" value="true" param1="signSale02"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signShamwaySale']">
+		<property name="CanPickup" value="true" param1="signShamwaySale"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<!-- *** SNACK_SIGNS -->
+	<append xpath="/blocks/block[@name='signSnackPosterAtom']">
+		<property name="CanPickup" value="true" param1="signSnackPosterAtom"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSnackPosterBretzels']">
+		<property name="CanPickup" value="true" param1="signSnackPosterBretzels"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSnackPosterEyeCandy']">
+		<property name="CanPickup" value="true" param1="signSnackPosterEyeCandy"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSnackPosterFortBites']">
+		<property name="CanPickup" value="true" param1="signSnackPosterFortBites"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSnackPosterGoblinO']">
+		<property name="CanPickup" value="true" param1="signSnackPosterGoblinO"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSnackPosterHackers']">
+		<property name="CanPickup" value="true" param1="signSnackPosterHackers"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSnackPosterHealth']">
+		<property name="CanPickup" value="true" param1="signSnackPosterHealth"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSnackPosterJailBreakers']">
+		<property name="CanPickup" value="true" param1="signSnackPosterJailBreakers"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSnackPosterJerky']">
+		<property name="CanPickup" value="true" param1="signSnackPosterJerky"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSnackPosterNachos']">
+		<property name="CanPickup" value="true" param1="signSnackPosterNachos"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSnackPosterNachosRanch']">
+		<property name="CanPickup" value="true" param1="signSnackPosterNachosRanch"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSnackPosterNerd']">
+		<property name="CanPickup" value="true" param1="signSnackPosterNerd"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSnackPosterOopsClassic']">
+		<property name="CanPickup" value="true" param1="signSnackPosterOopsClassic"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSnackPosterOops']">
+		<property name="CanPickup" value="true" param1="signSnackPosterOops"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSnackPosterPrime']">
+		<property name="CanPickup" value="true" param1="signSnackPosterPrime"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSnackPosterRamen']">
+		<property name="CanPickup" value="true" param1="signSnackPosterRamen"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signSnackPosterSkullCrusher']">
+		<property name="CanPickup" value="true" param1="signSnackPosterSkullCrusher"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<!-- *** MOVIE_POSTERS -->
+	<append xpath="/blocks/block[@name='signPosterMovie2159']">
+		<property name="CanPickup" value="true" param1="signPosterMovie2159"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signPosterMovieLoneWolf']">
+		<property name="CanPickup" value="true" param1="signPosterMovieLoneWolf"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signPosterMovieMammasJustice']">
+		<property name="CanPickup" value="true" param1="signPosterMovieMammasJustice"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signPosterMovieSexualTension']">
+		<property name="CanPickup" value="true" param1="signPosterMovieSexualTension"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signPosterMovieTheater2159']">
+		<property name="CanPickup" value="true" param1="signPosterMovieTheater2159"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signPosterMovieTheaterLoneWolf']">
+		<property name="CanPickup" value="true" param1="signPosterMovieTheaterLoneWolf"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signPosterMovieTheaterMammasJustice']">
+		<property name="CanPickup" value="true" param1="signPosterMovieTheaterMammasJustice"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='signPosterMovieTheaterSexualTension']">
+		<property name="CanPickup" value="true" param1="signPosterMovieTheaterSexualTension"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<!-- *** FLAGS -->
+	<append xpath="/blocks/block[@name='flagWallHungUSA']">
+		<property name="CanPickup" value="true" param1="flagWallHungUSA"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungDuke']">
+		<property name="CanPickup" value="true" param1="flagWallHungDuke"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungHonorDuty']">
+		<property name="CanPickup" value="true" param1="flagWallHungHonorDuty"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungValiant']">
+		<property name="CanPickup" value="true" param1="flagWallHungValiant"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungTFP']">
+		<property name="CanPickup" value="true" param1="flagWallHungTFP"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungUSA']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungUSA"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungDuke']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungDuke"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungHonorDuty']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungHonorDuty"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungValiant']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungValiant"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungTFP']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungTFP"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungThick44Black']">
+		<property name="CanPickup" value="true" param1="flagWallHungThick44Black"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungThick44Purple']">
+		<property name="CanPickup" value="true" param1="flagWallHungThick44Purple"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungGadsdenWhite']">
+		<property name="CanPickup" value="true" param1="flagWallHungGadsdenWhite"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungGadsdenBrown']">
+		<property name="CanPickup" value="true" param1="flagWallHungGadsdenBrown"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungGadsdenRed']">
+		<property name="CanPickup" value="true" param1="flagWallHungGadsdenRed"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungGadsdenOrange']">
+		<property name="CanPickup" value="true" param1="flagWallHungGadsdenOrange"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungGadsdenYellow']">
+		<property name="CanPickup" value="true" param1="flagWallHungGadsdenYellow"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungGadsdenGreen']">
+		<property name="CanPickup" value="true" param1="flagWallHungGadsdenGreen"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungGadsdenBlue']">
+		<property name="CanPickup" value="true" param1="flagWallHungGadsdenBlue"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungGadsdenPurple']">
+		<property name="CanPickup" value="true" param1="flagWallHungGadsdenPurple"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungGadsdenGrey']">
+		<property name="CanPickup" value="true" param1="flagWallHungGadsdenGrey"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungGadsdenPink']">
+		<property name="CanPickup" value="true" param1="flagWallHungGadsdenPink"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagWallHungGadsdenArmyGreen']">
+		<property name="CanPickup" value="true" param1="flagWallHungGadsdenArmyGreen"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungThick44Black']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungThick44Black"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungThick44Purple']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungThick44Purple"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungGadsdenWhite']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungGadsdenWhite"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungGadsdenBrown']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungGadsdenBrown"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungGadsdenRed']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungGadsdenRed"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungGadsdenOrange']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungGadsdenOrange"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungGadsdenYellow']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungGadsdenYellow"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungGadsdenGreen']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungGadsdenGreen"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungGadsdenBlue']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungGadsdenBlue"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungGadsdenPurple']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungGadsdenPurple"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungGadsdenGrey']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungGadsdenGrey"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungGadsdenPink']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungGadsdenPink"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='flagTopWallHungGadsdenArmyGreen']">
+		<property name="CanPickup" value="true" param1="flagTopWallHungGadsdenArmyGreen"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<!-- Pictures, Frames, Poster, Calendar -->
+	<append xpath="/blocks/block[@name='pictureFramedMedalsLrg']">
+		<property name="CanPickup" value="true" param1="pictureFramedMedalsLrg"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFramedMedalsMed']">
+		<property name="CanPickup" value="true" param1="pictureFramedMedalsMed"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<append xpath="/blocks/block[@name='pictureFramedMedalsSml']">
+		<property name="CanPickup" value="true" param1="pictureFramedMedalsSml"/>
+		<property name="TakeDelay" value="5"/>
+	</append>
+	<!-- *** FLASHLIGHTS -->
+	<append xpath="/blocks">
+		<block name="flashlightDecorWhite_player">
+			<property name="Extends" value="flashlightDecorWhite"/>
+			<property name="Class" value=""/>
+			<property name="CustomIcon" value="flashlightDecorWhite"/>
+			<property name="CustomIconTint" value="808080"/>
+			<property name="TintColor" value="808080"/>
+			<property name="Model" value="Entities/Lighting/flashlight_02Prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="1"/>
+			<property name="LODCullScale" value="0.7"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="IgnoreLightsOff" value="true"/>
+			<property name="SortOrder1" value="B202"/>
+			<property name="SortOrder2" value="1302"/>
+			<property name="FilterTags" value="MC_building,SC_lighting,A21_NEW"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CanPickup" value="true"/>
+			<property name="Material" value="Mglass"/>
+			<property name="TakeDelay" value="2"/>
+			<property name="Group" value="Science,Building,advBuilding"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
+		</block>
+		<block name="flashlightDecorRed_player">
+			<property name="Extends" value="flashlightDecorWhite_player"/>
+			<property name="CustomIcon" value="flashlightDecorWhite"/>
+			<property name="CustomIconTint" value="885A5A"/>
+			<property name="TintColor" value="885A5A"/>
+			<property name="SortOrder2" value="1312"/>
+		</block>
+		<block name="flashlightDecorOrange_player">
+			<property name="Extends" value="flashlightDecorWhite_player"/>
+			<property name="CustomIcon" value="flashlightDecorWhite"/>
+			<property name="CustomIconTint" value="A2753E"/>
+			<property name="TintColor" value="A2753E"/>
+			<property name="SortOrder2" value="1322"/>
+		</block>
+		<block name="flashlightDecorYellow_player">
+			<property name="Extends" value="flashlightDecorWhite_player"/>
+			<property name="CustomIcon" value="flashlightDecorWhite"/>
+			<property name="CustomIconTint" value="7F7B38"/>
+			<property name="TintColor" value="7F7B38"/>
+			<property name="SortOrder2" value="1332"/>
+		</block>
+		<block name="flashlightDecorGreen_player">
+			<property name="Extends" value="flashlightDecorWhite_player"/>
+			<property name="CustomIcon" value="flashlightDecorWhite"/>
+			<property name="CustomIconTint" value="387E40"/>
+			<property name="TintColor" value="387E40"/>
+			<property name="SortOrder2" value="1342"/>
+		</block>
+		<block name="flashlightDecorBlue_player">
+			<property name="Extends" value="flashlightDecorWhite_player"/>
+			<property name="CustomIcon" value="flashlightDecorWhite"/>
+			<property name="CustomIconTint" value="42667E"/>
+			<property name="TintColor" value="42667E"/>
+			<property name="SortOrder2" value="1352"/>
+		</block>
+		<!-- 6V Cell Lantern/Flashlight Side Centered -->
+		<!-- White -->
+		<block name="flashlightSideCenteredDecorWhite_player">
+			<property name="Extends" value="flashlightDecorWhite_player"/>
+			<property name="Model" value="Entities/Lighting/flashlight_02SideCenteredPrefab"/>
+			<property name="SortOrder2" value="1303"/>
+		</block>
+		<!-- Red -->
+		<block name="flashlightSideCenteredDecorRed_player">
+			<property name="Extends" value="flashlightDecorRed_player"/>
+			<property name="Model" value="Entities/Lighting/flashlight_02SideCenteredPrefab"/>
+			<property name="SortOrder2" value="1313"/>
+		</block>
+		<!-- Orange -->
+		<block name="flashlightSideCenteredDecorOrange_player">
+			<property name="Extends" value="flashlightDecorOrange_player"/>
+			<property name="Model" value="Entities/Lighting/flashlight_02SideCenteredPrefab"/>
+			<property name="SortOrder2" value="1323"/>
+		</block>
+		<!-- Yellow -->
+		<block name="flashlightSideCenteredDecorYellow_player">
+			<property name="Extends" value="flashlightDecorYellow_player"/>
+			<property name="Model" value="Entities/Lighting/flashlight_02SideCenteredPrefab"/>
+			<property name="SortOrder2" value="1333"/>
+		</block>
+		<!-- Green -->
+		<block name="flashlightSideCenteredDecorGreen_player">
+			<property name="Extends" value="flashlightDecorGreen_player"/>
+			<property name="Model" value="Entities/Lighting/flashlight_02SideCenteredPrefab"/>
+			<property name="SortOrder2" value="1343"/>
+		</block>
+		<!-- Blue -->
+		<block name="flashlightSideCenteredDecorBlue_player">
+			<property name="Extends" value="flashlightDecorBlue_player"/>
+			<property name="Model" value="Entities/Lighting/flashlight_02SideCenteredPrefab"/>
+			<property name="SortOrder2" value="1353"/>
+		</block>
+		<!-- 6V Cell Lantern/Flashlight Corner -->
+		<!-- White -->
+		<block name="flashlightCornerDecorWhite_player">
+			<property name="Extends" value="flashlightDecorWhite_player"/>
+			<property name="Model" value="Entities/Lighting/flashlight_02CornerPrefab"/>
+			<property name="SortOrder2" value="1301"/>
+		</block>
+		<!-- Red -->
+		<block name="flashlightCornerDecorRed_player">
+			<property name="Extends" value="flashlightDecorRed_player"/>
+			<property name="Model" value="Entities/Lighting/flashlight_02CornerPrefab"/>
+			<property name="SortOrder2" value="1311"/>
+		</block>
+		<!-- Orange -->
+		<block name="flashlightCornerDecorOrange_player">
+			<property name="Extends" value="flashlightDecorOrange_player"/>
+			<property name="Model" value="Entities/Lighting/flashlight_02CornerPrefab"/>
+			<property name="SortOrder2" value="1321"/>
+		</block>
+		<!-- Yellow -->
+		<block name="flashlightCornerDecorYellow_player">
+			<property name="Extends" value="flashlightDecorYellow_player"/>
+			<property name="Model" value="Entities/Lighting/flashlight_02CornerPrefab"/>
+			<property name="SortOrder2" value="1331"/>
+		</block>
+		<!-- Green -->
+		<block name="flashlightCornerDecorGreen_player">
+			<property name="Extends" value="flashlightDecorGreen_player"/>
+			<property name="Model" value="Entities/Lighting/flashlight_02CornerPrefab"/>
+			<property name="SortOrder2" value="1341"/>
+		</block>
+		<!-- Blue -->
+		<block name="flashlightCornerDecorBlue_player">
+			<property name="Extends" value="flashlightDecorBlue_player"/>
+			<property name="Model" value="Entities/Lighting/flashlight_02CornerPrefab"/>
+			<property name="SortOrder2" value="1351"/>
+		</block>
+	</append>
+</configs>

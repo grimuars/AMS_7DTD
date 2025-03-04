@@ -1,0 +1,42 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,russian
+
+BeeStump,blocks,Block,,,"Bee Stump (Chop)","Бревно с пчёлами (Срубите его)"
+BeeStump2,blocks,Block,,,"Bee Stump (Chop)","Бревно с пчёлами (Срубите его)"
+BeeStump3,blocks,Block,,,"Bee Stump (Chop)","Бревно с пчёлами (Срубите его)"
+BeeStumpBees,blocks,Block,,,"Bee Stump (Chop)","Бревно с пчёлами (Срубите его)"
+Stump,blocks,Block,,,"Empty Stump (Check it later)","Пустое бревно (Проверьте его позднее)"
+
+QueenBee,items,Item,,,Queen Bee,Пчелиная королева
+QueenBeeDesc,items,Item,,,"Use the Queen Bee with right mouse click on the Bee Hive to populate it and produce honey.","Возьмите в руку пчелиную королеву и посадите её в улей с помощью правого клика мыши. После этого улей начнёт привлекать пчёл и производить мёд."
+
+SquareHiveEmpty,blocks,Block,,,Bee Hive - Square (Add Queen),Улей - Квадрат (Требуется королева)
+SquareHiveEmptyDesc,blocks,Block,,,"Introduce a Queen Bee to the Bee Hive and over time it will produce honey. A Queen Bee can be found in a special log in the Pine Forest. Chop the log and there is a 50% chance to find a Queen Bee inside.","Поместите пчелиную королеву в улей и через какое-то время начнётся производство мёда. Королеву с шансом 50% можно найти, срубив особое бревно в сосновом лесу."
+SquareBeeHiveQueen,blocks,Block,,,[66ff00]Bees are collecting Nectar,Улей: [66ff00]Пчёлы собирают нектар
+SquareHiveWithHoney,blocks,Block,,,[66ff00]Honey is Ready to Collect,Улей: [66ff00]Мёд готов к сбору
+
+RoofBeeHiveEmpty,blocks,Block,,,Bee Hive - Roof (Add Queen),Улей - Крыша (Требуется королева)
+RoofBeeHiveEmptyDesc,blocks,Block,,,"Introduce a Queen Bee to the Bee Hive and over time it will produce honey. A Queen Bee can be found in a special log in the Pine Forest. Chop the log and there is a 50% chance to find a Queen Bee inside.","Поместите пчелиную королеву в улей и через какое-то время начнётся производство мёда. Королеву с шансом 50% можно найти, срубив топором особое бревно в сосновом лесу."
+RoofBeeHiveQueen,blocks,Block,,,[66ff00]Bees are collecting Nectar,Улей: [66ff00]Пчёлы собирают нектар
+RoofBeeHiveWithHoney,blocks,Block,,,[66ff00]Honey is Ready to Collect,Улей: [66ff00]Мёд готов к сбору
+
+WoodBeeHiveEmpty,blocks,Block,,,Bee Hive - Wood (Add Queen),Улей - Дерево (Требуется королева)
+WoodBeeHiveEmptyDesc,blocks,Block,,,"Introduce a Queen Bee to the Bee Hive and over time it will produce honey. A Queen Bee can be found in a special log in the Pine Forest. Chop the log and there is a 50% chance to find a Queen Bee inside.","Поместите пчелиную королеву в улей и через какое-то время начнётся производство мёда. Королеву с шансом 50% можно найти, срубив топором особое бревно в сосновом лесу."
+WoodBeeHiveQueen,blocks,Block,,,[66ff00]Bees are collecting Nectar,Улей: [66ff00]Пчёлы собирают нектар
+WoodBeeHiveWithHoney,blocks,Block,,,[66ff00]Honey is Ready to Collect,Улей: [66ff00]Мёд готов к сбору
+
+BeeHiveVariantHelper,blocks,Block,,,Bee Hives (Add Queen Bee),Ульи (Требуется королева)
+
+foodHoneyComb,items,Item,,,Honey Comb,Медовые соты
+foodHoneyCombDesc,items,Item,,,"Use the Honey Comb as a standalone snack or as part of a recipe. Provides healing properties. Cures 1% infection.","Можно использовать напрямую в пищу и как ингредиент для рецептов. Излечивает 1% заражения."
+
+foodHoneyBread,items,Food,,,Honey Bread,Бутерброд с мёдом
+foodHoneyBreadDesc,items,Food,,,"A tasty treat with healing properties. Cures 5% infection.","Не только вкусно, но ещё и лечит 5% заражения."
+
+foodHoneyPumpkinPie,items,Food,,,Honey Pumpkin Pie,Тыквенный медовик
+foodHoneyPumpkinPieDesc,items,Food,,,"A tasty treat with healing properties. Cures 5% infection.","Не только вкусно, но ещё и лечит 5% заражения."
+
+foodBlueberryBreadPudding,items,Food,,,Blueberry Bread Pudding,Черничный пудинг
+foodBlueberryBreadPuddingDesc,items,Food,,,"A tasty treat with healing properties. Cures 5% infection.","Не только вкусно, но ещё и лечит 5% заражения."
+
+drinkHoneyBeer,items,Food,,,Honey Beer,Медовуха
+drinkHoneyBeerDesc,items,Food,,,"Unleash your inner berserker to put power in your punch for longer, and cure 5% infection.","Выпустите на волю внутреннего берсерка и бейте врага с большей силой и дольше, чем обычно. Излечивает 5% заражения."

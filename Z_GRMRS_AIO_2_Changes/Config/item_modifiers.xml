@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item_modifiers_aio_2>
+	<!-- Красители (20) -->
+	<append xpath="//item_modifier[starts-with(@name, 'modDye')]">
+		<property name="Stacknumber" value="20"/>
+	</append>
+</item_modifiers_aio_2>

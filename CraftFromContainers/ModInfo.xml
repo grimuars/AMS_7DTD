@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<Name value="CraftFromContainers"/>
-	<DisplayName value="CraftFromContainers"/>
-	<Version value="0.5.0"/>
-	<Description value="Lets you craft items using resources from nearby containers."/>
-	<Author value="aedenthorn"/>
-	<Website value=""/>
-</xml>

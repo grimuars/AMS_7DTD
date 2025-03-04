@@ -1,0 +1,64 @@
+<config>
+	<append xpath="/items">
+		<item name="sortQuestListByName">
+			<property name="HoldType" value="16"/>
+			<property name="Meshfile" value="@:Other/Items/Health/painkillersPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="drugPainkillers"/>
+			<property name="CustomIconTint" value="b0ffb0"/>b0ffb0
+			<property name="ItemTypeIcon" value="computer"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="TintColor" value="255,60,60"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value=".1"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="craft_click_craft"/>
+				<property name="Consume" value="false"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value=".1"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="craft_complete_item"/>
+				<property name="Consume" value="false"/>
+			</property>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="SortQuestOfferList" operation="set" value="1"/>
+			</effect_group>
+		</item>
+		<item name="sortQuestListByDistance">
+			<property name="HoldType" value="16"/>
+			<property name="Meshfile" value="@:Other/Items/Health/painkillersPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="drugPainkillers"/>
+			<property name="CustomIconTint" value="ff4040"/>
+			<property name="ItemTypeIcon" value="computer"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="TintColor" value="255,60,60"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value=".1"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="craft_click_craft"/>
+				<property name="Consume" value="false"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value=".1"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="craft_complete_item"/>
+				<property name="Consume" value="false"/>
+			</property>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="SortQuestOfferList" operation="set" value="0"/>
+			</effect_group>
+		</item>
+	</append>
+</config>

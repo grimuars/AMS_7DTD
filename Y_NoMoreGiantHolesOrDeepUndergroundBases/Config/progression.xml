@@ -1,7 +1,0 @@
-<Configs>
-	<set xpath="/progression/perks/book[@name='perkArtOfMiningComplete']/effect_group">
-		<requirement name="ItemHasTags" tags="miningTool"/>
-		<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-		<passive_effect name="HarvestCount" operation="perc_add" level="1" value=".2" tags="ore"/>
-	</set>
-</Configs>

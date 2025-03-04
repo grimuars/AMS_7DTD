@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui_display_aio_2>
+	<remove xpath="/ui_display_info/crafting_category_display/crafting_category_list[@display_type='campfire']/crafting_category[@name='CFMedical']"/>
+</ui_display_aio_2>

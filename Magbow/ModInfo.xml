@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<Name value="Magbow"/>
+	<DisplayName value="Magbow"/>
+	<Description value="Adds a new Crossbow that has a magazine for a repeating crossbow."/>
+	<Author value="RussianDood"/>
+	<Version value="3.1"/>
+	<Website value="http://7daystodie.com"/>
+	<SkipWithAntiCheat value="true"/>
+</xml>

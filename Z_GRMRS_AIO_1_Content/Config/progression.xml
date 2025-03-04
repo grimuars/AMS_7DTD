@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<progression_aio_1>
+	<!-- Удаляем старый перк по сокровищам -->
+	<remove xpath="/progression/perks/perk[@name='perkTreasureHunter']"/>
+	<!-- Добавляем новый -->
+	<insertAfter xpath="/progression/perks/perk[@name='perkLuckyLooter']">
+		<perk name="perkTreasureHunter" max_level="5" parent="skillPerceptionScavenging" name_key="perkTreasureHunterName" desc_key="perkTreasureHunterDesc" icon="ui_game_symbol_treasure">
+			<level_requirements level="1">
+				<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="6" desc_key="reqPerceptionLevel06"/>
+				<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel06"/>
+			</level_requirements>
+			<level_requirements level="2">
+				<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="7" desc_key="reqPerceptionLevel07"/>
+				<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="reqIntellectLevel07"/>
+			</level_requirements>
+			<level_requirements level="3">
+				<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="8" desc_key="reqPerceptionLevel08"/>
+				<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel08"/>
+			</level_requirements>
+			<level_requirements level="4">
+				<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="9" desc_key="reqPerceptionLevel09"/>
+				<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="9" desc_key="reqIntellectLevel09"/>
+			</level_requirements>
+			<level_requirements level="5">
+				<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="10" desc_key="reqPerceptionLevel10"/>
+				<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/>
+			</level_requirements>
+			<effect_group>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value="0.10" level="1"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value="0.20" level="2"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value="0.30" level="3"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value="0.40" level="4"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value="0.50" level="5"/>
+				<effect_description level="1" desc_key="perkTreasureHunterRank1Desc" long_desc_key="perkTreasureHunterRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkTreasureHunterRank2Desc" long_desc_key="perkTreasureHunterRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkTreasureHunterRank3Desc" long_desc_key="perkTreasureHunterRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkTreasureHunterRank4Desc" long_desc_key="perkTreasureHunterRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkTreasureHunterRank5Desc" long_desc_key="perkTreasureHunterRank5LongDesc"/>
+			</effect_group>
+		</perk>
+	</insertAfter>
+	<!-- Перки для изучения интенсивных патронов и электромода (Crowd Control) -->
+	<append xpath="/progression/perks/book[@name='perkSniperComplete']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo762mmBulletXP,ammoBundle762mmBulletXP"/>
+		</effect_group>
+	</append>
+	<append xpath="/progression/perks/book[@name='perkPistolPeteComplete']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo9mmBulletXP,ammoBundle9mmBulletXP"/>
+		</effect_group>
+	</append>
+	<append xpath="/progression/perks/book[@name='perkEnforcerComplete']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammo44MagnumBulletXP,ammoBundle44MagnumBulletXP"/>
+		</effect_group>
+	</append>
+	<append xpath="/progression/perks/book[@name='perkShotgunMessiahComplete']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoShotgunShellXP,ammoBundleShotgunShellXP"/>
+		</effect_group>
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@name_key='electricianT3']">
+		<unlock_entry item="modGunMeleeNiCdBatteryDA" unlock_tier="1"/>
+	</append>
+	<!-- ХХХХХХХХХХХХ Катана и танто Выжившего ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']">
+		<display_entry item="meleeTantoKnife" unlock_level="25,32,37,43,49,55"/>
+		<display_entry item="meleeKatanaSword" unlock_level="60,66,72,78,84,90"/>
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,90" value="1" tags="meleeTantoKnife"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="32,37,43,49,55,90" value="1,2,3,4,5,5" tags="meleeTantoKnife"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,90" value="1" tags="meleeKatanaSword,partsKatanaBlade,partsKatanaHandle,partsKatanaSpacer"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="60,66,72,78,84,90" value="1,2,3,4,5,5" tags="meleeKatanaSword"/>
+		</effect_group>
+	</append>
+	<!-- КРАФТОВЫЕ ПЕРКИ ДЛЯ НОВОЙ ЕДЫ -->
+	<remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']"/>
+	<append xpath="/progression/crafting_skills">
+		<crafting_skill name="craftingFood" max_level="100" parent="attCrafting" name_key="craftingFoodName" desc_key="craftingFoodDesc" long_desc_key="craftingFoodLongDesc" icon="ui_game_symbol_fork">
+			<display_entry icon="foodCornOnTheCob,foodBakedPotato,foodEggBoiled,foodCornBread,drinkJarGoldenRodTea,foodGrilledMeat,foodBread" name_key="foodT1-1,foodT1-2,foodT1-3,foodT1-4,foodT1-5,foodT1-6,foodT1-7" has_quality="false" unlock_level="2,3,6,7,8,9,12">
+				<unlock_entry item="foodCornOnTheCob" unlock_tier="1"/>
+				<unlock_entry item="foodBakedPotato" unlock_tier="2"/>
+				<unlock_entry item="foodEggBoiled" unlock_tier="3"/>
+				<unlock_entry item="foodCornBread" unlock_tier="4"/>
+				<unlock_entry item="drinkJarGoldenRodTea" unlock_tier="5"/>
+				<unlock_entry item="foodGrilledMeat" unlock_tier="6"/>
+				<unlock_entry item="foodDough,foodBread" unlock_tier="7"/>
+			</display_entry>
+			<display_entry icon="foodBoiledMeat,drinkJarRedTea,foodBaconAndEggs,foodChickenFriedRice,foodPumpkinBread" name_key="foodT2-1,foodT2-2,foodT2-3,foodT2-4,foodT2-5" has_quality="false" unlock_level="15,17,19,21,25">
+				<unlock_entry item="foodBoiledMeat" unlock_tier="1"/>
+				<unlock_entry item="drinkJarRedTea" unlock_tier="2"/>
+				<unlock_entry item="foodBaconAndEggs" unlock_tier="3"/>
+				<unlock_entry item="foodChickenFriedRice" unlock_tier="4"/>
+				<unlock_entry item="foodPumpkinBread,foodHoneyBread" unlock_tier="5"/>
+			</display_entry>
+			<display_entry icon="drinkJarYuccaJuice,foodShamSandwichFresh,foodHotdog,drinkBlueberryJuice,drinkYuccaJuiceSmoothie" name_key="foodT3-1,foodT3-2,foodT3-3,foodT3-4,foodT3-5" has_quality="false" unlock_level="27,29,31,32,34">
+				<unlock_entry item="drinkJarYuccaJuice" unlock_tier="1"/>
+				<unlock_entry item="foodShamSandwichFresh,foodEggSandwich" unlock_tier="2"/>
+				<unlock_entry item="foodHotdog" unlock_tier="3"/>
+				<unlock_entry item="drinkBlueberryJuice" unlock_tier="4"/>
+				<unlock_entry item="drinkYuccaJuiceSmoothie" unlock_tier="5"/>
+			</display_entry>
+			<display_entry icon="foodBlueberryPie,drinkJarCoffee,foodBeefTaco,foodHamburger,drinkBlueberrySmoothie" name_key="foodT4-1,foodT4-2,foodT4-3,foodT4-4,foodT4-5" has_quality="false" unlock_level="37,39,41,43,45">
+				<unlock_entry item="foodBlueberryPie" unlock_tier="1"/>
+				<unlock_entry item="drinkJarCoffee" unlock_tier="2"/>
+				<unlock_entry item="foodBeefTaco" unlock_tier="3"/>
+				<unlock_entry item="foodHamburger" unlock_tier="4"/>
+				<unlock_entry item="drinkBlueberrySmoothie" unlock_tier="5"/>
+			</display_entry>
+			<display_entry icon="foodSteakAndPotato,foodVegetableStew,foodHoboStew,drinkHoneyBeer" name_key="foodT5-1,foodT5-2,foodT5-3,foodT5-4" has_quality="false" unlock_level="48,50,51,53">
+				<unlock_entry item="foodSteakAndPotato" unlock_tier="1"/>
+				<unlock_entry item="foodVegetableStew" unlock_tier="2"/>
+				<unlock_entry item="foodHoboStew,foodChickenStew" unlock_tier="3"/>
+				<unlock_entry item="drinkHoneyBeer" unlock_tier="4"/>
+			</display_entry>
+			<display_entry icon="foodChiliDog,foodFishTacos,foodShamChowder,drinkJarBeer" name_key="foodT6-1,foodT6-2,foodT6-3,foodT6-4" has_quality="false" unlock_level="60,62,65,67">
+				<unlock_entry item="foodChiliDog" unlock_tier="1"/>
+				<unlock_entry item="foodFishTacos" unlock_tier="2"/>
+				<unlock_entry item="foodShamChowder" unlock_tier="3"/>
+				<unlock_entry item="drinkJarBeer" unlock_tier="4"/>
+			</display_entry>
+			<display_entry icon="foodTunaFishGravyToast,foodPumpkinPie,drinkJarGrandpasAwesomeSauce,foodChickenParmesan,foodPumpkinCheesecake,drinkCanMegaCrush" name_key="foodT7-1,foodT7-2,foodT7-3,foodT7-4,foodT7-5,foodT7-6" has_quality="false" unlock_level="69,71,73,74,76,78">
+				<unlock_entry item="foodTunaFishGravyToast" unlock_tier="1"/>
+				<unlock_entry item="foodPumpkinPie" unlock_tier="2"/>
+				<unlock_entry item="drinkJarGrandpasAwesomeSauce" unlock_tier="3"/>
+				<unlock_entry item="foodChickenParmesan" unlock_tier="4"/>
+				<unlock_entry item="foodPumpkinCheesecake" unlock_tier="5"/>
+				<unlock_entry item="drinkCanMegaCrush" unlock_tier="6"/>
+			</display_entry>
+			<display_entry icon="foodShepardsPie,foodHoneyPumpkinPie,foodBlueberryBreadPudding,foodMeatStew" name_key="foodT8-1,foodT8-2,foodT8-3,foodT8-4" has_quality="false" unlock_level="82,84,86,88">
+				<unlock_entry item="foodShepardsPie" unlock_tier="1"/>
+				<unlock_entry item="foodHoneyPumpkinPie" unlock_tier="2"/>
+				<unlock_entry item="foodBlueberryBreadPudding" unlock_tier="3"/>
+				<unlock_entry item="foodMeatStew" unlock_tier="4"/>
+			</display_entry>
+			<display_entry icon="foodEggQuiche,drinkJarGrandpasLearningElixir,foodGumboStew" name_key="foodT9-1,foodT9-2,foodT9-3" has_quality="false" unlock_level="90,96,100">
+				<unlock_entry item="foodSpaghetti,foodEggQuiche" unlock_tier="1"/>
+				<unlock_entry item="drinkJarGrandpasLearningElixir" unlock_tier="2"/>
+				<unlock_entry item="foodGumboStew" unlock_tier="3"/>
+			</display_entry>
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,100" value="1" tags="foodCornOnTheCob"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,100" value="1" tags="foodBakedPotato"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,100" value="1" tags="foodEggBoiled"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="7,100" value="1" tags="foodCornBread"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8,100" value="1" tags="drinkJarGoldenRodTea"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="9,100" value="1" tags="foodGrilledMeat"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="12,100" value="1" tags="foodDough"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="12,100" value="1" tags="foodBread"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,100" value="1" tags="foodBoiledMeat"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="17,100" value="1" tags="drinkJarRedTea"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="19,100" value="1" tags="foodBaconAndEggs"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="21,100" value="1" tags="foodChickenFriedRice"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="foodPumpkinBread"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="foodHoneyBread"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="27,100" value="1" tags="drinkJarYuccaJuice"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="29,100" value="1" tags="foodShamSandwichFresh"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="29,100" value="1" tags="foodEggSandwich"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="31,100" value="1" tags="foodHotdog"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="32,100" value="1" tags="drinkBlueberryJuice"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="34,100" value="1" tags="drinkYuccaJuiceSmoothie"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="37,100" value="1" tags="foodBlueberryPie"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="39,100" value="1" tags="drinkJarCoffee"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="41,100" value="1" tags="foodBeefTaco"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="43,100" value="1" tags="foodHamburger"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="foodVegetableStew"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="48,100" value="1" tags="drinkBlueberrySmoothie"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="foodSteakAndPotato"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="51,100" value="1" tags="foodHoboStew"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="51,100" value="1" tags="foodChickenStew"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="53,100" value="1" tags="drinkHoneyBeer"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="foodChiliDog"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="62,100" value="1" tags="foodFishTacos"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="65,100" value="1" tags="foodShamChowder"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="67,100" value="1" tags="drinkJarBeer"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="69,100" value="1" tags="foodTunaFishGravyToast"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="71,100" value="1" tags="foodPumpkinPie"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="73,100" value="1" tags="drinkJarGrandpasAwesomeSauce"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="74,100" value="1" tags="foodChickenParmesan"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="76,100" value="1" tags="foodPumpkinCheesecake"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="78,100" value="1" tags="drinkCanMegaCrush"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="82,100" value="1" tags="foodShepardsPie"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="84,100" value="1" tags="foodHoneyPumpkinPie"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="86,100" value="1" tags="foodBlueberryBreadPudding"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="88,100" value="1" tags="foodMeatStew"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="90,100" value="1" tags="foodSpaghetti"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="90,100" value="1" tags="foodEggQuiche"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="96,100" value="1" tags="drinkJarGrandpasLearningElixir"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="foodGumboStew"/>
+			</effect_group>
+		</crafting_skill>
+	</append>
+	<!-- КРАФТОВЫЕ ПЕРКИ ДЛЯ НОВЫХ СЕМЯН -->
+	<remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingSeeds']"/>
+	<append xpath="/progression/crafting_skills">
+		<crafting_skill name="craftingSeeds" max_level="100" parent="attCrafting" name_key="craftingSeedsName" desc_key="craftingSeedsDesc" long_desc_key="craftingSeedsLongDesc" icon="ui_game_symbol_crops">
+			<display_entry icon="plantedGoldenrod1,plantedChrysanthemum1,plantedYucca1,plantedAloe1" name_key="seedsT1-1,seedsT1-2,seedsT1-3,seedsT1-4" has_quality="false" unlock_level="6,14,23,27">
+				<unlock_entry item="plantedGoldenrod1" unlock_tier="1"/>
+				<unlock_entry item="plantedChrysanthemum1" unlock_tier="2"/>
+				<unlock_entry item="plantedYucca1" unlock_tier="3"/>
+				<unlock_entry item="plantedAloe1" unlock_tier="4"/>
+			</display_entry>
+			<display_entry icon="plantedBlueberry1,plantedPotato1,plantedMushroom1" name_key="seedsT2-1,seedsT2-2,seedsT2-3" has_quality="false" unlock_level="36,44,52">
+				<unlock_entry item="plantedBlueberry1" unlock_tier="1"/>
+				<unlock_entry item="plantedPotato1" unlock_tier="2"/>
+				<unlock_entry item="plantedMushroom1" unlock_tier="3"/>
+			</display_entry>
+			<display_entry icon="plantedCotton1,plantedCorn1,plantedWheat1" name_key="seedsT3-1,seedsT3-2,seedsT3-3" has_quality="false" unlock_level="61,69,75">
+				<unlock_entry item="plantedCotton1" unlock_tier="1"/>
+				<unlock_entry item="plantedCorn1" unlock_tier="2"/>
+				<unlock_entry item="plantedWheat1" unlock_tier="3"/>
+			</display_entry>
+			<display_entry icon="plantedCoffee1,plantedHop1,plantedPumpkin1" name_key="seedsT4-1,seedsT4-2,seedsT4-3" has_quality="false" unlock_level="82,93,100">
+				<unlock_entry item="plantedPumpkin1" unlock_tier="2"/>
+				<unlock_entry item="plantedHop1" unlock_tier="2"/>
+				<unlock_entry item="plantedCoffee1" unlock_tier="3"/>
+			</display_entry>
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,100" value="1" tags="plantedGoldenrod1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="14,100" value="1" tags="plantedChrysanthemum1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="23,100" value="1" tags="plantedYucca1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="27,100" value="1" tags="plantedAloe1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="36,100" value="1" tags="plantedBlueberry1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="44,100" value="1" tags="plantedPotato1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="52,100" value="1" tags="plantedMushroom1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="61,100" value="1" tags="plantedCotton1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="69,100" value="1" tags="plantedCorn1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="plantedWheat1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="82,100" value="1" tags="plantedPumpkin1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="93,100" value="1" tags="plantedHop1"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="plantedCoffee1"/>
+			</effect_group>
+		</crafting_skill>
+	</append>
+</progression_aio_1>

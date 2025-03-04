@@ -1,0 +1,8 @@
+<CATUI>
+   <!-- 驼骡技能 -->
+   <set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity']/@value">5,14,27,42,59</set>
+   <!-- 消防员杂志，火烧地全解锁 -->
+   <set xpath="/progression/perks/book[@name='perkFiremansAlmanacComplete']/effect_group/passive_effect[@name='CarryCapacity']/@value">91</set>
+   <!-- 夜行者杂志，夜间全解锁 -->
+   <set xpath="/progression/perks/book[@name='perkNightStalkerThiefAdrenaline']/effect_group/passive_effect[@name='CarryCapacity']/@value">91</set>
+</CATUI>

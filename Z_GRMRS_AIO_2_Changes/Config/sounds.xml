@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sounds_aio_2>
+	<!-- Самый раздражающий звук сделан тише -->
+	<set xpath="/Sounds/SoundDataNode[@name='keystone_impact_overlay']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?keystone_impact_overlay</set>
+	<!-- Звуки уничтожения -->
+	<set xpath="/Sounds/SoundDataNode[@name='earthDestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?earthDestroy1</set>
+	<set xpath="/Sounds/SoundDataNode[@name='earthDestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?earthDestroy2</set>
+	<set xpath="/Sounds/SoundDataNode[@name='earthDestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?earthDestroy3</set>
+	<set xpath="/Sounds/SoundDataNode[@name='earthDestroy1']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?earthDestroy1</set>
+	<set xpath="/Sounds/SoundDataNode[@name='earthDestroy2']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?earthDestroy2</set>
+	<set xpath="/Sounds/SoundDataNode[@name='earthDestroy3']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?earthDestroy3</set>
+	<set xpath="/Sounds/SoundDataNode[@name='glassdestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?glassdestroy1</set>
+	<set xpath="/Sounds/SoundDataNode[@name='glassdestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?glassdestroy2</set>
+	<set xpath="/Sounds/SoundDataNode[@name='glassdestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?glassdestroy3</set>
+	<set xpath="/Sounds/SoundDataNode[@name='glassdestroy1']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?glassdestroy1</set>
+	<set xpath="/Sounds/SoundDataNode[@name='glassdestroy2']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?glassdestroy2</set>
+	<set xpath="/Sounds/SoundDataNode[@name='glassdestroy3']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?glassdestroy3</set>
+	<set xpath="/Sounds/SoundDataNode[@name='metaldestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metaldestroy1</set>
+	<set xpath="/Sounds/SoundDataNode[@name='metaldestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metaldestroy2</set>
+	<set xpath="/Sounds/SoundDataNode[@name='metaldestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metaldestroy3</set>
+	<set xpath="/Sounds/SoundDataNode[@name='metaldestroy1']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metaldestroy1</set>
+	<set xpath="/Sounds/SoundDataNode[@name='metaldestroy2']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metaldestroy2</set>
+	<set xpath="/Sounds/SoundDataNode[@name='metaldestroy3']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metaldestroy3</set>
+	<set xpath="/Sounds/SoundDataNode[@name='wooddestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?wooddestroy1</set>
+	<set xpath="/Sounds/SoundDataNode[@name='wooddestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?wooddestroy2</set>
+	<set xpath="/Sounds/SoundDataNode[@name='wooddestroy']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?wooddestroy3</set>
+	<set xpath="/Sounds/SoundDataNode[@name='wooddestroy1']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?wooddestroy1</set>
+	<set xpath="/Sounds/SoundDataNode[@name='wooddestroy2']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?wooddestroy2</set>
+	<set xpath="/Sounds/SoundDataNode[@name='wooddestroy3']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?wooddestroy3</set>
+	<!-- Попадание по объектам -->
+	<set xpath="/Sounds/SoundDataNode[@name='metalhitmetal']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metalhitmetal1</set>
+	<set xpath="/Sounds/SoundDataNode[@name='metalhitmetal']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metalhitmetal2</set>
+	<set xpath="/Sounds/SoundDataNode[@name='metalhitmetal']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?metalhitmetal3</set>
+	<!-- Деревья -->
+	<set xpath="/Sounds/SoundDataNode[@name='treefallimpact']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?treefallimpact1</set>
+	<set xpath="/Sounds/SoundDataNode[@name='treefallimpact']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?treefallimpact2</set>
+	<set xpath="/Sounds/SoundDataNode[@name='treefallimpact']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?treefallimpact3</set>
+	<set xpath="/Sounds/SoundDataNode[@name='treefallimpact']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?treefallimpact4</set>
+	<set xpath="/Sounds/SoundDataNode[@name='treefallimpact']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?treefallimpact5</set>
+	<set xpath="/Sounds/SoundDataNode[@name='trunkbreak']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?trunkbreak1</set>
+	<!-- когда ломается древо -->
+	<set xpath="/Sounds/SoundDataNode[@name='trunkbreak']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?trunkbreak2</set>
+	<set xpath="/Sounds/SoundDataNode[@name='trunkbreak']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?trunkbreak3</set>
+	<set xpath="/Sounds/SoundDataNode[@name='trunkbreak']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?trunkbreak4</set>
+	<set xpath="/Sounds/SoundDataNode[@name='trunkbreak']/AudioClip/@ClipName">#@modfolder:Resources/loudsoundslowered.unity3d?trunkbreak5</set>
+	<!-- Автоматический дробовик тише -->
+	<set xpath="/Sounds/SoundDataNode[@name='autoshotgun_fire']/AudioClip[1]/@ClipName">#@modfolder:Resources/PGQquieterautoshotty.unity3d?Sounds/Weapons/Ranged/AutoShotgun/autoshotgun_fire1-10</set>
+	<set xpath="/Sounds/SoundDataNode[@name='autoshotgun_fire']/AudioClip[2]/@ClipName">#@modfolder:Resources/PGQquieterautoshotty.unity3d?Sounds/Weapons/Ranged/AutoShotgun/autoshotgun_fire2-10</set>
+	<set xpath="/Sounds/SoundDataNode[@name='autoshotgun_fire']/AudioClip[3]/@ClipName">#@modfolder:Resources/PGQquieterautoshotty.unity3d?Sounds/Weapons/Ranged/AutoShotgun/autoshotgun_fire3-10</set>
+</sounds_aio_2>

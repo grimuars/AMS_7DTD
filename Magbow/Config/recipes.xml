@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<append xpath="/recipes">
+		<recipe name="Magbow" count="1" tags="learnable,magbow" craft_area="workbench" craft_time="720">
+			<ingredient name="gunBowT1WoodenBowParts" count="8"/>
+			<ingredient name="resourceMechanicalParts" count="50"/>
+			<ingredient name="resourceLegendaryParts" count="1"/>
+			<ingredient name="resourceGlue" count="5"/>
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="gunBowT1WoodenBowParts,resourceMechanicalParts,resourceGlue,resourceForgedSteel"/>
+				<passive_effect name="CraftingIngredientCount" level="4,5,6" operation="base_add" value="1,1,1" tags="resourceLegendaryParts"/>
+			</effect_group>
+		</recipe>
+		<recipe name="MagbowScopeLarge" count="1" craft_time="10">
+			<ingredient name="modGunScopeLarge" count="1"/>
+		</recipe>
+		<recipe name="modGunScopeLarge" count="1" craft_time="10">
+			<ingredient name="MagbowScopeLarge" count="1"/>
+		</recipe>
+	</append>
+</configs>

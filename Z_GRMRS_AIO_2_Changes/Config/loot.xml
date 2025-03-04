@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loot_aio_2>
+	<!-- Убираем из лута 4-6 качество -->
+	<remove xpath="/lootcontainers/lootqualitytemplates/lootqualitytemplate/qualitytemplate/loot[@quality='4']"/>
+	<remove xpath="/lootcontainers/lootqualitytemplates/lootqualitytemplate/qualitytemplate/loot[@quality='5']"/>
+	<append xpath="/lootcontainers/lootqualitytemplates/lootqualitytemplate/qualitytemplate">
+		<loot quality="1" prob="1"/>
+	</append>
+	<!-- Убираем из лута модификацию на ускорение -->
+	<remove xpath="/lootcontainers/lootgroup/item[contains(@name,'modVehicleSuperCharger')]"/>
+	<!-- Удаляем карты сокровищ из лута -->
+	<remove xpath="/lootcontainers/lootgroup[@name='groupTreasureMaps']"/>
+	<remove xpath="/lootcontainers//item[contains (@group, 'groupTreasureMaps')]"/>
+	<!--Отключаем жроны -->
+	<remove xpath="/lootcontainers/lootgroup/item[contains(@name,'Drone')]"/>
+	<!-- Уменьшаем общую вероятность лута -->
+	<set xpath="//lootprobtemplate[@name='veryLow']/loot[@level='1,999999']/@prob">.01</set>
+	<set xpath="//lootprobtemplate[@name='low']/loot[@level='1,999999']/@prob">.05</set>
+	<set xpath="//lootprobtemplate[@name='medLow']/loot[@level='1,999999']/@prob">.09</set>
+	<set xpath="//lootprobtemplate[@name='med']/loot[@level='1,999999']/@prob">.13</set>
+	<set xpath="//lootprobtemplate[@name='medHigh']/loot[@level='1,999999']/@prob">.17</set>
+	<set xpath="//lootprobtemplate[@name='high']/loot[@level='1,999999']/@prob">.24</set>
+	<!-- Лут для пластиковых бочек -->
+	<append xpath="/lootcontainers">
+		<lootcontainer name="cntBarrelPlasticSingle00" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="drinkJarRiverWater" count="0,3" prob="1"/>
+			<item name="resourceScrapPolymers" count="8,14"/>
+		</lootcontainer>
+	</append>
+	<!-- Лут для тостера -->
+	<append xpath="/lootcontainers">
+		<lootcontainer name="cntToaster" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate">
+			<item name="foodShamSandwich" count="0,2" prob="0.5"/>
+		</lootcontainer>
+	</append>
+	<!-- Патронов в луте меньше -->
+	<set xpath="//lootgroup[@name='group9mmSmall']/item[@name='ammo9mmBulletBall']/@count">5,10</set>
+	<set xpath="//lootgroup[@name='group9mmMedium']/item[@name='ammo9mmBulletBall']/@count">10,15</set>
+	<set xpath="//lootgroup[@name='group9mmLarge']/item[@name='ammo9mmBulletBall']/@count">15,25</set>
+	<set xpath="//lootgroup[@name='group762mmSmall']/item[@name='ammo762mmBulletBall']/@count">5,20</set>
+	<set xpath="//lootgroup[@name='group762mmMedium']/item[@name='ammo762mmBulletBall']/@count">10,15</set>
+	<set xpath="//lootgroup[@name='group762mmLarge']/item[@name='ammo762mmBulletBall']/@count">15,25</set>
+	<set xpath="//lootgroup[@name='group44MagnumSmall']/item[@name='ammo44MagnumBulletBall']/@count">5,10</set>
+	<set xpath="//lootgroup[@name='group44MagnumMedium']/item[@name='ammo44MagnumBulletBall']/@count">10,15</set>
+	<set xpath="//lootgroup[@name='group44MagnumLarge']/item[@name='ammo44MagnumBulletBall']/@count">15,25</set>
+	<set xpath="//lootgroup[@name='groupShotgunShellSmall']/item[@name='ammoShotgunShell']/@count">2,6</set>
+	<set xpath="//lootgroup[@name='groupShotgunShellMedium']/item[@name='ammoShotgunShell']/@count">5,10</set>
+	<set xpath="//lootgroup[@name='groupShotgunShellLarge']/item[@name='ammoShotgunShell']/@count">10,15</set>
+	<!-- Вероятность получения журналов -->
+	<setattribute xpath="//lootgroup[@name='groupSavageCountryBooks']/item[contains(@name, 'SkillMagazine')]" name="loot_prob_template">med</setattribute>
+	<set xpath="//lootgroup[@name='groupSavageCountryCrate01']/item[contains(@name, 'SkillMagazine')]/@loot_prob_template">med</set>
+	<setattribute xpath="//lootgroup[@name='skillMagazines']/item[contains(@name, 'SkillMagazine')]" name="loot_prob_template">med</setattribute>
+	<!-- AP и HP патроны в луте -->
+	<append xpath="//lootgroup[@name='group9mmMedium']">
+		<item name="ammo9mmBulletHP" count="5,10" prob=".3"/>
+		<item name="ammo9mmBulletAP" count="5,10" prob=".3"/>
+	</append>
+	<append xpath="//lootgroup[@name='group9mmLarge']">
+		<item name="ammo9mmBulletHP" count="10,15" prob=".3"/>
+		<item name="ammo9mmBulletAP" count="10,15" prob=".3"/>
+	</append>
+	<append xpath="//lootgroup[@name='group762mmMedium']">
+		<item name="ammo762mmBulletHP" count="5,10" prob=".3"/>
+		<item name="ammo762mmBulletAP" count="5,10" prob=".3"/>
+	</append>
+	<append xpath="//lootgroup[@name='group762mmLarge']">
+		<item name="ammo762mmBulletHP" count="10,15" prob=".3"/>
+		<item name="ammo762mmBulletAP" count="10,15" prob=".3"/>
+	</append>
+	<append xpath="//lootgroup[@name='group44MagnumMedium']">
+		<item name="ammo44MagnumBulletHP" count="5,10" prob=".3"/>
+		<item name="ammo44MagnumBulletAP" count="5,10" prob=".3"/>
+	</append>
+	<append xpath="//lootgroup[@name='group44MagnumLarge']">
+		<item name="ammo44MagnumBulletHP" count="10,15" prob=".3"/>
+		<item name="ammo44MagnumBulletAP" count="10,15" prob=".3"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupShotgunShellMedium']">
+		<item name="ammoShotgunSlug" count="1,10" prob=".3"/>
+		<item name="ammoShotgunBreachingSlug" count="2,6" prob=".3"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupShotgunShellLarge']">
+		<item name="ammoShotgunSlug" count="1,15" prob=".3"/>
+		<item name="ammoShotgunBreachingSlug" count="5,10" prob=".3"/>
+	</append>
+	<!-- Лут с разрушителей -->
+	<set xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_Demolitionist']">
+		<item name="thrownDynamite" count="1,2"/>
+		<item name="thrownGrenade" count="1,2"/>
+		<item group="groupAmmoRocket" prob="0.3" count="0,1"/>
+	</set>
+	<set xpath="/lootcontainers/lootgroup[@name='groupWeaponsT3_Demolitionist']">
+		<item group="groupWeaponsT3_Demolitionist01" prob="0.4"/>
+		<item group="groupAmmoRocket" prob="0.6" count="0,1"/>
+		<item name="thrownGrenadeContact" count="1,2"/>
+		<item name="thrownTimedCharge" count="1,2"/>
+	</set>
+	<!-- Бронзы в луте меньше -->
+	<set xpath="/lootcontainers/lootgroup[@name='groupScrapUncommon']">
+		<item name="resourceScrapBrass" count="25,75"/>
+	</set>
+	<!-- Ракет тоже меньше -->
+	<set xpath="/lootcontainers/lootgroup[@name='groupAmmoRocket']">
+		<item name="ammoRocketHE" count="1,3"/>
+		<item name="ammoRocketFrag" count="1,3"/>
+	</set>
+	<!-- Жир и сырое мясо нельзя найти в луте -->
+	<remove xpath="//item[@name='resourceAnimalFat']"/>
+	<remove xpath="//item[@name='foodRawMeat']"/>
+	<!-- В мелком луте меньше брони -->
+	<set xpath="//lootgroup[@name='groupFootlocker02']/item[@group='groupArmorScaled']/@loot_prob_template">veryLow</set>
+	<set xpath="//lootgroup[@name='groupLuggage02']/item[@group='groupArmorScaled']/@loot_prob_template">veryLow</set>
+	<set xpath="//lootgroup[@name='groupLocker01']/item[@group='groupArmorScaled']/@loot_prob_template">veryLow</set>
+	<set xpath="//lootgroup[@name='groupCloset02']/item[@group='groupArmorScaled']/@loot_prob_template">veryLow</set>
+	<set xpath="//lootgroup[@name='groupLuggage02']/item[@group='groupArmorScaled']/@loot_prob_template">veryLow</set>
+	<!-- Убираем модификации из части контейнеров -->
+	<remove xpath="/lootcontainers/lootgroup[@name='groupBackpacks02']/item[@group='groupWeaponModsScaled']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='groupLocker02']/item[@group='groupWeaponModsScaled']"/>
+	<!-- *** -->
+	<remove xpath="/lootcontainers/lootgroup[@name='groupSavageCountryCrate01']/item[@group='groupArmorModsScaled']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='groupFarmTruck04']"/>
+	<insertafter xpath="/lootcontainers/lootgroup[@name='groupFarmTruck03']">
+		<lootgroup name="groupFarmTruck04">
+			<item name="vehiclesSkillMagazine" loot_prob_template="low"/>
+			<item group="toolParts" loot_prob_template="low"/>
+		</lootgroup>
+	</insertafter>
+	<!-- *** -->
+	<remove xpath="/lootcontainers/lootgroup[@name='groupZpackReg04']/item[@group='groupModAllScaled']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='groupZpackStrong04']/item[@group='groupModAllScaled']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='groupSmallSafeLoot01']/item[@group='groupModAllScaled']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='groupHiddenStash01']/item[@group='groupModAllScaled']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='groupFootlocker02']/item[@group='groupModAllScaled']"/>
+</loot_aio_2>

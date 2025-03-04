@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<windows_aio_2>
+	<!-- Тень и обводка -->
+	<setattribute xpath="//label" name="effect">outline</setattribute>
+	<setattribute xpath="//label" name="effect_color">[black]</setattribute>
+	<setattribute xpath="//label" name="effect_distance">1,1</setattribute>
+	<!-- Удаляем окно новостей -->
+	<!-- <remove xpath="/windows/window[@name='newsWindow']" /> -->
+</windows_aio_2>

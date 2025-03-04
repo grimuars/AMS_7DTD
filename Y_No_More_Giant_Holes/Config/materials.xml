@@ -1,0 +1,40 @@
+<Configs>
+	<append xpath="/materials">
+		<material id="OreRock">
+			<property name="damage_category" value="stone"/>
+			<property name="surface_category" value="stone"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="stone"/>
+			<property name="stability_glue" value="120"/>
+			<property name="Mass" type="int" value="10"/>
+			<property name="MaxDamage" value="1500"/>
+			<property name="Experience" value="1"/>
+		</material>
+		<material id="OreStone">
+			<property name="damage_category" value="stone"/>
+			<property name="surface_category" value="stone"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="stone"/>
+			<property name="stability_glue" value="120"/>
+			<property name="Mass" type="int" value="10"/>
+			<property name="MaxDamage" value="5000"/>
+			<property name="Experience" value="1"/>
+		</material>
+		<material id="OreMetal">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="lead"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="stability_glue" value="300"/>
+			<property name="Mass" type="int" value="20"/>
+			<property name="MaxDamage" value="5000"/>
+			<property name="Experience" value="1"/>
+		</material>
+	</append>
+	<!-- Добавляем материалу бедрока плодородность и звук ходьбы -->
+	<append xpath="/materials/material[@id='Mbedrock']">
+		<property name="fertile_level" value="5"/>
+	</append>
+	<set xpath="/materials/material[@id='Mbedrock']/property[@name='stepsound']/@value">dirt</set>
+</Configs>

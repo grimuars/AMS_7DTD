@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rwgmixer_aio_2>
+	<!-- 1 Меняем биомы торговцам -->
+	<set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_rekt']/@biomeTags">burntforest, wasteland</set>
+	<set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_jen']/@biomeTags">forest</set>
+	<set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_bob']/@biomeTags">desert, burntforest</set>
+	<set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_hugh']/@biomeTags">desert</set>
+	<set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_joel']/@biomeTags">snow</set>
+	<!-- 2 Лесные города -->
+	<set xpath="/rwgmixer/township[@name='countrytown']/property[@name='biomes']/@value">forest,burntforest,desert,snow</set>
+	<set xpath="/rwgmixer/township[@name='town']/property[@name='biomes']/@value">forest,burntforest,desert,snow</set>
+	<set xpath="/rwgmixer/township[@name='city']/property[@name='biomes']/@value">forest,burntforest,desert,snow</set>
+</rwgmixer_aio_2>

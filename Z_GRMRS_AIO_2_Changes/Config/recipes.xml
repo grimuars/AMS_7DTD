@@ -1,0 +1,1614 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recipes_aio_2>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ИЗМЕНЕНИЯ В РЕЦЕПТАХ (КРОМЕ ЕДЫ) -->
+	<!-- РЕЦЕПТЫ, ПО ВОЗМОЖНОСТИ, РАСПОЛОЖЕНЫ В ПОРЯДКЕ ОРИГИНАЛЬНОГО RECIPES.XML -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Ресурсы в кузнице -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- <setattribute xpath="/recipes/recipe[@name='resourceCrushedSand'][@material_based='true']" name="craft_area">forge,forgelow</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='resourceRockSmall'][@material_based='true']" name="craft_area">forge,forgelow</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='resourceScrapBrass'][@material_based='true']" name="craft_area">forge,forgelow</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='resourceScrapIron'][@material_based='true']" name="craft_area">forge,forgelow</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='resourceScrapLead'][@material_based='true']" name="craft_area">forge,forgelow</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='resourceClayLump'][@material_based='true']" name="craft_area">forge,forgelow</setattribute> -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Коробки с ресами - на верстаки -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[starts-with(@name, 'resource') and contains(@name,'Bundle')]" name="craft_area">workbench</setattribute>
+	<set xpath="/recipes/recipe[@name='resourceRockSmallBundle']/ingredient[@name='resourceRockSmall']/@count">10000</set>
+	<set xpath="/recipes/recipe[@name='resourceWoodBundle']/ingredient[@name='resourceWood']/@count">10000</set>
+	<set xpath="/recipes/recipe[@name='resourceScrapIronBundle']/ingredient[@name='resourceScrapIron']/@count">10000</set>
+	<set xpath="/recipes/recipe[@name='resourcePotassiumNitratePowderBundle']/ingredient[@name='resourcePotassiumNitratePowder']/@count">10000</set>
+	<set xpath="/recipes/recipe[@name='resourceLeadBundle']/ingredient[@name='resourceScrapLead']/@count">10000</set>
+	<set xpath="/recipes/recipe[@name='resourceCoalBundle']/ingredient[@name='resourceCoal']/@count">10000</set>
+	<set xpath="/recipes/recipe[@name='resourceOilShaleBundle']/ingredient[@name='resourceOilShale']/@count">10000</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ДРОБЬ, ПУЛИ, ГИЛЬЗЫ, НАКОНЕЧНИКИ, ПОРОХ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<append xpath="/recipes">
+		<!-- Дробь (1000) новый бандл -->
+		<recipe name="resourceBuckshotBundle" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBuckshot" count="1000"/>
+		</recipe>
+		<!-- Дробь (1000) новый бандл -->
+		<!-- Рецепт для кузницы, поэтому -20% по ресам -->
+		<recipe name="resourceBuckshotBundle" count="1" craft_time="2200" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering">
+			<ingredient name="unit_lead" count="2400"/>
+			<ingredient name="unit_clay" count="800"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_lead"/>
+			</effect_group>
+		</recipe>
+		<!-- Гильзы(1000) новый бандл -->
+		<recipe name="resourceBulletCasingBundle" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletCasing" count="1000"/>
+		</recipe>
+		<!-- Гильзы(1000) новый бандл -->
+		<!-- Рецепт для кузницы, поэтому -20% по ресам -->
+		<recipe name="resourceBulletCasingBundle" count="1" craft_time="3300" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering">
+			<ingredient name="unit_brass" count="4800"/>
+			<ingredient name="unit_clay" count="800"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_brass"/>
+			</effect_group>
+		</recipe>
+		<!-- Пули (1000) новый бандл -->
+		<recipe name="resourceBulletTipBundle" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="1000"/>
+		</recipe>
+		<!-- Пули (1000) новый бандл -->
+		<!-- Рецепт для кузницы, поэтому -20% по ресам -->
+		<recipe name="resourceBulletTipBundle" count="1" craft_time="1650" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering">
+			<ingredient name="unit_lead" count="1600"/>
+			<ingredient name="unit_clay" count="800"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_lead"/>
+			</effect_group>
+		</recipe>
+		<!-- Железные наконечники (1000) новый бандл -->
+		<recipe name="resourceArrowHeadIronBundle" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceArrowHeadIron" count="1000"/>
+		</recipe>
+		<!-- Железные наконечники (1000) новый бандл -->
+		<!-- Рецепт для кузницы, поэтому -20% по ресам -->
+		<recipe name="resourceArrowHeadIronBundle" count="1" craft_time="900" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="1600"/>
+			<ingredient name="unit_clay" count="800"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<!-- Стальные наконечники (1000) новый бандл -->
+		<recipe name="resourceArrowHeadSteelAPBundle" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceArrowHeadSteelAP" count="1000"/>
+		</recipe>
+		<!-- Стальные наконечники (1000) новый бандл -->
+		<!-- Рецепт для кузницы, поэтому -20% по ресам -->
+		<recipe name="resourceArrowHeadSteelAPBundle" count="1" craft_time="1650" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering" craft_tool="toolForgeCrucible">
+			<ingredient name="unit_iron" count="5600"/>
+			<ingredient name="unit_clay" count="800"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="unit_clay,unit_iron"/>
+			</effect_group>
+		</recipe>
+		<!-- Порох (1000) новый бандл -->
+		<recipe name="resourceGunPowderBundle" count="1" craft_time="60">
+			<ingredient name="resourceGunPowder" count="10000"/>
+		</recipe>
+	</append>
+	<!-- Порох -->
+	<remove xpath="/recipes/recipe[@name='resourceGunPowder']"/>
+	<!-- *** -->
+	<append xpath="/recipes">
+		<recipe name="resourceGunPowder" count="1" craft_time="2" craft_area="chemistryStation" tags="chemStationCrafting">
+			<ingredient name="resourceCoal" count="1"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="1"/>
+		</recipe>
+		<recipe name="resourceGunPowderBundle" count="1" craft_time="2000" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+			<ingredient name="resourceCoal" count="800"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="800"/>
+		</recipe>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Патроны -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!--9 мм изменения в рецепте-->
+	<setattribute xpath="/recipes/recipe[@name='ammo9mmBulletBall']" name="count">2</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammo9mmBulletBall']" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[@name='ammo9mmBulletBall']//ingredient[1]/@count">2</set>
+	<set xpath="/recipes/recipe[@name='ammo9mmBulletBall']//ingredient[2]/@count">3</set>
+	<set xpath="/recipes/recipe[@name='ammo9mmBulletBall']//ingredient[3]/@count">2</set>
+	<!-- 9 мм (1000) новая упаковка для компактного хранения -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle9mmBulletBall" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo9mmBulletBall" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 9 мм (1000) крафт пачкой -->
+	<setattribute xpath="/recipes/recipe[@name='ammoBundle9mmBulletBall' and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletBall') and contains(@tags, 'learnable')]//ingredient[1]/@count">800</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletBall') and contains(@tags, 'learnable')]//ingredient[2]/@count">1200</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletBall') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- 9 мм экспансивные (1000) новая упаковка для компактного хранения -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle9mmBulletHP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo9mmBulletHP" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 9 мм экспансивные (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletHP') and contains(@tags, 'learnable')]" name="count">2</setattribute>
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletHP') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletHP') and contains(@tags, 'learnable')]//ingredient[1]/@count">4</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletHP') and contains(@tags, 'learnable')]//ingredient[2]/@count">3</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletHP') and contains(@tags, 'learnable')]//ingredient[3]/@count">2</set>
+	<!-- 9 мм экспансивные (1000) крафт пачкой -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletHP') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletHP') and contains(@tags, 'learnable')]//ingredient[1]/@count">1600</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletHP') and contains(@tags, 'learnable')]//ingredient[2]/@count">1200</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletHP') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- 9 мм ББ (1000) новая упаковка для компактного хранения -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle9mmBulletAP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo9mmBulletAP" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 9 мм ББ (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletAP') and contains(@tags, 'learnable')]" name="count">2</setattribute>
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletAP') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletAP') and contains(@tags, 'learnable')]//ingredient[1]/@count">2</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletAP') and contains(@tags, 'learnable')]//ingredient[2]/@count">5</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo9mmBulletAP') and contains(@tags, 'learnable')]//ingredient[3]/@count">2</set>
+	<!-- 9 мм ББ (1000) изменения в рецепте старого бандла -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletAP') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletAP') and contains(@tags, 'learnable')]//ingredient[1]/@count">800</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletAP') and contains(@tags, 'learnable')]//ingredient[2]/@count">2000</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle9mmBulletAP') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- 44 Магнум (1000) новая упаковка для компактного хранения -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle44MagnumBulletBall" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo44MagnumBulletBall" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 44 Магнум (1000) изменения в рецепте -->
+	<set xpath="/recipes/recipe[@name='ammo44MagnumBulletBall']//ingredient[2]/@count">3</set>
+	<setattribute xpath="/recipes/recipe[@name='ammo44MagnumBulletBall']" name="craft_area">ammopress</setattribute>
+	<!-- 44 Магнум (1000) крафт пачкой -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletBall') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletBall') and contains(@tags, 'learnable')]//ingredient[1]/@count">800</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletBall') and contains(@tags, 'learnable')]//ingredient[2]/@count">2400</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletBall') and contains(@tags, 'learnable')]//ingredient[3]/@count">1600</set>
+	<!-- 44 Магнум экспансивные (1000) новая упаковка для компактного хранения -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle44MagnumBulletHP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo44MagnumBulletHP" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 44 Магнум экспансивные (1000) изменения в рецепте -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammo44MagnumBulletHP') and contains(@tags, 'learnable')]//ingredient[2]/@count">3</set>
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammo44MagnumBulletHP') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<!-- 44 Магнум экспансивные (1000) крафт пачкой -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletHP') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletHP') and contains(@tags, 'learnable')]//ingredient[1]/@count">1600</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletHP') and contains(@tags, 'learnable')]//ingredient[2]/@count">2400</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletHP') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- 44 магнум ББ (1000) новая упаковка для компактного хранения -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle44MagnumBulletAP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo44MagnumBulletAP" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 44 магнум ББ (1000) изменения в рецепте -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammo44MagnumBulletAP') and contains(@tags, 'learnable')]//ingredient[2]/@count">5</set>
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammo44MagnumBulletAP') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<!-- 44 магнум ББ (1000) крафт пачкой -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletAP') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletAP') and contains(@tags, 'learnable')]//ingredient[1]/@count">1600</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletAP') and contains(@tags, 'learnable')]//ingredient[2]/@count">4000</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle44MagnumBulletAP') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- 7,62 (1000) новая упаковка для компактного хранения -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle762mmBulletBall" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo762mmBulletBall" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 7,62 (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[@name='ammo762mmBulletBall']" name="count">2</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammo762mmBulletBall']" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[@name='ammo762mmBulletBall']//ingredient[1]/@count">2</set>
+	<set xpath="/recipes/recipe[@name='ammo762mmBulletBall']//ingredient[2]/@count">4</set>
+	<set xpath="/recipes/recipe[@name='ammo762mmBulletBall']//ingredient[3]/@count">2</set>
+	<!-- 7,62 (1000) крафт пачкой -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletBall') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletBall') and contains(@tags, 'learnable')]//ingredient[1]/@count">800</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletBall') and contains(@tags, 'learnable')]//ingredient[2]/@count">1600</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletBall') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- 7,62 экспансивные (1000) новая упаковка для компактного хранения -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle762mmBulletHP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo762mmBulletHP" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 7,62 экспансивные (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletHP') and contains(@tags, 'learnable')]" name="count">2</setattribute>
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletHP') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletHP') and contains(@tags, 'learnable')]//ingredient[1]/@count">4</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletHP') and contains(@tags, 'learnable')]//ingredient[2]/@count">5</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletHP') and contains(@tags, 'learnable')]//ingredient[3]/@count">4</set>
+	<!-- 7,62 экспансивные (1000) крафт пачкой -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletHP') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletHP') and contains(@tags, 'learnable')]//ingredient[1]/@count">1600</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletHP') and contains(@tags, 'learnable')]//ingredient[2]/@count">2000</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletHP') and contains(@tags, 'learnable')]//ingredient[3]/@count">1600</set>
+	<!-- 7,62 ББ (1000) новая упаковка для компактного хранения -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundle762mmBulletAP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammo762mmBulletAP" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- 7,62 ББ (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletAP') and contains(@tags, 'learnable')]" name="count">2</setattribute>
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletAP') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletAP') and contains(@tags, 'learnable')]//ingredient[1]/@count">4</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletAP') and contains(@tags, 'learnable')]//ingredient[2]/@count">8</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammo762mmBulletAP') and contains(@tags, 'learnable')]//ingredient[3]/@count">2</set>
+	<!-- 7,62 ББ (1000) крафт пачкой -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletAP') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletAP') and contains(@tags, 'learnable')]//ingredient[1]/@count">1600</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletAP') and contains(@tags, 'learnable')]//ingredient[2]/@count">3200</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundle762mmBulletAP') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- Для дробовика (1000) новая упаковка для компактного хранения -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleShotgunShell" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoShotgunShell" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Для дробовика (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[@name='ammoShotgunShell']" name="count">2</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammoShotgunShell']" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[@name='ammoShotgunShell']//ingredient[1]/@count">2</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunShell']//ingredient[2]/@count">8</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunShell']//ingredient[3]/@count">2</set>
+	<!-- Для дробовика (1000) крафт пачкой -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunShell') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunShell') and contains(@tags, 'learnable')]//ingredient[1]/@count">800</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunShell') and contains(@tags, 'learnable')]//ingredient[2]/@count">3200</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunShell') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- Для дробовика ББ (1000) новая упаковка для компактного хранения -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleShotgunSlug" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoShotgunSlug" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Для дробовика ББ (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[@name='ammoShotgunSlug']" name="count">2</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammoShotgunSlug']" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[@name='ammoShotgunSlug']//ingredient[1]/@count">4</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunSlug']//ingredient[2]/@count">8</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunSlug']//ingredient[3]/@count">2</set>
+	<!-- Для дробовика ББ (1000) крафт пачкой -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunSlug') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunSlug') and contains(@tags, 'learnable')]//ingredient[1]/@count">1600</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunSlug') and contains(@tags, 'learnable')]//ingredient[2]/@count">3200</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunSlug') and contains(@tags, 'learnable')]//ingredient[3]/@count">800</set>
+	<!-- Для дробовика ПРПЗ (1000) новая упаковка для компактного хранения -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleShotgunBreachingSlug" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoShotgunBreachingSlug" count="1000"/>
+			<ingredient name="resourcePaper" count="40"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Для дробовика ПРПЗ (1000) изменения в рецепте -->
+	<setattribute xpath="/recipes/recipe[@name='ammoShotgunBreachingSlug']" name="count">2</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammoShotgunBreachingSlug']" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[@name='ammoShotgunBreachingSlug']//ingredient[1]/@count">6</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunBreachingSlug']//ingredient[2]/@count">3</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunBreachingSlug']//ingredient[3]/@count">7</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunBreachingSlug']//ingredient[4]/@count">2</set>
+	<!-- Для дробовика ПРПЗ (1000) крафт пачкой -->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunBreachingSlug') and contains(@tags, 'learnable')]" name="craft_area">ammopress</setattribute>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunBreachingSlug') and contains(@tags, 'learnable')]//ingredient[1]/@count">2400</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunBreachingSlug') and contains(@tags, 'learnable')]//ingredient[2]/@count">1200</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunBreachingSlug') and contains(@tags, 'learnable')]//ingredient[3]/@count">2800</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleShotgunBreachingSlug') and contains(@tags, 'learnable')]//ingredient[4]/@count">800</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!--Боеприпасы для робопушек-->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Новый верстак для ппатронов робопушек -->
+	<setattribute xpath="/recipes/recipe[@name='ammoJunkTurretRegular']" name="craft_area">ammopress</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammoJunkTurretShell']" name="craft_area">ammopress</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammoJunkTurretAP']" name="craft_area">ammopress</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammoBundleJunkTurretShell']" name="craft_area">ammopress</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammoBundleJunkTurretAP']" name="craft_area">ammopress</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammoBundleJunkTurretRegular']" name="craft_area">ammopress</setattribute>
+	<!-- Патроны для робопушек крафтятся больше за раз -->
+	<set xpath="/recipes//recipe[@name='ammoJunkTurretRegular']/@count">10</set>
+	<set xpath="/recipes//recipe[@name='ammoJunkTurretShell']/@count">10</set>
+	<set xpath="/recipes//recipe[@name='ammoJunkTurretAP']/@count">10</set>
+	<!-- Патроны для робопушки (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleJunkTurretRegular" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoJunkTurretRegular" count="1000"/>
+			<ingredient name="resourcePaper" count="10"/>
+			<ingredient name="resourceCloth" count="10"/>
+		</recipe>
+	</append>
+	<!-- Больше свинца для робопатронов -->
+	<set xpath="/recipes/recipe[@name='ammoJunkTurretRegular']//ingredient[1]/@count">30</set>
+	<!-- Порох в крафт робопатронов -->
+	<insertAfter xpath="/recipes/recipe[@name='ammoJunkTurretRegular']/ingredient[@name='resourceScrapLead']">
+		<ingredient name="resourceGunPowder" count="10"/>
+	</insertAfter>
+	<!-- Порох в обычные робопатроны (бандл) -->
+	<insertAfter xpath="/recipes/recipe[contains(@name, 'ammoBundleJunkTurretRegular') and contains(@tags, 'learnable')]/ingredient[@name='resourceScrapLead']">
+		<ingredient name="resourceGunPowder" count="800"/>
+	</insertAfter>
+	<!-- Патроны для робопушки с дробью (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleJunkTurretShell" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoJunkTurretShell" count="1000"/>
+			<ingredient name="resourcePaper" count="10"/>
+			<ingredient name="resourceCloth" count="10"/>
+		</recipe>
+	</append>
+	<!-- Множитель для робопатронов с дробью -->
+	<set xpath="/recipes/recipe[@name='ammoJunkTurretShell']//ingredient[1]/@count">10</set>
+	<set xpath="/recipes/recipe[@name='ammoJunkTurretShell']//ingredient[2]/@count">10</set>
+	<!-- Порох в робопатроны с дробью -->
+	<insertAfter xpath="/recipes/recipe[@name='ammoJunkTurretShell']/ingredient[@name='resourceBuckshot']">
+		<ingredient name="resourceGunPowder" count="10"/>
+	</insertAfter>
+	<!-- Порох в робопатроны с дробью (бандл) -->
+	<insertAfter xpath="/recipes/recipe[contains(@name, 'ammoBundleJunkTurretShell') and contains(@tags, 'learnable')]/ingredient[@name='resourceBuckshot']">
+		<ingredient name="resourceGunPowder" count="800"/>
+	</insertAfter>
+	<!-- Патроны для робопушки ББ (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleJunkTurretAP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoJunkTurretAP" count="1000"/>
+			<ingredient name="resourcePaper" count="10"/>
+			<ingredient name="resourceCloth" count="10"/>
+		</recipe>
+	</append>
+	<!-- Множитель для робопатронов ББ -->
+	<set xpath="/recipes/recipe[@name='ammoJunkTurretAP']//ingredient[1]/@count">30</set>
+	<set xpath="/recipes/recipe[@name='ammoJunkTurretAP']//ingredient[2]/@count">30</set>
+	<!-- Порох в робопатроны ББ -->
+	<insertAfter xpath="/recipes/recipe[@name='ammoJunkTurretAP']/ingredient[@name='resourceScrapIron']">
+		<ingredient name="resourceGunPowder" count="10"/>
+	</insertAfter>
+	<!-- Порох в робопатроны ББ (бандл) -->
+	<insertAfter xpath="/recipes/recipe[contains(@name, 'ammoBundleJunkTurretAP') and contains(@tags, 'learnable')]/ingredient[@name='resourceScrapIron']">
+		<ingredient name="resourceGunPowder" count="800"/>
+	</insertAfter>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- СТРЕЛЫ, БОЛТЫ И ДРОТИКИ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='ammoArrowFlaming']" name="craft_area">workbench</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='ammoArrowIron']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammoArrowIron']" name="tags">workbenchCrafting</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']" name="craft_area">workbench</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='ammoCrossbowBoltIron']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammoCrossbowBoltIron']" name="tags">workbenchCrafting</setattribute>
+	<!-- Дротики (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoDartIronBundle" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoDartIron" count="1000"/>
+			<ingredient name="resourcePaper" count="10"/>
+			<ingredient name="resourceCloth" count="10"/>
+		</recipe>
+	</append>
+	<!-- Дротики (1000) новый бандл -->
+	<!-- Рецепт для кузницы, поэтому -20% по ресам -->
+	<append xpath="/recipes">
+		<recipe name="ammoDartIronBundle" count="1" craft_time="1200" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="2400"/>
+			<ingredient name="unit_clay" count="800"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+	</append>
+	<!-- Каменная стрела (300) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleArrowStone" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoArrowStone" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Модифицируем рецепт старого бандла каменных стрел под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowStone') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowStone') and contains(@tags, 'learnable')]//ingredient[2]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowStone') and contains(@tags, 'learnable')]//ingredient[3]/@count">240</set>
+	<!-- Железная стрела (300) -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleArrowIron" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoArrowIron" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Модифицируем рецепт старого бандла железных стрел под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowIron') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowIron') and contains(@tags, 'learnable')]//ingredient[2]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowIron') and contains(@tags, 'learnable')]//ingredient[3]/@count">240</set>
+	<!-- Стальная стрела (300) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleArrowSteelAP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoArrowSteelAP" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Модифицируем рецепт старого бандла стальных стрел под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowSteelAP') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowSteelAP') and contains(@tags, 'learnable')]//ingredient[2]/@count">480</set>
+	<!-- Поджигающая стрела (300) -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleArrowFlaming" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoArrowFlaming" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Вместо жира для крафта огненных стрел используем бензин -->
+	<setattribute xpath="/recipes/recipe[@name='ammoArrowFlaming']/ingredient[@name='resourceAnimalFat']" name="name">ammoGasCan</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']/ingredient[@name='resourceAnimalFat']" name="name">ammoGasCan</setattribute>
+	<!-- Больше пороха и бензина на огненные стрелы -->
+	<set xpath="/recipes/recipe[@name='ammoArrowFlaming']//ingredient[3]/@count">3</set>
+	<set xpath="/recipes/recipe[@name='ammoArrowFlaming']//ingredient[5]/@count">5</set>
+	<!-- Модифицируем рецепт старой коробки огненных стрел под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowFlaming') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowFlaming') and contains(@tags, 'learnable')]//ingredient[2]/@count">480</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowFlaming') and contains(@tags, 'learnable')]//ingredient[3]/@count">720</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowFlaming') and contains(@tags, 'learnable')]//ingredient[4]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowFlaming') and contains(@tags, 'learnable')]//ingredient[5]/@count">1200</set>
+	<!-- Взрывная стрела (300) новая коробка -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleArrowExploding" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoArrowExploding" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Больше пороха на взрывные стрелы-->
+	<set xpath="/recipes/recipe[@name='ammoArrowExploding']//ingredient[3]/@count">8</set>
+	<!-- Модифицируем рецепт старой коробки взрывных стрел под новое количество (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowExploding') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowExploding') and contains(@tags, 'learnable')]//ingredient[2]/@count">480</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowExploding') and contains(@tags, 'learnable')]//ingredient[3]/@count">1920</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleArrowExploding') and contains(@tags, 'learnable')]//ingredient[4]/@count">240</set>
+	<!-- Каменный болт (300) -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleCrossbowBoltStone" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltStone" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Модифицируем рецепт старого бандла каменных болтов под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltStone') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltStone') and contains(@tags, 'learnable')]//ingredient[2]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltStone') and contains(@tags, 'learnable')]//ingredient[3]/@count">240</set>
+	<!-- Железный болт (300) -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleCrossbowBoltIron" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltIron" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Модифицируем рецепт старого бандла железных болтов под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltIron') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltIron') and contains(@tags, 'learnable')]//ingredient[2]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltIron') and contains(@tags, 'learnable')]//ingredient[3]/@count">240</set>
+	<!-- Стальной болт (300) -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleCrossbowBoltSteelAP" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltSteelAP" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Модифицируем рецепт старого бандла стальных болтов под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltSteelAP') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltSteelAP') and contains(@tags, 'learnable')]//ingredient[2]/@count">480</set>
+	<!-- Поджигающий болт (300) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleCrossbowBoltFlaming" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltFlaming" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Вместо жира для крафта огненных болтов используем бензин -->
+	<setattribute xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']/ingredient[@name='resourceAnimalFat']" name="name">ammoGasCan</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']/ingredient[@name='resourceAnimalFat']" name="name">ammoGasCan</setattribute>
+	<!-- Больше пороха и бензина на огненные болты -->
+	<set xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']//ingredient[3]/@count">3</set>
+	<set xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']//ingredient[5]/@count">5</set>
+	<!-- Модифицируем рецепт коробки огненных болтов под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltFlaming') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltFlaming') and contains(@tags, 'learnable')]//ingredient[2]/@count">480</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltFlaming') and contains(@tags, 'learnable')]//ingredient[3]/@count">720</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltFlaming') and contains(@tags, 'learnable')]//ingredient[4]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoBundleCrossbowBoltFlaming') and contains(@tags, 'learnable')]//ingredient[5]/@count">1200</set>
+	<!-- Взрывной болт (300) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="ammoBundleCrossbowBoltExploding" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltExploding" count="300"/>
+			<ingredient name="resourcePaper" count="20"/>
+			<ingredient name="resourceCloth" count="30"/>
+		</recipe>
+	</append>
+	<!-- Больше пороха на взрывные болты -->
+	<set xpath="/recipes/recipe[@name='ammoCrossbowBoltExploding']//ingredient[3]/@count">10</set>
+	<!-- Модифицируем рецепт коробки взрывных болтов под новый размер стака (300) -->
+	<set xpath="/recipes/recipe[contains(@name, 'ammoCrossbowBoltExploding') and contains(@tags, 'learnable')]//ingredient[1]/@count">240</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoCrossbowBoltExploding') and contains(@tags, 'learnable')]//ingredient[2]/@count">480</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoCrossbowBoltExploding') and contains(@tags, 'learnable')]//ingredient[3]/@count">2400</set>
+	<set xpath="/recipes/recipe[contains(@name, 'ammoCrossbowBoltExploding') and contains(@tags, 'learnable')]//ingredient[4]/@count">240</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- РАКЕТЫ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Свинца на запчасти для ракет надо больше -->
+	<set xpath="/recipes/recipe[@name='resourceRocketTip']//ingredient[1]/@count">70</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Бензин (добавляем пластик) -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='ammoGasCan']" name="count">10</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ammoGasCan']" name="craft_time">2</setattribute>
+	<set xpath="/recipes/recipe[@name='ammoGasCan']/ingredient[@name='resourceOilShale']/@count">20</set>
+	<append xpath="/recipes/recipe[@name='ammoGasCan']">
+		<ingredient name="resourceScrapPolymers" count="10"/>
+	</append>
+	<!-- Упакованный бензин, -20% рецепт для химлабы -->
+	<set xpath="/recipes/recipe[@name='ammoGasCanBundle']/ingredient[@name='resourceOilShale']/@count">16000</set>
+	<append xpath="/recipes/recipe[@name='ammoGasCan']">
+		<ingredient name="resourceScrapPolymers" count="8000"/>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- БРОНЯ И ОРУЖИЕ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Убираем требования к легендарным компонентам для крафта оружия и брони 6 уровня для тира 0 -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<remove xpath="/recipes/recipe[@name='gunHandgunT0PipePistol']/effect_group/passive_effect[@tags='resourceLegendaryParts']"/>
+	<remove xpath="/recipes/recipe[@name='gunShotgunT0PipeShotgun']/effect_group/passive_effect[@tags='resourceLegendaryParts']"/>
+	<remove xpath="/recipes/recipe[@name='gunRifleT0PipeRifle']/effect_group/passive_effect[@tags='resourceLegendaryParts']"/>
+	<remove xpath="/recipes/recipe[@name='gunMGT0PipeMachineGun']/effect_group/passive_effect[@tags='resourceLegendaryParts']"/>
+	<remove xpath="/recipes/recipe[@name='gunBowT0PrimitiveBow']/effect_group"/>
+	<remove xpath="/recipes/recipe[@name='meleeWpnBladeT0BoneKnife']/effect_group"/>
+	<remove xpath="/recipes/recipe[@name='meleeWpnClubT0WoodenClub']/effect_group"/>
+	<remove xpath="/recipes/recipe[@name='meleeWpnSpearT0StoneSpear']/effect_group"/>
+	<remove xpath="/recipes/recipe[@name='meleeToolShovelT0StoneShovel']/effect_group"/>
+	<remove xpath="/recipes/recipe[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group"/>
+	<remove xpath="/recipes/recipe[@name='meleeToolRepairT0StoneAxe']/effect_group"/>
+	<remove xpath="/recipes/recipe[@name='meleeWpnBatonT0PipeBaton']/effect_group/passive_effect[@tags='resourceLegendaryParts']"/>
+	<remove xpath="/recipes/recipe[@name='meleeWpnKnucklesT0LeatherKnuckles']/effect_group"/>
+	<remove xpath="/recipes/recipe[starts-with (@name, 'armorPrimitive')]/effect_group/passive_effect[@tags='resourceLegendaryParts']"/>
+	<!-- Единое время крафта оружия дальнего боя -->
+	<setattribute xpath="/recipes/recipe[contains (@name, 'gun') and contains (@name, 'T0')]" name="craft_time">120</setattribute>
+	<setattribute xpath="/recipes/recipe[contains (@name, 'gun') and contains (@name, 'T1')]" name="craft_time">360</setattribute>
+	<setattribute xpath="/recipes/recipe[contains (@name, 'gun') and contains (@name, 'T2')]" name="craft_time">540</setattribute>
+	<setattribute xpath="/recipes/recipe[contains (@name, 'gun') and contains (@name, 'T3')]" name="craft_time">720</setattribute>
+	<!-- Единое время крафта оружия ближнего боя -->
+	<setattribute xpath="/recipes/recipe[contains (@name, 'meleeWpn') and contains (@name, 'T0')]" name="craft_time">120</setattribute>
+	<setattribute xpath="/recipes/recipe[contains (@name, 'meleeWpn') and contains (@name, 'T1')]" name="craft_time">360</setattribute>
+	<setattribute xpath="/recipes/recipe[contains (@name, 'meleeWpn') and contains (@name, 'T2')]" name="craft_time">540</setattribute>
+	<setattribute xpath="/recipes/recipe[contains (@name, 'meleeWpn') and contains (@name, 'T3')]" name="craft_time">720</setattribute>
+	<!-- Единое время крафта инструментов -->
+	<setattribute xpath="/recipes/recipe[contains (@name, 'meleeTool') and contains (@name, 'T0')]" name="craft_time">120</setattribute>
+	<setattribute xpath="/recipes/recipe[contains (@name, 'meleeTool') and contains (@name, 'T1')]" name="craft_time">360</setattribute>
+	<setattribute xpath="/recipes/recipe[contains (@name, 'meleeTool') and contains (@name, 'T2')]" name="craft_time">540</setattribute>
+	<setattribute xpath="/recipes/recipe[contains (@name, 'meleeTool') and contains (@name, 'T3')]" name="craft_time">720</setattribute>
+	<!-- Единое время крафта частей сетов брони -->
+	<setattribute xpath="/recipes/recipe[contains (@name, 'armor') and contains (@name, 'Helmet')]" name="craft_time">120</setattribute>
+	<setattribute xpath="/recipes/recipe[contains (@name, 'armor') and contains (@name, 'Outfit')]" name="craft_time">120</setattribute>
+	<setattribute xpath="/recipes/recipe[contains (@name, 'armor') and contains (@name, 'Gloves')]" name="craft_time">120</setattribute>
+	<setattribute xpath="/recipes/recipe[contains (@name, 'armor') and contains (@name, 'Boots')]" name="craft_time">120</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ЗАБОР С КОЛЮЧЕЙ ПРОВОЛОКОЙ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='barbedFence']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='barbedFence']" name="tags">workbenchCrafting</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- АККУМУЛЯТОРЫ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Разбор батарей на кислоту -->
+	<append xpath="/recipes">
+		<recipe name="resourceAcid" count="1" craft_time="60" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap">
+			<wildcard_forge_category/>
+		</recipe>
+	</append>
+	<!-- Блок аккумуляторов -->
+	<setattribute xpath="/recipes/recipe[@name='batterybank']" name="craft_time">300</setattribute>
+	<set xpath="/recipes/recipe[@name='batterybank']/ingredient[@name='resourceElectricParts']/@count">50</set>
+	<set xpath="/recipes/recipe[@name='batterybank']/ingredient[@name='resourceScrapPolymers']/@count">50</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- СПАЛЬНИК -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<set xpath="/recipes/recipe[@name='bedrollBlockVariantHelper']/ingredient[@name='resourceYuccaFibers']/@count">50</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ГОРЯЩАЯ БОЧКА -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='burningBarrelPlayer']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='burningBarrelPlayer']" name="tags">workbenchCrafting</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ДВОЙНЫЕ ДВЕРИ ПОДВАЛА -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Деревянные -->
+	<setattribute xpath="/recipes/recipe[@name='cellarDoorDoubleWood']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='cellarDoorDoubleWood']" name="craft_time">30</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='cellarDoorDoubleWood']" name="tags">workbenchCrafting</setattribute>
+	<set xpath="/recipes/recipe[@name='cellarDoorDoubleWood']/ingredient[@name='resourceWood']/@count">50</set>
+	<append xpath="/recipes/recipe[@name='cellarDoorDoubleWood']">
+		<ingredient name="resourceSpring" count="5"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+	</append>
+	<!-- Железные -->
+	<setattribute xpath="/recipes/recipe[@name='cellarDoorDoubleIron']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='cellarDoorDoubleIron']" name="craft_time">60</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='cellarDoorDoubleIron']" name="tags">workbenchCrafting</setattribute>
+	<set xpath="/recipes/recipe[@name='cellarDoorDoubleIron']/ingredient[@name='resourceForgedIron']/@count">15</set>
+	<!-- Стальные -->
+	<append xpath="/recipes/recipe[@name='cellarDoorDoubleIron']">
+		<ingredient name="resourceSpring" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="10"/>
+	</append>
+	<!-- Стальные -->
+	<setattribute xpath="/recipes/recipe[@name='cellarDoorDoubleSteel']" name="craft_time">90</setattribute>
+	<set xpath="/recipes/recipe[@name='cellarDoorDoubleSteel']/ingredient[@name='resourceForgedSteel']/@count">15</set>
+	<set xpath="/recipes/recipe[@name='cellarDoorDoubleSteel']/ingredient[@name='resourceSpring']/@count">15</set>
+	<set xpath="/recipes/recipe[@name='cellarDoorDoubleSteel']/ingredient[@name='resourceMechanicalParts']/@count">15</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- СТАВНИ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Деревянные -->
+	<setattribute xpath="/recipes/recipe[@name='shuttersWoodBlockVariantHelper']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='shuttersWoodBlockVariantHelper']" name="craft_time">30</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='shuttersWoodBlockVariantHelper']" name="tags">workbenchCrafting</setattribute>
+	<set xpath="/recipes/recipe[@name='shuttersWoodBlockVariantHelper']/ingredient[@name='resourceWood']/@count">30</set>
+	<append xpath="/recipes/recipe[@name='shuttersWoodBlockVariantHelper']">
+		<ingredient name="resourceSpring" count="4"/>
+		<ingredient name="resourceMechanicalParts" count="4"/>
+	</append>
+	<!-- Железные -->
+	<setattribute xpath="/recipes/recipe[@name='shuttersIronBlockVariantHelper']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='shuttersIronBlockVariantHelper']" name="craft_time">60</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='shuttersIronBlockVariantHelper']" name="tags">workbenchCrafting</setattribute>
+	<set xpath="/recipes/recipe[@name='shuttersIronBlockVariantHelper']/ingredient[@name='resourceForgedIron']/@count">12</set>
+	<append xpath="/recipes/recipe[@name='shuttersIronBlockVariantHelper']">
+		<ingredient name="resourceSpring" count="8"/>
+		<ingredient name="resourceMechanicalParts" count="8"/>
+	</append>
+	<setattribute xpath="/recipes/recipe[@name='shuttersSteelBlockVariantHelper']" name="craft_time">90</setattribute>
+	<set xpath="/recipes/recipe[@name='shuttersSteelBlockVariantHelper']/ingredient[@name='resourceForgedSteel']/@count">12</set>
+	<set xpath="/recipes/recipe[@name='shuttersSteelBlockVariantHelper']/ingredient[@name='resourceSpring']/@count">12</set>
+	<set xpath="/recipes/recipe[@name='shuttersSteelBlockVariantHelper']/ingredient[@name='resourceMechanicalParts']/@count">12</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- КОСТЁР -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='campfire']" name="craft_time">10</setattribute>
+	<set xpath="/recipes/recipe[@name='campfire']/ingredient[@name='resourceRockSmall']/@count">20</set>
+	<append xpath="/recipes/recipe[@name='campfire']">
+		<ingredient name="resourceYuccaFibers" count="10"/>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- СВЕТИЛЬНИКИ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<set xpath="/recipes/recipe[contains (@name, 'ceilingLight') or contains (@name, 'industrialLight') and contains (@name, 'player')]/ingredient[@name='resourceElectricParts']/@count">8</set>
+	<setattribute xpath="/recipes/recipe[contains (@name, 'ceilingLight') or contains (@name, 'industrialLight') and contains (@name, 'player')]" name="craft_time">30</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- БЕТОНОМЕШАЛКА -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='cementMixer']" name="craft_time">360</setattribute>
+	<set xpath="/recipes/recipe[@name='cementMixer']/ingredient[@name='resourceSpring']/@count">12</set>
+	<set xpath="/recipes/recipe[@name='cementMixer']/ingredient[@name='resourceMechanicalParts']/@count">20</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- КУЛЕР (ДЕКОРАТИВНЫЙ) -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='cntCoolerVariantHelper']" name="craft_time">30</setattribute>
+	<set xpath="/recipes/recipe[@name='cntCoolerVariantHelper']/ingredient[@name='resourceScrapPolymers']/@count">50</set>
+	<append xpath="/recipes/recipe[@name='cntCoolerVariantHelper']">
+		<ingredient name="resourceElectricParts" count="4"/>
+		<ingredient name="resourceMechanicalParts" count="4"/>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ДЕРЕВЯННАЯ МЕБЕЛЬ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='cntWoodFurnitureBlockVariantHelper']" name="craft_time">30</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='cntWoodFurnitureBlockVariantHelper']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='cntWoodFurnitureBlockVariantHelper']" name="tags">workbenchCrafting</setattribute>
+	<set xpath="/recipes/recipe[@name='cntWoodFurnitureBlockVariantHelper']/ingredient[@name='resourceWood']/@count">15</set>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='cntWoodFurnitureBlockVariantHelper2']" name="craft_time">30</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='cntWoodFurnitureBlockVariantHelper2']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='cntWoodFurnitureBlockVariantHelper2']" name="tags">workbenchCrafting</setattribute>
+	<set xpath="/recipes/recipe[@name='cntWoodFurnitureBlockVariantHelper2']/ingredient[@name='resourceWood']/@count">15</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- МЕТАЛЛИЧЕСКАЯ МЕБЕЛЬ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='metalFurnitureBlockVariantHelper']" name="craft_time">30</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='metalFurnitureBlockVariantHelper']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='metalFurnitureBlockVariantHelper']" name="tags">workbenchCrafting</setattribute>
+	<set xpath="/recipes/recipe[@name='metalFurnitureBlockVariantHelper']/ingredient[@name='resourceForgedIron']/@count">6</set>
+	<!-- Стулья -->
+	<setattribute xpath="/recipes/recipe[@name='officeChair01VariantHelper']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='officeChair01VariantHelper']" name="craft_time">30</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='officeChair01VariantHelper']" name="tags">workbenchCrafting</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='oldChair1VariantHelper']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='oldChair1VariantHelper']" name="craft_time">30</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='oldChair1VariantHelper']" name="tags">workbenchCrafting</setattribute>
+	<!-- ПОЧТОВЫЕ ЯЩИКИ -->
+	<setattribute xpath="/recipes/recipe[starts-with(@name, 'cntMailBox') and contains(@name,'VariantHelper')]" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[starts-with(@name, 'cntMailBox') and contains(@name,'VariantHelper')]" name="craft_time">60</setattribute>
+	<setattribute xpath="/recipes/recipe[starts-with(@name, 'cntMailBox') and contains(@name,'VariantHelper')]" name="tags">workbenchCrafting</setattribute>
+	<set xpath="/recipes/recipe[starts-with(@name, 'cntMailBox') and contains(@name,'VariantHelper')]/ingredient[@name='resourceScrapIron']/@count">35</set>
+	<set xpath="/recipes/recipe[starts-with(@name, 'cntMailBox') and contains(@name,'VariantHelper')]/ingredient[@name='resourceWood']/@count">25</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ЯЩИКИ ДЛЯ ХРАНЕНИЯ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Деревянные -->
+	<setattribute xpath="/recipes/recipe[@name='cntWoodWritableCrate']" name="craft_time">60</setattribute>
+	<set xpath="/recipes/recipe[@name='cntWoodWritableCrate']/ingredient[@name='resourceWood']/@count">100</set>
+	<append xpath="/recipes/recipe[@name='cntWoodWritableCrate']">
+		<ingredient name="resourceScrapIron" count="30"/>
+	</append>
+	<!-- Железные -->
+	<setattribute xpath="/recipes/recipe[@name='cntIronWritableCrate']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='cntIronWritableCrate']" name="craft_time">90</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='cntIronWritableCrate']" name="tags">workbenchCrafting</setattribute>
+	<set xpath="/recipes/recipe[@name='cntIronWritableCrate']/ingredient[@name='resourceForgedIron']/@count">25</set>
+	<append xpath="/recipes/recipe[@name='cntIronWritableCrate']">
+		<ingredient name="resourceScrapPolymers" count="50"/>
+	</append>
+	<!-- Стальные -->
+	<setattribute xpath="/recipes/recipe[@name='cntSteelWritableCrate']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='cntSteelWritableCrate']" name="craft_time">120</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='cntSteelWritableCrate']" name="tags">workbenchCrafting</setattribute>
+	<set xpath="/recipes/recipe[@name='cntSteelWritableCrate']/ingredient[@name='resourceForgedSteel']/@count">25</set>
+	<append xpath="/recipes/recipe[@name='cntSteelWritableCrate']">
+		<ingredient name="resourceScrapPolymers" count="50"/>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- РАКОВИНЫ И ТУАЛЕТЫ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='sinksToiletsBlockVariantHelper']" name="craft_time">30</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='sinksToiletsBlockVariantHelper']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='sinksToiletsBlockVariantHelper']" name="tags">workbenchCrafting</setattribute>
+	<append xpath="/recipes/recipe[@name='sinksToiletsBlockVariantHelper']">
+		<ingredient name="resourceRockSmall" count="30"/>
+	</append>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='toiletsBlockVariantHelper']" name="craft_time">30</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='toiletsBlockVariantHelper']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='toiletsBlockVariantHelper']" name="tags">workbenchCrafting</setattribute>
+	<append xpath="/recipes/recipe[@name='toiletsBlockVariantHelper']">
+		<ingredient name="resourceRockSmall" count="30"/>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ЛОВУШКА С ДРОТИКАМИ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='dartTrap']" name="craft_time">60</setattribute>
+	<set xpath="/recipes/recipe[@name='dartTrap']/ingredient[@name='resourceMechanicalParts']/@count">12</set>
+	<set xpath="/recipes/recipe[@name='dartTrap']/ingredient[@name='resourceElectricParts']/@count">8</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- СБОРЩИК ВОДЫ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='cntDewCollector']" name="craft_time">200</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='cntDewCollector']" name="craft_area">workbench</setattribute>
+	<set xpath="/recipes/recipe[@name='cntDewCollector']/ingredient[@name='resourceScrapPolymers']/@count">200</set>
+	<append xpath="/recipes/recipe[@name='cntDewCollector']">
+		<ingredient name="resourceCoal" count="30"/>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- МЕДИЦИНА -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Убираем крафт лекарств на костре -->
+	<remove xpath="/recipes/recipe[@name='drugAntibiotics']"/>
+	<remove xpath="/recipes/recipe[@name='drugRecog']"/>
+	<remove xpath="/recipes/recipe[@name='drugHerbalAntibiotics']"/>
+	<remove xpath="/recipes/recipe[@name='drugFortBites']"/>
+	<append xpath="/recipes">
+		<recipe name="drugAntibiotics" craft_time="300" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+			<ingredient name="foodShamSandwich" count="1"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="20"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="drugFortBites" craft_time="300" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+			<ingredient name="medicalBloodBag" count="2"/>
+			<ingredient name="drinkJarBeer" count="1"/>
+			<ingredient name="foodRottingFlesh" count="20"/>
+			<ingredient name="drugVitamins" count="1"/>
+		</recipe>
+		<recipe name="drugHerbalAntibiotics" craft_time="300" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+			<ingredient name="foodCropBlueberries" count="5"/>
+			<ingredient name="foodCropMushrooms" count="5"/>
+			<ingredient name="resourceCropChrysanthemumPlant" count="5"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="10"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="drugRecog" craft_time="300" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+			<ingredient name="resourceAcid" count="2"/>
+			<ingredient name="drinkJarBeer" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="35"/>
+			<ingredient name="drugVitamins" count="1"/>
+		</recipe>
+	</append>
+	<!-- Бинты -->
+	<setattribute xpath="/recipes/recipe[@name='medicalAloeCream']" name="craft_time">30</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='medicalBandage']" name="craft_time">20</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='medicalFirstAidBandage']" name="craft_time">10</setattribute>
+	<!-- Гипс и шина -->
+	<remove xpath="/recipes/recipe[@name='medicalPlasterCast']"/>
+	<append xpath="/recipes">
+		<recipe name="medicalPlasterCast" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting" craft_time="30">
+			<ingredient name="resourceCloth" count="40"/>
+			<ingredient name="foodCornMeal" count="4"/>
+			<ingredient name="resourceCrushedSand" count="20"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+	</append>
+	<setattribute xpath="/recipes/recipe[@name='medicalSplint']" name="craft_time">20</setattribute>
+	<!-- Аптечка ПП -->
+	<setattribute xpath="/recipes/recipe[@name='medicalFirstAidKit']" name="craft_time">180</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ЭЛЕКТРИКА И ОСВЕЩЕНИЕ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Заборы -->
+	<setattribute xpath="/recipes/recipe[@name='electricfencepost']" name="craft_time">30</setattribute>
+	<set xpath="/recipes/recipe[@name='electricfencepost']/ingredient[@name='resourceElectricParts']/@count">10</set>
+	<append xpath="/recipes/recipe[@name='electricfencepost']">
+		<ingredient name="resourceScrapPolymers" count="15"/>
+	</append>
+	<!-- Реле с таймером -->
+	<setattribute xpath="/recipes/recipe[@name='electrictimerrelay']" name="craft_time">30</setattribute>
+	<set xpath="/recipes/recipe[@name='electrictimerrelay']/ingredient[@name='resourceElectricParts']/@count">8</set>
+	<append xpath="/recipes/recipe[@name='electrictimerrelay']">
+		<ingredient name="resourceScrapPolymers" count="10"/>
+	</append>
+	<!-- Реле проводное -->
+	<setattribute xpath="/recipes/recipe[@name='electricwirerelay']" name="craft_time">30</setattribute>
+	<set xpath="/recipes/recipe[@name='electricwirerelay']/ingredient[@name='resourceElectricParts']/@count">8</set>
+	<append xpath="/recipes/recipe[@name='electricwirerelay']">
+		<ingredient name="resourceScrapPolymers" count="10"/>
+	</append>
+	<!-- Датчик движения -->
+	<setattribute xpath="/recipes/recipe[@name='motionsensor']" name="craft_time">30</setattribute>
+	<set xpath="/recipes/recipe[@name='motionsensor']/ingredient[@name='resourceElectricParts']/@count">10</set>
+	<set xpath="/recipes/recipe[@name='motionsensor']/ingredient[@name='resourceMechanicalParts']/@count">5</set>
+	<!-- Старый фонарь -->
+	<setattribute xpath="/recipes/recipe[@name='lanternOldBlockVariantHelper']" name="craft_area">workbench</setattribute>
+	<!-- Факел -->
+	<setattribute xpath="/recipes/recipe[@name='meleeToolTorch']" name="craft_time">10</setattribute>
+	<!-- Нажимные плиты -->
+	<setattribute xpath="/recipes/recipe[@name='pressureplate']" name="craft_time">30</setattribute>
+	<set xpath="/recipes/recipe[@name='pressureplate']/ingredient[@name='resourceMechanicalParts']/@count">6</set>
+	<set xpath="/recipes/recipe[@name='pressureplate']/ingredient[@name='resourceElectricParts']/@count">8</set>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='pressureplateLong']" name="craft_time">45</setattribute>
+	<set xpath="/recipes/recipe[@name='pressureplate']/ingredient[@name='resourceMechanicalParts']/@count">12</set>
+	<set xpath="/recipes/recipe[@name='pressureplate']/ingredient[@name='resourceElectricParts']/@count">16</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ДЕЛЯНКИ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='farmPlotBlockVariantHelper']" name="craft_time">30</setattribute>
+	<set xpath="/recipes/recipe[@name='farmPlotBlockVariantHelper']/ingredient[@name='resourceWood']/@count">8</set>
+	<set xpath="/recipes/recipe[@name='farmPlotBlockVariantHelper']/ingredient[@name='foodRottingFlesh']/@count">20</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ФЛАГИ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Удаляем старый вариант хелпер для флагов -->
+	<remove xpath="/recipes/recipe[@name='flagThick44BlockVariantHelper']"/>
+	<!-- Рецепт нового блока с вариантами выбора для флагов -->
+	<append xpath="/recipes">
+		<recipe name="flagBlockVariantHelper" count="1" craft_time="20">
+			<ingredient name="resourceCloth" count="50"/>
+			<ingredient name="resourcePaint" count="20"/>
+		</recipe>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- КУЗНИЦА -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='forge']" name="craft_time">360</setattribute>
+	<set xpath="/recipes/recipe[@name='forge']/ingredient[@name='resourceCobblestones']/@count">200</set>
+	<set xpath="/recipes/recipe[@name='forge']/ingredient[@name='resourceMetalPipe']/@count">10</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ГАРАЖНЫЕ ДВЕРИ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='ironGarageDoorBlockVariantHelper']" name="craft_time">120</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[starts-with(@name, 'woodenGarageDoor') and contains(@name,'Powered') and contains(@name,'VariantHelper')]" name="craft_time">120</setattribute>
+	<setattribute xpath="/recipes/recipe[starts-with(@name, 'ironGarageDoor') and contains(@name,'Powered') and contains(@name,'VariantHelper')]" name="craft_time">360</setattribute>
+	<setattribute xpath="/recipes/recipe[starts-with(@name, 'steelGarageDoor') and contains(@name,'Powered') and contains(@name,'VariantHelper')]" name="craft_time">480</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[starts-with(@name, 'rollUpDoor') and contains(@name,'VariantHelper')]" name="craft_time">120</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ПОДЪЁМНЫЙ МОСТ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='metalReinforcedWoodDrawBridge']" name="craft_time">360</setattribute>
+	<set xpath="/recipes/recipe[@name='metalReinforcedWoodDrawBridge']/ingredient[@name='resourceForgedIron']/@count">80</set>
+	<set xpath="/recipes/recipe[@name='metalReinforcedWoodDrawBridge']/ingredient[@name='resourceWood']/@count">200</set>
+	<set xpath="/recipes/recipe[@name='metalReinforcedWoodDrawBridge']/ingredient[@name='resourceSpring']/@count">40</set>
+	<set xpath="/recipes/recipe[@name='metalReinforcedWoodDrawBridge']/ingredient[@name='resourceMechanicalParts']/@count">120</set>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='metalReinforcedWoodDrawBridgePowered']" name="craft_time">480</setattribute>
+	<set xpath="/recipes/recipe[@name='metalReinforcedWoodDrawBridgePowered']/ingredient[@name='resourceForgedIron']/@count">80</set>
+	<set xpath="/recipes/recipe[@name='metalReinforcedWoodDrawBridgePowered']/ingredient[@name='resourceWood']/@count">200</set>
+	<set xpath="/recipes/recipe[@name='metalReinforcedWoodDrawBridgePowered']/ingredient[@name='resourceSpring']/@count">40</set>
+	<set xpath="/recipes/recipe[@name='metalReinforcedWoodDrawBridgePowered']/ingredient[@name='resourceMechanicalParts']/@count">120</set>
+	<set xpath="/recipes/recipe[@name='metalReinforcedWoodDrawBridgePowered']/ingredient[@name='resourceElectricParts']/@count">120</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ГЕНЕРАТОР -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='generatorbank']" name="craft_time">360</setattribute>
+	<set xpath="/recipes/recipe[@name='generatorbank']/ingredient[@name='resourceMechanicalParts']/@count">20</set>
+	<set xpath="/recipes/recipe[@name='generatorbank']/ingredient[@name='resourceElectricParts']/@count">40</set>
+	<append xpath="/recipes/recipe[@name='generatorbank']">
+		<ingredient name="smallEngine" count="1"/>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- СТЕКЛО -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='glassBlockVariantHelper']" name="craft_time">15</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- СТОГ СЕНА -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='hayBaleSquare']" name="craft_time">10</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ЖЕЛЕЗНЫЕ ПРУТЬЯ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[starts-with(@name, 'ironBars')]" name="craft_time">20</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ЖЕЛЕЗНЫЕ ДВЕРИ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='ironDoorBlockVariantHelper']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ironDoorBlockVariantHelper']" name="craft_time">60</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ironDoorBlockVariantHelper']" name="tags">workbenchCrafting</setattribute>
+	<set xpath="/recipes/recipe[@name='ironDoorBlockVariantHelper']/ingredient[@name='resourceForgedIron']/@count">15</set>
+	<append xpath="/recipes/recipe[@name='ironDoorBlockVariantHelper']">
+		<ingredient name="resourceSpring" count="5"/>
+		<ingredient name="resourceMechanicalParts" count="5"/>
+	</append>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='ironDoorDoubleBlockVariantHelper']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ironDoorDoubleBlockVariantHelper']" name="craft_time">90</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ironDoorDoubleBlockVariantHelper']" name="tags">workbenchCrafting</setattribute>
+	<set xpath="/recipes/recipe[@name='ironDoorDoubleBlockVariantHelper']/ingredient[@name='resourceForgedIron']/@count">25</set>
+	<append xpath="/recipes/recipe[@name='ironDoorDoubleBlockVariantHelper']">
+		<ingredient name="resourceSpring" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="10"/>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- БЛОК ПРИТЯЗАНИЯ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='keystoneBlock']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='keystoneBlock']" name="tags">workbenchCrafting</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ЛЕСТНИЦЫ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='ladderWood']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ladderWood']" name="craft_time">10</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ladderWood']" name="tags">workbenchCrafting</setattribute>
+	<set xpath="/recipes/recipe[@name='ladderWood']/ingredient[@name='resourceWood']/@count">5</set>
+	<append xpath="/recipes/recipe[@name='ladderWood']">
+		<ingredient name="resourceNail" count="1"/>
+	</append>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='ladderMetal']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ladderMetal']" name="craft_time">15</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ladderMetal']" name="tags">workbenchCrafting</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='ladderSteel']" name="craft_time">20</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ОТМЫЧКИ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='resourceLockPick']" name="craft_area">workbench</setattribute>
+	<!-- Отмычки (100) компактная упаковка -->
+	<append xpath="/recipes">
+		<recipe name="resourceLockPickBundle" count="1" craft_time="60">
+			<ingredient name="resourceLockPick" count="100"/>
+		</recipe>
+	</append>
+	<!-- Отмычки (100) крафт пачки -->
+	<set xpath="/recipes/recipe[@name='resourceLockPickBundle']//ingredient[1]/@count">80</set>
+	<set xpath="/recipes/recipe[@name='resourceLockPickBundle']//ingredient[2]/@count">80</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ЛОВУШКИ ИЗ ГНИЛОГО ДЕРЕВА -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[starts-with(@name, 'looseBoards')]" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[starts-with(@name, 'looseBoards')]" name="craft_time">20</setattribute>
+	<setattribute xpath="/recipes/recipe[starts-with(@name, 'looseBoards')]" name="tags">workbenchCrafting</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- СТРИППЕР -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='meleeToolWireTool']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='meleeToolWireTool']" name="craft_time">30</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- МИНЫ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='mineCandyTin']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='mineCandyTin']" name="craft_time">30</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='mineCandyTin']" name="tags">workbenchCrafting</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='mineHubcap']" name="craft_time">30</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='mineAirFilter']" name="craft_time">30</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='mineCookingPot']" name="craft_time">30</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- МОДИФИКАЦИИ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Отключаем дроны -->
+	<remove xpath="//recipe[contains(@name,'Drone')]"/>
+	<!-- Убираем модификацию ускорения транспорта -->
+	<remove xpath="//recipe[@name='modVehicleSuperCharger']"/>
+	<setattribute xpath="/recipes/recipe[starts-with(@name, 'modArmor') or starts-with(@name, 'modMelee') or starts-with(@name, 'modShotgun') or starts-with(@name, 'modShotgun') or starts-with(@name, 'modVehicle')]" name="craft_time">60</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- КАРТИНЫ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='pictureVariantHelper']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='pictureVariantHelper']" name="tags">workbenchCrafting</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- СЕМЕНА -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!--Увеличиваем крафт семян-->
+	<set xpath="/recipes/recipe[@name='plantedAloe1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedAloe1']/ingredient[@name='resourceCropAloeLeaf']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='plantedBlueberry1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedBlueberry1']/ingredient[@name='foodCropBlueberries']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='plantedChrysanthemum1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedChrysanthemum1']/ingredient[@name='resourceCropChrysanthemumPlant']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='plantedCoffee1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedCoffee1']/ingredient[@name='resourceCropCoffeeBeans']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='plantedCorn1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedCorn1']/ingredient[@name='foodCropCorn']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='plantedCotton1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedCotton1']/ingredient[@name='resourceCropCottonPlant']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='plantedGoldenrod1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedGoldenrod1']/ingredient[@name='resourceCropGoldenrodPlant']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='plantedGraceCorn1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedGraceCorn1']/ingredient[@name='foodCropGraceCorn']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='plantedHop1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedHop1']/ingredient[@name='resourceCropHopsFlower']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='plantedMushroom1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedMushroom1']/ingredient[@name='foodCropMushrooms']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='plantedMushroom1']/ingredient[@name='resourceClayLump']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='plantedPotato1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedPotato1']/ingredient[@name='foodCropPotato']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='plantedYucca1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedYucca1']/ingredient[@name='foodCropYuccaFruit']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='plantedPumpkin1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedPumpkin1']/ingredient[@name='foodCropPumpkin']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='plantedtreeGrassSeed1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedtreeGrassSeed1']/ingredient[@name='resourceYuccaFibers']/@count">5</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ТКАНЬ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='resourceCloth']" name="craft_time">10</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ЦЕМЕНТ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Настраиваем крафт цемента в бетономешалке -->
+	<remove xpath="/recipes/recipe[@name='resourceCement']"/>
+	<append xpath="/recipes">
+		<recipe name="resourceCement" count="1" craft_area="cementMixer" craft_time="0.25" tags="cementMixerCrafting">
+			<ingredient name="resourceCrushedSand" count="10"/>
+			<ingredient name="resourceClayLump" count="10"/>
+		</recipe>
+		<!-- Цемент (1000) новый бандл -->
+		<recipe name="resourceCementBundle" count="1" craft_time="60">
+			<ingredient name="resourceCement" count="10000"/>
+		</recipe>
+		<!-- Цемент (1000) новый бандл -->
+		<!-- Рецепт для бетономешалки, поэтому -20% по ресам -->
+		<recipe name="resourceCementBundle" count="1" craft_time="2500" craft_area="cementMixer" tags="learnable,cementMixerCrafting,perkAdvancedEngineering">
+			<ingredient name="resourceCrushedSand" count="8000"/>
+			<ingredient name="resourceClayLump" count="8000"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_stone"/>
+			</effect_group>
+		</recipe>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- БЕТОН -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<remove xpath="/recipes/recipe[@name='resourceConcreteMix']/ingredient[@name='resourceCrushedSand']"/>
+	<setattribute xpath="/recipes/recipe[@name='resourceConcreteMix']" name="craft_time">0.5</setattribute>
+	<!-- Бетон (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="resourceConcreteMixBundle" count="1" craft_time="60">
+			<ingredient name="resourceConcreteMix" count="1000"/>
+		</recipe>
+		<!-- Бетон (1000) новый бандл -->
+		<!-- Рецепт для бетономешалки, поэтому -20% по ресам -->
+		<recipe name="resourceConcreteMixBundle" count="1" craft_time="500" craft_area="cementMixer" tags="learnable,cementMixerCrafting">
+			<ingredient name="resourceRockSmall" count="800"/>
+			<ingredient name="resourceCement" count="800"/>
+		</recipe>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- БАЗОВЫЕ РЕСУРСЫ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Песок -->
+	<setattribute xpath="/recipes/recipe[@name='resourceCrushedSand']" name="craft_time">0.25</setattribute>
+	<!-- Песок (10000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="resourceCrushedSandBundle" count="1" craft_time="60" tags="learnable">
+			<ingredient name="resourceCrushedSand" count="10000"/>
+		</recipe>
+		<!-- Латунь (10000) новый бандл -->
+		<recipe name="resourceScrapBrassBundle" count="1" craft_time="60" tags="learnable">
+			<ingredient name="resourceScrapBrass" count="10000"/>
+		</recipe>
+		<!-- Глинистый грунт (10000) новый бандл -->
+		<recipe name="resourceClayLumpBundle" count="1" craft_time="60" tags="learnable">
+			<ingredient name="resourceClayLump" count="10000"/>
+		</recipe>
+		<!-- Синтетический мусор (1000) новый бандл -->
+		<recipe name="resourceScrapPolymersBundle" count="1" craft_time="60" tags="learnable">
+			<ingredient name="resourceScrapPolymers" count="1000"/>
+		</recipe>
+		<!-- Булыжники (10000) новый бандл -->
+		<recipe name="resourceCobblestonesBundle" count="1" craft_time="60">
+			<ingredient name="resourceCobblestones" count="10000"/>
+		</recipe>
+		<!-- Булыжники (10000) новый бандл -->
+		<!-- Рецепт для верстака, поэтому -20% по ресам -->
+		<recipe name="resourceCobblestonesBundle" count="1" craft_time="480" craft_area="workbench" tags="learnable,perkAdvancedEngineering">
+			<ingredient name="resourceClayLump" count="8000"/>
+			<ingredient name="resourceRockSmall" count="8000"/>
+		</recipe>
+	</append>
+	<!-- Добавляем крафт угля -->
+	<append xpath="/recipes">
+		<recipe name="resourceCoal" count="1" craft_time="3" craft_area="campfire">
+			<ingredient name="resourceWood" count="5"/>
+		</recipe>
+	</append>
+	<!-- Добавляем крафт селитры из ненужных семян -->
+	<append xpath="/recipes">
+		<recipe name="resourcePotassiumNitratePowder" count="10" craft_time="15" craft_area="chemistryStation" tags="chemStationCrafting">
+			<ingredient name="treePlantedOak1m" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		<recipe name="resourcePotassiumNitratePowder" count="10" craft_time="15" craft_area="chemistryStation" tags="chemStationCrafting">
+			<ingredient name="treePlantedMountainPine1m" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		<recipe name="resourcePotassiumNitratePowder" count="10" craft_time="15" craft_area="chemistryStation" tags="chemStationCrafting">
+			<ingredient name="treePlantedWinterPine1m" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		<recipe name="resourcePotassiumNitratePowder" count="10" craft_time="15" craft_area="chemistryStation" tags="chemStationCrafting">
+			<ingredient name="plantedtreeGrassSeed1" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- КЛЕЙКАЯ ЛЕНТА -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='resourceDuctTape']" name="craft_time">15</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- СЛИТКИ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Железо -->
+	<setattribute xpath="/recipes/recipe[@name='resourceForgedIron']" name="craft_time">4</setattribute>
+	<append xpath="/recipes">
+		<!-- Слитки железа (1000) новый бандл -->
+		<recipe name="resourceForgedIronBundle" count="1" craft_time="60">
+			<ingredient name="resourceForgedIron" count="1000"/>
+		</recipe>
+		<!-- Слитки железа (1000) новый бандл -->
+		<!-- Рецепт для кузницы, поэтому -20% по ресам -->
+		<recipe name="resourceForgedIronBundle" count="1" craft_time="4000" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="9600"/>
+			<ingredient name="unit_clay" count="4800"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,unit_iron"/>
+			</effect_group>
+		</recipe>
+	</append>
+	<!-- Сталь -->
+	<setattribute xpath="/recipes/recipe[@name='resourceForgedSteel']" name="craft_time">8</setattribute>
+	<append xpath="/recipes">
+		<!-- Слитки стали (1000) новый бандл -->
+		<recipe name="resourceForgedSteelBundle" count="1" craft_time="60">
+			<ingredient name="resourceForgedSteel" count="1000"/>
+		</recipe>
+		<!-- Слитки стали (1000) новый бандл -->
+		<!-- Рецепт для кузницы, поэтому -20% по ресам -->
+		<recipe name="resourceForgedSteelBundle" count="1" craft_time="8000" material_based="true" craft_area="forge" tags="learnable,perkAdvancedEngineering" craft_tool="toolForgeCrucible">
+			<ingredient name="unit_iron" count="21700"/>
+			<ingredient name="unit_clay" count="10500"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="unit_clay,unit_iron"/>
+			</effect_group>
+		</recipe>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- КЛЕЙ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<remove xpath="/recipes/recipe[@name='resourceGlue']"/>
+	<!-- *** -->
+	<append xpath="/recipes">
+		<recipe name="resourceGlue" count="1" craft_area="campfire" craft_time="40" craft_tool="toolCookingPot" tags="perkAdvancedEngineering">
+			<ingredient name="resourceBone" count="7"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,5" operation="base_add" value="-1" tags="resourceBone"/>
+			</effect_group>
+		</recipe>
+	</append>
+	<!-- *** -->
+	<append xpath="/recipes">
+		<recipe name="resourceGlue" count="2" craft_area="OaksCooker" craft_time="40" craft_tool="toolCookingPot" tags="perkAdvancedEngineering">
+			<ingredient name="resourceBone" count="12"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="8"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,5" operation="base_add" value="-1" tags="resourceBone"/>
+			</effect_group>
+		</recipe>
+	</append>
+	<!-- *** -->
+	<append xpath="/recipes">
+		<recipe name="resourceGlue" count="5" craft_area="chemistryStation" craft_time="25" tags="perkAdvancedEngineering,chemStationCrafting">
+			<ingredient name="resourceBone" count="20"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="16"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,5" operation="base_add" value="-1" tags="resourceBone"/>
+			</effect_group>
+		</recipe>
+	</append>
+	<!-- *** -->
+	<append xpath="/recipes">
+		<recipe name="resourceGlue" count="5" craft_area="chemistryStation" craft_time="25" tags="perkAdvancedEngineering,chemStationCrafting">
+			<ingredient name="foodCropGraceCorn" count="12"/>
+			<ingredient name="drinkJarBoiledWater" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="16"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,5" operation="base_add" value="-1" tags="foodCropGraceCorn"/>
+			</effect_group>
+		</recipe>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ТРУБЫ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<remove xpath="/recipes/recipe[@name='resourceMetalPipe']"/>
+	<!-- *** -->
+	<append xpath="/recipes">
+		<recipe name="resourceMetalPipe" count="1" material_based="true" craft_time="2" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="10"/>
+			<ingredient name="unit_clay" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,unit_iron"/>
+			</effect_group>
+		</recipe>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Гвозди -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='resourceNail']" name="craft_time">1</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Машинное масло -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='resourceOil']" name="craft_time">5</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Бумага -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='resourcePaper']" name="craft_time">15</setattribute>
+	<!-- Бумага (1000) новый бандл -->
+	<append xpath="/recipes">
+		<recipe name="resourcePaperBundle" count="1" craft_time="60">
+			<ingredient name="resourcePaper" count="1000"/>
+		</recipe>
+		<!-- Бумага (компактный крафт) -->
+		<recipe name="resourcePaperBundle" count="1" craft_time="1500" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="800"/>
+			<ingredient name="resourceGlue" count="80"/>
+			<ingredient name="drinkJarBoiledWater" count="80"/>
+		</recipe>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- РЕМНАБОРЫ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Усложняем крафт ремонтных наборов -->
+	<remove xpath="/recipes/recipe[@name='resourceRepairKit']"/>
+	<append xpath="/recipes">
+		<recipe name="resourceRepairKit" count="1" craft_time="60" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="15"/>
+			<ingredient name="resourceMechanicalParts" count="15"/>
+			<ingredient name="resourceOil" count="1"/>
+		</recipe>
+	</append>
+	<!--Усложняем крафт наборов создания брони -->
+	<remove xpath="/recipes/recipe[@name='resourceArmorCraftingKit']"/>
+	<append xpath="/recipes">
+		<recipe name="resourceArmorCraftingKit" count="1" craft_time="60" craft_area="workbench">
+			<ingredient name="armorParts" count="2"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+			<ingredient name="resourceSewingKit" count="2"/>
+			<ingredient name="resourceCloth" count="20"/>
+		</recipe>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Линза -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='resourceScopeLens']" name="craft_time">5</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Железная крышка люка -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='ironHatchBlockVariantHelper']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ironHatchBlockVariantHelper']" name="craft_time">60</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ironHatchBlockVariantHelper']" name="tags">workbenchCrafting</setattribute>
+	<append xpath="/recipes/recipe[@name='ironHatchBlockVariantHelper']">
+		<ingredient name="resourceSpring" count="4"/>
+		<ingredient name="resourceMechanicalParts" count="4"/>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Диваны -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[contains(@name, 'Couch') or contains(@name,'couch') and contains(@name,'VariantHelper')]" name="craft_time">30</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- СТАРЫЕ ДЕРЕВЯННЫЕ ДВЕРИ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='oldWoodDoor']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='oldWoodDoor']" name="craft_time">30</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='oldWoodDoor']" name="tags">workbenchCrafting</setattribute>
+	<set xpath="/recipes/recipe[@name='oldWoodDoor']/ingredient[@name='resourceWood']/@count">20</set>
+	<append xpath="/recipes/recipe[@name='oldWoodDoor']">
+		<ingredient name="resourceSpring" count="2"/>
+		<ingredient name="resourceMechanicalParts" count="2"/>
+	</append>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='oldWoodDoorDouble']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='oldWoodDoorDouble']" name="craft_time">30</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='oldWoodDoorDouble']" name="tags">workbenchCrafting</setattribute>
+	<set xpath="/recipes/recipe[@name='oldWoodDoorDouble']/ingredient[@name='resourceWood']/@count">30</set>
+	<append xpath="/recipes/recipe[@name='oldWoodDoorDouble']">
+		<ingredient name="resourceSpring" count="4"/>
+		<ingredient name="resourceMechanicalParts" count="4"/>
+	</append>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ТУРЕЛИ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='autoTurret']" name="craft_time">180</setattribute>
+	<set xpath="/recipes/recipe[@name='autoTurret']/ingredient[@name='resourceScrapPolymers']/@count">40</set>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='shotgunTurret']" name="craft_time">180</setattribute>
+	<set xpath="/recipes/recipe[@name='shotgunTurret']/ingredient[@name='resourceScrapPolymers']/@count">40</set>
+	<setattribute xpath="/recipes/recipe[@name='appliancesVariantHelper']" name="craft_time">30</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='speaker']" name="craft_time">60</setattribute>
+	<set xpath="/recipes/recipe[@name='speaker']/ingredient[@name='resourceElectricParts']/@count">12</set>
+	<setattribute xpath="/recipes/recipe[@name='spotlightPlayer']" name="craft_time">60</setattribute>
+	<set xpath="/recipes/recipe[@name='spotlightPlayer']/ingredient[@name='resourceElectricParts']/@count">20</set>
+	<setattribute xpath="/recipes/recipe[@name='switch']" name="craft_time">30</setattribute>
+	<set xpath="/recipes/recipe[@name='switch']/ingredient[@name='resourceElectricParts']/@count">10</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ВЗРЫВЧАТКА -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Бомба из трубы (50) -->
+	<set xpath="/recipes/recipe[@name='thrownAmmoPipeBomb']//ingredient[1]/@count">2</set>
+	<set xpath="/recipes/recipe[@name='thrownAmmoPipeBomb']//ingredient[2]/@count">15</set>
+	<!-- Обычная граната (50) -->
+	<set xpath="/recipes/recipe[@name='thrownGrenade']//ingredient[2]/@count">20</set>
+	<set xpath="/recipes/recipe[@name='thrownGrenade']//ingredient[3]/@count">5</set>
+	<!-- Контактная граната (50) -->
+	<set xpath="/recipes/recipe[@name='thrownGrenadeContact']//ingredient[1]/@count">2</set>
+	<set xpath="/recipes/recipe[@name='thrownGrenadeContact']//ingredient[2]/@count">30</set>
+	<set xpath="/recipes/recipe[@name='thrownGrenadeContact']//ingredient[3]/@count">5</set>
+	<!-- Бомба с часовым механизмом (50) -->
+	<remove xpath="/recipes/recipe[@name='thrownTimedCharge']"/>
+	<append xpath="/recipes">
+		<recipe name="thrownTimedCharge" count="1" craft_time="45" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="4"/>
+			<ingredient name="resourceGunPowder" count="55"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+		</recipe>
+	</append>
+	<!-- Динамит (50) -->
+	<set xpath="/recipes/recipe[@name='thrownDynamite']//ingredient[1]/@count">2</set>
+	<set xpath="/recipes/recipe[@name='thrownDynamite']//ingredient[2]/@count">24</set>
+	<set xpath="/recipes/recipe[@name='thrownDynamite']//ingredient[4]/@count">12</set>
+	<!-- Молотов (50) -->
+	<set xpath="/recipes/recipe[@name='thrownAmmoMolotovCocktail']//ingredient[1]/@count">2</set>
+	<set xpath="/recipes/recipe[@name='thrownAmmoMolotovCocktail']//ingredient[2]/@count">360</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Апгрейды для рабочих станций -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='toolAnvil']" name="craft_time">300</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='toolBellows']" name="craft_time">300</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='toolCookingGrill']" name="craft_time">120</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='toolCookingPot']" name="craft_time">120</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ЛОВУШКИ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Стеклянные -->
+	<setattribute xpath="/recipes/recipe[starts-with(@name, 'trapGlassBusiness')]" name="craft_time">15</setattribute>
+	<!-- Для крафта деревянных ловушек требуется ткань (как аналог верёвок) -->
+	<setattribute xpath="/recipes/recipe[@name='trapSpikesWoodDmg0']" name="craft_time">60</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='trapSpikesWoodDmg0']" name="count">4</setattribute>
+	<set xpath="/recipes/recipe[@name='trapSpikesWoodDmg0']/ingredient[@name='resourceWood']/@count">80</set>
+	<append xpath="/recipes/recipe[@name='trapSpikesWoodDmg0']">
+		<ingredient name="resourceCloth" count="2"/>
+	</append>
+	<!-- Изменяем крафт железных ловушек -->
+	<setattribute xpath="/recipes/recipe[@name='trapSpikesIronDmg0']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='trapSpikesIronDmg0']" name="craft_time">60</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='trapSpikesIronDmg0']" name="tags">workbenchCrafting</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='trapSpikesIronDmg0']" name="count">4</setattribute>
+	<set xpath="/recipes/recipe[@name='trapSpikesIronDmg0']/ingredient[@name='resourceForgedIron']/@count">30</set>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='plantPottedVariantHelper']" name="craft_time">20</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='tripwirepost']" name="craft_time">30</setattribute>
+	<set xpath="/recipes/recipe[@name='tripwirepost']/ingredient[@name='resourceElectricParts']/@count">3</set>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='tvBlockVariantHelper']" name="craft_time">30</setattribute>
+	<set xpath="/recipes/recipe[@name='tvBlockVariantHelper']/ingredient[@name='resourceScrapPolymers']/@count">30</set>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ДВЕРИ УБЕЖИЩА -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<setattribute xpath="/recipes/recipe[@name='vaultDoor01']" name="craft_time">30</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='vaultHatch01']" name="craft_time">30</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='vaultHatch01_Powered']" name="craft_time">60</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='vaultDoor01_Powered']" name="craft_time">60</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='vaultDoor01Double']" name="craft_time">90</setattribute>
+	<!-- *** -->
+	<setattribute xpath="/recipes/recipe[@name='vaultDoor01Double_Powered']" name="craft_time">90</setattribute>
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- ТРАНСПОРТ -->
+	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+	<!-- Усложняем крафт стандартного транспорта -->
+	<!-- Внедорожник -->
+	<set xpath="/recipes/recipe[@name='vehicleTruck4x4Accessories']/ingredient[@name='resourceElectricParts']/@count">200</set>
+	<set xpath="/recipes/recipe[@name='vehicleTruck4x4Accessories']/ingredient[@name='resourceMetalPipe']/@count">250</set>
+	<set xpath="/recipes/recipe[@name='vehicleTruck4x4Accessories']/ingredient[@name='resourceSpring']/@count">80</set>
+	<set xpath="/recipes/recipe[@name='vehicleTruck4x4Accessories']/ingredient[@name='resourceMechanicalParts']/@count">260</set>
+	<set xpath="/recipes/recipe[@name='vehicleTruck4x4Chassis']/ingredient[@name='resourceForgedSteel']/@count">350</set>
+	<set xpath="/recipes/recipe[@name='vehicleTruck4x4Chassis']/ingredient[@name='resourceMechanicalParts']/@count">400</set>
+	<set xpath="/recipes/recipe[@name='vehicleTruck4x4Chassis']/ingredient[@name='resourceDuctTape']/@count">60</set>
+	<set xpath="/recipes/recipe[@name='vehicleTruck4x4Chassis']/ingredient[@name='resourceLeather']/@count">60</set>
+	<set xpath="/recipes/recipe[@name='vehicleTruck4x4Chassis']/ingredient[@name='resourceElectricParts']/@count">260</set>
+	<set xpath="/recipes/recipe[@name='vehicleTruck4x4Placeable']/ingredient[@name='smallEngine']/@count">4</set>
+	<!-- Мотоцикл -->
+	<set xpath="/recipes/recipe[@name='vehicleMotorcycleChassis']/ingredient[@name='resourceForgedSteel']/@count">150</set>
+	<set xpath="/recipes/recipe[@name='vehicleMotorcycleChassis']/ingredient[@name='resourceMechanicalParts']/@count">200</set>
+	<set xpath="/recipes/recipe[@name='vehicleMotorcycleChassis']/ingredient[@name='resourceDuctTape']/@count">25</set>
+	<set xpath="/recipes/recipe[@name='vehicleMotorcycleChassis']/ingredient[@name='resourceLeather']/@count">15</set>
+	<set xpath="/recipes/recipe[@name='vehicleMotorcycleChassis']/ingredient[@name='resourceElectricParts']/@count">110</set>
+	<set xpath="/recipes/recipe[@name='vehicleMotorcycleHandlebars']/ingredient[@name='resourceMechanicalParts']/@count">150</set>
+	<set xpath="/recipes/recipe[@name='vehicleMotorcycleHandlebars']/ingredient[@name='resourceDuctTape']/@count">15</set>
+	<set xpath="/recipes/recipe[@name='vehicleMotorcycleHandlebars']/ingredient[@name='resourceElectricParts']/@count">60</set>
+	<set xpath="/recipes/recipe[@name='vehicleMotorcycleHandlebars']/ingredient[@name='resourceForgedSteel']/@count">50</set>
+	<set xpath="/recipes/recipe[@name='vehicleMotorcyclePlaceable']/ingredient[@name='smallEngine']/@count">2</set>
+	<!-- Велосипед -->
+	<set xpath="/recipes/recipe[@name='vehicleBicycleChassis']/ingredient[@name='resourceForgedIron']/@count">25</set>
+	<set xpath="/recipes/recipe[@name='vehicleBicycleChassis']/ingredient[@name='resourceMechanicalParts']/@count">35</set>
+	<set xpath="/recipes/recipe[@name='vehicleBicycleChassis']/ingredient[@name='resourceDuctTape']/@count">8</set>
+	<set xpath="/recipes/recipe[@name='vehicleBicycleChassis']/ingredient[@name='resourceLeather']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='vehicleBicycleChassis']/ingredient[@name='resourceSpring']/@count">20</set>
+	<set xpath="/recipes/recipe[@name='vehicleBicycleHandlebars']/ingredient[@name='resourceDuctTape']/@count">4</set>
+	<set xpath="/recipes/recipe[@name='vehicleBicycleHandlebars']/ingredient[@name='resourceLeather']/@count">4</set>
+	<set xpath="/recipes/recipe[@name='vehicleBicycleHandlebars']/ingredient[@name='resourceMechanicalParts']/@count">40</set>
+	<set xpath="/recipes/recipe[@name='vehicleBicycleHandlebars']/ingredient[@name='resourceMetalPipe']/@count">15</set>
+	<set xpath="/recipes/recipe[@name='vehicleBicycleHandlebars']/ingredient[@name='resourceSpring']/@count">20</set>
+	<set xpath="/recipes/recipe[@name='vehicleBicyclePlaceable']/ingredient[@name='resourceMechanicalParts']/@count">15</set>
+	<!-- Гирокоптер -->
+	<set xpath="/recipes/recipe[@name='vehicleGyroCopterAccessories']/ingredient[@name='resourceElectricParts']/@count">330</set>
+	<set xpath="/recipes/recipe[@name='vehicleGyroCopterAccessories']/ingredient[@name='resourceMetalPipe']/@count">150</set>
+	<set xpath="/recipes/recipe[@name='vehicleGyroCopterAccessories']/ingredient[@name='resourceMechanicalParts']/@count">300</set>
+	<set xpath="/recipes/recipe[@name='vehicleGyroCopterAccessories']/ingredient[@name='resourceSpring']/@count">80</set>
+	<set xpath="/recipes/recipe[@name='vehicleGyroCopterChassis']/ingredient[@name='resourceForgedSteel']/@count">450</set>
+	<set xpath="/recipes/recipe[@name='vehicleGyroCopterChassis']/ingredient[@name='resourceMechanicalParts']/@count">400</set>
+	<set xpath="/recipes/recipe[@name='vehicleGyroCopterChassis']/ingredient[@name='resourceDuctTape']/@count">75</set>
+	<set xpath="/recipes/recipe[@name='vehicleGyroCopterChassis']/ingredient[@name='resourceLeather']/@count">80</set>
+	<set xpath="/recipes/recipe[@name='vehicleGyroCopterChassis']/ingredient[@name='resourceElectricParts']/@count">400</set>
+	<set xpath="/recipes/recipe[@name='vehicleGyrocopterPlaceable']/ingredient[@name='smallEngine']/@count">8</set>
+	<!-- Мини-байк -->
+	<set xpath="/recipes/recipe[@name='vehicleMinibikeChassis']/ingredient[@name='resourceForgedIron']/@count">100</set>
+	<set xpath="/recipes/recipe[@name='vehicleMinibikeChassis']/ingredient[@name='resourceMechanicalParts']/@count">80</set>
+	<set xpath="/recipes/recipe[@name='vehicleMinibikeChassis']/ingredient[@name='resourceDuctTape']/@count">15</set>
+	<set xpath="/recipes/recipe[@name='vehicleMinibikeChassis']/ingredient[@name='resourceLeather']/@count">8</set>
+	<set xpath="/recipes/recipe[@name='vehicleMinibikeChassis']/ingredient[@name='resourceElectricParts']/@count">50</set>
+	<set xpath="/recipes/recipe[@name='vehicleMinibikeHandlebars']/ingredient[@name='resourceMechanicalParts']/@count">80</set>
+	<set xpath="/recipes/recipe[@name='vehicleMinibikeHandlebars']/ingredient[@name='resourceSpring']/@count">50</set>
+	<set xpath="/recipes/recipe[@name='vehicleMinibikeHandlebars']/ingredient[@name='resourceElectricParts']/@count">60</set>
+	<set xpath="/recipes/recipe[@name='vehicleMinibikeHandlebars']/ingredient[@name='resourceMetalPipe']/@count">40</set>
+	<!-- Полено -->
+	<setattribute xpath="/recipes/recipe[@name='woodLogPillar100']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='woodLogPillar100']" name="craft_time">15</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='woodLogPillar100']" name="tags">workbenchCrafting</setattribute>
+	<!-- Крышка люка -->
+	<remove xpath="//recipe[@name='woodHatch']"/>
+	<append xpath="/recipes">
+		<recipe name="woodHatch" count="1" craft_area="workbench" craft_time="30" tags="workbenchCrafting">>
+    <ingredient name="resourceWood" count="20"/>
+			<ingredient name="resourceSpring" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="2"/>
+		</recipe>
+	</append>
+	<!-- Верстак -->
+	<setattribute xpath="/recipes/recipe[@name='workbench']" name="craft_time">360</setattribute>
+	<set xpath="/recipes/recipe[@name='workbench']/ingredient[@name='resourceForgedIron']/@count">40</set>
+	<!-- Металлические заборы -->
+	<setattribute xpath="/recipes/recipe[@name='metalFenceRailingTrellisSheetBlockVariantHelper']" name="craft_time">15</setattribute>
+	<!-- Усложняем крафт строительных блоков -->
+	<remove xpath="//recipe[@name='frameShapes:VariantHelper']"/>
+	<remove xpath="//recipe[@name='woodShapes:VariantHelper']"/>
+	<remove xpath="//recipe[@name='cobblestoneShapes:VariantHelper']"/>
+	<remove xpath="//recipe[@name='concreteShapes:VariantHelper']"/>
+	<remove xpath="//recipe[@name='steelShapes:VariantHelper']"/>
+	<append xpath="/recipes">
+		<recipe name="frameShapes:VariantHelper" count="2" craft_time="15">
+			<ingredient name="resourceScrapIron" count="5"/>
+			<ingredient name="resourceWood" count="5"/>
+		</recipe>
+		<recipe name="woodShapes:VariantHelper" count="2" craft_time="10" craft_area="workbench">
+			<ingredient name="resourceScrapIron" count="10"/>
+			<ingredient name="resourceWood" count="20"/>
+		</recipe>
+		<recipe name="cobblestoneShapes:VariantHelper" count="2" craft_time="10" craft_area="workbench">
+			<ingredient name="resourceScrapIron" count="10"/>
+			<ingredient name="resourceCobblestones" count="20"/>
+		</recipe>
+		<recipe name="concreteShapes:VariantHelper" count="2" craft_time="10" craft_area="workbench">
+			<ingredient name="resourceScrapIron" count="10"/>
+			<ingredient name="resourceConcreteMix" count="20"/>
+		</recipe>
+		<recipe name="steelShapes:VariantHelper" count="2" craft_time="10" craft_area="workbench">
+			<ingredient name="resourceForgedSteel" count="20"/>
+		</recipe>
+	</append>
+	<!-- Краска -->
+	<remove xpath="//recipe[@name='resourcePaint']"/>
+	<append xpath="/recipes">
+		<recipe name="resourcePaint" count="500" craft_area="chemistryStation" craft_time="300" tags="chemStationCrafting">
+			<ingredient name="resourceCropChrysanthemumPlant" count="80"/>
+			<ingredient name="drinkJarBoiledWater" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+		</recipe>
+	</append>
+</recipes_aio_2>

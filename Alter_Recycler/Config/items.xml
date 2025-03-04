@@ -1,0 +1,11 @@
+<configs>
+	<append xpath="/items/item[@name='schematicMaster']">
+		<property name="Recyclable" value="false"/>
+	</append>
+	<append xpath="/items/item[contains(@name,'drinkJar')]">
+		<property name="Recyclable" value="false"/>
+	</append>
+	<append xpath="/items/item[@name='drinkYuccaJuiceSmoothie']">
+		<property name="Recyclable" value="false"/>
+	</append>
+</configs>

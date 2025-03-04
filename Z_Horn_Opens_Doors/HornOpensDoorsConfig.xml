@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ActivationDistance>8</ActivationDistance>
+	<ActivationLongDistance>14</ActivationLongDistance>
+	<MaximumDoorsToOpen>1</MaximumDoorsToOpen>
+	<DoorAnimationType>0</DoorAnimationType>
+	<UseBridgeFix>true</UseBridgeFix>
+	<UseXMLClearHornBuff>false</UseXMLClearHornBuff>
+	<ServerSyncConfig>true</ServerSyncConfig>
+	<IsDebug>false</IsDebug>
+</xml>
+
+<!-- DoorAnimationType 0 or 1 -->

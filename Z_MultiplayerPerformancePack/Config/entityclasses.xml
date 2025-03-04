@@ -1,8 +1,0 @@
-<ByHowlune>
-	<!--Potential to stop a lot of animation NetPackages being broadcasted-->
-	<remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@class='FallLandBehavior']"/>
-	<remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@class='DestroyBlockBehavior']"/>
-	<!--Every time a zombie spawns, it fires NetPackageAddRemoveBuff and begins unneccessary checks because of this. Most zombies don't last long enough for particle removal to matter.-->
-	<remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/effect_group/triggered_effect[@trigger='onSelfFirstSpawn' and @action='AddBuff']"/>
-	<remove xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='Buffs']"/>
-</ByHowlune>

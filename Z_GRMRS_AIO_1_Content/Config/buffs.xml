@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<buffs_aio_1>
+	<!-- Бафф для спальника -->
+	<append xpath="/buffs">
+		<buff name="buffBedrollHealing" name_key="buffBedrollHealingName" description_key="buffBedrollHealingDesc" tooltip_key="ToolTipBedrollHealing" icon="ui_game_symbol_add" icon_color="0,220,0">
+			<stack_type value="ignore"/>
+			<display_value_key value="DisplayValueBedrollHealing"/>
+			<display_value value="+"/>
+			<duration value="3"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Stamina" operation="add" value="1"/>
+				<triggered_effect action="AddBuff" trigger="onSelfBuffUpdate" buff="buffPerkAbilityUpdate"/>
+				<triggered_effect action="AddBuff" trigger="onSelfBuffRemove" buff="buffPerkAbilityUpdate"/>
+			</effect_group>
+		</buff>
+	</append>
+	<!-- Бафф для кроватей -->
+	<append xpath="/buffs">
+		<buff name="buffBedsHealing" name_key="buffBedsHealingName" description_key="buffBedsHealingDesc" tooltip_key="ToolTipBedsHealing" icon="ui_game_symbol_add" icon_color="0,220,0">
+			<stack_type value="ignore"/>
+			<display_value_key value="DisplayValueBedsHealing"/>
+			<display_value value="+"/>
+			<duration value="3"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Stamina" operation="add" value="2"/>
+				<triggered_effect action="AddBuff" trigger="onSelfBuffUpdate" buff="buffPerkAbilityUpdate"/>
+				<triggered_effect action="AddBuff" trigger="onSelfBuffRemove" buff="buffPerkAbilityUpdate"/>
+			</effect_group>
+		</buff>
+	</append>
+	<!-- У зомби больше здоровья в зависимости от уровня игрока -->
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="buffGameStage"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" buff="buffGameStage"/>
+			<triggered_effect trigger="onSelfRespawn" action="AddBuff" buff="buffGameStage"/>
+		</effect_group>
+	</append>
+	<append xpath="/buffs">
+		<buff name="zombieBuffStatusCheckLevelHP" name_key="beers" description_key="drunkDesc" tooltip_key="drunkTooltip" icon="ui_game_symbol_beer">
+			<stack_type value="ignore"/>
+			<update_rate value="0.1"/>
+			<effect_group>
+				<requirement name="CVarCompare" target="self" cvar="PlayerLevelModificator" operation="GT" value="@LastPlayerLevelModificator"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffZombieUpdate"/>
+			</effect_group>
+			<effect_group name="Player Level Effects">
+				<passive_effect name="HealthMax" operation="perc_add" value="@ModifierHealth"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="@ModifierEntityDamage"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="@ModifierBlockDamage"/>
+				<!--passive_effect name="TargetArmor" operation="perc_add" value="@ModifierPen"/-->
+				<!--passive_effect name="PhysicalDamageResist" operation="base_add" value="@ModifierArmor"/-->
+			</effect_group>
+		</buff>
+		<buff name="buffGameStage" hidden="true">
+			<update_rate value="1"/>
+			<stack_type value="ignore"/>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="LT" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="1">
+					<requirement name="PlayerLevelModificator" operation="LT" value="1"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="10">
+					<requirement name="PlayerLevelModificator" operation="LT" value="10"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="20">
+					<requirement name="PlayerLevelModificator" operation="LT" value="20"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="30">
+					<requirement name="PlayerLevelModificator" operation="LT" value="30"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="40"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="40">
+					<requirement name="PlayerLevelModificator" operation="LT" value="40"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="50"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="50">
+					<requirement name="PlayerLevelModificator" operation="LT" value="50"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="60"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="60">
+					<requirement name="PlayerLevelModificator" operation="LT" value="60"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="70"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="70">
+					<requirement name="PlayerLevelModificator" operation="LT" value="70"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="80"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="80">
+					<requirement name="PlayerLevelModificator" operation="LT" value="80"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="90"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="90">
+					<requirement name="PlayerLevelModificator" operation="LT" value="90"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="100"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="100">
+					<requirement name="PlayerLevelModificator" operation="LT" value="100"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="110"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="110">
+					<requirement name="PlayerLevelModificator" operation="LT" value="110"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="120"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="120">
+					<requirement name="PlayerLevelModificator" operation="LT" value="120"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="130"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="130">
+					<requirement name="PlayerLevelModificator" operation="LT" value="130"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="140"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="140">
+					<requirement name="PlayerLevelModificator" operation="LT" value="140"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="150"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="150">
+					<requirement name="PlayerLevelModificator" operation="LT" value="150"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="160"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="160">
+					<requirement name="PlayerLevelModificator" operation="LT" value="160"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="170"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="170">
+					<requirement name="PlayerLevelModificator" operation="LT" value="170"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="180"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="180">
+					<requirement name="PlayerLevelModificator" operation="LT" value="180"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="190"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="190">
+					<requirement name="PlayerLevelModificator" operation="LT" value="190"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="200"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="200">
+					<requirement name="PlayerLevelModificator" operation="LT" value="200"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="210"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="210">
+					<requirement name="PlayerLevelModificator" operation="LT" value="210"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="220"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="220">
+					<requirement name="PlayerLevelModificator" operation="LT" value="220"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="230"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="230">
+					<requirement name="PlayerLevelModificator" operation="LT" value="230"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="240"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="240">
+					<requirement name="PlayerLevelModificator" operation="LT" value="240"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="250"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="250">
+					<requirement name="PlayerLevelModificator" operation="LT" value="250"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="260"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="260">
+					<requirement name="PlayerLevelModificator" operation="LT" value="260"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="270"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="270">
+					<requirement name="PlayerLevelModificator" operation="LT" value="270"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="280"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="280">
+					<requirement name="PlayerLevelModificator" operation="LT" value="280"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="290"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="290">
+					<requirement name="PlayerLevelModificator" operation="LT" value="290"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<requirement name="PlayerLevel" operation="GTE" value="300"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" tags="zombie" range="48" cvar="PlayerLevelModificator" operation="set" value="300">
+					<requirement name="PlayerLevelModificator" operation="LT" value="300"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="buffZombieUpdate">
+			<stack_type value="ignore"/>
+			<duration value=".2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="LastPlayerLevelModificator" operation="set" value="@PlayerLevelModificator"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffZombieModifiers"/>
+			</effect_group>
+		</buff>
+		<buff name="buffZombieModifiers">
+			<stack_type value="ignore"/>
+			<duration value=".6"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="ModifierHealth" operation="set" value="@PlayerLevelModificator"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="ModifierHealth" operation="divide" value="300"/>
+				<!-- +100% more hp at player lvl (300) (2.5%/10lvl)-->
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="ModifierEntityDamage" operation="set" value="@PlayerLevelModificator"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="ModifierEntityDamage" operation="divide" value="300"/>
+				<!-- +100% more entity dmg at player lvl (300) (2.5%/10lvl)-->
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="ModifierBlockDamage" operation="set" value="@PlayerLevelModificator"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="ModifierBlockDamage" operation="divide" value="1200"/>
+				<!-- +25% more block dmg at player lvl (300) (1.25%/10lvl)-->
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="ModifierPen" operation="set" value="@PlayerLevelModificator"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="ModifierPen" operation="divide" value="-1200"/>
+				<!-- 25% armor penetration at player lvl (300) -->
+				<!--triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="ModifierArmor" operation="set" value="@PlayerLevelModificator"/-->
+				<!--triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="ModifierArmor" operation="divide" value="30"/-->
+				<!-- +10% more armor at player lvl (300) -->
+				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffZombieAddBuffHealth"/>
+			</effect_group>
+		</buff>
+		<buff name="buffZombieAddBuffHealth">
+			<stack_type value="ignore"/>
+			<duration value=".2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="999999"/>
+			</effect_group>
+		</buff>
+	</append>
+</buffs_aio_1>

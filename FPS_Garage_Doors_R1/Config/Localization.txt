@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,russian
+
+FPSGarageDoorVariantHelper,blocks,Block,,,"FPS - Garage Door Variant","FPS - Гаражные ворота"
+FPSGarageDoorVariantHelperDesc,blocks,Block,,,"Craft FPS Garage Door Variant. Put the FPS Garage Door Variant on your toolbelt, hold the Reload action and select the Shape entry from the radial menu. Select a door to build with!","Возьмите в руку, зажмите кнопку перезарядки и выберите в круговом меню вариант Shape. Постройте подходящие вам ворота!"

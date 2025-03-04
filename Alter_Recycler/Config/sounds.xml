@@ -1,0 +1,8 @@
+<configs>
+	<append xpath="/Sounds">
+        <SoundDataNode name="recycle_loop">
+            <AudioSource name="#@modfolder:Resources/resources.unity3d?recycler_sound"/>
+            <AudioClip ClipName="#@modfolder:Resources/resources.unity3d?crusher"/>
+        </SoundDataNode>
+	</append>
+</configs>

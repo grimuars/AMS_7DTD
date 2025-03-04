@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xml>
-	<Name value="No_More_Giant_Holes_Or_Deep_Underground_Bases"/>
-	<DisplayName value="No More Giant Holes Or Deep Underground Bases"/>
-	<Description value="Changes Stone and Gravel into bedrock to prevent digging giant holes or digging deep to hide bases. Boulders and Surface Ores respawn after 15 minutes."/>
-	<Author value="jayfusion (modified by grimuars)"/>
-	<Version value="1.1"/>
-	<Website value="https://www.nexusmods.com/7daystodie/mods/2227"/>
-</xml>

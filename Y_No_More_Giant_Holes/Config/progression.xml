@@ -1,0 +1,20 @@
+<Configs>
+	<set xpath="/progression/perks/book[@name='perkArtOfMiningComplete']/effect_group">
+		<requirement name="ItemHasTags" tags="miningTool"/>
+		<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+		<passive_effect name="HarvestCount" operation="perc_add" level="1" value=".2" tags="ore"/>
+	</set>
+	<!-- *** ART_OF_MINING_VOLUME_06_AVALANCHE -->
+	<remove xpath="/progression/perks/book[@name='perkArtOfMiningAvalanche']"/>
+	<insertAfter xpath="/progression/perks/book[@name='perkArtOfMiningPallets']">
+		<book name="perkArtOfMiningAvalanche" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" desc_key="perkArtOfMiningAvalancheDesc" long_desc_key="perkArtOfMiningAvalancheLongDesc">
+			<effect_group>
+				<requirement name="ItemHasTags" tags="miningTool"/>
+				<passive_effect name="FallingBlockDamage" operation="perc_add" level="1" value="-.95"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" level="1" value="0.2" tags="miningTool"/>
+			</effect_group>
+		</book>
+	</insertAfter>
+</Configs>

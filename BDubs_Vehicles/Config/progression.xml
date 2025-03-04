@@ -1,0 +1,10 @@
+<configs>
+	<append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@icon='vehicleMotorcyclePlaceable']/unlock_entry/@item">,vehicleDirtBikeChassis,vehicleDirtBikeParts</append>
+	<append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@icon='vehicleTruck4x4Placeable']/unlock_entry/@item">,vehicleHumveechassis,vehicleHumveebody,vehicleUAZ452chassis,vehicleUAZaccessories</append>
+	<append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@icon='vehicleGyrocopterPlaceable']/unlock_entry/@item">,vehicleMarauderchassis,vehicleMarauderaccessories</append>
+	<append xpath="//crafting_skill[@name='craftingVehicles']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="vehicleDirtBikeChassis,vehicleDirtBikeParts"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="70,100" value="1" tags="vehicleHumveechassis,vehicleHumveebody,vehicleUAZ452chassis,vehicleUAZaccessories"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="vehicleMarauderchassis,vehicleMarauderaccessories"/>
+	</append>
+</configs>

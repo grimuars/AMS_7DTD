@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<append xpath="/items">
+		<item name="Magbow">
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,sideAttachments,magbow8xScope,bottomAttachments,attAgility,perkArchery,crossbow,canHaveCosmetic,bowSkill,stock,magazine,drumMagazine"/>
+			<property name="DisplayType" value="rangedBow"/>
+			<property name="DescriptionKey" value="MagbowDesc"/>
+			<property name="CustomIcon" value="Magbow"/>
+			<property name="HoldType" value="71"/>
+			<property name="Meshfile" value="#@modfolder:Resources/MagBow.unity3d?Magbow_Prefab.prefab"/>
+			<property name="Material" value="MBowCrossbowParts"/>
+			<property name="Weight" value="1"/>
+			<property name="RepairTools" value="gunBowT1WoodenBowParts"/>
+			<property name="ScrapTimeOverride" value="45.0"/>
+			<!-- <property name="RepairTime" value="30"/>
+			<property name="RepairAmount" value="500"/> -->
+			<property name="RepairDegradeAmount" value="1"/>
+			<property name="RepairDegradeChance" value="0.15"/>
+			<property name="RepairQualityOneBreaksAfter" value="false"/>
+			<property name="FuelValue" value="200"/>
+			<property name="EconomicValue" value="5000"/>
+			<property name="TraderStageTemplate" value="baseTier3"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="CrosshairOnAim" value="true"/>
+			<!-- aimTest -->
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<!-- aimTest -->
+			<property name="Sound_Sight_In" value="crossbow_sight_in"/>
+			<property name="Sound_Sight_Out" value="crossbow_sight_out"/>
+			<property name="Group" value="Ammo/Weapons,Ranged Weapons"/>
+			<property name="SoundUnholster" value="weapon_unholster"/>
+			<property name="SoundHolster" value="weapon_holster"/>
+			<property name="RepairExpMultiplier" value="5.5"/>
+			<property name="PickupJournalEntry" value="alternateAmmoTip"/>
+			<property name="UnlockedBy" value="craftingBows"/>
+			<property name="ShowQuality" value="true"/>
+			<property class="Action0">
+				<property name="Class" value="Launcher"/>
+				<property name="Hitmask_override" value="Arrow"/>
+				<property name="Delay" value="0.8"/>
+				<!-- obsolete if rounds per minute exists -->
+				<property name="Magazine_items" value="ammoCrossbowBoltIron,ammoCrossbowBoltSteelAP"/>
+				<!-- <property name="Reload_time" value="4"/> -->
+				<property name="Sound_start" value="magbow_fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="dryfire"/>
+				<property name="Sound_reload" value="crossbow_reload"/>
+				<property name="AutoReload" value="false"/>
+				<property name="triggerEffectTriggerPullDualsense" value="PistolTrigger"/>
+				<property name="triggerEffectTriggerPullXbox" value="PistolTrigger"/>
+				<property name="triggerEffectTriggerShootDualsense" value="PistolShoot"/>
+				<property name="triggerEffectTriggerShootXbox" value="PistolShoot"/>
+			</property>
+			<property class="Action1">
+				<!-- UseAction -->
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+				<property name="zoomTriggerEffectTriggerPullDualsense" value="PistolZoom"/>
+				<property name="zoomTriggerEffectTriggerPullXbox" value="PistolZoom"/>
+				<property name="ScopeCameraOffset" value="0,-0.032,0"/>
+			</property>
+			<effect_group name="Magbow">
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="40" tags="perkArchery"/>
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkArchery"/>
+				<!-- random effective rng -->
+				<passive_effect name="MaxRange" operation="base_set" value="200" tags="perkArchery"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="10" tags="perkArchery"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".75" tags="perkArchery"/>
+				<!-- 3.4s -->
+				<passive_effect name="EntityDamage" operation="base_add" value="110" tags="perkArchery"/>
+				<!-- damage offset -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="-.01,.04" tags="perkArchery"/>
+				<!-- random EntityDmg -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.6" tier="2,6" tags="perkArchery"/>
+				<!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="perc_add" value="0"/>
+				<passive_effect name="ProjectileVelocity" operation="perc_add" value=".4" tags="perkArchery"/>
+				<!-- random Veloc -->
+				<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkArchery"/>
+				<!-- random DegMax -->
+				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkArchery"/>
+				<!-- random WeaponHandling -->
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.35,2.25,2.15,1.8,1.5,1" tier="1,2,3,4,5,6"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.35,2.25,2.15,1.8,1.5,1" tier="1,2,3,4,5,6"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".10" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2" tags="perkArchery"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2" tags="perkArchery"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value=".5" tags="perkArchery"/>
+				<!-- crosshair reset speed -->
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="50,150" tier="1,6"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkArchery"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".5" tags="perkArchery"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".5" tags="perkArchery"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.1" tags="perkArchery"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".1" tags="perkArchery"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="200,250,300,350,400,500" tier="1,2,3,4,5,6" tags="perkArchery"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.8" tags="perkArchery"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2,2,3,3,4,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="shoot" value="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="shoot" value="false"/>
+			</effect_group>
+			<effect_group name="sneak damage bonus">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+				<passive_effect name="DamageBonus" operation="base_add" value="3"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="3" tags="perkArchery"/>
+				<display_value name="dEntityDamageSneak" value="3"/>
+			</effect_group>
+		</item>
+	</append>
+</configs>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blockplaceholders_aio_2>
+	<!-- Добавляем мины в генерацию мира -->
+	<!-- *** Сосновый лес -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntForestRandomLootHelper']">
+		<block name="mineCandyTin" prob=".185"/>
+		<block name="mineCookingPot" prob=".185"/>
+		<block name="mineAirFilter" prob=".185"/>
+		<block name="mineHubcap" prob=".185"/>
+	</append>
+	<!-- *** Пустошь -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntWastelandRandomLootHelper']">
+		<block name="mineCandyTin" prob=".185"/>
+		<block name="mineCookingPot" prob=".185"/>
+		<block name="mineAirFilter" prob=".185"/>
+		<block name="mineHubcap" prob=".185"/>
+	</append>
+	<!-- *** Пустыня -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntDesertRandomLootHelper']">
+		<block name="mineCandyTin" prob=".185"/>
+		<block name="mineCookingPot" prob=".185"/>
+		<block name="mineAirFilter" prob=".185"/>
+		<block name="mineHubcap" prob=".185"/>
+	</append>
+	<!-- *** Горелый лес -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntBurntForestRandomLootHelper']">
+		<block name="mineCandyTin" prob=".185"/>
+		<block name="mineCookingPot" prob=".185"/>
+		<block name="mineAirFilter" prob=".185"/>
+		<block name="mineHubcap" prob=".185"/>
+	</append>
+	<!-- *** Дома -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntHouseRandomLootHelper']">
+		<block name="mineCandyTin" prob=".185"/>
+		<block name="mineCookingPot" prob=".185"/>
+		<block name="mineAirFilter" prob=".185"/>
+		<block name="mineHubcap" prob=".185"/>
+	</append>
+	<!-- *** Улицы -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntStreetRandomLootHelper']">
+		<block name="mineCandyTin" prob=".185"/>
+		<block name="mineCookingPot" prob=".185"/>
+		<block name="mineAirFilter" prob=".185"/>
+		<block name="mineHubcap" prob=".185"/>
+	</append>
+	<!-- *** Придомовая территория -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntYardRandomLootHelper']">
+		<block name="mineCandyTin" prob=".185"/>
+		<block name="mineCookingPot" prob=".185"/>
+		<block name="mineAirFilter" prob=".185"/>
+		<block name="mineHubcap" prob=".185"/>
+	</append>
+	<!-- *** Гаражи -->
+	<append xpath="/blockplaceholders/placeholder[@name='cntGarageRandomLootHelper']">
+		<block name="mineCandyTin" prob=".185"/>
+		<block name="mineCookingPot" prob=".185"/>
+		<block name="mineAirFilter" prob=".185"/>
+		<block name="mineHubcap" prob=".185"/>
+	</append>
+</blockplaceholders_aio_2>

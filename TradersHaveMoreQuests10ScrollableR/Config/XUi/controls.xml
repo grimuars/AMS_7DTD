@@ -1,3 +1,0 @@
-<xui_controls>
-	<set xpath="//response_entry/rect/@style">press, hover</set>
-</xui_controls>

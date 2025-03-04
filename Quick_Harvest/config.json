@@ -1,0 +1,8 @@
+{
+  "modEnabled": true,
+  "isDebug": true,
+  "blockRadius": 32,
+  "replaceCrop": true,
+  "harvestKey": "h",
+  "harvestModKey": ""
+}

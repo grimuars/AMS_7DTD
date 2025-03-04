@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+		<item_property_overrides name="Magbow">
+			<property name="ScopeOffset" value="0,0.052,-0.05"/>
+			<property name="ScopeScale" value="0.6,0.6,0.6"/>
+			<property name="ScopeCameraOffset" value="-0.0005,-0.0412,-0.12"/>
+		</item_property_overrides>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']">
+		<item_property_overrides name="Magbow">
+			<property name="SideOffset" value="0,-.038,.32"/>
+			<property name="SideScale" value=".9,.9,.9"/>
+		</item_property_overrides>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
+		<item_property_overrides name="Magbow">
+			<property name="SideOffset" value="0,0,0"/>
+			<property name="SideScale" value=".6,.6,.6"/>
+		</item_property_overrides>
+	</append>
+	<append xpath="/item_modifiers">
+		<item_modifier name="MagbowScopeLarge" installable_tags="magbow8xScope" modifier_tags="scope" blocked_tags="noMods,noScopes,shotguns" type="attachment">
+			<property name="UnlockedBy" value="modGunScopeLargeSchematic"/>
+			<property name="CustomIcon" value="modGunScopeLarge"/>
+			<property name="CustomIconTint" value="30,0,0"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<item_property_overrides name="Magbow">
+				<property name="CrosshairOnAim" value="true"/>
+				<property name="Zoom_overlay" value="#@modfolder:Resources/Magbow8xZoom_Overlay.unity3d?Magbow_sniper_zoom_overlay.tga"/>
+				<property name="Zoom_max_out" value="20"/>
+				<property name="Zoom_max_in" value="10"/>
+				<property name="ScopeOffset" value="0,0.052,-0.05"/>
+				<property name="ScopeScale" value="1,1,1"/>
+				<property name="ScopeCameraOffset" value="0,-.05,0"/>
+			</item_property_overrides>
+			<effect_group tiered="false" name="external attachment prefab (old way)">
+				<requirement name="!HoldingItemHasTags" tags="attachmentsIncluded"/>
+				<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/Magbowx8Scope.unity3d?Magbowx8Scope_Prefab.prefab" parent_transform="Attachments/Magbow8xScope"/>
+			</effect_group>
+			<effect_group tiered="false" name="mod effects">
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.25" tags="perkGunslinger,perkDeadEye,perkMachineGunner,perkArchery,admin"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.25" tags="perkDeadEye,perkArchery,admin">
+					<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="ProgressionLevel" progression_name="perkSniperDamage" operation="Equals" value="1"/>
+					<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
+				</passive_effect>
+			</effect_group>
+		</item_modifier>
+	</append>
+</configs>

@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+ObjectiveStayWithin_keyword,Quest,Keywords,,,Stay Within,,Drinnen bleiben,Quédate dentro,Rester à l'intérieur,Resta dentro,範囲内から出たら失敗,유지,Pozostań na obszarze,Fique em,Оставаться внутри,İçinde Kal,留在里面,留在區域
+ObjectiveClearAreas_keyword,Quest,Keywords,,,Clear Areas:,,Säubere Gebiete,Despeja las zonas,Terminer les zones ,Libera le aree,エリアを一掃する,지역 소탕,Wyczyść obszary,Limpe as áreas,Очистить области,Alanları Temizle,清理区域,清理區域
+ObjectiveTalkToTrader_keyword,Quest,Keywords,,,Talk to Trader,,Rede mit dem Händler,Habla con el vendedor,Parler au marchand ,Parla con il negoziante,トレーダーと話す,상인과 대화,Porozmawiaj z handlarzem,Fale com o comerciante,Поговорить с торговцем:,Tüccarla Konuş,与商人交谈,與商人交談

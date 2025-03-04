@@ -1,0 +1,10 @@
+﻿<config>
+	<append xpath="/styles">
+		<style name="questlist.background" type="texture">
+			<style_entry name="depth" value="2"/>
+			<style_entry name="pos" value="0,0"/>
+			<style_entry name="size" value="1000,636"/>
+			<style_entry name="texture" value="@modfolder:Textures/questlist_bg.png"/>
+		</style>
+	</append>
+</config>

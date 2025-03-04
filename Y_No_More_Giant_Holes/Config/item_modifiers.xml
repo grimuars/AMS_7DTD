@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item_modifiers>
+	<!-- Мод в шлем "Охотник за сокровищами" теперь повышает LootStage на 10 и не даёт бонуса к зарытым сокровищам -->
+	<remove xpath="/item_modifiers/item_modifier[@name='modArmorTreasureHunter']/effect_group/passive_effect[@name='TreasureBlocksPerReduction']"/>
+	<remove xpath="/item_modifiers/item_modifier[@name='modArmorTreasureHunter']/effect_group/display_value[@name='dTreasureBlocksPerReduction']"/>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorTreasureHunter']/effect_group/passive_effect[@name='LootStage']/@value">10</set>
+	<!-- Изменяем мод на копателя могил -->
+	<remove xpath="/item_modifiers/item_modifier[@name='modMeleeGraveDigger']"/>
+	<append xpath="/item_modifiers">
+		<item_modifier name="modMeleeGraveDigger" installable_tags="shovel" modifier_tags="damage" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="modMeleeGraveDiggerSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier1"/>
+			<!-- Добавляем 20% шанс оглушить цель -->
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="shovel"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryStunned01"/>
+			</effect_group>
+			<!-- Уменьшаем потери выносливости при использовании лопат на 20% -->
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="shovel"/>
+				<passive_effect name="StaminaLoss" operation="perc_add" value="-.15" tags="primary,secondary"/>
+			</effect_group>
+			<!-- Урон по земле +25% -->
+			<effect_group tiered="false">
+				<passive_effect name="DamageModifier" operation="perc_add" value=".25" tags="earth"/>
+			</effect_group>
+			<!-- Добавляем кровотечение -->
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="shovel"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="@$maxBleedCounter" target="other"/>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="shovel"/>
+				<requirement name="CVarCompare" cvar="bleedCounter" operation="GT" value="0" target="other"/>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+			</effect_group>
+			<!-- Увеличиваем урон по противникам -->
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="shovel"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".25"/>
+			</effect_group>
+		</item_modifier>
+	</append>
+	<!-- Убираем возможность ставить зазубренное лезвие на лопаты -->
+	<setattribute xpath="/item_modifiers/item_modifier[@name='modMeleeSerratedBlade']" name="installable_tags">knife,machete,axe,perkBrawler,perkJavelinMaster</setattribute>
+	<!-- Аналогично для утяжелителя -->
+	<setattribute xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']" name="blocked_tags">noMods,perkDeepCuts,shovel</setattribute>
+</item_modifiers>

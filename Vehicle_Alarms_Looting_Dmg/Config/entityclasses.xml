@@ -1,0 +1,14 @@
+<entityclasses>
+
+    <!-- Vehicle Alarm Tag Buff -->    
+    <append xpath="//entity_class[@name='playerMale']">
+
+        <effect_group>
+            <triggered_effect trigger="onSelfDamagedBlock" action="CallGameEvent" event="vehicle_damaged_alarm_sound">
+                <requirement name="TriggerHasTags" tags="vehicleDamageAlarm"/>
+            </triggered_effect>
+        </effect_group>
+
+    </append>	
+
+</entityclasses>

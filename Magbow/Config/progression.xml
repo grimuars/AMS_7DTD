@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBows']">
+		<display_entry item="Magbow" unlock_level="88,92,96,100,104,108"/>
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBows']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,108" value="1" tags="magBow"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="88,92,96,100,104,108" value="1,2,3,4,5,6" tags="magBow"/>
+	</append>
+</configs>

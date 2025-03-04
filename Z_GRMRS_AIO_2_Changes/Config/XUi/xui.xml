@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xui_aio_2>
+	<!-- Изменяем слоты для кузницы -->
+	<set xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowForgeInput']/@name">windowThreeForgeInput</set>
+	<set xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowOutput']/@name">windowThreeForgeOutput</set>
+	<!-- Добавляем UI для плохих рабочих станций -->
+	<append xpath="/xui/ruleset">
+		<window_group name="workstation_workbenchlow" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultSelected="bp.content">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput"/>
+			<window name="windowNonPagingHeader"/>
+			<!-- <window name="windowCombine" /> -->
+		</window_group>
+	</append>
+</xui_aio_2>

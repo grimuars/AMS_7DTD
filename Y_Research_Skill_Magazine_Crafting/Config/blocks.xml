@@ -1,0 +1,62 @@
+<configs>
+	<append xpath="/blocks">
+		<block name="researchbench">
+			<!-- Class -->
+			<property name="Class" value="Workstation"/>
+			<property class="Workstation">
+				<property name="Modules" value="output"/>
+				<property name="Collide" value="melee,bullet,arrow,rocket"/>
+				<property name="CraftingAreaRecipes" value="researchbench"/>
+			</property>
+			<!-- UI_Info -->
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="researchbench"/>
+			<property name="DescriptionKey" value="researchbenchDesc"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="WorkstationIcon" value="ui_game_symbol_workbench"/>
+			<!-- Visual -->
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:/Resources/researchtable.unity3d?researchtableprefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<!-- Placement -->
+			<property name="Place" value="TowardsPlacer90"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<!-- Value -->
+			<property name="Weight" value="0"/>
+			<property name="EconomicValue" value="2000"/>
+			<property name="TraderStageTemplate" value="midTier1"/>
+			<property name="SellableToTrader" value="false"/>
+			<!-- Interaction -->
+			<property name="MaxDamage" value="500"/>
+			<property name="HeatMapStrength" value="1"/>
+			<property name="HeatMapTime" value="500"/>
+			<property name="HeatMapFrequency" value="100"/>
+			<property name="OpenSound" value="open_workbench"/>
+			<property name="CloseSound" value="close_workbench"/>
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="25"/>
+				<!-- CHANGE -->
+				<property name="resourceMechanicalParts" value="5"/>
+				<property name="resourceWood" value="10"/>
+			</property>
+			<drop event="Destroy" name="resourceScrapIron" count="1"/>
+			<drop event="Destroy" name="researchbench" count="1" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceScrapIron" count="0" tool_category="Disassemble"/>
+			<!-- Sorting -->
+			<property name="SortOrder1" value="B281"/>
+			<property name="SortOrder2" value="0303"/>
+			<property name="Group" value="Building,TCScience,advBuilding"/>
+			<property name="Tags" value="workstationSkill,twitch_workstation"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+	</append>
+</configs>

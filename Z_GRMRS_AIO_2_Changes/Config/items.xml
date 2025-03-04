@@ -1,0 +1,1440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items_aio_2>
+	<!-- 1 Убираем схему модификации ускорения транспорта -->
+	<remove xpath="/items/item[@name='modVehicleSuperChargerSchematic']"/>
+	<!-- 2 Удаляем карты сокровищ -->
+	<remove xpath="/items/item[contains(@name, 'qt_')]"/>
+	<!-- Уменьшаем урон по блокам для боеприпасов (кроме взрывчатки с таймером) -->
+	<set xpath="/items/item[contains(@name, 'thrown') and not(contains (@name, 'TimedCharge'))]//passive_effect[contains(@name, 'BlockDamage')]/@value">1</set>
+	<set xpath="/items/item[contains(@name, 'ammo')]//passive_effect[contains(@name, 'BlockDamage')]/@value">1</set>
+	<!-- Взрывчатка с таймером наносит МНОГО урона, но в ограниченном пространстве -->
+	<remove xpath="/items/item[@name='thrownTimedCharge']/property[@name='Explosion.BlockTags']"/>
+	<remove xpath="/items/item[@name='thrownTimedCharge']/property[@name='Explosion.DamageBonus.tags']"/>
+	<set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Explosion.BlockDamage']/@value">10000</set>
+	<set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Explosion.EntityDamage']/@value">20000</set>
+	<set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Explosion.RadiusBlocks']/@value">1.2</set>
+	<set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Explosion.RadiusEntities']/@value">1.2</set>
+	<set xpath="/items/item[@name='thrownTimedCharge']/effect_group/display_value[@name='dExRadius']/@value">1.2</set>
+	<set xpath="/items/item[@name='thrownTimedCharge']/effect_group/display_value[@name='dExBlockDamage']/@value">10000</set>
+	<set xpath="/items/item[@name='thrownTimedCharge']/effect_group/display_value[@name='dExEntityDamage']/@value">20000</set>
+	<set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Explosion.DamageBonus.metal']/@value">2.5</set>
+	<set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Explosion.DamageBonus.stone']/@value">1.5</set>
+	<set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Explosion.DamageBonus.wood']/@value">0.7</set>
+	<set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Explosion.DamageBonus.earth']/@value">0.01</set>
+	<!-- 3 Настраиваем крафт цемента в бетономешалке -->
+	<set xpath="/items/item[@name='unit_stone']/property[@name='CraftingIngredientTime']/@value">0.01</set>
+	<set xpath="/items/item[@name='resourceClayLump']/property[@name='CraftingIngredientTime']/@value">0.01</set>
+	<append xpath="/items/item[@name='resourceCrushedSand']">
+		<property name="CraftingIngredientTime" value="0.01"/>
+	</append>
+	<!-- 4 Немного повышаем бонус к еде у некоторых продуктов -->
+	<set xpath="/items/item[@name='foodGrilledMeat']//triggered_effect[contains(@cvar, '$foodAmountAdd')]/@value">20</set>
+	<set xpath="/items/item[@name='foodBoiledMeat']//triggered_effect[contains(@cvar, '$foodAmountAdd')]/@value">20</set>
+	<!-- 5 Добавляем селитру в группы, чтобы она отображалась в списке крафтов химстанции -->
+	<append xpath="/items/item[@name='resourcePotassiumNitratePowder']/property[@name='Group']/@value">,Chemicals,CFChemicals</append>
+	<!-- 6 Уменьшаем радиус атаки зомби -->
+	<set xpath="/items/item[@name='meleeHandMaster']/property[@class='Action0']/property[@name='Range']/@value">1.125</set>
+	<set xpath="/items/item[@name='meleeHandZombie01']/property[@class='Action0']/property[@name='Range']/@value">1.125</set>
+	<set xpath="/items/item[@name='meleeHandZombieShort']/property[@class='Action0']/property[@name='Range']/@value">1.125</set>
+	<set xpath="/items/item[@name='meleeHandZombieShortFeral']/property[@class='Action0']/property[@name='Range']/@value">1.125</set>
+	<set xpath="/items/item[@name='meleeHandZombieBurning']/property[@class='Action0']/property[@name='Range']/@value">1.125</set>
+	<set xpath="/items/item[@name='meleeHandZombieBurningFeral']/property[@class='Action0']/property[@name='Range']/@value">1.125</set>
+	<set xpath="/items/item[@name='meleeHandZombieCop']/property[@class='Action0']/property[@name='Range']/@value">1.35</set>
+	<set xpath="/items/item[@name='meleeHandzombieMutated']/property[@class='Action0']/property[@name='Range']/@value">1.35</set>
+	<set xpath="/items/item[@name='meleeHandzombieMutatedFeral']/property[@class='Action0']/property[@name='Range']/@value">1.35</set>
+	<set xpath="/items/item[@name='meleeHandzombieMutatedRadiated']/property[@class='Action0']/property[@name='Range']/@value">1.35</set>
+	<!-- 7 Увеличиваем запас плавления в кузнице -->
+	<set xpath="/items/item[@name='unit_iron']/property[@name='Stacknumber']/@value">60000</set>
+	<!-- 8 Увеличиваем параметры турелей -->
+	<set xpath="/items/item[@name='gunBotT1JunkSledge']/effect_group[@name='gunBotT1JunkSledge']/passive_effect[@name='EntityDamage'][@operation='base_set']/@value">30</set>
+	<set xpath="/items/item[@name='gunBotT1JunkSledge']/effect_group[@name='gunBotT1JunkSledge']/passive_effect[@name='RoundsPerMinute'][@operation='base_set']/@value">40</set>
+	<set xpath="/items/item[@name='gunBotT2JunkTurret']/effect_group[@name='gunBotT2JunkTurret']/passive_effect[@name='MagazineSize'][@operation='base_set']/@value">200</set>
+	<set xpath="/items/item[@name='gunBotT2JunkTurret']/effect_group[@name='gunBotT2JunkTurret']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.02</set>
+	<set xpath="/items/item[@name='ammoJunkTurretRegular']/effect_group[@name='ammoJunkTurretRegular']/passive_effect[@name='MaxRange'][@operation='base_set']/@value">30</set>
+	<set xpath="/items/item[@name='ammoJunkTurretRegular']/effect_group[@name='ammoJunkTurretRegular']/passive_effect[@name='EntityDamage'][@operation='base_set']/@value">30</set>
+	<set xpath="/items/item[@name='ammoJunkTurretShell']/effect_group[@name='ammoJunkTurretShell']/passive_effect[@name='MaxRange'][@operation='base_set']/@value">30</set>
+	<set xpath="/items/item[@name='ammoJunkTurretShell']/effect_group[@name='ammoJunkTurretShell']/passive_effect[@name='EntityDamage'][@operation='base_set']/@value">6</set>
+	<set xpath="/items/item[@name='ammoJunkTurretAP']/effect_group[@name='ammoJunkTurretAP']/passive_effect[@name='MaxRange'][@operation='base_set']/@value">30</set>
+	<set xpath="/items/item[@name='ammoJunkTurretAP']/effect_group[@name='ammoJunkTurretAP']/passive_effect[@name='EntityDamage'][@operation='base_set']/@value">36</set>
+	<!-- 9 Увеличиваем прочность некоторого оружия -->
+	<set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/effect_group[@name='meleeToolPickT2SteelPickaxe']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">1050,3861</set>
+	<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/effect_group[@name='meleeToolShovelT2SteelShovel']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">900,3300</set>
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">4200,12600</set>
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">4200,12600</set>
+	<set xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/effect_group[@name='meleeToolSalvageT2Ratchet']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">900,2700</set>
+	<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/effect_group[@name='meleeToolSalvageT3ImpactDriver']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">1500,3300</set>
+	<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">864,2019</set>
+	<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">900,2100</set>
+	<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">807,2019</set>
+	<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">621,1743</set>
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/effect_group[@name='gunHandgunT1Pistol']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">750,1350</set>
+	<set xpath="/items/item[@name='gunHandgunT3SMG5']/effect_group[@name='gunHandgunT3SMG5']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">1050,2100</set>
+	<set xpath="/items/item[@name='gunHandgunT2Magnum44']/effect_group[@name='gunHandgunT2Magnum44']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">450,900</set>
+	<set xpath="/items/item[@name='gunHandgunT3DesertVulture']/effect_group[@name='gunHandgunT3DesertVulture']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">750,1200</set>
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/effect_group[@name='gunShotgunT1DoubleBarrel']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">450,900</set>
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/effect_group[@name='gunShotgunT2PumpShotgun']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">480,1050</set>
+	<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">480,1500</set>
+	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/effect_group[@name='gunRifleT1HuntingRifle']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">510,960</set>
+	<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/effect_group[@name='gunRifleT2LeverActionRifle']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">600,1200</set>
+	<set xpath="/items/item[@name='gunRifleT3SniperRifle']/effect_group[@name='gunRifleT3SniperRifle']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">750,1500</set>
+	<set xpath="/items/item[@name='gunMGT1AK47']/effect_group[@name='gunMGT1AK47']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">750,1650</set>
+	<set xpath="/items/item[@name='gunMGT2TacticalAR']/effect_group[@name='gunMGT2TacticalAR']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">675,1500</set>
+	<set xpath="/items/item[@name='gunMGT3M60']/effect_group[@name='gunMGT3M60']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">900,1950</set>
+	<set xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/effect_group[@name='gunExplosivesT3RocketLauncher']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">240,450</set>
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group[@name='gunBowT1WoodenBow']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">540,1050</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/effect_group[@name='gunBowT3CompoundBow']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">600,1200</set>
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/effect_group[@name='gunBowT1IronCrossbow']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">300,600</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">360,750</set>
+	<set xpath="/items/item[@name='gunBotT1JunkSledge']/effect_group[@name='gunBotT1JunkSledge']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">750,1800</set>
+	<set xpath="/items/item[@name='gunBotT2JunkTurret']/effect_group[@name='gunBotT2JunkTurret']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">750,1800</set>
+	<append xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']">
+		<passive_effect name="DegradationMax" operation="base_set" value="951,1776" tier="1,6" tags="perkJavelinMaster"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']">
+		<passive_effect name="DegradationMax" operation="base_set" value="1731,4038" tier="1,6" tags="perkBrawler"/>
+	</append>
+	<!-- 10 Увеличение затрат выносливости для некоторого оружия ближнего боя -->
+	<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']//passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">28</set>
+	<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']//passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">33</set>
+	<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']//passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">50</set>
+	<!-- 11 Увеличение базового урона для некоторого оружия ближнего боя -->
+	<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']//passive_effect[@name='EntityDamage'][@operation='base_set']/@value">35</set>
+	<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']//passive_effect[@name='EntityDamage'][@operation='base_set']/@value">42</set>
+	<!-- 12 Опыт за чтение книг -->
+	<set xpath="/items/item[starts-with(@name,'book')]/effect_group[@tiered='false']//triggered_effect[@action='GiveExp']/@exp">1500</set>
+	<!-- 13 Отключение рэгдолла для игрока -->
+	<append xpath="/items/item/effect_group/triggered_effect[@action='Ragdoll']/requirement[@name='!EntityTagCompare']/@tags">,player</append>
+	<!-- 14 Ремонт определённого оружия осуществляется с помощью соответствующих частей -->
+	<!-- Пистолеты -->
+	<append xpath="/items/item[@name='gunHandgunT1PistolParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="500"/>
+	</append>
+	<!-- Пистолет -->
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/property[@name='RepairTools']/@value">gunHandgunT1PistolParts</set>
+	<append xpath="/items/item[@name='gunHandgunT1Pistol']">
+		<property name="Weight" value="1"/>
+	</append>
+	<!-- SMG -->
+	<set xpath="/items/item[@name='gunHandgunT3SMG5']/property[@name='RepairTools']/@value">gunHandgunT1PistolParts</set>
+	<append xpath="/items/item[@name='gunHandgunT3SMG5']">
+		<property name="Weight" value="1"/>
+	</append>
+	<!-- Magnum 44 -->
+	<set xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@name='RepairTools']/@value">gunHandgunT1PistolParts</set>
+	<append xpath="/items/item[@name='gunHandgunT2Magnum44']">
+		<property name="Weight" value="1"/>
+	</append>
+	<!-- Desert Vulture -->
+	<set xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@name='RepairTools']/@value">gunHandgunT1PistolParts</set>
+	<append xpath="/items/item[@name='gunHandgunT3DesertVulture']">
+		<property name="Weight" value="1"/>
+	</append>
+	<!-- Дробовики -->
+	<append xpath="/items/item[@name='gunShotgunT1DoubleBarrelParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="500"/>
+	</append>
+	<!-- Двустволка -->
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/property[@name='RepairTools']/@value">gunShotgunT1DoubleBarrelParts</set>
+	<!-- Помповый дробовик -->
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@name='RepairTools']/@value">gunShotgunT1DoubleBarrelParts</set>
+	<append xpath="/items/item[@name='gunShotgunT2PumpShotgun']">
+		<property name="Weight" value="1"/>
+	</append>
+	<!-- Автоматический дробовик -->
+	<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/property[@name='RepairTools']/@value">gunShotgunT1DoubleBarrelParts</set>
+	<append xpath="/items/item[@name='gunShotgunT3AutoShotgun']">
+		<property name="Weight" value="1"/>
+	</append>
+	<!-- Винтовки -->
+	<append xpath="/items/item[@name='gunRifleT1HuntingRifleParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="500"/>
+	</append>
+	<!-- Охотничья винтовка -->
+	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@name='RepairTools']/@value">gunRifleT1HuntingRifleParts</set>
+	<!-- Снайперка MR10 -->
+	<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@name='RepairTools']/@value">gunRifleT1HuntingRifleParts</set>
+	<append xpath="/items/item[@name='gunRifleT2LeverActionRifle']">
+		<property name="Weight" value="1"/>
+	</append>
+	<!-- Снайперка СВД -->
+	<set xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@name='RepairTools']/@value">gunRifleT1HuntingRifleParts</set>
+	<append xpath="/items/item[@name='gunRifleT3SniperRifle']">
+		<property name="Weight" value="1"/>
+	</append>
+	<!-- Автоматы -->
+	<append xpath="/items/item[@name='gunMGT1AK47Parts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="500"/>
+	</append>
+	<!-- АК-47 -->
+	<set xpath="/items/item[@name='gunMGT1AK47']/property[@name='RepairTools']/@value">gunMGT1AK47Parts</set>
+	<!-- Tactical AR -->
+	<set xpath="/items/item[@name='gunMGT2TacticalAR']/property[@name='RepairTools']/@value">gunMGT1AK47Parts</set>
+	<append xpath="/items/item[@name='gunMGT2TacticalAR']">
+		<property name="Weight" value="1"/>
+	</append>
+	<!-- M60 -->
+	<set xpath="/items/item[@name='gunMGT3M60']/property[@name='RepairTools']/@value">gunMGT1AK47Parts</set>
+	<append xpath="/items/item[@name='gunMGT3M60']">
+		<property name="Weight" value="1"/>
+	</append>
+	<!-- РПГ -->
+	<append xpath="/items/item[@name='gunExplosivesT3RocketLauncherParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="500"/>
+	</append>
+	<set xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/property[@name='RepairTools']/@value">gunExplosivesT3RocketLauncherParts</set>
+	<!-- Луки, Арбалеты -->
+	<append xpath="/items/item[@name='gunBowT1WoodenBowParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="500"/>
+	</append>
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/property[@name='RepairTools']/@value">gunBowT1WoodenBowParts</set>
+	<!-- Составной лук -->
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/property[@name='RepairTools']/@value">gunBowT1WoodenBowParts</set>
+	<append xpath="/items/item[@name='gunBowT3CompoundBow']">
+		<property name="Weight" value="1"/>
+	</append>
+	<!-- Железный Арбалет -->
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@name='RepairTools']/@value">gunBowT1WoodenBowParts</set>
+	<!-- Составной Арбалет -->
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/property[@name='RepairTools']/@value">gunBowT1WoodenBowParts</set>
+	<append xpath="/items/item[@name='gunBowT3CompoundCrossbow']">
+		<property name="Weight" value="1"/>
+	</append>
+	<!-- Бензопила, Бур -->
+	<append xpath="/items/item[@name='meleeToolAxeT3ChainsawParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="500"/>
+	</append>
+	<!-- Бур -->
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/property[@name='RepairTools']/@value">meleeToolAxeT3ChainsawParts</set>
+	<!-- Бензопила -->
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/property[@name='RepairTools']/@value">meleeToolAxeT3ChainsawParts</set>
+	<!-- Гайковерт -->
+	<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/property[@name='RepairTools']/@value">meleeToolAxeT3ChainsawParts</set>
+	<!-- Гвоздомёт -->
+	<set xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@name='RepairTools']/@value">meleeToolAxeT3ChainsawParts</set>
+	<!-- Стальная Дубина -->
+	<append xpath="/items/item[@name='meleeWpnClubT3SteelClubParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="500"/>
+	</append>
+	<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/property[@name='RepairTools']/@value">meleeWpnClubT3SteelClubParts</set>
+	<!-- Стальная кувалда -->
+	<append xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammerParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="500"/>
+	</append>
+	<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/property[@name='RepairTools']/@value">meleeWpnSledgeT3SteelSledgehammerParts</set>
+	<!-- Шок дубинка -->
+	<append xpath="/items/item[@name='meleeWpnBatonT2StunBatonParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="500"/>
+	</append>
+	<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/property[@name='RepairTools']/@value">meleeWpnBatonT2StunBatonParts</set>
+	<!-- Мусорная пушка и Мусорный Молот -->
+	<append xpath="/items/item[@name='gunBotRoboticsParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="500"/>
+	</append>
+	<!-- Мусорная пушка -->
+	<set xpath="/items/item[@name='gunBotT2JunkTurret']/property[@name='RepairTools']/@value">gunBotRoboticsParts</set>
+	<append xpath="/items/item[@name='gunBotT2JunkTurret']">
+		<property name="Weight" value="1"/>
+	</append>
+	<!-- Мусорный Молот -->
+	<set xpath="/items/item[@name='gunBotT1JunkSledge']/property[@name='RepairTools']/@value">gunBotRoboticsParts</set>
+	<!-- Стальные инструменты -->
+	<append xpath="/items/item[@name='meleeToolAllSteelParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="500"/>
+	</append>
+	<!-- Стальной топор -->
+	<append xpath="/items/item[@name='meleeToolAxeT2SteelAxe']">
+		<property name="RepairTools" value="meleeToolAllSteelParts"/>
+	</append>
+	<!-- Стальная кирка -->
+	<set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/property[@name='RepairTools']/@value">meleeToolAllSteelParts</set>
+	<!-- Стальная лопата -->
+	<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/property[@name='RepairTools']/@value">meleeToolAllSteelParts</set>
+	<!-- Ключ-трещотка -->
+	<set xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/property[@name='RepairTools']/@value">meleeToolAllSteelParts</set>
+	<!-- Стальное копьё -->
+	<append xpath="/items/item[@name='meleeWpnSpearT3SteelSpearParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="500"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']">
+		<property name="RepairTools" value="meleeWpnSpearT3SteelSpearParts"/>
+	</append>
+	<!-- Стальные кастеты -->
+	<append xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnucklesParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="500"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']">
+		<property name="RepairTools" value="meleeWpnKnucklesT3SteelKnucklesParts"/>
+		<property name="Weight" value="1"/>
+	</append>
+	<!-- Кожаные кастеты -->
+	<set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/property[@name='RepairTools']/@value">resourceLeather</set>
+	<!-- Мачете -->
+	<append xpath="/items/item[@name='meleeWpnBladeT3MacheteParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="500"/>
+	</append>
+	<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/property[@name='RepairTools']/@value">meleeWpnBladeT3MacheteParts</set>
+	<!-- 15 Примтивный комплект чинится с помощью ткани -->
+	<set xpath="/items/item[@name='armorPrimitiveMaster']/property[@name='RepairTools']/@value">resourceCloth</set>
+	<!-- Вся броня чинится с помощью частей брони (кроме примитивного сета) -->
+	<set xpath="/items/item[@name='armorLightMaster']/property[@name='RepairTools']/@value">armorParts</set>
+	<set xpath="/items/item[@name='armorMediumMaster']/property[@name='RepairTools']/@value">armorParts</set>
+	<set xpath="/items/item[@name='armorHeavyMaster']/property[@name='RepairTools']/@value">armorParts</set>
+	<!-- 16 Уменьшаем восстанавливаемую прочность и увеличиваем время ремонта для ремнаборов -->
+	<set xpath="/items/item[@name='resourceRepairKit']/property[@name='RepairTime']/@value">10</set>
+	<set xpath="/items/item[@name='resourceRepairKit']/property[@name='RepairAmount']/@value">500</set>
+	<!-- Аналогично - для частей брони -->
+	<append xpath="/items/item[@name='armorParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="500"/>
+	</append>
+	<!-- Аналогично - для металлических труб -->
+	<set xpath="/items/item[@name='resourceMetalPipe']/property[@name='RepairTime']/@value">10</set>
+	<set xpath="/items/item[@name='resourceMetalPipe']/property[@name='RepairAmount']/@value">100</set>
+	<!-- Аналогично - для маленьких камней -->
+	<set xpath="/items/item[@name='resourceRockSmall']/property[@name='RepairTime']/@value">10</set>
+	<set xpath="/items/item[@name='resourceRockSmall']/property[@name='RepairAmount']/@value">100</set>
+	<!-- Аналогично - для волокон травы -->
+	<set xpath="/items/item[@name='resourceYuccaFibers']/property[@name='RepairTime']/@value">10</set>
+	<set xpath="/items/item[@name='resourceYuccaFibers']/property[@name='RepairAmount']/@value">50</set>
+	<!-- Аналогично - для металлолома -->
+	<set xpath="/items/item[@name='resourceScrapIron']/property[@name='RepairTime']/@value">10</set>
+	<set xpath="/items/item[@name='resourceScrapIron']/property[@name='RepairAmount']/@value">100</set>
+	<!-- Аналогично - для слитков железа -->
+	<set xpath="/items/item[@name='resourceForgedIron']/property[@name='RepairTime']/@value">10</set>
+	<set xpath="/items/item[@name='resourceForgedIron']/property[@name='RepairAmount']/@value">200</set>
+	<!-- Аналогично - для слитков стали -->
+	<set xpath="/items/item[@name='resourceForgedSteel']/property[@name='RepairTime']/@value">10</set>
+	<set xpath="/items/item[@name='resourceForgedSteel']/property[@name='RepairAmount']/@value">200</set>
+	<!-- Аналогично - для костей -->
+	<append xpath="/items/item[@name='resourceBone']">
+		<property name="RepairTime" value="10"/>
+	</append>
+	<set xpath="/items/item[@name='resourceBone']/property[@name='RepairAmount']/@value">100</set>
+	<!-- Аналогично - для кожи -->
+	<append xpath="/items/item[@name='resourceLeather']">
+		<property name="RepairTime" value="10"/>
+	</append>
+	<set xpath="/items/item[@name='resourceLeather']/property[@name='RepairAmount']/@value">100</set>
+	<!-- Аналогично - для ткани -->
+	<append xpath="/items/item[@name='resourceCloth']">
+		<property name="RepairTime" value="10"/>
+	</append>
+	<!-- Аналогично - для дерева -->
+	<append xpath="/items/item[@name='resourceWood']">
+		<property name="RepairTime" value="10"/>
+	</append>
+	<set xpath="/items/item[@name='resourceWood']/property[@name='RepairAmount']/@value">50</set>
+	<!-- 17 Удаляем дальние атаки у стервятников -->
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieVultureRadiated']/property[@class='Action1']"/>
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieVultureRadiated']/effect_group[@name='meleeHandAnimalZombieVulture']/passive_effect[@name='MagazineSize']"/>
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieVultureRadiated']/effect_group[@name='meleeHandAnimalZombieVulture']/passive_effect[@name='BurstRoundCount']"/>
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieVultureRadiated']/effect_group[@name='meleeHandAnimalZombieVulture']/passive_effect[@name='SpreadDegreesVertical']"/>
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieVultureRadiated']/effect_group[@name='meleeHandAnimalZombieVulture']/passive_effect[@name='SpreadDegreesHorizontal']"/>
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieVultureRadiated']/effect_group[@name='meleeHandAnimalZombieVulture']/passive_effect[@name='SpreadMultiplierIdle']"/>
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieVultureRadiated']/effect_group[@name='meleeHandAnimalZombieVulture']/passive_effect[@name='DamageFalloffRange']"/>
+	<remove xpath="/items/item[@name='meleeHandAnimalZombieVultureRadiated']/effect_group[@name='meleeHandAnimalZombieVulture']/passive_effect[@name='MaxRange']"/>
+	<!-- 18 Убираем взрывные и зажигательные стрелы из боеприпасов для простейшего лука -->
+	<set xpath="/items/item[starts-with (@name,'gunBowT0')]/property[@class='Action0']/property[@name='Magazine_items']/@value">ammoArrowStone,ammoArrowIron,ammoArrowSteelAP</set>
+	<!-- 19 Изменение внешнего вида напитков и еды в руке -->
+	<append xpath="items/item[@name='drugAtomJunkies']">
+		<property name="HoldType" value="3"/>
+		<property name="Meshfile" value="@:Other/Items/Crafting/candy_tinPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Crafting/candy_tinPrefab.prefab"/>
+		<property name="TintColor" value="101,67,33"/>
+		<property class="Action0">
+			<property name="Sound_start" value="player_painkillers"/>
+		</property>
+	</append>
+	<append xpath="items/item[@name='drugCovertCats']">
+		<property name="TintColor" value="47,141,255"/>
+	</append>
+	<append xpath="items/item[@name='drugEyeKandy']">
+		<property name="TintColor" value="255,102,0"/>
+	</append>
+	<append xpath="items/item[@name='drugHackers']">
+		<property name="TintColor" value="106,13,173"/>
+	</append>
+	<append xpath="items/item[@name='drugHealthBar']">
+		<property name="TintColor" value="23,236,236"/>
+	</append>
+	<append xpath="items/item[@name='drugJailBreakers']">
+		<property name="TintColor" value="50,50,50"/>
+	</append>
+	<append xpath="items/item[@name='drugNerdTats']">
+		<property name="TintColor" value="255,195,11"/>
+	</append>
+	<append xpath="items/item[@name='drugOhShitzDrops']">
+		<property name="TintColor" value="255,255,0"/>
+	</append>
+	<append xpath="items/item[@name='drugRockBusters']">
+		<property name="TintColor" value="0,128,0"/>
+	</append>
+	<append xpath="items/item[@name='drugSkullCrushers']">
+		<property name="TintColor" value="255,255,255"/>
+	</append>
+	<append xpath="items/item[@name='drugSugarButts']">
+		<property name="TintColor" value="255,0,127"/>
+	</append>
+	<append xpath="items/item[@name='foodHoney']">
+		<property name="HoldType" value="3"/>
+		<property name="Meshfile" value="@:Other/Items/Food/honeyPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/honeyPrefab.prefab"/>
+		<property name="TintColor" value="225,154,46"/>
+	</append>
+	<append xpath="items/item[@name='foodCanBeef']">
+		<property name="HoldType" value="3"/>
+		<property name="Meshfile" value="@:Other/Items/Food/can_beefPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/can_beefPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCanChicken']">
+		<property name="HoldType" value="3"/>
+		<property name="Meshfile" value="@:Other/Items/Food/can_chickenPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/can_chickenPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCanLamb']">
+		<property name="HoldType" value="3"/>
+		<property name="Meshfile" value="@:Other/Items/Food/can_lambPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/can_lambPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCanCatfood']">
+		<property name="HoldType" value="31"/>
+		<property name="Meshfile" value="@:Other/Items/Food/can_catfoodPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/can_catfoodPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCanDogfood']">
+		<property name="HoldType" value="31"/>
+		<property name="Meshfile" value="@:Other/Items/Food/can_dogfoodPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/can_dogfoodPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCanChili']">
+		<property name="HoldType" value="3"/>
+		<property name="Meshfile" value="@:Other/Items/Food/can_chiliPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/can_chiliPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCanTuna']">
+		<property name="HoldType" value="31"/>
+		<property name="Meshfile" value="@:Other/Items/Food/can_tunaPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/can_tunaPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCanSham']">
+		<property name="HoldType" value="31"/>
+		<property name="Meshfile" value="@:Other/Items/Food/can_hamPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/can_hamPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCanPasta']">
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Food/can_pastaPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/can_pastaPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCanSalmon']">
+		<property name="HoldType" value="31"/>
+		<property name="Meshfile" value="@:Other/Items/Food/can_salmonPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/can_salmonPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCanMiso']">
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Food/can_misoPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/can_misoPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCanPeas']">
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Food/can_peasPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/can_peasPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCanPears']">
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Food/can_pearsPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/can_pearsPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCanSoup']">
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Food/can_soupPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/can_soupPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCanStock']">
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Food/can_stockPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/can_stockPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCornOnTheCob']">
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Food/corn_cooked.fbx"/>
+	</append>
+	<append xpath="items/item[@name='foodCornBread']">
+		<property name="HoldType" value="31"/>
+		<!--<property name="Meshfile" value="@:Other/Items/Food/cornbreadPrefab.prefab"/>-->
+		<property name="Meshfile" value="@:Other/Items/Food/moldyBreadHandPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodShamSandwich']">
+		<property name="TintColor" value="205,215,205"/>
+	</append>
+	<append xpath="items/item[@name='foodCharredMeat']">
+		<property name="HoldType" value="23"/>
+		<property name="Meshfile" value="@:Other/Items/Food/meat_pork_cooked.fbx"/>
+		<property name="TintColor" value="105,105,105"/>
+	</append>
+	<append xpath="items/item[@name='foodGrilledMeat']">
+		<property name="HoldType" value="23"/>
+		<property name="Meshfile" value="@:Other/Items/Food/meat_pork_cooked.fbx"/>
+		<property name="TintColor" value="255,175,0"/>
+	</append>
+	<append xpath="items/item[@name='foodBoiledMeat']">
+		<property name="HoldType" value="23"/>
+		<property name="Meshfile" value="@:Other/Items/Food/meat_pork.fbx"/>
+		<property name="TintColor" value="100,100,100"/>
+	</append>
+	<append xpath="items/item[@name='foodSteakAndPotato']">
+		<property name="HoldType" value="23"/>
+		<property name="Meshfile" value="@:Other/Items/Food/meat_pork_cooked.fbx"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AddPart" part="Potato" prefab="@:Other/Items/Food/seed_potatoPrefab.prefab" parentTransform="RightHand" localPos="0.08,0.03,-0.04" localRot="0,0,0"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Potato"/>
+		</effect_group>
+	</append>
+	<append xpath="items/item[@name='foodShamChowder']">
+		<property name="HoldType" value="23"/>
+		<property name="Meshfile" value="@:Other/Items/Food/venison_stewPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="TintColor" value="255,205,0"/>
+		<property class="Action0">
+			<property name="Sound_start" value="player_drinking"/>
+		</property>
+	</append>
+	<append xpath="items/item[@name='foodFishTacos']">
+		<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
+		<property name="TintColor" value="255,255,0"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AddPart" part="Tacos" prefab="@:Other/Items/Crafting/plant_fibersPrefab.prefab" parentTransform="RightHand" localPos="0.1,0.035,0" localRot="90,0,45"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Tacos"/>
+		</effect_group>
+	</append>
+	<append xpath="items/item[@name='foodChiliDog']">
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Food/corn_cooked.fbx"/>
+		<property name="TintColor" value="62,34,21"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AddPart" part="ChiliDog" prefab="@:Other/Items/Crafting/cloth.fbx" parentTransform="RightHand" localPos="0.05,0.04,0.08" localRot="170,0,0"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="ChiliDog"/>
+		</effect_group>
+	</append>
+	<append xpath="items/item[@name='foodBakedPotato']">
+		<property name="HoldType" value="31"/>
+		<property name="Meshfile" value="@:Other/Items/Food/vegetable_potato_bakedPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodBlueberryPie']">
+		<property name="HoldType" value="23"/>
+		<property name="Meshfile" value="@:Other/Items/Food/blueberry_piePrefab.prefab"/>
+		<property name="TintColor" value="255,197,148"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AddPart" part="Blueberry" prefab="@:Other/Items/Food/fruit_blueberryPrefab.prefab" parentTransform="RightHand" localPos="0.125,0.058,0.003" localRot="0,0,0"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Blueberry"/>
+		</effect_group>
+	</append>
+	<append xpath="items/item[@name='foodPumpkinPie']">
+		<property name="HoldType" value="23"/>
+		<property name="Meshfile" value="@:Other/Items/Food/blueberry_piePrefab.prefab"/>
+		<property name="TintColor" value="71,45,23"/>
+	</append>
+	<append xpath="items/item[@name='foodPumpkinCheesecake']">
+		<property name="HoldType" value="23"/>
+		<property name="Meshfile" value="@:Other/Items/Food/blueberry_piePrefab.prefab"/>
+		<property name="TintColor" value="255,255,155"/>
+	</append>
+	<append xpath="items/item[@name='foodPumpkinBread']">
+		<property name="HoldType" value="31"/>
+		<property name="Meshfile" value="@:Other/Items/Food/moldyBreadHandPrefab.prefab"/>
+		<property name="TintColor" value="148,87,58"/>
+	</append>
+	<append xpath="items/item[@name='foodShepardsPie']">
+		<property name="HoldType" value="23"/>
+		<property name="Meshfile" value="@:Other/Items/Food/venison_stewPrefab.prefab"/>
+		<property name="TintColor" value="205,255,205"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AddPart" part="PotatoMashed" prefab="@:Other/Items/Food/vegetable_potato_bakedPrefab.prefab" parentTransform="RightHand" localPos="0.155,0.04,0.005" localRot="0,0,0"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="PotatoMashed"/>
+		</effect_group>
+	</append>
+	<append xpath="items/item[@name='foodSpaghetti']">
+		<property name="HoldType" value="23"/>
+		<property name="Meshfile" value="@:Other/Items/Food/venison_stewPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodTunaFishGravyToast']">
+		<property name="HoldType" value="23"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
+		<property name="TintColor" value="208,177,159"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AddPart" part="Toast" prefab="@:Other/Items/Misc/parcelPrefab.prefab" parentTransform="RightHand" localPos="0.13,0.035,0" localRot="0,-20,0"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Toast"/>
+		</effect_group>
+	</append>
+	<append xpath="items/item[@name='foodEggBoiled']">
+		<property name="Meshfile" value="@:Other/Items/Food/eggPrefab.prefab"/>
+		<property name="TintColor" value="255,255,225"/>
+		<!--<property name="TintColor" value="198,137,88"/>-->
+	</append>
+	<append xpath="items/item[@name='foodBaconAndEggs']">
+		<property name="HoldType" value="23"/>
+		<property name="Meshfile" value="@:Other/Items/Food/meat_pork_cooked.fbx"/>
+		<property name="TintColor" value="255,205,0"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AddPart" part="Egg" prefab="@:Other/Items/Food/eggPrefab.prefab" parentTransform="RightHand" localPos="0.08,0.03,-0.02" localRot="-50,0,0"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Egg"/>
+		</effect_group>
+	</append>
+	<append xpath="items/item[@name='foodRawMeat']">
+		<property name="HoldType" value="31"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/raw_meatPrefab.prefab"/>
+		<property name="TintColor" value="255,182,193"/>
+	</append>
+	<append xpath="items/item[@name='foodRottingFlesh']">
+		<property name="HoldType" value="23"/>
+		<property name="Meshfile" value="@:Other/Items/Food/meat_rabbit.fbx"/>
+		<property name="TintColor" value="95,110,80"/>
+	</append>
+	<append xpath="items/item[@name='foodEgg']">
+		<property name="Meshfile" value="@:Other/Items/Food/eggPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCornMeal']">
+		<property name="Meshfile" value="@:Other/Items/Food/cornmealPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCropBlueberries']">
+		<property name="HoldType" value="31"/>
+		<property name="Meshfile" value="@:Other/Items/Food/fruit_blueberryPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCropCorn']">
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Food/vegetable_cornPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCropGraceCorn']">
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Food/vegetable_cornPrefab.prefab"/>
+		<property name="TintColor" value="255,140,0"/>
+	</append>
+	<append xpath="items/item[@name='foodCropPotato']">
+		<property name="HoldType" value="31"/>
+		<property name="Meshfile" value="@:Other/Items/Food/vegetable_potatoPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='foodCropMushrooms']">
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Food/fruit_yucca.fbx"/>
+		<property name="TintColor" value="56,23,12"/>
+	</append>
+	<append xpath="items/item[@name='foodCropYuccaFruit']">
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Food/fruit_yucca.fbx"/>
+	</append>
+	<append xpath="items/item[@name='foodCropPumpkin']">
+		<property name="Meshfile" value="@:Other/Items/Food/seed_cornPrefab.prefab"/>
+		<property name="TintColor" value="255,165,0"/>
+	</append>
+	<append xpath="items/item[@name='drinkJarRiverWater']">
+		<property name="Meshfile" value="@:Other/Items/Food/bottledRiverWaterPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/bottledRiverWaterPrefab.prefab"/>
+		<property name="TintColor" value="155,155,155"/>
+	</append>
+	<append xpath="items/item[@name='drinkJarBoiledWater']">
+		<property name="DropMeshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='drinkJarPureMineralWater']">
+		<property name="DropMeshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+		<property name="TintColor" value="205,205,255"/>
+	</append>
+	<append xpath="items/item[@name='drinkJarYuccaJuice']">
+		<property name="Meshfile" value="@:Other/Items/Food/yucca_juicePrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/yucca_juicePrefab.prefab"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AddPart" part="YuccaJuice" prefab="@:Other/Items/Food/fruit_yucca.fbx" parentTransform="RightHand" localPos="0.1,0.065,-0.02" localRot="-100,0,0"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="YuccaJuice"/>
+		</effect_group>
+	</append>
+	<append xpath="items/item[@name='drinkJarGoldenRodTea']">
+		<property name="Meshfile" value="@:Other/Items/Food/goldenrod_teaPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/goldenrod_teaPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='drinkJarRedTea']">
+		<property name="Meshfile" value="@:Other/Items/Food/redTeaPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/redTeaPrefab.prefab"/>
+	</append>
+	<append xpath="items/item[@name='drinkYuccaJuiceSmoothie']">
+		<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+		<property name="TintColor" value="0,205,205"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AddPart" part="YuccaSmoothie" prefab="@:Other/Items/Food/fruit_yucca.fbx" parentTransform="RightHand" localPos="0.1,0.065,-0.02" localRot="-100,0,0"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="YuccaSmoothie"/>
+		</effect_group>
+	</append>
+	<append xpath="items/item[@name='drinkCanMegaCrush']">
+		<!--<property name="Meshfile" value="@:Other/Items/Food/can_plain.fbx"/>-->
+		<!--<property name="DropMeshfile" value="@:Other/Items/Food/can_plain.fbx"/>-->
+		<property name="Meshfile" value="@:Other/Items/Food/yucca_juicePrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/yucca_juicePrefab.prefab"/>
+		<property name="TintColor" value="5,225,5"/>
+	</append>
+	<append xpath="items/item[@name='drinkJarCoffee']">
+		<property name="Meshfile" value="@:Other/Items/Food/coffeePrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/coffeePrefab.prefab"/>
+		<property name="TintColor" value="30,30,30"/>
+	</append>
+	<append xpath="items/item[@name='drinkJarBlackStrapCoffee']">
+		<property name="Meshfile" value="@:Other/Items/Food/can_emptyPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/can_emptyPrefab.prefab"/>
+		<property name="TintColor" value="30,30,30"/>
+	</append>
+	<append xpath="items/item[@name='drinkJarBeer']">
+		<property name="Meshfile" value="@:Other/Items/Food/bottledBeerPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/bottledBeerPrefab.prefab"/>
+		<property name="TintColor" value="165,165,165"/>
+	</append>
+	<append xpath="items/item[@name='drinkJarGrandpasMoonshine']">
+		<property name="HoldType" value="14"/>
+		<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+		<property name="TintColor" value="225,225,215"/>
+	</append>
+	<append xpath="items/item[@name='drinkJarGrandpasAwesomeSauce']">
+		<property name="HoldType" value="14"/>
+		<!--<property name="Meshfile" value="Entities/Commercial/wineBottlePrefab"/>-->
+		<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+		<!--<property name="DropMeshfile" value="Entities/Commercial/wineBottlePrefab"/>-->
+		<property name="DropMeshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+		<property name="TintColor" value="255,155,0"/>
+	</append>
+	<append xpath="items/item[@name='drinkJarGrandpasLearningElixir']">
+		<property name="HoldType" value="14"/>
+		<property name="Meshfile" value="@:Other/Items/Food/bottledRiverWaterPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Food/bottledRiverWaterPrefab.prefab"/>
+		<property name="TintColor" value="205,205,205"/>
+	</append>
+	<append xpath="items/item[@name='drinkJarGrandpasForgettingElixir']">
+		<property name="Meshfile" value="@:Other/Items/Crafting/fishing_weight.fbx"/>
+		<property name="DropMeshfile" value="@:Other/Items/Crafting/masonJar.FBX"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AddPart" part="ForgettingElixir" prefab="@:Other/Items/Crafting/masonJar.FBX" parentTransform="RightHand" localPos="0.1,0.1,0.03" localRot="30,180,0"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="ForgettingElixir"/>
+		</effect_group>
+	</append>
+	<!-- 20 Увеличение длительности баффов от лекарств -->
+	<set xpath="/items/item[@name='drugVitamins']/effect_group/display_value[@name='dDuration']/@value">1200</set>
+	<set xpath="/items/item[@name='drugVitamins']/effect_group/triggered_effect[@operation='add']/@value">1203</set>
+	<set xpath="/items/item[@name='drugVitamins']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drugVitamins']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drugPainkillers']/effect_group/display_value[@name='dDuration']/@value">1200</set>
+	<set xpath="/items/item[@name='drugPainkillers']/effect_group/triggered_effect[@operation='add']/@value">1203</set>
+	<set xpath="/items/item[@name='drugPainkillers']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drugPainkillers']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drugSteroids']/effect_group/display_value[@name='dDuration']/@value">1200</set>
+	<set xpath="/items/item[@name='drugSteroids']/effect_group/triggered_effect[@operation='add']/@value">1203</set>
+	<set xpath="/items/item[@name='drugSteroids']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drugSteroids']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drugRecog']/effect_group/display_value[@name='dDuration']/@value">1200</set>
+	<set xpath="/items/item[@name='drugRecog']/effect_group/triggered_effect[@operation='add']/@value">1203</set>
+	<set xpath="/items/item[@name='drugRecog']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drugRecog']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drugFortBites']/effect_group/display_value[@name='dDuration']/@value">1200</set>
+	<set xpath="/items/item[@name='drugFortBites']/effect_group/triggered_effect[@operation='add']/@value">1203</set>
+	<set xpath="/items/item[@name='drugFortBites']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drugFortBites']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<!-- 21 Увеличение длительности баффов от конфет -->
+	<set xpath="/items/item[@name='drugAtomJunkies']/effect_group/display_value[@name='dDuration']/@value">1200</set>
+	<set xpath="/items/item[@name='drugAtomJunkies']/effect_group/triggered_effect[@cvar='$buffDrugAtomJunkiesDuration']/@value">1203</set>
+	<set xpath="/items/item[@name='drugAtomJunkies']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drugAtomJunkies']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drugCovertCats']/effect_group/display_value[@name='dDuration']/@value">1200</set>
+	<set xpath="/items/item[@name='drugCovertCats']/effect_group/triggered_effect[@cvar='$buffDrugCovertCatsDuration']/@value">1203</set>
+	<set xpath="/items/item[@name='drugCovertCats']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drugCovertCats']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drugEyeKandy']/effect_group/display_value[@name='dDuration']/@value">1200</set>
+	<set xpath="/items/item[@name='drugEyeKandy']/effect_group/triggered_effect[@cvar='$buffDrugEyeKandyDuration']/@value">1203</set>
+	<set xpath="/items/item[@name='drugEyeKandy']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drugEyeKandy']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drugHackers']/effect_group/display_value[@name='dDuration']/@value">1200</set>
+	<set xpath="/items/item[@name='drugHackers']/effect_group/triggered_effect[@cvar='$buffDrugHackersDuration']/@value">1203</set>
+	<set xpath="/items/item[@name='drugHackers']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drugHackers']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drugHealthBar']/effect_group/display_value[@name='dDuration']/@value">1200</set>
+	<set xpath="/items/item[@name='drugHealthBar']/effect_group/triggered_effect[@cvar='$buffDrugHealthBarDuration']/@value">1203</set>
+	<set xpath="/items/item[@name='drugHealthBar']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drugHealthBar']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drugJailBreakers']/effect_group/display_value[@name='dDuration']/@value">1200</set>
+	<set xpath="/items/item[@name='drugJailBreakers']/effect_group/triggered_effect[@cvar='$buffDrugJailBreakersDuration']/@value">1203</set>
+	<set xpath="/items/item[@name='drugJailBreakers']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drugJailBreakers']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drugNerdTats']/effect_group/display_value[@name='dDuration']/@value">1200</set>
+	<set xpath="/items/item[@name='drugNerdTats']/effect_group/triggered_effect[@cvar='$buffDrugNerdTatsDuration']/@value">1203</set>
+	<set xpath="/items/item[@name='drugNerdTats']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drugNerdTats']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drugOhShitzDrops']/effect_group/display_value[@name='dDuration']/@value">1200</set>
+	<set xpath="/items/item[@name='drugOhShitzDrops']/effect_group/triggered_effect[@cvar='$buffDrugOhShitzDropsDuration']/@value">1203</set>
+	<set xpath="/items/item[@name='drugOhShitzDrops']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drugOhShitzDrops']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drugRockBusters']/effect_group/display_value[@name='dDuration']/@value">1200</set>
+	<set xpath="/items/item[@name='drugRockBusters']/effect_group/triggered_effect[@cvar='$buffDrugRockBustersDuration']/@value">1203</set>
+	<set xpath="/items/item[@name='drugRockBusters']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drugRockBusters']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drugSkullCrushers']/effect_group/display_value[@name='dDuration']/@value">1200</set>
+	<set xpath="/items/item[@name='drugSkullCrushers']/effect_group/triggered_effect[@cvar='$buffDrugSkullCrushersDuration']/@value">1203</set>
+	<set xpath="/items/item[@name='drugSkullCrushers']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drugSkullCrushers']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drugSugarButts']/effect_group/display_value[@name='dDuration']/@value">1200</set>
+	<set xpath="/items/item[@name='drugSugarButts']/effect_group/triggered_effect[@cvar='$buffDrugSugarButtsDuration']/@value">1203</set>
+	<set xpath="/items/item[@name='drugSugarButts']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drugSugarButts']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<!-- 22 Увеличение длительности баффов от напитков -->
+	<set xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group/display_value[@name='dDuration']/@value">600</set>
+	<set xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group/triggered_effect[@cvar='$buffRedTeaDuration']/@value">603</set>
+	<set xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkJarRedTea']/effect_group/display_value[@name='dDuration']/@value">600</set>
+	<set xpath="/items/item[@name='drinkJarRedTea']/effect_group/triggered_effect[@cvar='$buffRedTeaDuration']/@value">603</set>
+	<set xpath="/items/item[@name='drinkJarRedTea']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkJarRedTea']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/effect_group/display_value[@name='dDuration']/@value">600</set>
+	<set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/effect_group/triggered_effect[@cvar='$buffYuccaJuiceSmoothieDuration']/@value">603</set>
+	<set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkCanMegaCrush']/effect_group/display_value[@name='dDuration']/@value">600</set>
+	<set xpath="/items/item[@name='drinkCanMegaCrush']/effect_group/triggered_effect[@cvar='$buffMegaCrushDuration']/@value">603</set>
+	<set xpath="/items/item[@name='drinkCanMegaCrush']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkCanMegaCrush']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkJarCoffee']/effect_group/display_value[@name='dDuration']/@value">600</set>
+	<set xpath="/items/item[@name='drinkJarCoffee']/effect_group/triggered_effect[@cvar='$buffCoffeeDuration']/@value">603</set>
+	<set xpath="/items/item[@name='drinkJarCoffee']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkJarCoffee']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkJarBlackStrapCoffee']/effect_group/display_value[@name='dDuration']/@value">600</set>
+	<set xpath="/items/item[@name='drinkJarBlackStrapCoffee']/effect_group/triggered_effect[@cvar='$buffCoffeeBSDuration']/@value">603</set>
+	<set xpath="/items/item[@name='drinkJarBlackStrapCoffee']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkJarBlackStrapCoffee']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/effect_group/display_value[@name='dDuration']/@value">600</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/effect_group/triggered_effect[@cvar='$buffGrandpasLearningElixirDuration']/@value">603</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<!-- 23 Увеличение длительности баффов от алкоголя -->
+	<set xpath="/items/item[@name='drinkJarBeer']/effect_group/display_value[@name='dDuration']/@value">300</set>
+	<set xpath="/items/item[@name='drinkJarBeer']/effect_group/triggered_effect[@operation='add']/@value">303</set>
+	<set xpath="/items/item[@name='drinkJarBeer']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkJarBeer']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasMoonshine']/effect_group/display_value[@name='dDuration']/@value">300</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasMoonshine']/effect_group/triggered_effect[@operation='add']/@value">303</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasMoonshine']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasMoonshine']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/effect_group/display_value[@name='dDuration']/@value">300</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/effect_group/triggered_effect[@operation='add']/@value">303</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/effect_group/triggered_effect[@operation='set']/@value">3603</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/effect_group/triggered_effect/requirement[@operation='GT']/@value">3603</set>
+	<!-- 24 У пилы и бура нет отдачи во избежание головокружения -->
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='KickDegreesVerticalMin']/@value">0</set>
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='KickDegreesVerticalMax']/@value">0</set>
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0</set>
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0</set>
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='KickDegreesVerticalMin']/@value">0</set>
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='KickDegreesVerticalMax']/@value">0</set>
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='KickDegreesHorizontalMin']/@value">0</set>
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='KickDegreesHorizontalMax']/@value">0</set>
+	<!-- 25 Усиление некоторых типов патронов для дробовика -->
+	<set xpath="/items/item[@name='gunShotgunT0PipeShotgun']//property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,stock,smallTopAttachments,noScopes,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,canHaveCosmetic,shotgunSkill,gunPipeShotgun</set>
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']//property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,dBarrel,barrelAttachments,sideAttachments,stock,bottomAttachments,attStrength,perkBoomstick,canHaveCosmetic,attachmentsIncluded,shotgunSkill,gunDoubleShotgun</set>
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']//property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,bottomAttachments,attStrength,perkBoomstick,modGunShotgunTubeExtenderMagazine,attachmentsIncluded,canHaveCosmetic,shotgunSkill,gunPumpShotgun</set>
+	<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']//property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,magazine,drumMagazine,firingMode,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,canHaveCosmetic,shotgunSkill,gunAutoShotgun</set>
+	<set xpath="/items/item[@name='ammoShotgunSlug']/effect_group[1]//passive_effect[1]/@value">96</set>
+	<insertafter xpath="/items/item[@name='ammoShotgunSlug']//effect_group[1]">
+		<effect_group name="gunShotgunT0PipeShotgun" tiered="false">
+			<requirement name="HoldingItemHasTags" tags="gunPipeShotgun"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="-18" tags="perkBoomstick"/>
+		</effect_group>
+		<effect_group name="gunShotgunT1DoubleBarrel" tiered="false">
+			<requirement name="HoldingItemHasTags" tags="gunDoubleShotgun"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="9" tags="perkBoomstick"/>
+		</effect_group>
+		<effect_group name="gunShotgunT2PumpShotgun" tiered="false">
+			<requirement name="HoldingItemHasTags" tags="gunPumpShotgun"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="45" tags="perkBoomstick"/>
+		</effect_group>
+		<effect_group name="gunShotgunT3AutoShotgun" tiered="false">
+			<requirement name="HoldingItemHasTags" tags="gunAutoShotgun"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="90" tags="perkBoomstick"/>
+		</effect_group>
+	</insertafter>
+	<!-- "Отключение" анимации и отката употребления еды/воды -->
+	<set xpath="items/item[starts-with (@name, 'drinkJar') or starts-with (@name, 'drinkCan') and not (contains(@name, 'Magazine')) and not (contains(@name, 'Schematic')) and not (contains(@name, 'Empty'))]/property/property[@name='Delay']/@value">0.1</set>
+	<append xpath="items/item[starts-with (@name, 'drinkJar') or starts-with (@name, 'drinkCan') and not (contains(@name, 'Magazine')) and not (contains(@name, 'Schematic')) and not (contains(@name, 'Empty'))]/property[@class='Action0']">
+		<property name="UseAnimation" value="false"/>
+	</append>
+	<set xpath="items/item[starts-with (@name, 'food') and not (contains(@name, 'Magazine')) and not (contains(@name, 'Schematic'))]/property/property[@name='Delay']/@value">0.1</set>
+	<append xpath="items/item[starts-with (@name, 'food') and not (contains(@name, 'Magazine')) and not (contains(@name, 'Schematic'))]/property[@class='Action0']">
+		<property name="UseAnimation" value="false"/>
+	</append>
+	<!-- ХХХХХХХХХХХХ Ресурсы ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<!-- Камень (10000) размер стака -->
+	<set xpath="/items/item[@name='resourceRockSmall']/property[@name='Stacknumber']/@value">10000</set>
+	<!-- Камень (10000) правильное открытие бандла -->
+	<set xpath="/items/item[@name='resourceRockSmallBundle']/property[@class='Action0']/property[@name='Create_item_count']/@value">10000</set>
+	<!-- Камень (10000) размер стака бандла -->
+	<append xpath="/items/item[@name='resourceRockSmallBundle']">
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<!-- Дерево (10000) размер стака -->
+	<set xpath="/items/item[@name='resourceWood']/property[@name='Stacknumber']/@value">10000</set>
+	<!-- Дерево (10000) правильное открытие бандла -->
+	<set xpath="/items/item[@name='resourceWoodBundle']/property[@class='Action0']/property[@name='Create_item_count']/@value">10000</set>
+	<!-- Дерево (10000) размер стака бандла -->
+	<append xpath="/items/item[@name='resourceWoodBundle']">
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<!-- Железо (10000) размер стака -->
+	<set xpath="/items/item[@name='resourceScrapIron']/property[@name='Stacknumber']/@value">10000</set>
+	<!-- Железо (10000) правильное открытие бандла -->
+	<set xpath="/items/item[@name='resourceScrapIronBundle']/property[@class='Action0']/property[@name='Create_item_count']/@value">10000</set>
+	<!-- Железо (10000) размер стака бандла -->
+	<append xpath="/items/item[@name='resourceScrapIronBundle']">
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<!-- Селитра (10000) размер стака -->
+	<set xpath="/items/item[@name='resourcePotassiumNitratePowder']/property[@name='Stacknumber']/@value">10000</set>
+	<!-- Селитра (10000) правильное открытие бандла -->
+	<set xpath="/items/item[@name='resourcePotassiumNitratePowderBundle']/property[@class='Action0']/property[@name='Create_item_count']/@value">10000</set>
+	<!-- Селитра (10000) размер стака бандла -->
+	<append xpath="/items/item[@name='resourcePotassiumNitratePowderBundle']">
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<!-- Свинец (10000) размер стака -->
+	<set xpath="/items/item[@name='resourceScrapLead']/property[@name='Stacknumber']/@value">10000</set>
+	<!-- Свинец (10000) правильное открытие бандла -->
+	<set xpath="/items/item[@name='resourceLeadBundle']/property[@class='Action0']/property[@name='Create_item_count']/@value">10000</set>
+	<!-- Свинец (10000) размер стака бандла -->
+	<append xpath="/items/item[@name='resourceLeadBundle']">
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<!-- Уголь (10000) размер стака -->
+	<set xpath="/items/item[@name='resourceCoal']/property[@name='Stacknumber']/@value">10000</set>
+	<!-- Уголь (10000) правильное открытие бандла -->
+	<set xpath="/items/item[@name='resourceCoalBundle']/property[@class='Action0']/property[@name='Create_item_count']/@value">10000</set>
+	<!-- Уголь (10000) размер стака бандла -->
+	<append xpath="/items/item[@name='resourceCoalBundle']">
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<!-- Нефтяной сланец (10000) размер стака -->
+	<set xpath="/items/item[@name='resourceOilShale']/property[@name='Stacknumber']/@value">10000</set>
+	<!-- Нефтяной сланец (10000) правильное открытие бандла -->
+	<set xpath="/items/item[@name='resourceOilShaleBundle']/property[@class='Action0']/property[@name='Create_item_count']/@value">10000</set>
+	<!-- Нефтяной сланец (10000) размер стака бандла -->
+	<append xpath="/items/item[@name='resourceOilShaleBundle']">
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<!-- Бензин (10000) размер стака -->
+	<!-- <set xpath="/items/item[@name='ammoGasCan']/property[@name='Stacknumber']/@value">10000</set> -->
+	<!-- Бензин (10000) правильное открытие бандла -->
+	<set xpath="/items/item[@name='ammoGasCanBundle']/property[@class='Action0']/property[@name='Create_item_count']/@value">10000</set>
+	<!-- Бензин (10000) размер стака бандла -->
+	<append xpath="/items/item[@name='ammoGasCanBundle']">
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<!-- Латунь (10000) размер стака -->
+	<set xpath="/items/item[@name='resourceScrapBrass']/property[@name='Stacknumber']/@value">10000</set>
+	<!-- Латунь (10000) новый бандл -->
+	<append xpath="/items">
+		<item name="resourceScrapBrassBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceScrapBrass"/>
+			<property name="Stacknumber" value="50"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceScrapBrass"/>
+				<property name="Create_item_count" value="10000"/>
+			</property>
+		</item>
+	</append>
+	<!-- Глинистый грунт (10000) размер стака -->
+	<set xpath="/items/item[@name='resourceClayLump']/property[@name='Stacknumber']/@value">10000</set>
+	<!-- Глинистый грунт (10000) новый бандл -->
+	<append xpath="/items">
+		<item name="resourceClayLumpBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceClayLump"/>
+			<property name="Stacknumber" value="50"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceClayLump"/>
+				<property name="Create_item_count" value="10000"/>
+			</property>
+		</item>
+	</append>
+	<!-- Песок (10000) размер стака -->
+	<set xpath="/items/item[@name='resourceCrushedSand']/property[@name='Stacknumber']/@value">10000</set>
+	<!-- Песок (10000) новый бандл -->
+	<append xpath="/items">
+		<item name="resourceCrushedSandBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceCrushedSand"/>
+			<property name="Stacknumber" value="50"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceCrushedSand"/>
+				<property name="Create_item_count" value="10000"/>
+			</property>
+		</item>
+	</append>
+	<!-- Цемент (1000) размер стака -->
+	<!-- <set xpath="/items/item[@name='resourceCement']/property[@name='Stacknumber']/@value">1000</set> -->
+	<!-- Цемент (1000) новый бандл -->
+	<append xpath="/items">
+		<item name="resourceCementBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceCement"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceCement"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+		</item>
+	</append>
+	<!-- Бумага (1000) размер стака -->
+	<set xpath="/items/item[@name='resourcePaper']/property[@name='Stacknumber']/@value">1000</set>
+	<!-- Бумага (1000) новый бандл -->
+	<append xpath="/items">
+		<item name="resourcePaperBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourcePaper"/>
+			<property name="Stacknumber" value="50"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourcePaper"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+		</item>
+	</append>
+	<!-- Синтетический мусор (1000) новый бандл -->
+	<append xpath="/items">
+		<item name="resourceScrapPolymersBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceScrapPolymers"/>
+			<property name="Stacknumber" value="50"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceScrapPolymers"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+		</item>
+	</append>
+	<!-- Булыжники (10000) размер стака -->
+	<set xpath="/items/item[@name='resourceCobblestones']/property[@name='Stacknumber']/@value">10000</set>
+	<!-- Булыжники (10000) новый бандл -->
+	<append xpath="/items">
+		<item name="resourceCobblestonesBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceCobblestones"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceCobblestones"/>
+				<property name="Create_item_count" value="10000"/>
+			</property>
+		</item>
+	</append>
+	<!-- Бетон (1000) новый бандл -->
+	<append xpath="/items">
+		<item name="resourceConcreteMixBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceConcreteMix"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceConcreteMix"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+		</item>
+	</append>
+	<!-- Слитки железа (1000) размер стака -->
+	<set xpath="/items/item[@name='resourceForgedIron']/property[@name='Stacknumber']/@value">1000</set>
+	<!-- Слитки железа (1000) новый бандл -->
+	<append xpath="/items">
+		<item name="resourceForgedIronBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceForgedIron"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceForgedIron"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+		</item>
+	</append>
+	<!-- Слитки стали (1000) размер стака -->
+	<set xpath="/items/item[@name='resourceForgedSteel']/property[@name='Stacknumber']/@value">1000</set>
+	<!-- Слитки стали (1000) новый бандл -->
+	<append xpath="/items">
+		<item name="resourceForgedSteelBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceForgedSteel"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceForgedSteel"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+		</item>
+	</append>
+	<!-- Битое стекло (1000) размер стака -->
+	<set xpath="/items/item[@name='resourceBrokenGlass']/property[@name='Stacknumber']/@value">1000</set>
+	<!-- ХХХХХХХХХХХХ Крафт боеприпасов ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<!-- Дробь (1000) размер стака -->
+	<set xpath="/items/item[@name='resourceBuckshot']/property[@name='Stacknumber']/@value">1000</set>
+	<!-- Дробь (1000) новый бандл -->
+	<append xpath="/items">
+		<item name="resourceBuckshotBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceBuckshot"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBuckshot"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+			<property name="Group" value="Ammo/Weapons,Ammo"/>
+		</item>
+	</append>
+	<!-- Гильзы(1000) новый бандл -->
+	<append xpath="/items">
+		<item name="resourceBulletCasingBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceBulletCasing"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletCasing"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+			<property name="Group" value="Ammo/Weapons,Ammo"/>
+		</item>
+	</append>
+	<!-- Пули (1000) новый бандл -->
+	<append xpath="/items">
+		<item name="resourceBulletTipBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceBulletTip"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+			<property name="Group" value="Ammo/Weapons,Ammo"/>
+		</item>
+	</append>
+	<!-- Железные наконечники (1000) размер стака -->
+	<set xpath="/items/item[@name='resourceArrowHeadIron']/property[@name='Stacknumber']/@value">1000</set>
+	<!-- Железные наконечники (1000) новый бандл -->
+	<append xpath="/items">
+		<item name="resourceArrowHeadIronBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceArrowHeadIron"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceArrowHeadIron"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+			<property name="Group" value="Ammo/Weapons,Ammo"/>
+		</item>
+	</append>
+	<!-- Стальные наконечники (1000) размер стака -->
+	<set xpath="/items/item[@name='resourceArrowHeadSteelAP']/property[@name='Stacknumber']/@value">1000</set>
+	<!-- Стальные наконечники (1000) новый бандл -->
+	<append xpath="/items">
+		<item name="resourceArrowHeadSteelAPBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceArrowHeadSteelAP"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceArrowHeadSteelAP"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+			<property name="Group" value="Ammo/Weapons,Ammo"/>
+		</item>
+	</append>
+	<!-- Порох (10000) размер стака -->
+	<set xpath="/items/item[@name='resourceGunPowder']/property[@name='Stacknumber']/@value">10000</set>
+	<!-- Порох (10000) правильное открытие бандла -->
+	<set xpath="/items/item[@name='resourceGunPowderBundle']/property[@class='Action0']/property[@name='Create_item_count']/@value">10000</set>
+	<!-- Порох (10000) размер стака бандла -->
+	<append xpath="/items/item[@name='resourceGunPowderBundle']">
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<!-- ХХХХХХХХХХХХ Запчасти ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<!-- Радиатор (10) -->
+	<set xpath="/items/item[@name='resourceRadiator']/property[@name='Stacknumber']/@value">10</set>
+	<!-- Дверная ручка (500) -->
+	<set xpath="/items/item[@name='resourceDoorKnob']/property[@name='Stacknumber']/@value">500</set>
+	<!-- Латунный и свинцовый хлам (500) -->
+	<set xpath="/items/item[@name='resourceCandleStick']/property[@name='Stacknumber']/@value">500</set>
+	<set xpath="/items/item[@name='resourceFishingWeight']/property[@name='Stacknumber']/@value">500</set>
+	<set xpath="/items/item[@name='resourceTrophy1']/property[@name='Stacknumber']/@value">500</set>
+	<set xpath="/items/item[@name='resourceTrophy2']/property[@name='Stacknumber']/@value">500</set>
+	<!-- Двигатель (5) -->
+	<set xpath="/items/item[@name='smallEngine']/property[@name='Stacknumber']/@value">5</set>
+	<!-- Клей (100) -->
+	<set xpath="/items/item[@name='resourceGlue']/property[@name='Stacknumber']/@value">100</set>
+	<!-- Клейкая лента (100) -->
+	<set xpath="/items/item[@name='resourceDuctTape']/property[@name='Stacknumber']/@value">100</set>
+	<!-- Пружины (200) -->
+	<set xpath="/items/item[@name='resourceSpring']/property[@name='Stacknumber']/@value">200</set>
+	<!-- Швейный набор (50) -->
+	<set xpath="/items/item[@name='resourceSewingKit']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Масло (100) -->
+	<set xpath="/items/item[@name='resourceOil']/property[@name='Stacknumber']/@value">100</set>
+	<!-- Кастрюля (10) -->
+	<set xpath="/items/item[@name='toolCookingPot']/property[@name='Stacknumber']/@value">10</set>
+	<!-- Гриль (10) -->
+	<set xpath="/items/item[@name='toolCookingGrill']/property[@name='Stacknumber']/@value">10</set>
+	<!-- Химстакан (10) -->
+	<set xpath="/items/item[@name='toolBeaker']/property[@name='Stacknumber']/@value">10</set>
+	<!-- Меха кузнечные (10) -->
+	<set xpath="/items/item[@name='toolBellows']/property[@name='Stacknumber']/@value">10</set>
+	<!-- Наковальня (10) -->
+	<set xpath="/items/item[@name='toolAnvil']/property[@name='Stacknumber']/@value">10</set>
+	<!-- Тигель (10) -->
+	<set xpath="/items/item[@name='toolForgeCrucible']/property[@name='Stacknumber']/@value">10</set>
+	<!-- Ремнабор (10) -->
+	<set xpath="/items/item[@name='resourceRepairKit']/property[@name='Stacknumber']/@value">10</set>
+	<!-- Фара (100) -->
+	<set xpath="/items/item[@name='resourceHeadlight']/property[@name='Stacknumber']/@value">10</set>
+	<!-- Отмычки (100) размер стака -->
+	<set xpath="/items/item[@name='resourceLockPick']/property[@name='Stacknumber']/@value">100</set>
+	<!-- Фонарик (50) -->
+	<set xpath="/items/item[@name='meleeToolFlashlight02']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Пустое ведро (10) -->
+	<set xpath="/items/item[@name='bucketEmpty']/property[@name='Stacknumber']/@value">10</set>
+	<!-- Ведро с речной водой (10) -->
+	<!-- <set xpath="/items/item[@name='bucketRiverWater']/property[@name='Stacknumber']/@value">1</set> -->
+	<!-- Схемы крафта -->
+	<set xpath="/items/item[@name='schematicMaster']/property[@name='Stacknumber']/@value">10</set>
+	<!-- ХХХХХХХХХХХХ Боеприпасы ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<!-- Общий бандл для всех зависимых предметов -->
+	<set xpath="/items/item[@name='ammoBundleMaster']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Общий размер открываемого стака для всех зависимых патронов -->
+	<set xpath="/items/item[@name='ammoBundleMaster']/property[@class='Action0']/property[@name='Create_item_count']/@value">1000</set>
+	<!-- 9 мм (1000) размер стака для этих патронов и всех зависимых предметов -->
+	<set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">1000</set>
+	<!-- 9 мм (1000) размер стака бандла -->
+	<set xpath="/items/item[@name='ammoBundle9mmBulletBall']/property[@name='Stacknumber']/@value">50</set>
+	<!-- 9 мм экспансивные (1000) размер стака бандла -->
+	<set xpath="/items/item[@name='ammoBundle9mmBulletHP']/property[@name='Stacknumber']/@value">50</set>
+	<!-- 9 мм ББ (1000) размер стака бандла -->
+	<set xpath="/items/item[@name='ammoBundle9mmBulletAP']/property[@name='Stacknumber']/@value">50</set>
+	<!-- 44 Магнум (1000) размер стака бандла -->
+	<set xpath="/items/item[@name='ammoBundle44MagnumBulletBall']/property[@name='Stacknumber']/@value">50</set>
+	<!-- 44 Магнум экспансивные (1000) размер стака бандла -->
+	<set xpath="/items/item[@name='ammoBundle44MagnumBulletHP']/property[@name='Stacknumber']/@value">50</set>
+	<!-- 44 магнум ББ (1000) размер стака бандла -->
+	<set xpath="/items/item[@name='ammoBundle44MagnumBulletAP']/property[@name='Stacknumber']/@value">50</set>
+	<!-- 7,62 (1000) размер стака -->
+	<set xpath="/items/item[@name='ammo762mmBulletBall']/property[@name='Stacknumber']/@value">1000</set>
+	<!-- Для дробовика (1000) размер стака -->
+	<set xpath="/items/item[@name='ammoShotgunShell']/property[@name='Stacknumber']/@value">1000</set>
+	<!-- Для дробовика ББ (1000) размер стака -->
+	<set xpath="/items/item[@name='ammoShotgunSlug']/property[@name='Stacknumber']/@value">1000</set>
+	<!-- Для дробовика ПРПЗ (1000) размер стака -->
+	<set xpath="/items/item[@name='ammoShotgunBreachingSlug']/property[@name='Stacknumber']/@value">1000</set>
+	<!-- Ракеты (100) размер стака -->
+	<set xpath="/items/item[@name='ammoRocketHE']/property[@name='Stacknumber']/@value">100</set>
+	<!-- ХХХХХХХХХХХХ Стрелы и болты ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<!-- Дротики (1000) размер стака -->
+	<set xpath="/items/item[@name='ammoDartIron']/property[@name='Stacknumber']/@value">1000</set>
+	<!-- Дротики (1000) новый бандл -->
+	<append xpath="/items">
+		<item name="ammoDartIronBundle">
+			<property name="Extends" value="ammoBundleMaster"/>
+			<property name="CustomIcon" value="ammoDartIron"/>
+			<property name="DescriptionKey" value="ammoDartIronBundleDesc"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="EconomicValue" value="1360"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property class="Action0">
+				<property name="Create_item" value="ammoDartIron"/>
+				<property name="Create_item_count" value="1000"/>
+			</property>
+		</item>
+	</append>
+	<!-- Каменная стрела (300) размер стака -->
+	<set xpath="/items/item[@name='ammoArrowStone']/property[@name='Stacknumber']/@value">300</set>
+	<!-- Общий размер открываемого стака для всех зависимых стрел -->
+	<append xpath="/items/item[@name='ammoBundleArrowStone']/property[@class='Action0']">
+		<property name="Create_item_count" value="300"/>
+	</append>
+	<!-- Взрывная стрела (300) размер стака -->
+	<set xpath="/items/item[@name='ammoArrowExploding']/property[@name='Stacknumber']/@value">300</set>
+	<!-- Взрывная стрела (300) размер открываемого стака -->
+	<set xpath="/items/item[@name='ammoBundleArrowExploding']/property[@class='Action0']/property[@name='Create_item_count']/@value">300</set>
+	<!-- Каменный болт (300) размер стака -->
+	<set xpath="/items/item[@name='ammoCrossbowBoltStone']/property[@name='Stacknumber']/@value">300</set>
+	<!-- Железный болт (300) размер стака -->
+	<set xpath="/items/item[@name='ammoCrossbowBoltIron']/property[@name='Stacknumber']/@value">300</set>
+	<!-- Взрывной болт (300) размер стака -->
+	<set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@name='Stacknumber']/@value">300</set>
+	<!-- Взрывной болт (300) размер открываемого стака -->
+	<set xpath="/items/item[@name='ammoBundleCrossbowBoltExploding']/property[@class='Action0']/property[@name='Create_item_count']/@value">300</set>
+	<!-- ХХХХХХХХХХХХ Взрывчатка ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<!-- Бомба из трубы (50) размер стака -->
+	<set xpath="/items/item[@name='thrownAmmoPipeBomb']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Контактная граната (50) размер стака -->
+	<set xpath="/items/item[@name='thrownGrenadeContact']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Бомба с часовым механизмом (50) размер стака -->
+	<set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Динамит (50) размер стака -->
+	<set xpath="/items/item[@name='thrownDynamite']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Молотов (50) размер стака -->
+	<set xpath="/items/item[@name='thrownAmmoMolotovCocktail']/property[@name='Stacknumber']/@value">50</set>
+	<!-- ХХХХХХХХХХХХ Органика ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<!-- Перья (1000) размер стака -->
+	<set xpath="/items/item[@name='resourceFeather']/property[@name='Stacknumber']/@value">1000</set>
+	<!-- Кости (500) размер стака -->
+	<set xpath="/items/item[@name='resourceBone']/property[@name='Stacknumber']/@value">500</set>
+	<!-- Животный жир (200) размер стака -->
+	<set xpath="/items/item[@name='resourceAnimalFat']/property[@name='Stacknumber']/@value">200</set>
+	<!-- Кожа (200) размер стака -->
+	<set xpath="/items/item[@name='resourceLeather']/property[@name='Stacknumber']/@value">200</set>
+	<!-- Ткань (500) размер стака -->
+	<set xpath="/items/item[@name='resourceCloth']/property[@name='Stacknumber']/@value">500</set>
+	<!-- Трава (5000) размер стака -->
+	<set xpath="/items/item[@name='resourceYuccaFibers']/property[@name='Stacknumber']/@value">5000</set>
+	<!-- Сырое мясо (200) размер стака -->
+	<set xpath="/items/item[@name='foodRawMeat']/property[@name='Stacknumber']/@value">200</set>
+	<!-- Разлагающееся мясо (200) размер стака -->
+	<set xpath="/items/item[@name='foodRottingFlesh']/property[@name='Stacknumber']/@value">200</set>
+	<!-- ХХХХХХХХХХХХ  Медицина ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<!-- Мёд (50) размер стака -->
+	<set xpath="/items/item[@name='foodHoney']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Крем алоэ (50) размер стака -->
+	<set xpath="/items/item[@name='medicalAloeCream']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Бинт первой помощи (50) размер стака -->
+	<set xpath="/items/item[@name='medicalFirstAidBandage']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Аптечка (50) размер стака -->
+	<set xpath="/items/item[@name='medicalFirstAidKit']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Бинт (50) размер стака -->
+	<set xpath="/items/item[@name='medicalBandage']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Шина (50) размер стака -->
+	<set xpath="/items/item[@name='medicalSplint']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Пакет с кровью (50) размер стака -->
+	<set xpath="/items/item[@name='medicalBloodBag']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Экстракт тестостерона (50) размер стака -->
+	<set xpath="/items/item[@name='resourceTestosteroneExtract']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Витамины (50) размер стака -->
+	<set xpath="/items/item[@name='drugVitamins']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Болеутоляющее (50) размер стака -->
+	<set xpath="/items/item[@name='drugPainkillers']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Травяные антибиотики (50) размер стака -->
+	<set xpath="/items/item[@name='drugHerbalAntibiotics']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Антибиотики (50) размер стака -->
+	<set xpath="/items/item[@name='drugAntibiotics']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Лекарство (50) размер стака -->
+	<set xpath="/items/item[@name='drugRecog']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Конфетка (50) размер стака -->
+	<set xpath="/items/item[@name='drugAtomJunkies']/property[@name='Stacknumber']/@value">50</set>
+	<!-- ХХХХХХХХХХХХ  Еда ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<!-- Семена (250) -->
+	<set xpath="/items/item[@name='foodCropBlueberries']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodCropCorn']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodCropGraceCorn']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodCropPotato']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodCropMushrooms']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodCropYuccaFruit']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodCropPumpkin']/property[@name='Stacknumber']/@value">250</set>
+	<!-- Приготовленная еда и консервы (50) -->
+	<set xpath="/items/item[@name='foodCharredMeat']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodCornOnTheCob']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodGrilledMeat']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodBoiledMeat']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodMeatStew']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodSteakAndPotato']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodHoboStew']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodFishTacos']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodBakedPotato']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodBlueberryPie']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodPumpkinPie']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodPumpkinCheesecake']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodPumpkinBread']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodGumboStew']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodShepardsPie']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodSpaghetti']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodTunaFishGravyToast']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodEggBoiled']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodBaconAndEggs']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodVegetableStew']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodCanBeef']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodCornBread']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='foodShamSandwich']/property[@name='Stacknumber']/@value">50</set>
+	<!-- ХХХХХХХХХХХХ  Напитки ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<!-- Мутная вода (100) -->
+	<set xpath="/items/item[@name='drinkJarRiverWater']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Кипяченая вода (100) -->
+	<set xpath="/items/item[@name='drinkJarBoiledWater']/property[@name='Stacknumber']/@value">50</set>
+	<!-- Минералка и другие напитки (50) -->
+	<set xpath="/items/item[@name='drinkJarPureMineralWater']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarYuccaJuice']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarGoldenRodTea']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarRedTea']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarCoffee']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarBeer']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasMoonshine']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="/items/item[@name='drinkJarGrandpasForgettingElixir']/property[@name='Stacknumber']/@value">50</set>
+	<!-- ХХХХХХХХХХХХ  Деньги ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<!-- Фишки Дюка -->
+	<set xpath="/items/item[@name='casinoCoin']/property[@name='Stacknumber']/@value">50000</set>
+	<!-- ХХХХХХХХХХХХ  Прочее ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
+	<!-- Разбор батарей на кислоту -->
+	<set xpath="/items/item[@name='carBattery']/property[@name='Material']/@value">MresourceAcid</set>
+	<set xpath="/items/item[@name='carBattery']/property[@name='Weight']/@value">2</set>
+	<append xpath="/items/item[@name='carBattery']">
+		<property name="ScrapTimeOverride" value="30.0"/>
+	</append>
+	<set xpath="/items/item[@name='resourceAcid']/property[@name='Weight']/@value">1</set>
+	<!-- Запчасти -->
+	<set xpath="/items/item[contains (@name, 'gun') and contains (@name, 'Parts')]/property[@name='Stacknumber']/@value">10</set>
+	<append xpath="/items/item[contains (@name, 'gun') and contains (@name, 'Parts') and not (contains(@name, 'MGT1AK47'))]">
+		<property name="Stacknumber" value="10"/>
+	</append>
+	<append xpath="/items/item[contains (@name, 'melee') and contains (@name, 'Parts') and not (contains(@name, 'MGT1AK47'))]">
+		<property name="Stacknumber" value="10"/>
+	</append>
+	<append xpath="/items/item[@name='armorParts']">
+		<property name="Stacknumber" value="10"/>
+	</append>
+	<!-- Время разбора брони увеличено до 30 -->
+	<set xpath="/items/item[starts-with (@name, 'armor') and contains (@name, 'Master')]/property[@name='ScrapTimeOverride']/@value">30</set>
+	<!-- Время разбора увеличено до 15 -->
+	<set xpath="/items/item[starts-with (@name, 'gun') and contains (@name, 'T0') and not (contains(@name, 'Parts'))]/property[@name='ScrapTimeOverride']/@value">15</set>
+	<set xpath="/items/item[starts-with (@name, 'meleeTool') and contains (@name, 'T0') and not (contains(@name, 'Parts'))]/property[@name='ScrapTimeOverride']/@value">15</set>
+	<set xpath="/items/item[starts-with (@name, 'meleeWpn') and contains (@name, 'T0') and not (contains(@name, 'Parts'))]/property[@name='ScrapTimeOverride']/@value">15</set>
+	<!-- Время разбора увеличено до 30 -->
+	<set xpath="/items/item[starts-with (@name, 'gun') and contains (@name, 'T1') and not (contains(@name, 'Parts')) and not (contains(@name, 'Bot'))]/property[@name='ScrapTimeOverride']/@value">30</set>
+	<set xpath="/items/item[starts-with (@name, 'gun') and contains (@name, 'T2') and not (contains(@name, 'Parts')) and not (contains(@name, 'Bot'))]/property[@name='ScrapTimeOverride']/@value">30</set>
+	<set xpath="/items/item[starts-with (@name, 'meleeTool') and contains (@name, 'T1') and not (contains(@name, 'Parts'))]/property[@name='ScrapTimeOverride']/@value">30</set>
+	<set xpath="/items/item[starts-with (@name, 'meleeTool') and contains (@name, 'T2') and not (contains(@name, 'Parts'))]/property[@name='ScrapTimeOverride']/@value">30</set>
+	<set xpath="/items/item[starts-with (@name, 'meleeWpn') and contains (@name, 'T1') and not (contains(@name, 'Parts'))]/property[@name='ScrapTimeOverride']/@value">30</set>
+	<set xpath="/items/item[starts-with (@name, 'meleeWpn') and contains (@name, 'T2') and not (contains(@name, 'Parts'))]/property[@name='ScrapTimeOverride']/@value">30</set>
+	<!-- Время разбора увеличено до 45 -->
+	<set xpath="/items/item[starts-with (@name, 'gun') and contains (@name, 'T3') and not (contains(@name, 'Parts')) and not (contains(@name, 'Bot'))]/property[@name='ScrapTimeOverride']/@value">45</set>
+	<set xpath="/items/item[starts-with (@name, 'meleeTool') and contains (@name, 'T3') and not (contains(@name, 'Parts'))]/property[@name='ScrapTimeOverride']/@value">45</set>
+	<set xpath="/items/item[starts-with (@name, 'meleeWpn') and contains (@name, 'T3') and not (contains(@name, 'Parts'))]/property[@name='ScrapTimeOverride']/@value">45</set>
+	<set xpath="/items/item[@name='gunBotT1JunkSledge']/property[@name='ScrapTimeOverride']/@value">45</set>
+	<set xpath="/items/item[@name='gunBotT2JunkTurret']/property[@name='ScrapTimeOverride']/@value">45</set>
+	<!-- Время разбора других предметов -->
+	<append xpath="/items/item[@name='smallEngine']">
+		<property name="ScrapTimeOverride" value="60.0"/>
+	</append>
+</items_aio_2>

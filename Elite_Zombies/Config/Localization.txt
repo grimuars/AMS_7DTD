@@ -1,0 +1,15 @@
+Key,Source,Context,Changes,English,Russian
+
+zombieDemolitionElite,entityclasses,Entity,,[94CBFF]ELITE[-] Demolition,[94CBFF]ЭЛИТА[-] Разрушитель
+zombieFemaleFatElite,entityclasses,Entity,,[94CBFF]ELITE[-] Big Mama,[94CBFF]ЭЛИТА[-] Толстуха
+zombieFatHawaiianElite,entityclasses,Entity,,[94CBFF]ELITE[-] Tourist,[94CBFF]ЭЛИТА[-] Турист
+zombieCopElite,entityclasses,Entity,,[94CBFF]ELITE[-] Cop,[94CBFF]ЭЛИТА[-] Полицейский
+
+zombieWightElite,entityclasses,Entity,,[94CBFF]ELITE[-] Wight,[94CBFF]ЭЛИТА[-] Упырь
+zombieSoldierElite,entityclasses,Entity,,[94CBFF]ELITE[-] Soldier,[94CBFF]ЭЛИТА[-] Солдат
+zombieSkaterElite,entityclasses,Entity,,[94CBFF]ELITE[-] Skater,[94CBFF]ЭЛИТА[-] Скейтер
+zombieBikerElite,entityclasses,Entity,,[94CBFF]ELITE[-] Biker,[94CBFF]ЭЛИТА[-] Байкер
+zombieLumberjackElite,entityclasses,Entity,,[94CBFF]ELITE[-] Lumberjack,[94CBFF]ЭЛИТА[-] Дровосек
+
+zombiePartyGirlElite,entityclasses,Entity,,[94CBFF]ELITE[-] Party Girl,[94CBFF]ЭЛИТА[-] Стриптизёрша
+

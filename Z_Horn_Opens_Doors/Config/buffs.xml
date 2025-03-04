@@ -1,0 +1,24 @@
+<config>
+	<!-- // ********  ******** -->
+	<append xpath="buffs/buff[@name='buffStatusCheck01']">
+		<!-- <effect_group>
+			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffA88HornOpensDoorListener"/>
+			<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffA88HornOpensDoorListener"/>
+		</effect_group> -->
+	</append>
+	<append xpath="/buffs">
+		<!-- // ********  ******** -->
+		<buff name="buffA88HornOpensDoorListener" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="self" cvar="vehicleHornIsPressed" operation="set" value="0">
+					<requirement name="CVarCompare" cvar="vehicleHornIsPressed" operation="Equals" value="1" target="self"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+	</append>
+</config>

@@ -1,0 +1,99 @@
+<gameevents>
+	<append xpath="/gameevents">
+		<!-- Message Popup -->
+		<action_sequence name="vehicle_damage_buff">
+			<property name="target_type" value="Block"/>
+			<action class="AddBuff">
+				<property name="buff_name" value="vehicle_damage_alarm"/>
+			</action>
+		</action_sequence>
+		<!-- Message Popup -->
+		<action_sequence name="vehicle_alarm_message">
+			<property name="action_type" value="Game"/>
+			<property name="target_type" value="Block"/>
+			<property name="allow_while_dead" value="false"/>
+			<!-- <action class="BeltTooltip">
+				<property name="text" value="alarm_message_text" />
+			</action> -->
+		</action_sequence>
+		<!-- Loot Alarm Sound -->
+		<!-- 
+		If buff hits then has X chance to activate the alarm 
+		then X amount of chance to activate spawns
+		can activate alarm without spawns
+		-->
+		<action_sequence name="vehicle_loot_alarm_sound">
+			<property name="action_type" value="Game"/>
+			<property name="target_type" value="Block"/>
+			<property name="allow_while_dead" value="false"/>
+			<action class="PlaySound">
+				<property name="sound" value="VehicleAlarmSound"/>
+				<property name="phase" value="0"/>
+				<property name="loop_duration" value="10"/>
+			</action>
+		</action_sequence>
+		<!-- Loot Alarm Spawns -->
+		<action_sequence name="vehicle_loot_alarm_zombie_spawns">
+			<property name="action_type" value="Game"/>
+			<property name="allow_while_dead" value="false"/>
+			<requirement class="RandomRoll">
+				<property name="min_max" value="0,100"/>
+				<property name="operation" value="LTE"/>
+				<property name="value" value="30"/>
+			</requirement>
+			<action class="SpawnEntity">
+				<property name="entity_group" value="ZombieVehicleAlarmsHorde"/>
+				<property name="spawn_count" value="4"/>
+				<property name="safe_spawn" value="false"/>
+				<property name="air_spawn" value="false"/>
+				<property name="add_to_group" value="zombies"/>
+				<property name="min_distance" value="20"/>
+				<property name="max_distance" value="30"/>
+			</action>
+		</action_sequence>
+		<!-- Damage Alarm Sound -->
+		<!-- 
+		If buff hits then has X chance to activate the alarm 
+		then X amount of chance to activate spawns
+		can activate alarm without spawns
+		-->
+		<action_sequence name="vehicle_damaged_alarm_sound">
+			<property name="action_type" value="Game"/>
+			<property name="target_type" value="Block"/>
+			<property name="allow_while_dead" value="false"/>
+			<requirement class="RandomRoll">
+				<property name="min_max" value="0,100"/>
+				<property name="operation" value="LTE"/>
+				<property name="value" value="10"/>
+			</requirement>
+			<action class="PlaySound">
+				<property name="sound" value="VehicleAlarmSound"/>
+				<property name="phase" value="0"/>
+				<property name="loop_duration" value="10"/>
+			</action>
+			<action class="CallGameEvent">
+				<property name="game_events" value="vehicle_alarm_message,vehicle_damage_alarm_zombie_spawns"/>
+			</action>
+		</action_sequence>
+		<!-- Damage Alarm Spawns -->
+		<action_sequence name="vehicle_damage_alarm_zombie_spawns">
+			<property name="action_type" value="Game"/>
+			<property name="allow_while_dead" value="false"/>
+			<property name="safe_spawn" value="false"/>
+			<requirement class="RandomRoll">
+				<property name="min_max" value="0,100"/>
+				<property name="operation" value="LTE"/>
+				<property name="value" value="15"/>
+			</requirement>
+			<action class="SpawnEntity">
+				<property name="entity_group" value="ZombieVehicleAlarmsHorde"/>
+				<property name="spawn_count" value="4"/>
+				<property name="air_spawn" value="false"/>
+				<property name="add_to_group" value="zombies"/>
+				<property name="safe_spawn" value="true"/>
+				<property name="min_distance" value="20"/>
+				<property name="max_distance" value="30"/>
+			</action>
+		</action_sequence>
+	</append>
+</gameevents>

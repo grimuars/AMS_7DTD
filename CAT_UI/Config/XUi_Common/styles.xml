@@ -1,0 +1,93 @@
+<CATUI>
+	<!-- global style -->
+	<append xpath="styles/global">
+		<style_entry name="CATUI_red" value="255, 0, 0, 255"/>
+	</append>
+	<remove xpath="/styles/style[@name='header.panel']"/>
+	<!-- CATUI style -->
+	<append xpath="styles">
+		<style name="header.panel" type="panel">
+			<style_entry name="name" value="header"/>
+			<style_entry name="height" value="43"/>
+			<style_entry name="depth" value="1"/>
+			<style_entry name="backgroundspritename" value="ui_game_panel_header"/>
+		</style>
+
+
+		<!-- 纯色背景 Bugfix：sprite type="filled" 边缘会变成半透明，需要使用一个纯色背景掩盖 -->
+		<style name="CATUI.sprite.filled.prue">
+			<style_entry name="sprite" value="catui_background_prue" />
+		</style>
+
+		<!-- 区块背景 -->
+		<style name="CATUI.area.bg">
+			<style_entry name="depth" value="-20" />
+			<style_entry name="width" value="100%" />
+			<style_entry name="height" value="100%" />
+			<style_entry name="color" value="96, 96, 96,255" />
+			<style_entry name="sprite" value="catui_background_prue" />
+		</style>
+
+		<!-- 文本阴影 -->
+		<style name="CATUI.text.shadow.black.1px" type="label">
+			<style_entry name="effect" value="shadow" />
+			<style_entry name="effect_color" value="[black]" />
+			<style_entry name="effect_distance" value="1,1" />
+		</style>
+		<!-- 文本描边 -->
+		<style name="CATUI.text.outline.black.1px" type="label">
+			<style_entry name="effect" value="Outline8" />
+			<style_entry name="effect_color" value="[black]" />
+			<style_entry name="effect_distance" value="1,1" />
+		</style>
+		<!-- 文本描边2 -->
+		<style name="CATUI.text.outline2.black.1px" type="label">
+			<style_entry name="effect" value="Outline" />
+			<style_entry name="effect_color" value="[black]" />
+			<style_entry name="effect_distance" value="1,1" />
+		</style>
+		<!-- 工具栏 - 快捷键 - 背景 -->
+		<style name="CATUI.toolbelt.slots.num.bg">
+			<style_entry name="pos" value="0, -98" />
+			<style_entry name="depth" value="20" />
+			<style_entry name="width" value="15" />
+			<style_entry name="height" value="15" />
+		</style>
+		<!-- 工具栏 - 快捷键 - 文本 -->
+		<style name="CATUI.toolbelt.slots.num">
+			<style_entry name="pos" value="36,15" />
+			<style_entry name="justify" value="center" />
+			<style_entry name="pivot" value="center" />
+			<style_entry name="font_size" value="15" />
+			<style_entry name="color" value="[white]" />
+		</style>
+
+		<!-- 护甲等级 icon 等级颜色：0（0），1（1-19），2（20-39），3（40-59），4（60-79），5（80-99），6（100） -->
+		<style name="CATUI.icon.shield">
+			<style_entry name="sprite" value="catui_icon_shield" />
+			<style_entry name="pivot" value="center" />
+		</style>
+		<style name="CATUI.level.color.0">
+			<style_entry name="color" value="255,0,0,200" />
+		</style>
+		<style name="CATUI.level.color.1">
+			<style_entry name="color" value="255, 195, 0,200" />
+		</style>
+		<style name="CATUI.level.color.2">
+			<style_entry name="color" value="165, 214, 63,200" />
+		</style>
+		<style name="CATUI.level.color.3">
+			<style_entry name="color" value="67, 207, 124,200" />
+		</style>
+		<style name="CATUI.level.color.4">
+			<style_entry name="color" value="42, 130, 228,200" />
+		</style>
+		<style name="CATUI.level.color.5">
+			<style_entry name="color" value="121, 72, 234,200" />
+		</style>
+		<style name="CATUI.level.color.6">
+			<style_entry name="color" value="172, 51, 193,200" />
+		</style>
+
+	</append>
+</CATUI>

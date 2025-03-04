@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<worldglobal_aio_2>
+	<!-- The values are Day,Night 
+  The numbers are not "how much fog" but more of "How much visibility"
+  so a higher number is more visibility. 
+  I do not know if its a percentage but that would make sense
+  Vales go from 0 (no visibilty) to 1 (no fog I guess?)
+  Possibly just a 2 decimal number, I have not tested more decimals
+  Leading 0 is optional.
+  a20: Seems like .5 is as low as you want to go to have "semi believeable" heavy fog 
+  and still be able to see and react to zeds coming at you.
+  a21: Maybe bump the a20 numbers down a smidge
+  a21 Default
+  <property name="fogPower" value="1, 1"/>
+  -->
+	<set xpath="/worldglobal/environment/property[@name='fogPower']/@value">0.6,0.4</set>
+	<!--
+  a19 Defaults
+  day, night
+  <property name="ambientEquatorScale" value=".7, .65"/>
+  <property name="ambientGroundScale" value=".4, .2"/>
+  <property name="ambientSkyScale" value=".9, .5"/>
+
+  add, scale
+  <property name="ambientMoon" value=".6, .4"/>
+
+  a20 Defaults
+  day, night
+  <property name="ambientEquatorScale" value=".7, .45"/>
+	<property name="ambientGroundScale" value=".3, .05"/>
+	<property name="ambientSkyScale" value="1, 1"/>
+
+  add, scale
+  <property name="ambientMoon" value=".9, .3"/>
+
+  a21 Defaults
+  day, night
+  All "same" as a20, unless noted:
+	<property name="ambientSkyScale" value="1, .7"/>
+  -->
+	<!-- How much light the moon gives off?
+    add?
+      1 = a lot
+      0 = the least
+    scale?
+      1 = a lot
+      0 = the least
+  -->
+	<set xpath="/worldglobal/environment/property[@name='ambientMoon']/@value">.9, .3</set>
+	<!-- NOTE: Setting some of these to absolute night min (0.1) is a little unrealistic
+   day -> nighttime transition.  Like, it gets dark too fast as night falls.
+   Its nice and dark, but you miss out on some twilight ambiance. 
+   
+   a21 Default: 1, .7
+   
+   -->
+	<!-- <set xpath="/worldglobal/environment/property[@name='ambientEquatorScale']/@value">.7, .4</set> -->
+	<!-- DOUGH: Default in a20 is close enough -->
+	<!-- <set xpath="/worldglobal/environment/property[@name='ambientGroundScale']/@value">.4, .1</set> -->
+	<set xpath="/worldglobal/environment/property[@name='ambientSkyScale']/@value">1, .4</set>
+	<!-- Уменьшаем резкость динамического освещения внутри помещений -->
+	<set xpath="/worldglobal/environment/property[@name='ambientInsideSkyScale']/@value">.9, .4</set>
+</worldglobal_aio_2>

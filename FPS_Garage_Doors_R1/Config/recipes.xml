@@ -1,0 +1,11 @@
+<FPS>
+	<append xpath="/recipes">
+		<recipe name="FPSGarageDoorVariantHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="60"/>
+			<ingredient name="resourceSpring" count="20"/>
+			<ingredient name="resourceMechanicalParts" count="40"/>
+			<ingredient name="resourceScrapPolymers" count="80"/>
+			<ingredient name="resourceOil" count="2"/>
+		</recipe>
+	</append>
+</FPS>

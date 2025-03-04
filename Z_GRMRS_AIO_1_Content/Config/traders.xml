@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<traders_aio_1>
+	<!-- Рис и сыр в продажу -->
+	<append xpath="//trader_item_group[@name='foodSupplies']">
+		<item name="foodBagOfRice" count="2,5"/>
+		<item name="foodCheese" count="2,5"/>
+	</append>
+</traders_aio_1>

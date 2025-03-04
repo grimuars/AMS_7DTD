@@ -1,0 +1,205 @@
+<configs>
+	<append xpath="/items">
+		<item name="vehicleHumveechassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="CustomIcon" value="Humveechassis"/>
+			<property name="DescriptionKey" value="vehicleHumveechassisDesc"/>
+			<property name="EconomicValue" value="11000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+		</item>
+		<item name="vehicleHumveebody">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="CustomIcon" value="Humveebody"/>
+			<property name="DescriptionKey" value="vehicleHumveebodyDesc"/>
+			<property name="EconomicValue" value="11000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+		</item>
+		<item name="vehicleHumveeplaceable">
+			<property name="Extends" value="vehicleTruck4x4Placeable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vseat,vplow,vlight,vbody,canHaveCosmetic"/>
+			<property name="CustomIcon" value="Humvee"/>
+			<property name="DescriptionKey" value="vehicleHumveeplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Hummer.unity3d?Humvee1.prefab"/>
+			<property name="EconomicValue" value="35000"/>
+			<property name="TraderStageTemplate" value="vehicleTier4"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleHumvee"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="12000"/>
+			</effect_group>
+		</item>
+		<item name="vehicleMarauderchassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="CustomIcon" value="Marauderchassis"/>
+			<property name="DescriptionKey" value="vehicleMarauderchassisDesc"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="TraderStageTemplate" value="vehicleTier4"/>
+		</item>
+		<item name="vehicleMarauderaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="CustomIcon" value="Marauderaccessories"/>
+			<property name="DescriptionKey" value="vehicleMarauderaccessoriesDesc"/>
+			<property name="EconomicValue" value="12000"/>
+			<property name="TraderStageTemplate" value="vehicleTier4"/>
+		</item>
+		<item name="vehicleMarauderplaceable">
+			<property name="Extends" value="vehicleTruck4x4Placeable"/>
+			<property name="Tags" value="vehicle,vengine,varmor,vfuel,vlight,canHaveCosmetic"/>
+			<property name="CustomIcon" value="Marauder"/>
+			<property name="DescriptionKey" value="vehicleMarauderplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Marauder1.unity3d?vehicleMarauder.prefab"/>
+			<property name="EconomicValue" value="40000"/>
+			<property name="TraderStageTemplate" value="vehicleTier5"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleMarauder"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="5"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="10000"/>
+			</effect_group>
+		</item>
+		<item name="vehicleDirtBikeChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="CustomIcon" value="DirtBikechassis"/>
+			<property name="DescriptionKey" value="vehicleDirtBikeChassisDesc"/>
+			<property name="EconomicValue" value="2500"/>
+			<property name="TraderStageTemplate" value="vehicleTier2"/>
+		</item>
+		<item name="vehicleDirtBikeParts">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="CustomIcon" value="DirtBikeparts"/>
+			<property name="DescriptionKey" value="vehicleDirtBikePartsDesc"/>
+			<property name="EconomicValue" value="2500"/>
+			<property name="TraderStageTemplate" value="vehicleTier2"/>
+		</item>
+		<item name="vehicleDirtBikeplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,varmor,vlight,canHaveCosmetic"/>
+			<property name="CustomIcon" value="DirtBike"/>
+			<property name="DescriptionKey" value="vehicleDirtBikeplaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/db1.unity3d?Dirt_Bike.prefab"/>
+			<property name="EconomicValue" value="8500"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleDirtBike"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3500"/>
+			</effect_group>
+		</item>
+		<item name="vehicleUAZ452chassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="CustomIcon" value="UAZchassis"/>
+			<property name="DescriptionKey" value="vehicleUAZ452chassisDesc"/>
+			<property name="EconomicValue" value="10000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+		</item>
+		<item name="vehicleUAZaccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="CustomIcon" value="UAZaccessories"/>
+			<property name="DescriptionKey" value="vehicleUAZaccessoriesDesc"/>
+			<property name="EconomicValue" value="10000"/>
+			<property name="TraderStageTemplate" value="vehicleTier3"/>
+		</item>
+		<item name="vehicleUAZ452placeable">
+			<property name="Extends" value="vehicleTruck4x4Placeable"/>
+			<property name="Tags" value="vehicle,vengine,vseat,vplow,vfuel,vlight,canHaveCosmetic"/>
+			<property name="CustomIcon" value="UAZ"/>
+			<property name="DescriptionKey" value="vehicleUAZ452placeableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/UAZ1.unity3d?UAZ"/>
+			<property name="EconomicValue" value="31000"/>
+			<property name="TraderStageTemplate" value="vehicleTier4"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleUAZ452"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="9000"/>
+			</effect_group>
+		</item>
+		<!-- Награды за квесты -->
+		<item name="questRewardHumveePartsBundle">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleVehicle4x4"/>
+			<property name="CustomIconTint" value="FFFFFF"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardVehicleBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="vehiclesSkillMagazine,vehicleWheels,questRewardVehiclePartsBundle"/>
+				<property name="Create_item_count" value="3,4,1"/>
+				<property name="Random_item" value="vehicleHumveechassis,vehicleHumveebody"/>
+				<property name="Random_item_count" value="1,1"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+		<item name="questRewardMarauderPartsBundle">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleVehicle4x4"/>
+			<property name="CustomIconTint" value="FFFFFF"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardVehicleBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="vehiclesSkillMagazine,vehicleWheels,questRewardVehiclePartsBundle"/>
+				<property name="Create_item_count" value="3,4,1"/>
+				<property name="Random_item" value="vehicleMarauderchassis,vehicleMarauderaccessories"/>
+				<property name="Random_item_count" value="1,1"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+		<item name="questRewardDirtBikePartsBundle">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleVehicleMotorCycle"/>
+			<property name="CustomIconTint" value="FFFFFF"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardVehicleBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="vehiclesSkillMagazine,vehicleWheels,questRewardVehiclePartsBundle"/>
+				<property name="Create_item_count" value="3,2,1"/>
+				<property name="Random_item" value="vehicleDirtBikeChassis,vehicleDirtBikeParts"/>
+				<property name="Random_item_count" value="1,1"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+		<item name="questRewardUAZ452PartsBundle">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleVehicle4x4"/>
+			<property name="CustomIconTint" value="FFFFFF"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardVehicleBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="vehiclesSkillMagazine,vehicleWheels,questRewardVehiclePartsBundle"/>
+				<property name="Create_item_count" value="3,4,1"/>
+				<property name="Random_item" value="vehicleUAZ452chassis,vehicleUAZaccessories"/>
+				<property name="Random_item_count" value="1,1"/>
+				<property name="Random_count" value="1"/>
+				<property name="Unique_random_only" value="true"/>
+			</property>
+		</item>
+	</append>
+</configs>

@@ -1,0 +1,4 @@
+﻿<CATUI>
+	<!-- // 美化 字体高清 -->
+	<setattribute xpath="//label[@text]" name="crispness">OnDesktop</setattribute>
+</CATUI>

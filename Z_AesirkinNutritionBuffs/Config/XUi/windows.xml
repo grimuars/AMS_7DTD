@@ -1,8 +1,0 @@
-<configs>
-	<set xpath="/windows/window[@name='CharacterFrameWindow']/grid[@visible='{showstats}']/player_stats_entry[string-length(@textcontent)=0][1]/@textcontent">Белки</set>
-	<set xpath="/windows/window[@name='CharacterFrameWindow']/grid[@visible='{showstats}']/player_stats_entry[string-length(@valuecontent)=0][1]/@valuecontent">{cvar(cvarANBProtein)}</set>
-	<set xpath="/windows/window[@name='CharacterFrameWindow']/grid[@visible='{showstats}']/player_stats_entry[string-length(@textcontent)=0][1]/@textcontent">Углеводы</set>
-	<set xpath="/windows/window[@name='CharacterFrameWindow']/grid[@visible='{showstats}']/player_stats_entry[string-length(@valuecontent)=0][1]/@valuecontent">{cvar(cvarANBCarbs)}</set>
-	<set xpath="/windows/window[@name='CharacterFrameWindow']/grid[@visible='{showstats}']/player_stats_entry[string-length(@textcontent)=0][1]/@textcontent">Микроэлементы</set>
-	<set xpath="/windows/window[@name='CharacterFrameWindow']/grid[@visible='{showstats}']/player_stats_entry[string-length(@valuecontent)=0][1]/@valuecontent">{cvar(cvarANBGreens)}</set>
-</configs>

@@ -1,0 +1,4 @@
+<configs>
+	<set xpath="//window[@name='windowDewCollector']/rect/grid/@cols">4</set>
+	<set xpath="//window[@name='windowDewCollector']/rect/grid/@rows">4</set>
+</configs>

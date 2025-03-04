@@ -1,0 +1,7 @@
+<xml>
+	<Name value="ActiveRadiation"/>
+	<DisplayName value="New version of radiation"/>
+	<Description value="Active radiation from weather conditions, biomes, current game time. And radiation buff."/>
+	<Author value="BlackRabbit"/>
+	<Version value="1.0"/>
+</xml>

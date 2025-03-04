@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<challenges_aio_2>
+	<!-- Редактируем базовые челленджи, чтобы сразу их зачесть -->
+	<!-- Сбор ресурсов -->
+	<remove xpath="/challenges/challenge[@name='gatherResources']/objective[@item='resourceYuccaFibers']"/>
+	<remove xpath="/challenges/challenge[@name='gatherResources']/objective[@item='resourceWood']"/>
+	<remove xpath="/challenges/challenge[@name='gatherResources']/objective[@item='resourceRockSmall']"/>
+	<!-- Устанавливаем задачу на простой клик по кнопке получения награды -->
+	<append xpath="/challenges/challenge[@name='gatherResources']">
+		<objective type="ChallengeComplete" challenge="redeemChallenge" count="1" is_redeemed="true"/>
+	</append>
+	<!-- Крафт каменного топора -->
+	<remove xpath="/challenges/challenge[@name='craftStoneAxe']/objective[@item='meleeToolRepairT0StoneAxe']"/>
+	<!-- Устанавливаем задачу на простой клик по кнопке получения награды -->
+	<append xpath="/challenges/challenge[@name='craftStoneAxe']">
+		<objective type="ChallengeComplete" challenge="redeemChallenge" count="1" is_redeemed="true"/>
+	</append>
+	<!-- Сбор ресурсов на крафт топора -->
+	<remove xpath="/challenges/challenge[@name='gatherResourcesStoneAxe']/objective[@item='resourceWood']"/>
+	<remove xpath="/challenges/challenge[@name='gatherResourcesStoneAxe']/objective[@item='resourceRockSmall']"/>
+	<!-- Устанавливаем задачу на простой клик по кнопке получения награды -->
+	<append xpath="/challenges/challenge[@name='gatherResourcesStoneAxe']">
+		<objective type="ChallengeComplete" challenge="redeemChallenge" count="1" is_redeemed="true"/>
+	</append>
+	<!-- Крафт одежды -->
+	<remove xpath="/challenges/challenge[@name='craftClothes']/objective[@item='armorPrimitiveOutfit']"/>
+	<!-- Устанавливаем задачу на простой клик по кнопке получения награды -->
+	<append xpath="/challenges/challenge[@name='craftClothes']">
+		<objective type="ChallengeComplete" challenge="redeemChallenge" count="1" is_redeemed="true"/>
+	</append>
+	<!-- Надеть одежду -->
+	<remove xpath="/challenges/challenge[@name='wearClothes']/objective[@item='armorPrimitiveOutfit']"/>
+	<!-- Устанавливаем задачу на простой клик по кнопке получения награды -->
+	<append xpath="/challenges/challenge[@name='wearClothes']">
+		<objective type="ChallengeComplete" challenge="redeemChallenge" count="1" is_redeemed="true"/>
+	</append>
+	<!-- Крафт дубины -->
+	<remove xpath="/challenges/challenge[@name='craftWoodClub']/objective[@item='meleeWpnClubT0WoodenClub']"/>
+	<!-- Устанавливаем задачу на простой клик по кнопке получения награды -->
+	<append xpath="/challenges/challenge[@name='craftWoodClub']">
+		<objective type="ChallengeComplete" challenge="redeemChallenge" count="1" is_redeemed="true"/>
+	</append>
+	<!-- Крафт лука -->
+	<remove xpath="/challenges/challenge[@name='craftBow']/objective[@item='gunBowT0PrimitiveBow']"/>
+	<!-- Устанавливаем задачу на простой клик по кнопке получения награды -->
+	<append xpath="/challenges/challenge[@name='craftBow']">
+		<objective type="ChallengeComplete" challenge="redeemChallenge" count="1" is_redeemed="true"/>
+	</append>
+	<!-- Крафт стрел -->
+	<remove xpath="/challenges/challenge[@name='craftArrows']/objective[@item='ammoArrowStone']"/>
+	<!-- Устанавливаем задачу на простой клик по кнопке получения награды -->
+	<append xpath="/challenges/challenge[@name='craftArrows']">
+		<objective type="ChallengeComplete" challenge="redeemChallenge" count="1" is_redeemed="true"/>
+	</append>
+	<!-- Убираем требования держать в руке определённый инструмент/оружие -->
+	<removeattribute xpath="/challenges/challenge[contains(@name, 'harvest')]/objective[@type='Harvest']/@held"/>
+	<removeattribute xpath="/challenges/challenge[contains(@name, 'harvest')]/objective[@type='Harvest']/@required_held"/>
+</challenges_aio_2>

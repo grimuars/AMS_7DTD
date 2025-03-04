@@ -1,0 +1,122 @@
+<configs>
+	<append xpath="/recipes">
+		<!-- Хамви -->
+		<recipe name="modVehicleHumveeDoors" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="100"/>
+			<ingredient name="resourceScrapPolymers" count="100"/>
+			<ingredient name="resourceSpring" count="40"/>
+			<ingredient name="resourceMechanicalParts" count="140"/>
+		</recipe>
+		<recipe name="vehicleHumveechassis" count="1" craft_area="workbench" craft_time="230" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceSpring" count="150"/>
+			<ingredient name="resourceForgedSteel" count="450"/>
+			<ingredient name="resourceMechanicalParts" count="350"/>
+			<ingredient name="resourceDuctTape" count="80"/>
+			<ingredient name="resourceMetalPipe" count="200"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceMetalPipe"/>
+			</effect_group>
+		</recipe>
+		<recipe name="vehicleHumveebody" count="1" craft_area="workbench" craft_time="230" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="500"/>
+			<ingredient name="resourceMechanicalParts" count="200"/>
+			<ingredient name="resourceLeather" count="80"/>
+			<ingredient name="resourceElectricParts" count="340"/>
+			<ingredient name="resourceHeadlight" count="4"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceLeather,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+		<recipe name="vehicleHumveeplaceable" count="1" craft_area="workbench" craft_time="230" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleHumveechassis" count="1"/>
+			<ingredient name="vehicleHumveebody" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		<!-- Мародёр -->
+		<recipe name="vehicleMarauderchassis" count="1" craft_area="workbench" craft_time="230" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="220"/>
+			<ingredient name="resourceForgedSteel" count="600"/>
+			<ingredient name="resourceMechanicalParts" count="350"/>
+			<ingredient name="resourceDuctTape" count="80"/>
+			<ingredient name="resourceLeather" count="80"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceElectricParts,resourceLeather"/>
+			</effect_group>
+		</recipe>
+		<recipe name="vehicleMarauderaccessories" count="1" craft_area="workbench" craft_time="230" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="550"/>
+			<ingredient name="resourceMechanicalParts" count="210"/>
+			<ingredient name="resourceDuctTape" count="80"/>
+			<ingredient name="resourceElectricParts" count="240"/>
+			<ingredient name="resourceHeadlight" count="4"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+		<recipe name="vehicleMarauderplaceable" count="1" craft_area="workbench" craft_time="230" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleMarauderchassis" count="1"/>
+			<ingredient name="smallEngine" count="4"/>
+			<ingredient name="carBattery" count="1"/>
+			<ingredient name="vehicleMarauderaccessories" count="1"/>
+		</recipe>
+		<!-- Засранец -->
+		<recipe name="vehicleDirtBikeChassis" count="1" craft_area="workbench" craft_time="120" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="135"/>
+			<ingredient name="resourceMechanicalParts" count="130"/>
+			<ingredient name="resourceDuctTape" count="32"/>
+			<ingredient name="resourceMetalPipe" count="52"/>
+			<ingredient name="resourceSpring" count="30"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMetalPipe,resourceMechanicalParts,resourceDuctTape"/>
+			</effect_group>
+		</recipe>
+		<recipe name="vehicleDirtBikeParts" count="1" craft_area="workbench" craft_time="120" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="90"/>
+			<ingredient name="resourceMechanicalParts" count="92"/>
+			<ingredient name="resourceScrapPolymers" count="150"/>
+			<ingredient name="resourceLeather" count="22"/>
+			<ingredient name="resourceForgedIron" count="55"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceLeather,resourceMechanicalParts,resourceScrapPolymers"/>
+			</effect_group>
+		</recipe>
+		<recipe name="vehicleDirtBikeplaceable" count="1" craft_area="workbench" craft_time="120" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="2"/>
+			<ingredient name="vehicleDirtBikeChassis" count="1"/>
+			<ingredient name="vehicleDirtBikeParts" count="1"/>
+			<ingredient name="smallEngine" count="2"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		<!-- УАЗ -->
+		<recipe name="vehicleUAZ452chassis" count="1" craft_area="workbench" craft_time="210" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="200"/>
+			<ingredient name="resourceForgedSteel" count="500"/>
+			<ingredient name="resourceMechanicalParts" count="350"/>
+			<ingredient name="resourceDuctTape" count="45"/>
+			<ingredient name="resourceLeather" count="60"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceElectricParts,resourceDuctTape,resourceLeather"/>
+			</effect_group>
+		</recipe>
+		<recipe name="vehicleUAZaccessories" count="1" craft_area="workbench" craft_time="210" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="230"/>
+			<ingredient name="resourceHeadlight" count="2"/>
+			<ingredient name="resourceMetalPipe" count="450"/>
+			<ingredient name="resourceSpring" count="60"/>
+			<ingredient name="resourceMechanicalParts" count="460"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceMechanicalParts,resourceMetalPipe,resourceElectricParts,resourceSpring"/>
+			</effect_group>
+		</recipe>
+		<recipe name="vehicleUAZ452placeable" count="1" craft_area="workbench" craft_time="210" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleUAZ452chassis" count="1"/>
+			<ingredient name="smallEngine" count="4"/>
+			<ingredient name="carBattery" count="1"/>
+			<ingredient name="resourceSpring" count="60"/>
+		</recipe>
+	</append>
+</configs>

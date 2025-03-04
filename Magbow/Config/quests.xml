@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<append xpath="/quests/quest[@id='quest_tier6complete']">
+		<reward type="LootItem" id="groupQuestMagbow" ischosen="true" value="7"/>
+	</append>
+</configs>

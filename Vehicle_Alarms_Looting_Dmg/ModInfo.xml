@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="VehicleAlarmsModLootingStable1v1" />
+    <DisplayName value="Vehicle Alarms Mod Looting Stable 1.0 - v1.0.0" />
+    <Version value="1.1.0.0" /> <!-- GameVersion.Mod.Version -->
+    <Description value="When looting Vehicles an alarm has a chance to go off and Increase Heat Map and which can then spawn Screamers." />
+    <Author value="DarkAoRaidenX" />
+    <Website value="https://www.nexusmods.com/7daystodie/mods/3582" />
+</xml>

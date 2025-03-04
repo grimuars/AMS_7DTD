@@ -1,0 +1,4 @@
+<CATUI>
+	<!-- 大背包 -->
+	<set xpath="/xui/ruleset[@name='default']/@stackpanel_scale">0.9</set>
+</CATUI>

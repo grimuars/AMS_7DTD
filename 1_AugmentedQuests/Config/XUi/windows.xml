@@ -1,0 +1,14 @@
+<config>
+	<!-- Remove the crappy vanilla background from the trader's dialog box -->
+	<remove xpath="/windows/window[@name='windowResponses']/sprite[@name='background']"/>
+	<!-- Add the new high-tech background for the trader's dialog box. File is in @modfolder/Textures -->
+	<append xpath="/windows/window[@name='windowResponses']">
+		<texture name="QuestListBG" pos="-15,15" size="1836,536" style="questlist.background" pivot="topleft" globalopacity="true" globalopacitymod="0.2"/>
+	</append>
+	<!-- <setattribute xpath="/windows/window[@name='windowResponses']" name="pos">50,-100</setattribute> -->
+	<setattribute xpath="/windows/window[@name='windowResponses']" name="pos">90,-250</setattribute>
+	<setattribute xpath="/windows/window[@name='windowResponses']" name="anchor">LeftTop</setattribute>
+	<!-- Organize the quest list into 3x20. This can work with max 57 quests and the NextTier, PrevTier, Nevermind buttons -->
+	<setattribute xpath="/windows/window[@name='windowResponses']/grid[@controller='DialogResponseList']" name="rows">12</setattribute>
+	<setattribute xpath="/windows/window[@name='windowResponses']/grid[@controller='DialogResponseList']" name="cols">3</setattribute>
+</config>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<quests_aio_2>
+	<!-- Добавляем в награду за квесты 5 и 6 тира 1-2 очка навыков -->
+	<insertAfter xpath="/quests/quest[@id='tier6_fetch_clear']/reward[@type='Item']">
+		<reward type="SkillPoints" value="1"/>
+	</insertAfter>
+	<insertAfter xpath="/quests/quest[@id='tier6_clear_infested']/reward[@type='Item']">
+		<reward type="SkillPoints" value="2"/>
+	</insertAfter>
+	<insertAfter xpath="/quests/quest[@id='tier6_clear']/reward[@type='Item']">
+		<reward type="SkillPoints" value="1"/>
+	</insertAfter>
+	<insertAfter xpath="/quests/quest[@id='tier5_clear']/reward[@type='Item']">
+		<reward type="SkillPoints" value="1"/>
+	</insertAfter>
+	<insertAfter xpath="/quests/quest[@id='tier5_clear_infested']/reward[@type='Item']">
+		<reward type="SkillPoints" value="2"/>
+	</insertAfter>
+	<insertAfter xpath="/quests/quest[@id='tier5_fetch_clear']/reward[@type='Item']">
+		<reward type="SkillPoints" value="1"/>
+	</insertAfter>
+	<!-- Убираем квесты на карты сокровищ, восстановление энергии и на закопанные припасы (т.к. земля = бедрок) -->
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier1_buried_supplies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier2_buried_supplies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_rekt_quests']/quest[@id='tier3_buried_supplies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier1_buried_supplies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier2_buried_supplies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_jen_quests']/quest[@id='tier3_buried_supplies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_bob_quests']/quest[@id='tier1_buried_supplies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_bob_quests']/quest[@id='tier2_buried_supplies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_bob_quests']/quest[@id='tier3_buried_supplies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_hugh_quests']/quest[@id='tier1_buried_supplies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_hugh_quests']/quest[@id='tier2_buried_supplies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_hugh_quests']/quest[@id='tier3_buried_supplies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_joel_quests']/quest[@id='tier1_buried_supplies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_joel_quests']/quest[@id='tier2_buried_supplies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_joel_quests']/quest[@id='tier3_buried_supplies']"/>
+	<remove xpath="//quest[contains (@id, '_restore_power') or contains (@id, 'treasure_')]"/>
+	<!-- Отключаем квесты "Принести" (оставляем только "Принести и очистить") -->
+	<remove xpath="//quest[contains(@id, '_fetch') and not(contains(@id, 'clear'))]"/>
+	<!-- Делаем безопасную зону квеста больше -->
+	<set xpath="quests//objective[contains(@type, 'StayWithin')]/property[@name='radius']/@value">30</set>
+	<!-- За выполнение серии квестов у торговцев даются очки навыков -->
+	<append xpath="/quests/quest[@id='quest_tier1complete']">
+		<reward type="SkillPoints" value="2" chainreward="true"/>
+	</append>
+	<append xpath="/quests/quest[@id='quest_tier2complete']">
+		<reward type="SkillPoints" value="2" chainreward="true"/>
+	</append>
+	<append xpath="/quests/quest[@id='quest_tier3complete']">
+		<reward type="SkillPoints" value="3" chainreward="true"/>
+	</append>
+	<append xpath="/quests/quest[@id='quest_tier4complete']">
+		<reward type="SkillPoints" value="4" chainreward="true"/>
+	</append>
+	<append xpath="/quests/quest[@id='quest_tier5complete']">
+		<reward type="SkillPoints" value="4" chainreward="true"/>
+	</append>
+	<append xpath="/quests/quest[@id='quest_tier6complete']">
+		<reward type="SkillPoints" value="5" chainreward="true"/>
+	</append>
+	<!-- *** Награды за челленджи - страница 1 -->
+	<append xpath="/quests/quest[@id='challengegroup_reward_homesteading']">
+		<reward type="SkillPoints" value="1" chainreward="true"/>
+	</append>
+	<append xpath="/quests/quest[@id='challengegroup_reward_advanced_survival']">
+		<reward type="SkillPoints" value="1" chainreward="true"/>
+	</append>
+	<append xpath="/quests/quest[@id='challengegroup_reward_crafting']">
+		<reward type="SkillPoints" value="1" chainreward="true"/>
+	</append>
+	<append xpath="/quests/quest[@id='challengegroup_reward_trader_quests']">
+		<reward type="SkillPoints" value="1" chainreward="true"/>
+	</append>
+	<append xpath="/quests/quest[@id='challengegroup_reward_harvesting']">
+		<reward type="SkillPoints" value="1" chainreward="true"/>
+	</append>
+	<!-- *** Награды за челленджи - страница 2 -->
+	<append xpath="/quests/quest[@id='challengegroup_reward_gatherer']">
+		<reward type="SkillPoints" value="2" chainreward="true"/>
+	</append>
+	<append xpath="/quests/quest[@id='challengegroup_reward_farmer']">
+		<reward type="SkillPoints" value="2" chainreward="true"/>
+	</append>
+	<append xpath="/quests/quest[@id='challengegroup_reward_healer']">
+		<reward type="SkillPoints" value="2" chainreward="true"/>
+	</append>
+	<append xpath="/quests/quest[@id='challengegroup_reward_survivor']">
+		<reward type="SkillPoints" value="2" chainreward="true"/>
+	</append>
+	<append xpath="/quests/quest[@id='challengegroup_reward_hunter']">
+		<reward type="SkillPoints" value="2" chainreward="true"/>
+	</append>
+	<append xpath="/quests/quest[@id='challengegroup_reward_zombie_slayer']">
+		<reward type="SkillPoints" value="2" chainreward="true"/>
+	</append>
+</quests_aio_2>

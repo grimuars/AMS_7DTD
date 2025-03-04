@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vehicles_aio_2>
+	<!-- Гирокоптер - вертикальный взлёт -->
+	<set xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[@class= 'motor0']/property[@name= 'trigger']/@value">inputForward</set>
+	<set xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[@class= 'motor0']/property[@name= 'rpmMax']/@value">8</set>
+	<set xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[@class= 'motor0']/property[@name= 'rpmAccel_min_max']/@value">0.01, .3</set>
+	<append xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[@class= 'motor0']">
+		<property name="engine" value="engine"/>
+		<property name="engineOffPer" value=".035"/>
+	</append>
+	<remove xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[@class= 'motor1']/property[@name= 'engineOffPer']"/>
+	<set xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[@class= 'motor1']/property[@name= 'trigger']/@value">relative</set>
+	<set xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[@class= 'force1']/property[@name= 'force']/@value">0, 0, 0</set>
+	<set xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[@class= 'force2']/property[@name= 'force']/@value">0, .08, 0</set>
+	<set xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[@class= 'force3']/property[@name= 'force']/@value">0, .04, 0</set>
+	<set xpath="/vehicles/vehicle[@name= 'vehicleGyrocopter']/property[contains(@class, 'wheel')]/property[@name= 'torqueScale_motor_brake']/@value">0, 1</set>
+</vehicles_aio_2>

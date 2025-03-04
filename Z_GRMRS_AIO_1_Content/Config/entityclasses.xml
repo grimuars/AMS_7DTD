@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<entityclasses_aio_1>
+	<!-- Стартовый пак предметов -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value">resourceBrokenGlass,meleeToolRepairT0StoneAxe</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']/@value">resourceBrokenGlass,meleeToolRepairT0StoneAxe</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']/@value">resourceBrokenGlass,meleeToolRepairT0StoneAxe</set>
+	<!-- Неоновый оранжевый - для контейнеров транспорта и выброшенного лута -->
+	<append xpath="/entity_classes/entity_class[@name='DroppedLootContainer']">
+		<property name="NavObject" value="navBagAlertNeonOrange"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='DroppedVehicleContainer']">
+		<property name="NavObject" value="navBagAlertNeonOrange"/>
+	</append>
+	<!-- Неоновый зелёный - для обычных мешков с лутом -->
+	<append xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']">
+		<property name="NavObject" value="navBagAlertNeonLimeGreen"/>
+	</append>
+	<!-- Неоновый синий - для качественных мешков с лутом -->
+	<append xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']">
+		<property name="NavObject" value="navBagAlertNeonBlue"/>
+	</append>
+	<!-- Неоновый фиолетовый - для лута с боссов -->
+	<append xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']">
+		<property name="NavObject" value="navBagAlertNeonPurple"/>
+	</append>
+</entityclasses_aio_1>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="0-AugmentedQuests" />
+	<DisplayName value="Augmented Quests" />
+	<Description value="Augments the base game's questing system with several improvements." />
+	<Author value="jns0fficial" />
+	<Version value="1.0.0.0" />
+	<Website value="" />
+	<SkipWithAntiCheat value="true" />
+</xml>

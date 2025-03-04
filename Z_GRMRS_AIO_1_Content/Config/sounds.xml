@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sounds_aio_1>
+	<!-- КУРЯТНИКИ -->
+	<append xpath="/Sounds">
+		<SoundDataNode name="Chicken6Sounds">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" range="3" volume="15" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/ChickenCoops.unity3d?Chicken1"/>
+			<LocalCrouchVolumeScale name="1.0"/>
+			<CrouchNoiseScale name="0.5"/>
+			<NoiseScale name="1"/>
+			<MaxVoices name="10"/>
+			<MaxRepeatRate name="1.111"/>
+		</SoundDataNode>
+	</append>
+	<!-- МЁД -->
+	<append xpath="/Sounds">
+		<SoundDataNode name="BeeHiveOpen">
+			<AudioSource name="Sounds/AudioSource_VO"/>
+			<Noise ID="3" range="3" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+			<AudioClip ClipName="#@modfolder:Resources/BeeHivesV1.unity3d?zBeeSound2"/>
+			<LocalCrouchVolumeScale name="1.0"/>
+			<CrouchNoiseScale name="0.5"/>
+			<NoiseScale name="1"/>
+			<MaxVoices name="10"/>
+			<MaxRepeatRate name="1.111"/>
+		</SoundDataNode>
+	</append>
+</sounds_aio_1>

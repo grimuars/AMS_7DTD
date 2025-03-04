@@ -1,0 +1,38 @@
+<sounds>
+
+	<append xpath="/Sounds">
+
+		<!-- NOTES:
+			<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+			- ID: I just made that one up so it would be easier to use search&massReplace
+			- (deprecated)volume: volume of the sound which can trigger AI wake
+			- noise: the cumulative volume value that goes into the player's stealth meter.
+			- time: game time seconds until noise is removed
+			- muffled_when_crouched: scales noise range when entity is crouched
+			- heat_map_strength: how much to add to heat map (once 100 is hit, horde scout is spawned)
+			- heat_map_time: how long this heat "event" will stick around and add to the local heat map strength. (60 equals about 100 seconds)
+			<LocalCrouchVolumeScale name="0-1"/> - changes the sound volume played when you are crouched
+			<CrouchNoiseScale name="0-1"/> - changes the noise volume used when you are crouched to signal AI
+			<NoiseScale name="0-1"/> - changes the amount of noise this sound makes in general for AI
+			<MaxVoices value="1-inf"/> - maximum simultanious SoundDataNodes playing at once
+			<MaxRepeatRate name="0-inf"/> - this SoundDataNode will not be played faster than the repeat rate (can be used to reduce "audio soup")
+			<distantfadestart name="0-inf"/> 	<distantfadeend name="0-inf"/> - Distant audio clips will begin to play at distantfadestart in meters from the listener.  The volume of the regular audio clip will reduce to zero as distance approuches distantfadeend; and the distant audio clip will play with increasing volume up intil distantfadeend for full volume.
+
+			<LowestPitch name="0.5"/> -?
+			<HighestPitch name="1.1"/> -?
+		
+		-->
+		
+		<!-- Sound for Alarmed Vehicles -->
+		<SoundDataNode name="VehicleAlarmSound"> 
+			<AudioSource name="Sounds/AudioSource_Explosion"/> 
+			<NetworkAudioSource name="Sounds/AudioSource_Explosion"/>
+			<Noise ID="5" noise="5" heat_map_strength="20" heat_map_time="180"/>
+			<AudioClip ClipName="Sounds/Ambient_Loops/caralarm1_lp" Loop="true"/>
+			<NoiseScale value="1"/> 
+			<MaxVoices value="1"/> 
+			<MaxRepeatRate value=".01"/> 
+		</SoundDataNode>
+	</append>
+
+</sounds>

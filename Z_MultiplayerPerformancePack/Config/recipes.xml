@@ -1,7 +1,0 @@
-<configs>
-	<!--Electrical blocks are taxing on a server as they spam NetPackageTileEntity and greatly use CPU-->
-	<!--Greater cost to all electricity-->
-	<set xpath="/recipes/recipe[@tags='perkAdvancedEngineering,learnable']/effect_group/passive_effect[@name='CraftingIngredientCount' and @value='.56,.56,.56,.34,.15']/@value">5.56,5.56,5.56,5.34,5.15</set>
-	<set xpath="/recipes/recipe[@name='autoTurret']/ingredient[@name='gunHandgunT1PistolParts' and @count='3']/@count">12</set>
-	<set xpath="/recipes/recipe[@name='shotgunTurret']/ingredient[@name='gunShotgunT1DoubleBarrelParts' and @count='3']/@count">12</set>
-</configs>	

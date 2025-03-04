@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<xml>
-	<Name value="vehicledamage"/>
-	<DisplayName value="vehicle damage divided by 5"/>
-	<Description value="reduce vehicle damage "/>
-	<Author value="quentfr21"/>
-	<Version value="1.0"/>
-	<Website value=""/>
-</xml>

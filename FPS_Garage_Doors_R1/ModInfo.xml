@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <Name value="FPS_Garage_Doors_R1" />
+    <DisplayName value="FPS Garage Doors R1" />
+    <Version value="1.0.1" />
+    <Description value="Craftable, harvestable standard doors that can be destroyed and become a FPS Garage Door Variant Helper. " />
+    <Author value="fatrap" />
+    <Website value="" />
+</xml>

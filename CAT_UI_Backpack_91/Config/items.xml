@@ -1,0 +1,4 @@
+<CATUI>
+	<!-- 大背包 -->
+	<set xpath="/items/item[@name='drugSteroids']/effect_group/display_value[@name='dCarryCapacity']/@value">91</set>
+</CATUI>

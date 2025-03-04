@@ -1,0 +1,7 @@
+{
+  "modEnabled": true,
+  "isDebug": true,
+  "lockPickItem": "resourceLockPick",
+  "lockPickTime": 15.0,
+  "lockPickBreakChance": 0.75
+}

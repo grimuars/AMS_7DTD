@@ -1,5 +1,0 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english,russian
-
-thrownAmmoStunBomb,items,thrownAmmo,,,Stun Grenade (Ammo),Электрошоковая граната
-thrownAmmoStunBombDesc,items,thrownAmmo,,,"Stun Grenades will explode on contact and send out tasering sharpnel when armed. Low explosive damage makes this a defensive weapon. Zap Zap Zooey. \nArm with [action:local:Secondary]\nThrow with [action:local:Primary]","Электрошоковая граната взрывается при контакте с целью и разбрасывает заряженную шрапнель, обездвиживающую врагов. Непосредственный урон небольшой, используется в оборонительных целях. \nВыдернуть чеку с помощью [action:local:Secondary]\nБросать с помощью [action:local:Primary]"
-

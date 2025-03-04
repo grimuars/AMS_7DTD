@@ -1,0 +1,4 @@
+Key,English,Russian
+lblContextActionRecycle,Recycle,Переработать
+recycler,Recycler,Переработчик
+recyclerDesc,"Use the Recycler to disassemble items into their components without loss.\n\nPlace an item inside the recycler, select it and click recycle button in the menu.\n\nEach recycle requires 300 gasoline.","Используйте переработчик, чтобы разобрать предметы на составляющие без потерь.\n\nПоместите предмет внутрь переработчика, выделите его и в меню нажмите кнопку переработки.\n\nКаждая переработка требует 300 бензина."

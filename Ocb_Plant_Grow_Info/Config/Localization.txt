@@ -1,0 +1,5 @@
+Key,File,Type,english,german,russian
+plantProgress,UI,Menu,Progress {0:0}%,Fortschritt {0:0}%,Прогресс {0:0}%
+plantWithering,UI,Menu,[FF0000]Withering ({0})[-],[FF0000]Verkümmert ({0})[-],[FF0000]Увядание ({0})[-]
+plantStaying,UI,Menu,[FF8000]Not enough light ({0})[-],[FF8000]Zu wenig Licht ({0})[-],[FF8000]Недостаток освещения ({0})[-]
+plantGrowing,UI,Menu,[00FF00]Growing ({0})[-],[00FF00]Wachsend ({0})[-],[00FF00]Рост ({0})[-]

@@ -1,0 +1,8 @@
+<config>
+	<append xpath="/recipes">
+		<recipe name="sortQuestListByName" count="1" craft_time="1">
+		</recipe>
+		<recipe name="sortQuestListByDistance" count="1" craft_time="1">
+		</recipe>
+	</append>
+</config>

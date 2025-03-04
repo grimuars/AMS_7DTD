@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nav_objects_aio_1>
+	<!-- Иконки для мешков с лутом - неоновый оранжевый -->
+	<append xpath="/nav_object_classes">
+		<nav_object_class name="navBagAlertNeonOrange">
+			<property name="requirement_type" value="Tracking"/>
+			<onscreen_settings>
+				<property name="sprite_name" value="ui_alert"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="100"/>
+				<property name="color" value="255,69,0,200"/>
+				<!-- Neon Orange -->
+				<property name="has_pulse" value="true"/>
+				<property name="text_type" value="Distance"/>
+				<property name="offset" value="0,0.4,0"/>
+			</onscreen_settings>
+		</nav_object_class>
+		<!-- Иконки для мешков с лутом - неоновый лаймовый -->
+		<nav_object_class name="navBagAlertNeonLimeGreen">
+			<property name="requirement_type" value="Tracking"/>
+			<onscreen_settings>
+				<property name="sprite_name" value="ui_alert"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="100"/>
+				<property name="color" value="50,255,50,200"/>
+				<!-- Neon Lime Green -->
+				<property name="has_pulse" value="true"/>
+				<property name="text_type" value="Distance"/>
+				<property name="offset" value="0,0.4,0"/>
+			</onscreen_settings>
+		</nav_object_class>
+		<!-- Иконки для мешков с лутом - неоновый фиолетовый -->
+		<nav_object_class name="navBagAlertNeonPurple">
+			<property name="requirement_type" value="Tracking"/>
+			<onscreen_settings>
+				<property name="sprite_name" value="ui_alert"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="100"/>
+				<property name="color" value="148,0,211,200"/>
+				<!-- Neon Purple -->
+				<property name="has_pulse" value="true"/>
+				<property name="text_type" value="Distance"/>
+				<property name="offset" value="0,0.4,0"/>
+			</onscreen_settings>
+		</nav_object_class>
+		<!-- Иконки для мешков с лутом - неоновый синий -->
+		<nav_object_class name="navBagAlertNeonBlue">
+			<property name="requirement_type" value="Tracking"/>
+			<onscreen_settings>
+				<property name="sprite_name" value="ui_alert"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="100"/>
+				<property name="color" value="0,150,230,200"/>
+				<!-- Neon Blue -->
+				<property name="has_pulse" value="true"/>
+				<property name="text_type" value="Distance"/>
+				<property name="offset" value="0,0.4,0"/>
+			</onscreen_settings>
+		</nav_object_class>
+		<!-- Иконки для мешков с лутом - неоновый голубой -->
+		<nav_object_class name="navBagAlertNeonCyan">
+			<property name="requirement_type" value="Tracking"/>
+			<onscreen_settings>
+				<property name="sprite_name" value="ui_alert"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="100"/>
+				<property name="color" value="0,255,255,200"/>
+				<!-- Neon Cyan -->
+				<property name="has_pulse" value="true"/>
+				<property name="text_type" value="Distance"/>
+				<property name="offset" value="0,0.4,0"/>
+			</onscreen_settings>
+		</nav_object_class>
+	</append>
+</nav_objects_aio_1>

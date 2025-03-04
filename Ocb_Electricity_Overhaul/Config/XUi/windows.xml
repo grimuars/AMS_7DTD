@@ -1,0 +1,9 @@
+<configs patcher-version="7">
+	<modif condition="UndeadLegacy_CoreModule">
+		<echo error="EO: No Undead Legacy Support and V1 yet"/>
+		<modinc path="windows.a20.ulm.xml"/>
+	</modif>
+	<modelse>
+		<modinc path="windows.v1.xml"/>
+	</modelse>
+</configs>

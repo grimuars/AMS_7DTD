@@ -1,0 +1,6 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,schinese,tchinese
+perkPackMuleRank1LongDesc,progression,perk Str,,,Who has time to organize their stuff perfectly? Carry 5 more items without being encumbered.,谁有时间把自己的东西整理得完美无缺？负重不受影响，再携带5样东西。,誰有時間把他們他們的東西整理好？再帶5樣東西而不會負重。
+perkPackMuleRank2LongDesc,progression,perk Str,,,You know it's in there somewhere. Carry an additional 9 more items without being encumbered.,你知道它就在某个地方。负重不受影响，再携带额外9样东西。,你知道它就在某個地方。再帶9樣東西而不會負重。
+perkPackMuleRank3LongDesc,progression,perk Str,,,You know exactly where everything is. Carry 13 additional items without being encumbered.,你知道所有东西的确切位置。负重不受影响，再携带额外13样东西。,你準確知道東西在哪裏。再帶13樣東西而不會負重。
+perkPackMuleRank4LongDesc,progression,perk Str,,,"You just passed inspection, private. Carry 15 more items without being encumbered.",你刚刚通过了私人检查。负重不受影响，再携带15样东西。,你剛通過私人檢查。再帶15樣東西而不會負重。
+perkPackMuleRank5LongDesc,progression,perk Str,,,"Now you are just showing off, you are either part mule or a strongman. Carry 17 more items without being encumbered.",现在你就是在炫耀，你要么是半头骡子，要么是一个强人。负重不受影响，再携带17样东西。,你現在不過是在表現自己，你是一個騾半獸人或強人。再帶17樣東西而不會負重。

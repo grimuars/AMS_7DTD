@@ -1,0 +1,128 @@
+<gamestages>
+
+	<append xpath="/gamestages" >
+
+		<group name="S_-_Group_Zom_Car_Alarm_Horde" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="ZombieVehicleAlarmsHorde" count="2,4"/>
+		</group>
+
+		<spawner name="ZombieVehicleAlarmsHorde">
+			<gamestage stage="1">
+				<spawn group="vehicleAlarmsHordeStageGS1" num="1" maxAlive="2" duration="1"/>
+			</gamestage>
+			<gamestage stage="3">
+				<spawn group="vehicleAlarmsHordeStageGS3" num="2" maxAlive="4" duration="1"/>
+			</gamestage>
+			<gamestage stage="8">
+				<spawn group="vehicleAlarmsHordeStageGS8" num="4" maxAlive="9" duration="1"/>
+			</gamestage>
+			<gamestage stage="13">
+				<spawn group="vehicleAlarmsHordeStageGS13" num="7" maxAlive="13" duration="1"/>
+			</gamestage>
+			<gamestage stage="21">
+				<spawn group="vehicleAlarmsHordeStageGS21" num="11" maxAlive="20" duration="1"/>
+			</gamestage>
+			<gamestage stage="30">
+				<spawn group="vehicleAlarmsHordeStageGS30" num="15" maxAlive="29" duration="1"/>
+			</gamestage>
+			<gamestage stage="40">
+				<spawn group="vehicleAlarmsHordeStageGS40" num="20" maxAlive="38" duration="1"/>
+			</gamestage>
+			<gamestage stage="51">
+				<spawn group="vehicleAlarmsHordeStageGS51" num="26" maxAlive="47" duration="1"/>
+			</gamestage>
+			<gamestage stage="65">
+				<spawn group="vehicleAlarmsHordeStageGS65" num="29" maxAlive="60" duration="1"/>
+			</gamestage>
+			<gamestage stage="79">
+				<spawn group="vehicleAlarmsHordeStageGS79" num="31" maxAlive="73" duration="1"/>
+			</gamestage>
+			<gamestage stage="95">
+				<spawn group="vehicleAlarmsHordeStageGS95" num="35" maxAlive="87" duration="1"/>
+			</gamestage>
+			<gamestage stage="112">
+				<spawn group="vehicleAlarmsHordeStageGS112" num="38" maxAlive="102" duration="1"/>
+			</gamestage>
+			<gamestage stage="130">
+				<spawn group="vehicleAlarmsHordeStageGS130" num="42" maxAlive="119" duration="1"/>
+			</gamestage>
+			<gamestage stage="150">
+				<spawn group="vehicleAlarmsHordeStageGS150" num="46" maxAlive="137" duration="1"/>
+			</gamestage>
+			<gamestage stage="171">
+				<spawn group="vehicleAlarmsHordeStageGS171" num="50" maxAlive="155" duration="1"/>
+			</gamestage>
+			<gamestage stage="194">
+				<spawn group="vehicleAlarmsHordeStageGS194" num="54" maxAlive="176" duration="1"/>
+			</gamestage>
+			<gamestage stage="217">
+				<spawn group="vehicleAlarmsHordeStageGS217" num="59" maxAlive="197" duration="1"/>
+			</gamestage>
+			<gamestage stage="242">
+				<spawn group="vehicleAlarmsHordeStageGS242" num="64" maxAlive="219" duration="1"/>
+			</gamestage>
+			<gamestage stage="268">
+				<spawn group="vehicleAlarmsHordeStageGS268" num="69" maxAlive="243" duration="1"/>
+			</gamestage>
+			<gamestage stage="296">
+				<spawn group="vehicleAlarmsHordeStageGS296" num="75" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="325">
+				<spawn group="vehicleAlarmsHordeStageGS325" num="81" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="355">
+				<spawn group="vehicleAlarmsHordeStageGS355" num="87" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="386">
+				<spawn group="vehicleAlarmsHordeStageGS386" num="93" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="419">
+				<spawn group="vehicleAlarmsHordeStageGS419" num="99" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="452">
+				<spawn group="vehicleAlarmsHordeStageGS452" num="106" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="488">
+				<spawn group="vehicleAlarmsHordeStageGS488" num="113" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="524">
+				<spawn group="vehicleAlarmsHordeStageGS524" num="120" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="561">
+				<spawn group="vehicleAlarmsHordeStageGS561" num="128" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="600">
+				<spawn group="vehicleAlarmsHordeStageGS600" num="136" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="640">
+				<spawn group="vehicleAlarmsHordeStageGS640" num="144" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="681">
+				<spawn group="vehicleAlarmsHordeStageGS681" num="152" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="724">
+				<spawn group="vehicleAlarmsHordeStageGS724" num="160" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="767">
+				<spawn group="vehicleAlarmsHordeStageGS767" num="169" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="812">
+				<spawn group="vehicleAlarmsHordeStageGS812" num="178" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="858">
+				<spawn group="vehicleAlarmsHordeStageGS858" num="187" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="905">
+				<spawn group="vehicleAlarmsHordeStageGS905" num="197" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="954">
+				<spawn group="vehicleAlarmsHordeStageGS954" num="206" maxAlive="256" duration="1"/>
+			</gamestage>
+			<gamestage stage="1003">
+				<spawn group="vehicleAlarmsHordeStageGS1003" num="216" maxAlive="256" duration="1"/>
+			</gamestage>
+		</spawner>
+
+	</append>
+
+</gamestages>

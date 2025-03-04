@@ -1,5 +1,0 @@
-<configs>
-	<append xpath="/entity_classes/entity_class[contains(@name, 'Radiated')]/effect_group[@name='Base Effects']">
-		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="BuffCatchRadiation"/>
-	</append>
-</configs>

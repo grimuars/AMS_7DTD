@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<Name value="UpgradeTable"/>
-	<DisplayName value="UpgradeTable"/>
-	<Version value="1.2"/>
-	<Description value="Adds an upgrade table to craft tiered weapons and armor"/>
-	<Author value="Kryzzk (modified by grimuars)"/>
-	<Website value="https://grimuars.ru/"/>
-</xml>

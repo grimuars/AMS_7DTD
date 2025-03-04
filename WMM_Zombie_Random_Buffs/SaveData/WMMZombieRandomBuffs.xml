@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customgameoptions>
+	<config name="CustomZombieBuffsBiomePercentage" value="50" /><!--values 0 - 100 -->
+	<config name="CustomZombieBuffsSleeperPercentage" value="50" /><!--values 0 - 100 -->
+	<config name="CustomZombieBuffsWanderingHordePercentage" value="50" /><!--values 0 - 100 -->
+	<config name="CustomZombieBuffsBloodmoonPercentage" value="50" /><!--values 0 - 100 -->
+	<config name="CustomZombieBuffsBiomeMaxBuffCount" value="3" /><!--values 0 - 10 -->
+	<config name="CustomZombieBuffsSleeperMaxBuffCount" value="3" /><!--values 0 - 10 -->
+	<config name="CustomZombieBuffsWanderingHordeMaxBuffCount" value="5" /><!--values 0 - 10 -->
+	<config name="CustomZombieBuffsBloodmoonMaxBuffCount" value="0" /><!--values 0 - 10 -->
+	<config name="CustomZombieBuffsArmourPenetrationMaxLevel" value="3" /> <!--values 0 -5 -->
+	<config name="CustomZombieBuffsArrowResistMaxLevel" value="3" /> <!--values 0 - 5 -->
+	<config name="CustomZombieBuffsBluntResistMaxLevel" value="3" /> <!--values 0 - 5 -->
+	<config name="CustomZombieBuffsBulletResistMaxLevel" value="3" /> <!--values 0 - 5 -->
+	<config name="CustomZombieBuffsDecapResistMaxLevel" value="3" /> <!--values 0 - 5 -->
+	<config name="CustomZombieBuffsExplosiveResistMaxLevel" value="3" /> <!--values 0 - 5 -->
+	<config name="CustomZombieBuffsFireResistMaxLevel" value="3" /> <!--values 0 - 5 -->
+	<config name="CustomZombieBuffsFistResistMaxLevel" value="3" /> <!--values 0 - 5 -->
+	<config name="CustomZombieBuffsKnifeResistMaxLevel" value="3" /> <!--values 0 - 5 -->
+	<config name="CustomZombieBuffsMaxHealthMaxLevel" value="3" /> <!--values 0 - 5 -->
+	<config name="CustomZombieBuffsShotgunResistMaxLevel" value="3" /> <!--values 0 - 5 -->
+	<config name="CustomZombieBuffsStrongMaxLevel" value="5" /> <!--values 0 - 5 -->
+</customgameoptions>
+
+<!-- SEE Readme.txt file for descriptions on settings !!!!!-->

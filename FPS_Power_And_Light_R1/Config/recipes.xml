@@ -1,0 +1,28 @@
+<FPS>
+	<remove xpath="/recipes/recipe[@name='generatorbank']"/>
+	<remove xpath="/recipes/recipe[@name='batterybank']"/>
+	<append xpath="recipes">
+		<recipe name="generatorbank" count="1" craft_area="workbench" craft_time='600' tags="workbenchCrafting">
+			<ingredient name="resourceMetalPipe" count="30"/>
+			<ingredient name="resourceForgedIron" count="15"/>
+			<ingredient name="resourceMechanicalParts" count="30"/>
+			<ingredient name="resourceElectricParts" count="200"/>
+			<ingredient name="resourceScrapPolymers" count="150"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceForgedIron,resourceMechanicalParts,resourceElectricParts,resourceMetalPipe,resourceScrapPolymers"/>
+			</effect_group>
+		</recipe>
+		<recipe name="batterybank" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceElectricParts" count="100"/>
+			<ingredient name="resourceForgedIron" count="50"/>
+			<ingredient name="resourceScrapPolymers" count="200"/>
+			<ingredient name="resourceMetalPipe" count="20"/>
+		</recipe>
+		<recipe name="FPSPoweredLightVariantHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="20"/>
+			<ingredient name="resourceMechanicalParts" count="20"/>
+			<ingredient name="resourceScrapPolymers" count="80"/>
+			<ingredient name="resourceElectricParts" count="40"/>
+		</recipe>
+	</append>
+</FPS>

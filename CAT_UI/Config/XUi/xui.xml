@@ -1,0 +1,11 @@
+<CATUI>
+	<!-- HUD设置在左上角 -->
+	<setattribute xpath="//window_group[@name='toolbelt']/window[@name='HUDLeftStatBars']" name="anchor">LeftTop</setattribute>
+	<!-- 设置组队界面 左下角 -->
+	<setattribute xpath="//window_group[@name='toolbelt']/window[@name='windowGroupBars']" name="anchor">LeftBottom</setattribute>
+	<!-- 新界面 -->
+	<append xpath="//ruleset/window_group[@name='toolbelt']">
+		<window name="HUDLeftBottomStat" anchor="LeftBottom" />
+		<window name="HUDCenterBottomStat" anchor="CenterBottom" />
+	</append>
+</CATUI>

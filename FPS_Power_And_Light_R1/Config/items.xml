@@ -1,0 +1,6 @@
+<FPS>
+	<set xpath="/items/item[@name='meleeToolWireTool']/effect_group[@name='meleeToolWireTool']/passive_effect[@name='BlockRange'][@operation='base_set']/@value">5</set>
+	<append xpath="/items/item[@name='meleeToolWireTool']/property[@class='Action1']">
+		<property name="MaxWireLength" value="50"/>
+	</append>
+</FPS>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<traders_aio_2>
+	<!-- Joel - Одежда и броня-->
+	<set xpath="/traders/trader_info[@id='1']/@reset_interval">7</set>
+	<!-- Bob - Инструменты и транспорт-->
+	<set xpath="/traders/trader_info[@id='6']/@reset_interval">7</set>
+	<!-- Jen - Медицина и книги-->
+	<set xpath="/traders/trader_info[@id='2']/@reset_interval">7</set>
+	<!-- Hugh - Оружие и боеприпасы-->
+	<set xpath="/traders/trader_info[@id='7']/@reset_interval">7</set>
+	<!-- Rekt - Еда и фермерство-->
+	<set xpath="/traders/trader_info[@id='8']/@reset_interval">7</set>
+	<!-- POI - Торговые автоматы напитков -->
+	<set xpath="/traders/trader_info[@id='4']/@reset_interval">7</set>
+	<!-- POI - Торговые автоматы еды и конфет-->
+	<set xpath="/traders/trader_info[@id='10']/@reset_interval">7</set>
+	<!-- Настройка модификаторов продажи и покупки у торговцев -->
+	<set xpath="/traders/@buy_markup">30</set>
+	<set xpath="/traders/@sell_markdown">0.2</set>
+	<!-- Аналогично предыдущему - для торговых автоматов -->
+	<set xpath="/traders/trader_info[@id='4']/@override_buy_markup">30</set>
+	<set xpath="/traders/trader_info[@id='10']/@override_buy_markup">30</set>
+	<!-- Убираем дроны -->
+	<remove xpath="/traders/trader_item_groups/trader_item_group/item[contains(@name,'Drone')]"/>
+	<!-- Убираем мод на ускорение транспорта -->
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsVehiclesMods']/item[@name='modVehicleSuperChargerSchematic']"/>
+	<!-- Убираем все семена и конфеты из продажи -->
+	<remove xpath="//trader_item_group[@name='seeds']"/>
+	<remove xpath="//trader_item_group[@name='traderGeneral']//item[@group='seeds']"/>
+	<remove xpath="/traders/trader_info[@id='8']/trader_items/item[@group='seeds']"/>
+	<remove xpath="/traders/trader_info[@id='10']/trader_items/item[@group='foodCandy']"/>
+	<remove xpath="//trader_item_group[@name='foodCandy']"/>
+	<!-- Убираем из продажи всю электрику, кроме некоторых товаров -->
+	<remove xpath="//trader_item_group[@name='traderElectrical']/item[@name and not (@name='solarCell' or @name='solarbank' or @name='resourceElectricParts' or @name='lanternDecorLightBlockVariantHelper')]"/>
+	<!-- Убираем из продажи рабочие станции -->
+	<remove xpath="//trader_item_group[@name='workstations']"/>
+	<remove xpath="//trader_item_group[@name='traderGeneral']//item[@group='workstations']"/>
+	<!-- Оружие в продаже 1-3 качества -->
+	<set xpath="//trader_item_group[@name='groupRangedAll']//item[contains(@name, 'gun')]/@quality">1,3</set>
+	<set xpath="//trader_item_group[@name='groupMeleeAll']//item[contains(@name, 'meleeWpn')]/@quality">1,3</set>
+	<!-- Броня в продаже 1-3 качества -->
+	<set xpath="//trader_item_group[contains(@name, 'groupArmor')]//item[contains(@name, 'armor')]/@quality">1,3</set>
+	<!-- Книги и журналы -->
+	<set xpath="//trader_item_group[contains(@name, 'skillMagazines')]//item[contains(@name, 'SkillMagazine')]/@count">1,2</set>
+	<setattribute xpath="/traders/trader_info[(@id='1' or @id='6' or @id='2' or @id='7' or @id='8' or @id='9')]/trader_items/item[@group='books']" name="count">1,2</setattribute>
+	<setattribute xpath="/traders/trader_info[(@id='1' or @id='6' or @id='2' or @id='7' or @id='8' or @id='9')]/trader_items/item[contains(@group, 'skillMagazines')]" name="count">1,2</setattribute>
+	<!-- Меньше некоторых медицинских расходников в продаже -->
+	<set xpath="//trader_item_group[@name='medicine']//item[2]/@count">1,2</set>
+	<set xpath="//trader_item_group[@name='medicine']//item[4]/@count">1,2</set>
+	<!-- Меньше частей оружия в продаже -->
+	<set xpath="//trader_item_group[@name='weaponsGunParts']//item[contains(@name, 'Parts')]/@count">1,2</set>
+	<!-- Инструменты в продаже 1-3 тира -->
+	<set xpath="//trader_item_group[@name='tools']//item[contains(@name, 'meleeTool')]/@quality">1,3</set>
+	<set xpath="//trader_item_group[@name='rareTools']//item[contains(@name, 'meleeTool')]/@quality">1,3</set>
+	<!-- Ремнаборов и слитков в продаже меньше -->
+	<set xpath="//trader_item_group[@name='tools']//item[@name='resourceRepairKit']/@count">1,2</set>
+	<set xpath="//trader_item_group[@name='tools']//item[@name='resourceForgedIron']/@count">5,20</set>
+	<set xpath="//trader_item_group[@name='tools']//item[@name='resourceForgedSteel']/@count">5,10</set>
+	<!-- Частей электрики в продаже меньше -->
+	<set xpath="//trader_item_group[@name='traderElectrical']//item[@name='resourceElectricParts']/@count">8,15</set>
+	<!-- Торговцы открываются раньше -->
+	<set xpath="//trader_info[@id='1']/@open_time">4:05</set>
+	<set xpath="//trader_info[@id='6']/@open_time">4:05</set>
+	<set xpath="//trader_info[@id='2']/@open_time">4:05</set>
+	<set xpath="//trader_info[@id='7']/@open_time">4:05</set>
+	<set xpath="//trader_info[@id='8']/@open_time">4:05</set>
+</traders_aio_2>

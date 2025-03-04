@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<item_modifiers>
-	<!-- Налобный фонарь нельзя ставить на "мягкие" шлемы -->
-	<set xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']/@blocked_tags">noMods,clothing,padded</set>
-</item_modifiers>

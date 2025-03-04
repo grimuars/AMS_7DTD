@@ -1,0 +1,10 @@
+﻿<xui>
+	
+	<insertBefore xpath="/xui/ruleset/window_group[@name='compass']/window[@name='onScreenIcons']">
+		<window name="windowZombieBuffs" anchor="CenterTop" />
+	</insertBefore>
+
+	<insertBefore xpath="/xui/ruleset/window_group[@name='toolbelt']/window[@name='HUDLeftStatBars']">
+		<window name="windowZombieBuffsLegends" anchor="LeftCenter" />
+	</insertBefore>
+</xui>

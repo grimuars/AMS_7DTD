@@ -1,0 +1,10 @@
+﻿Key,File,Type,UsedInMainMenu,NoTranslate,english,russian
+
+ammopress,blocks,Workstation,,,Oakraven Ammo Press,Пресс для боеприпасов Oakraven
+ammopressDesc,blocks,Block,,,"The Oakraven Ammo Press allows players to craft ammunition in a compact standalone device.","Компактный пресс Oakraven предназначен для изготовления боеприпасов, освобождая верстак для других задач."
+workstationsT3-2OAP,progression,Attribute,,,Tier 2: Oakraven Ammo Press,Уровень 2: Пресс для боеприпасов Oakraven
+lblCategoryAmmoPress,UI,Tooltip,,,Ammo,Боеприпасы
+lblCategoryAmmoPressRegularAmmo,UI,Tooltip,,,Regular Ammo,Стандартные боеприпасы
+lblCategoryAmmoPressHPAmmo,UI,Tooltip,,,HP Ammo,Экспансивные боеприпасы
+lblCategoryAmmoPressAPAmmo,UI,Tooltip,,,AP Ammo,Бронебойные боеприпасы
+lblCategoryAmmoPressXPAmmo,UI,Tooltip,,,XP Ammo,Интенсивные боеприпасы

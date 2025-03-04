@@ -1,0 +1,48 @@
+<FPS>
+	<set xpath="/blocks/block[@name='woodenGarageDoor3x3White']/property[@name='StabilitySupport']/@value">true</set>
+	<set xpath="/blocks/block[@name='woodenGarageDoor4x3White']/property[@name='StabilitySupport']/@value">true</set>
+	<set xpath="/blocks/block[@name='woodenGarageDoor5x3White']/property[@name='StabilitySupport']/@value">true</set>
+	<set xpath="/blocks/block[@name='steelGarageDoor3x3White']/property[@name='StabilitySupport']/@value">true</set>
+	<set xpath="/blocks/block[@name='steelGarageDoor4x3White']/property[@name='StabilitySupport']/@value">true</set>
+	<set xpath="/blocks/block[@name='steelGarageDoor5x3White']/property[@name='StabilitySupport']/@value">true</set>
+	<set xpath="/blocks/block[@name='rollUpDoor3x3White']/property[@name='StabilitySupport']/@value">true</set>
+	<set xpath="/blocks/block[@name='rollUpDoor3x3White']/property[@name='StabilitySupport']/@value">true</set>
+	<set xpath="/blocks/block[@name='rollUpDoor7x4White']/property[@name='StabilitySupport']/@value">true</set>
+	<set xpath="/blocks/block[@name='ironGarageDoorWhite']/property[@name='StabilitySupport']/@value">true</set>
+	<set xpath="/blocks/block[@name='vaultDoor01']/property[@name='StabilitySupport']/@value">true</set>
+	<set xpath="/blocks/block[@name='vaultDoor01']/property[@name='MaxDamage']/@value">30000</set>
+	<set xpath="/blocks/block[@name='vaultDoor01Double']/property[@name='StabilitySupport']/@value">true</set>
+	<set xpath="/blocks/block[@name='vaultDoor01Double']/property[@name='MaxDamage']/@value">30000</set>
+	<append xpath="/blocks/block[@name='vaultDoor01_Powered']">
+		<property name="MaxDamage" value="30000"/>
+	</append>
+	<append xpath="/blocks/block[@name='vaultDoor01Double_Powered']">
+		<property name="MaxDamage" value="30000"/>
+	</append>
+	<set xpath="/blocks/block[@name='vaultHatch01']/property[@name='MaxDamage']/@value">30000</set>
+	<append xpath="/blocks/block[@name='vaultHatch01']">
+		<property name="StabilitySupport" value="true"/>
+		<drop event="Destroy" name="vaultDoor01" count="0"/>
+	</append>
+	<append xpath="/blocks/block[@name='vaultHatch01_Powered']">
+		<property name="MaxDamage" value="30000"/>
+	</append>
+	<set xpath="/blocks/block[starts-with(@name, 'rollUpDoor')]/property[@name='OnlySimpleRotations']/@value">false</set>
+	<set xpath="/blocks/block[starts-with(@name, 'metalReinforcedWoodDrawBridge')]/property[@name='OnlySimpleRotations']/@value">false</set>
+	<append xpath="/blocks">
+		<block name="FPSGarageDoorVariantHelper">
+			<property name="Extends" value="woodenGarageDoor3x3_PoweredWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="woodenGarageDoor3x3White"/>
+			<property name="CustomIconTint" value="1a592b"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="FPSGarageDoorVariantHelperDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="woodenGarageDoor3x3White,woodenGarageDoor3x3Brown,woodenGarageDoor3x3Red,woodenGarageDoor3x3Orange,woodenGarageDoor3x3Yellow,woodenGarageDoor3x3Green,woodenGarageDoor3x3Blue,woodenGarageDoor3x3Grey,woodenGarageDoor3x3Oak,woodenGarageDoor4x3White,woodenGarageDoor4x3Brown,woodenGarageDoor4x3Red,woodenGarageDoor4x3Orange,woodenGarageDoor4x3Yellow,woodenGarageDoor4x3Green,woodenGarageDoor4x3Blue,woodenGarageDoor4x3Grey,woodenGarageDoor4x3Oak,woodenGarageDoor5x3White,woodenGarageDoor5x3Brown,woodenGarageDoor5x3Red,woodenGarageDoor5x3Orange,woodenGarageDoor5x3Yellow,woodenGarageDoor5x3Green,woodenGarageDoor5x3Blue,woodenGarageDoor5x3Grey,woodenGarageDoor5x3Oak,woodenGarageDoor3x3_PoweredWhite,woodenGarageDoor3x3_PoweredBrown,woodenGarageDoor3x3_PoweredRed,woodenGarageDoor3x3_PoweredOrange,woodenGarageDoor3x3_PoweredYellow,woodenGarageDoor3x3_PoweredGreen,woodenGarageDoor3x3_PoweredBlue,woodenGarageDoor3x3_PoweredGrey,woodenGarageDoor3x3_PoweredOak,woodenGarageDoor4x3_PoweredWhite,woodenGarageDoor4x3_PoweredBrown,woodenGarageDoor4x3_PoweredRed,woodenGarageDoor4x3_PoweredOrange,woodenGarageDoor4x3_PoweredYellow,woodenGarageDoor4x3_PoweredGreen,woodenGarageDoor4x3_PoweredBlue,woodenGarageDoor4x3_PoweredGrey,woodenGarageDoor4x3_PoweredOak,woodenGarageDoor5x3_PoweredWhite,woodenGarageDoor5x3_PoweredBrown,woodenGarageDoor5x3_PoweredRed,woodenGarageDoor5x3_PoweredOrange,woodenGarageDoor5x3_PoweredYellow,woodenGarageDoor5x3_PoweredGreen,woodenGarageDoor5x3_PoweredBlue,woodenGarageDoor5x3_PoweredGrey,woodenGarageDoor5x3_PoweredOak,steelGarageDoor3x3_PoweredWhite,steelGarageDoor3x3_PoweredBrown,steelGarageDoor3x3_PoweredRed,steelGarageDoor3x3_PoweredOrange,steelGarageDoor3x3_PoweredYellow,steelGarageDoor3x3_PoweredGreen,steelGarageDoor3x3_PoweredBlue,steelGarageDoor3x3_PoweredGrey,steelGarageDoor3x3_PoweredBlack,steelGarageDoor3x3_PoweredArmyGreen,steelGarageDoor4x3_PoweredWhite,steelGarageDoor4x3_PoweredBrown,steelGarageDoor4x3_PoweredRed,steelGarageDoor4x3_PoweredOrange,steelGarageDoor4x3_PoweredYellow,steelGarageDoor4x3_PoweredGreen,steelGarageDoor4x3_PoweredBlue,steelGarageDoor4x3_PoweredGrey,steelGarageDoor4x3_PoweredBlack,steelGarageDoor4x3_PoweredArmyGreen,steelGarageDoor5x3_PoweredWhite,steelGarageDoor5x3_PoweredBrown,steelGarageDoor5x3_PoweredRed,steelGarageDoor5x3_PoweredOrange,steelGarageDoor5x3_PoweredYellow,steelGarageDoor5x3_PoweredGreen,steelGarageDoor5x3_PoweredBlue,steelGarageDoor5x3_PoweredGrey,steelGarageDoor5x3_PoweredBlack,steelGarageDoor5x3_PoweredArmyGreen,steelGarageDoor3x3_PoweredWhite,steelGarageDoor3x3_PoweredBrown,steelGarageDoor3x3_PoweredRed,steelGarageDoor3x3_PoweredOrange,steelGarageDoor3x3_PoweredYellow,steelGarageDoor3x3_PoweredGreen,steelGarageDoor3x3_PoweredBlue,steelGarageDoor3x3_PoweredGrey,steelGarageDoor3x3_PoweredBlack,steelGarageDoor3x3_PoweredArmyGreen,steelGarageDoor4x3_PoweredWhite,steelGarageDoor4x3_PoweredBrown,steelGarageDoor4x3_PoweredRed,steelGarageDoor4x3_PoweredOrange,steelGarageDoor4x3_PoweredYellow,steelGarageDoor4x3_PoweredGreen,steelGarageDoor4x3_PoweredBlue,steelGarageDoor4x3_PoweredGrey,steelGarageDoor4x3_PoweredBlack,steelGarageDoor4x3_PoweredArmyGreen,steelGarageDoor5x3_PoweredWhite,steelGarageDoor5x3_PoweredBrown,steelGarageDoor5x3_PoweredRed,steelGarageDoor5x3_PoweredOrange,steelGarageDoor5x3_PoweredYellow,steelGarageDoor5x3_PoweredGreen,steelGarageDoor5x3_PoweredBlue,steelGarageDoor5x3_PoweredGrey,steelGarageDoor5x3_PoweredBlack,steelGarageDoor5x3_PoweredArmyGreen,rollUpDoor3x3Brown,rollUpDoor3x3Red,rollUpDoor3x3Orange,rollUpDoor3x3Yellow,rollUpDoor3x3Green,rollUpDoor3x3Blue,rollUpDoor3x3Purple,rollUpDoor3x3Grey,rollUpDoor3x3White,rollUpDoor3x3Black,rollUpDoor3x3Pink,rollUpDoor5x4Brown,rollUpDoor5x4Red,rollUpDoor5x4Orange,rollUpDoor5x4Yellow,rollUpDoor5x4Green,rollUpDoor5x4Blue,rollUpDoor5x4Purple,rollUpDoor5x4Grey,rollUpDoor5x4White,rollUpDoor5x4Black,rollUpDoor5x4Pink,rollUpDoor7x4Brown,rollUpDoor7x4Red,rollUpDoor7x4Orange,rollUpDoor7x4Yellow,rollUpDoor7x4Green,rollUpDoor7x4Blue,rollUpDoor7x4Purple,rollUpDoor7x4Grey,rollUpDoor7x4White,rollUpDoor7x4Black,rollUpDoor7x4Pink,steelGarageDoor3x3_PoweredWhite,steelGarageDoor3x3_PoweredBrown,steelGarageDoor3x3_PoweredRed,steelGarageDoor3x3_PoweredOrange,steelGarageDoor3x3_PoweredYellow,steelGarageDoor3x3_PoweredGreen,steelGarageDoor3x3_PoweredBlue,steelGarageDoor3x3_PoweredGrey,steelGarageDoor3x3_PoweredBlack,steelGarageDoor3x3_PoweredArmyGreen,steelGarageDoor4x3_PoweredWhite,steelGarageDoor4x3_PoweredBrown,steelGarageDoor4x3_PoweredRed,steelGarageDoor4x3_PoweredOrange,steelGarageDoor4x3_PoweredYellow,steelGarageDoor4x3_PoweredGreen,steelGarageDoor4x3_PoweredBlue,steelGarageDoor4x3_PoweredGrey,steelGarageDoor4x3_PoweredBlack,steelGarageDoor4x3_PoweredArmyGreen,steelGarageDoor5x3_PoweredWhite,steelGarageDoor5x3_PoweredBrown,steelGarageDoor5x3_PoweredRed,steelGarageDoor5x3_PoweredOrange,steelGarageDoor5x3_PoweredYellow,steelGarageDoor5x3_PoweredGreen,steelGarageDoor5x3_PoweredBlue,steelGarageDoor5x3_PoweredGrey,steelGarageDoor5x3_PoweredBlack,steelGarageDoor5x3_PoweredArmyGreen,steelGarageDoor3x3White,steelGarageDoor3x3Brown,steelGarageDoor3x3Red,steelGarageDoor3x3Orange,steelGarageDoor3x3Yellow,steelGarageDoor3x3Green,steelGarageDoor3x3Blue,steelGarageDoor3x3Grey,steelGarageDoor3x3Black,steelGarageDoor3x3ArmyGreen,steelGarageDoor4x3White,steelGarageDoor4x3Brown,steelGarageDoor4x3Red,steelGarageDoor4x3Orange,steelGarageDoor4x3Yellow,steelGarageDoor4x3Green,steelGarageDoor4x3Blue,steelGarageDoor4x3Grey,steelGarageDoor4x3Black,steelGarageDoor4x3ArmyGreen,steelGarageDoor5x3White,steelGarageDoor5x3Brown,steelGarageDoor5x3Red,steelGarageDoor5x3Orange,steelGarageDoor5x3Yellow,steelGarageDoor5x3Green,steelGarageDoor5x3Blue,steelGarageDoor5x3Grey,steelGarageDoor5x3Black,steelGarageDoor5x3ArmyGreen,ironGarageDoor_PoweredBlack,ironGarageDoor_PoweredWhite,ironGarageDoor_PoweredBrown,ironGarageDoor_PoweredRed,ironGarageDoor_PoweredOrange,ironGarageDoor_PoweredYellow,ironGarageDoor_PoweredGreen,ironGarageDoor_PoweredBlue,ironGarageDoor_PoweredPurple,ironGarageDoor_PoweredGrey,ironGarageDoor_PoweredPink,ironGarageDoor_PoweredArmyGreen,ironGarageDoorBlack,ironGarageDoorWhite,ironGarageDoorBrown,ironGarageDoorRed,ironGarageDoorOrange,ironGarageDoorYellow,ironGarageDoorGreen,ironGarageDoorBlue,ironGarageDoorPurple,ironGarageDoorGrey,ironGarageDoorPink,ironGarageDoorArmyGreen,vaultDoor01,vaultDoor01Double,vaultDoor01Double_Powered,vaultHatch01,vaultHatch01_Powered"/>
+			<!-- zzzzzz -->
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
+	</append>
+</FPS>

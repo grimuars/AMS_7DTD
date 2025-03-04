@@ -1,0 +1,22 @@
+<buffs>
+	<!-- 
+    TODO/WANT LIST
+        1. Make the sound go away when block is destroyed
+        2. Make cars flash/lights go off when alarm goes off
+    -->
+	<!-- Vehicle Alarm -->
+	<append xpath="/buffs">
+		<!-- X Chance to roll the buff then goes to Gameevents -->
+		<buff name="vehicle_loot_alarm" hidden="true" icon="ui_game_symbol_infection">
+			<stack_type value="ignore"/>
+			<update_rate value="1"/>
+			<duration value="1"/>
+			<effect_group>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="vehicle_alarm_message"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="vehicle_loot_alarm_sound"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="vehicle_loot_alarm_zombie_spawns"/>
+			</effect_group>
+		</buff>
+	</append>
+</buffs>

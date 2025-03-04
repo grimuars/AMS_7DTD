@@ -1,0 +1,13 @@
+﻿<configs>
+	<!-- // ********  ******** -->
+	<append xpath="/blocks/block[@name='doorWoodLargeGate']/property[@name='Tags']/@value">,openbyhorn,distlong</append>
+	<append xpath="/blocks/block[@name='chainlinkGateDoubleWide']/property[@name='Tags']/@value">,openbyhorn,distlong</append>
+	<append xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']/property[@name='Tags']/@value">,drawbridge,openbyhorn,distlong</append>
+	<!-- <remove xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']/property[@name='Tags']"/>
+	<append xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']">
+		<property name="Tags" value="drawbridge,openbyhorn,distlong"/>
+		<property name="CanPickup" value="true"/>
+	</append> -->
+	<!--  -->
+	<append xpath="/blocks/block/property[@name='Tags'][@value='door']/@value">,openbyhorn</append>
+</configs>

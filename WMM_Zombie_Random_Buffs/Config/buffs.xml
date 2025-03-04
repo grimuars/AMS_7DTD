@@ -1,0 +1,629 @@
+﻿<config>
+	<append xpath="/buffs">
+		<buff name="zrb-checkstatus01">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+		</buff>
+		<!-- BLUNT RESIST-->
+		<buff name="zrb-bluntresist1">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.15" tags="club"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.15" tags="knife,spearSkill"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-bluntresist2">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.30" tags="club"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.30" tags="knife,spearSkill"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-bluntresist3">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.45" tags="club"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.45" tags="knife,spearSkill"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-bluntresist4">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.60" tags="club"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.60" tags="knife,spearSkill"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-bluntresist5">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.75" tags="club"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.75" tags="knife,spearSkill"/>
+			</effect_group>
+		</buff>
+		<!-- End -->
+		<!-- KNIFE RESIST-->
+		<buff name="zrb-kniferesist1">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.15" tags="knife,spearSkill"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.15" tags="club"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-kniferesist2">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.30" tags="knife,spearSkill"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.30" tags="club"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-kniferesist3">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.45" tags="knife,spearSkill"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.45" tags="club"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-kniferesist4">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.60" tags="knife,spearSkill"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.60" tags="club"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-kniferesist5">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.75" tags="knife,spearSkill"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.75" tags="club"/>
+			</effect_group>
+		</buff>
+		<!-- End -->
+		<!-- FIST RESIST-->
+		<buff name="zrb-fistresist1">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.15" tags="knuckleSkill"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.15" tags="bowSkill,perkArchery"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-fistresist2">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.30" tags="knuckleSkill"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.30" tags="bowSkill,perkArchery"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-fistresist3">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.45" tags="knuckleSkill"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.45" tags="bowSkill,perkArchery"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-fistresist4">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.60" tags="knuckleSkill"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.60" tags="bowSkill,perkArchery"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-fistresist5">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.75" tags="knuckleSkill"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.75" tags="bowSkill,perkArchery"/>
+			</effect_group>
+		</buff>
+		<!-- End -->
+		<!-- ARROWS RESIST-->
+		<buff name="zrb-arrowresist1">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.15" tags="bowSkill,perkArchery"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.15" tags="knuckleSkill"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-arrowresist2">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.30" tags="bowSkill,perkArchery"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.30" tags="knuckleSkill"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-arrowresist3">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.45" tags="bowSkill,perkArchery"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.45" tags="knuckleSkill"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-arrowresist4">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.60" tags="bowSkill,perkArchery"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.60" tags="knuckleSkill"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-arrowresist5">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.75" tags="bowSkill,perkArchery"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.75" tags="knuckleSkill"/>
+			</effect_group>
+		</buff>
+		<!-- End -->
+		<!-- ARMOUR PENETRATION -->
+		<buff name="zrb-armourpenetration1">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="zrb-armourreducation1">
+					<requirement name="!HasBuff" buff="zrb-armourreducation2" target="other"/>
+					<requirement name="!HasBuff" buff="zrb-armourreducation3" target="other"/>
+					<requirement name="!HasBuff" buff="zrb-armourreducation4" target="other"/>
+					<requirement name="!HasBuff" buff="zrb-armourreducation5" target="other"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="zrb-armourpenetration2">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="zrb-armourreducation2">
+					<requirement name="!HasBuff" buff="zrb-armourreducation3" target="other"/>
+					<requirement name="!HasBuff" buff="zrb-armourreducation4" target="other"/>
+					<requirement name="!HasBuff" buff="zrb-armourreducation5" target="other"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="zrb-armourpenetration3">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="zrb-armourreducation3">
+					<requirement name="!HasBuff" buff="zrb-armourreducation4" target="other"/>
+					<requirement name="!HasBuff" buff="zrb-armourreducation5" target="other"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="zrb-armourpenetration4">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="zrb-armourreducation4">
+					<requirement name="!HasBuff" buff="zrb-armourreducation5" target="other"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="zrb-armourpenetration5">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="zrb-armourreducation5">
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="zrb-armourreducation1" icon="ui_armor_reduction_1">
+			<stack_type value="replace"/>
+			<duration value="60"/>
+			<display_value value="duration"/>
+			<display_value_format value="time"/>
+			<effect_group>
+				<passive_effect name="PhysicalDamageResist" operation="perc_subtract" value="0.15"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-armourreducation2" icon="ui_armor_reduction_2">
+			<stack_type value="replace"/>
+			<duration value="60"/>
+			<display_value value="duration"/>
+			<display_value_format value="time"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="zrb-armourreducation1">
+					<requirement name="HasBuff" buff="zrb-armourreducation1"/>
+				</triggered_effect>
+				<passive_effect name="PhysicalDamageResist" operation="perc_subtract" value="0.30"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-armourreducation3" icon="ui_armor_reduction_3">
+			<stack_type value="replace"/>
+			<duration value="60"/>
+			<display_value value="duration"/>
+			<display_value_format value="time"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="zrb-armourreducation1">
+					<requirement name="HasBuff" buff="zrb-armourreducation1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="zrb-armourreducation2">
+					<requirement name="HasBuff" buff="zrb-armourreducation2"/>
+				</triggered_effect>
+				<passive_effect name="PhysicalDamageResist" operation="perc_subtract" value="0.45"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-armourreducation4" icon="ui_armor_reduction_4">
+			<stack_type value="replace"/>
+			<duration value="60"/>
+			<display_value value="duration"/>
+			<display_value_format value="time"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="zrb-armourreducation1">
+					<requirement name="HasBuff" buff="zrb-armourreducation1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="zrb-armourreducation2">
+					<requirement name="HasBuff" buff="zrb-armourreducation2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="zrb-armourreducation3">
+					<requirement name="HasBuff" buff="zrb-armourreducation3"/>
+				</triggered_effect>
+				<passive_effect name="PhysicalDamageResist" operation="perc_subtract" value="0.60"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-armourreducation5" icon="ui_armor_reduction_5">
+			<stack_type value="replace"/>
+			<duration value="60"/>
+			<display_value value="duration"/>
+			<display_value_format value="time"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="zrb-armourreducation1">
+					<requirement name="HasBuff" buff="zrb-armourreducation1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="zrb-armourreducation2">
+					<requirement name="HasBuff" buff="zrb-armourreducation2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="zrb-armourreducation3">
+					<requirement name="HasBuff" buff="zrb-armourreducation3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="zrb-armourreducation4">
+					<requirement name="HasBuff" buff="zrb-armourreducation4"/>
+				</triggered_effect>
+				<passive_effect name="PhysicalDamageResist" operation="perc_subtract" value="0.75"/>
+			</effect_group>
+		</buff>
+		<!-- End -->
+		<!-- BULLET RESIST -->
+		<buff name="zrb-bulletresist1">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.15" tags="9mmGun,ammo9mm,revolver,ammo762mm,rifleSkill,machinegunSkill"/>
+				<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="0.15"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-bulletresist2">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.30" tags="9mmGun,ammo9mm,revolver,ammo762mm,rifleSkill,machinegunSkill"/>
+				<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="0.30"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-bulletresist3">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.45" tags="9mmGun,ammo9mm,revolver,ammo762mm,rifleSkill,machinegunSkill"/>
+				<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="0.45"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-bulletresist4">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.60" tags="9mmGun,ammo9mm,revolver,ammo762mm,rifleSkill,machinegunSkill"/>
+				<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="0.60"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-bulletresist5">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.75" tags="9mmGun,ammo9mm,revolver,ammo762mm,rifleSkill,machinegunSkill"/>
+				<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="0.75"/>
+			</effect_group>
+		</buff>
+		<!-- End -->
+		<!-- DECAP RESIST -->
+		<buff name="zrb-decapresist1">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="DismemberChance" operation="perc_add" value="-0.15"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-decapresist2">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="DismemberChance" operation="perc_add" value="-0.30"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-decapresist3">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="DismemberChance" operation="perc_add" value="-0.45"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-decapresist4">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="DismemberChance" operation="perc_add" value="-0.60"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-decapresist5">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="DismemberChance" operation="perc_add" value="-0.75"/>
+			</effect_group>
+		</buff>
+		<!-- End -->
+		<!-- EXPLOSIVE RESIST -->
+		<buff name="zrb-explosiveresist1">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-0.15"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.15" tags="shotgun,ammoShells"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-explosiveresist2">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-0.30"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.30" tags="shotgun,ammoShells"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-explosiveresist3">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-0.45"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.45" tags="shotgun,ammoShells"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-explosiveresist4">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-0.60"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.60" tags="shotgun,ammoShells"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-explosiveresist5">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-0.75"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.75" tags="shotgun,ammoShells"/>
+			</effect_group>
+		</buff>
+		<!-- End -->
+		<!-- FIRE RESIST -->
+		<buff name="zrb-fireresist1">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+		</buff>
+		<buff name="zrb-fireresist2">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+		</buff>
+		<buff name="zrb-fireresist3">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+		</buff>
+		<buff name="zrb-fireresist4">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+		</buff>
+		<buff name="zrb-fireresist5">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+		</buff>
+		<!-- End -->
+		<!-- INFECTION CHANCE -->
+		<!-- End -->
+		<!-- MAX HEALTH -->
+		<buff name="zrb-maxhealth1">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="HealthMax" operation="perc_add" value="0.15"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-maxhealth2">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="HealthMax" operation="perc_add" value="0.30"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-maxhealth3">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="HealthMax" operation="perc_add" value="0.45"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-maxhealth4">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="HealthMax" operation="perc_add" value="0.60"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-maxhealth5">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="HealthMax" operation="perc_add" value="0.75"/>
+			</effect_group>
+		</buff>
+		<!-- End -->
+		<!-- SHOTGUN RESIST -->
+		<buff name="zrb-shotgunresist1">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.15" tags="shotgun,ammoShells"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.15" tags="9mmGun,ammo9mm,revolver,ammo762mm,rifleSkill,machinegunSkill"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-shotgunresist2">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.30" tags="shotgun,ammoShells"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.30" tags="9mmGun,ammo9mm,revolver,ammo762mm,rifleSkill,machinegunSkill"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-shotgunresist3">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.45" tags="shotgun,ammoShells"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.45" tags="9mmGun,ammo9mm,revolver,ammo762mm,rifleSkill,machinegunSkill"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-shotgunresist4">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.60" tags="shotgun,ammoShells"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.60" tags="9mmGun,ammo9mm,revolver,ammo762mm,rifleSkill,machinegunSkill"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-shotgunresist5">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="-0.75" tags="shotgun,ammoShells"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.75" tags="9mmGun,ammo9mm,revolver,ammo762mm,rifleSkill,machinegunSkill"/>
+			</effect_group>
+		</buff>
+		<!-- End -->
+		<!-- INCREASED DAMAGE -->
+		<buff name="zrb-strong1">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value="0.15"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.15" tags="weapon"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-strong2">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value="0.30"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.30" tags="weapon"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-strong3">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value="0.45"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.45" tags="weapon"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-strong4">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value="0.60"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.60" tags="weapon"/>
+			</effect_group>
+		</buff>
+		<buff name="zrb-strong5">
+			<stack_type value="replace"/>
+			<duration value="6000"/>
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value="0.75"/>
+				<passive_effect name="InternalDamageModifier" operation="perc_add" value="0.75" tags="weapon"/>
+			</effect_group>
+		</buff>
+		<!-- End -->
+	</append>
+	<append xpath="/buffs/buff[@name='buffIsOnFire']">
+		<effect_group>
+			<requirement name="!EntityTagCompare" tags="player"/>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="-0.15">
+				<requirement name="HasBuff" buff="zrb-fireresist1"/>
+			</passive_effect>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="-0.30">
+				<requirement name="HasBuff" buff="zrb-fireresist2"/>
+			</passive_effect>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="-0.45">
+				<requirement name="HasBuff" buff="zrb-fireresist3"/>
+			</passive_effect>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="-0.60">
+				<requirement name="HasBuff" buff="zrb-fireresist4"/>
+			</passive_effect>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="-0.75">
+				<requirement name="HasBuff" buff="zrb-fireresist5"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	<append xpath="/buffs/buff[@name='buffBurningMolotov']">
+		<effect_group>
+			<requirement name="!EntityTagCompare" tags="player"/>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="-0.15">
+				<requirement name="HasBuff" buff="zrb-fireresist1"/>
+			</passive_effect>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="-0.30">
+				<requirement name="HasBuff" buff="zrb-fireresist2"/>
+			</passive_effect>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="-0.45">
+				<requirement name="HasBuff" buff="zrb-fireresist3"/>
+			</passive_effect>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="-0.60">
+				<requirement name="HasBuff" buff="zrb-fireresist4"/>
+			</passive_effect>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="-0.75">
+				<requirement name="HasBuff" buff="zrb-fireresist5"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+	<append xpath="/buffs/buff[@name='buffBurningFlamingArrow']">
+		<effect_group>
+			<requirement name="!EntityTagCompare" tags="player"/>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="-0.15">
+				<requirement name="HasBuff" buff="zrb-fireresist1"/>
+			</passive_effect>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="-0.30">
+				<requirement name="HasBuff" buff="zrb-fireresist2"/>
+			</passive_effect>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="-0.45">
+				<requirement name="HasBuff" buff="zrb-fireresist3"/>
+			</passive_effect>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="-0.60">
+				<requirement name="HasBuff" buff="zrb-fireresist4"/>
+			</passive_effect>
+			<passive_effect name="HealthChangeOT" operation="perc_add" value="-0.75">
+				<requirement name="HasBuff" buff="zrb-fireresist5"/>
+			</passive_effect>
+		</effect_group>
+	</append>
+</config>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<quests_aio_1>
+	<!-- За приход к торговцу теперь выдаётся стартовый комплект сервера -->
+	<set xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/reward[@type='Item']/@id">AMSStarterPack</set>
+	<!-- Замена стартового квеста у торговцев -->
+	<remove xpath="/quests/quest[@id='intro_buried_supplies']"/>
+	<insertAfter xpath="/quests/quest[@id='tier6_fetch_clear']">
+		<quest id="intro_buried_supplies">
+			<property name="name_key" value="quest_intro_buried_supplies" param1="name"/>
+			<property name="subtitle_key" value="quest_buried_supplies_subtitle"/>
+			<property name="description_key" value="quest_buried_supplies_description"/>
+			<property name="icon" value="ui_game_symbol_treasure"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="quest_intro_buried_supplies_offer" param1="offer"/>
+			<property name="difficulty_tier" value="1" param1="difficulty"/>
+			<property name="statement_key" value="quest_buried_supplies_statement"/>
+			<property name="response_key" value="quest_intro_buried_supplies_response"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_buried_supplies_completion"/>
+			<property name="shareable" value="false"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="reset_trader_quests" value="true"/>
+			<property name="single_quest" value="true"/>
+			<property name="always_allow" value="true"/>
+			<property name="unique_key" value="introquest"/>
+			<property name="quest_type" value="special"/>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<action type="SetCVar">
+				<property name="cvar" value="IntroComplete"/>
+				<property name="value" value="1"/>
+				<property name="on_complete" value="true"/>
+			</action>
+			<reward type="Exp" value="3000"/>
+			<reward type="Item" id="casinoCoin" value="5000"/>
+			<reward type="Item" id="questRewardPipePistolBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="questRewardPipeShotgunBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="questRewardPipeRifleBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="questRewardPipeMachineGunBundle" ischosen="true" value="1"/>
+			<reward type="Item" id="questRewardPipeBatonBundle" ischosen="true" value="1"/>
+		</quest>
+	</insertAfter>
+</quests_aio_1>

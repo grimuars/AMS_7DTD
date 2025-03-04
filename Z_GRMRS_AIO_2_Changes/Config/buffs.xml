@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buffs_aio_2>
+	<!-- Вероятность сломать конечность при падении повышена -->
+	<insertAfter xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group/triggered_effect[@trigger='onSelfBuffStart'][@value='@_fallSpeed']">
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".impactSpeed" operation="add" value=".05656"/>
+	</insertAfter>
+	<!-- Убираем паузу восстановления выносливости при силовой атаке-->
+	<set xpath="//buff[@name='buffPowerAttackStaminaStunt']/duration/@value">0.01</set>
+	<!-- Дополнительные ограничения по выносливости и мобильности при голоде -->
+	<set xpath="/buffs/buff[@name='buffStatusHungry01']/effect_group[2]/requirement[@name='StatComparePercCurrentToMax']/@value">0.75</set>
+	<insertAfter xpath="/buffs/buff[@name='buffStatusHungry02']/effect_group[1]/passive_effect[@name='BuffBlink'][@tags]">
+		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value=".2"/>
+		<passive_effect name="Mobility" operation="base_add" value="-.15"/>
+	</insertAfter>
+	<set xpath="/buffs/buff[@name='buffStatusHungry02']/effect_group[1]/triggered_effect[3]/requirement[@name='StatComparePercCurrentToMax']/@value">0.55</set>
+	<insertAfter xpath="/buffs/buff[@name='buffStatusHungry03']/effect_group">
+		<passive_effect name="StaminaChangeOT" operation="perc_subtract" value=".4"/>
+		<passive_effect name="Mobility" operation="base_add" value="-.35"/>
+		<passive_effect name="AttributeLevel" operation="base_subtract" value="1"/>
+	</insertAfter>
+	<set xpath="/buffs/buff[@name='buffStatusHungry03']/effect_group/triggered_effect[9]/requirement[@name='StatComparePercCurrentToMax']/@value">0.35</set>
+	<set xpath="/buffs/buff[@name='buffStatusThirsty01']/effect_group[2]/requirement[@name='StatComparePercCurrentToMax']/@value">0.75</set>
+	<insertAfter xpath="/buffs/buff[@name='buffStatusThirsty02']/effect_group[1]/passive_effect[@name='BuffBlink'][@tags]">
+		<passive_effect name="Mobility" operation="base_add" value="-.25"/>
+	</insertAfter>
+	<set xpath="/buffs/buff[@name='buffStatusThirsty02']/effect_group[2]/requirement[@name='StatComparePercCurrentToMax']/@value">0.55</set>
+	<insertAfter xpath="/buffs/buff[@name='buffStatusThirsty03']/effect_group[1]//triggered_effect[1][@value]">
+		<passive_effect name="Mobility" operation="base_add" value="-.45"/>
+		<passive_effect name="AttributeLevel" operation="base_subtract" value="1"/>
+	</insertAfter>
+	<set xpath="/buffs/buff[@name='buffStatusThirsty03']/effect_group[2]/requirement[@name='StatComparePercCurrentToMax']/@value">0.35</set>
+	<!-- Отключаем рэгдолл для игрока -->
+	<append xpath="/buffs/buff/effect_group/triggered_effect[@action='Ragdoll']/requirement/@tags">,player</append>
+	<!-- При использовании очистителя воды, если игрок мокрый, жажда восстанавливается -->
+	<append xpath="/buffs/buff[@name='buffElementWet']">
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="water" operation="add" value="1"/>
+			<requirement name="HasBuff" buff="buffWaterPurifier"/>
+		</effect_group>
+	</append>
+	<!-- При горении теряется вода -->
+	<set xpath="/buffs/buff[@name='buffBurningElement' or @name='buffHazardBurningElement']/effect_group[*]/passive_effect[@name='WaterChangeOT']/@value">1</set>
+	<!-- Увеличиваем количество стаков кровотечения от баффа перка -->
+	<set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='1']/../@value">9</set>
+	<set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='2']/../@value">12</set>
+	<set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='3']/../@value">15</set>
+	<set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='4']/../@value">18</set>
+	<set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='5']/../@value">21</set>
+</buffs_aio_2>
