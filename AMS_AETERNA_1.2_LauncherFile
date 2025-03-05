@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Servers>
+	<ServerGroup Name="AMS 7DTD AETERNA" Logo="https://i.imgur.com/4kjLtAE.jpg">
+		<Server Name="AMS 7DTD AETERNA">
+			<Description>
+			Модпак для приватного сервера по 7 Days To Die.
+			</Description>
+			<EAC>Disabled</EAC>
+			<Version>1.2</Version>
+			<DownloadMode>Clone</DownloadMode>
+			<Version>Latest</Version>
+			<ReleaseNotes>Рюкзаки, транспорт, изменения баланса, система весов предметов и многое другое.</ReleaseNotes>
+			<Downloads>
+				<Download>https://github.com/grimuars/AMS_7DTD.git</Download>
+			</Downloads>
+			<Donate>https://www.paypal.me/khainegb</Donate>
+			<Telegram>https://t.me/grimvbunkere</Telegram>
+		</Server>	
+	</ServerGroup>
+</Servers>
