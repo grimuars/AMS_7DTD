@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="ODCL_Backpacks" />
+	<DisplayName value="ODCL_Backpacks" />
+	<Description value="Einführung Gewicht und Rucksäcke." />
+	<Author value="Breeko" />
+	<Version value="1.0.0.0" />
+	<Website value="" />
+	<SkipWithAntiCheat value="true" />
+</xml>

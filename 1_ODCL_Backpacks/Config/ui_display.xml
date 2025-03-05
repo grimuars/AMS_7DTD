@@ -1,0 +1,524 @@
+<ODCL>
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']/display_entry[@name='dEntityDamageSneak']"/>
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeSpear']/display_entry[@name='dTargetArmor']"/>
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedShotgun']/display_entry[@name='RoundsPerMinute']"/>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedGun']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedGunNoMag']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedShotgun']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedShotgunNoMag']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedLauncher']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedBow']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='adminRanged']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='melee']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeSpear']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeHeavy']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeKnife']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeRepairTool']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedRepairTool']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='motorTool']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='simpleTool']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeTorch']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='meleeTurret']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedTurret']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='droneTurret']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoBullet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoBulletAP']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoBulletHP']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgun']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgunSlug']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoShotgunBreaching']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoJunkTurretRegular']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoJunkTurretAP']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrow']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrowAP']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoDart']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrowFlaming']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoArrowExploding']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoLauncher']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoGrenade']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoGrenadeContact']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoGrenadeTimedCharge']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='ammoGrenadeFire']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='modCarryCapacity']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='modNoiseReduction']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='modTempResist']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorPrimitiveHelmet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorPrimitiveOutfit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorPrimitiveGloves']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorPrimitiveBoots']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorLumberjackHelmet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorLumberjackOutfit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorLumberjackGloves']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorLumberjackBoots']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorPreacherHelmet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorPreacherOutfit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorPreacherGloves']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorPreacherBoots']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorRogueHelmet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorRogueOutfit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorRogueGloves']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorRogueBoots']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorAthleticHelmet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorAthleticOutfit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorAthleticGloves']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorAthleticBoots']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorEnforcerHelmet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorEnforcerOutfit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorEnforcerGloves']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorEnforcerBoots']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorFarmerHelmet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorFarmerOutfit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorFarmerGloves']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorFarmerBoots']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorBikerHelmet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorBikerOutfit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorBikerGloves']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorBikerBoots']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorScavengerHelmet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorScavengerOutfit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorScavengerGloves']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorScavengerBoots']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorRangerHelmet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorRangerOutfit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorRangerGloves']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorRangerBoots']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorCommandoHelmet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorCommandoOutfit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorCommandoGloves']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorCommandoBoots']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorAssassinHelmet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorAssassinOutfit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorAssassinGloves']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorAssassinBoots']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorMinerHelmet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorMinerOutfit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorMinerGloves']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorMinerBoots']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorNomadHelmet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorNomadOutfit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorNomadGloves']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorNomadBoots']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorNerdHelmet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorNerdOutfit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorNerdGloves']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorNerdBoots']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorRaiderHelmet']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorRaiderOutfit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorRaiderGloves']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorRaiderBoots']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothing']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingRunningShoes']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingJacketLetter']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingHazMat']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingShades']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='apparelToughGuySunglasses']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingAviatorGoggles']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingSkiGoggles']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingNerdGlasses']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingBarter']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingToughGuy']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingGhillie']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingGhillieHood']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingCigar']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='water']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='waterDysentery']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='waterGoldenrod']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='waterRedTea']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='waterGoldenrodRedTea']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='waterCoffee']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='waterMegaCrush']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='waterBeer']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='waterGrandpasMoonshine']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='waterGrandpasAwesomeSauce']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='waterGrandpasLearningElixir']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='food']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='foodRaw']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='foodCureInfection']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWater']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWaterRaw']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWaterNegative']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='foodShamChowder']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='foodPumpkinCheesecake']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drinkYuccaSmoothie']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWaterOnlyRaw']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='cureInfection']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='medical']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='medicalFirstAidKit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='medicalVitamins']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='medicalPainkillers']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='sewingKit']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drugSteroids']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drugRecog']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drugFortBites']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drugAtomJunkies']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drugCovertCats']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drugEyeKandy']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drugHackers']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drugHealthBar']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drugJailBreakers']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drugNerdTats']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drugOhShitzDrops']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drugRockBusters']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drugSkullCrushers']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='drugSugarButts']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='blockLandmine']">
+		<display_entry name="Mass" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='toolAnvil']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='toolBellows']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<append xpath="/ui_display_info/item_display/item_display_info[@display_type='armorLumberjackHelmetDemo']">
+		<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+	</append>
+	<!-- *************************************************************************************************** -->
+	<append xpath="/ui_display_info/item_display">
+		<item_display_info display_type="ODCL_blockMulti" display_group="groupBlocks">
+			<display_entry name="Mass" title_key="statMassMultiblock" negative_preferred="true"/>
+			<display_entry name="StabilityGlue" title_key="statStabilityGlue"/>
+			<display_entry name="MaxDamage" title_key="statMaxDamage"/>
+			<display_entry name="StabilitySupport" title_key="statStabilitySupport" display_type="Bool"/>
+			<display_entry name="LightOpacity" title_key="statLightOpacity"/>
+			<display_entry name="Mass" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+		</item_display_info>
+		<item_display_info display_type="ODCL_blockDefault" display_group="groupBlocks">
+			<display_entry name="Mass" title_key="statMass" negative_preferred="true"/>
+			<display_entry name="StabilityGlue" title_key="statStabilityGlue"/>
+			<display_entry name="MaxDamage" title_key="statMaxDamage"/>
+			<display_entry name="StabilitySupport" title_key="statStabilitySupport" display_type="Bool"/>
+			<display_entry name="LightOpacity" title_key="statLightOpacity"/>
+			<display_entry name="Mass" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+		</item_display_info>
+		<item_display_info display_type="waterGrandpasForgettingElixir" display_group="groupConsumables">
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+		</item_display_info>
+		<item_display_info display_type="TSItemDisplay" display_group="groupConsumables">
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+		</item_display_info>
+		<item_display_info display_type="modCarryWeight" display_group="modAttire">
+			<display_entry name="TSItemCarryWeight" display_type="Decimal2" title_key="WeightAdded" negative_preferred="false"/>
+			<display_entry name="TSItemWeight" display_type="Decimal2" title_key="Weight" negative_preferred="true"/>
+		</item_display_info>
+	</append>
+</ODCL> 
+

@@ -1,0 +1,28 @@
+<ODCL>
+	<append xpath="/materials">
+		<material id="ODCL_campfire">
+			<property name="Extends" value="MstoneNoGlue"/>
+			<property name="Mass" type="int" value="8"/>
+		</material>
+		<material id="ODCL_cntDewCollector">
+			<property name="Extends" value="MFuelBarrelPolymer"/>
+			<property name="Mass" type="int" value="25"/>
+		</material>
+		<material id="ODCL_forge">
+			<property name="Extends" value="Mstone_scrap"/>
+			<property name="Mass" type="int" value="21"/>
+		</material>
+		<material id="ODCL_workbench">
+			<property name="Extends" value="Mmetal"/>
+			<property name="Mass" type="int" value="18"/>
+		</material>
+		<material id="ODCL_cementMixer">
+			<property name="Extends" value="Miron_scrap"/>
+			<property name="Mass" type="int" value="15"/>
+		</material>
+		<material id="ODCL_chemistryStation">
+			<property name="Extends" value="Miron_scrap"/>
+			<property name="Mass" type="int" value="25"/>
+		</material>
+	</append>
+</ODCL>

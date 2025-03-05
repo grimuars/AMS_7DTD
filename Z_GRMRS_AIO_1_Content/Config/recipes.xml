@@ -1063,4 +1063,12 @@
 			</effect_group>
 		</recipe>
 	</append>
+	<!-- Стальные ловушки -->
+	<append xpath="/recipes">
+		<recipe name="trapSpikesSteelDmg0" count="4" craft_area="workbench" craft_time="100" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="80"/>
+			<ingredient name="resourceNail" count="40"/>
+			<ingredient name="resourceOil" count="8"/>
+		</recipe>
+	</append>
 </recipes_aio_1>

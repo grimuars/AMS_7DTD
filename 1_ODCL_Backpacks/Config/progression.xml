@@ -1,0 +1,38 @@
+<ODCL>
+	<conditional>
+		<if cond="mod_loaded('1-ODCL_Backpacks') and not mod_loaded('1-ODCL')">
+			<remove xpath="/progression/perks/perk[@name='perkPackMule']"/>
+			<insertAfter xpath="/progression/perks/perk[@name='perkHeavyArmor']">
+				<perk name="perkPackMule" parent="skillStrengthGeneral" name_key="perkPackMuleName" desc_key="perkPackMuleDesc" icon="ui_game_symbol_pack_mule">
+					<level_requirements level="1">
+						<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="1" desc_key="reqStrengthLevel01"/>
+					</level_requirements>
+					<level_requirements level="2">
+						<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="2" desc_key="reqStrengthLevel02"/>
+					</level_requirements>
+					<level_requirements level="3">
+						<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="3" desc_key="reqStrengthLevel03"/>
+					</level_requirements>
+					<level_requirements level="4">
+						<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
+					</level_requirements>
+					<level_requirements level="5">
+						<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/>
+					</level_requirements>
+					<effect_group>
+						<triggered_effect trigger="onSelfProgressionUpdate" action="AddBuff" buff="odcl_BuffPackMule">
+							<requirement name="ProgressionLevel" progression_name="perkPackMule" operation="GTE" value="1"/>
+							<requirement name="NotHasBuff" buff="odcl_BuffPackMule"/>
+						</triggered_effect>
+						<passive_effect name="CarryCapacity" operation="base_add" level="1,2,3,4,5" value="3,6,10,14,18"/>
+						<effect_description level="1" desc_key="perkPackMuleRank1Desc" long_desc_key="odcl_perkPackMuleRank1LongDesc"/>
+						<effect_description level="2" desc_key="perkPackMuleRank2Desc" long_desc_key="odcl_perkPackMuleRank2LongDesc"/>
+						<effect_description level="3" desc_key="perkPackMuleRank3Desc" long_desc_key="odcl_perkPackMuleRank3LongDesc"/>
+						<effect_description level="4" desc_key="perkPackMuleRank4Desc" long_desc_key="odcl_perkPackMuleRank4LongDesc"/>
+						<effect_description level="5" desc_key="perkPackMuleRank5Desc" long_desc_key="odcl_perkPackMuleRank5LongDesc"/>
+					</effect_group>
+				</perk>
+			</insertAfter>
+		</if>
+	</conditional>
+</ODCL>

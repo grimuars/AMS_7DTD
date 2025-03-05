@@ -1,0 +1,59 @@
+<ODCL>
+	<!--CONFIGURATION SCORE-->
+	<set xpath="//block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='Logging']/@value">false</set>
+	<!--for debugging-->
+	<set xpath="//block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='Encumbrance']/@value">true</set>
+	<set xpath="//block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='Encumbrance_ToolBelt']/@value">true</set>
+	<set xpath="//block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='Encumbrance_Equipment']/@value">true</set>
+	<set xpath="//block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='MinimumWeight']/@value">0</set>
+	<!--CONFIGURATION SCORE END-->
+	<set xpath="/blocks/block[@name='campfire']/property[@name='Material']/@value">ODCL_campfire</set>
+	<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='Material']/@value">ODCL_cntDewCollector</set>
+	<set xpath="/blocks/block[@name='forge']/property[@name='Material']/@value">ODCL_forge</set>
+	<set xpath="/blocks/block[@name='workbench']/property[@name='Material']/@value">ODCL_workbench</set>
+	<set xpath="/blocks/block[@name='workbench']/property[@name='DisplayType']/@value">ODCL_blockMulti</set>
+	<set xpath="/blocks/block[@name='cementMixer']/property[@name='Material']/@value">ODCL_cementMixer</set>
+	<set xpath="/blocks/block[@name='chemistryStation']/property[@name='Material']/@value">ODCL_chemistryStation</set>
+	<set xpath="/blocks/block[@name='chemistryStation']/property[@name='DisplayType']/@value">ODCL_blockMulti</set>
+	<append xpath="/blocks/block[@name='campfire']">
+		<property name="DisplayType" value="ODCL_blockDefault"/>
+		<property name="ItemWeight" value="8"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntDewCollector']">
+		<property name="DisplayType" value="ODCL_blockDefault"/>
+		<property name="ItemWeight" value="25"/>
+	</append>
+	<append xpath="/blocks/block[@name='forge']">
+		<property name="DisplayType" value="ODCL_blockDefault"/>
+		<property name="ItemWeight" value="21"/>
+	</append>
+	<append xpath="/blocks/block[@name='workbench']">
+		<property name="ItemWeight" value="18"/>
+	</append>
+	<append xpath="/blocks/block[@name='cementMixer']">
+		<property name="DisplayType" value="ODCL_blockDefault"/>
+		<property name="ItemWeight" value="15"/>
+	</append>
+	<append xpath="/blocks/block[@name='chemistryStation']">
+		<property name="ItemWeight" value="25"/>
+	</append>
+	<append xpath="/blocks/block[@name='mineCandyTin']">
+		<property name="ItemWeight" value="2"/>
+	</append>
+	<append xpath="/blocks/block[@name='mineCookingPot']">
+		<property name="ItemWeight" value="2"/>
+	</append>
+	<append xpath="/blocks/block[@name='mineHubcap']">
+		<property name="ItemWeight" value="2"/>
+	</append>
+	<append xpath="/blocks/block[@name='mineAirFilter']">
+		<property name="ItemWeight" value="2"/>
+	</append>
+	<!-- Ловушки -->
+	<append xpath="/blocks/block[@name='trapSpikesWoodDmg0']">
+		<property name="ItemWeight" value="0.5"/>
+	</append>
+	<append xpath="/blocks/block[@name='trapSpikesIronDmg0']">
+		<property name="ItemWeight" value="1"/>
+	</append>
+</ODCL>

@@ -1,0 +1,126 @@
+<ODCL>
+	<remove xpath="/windows/window[@name='windowBackpack']"/>
+	<remove xpath="/windows/window[@name='CharacterFrameWindow']"/>
+	<append xpath="/windows">
+		<window name="windowBackpack" width="875" height="473" panel="Center" controller="BackpackWindow" cursor_area="true">
+			<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+				<sprite depth="3" name="windowIcon" style="icon32px" pivot="center" pos="210,-21" aspect_ratio="1.0" sprite="ui_game_symbol_weight"/>
+				<label depth="3" name="windowName" pos="10,-9" width="250" height="32" controller="Quartz.CVarTimer, Quartz" timer="0.5" text="INVENTORY" text_key="{cvar($odcl_UICurrentWeight:000.00)}/{cvar(MaxEncumbrance:000.00)}" font_size="30" color="{# cvar('encumbranceCVar') > 1 ? '200,0,0,255' : (cvar('encumbranceCVar') > 0.7 ? '120,120,0,255' : '255,255,255,255')}"/>
+				<rect pos="250,0" width="400" controller="ContainerStandardControls" move_start_bottom_left="true" is_backpack="true">
+					<button depth="3" name="btnClearInventory" sprite="ui_game_symbol_trash" tooltip_key="lblClearInventory" pos="10, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" visible="{creativewindowopen}"/>
+					<button depth="3" name="btnSort" sprite="ui_game_symbol_sort" tooltip_key="lblSortContainer" pos="60, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]"/>
+					<rect pos="0, 0" visible="{lootingorvehiclestorage}">
+						<button depth="3" name="btnMoveAll" sprite="ui_game_symbol_store_all_down" tooltip_key="lblStashAll" pos="110, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]"/>
+						<button depth="3" name="btnMoveFillAndSmart" sprite="ui_game_symbol_store_similar_down" tooltip_key="lblStashFillAndSmart" pos="160, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]"/>
+					</rect>
+					<button depth="3" name="btnToggleLockMode" sprite="ui_game_symbol_lock" tooltip_key="xuiStashLockModeToggle" pos="210, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" selected="{userlockmode}"/>
+					<!-- <combobox depth="3" name="cbxLockedSlots" pos="210,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="45" value_wrap="true" value_increment="1"/> -->
+					<!-- <combobox depth="3" name="cbxLockedSlots" pos="210,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="{container_slots}" value_wrap="true" value_increment="1"/> -->
+				</rect>
+				<label depth="2" pos="654,-8" width="180" height="28" text="{currencyamount}" justify="right"/>
+				<sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="840,-10" color="[white]" foregroundlayer="true"/>
+			</panel>
+			<scrollview name="scrollview" depth="5" pos="0,-43" width="875" height="398" scrollbar="scrollbar" reset_position="true" over_scroll="false" scroll_speed="1.1">
+				<panel name="content" width="100%" height="303" depth="0" pos="0,-46" disableautobackground="true">
+					<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="840" height="356" color="[black]" type="sliced" fillcenter="false" on_press="true"/>
+					<grid depth="10" name="inventory" rows="13" cols="13" pos="3,-3" cell_width="67" cell_height="63" controller="Backpack" repeat_content="true">
+						<!-- ODCL EXTRA INVENTORY ROW -->
+						<backpack_item_stack name="0"/>
+					</grid>
+				</panel>
+			</scrollview>
+		</window>
+		<window name="CharacterFrameWindow" width="327" height="704" panel="Left" controller="CharacterFrameWindow" defaultcolor="[white]" hoveredcolor="[selectedColor]" cursor_area="true">
+			<!--#$-IGS END.-$#-->
+			<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+				<sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_character"/>
+				<label depth="2" name="characterName" pos="42,-6" width="150" height="32" text="" font_size="32"/>
+				<sprite depth="2" name="windowIcon" width="26" height="26" pos="200,-8" sprite="ui_game_symbol_trophy"/>
+				<label depth="2" name="levelNumber" pos="240,-10" width="80" height="28" text=""/>
+			</panel>
+			<rect depth="2" name="searchControls" width="327" height="43" pos="0,-46">
+				<sprite depth="6" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="327" height="43" color="[black]" type="sliced" fillcenter="false"/>
+				<sprite depth="1" color="[mediumGrey]" type="sliced" globalopacity="true"/>
+				<button depth="4" name="characterButton" style="icon30px, press" pos="22,-22" sprite="ui_game_symbol_character" pivot="center" tooltip="Description" tooltip_key="lblWornEquipment" sound="[paging_click]" selected="true"/>
+				<button depth="4" name="statButton" style="icon30px, press" pos="65,-22" sprite="ui_game_symbol_ping" pivot="center" tooltip="Stats" sound="[paging_click]" tooltip_key="lblCharacterStats1"/>
+				<button depth="4" name="coreStatButton" style="icon30px, press" pos="108,-22" sprite="ui_game_symbol_trophy" pivot="center" tooltip="Stats" sound="[paging_click]" tooltip_key="lblCharacterStats2"/>
+				<!-- <panel pos="220,0" width="104" height="43" disableautobackground="true"> -->
+				<!-- <button depth="4" name="pageDown" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/> -->
+				<!-- <rect depth="4" name="background" pos="37,-7"> -->
+				<!-- <sprite name="background" style="icon30px" color="[black]" type="sliced" /> -->
+				<!-- <label depth="5" name="pageNumber" pos="0, -3" width="30" height="28" text="1" font_size="26" justify="center"/> -->
+				<!-- </rect> -->
+				<!-- <button depth="4" name="pageUp" style="icon30px, press" pos="84,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/> -->
+				<!-- </panel> -->
+			</rect>
+			<rect visible="{showcharactersdcs}">
+				<!--#$-IGS BEGIN: Disabling snap for the character preview frame area. Moving the previewFrame down to make space for a new level header. -$#-->
+				<panel name="previewFrameSDCS" depth="0" pos="0,-86" width="327" on_press="true" on_hover="true" disableautobackground="true" snap="false" gamepad_selectable="false">
+					<!--*#$-IGS END.-$#-->
+					<rect>
+						<sprite depth="6" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="327" height="624" color="[black]" type="sliced" fillcenter="false"/>
+						<sprite depth="1" color="[darkGrey]" type="sliced" width="327" height="624"/>
+						<!-- <sprite depth="1" color="[lightGrey]" type="sliced" pos="3,-3" width="381" height="739" />
+						<sprite depth="1" color="[darkGrey]" type="sliced" width="304" height="697" pos="6,-5"/> -->
+						<texture depth="2" name="playerPreviewSDCS" material="Materials/Transparent Colored" size="327,622" globalopacity="false"/>
+					</rect>
+				</panel>
+				<panel name="equipment" depth="10" pos="3, -710" width="292" height="70" disableautobackground="true">
+					<grid name="inventory" rows="1" cols="4" cell_width="81" cell_height="70" controller="EquipmentStackGrid" repeat_content="true">
+						<equipment_stack_sdcs name="0"/>
+					</grid>
+				</panel>
+			</rect>
+			<grid visible="{showstats}" depth="0" pos="0,-86" width="327" cols="1" cell_height="30" repeat_content="false" arrangement="vertical">
+				<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="{playerhealthtitle|once}" valuecontent="{playerhealth}/{playermaxhealth}"/>
+				<player_stats_entry backgroundcolor="[darkGrey]" textcontent="{playerstaminatitle|once}" valuecontent="{playerstamina}/{playermaxstamina}"/>
+				<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="{playerfoodtitle|once}" valuecontent="{playermodifiedcurrentfood}/{playerfoodmax}"/>
+				<player_stats_entry backgroundcolor="[darkGrey]" textcontent="{playerwatertitle|once}" valuecontent="{playermodifiedcurrentwater}/{playerwatermax}"/>
+				<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="{playercoretemptitle|once}" valuecontent="{playercoretemp}"/>
+				<player_stats_entry backgroundcolor="[darkGrey]" textcontent="{playerzombiekillstitle|once}" valuecontent="{playerzombiekills}"/>
+				<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="{playerpvpkillstitle|once}" valuecontent="{playerpvpkills}"/>
+				<player_stats_entry backgroundcolor="[darkGrey]" textcontent="{playerdeathstitle|once}" valuecontent="{playerdeaths}"/>
+				<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="{playertravelledtitle|once}" valuecontent="{playertravelled}"/>
+				<player_stats_entry backgroundcolor="[darkGrey]" textcontent="{playeritemscraftedtitle|once}" valuecontent="{playeritemscrafted}"/>
+				<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="{playerlongestlifetitle|once}" valuecontent="{playerlongestlife}"/>
+				<player_stats_entry backgroundcolor="[darkGrey]" textcontent="{playercurrentlifetitle|once}" valuecontent="{playercurrentlife}"/>
+				<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="{playerxptonextleveltitle|once}" valuecontent="{playerxptonextlevel}"/>
+				<player_stats_entry backgroundcolor="[darkGrey]" textcontent="{playerlootstagetitle|once}" valuecontent="{playerlootstage}"/>
+				<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="Weight/Gewicht" valuecontent="{cvar(MaxEncumbrance:000.00)}"/>
+				<player_stats_entry backgroundcolor="[darkGrey]" textcontent="" valuecontent=""/>
+				<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="" valuecontent=""/>
+				<player_stats_entry backgroundcolor="[darkGrey]" textcontent="" valuecontent=""/>
+				<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="" valuecontent=""/>
+				<player_stats_entry backgroundcolor="[darkGrey]" textcontent="" valuecontent=""/>
+				<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="" valuecontent=""/>
+				<player_stats_entry backgroundcolor="[darkGrey]" textcontent="" valuecontent=""/>
+				<player_stats_entry backgroundcolor="[darkestGrey]" textcontent="" valuecontent=""/>
+			</grid>
+			<grid visible="{showcore}" depth="0" pos="0,-86" width="327" cols="1" cell_height="30" repeat_content="false" arrangement="vertical">
+				<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="1"/>
+				<player_stats_generic_entry backgroundcolor="[darkGrey]" index="2"/>
+				<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="3"/>
+				<player_stats_generic_entry backgroundcolor="[darkGrey]" index="4"/>
+				<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="5"/>
+				<player_stats_generic_entry backgroundcolor="[darkGrey]" index="6"/>
+				<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="7"/>
+				<player_stats_generic_entry backgroundcolor="[darkGrey]" index="8"/>
+				<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="9"/>
+				<player_stats_generic_entry backgroundcolor="[darkGrey]" index="10"/>
+				<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="11"/>
+				<player_stats_generic_entry backgroundcolor="[darkGrey]" index="12"/>
+				<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="13"/>
+				<player_stats_generic_entry backgroundcolor="[darkGrey]" index="14"/>
+				<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="15"/>
+				<player_stats_generic_entry backgroundcolor="[darkGrey]" index="16"/>
+				<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="17"/>
+				<player_stats_generic_entry backgroundcolor="[darkGrey]" index="18"/>
+				<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="19"/>
+				<player_stats_generic_entry backgroundcolor="[darkGrey]" index="20"/>
+				<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="21"/>
+				<player_stats_generic_entry backgroundcolor="[darkGrey]" index="22"/>
+				<player_stats_generic_entry backgroundcolor="[darkestGrey]" index="23"/>
+			</grid>
+		</window>
+	</append>
+</ODCL>

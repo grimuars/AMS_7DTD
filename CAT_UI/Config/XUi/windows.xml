@@ -517,7 +517,7 @@
 		</window>
 	</append>
 	<!-- 背包 - 库存 -->
-	<setattribute xpath="//window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']" name="pos">3,0</setattribute>
+	<!-- <setattribute xpath="//window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']" name="pos">3,0</setattribute> -->
 	<!-- 背包 - 道具详情 - 大图标 -->
 	<remove xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@name='preview']"/>
 	<append xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']">

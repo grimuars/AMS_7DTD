@@ -226,11 +226,12 @@
 			<property name="CraftActionName" value="lblContextActionCook"/>
 			<property name="Stacknumber" value="1"/>
 			<!-- Visual -->
-			<property name="Material" value="MstoneNoGlue"/>
+			<property name="Material" value="ODCL_campfire"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?CookerBigoak"/>
 			<property name="CustomIcon" value="cookerbigoak"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="21"/>
 			<property name="MultiBlockDim" value="1,2,2"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="WaterFlow" value="permitted"/>
@@ -297,11 +298,12 @@
 			<property name="CraftActionName" value="lblContextActionCook"/>
 			<property name="Stacknumber" value="1"/>
 			<!-- Visual -->
-			<property name="Material" value="MstoneNoGlue"/>
+			<property name="Material" value="ODCL_campfire"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?PotStove"/>
 			<property name="CustomIcon" value="potstove"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="21"/>
 			<property name="MultiBlockDim" value="1,1,1"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="WaterFlow" value="permitted"/>
@@ -359,11 +361,12 @@
 			<property name="CraftActionName" value="lblContextActionCook"/>
 			<property name="Stacknumber" value="1"/>
 			<!-- Visual -->
-			<property name="Material" value="MstoneNoGlue"/>
+			<property name="Material" value="ODCL_campfire"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?Ironstove"/>
 			<property name="CustomIcon" value="ironstove"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="21"/>
 			<property name="MultiBlockDim" value="1,2,1"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="WaterFlow" value="permitted"/>
@@ -421,11 +424,12 @@
 			<property name="CraftActionName" value="lblContextActionCook"/>
 			<property name="Stacknumber" value="1"/>
 			<!-- Visual -->
-			<property name="Material" value="MstoneNoGlue"/>
+			<property name="Material" value="ODCL_campfire"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?StoneStove"/>
 			<property name="CustomIcon" value="stonestove"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="21"/>
 			<property name="MultiBlockDim" value="1,2,1"/>
 			<property name="ImposterDontBlock" value="true"/>
 			<property name="WaterFlow" value="permitted"/>
@@ -562,7 +566,8 @@
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/ChickenCoops.unity3d?StoneCoopEmpty"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
 			<property name="ModelOffset" value="-0.5,0.5,0"/>
 			<property class="RepairItems">
@@ -600,7 +605,8 @@
 			<property name="DisplayInfo" value="Name"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="ivycoop"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
 			<property name="ModelOffset" value="-0.5,0.5,0"/>
 			<property name="Material" value="Mwood_weak"/>
@@ -627,7 +633,8 @@
 			<property name="CreativeMode" value="Player"/>
 			<property name="DisplayInfo" value="Name"/>
 			<property name="CustomIcon" value="ivycoop"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
 			<property name="ModelOffset" value="-0.5,0.5,0"/>
 			<property name="Material" value="Mwood_weak"/>
@@ -653,7 +660,8 @@
 			<property name="CreativeMode" value="Player"/>
 			<property name="DisplayInfo" value="Name"/>
 			<property name="CustomIcon" value="ivycoop"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
 			<property name="ModelOffset" value="-0.5,0.5,0"/>
 			<property name="Material" value="Mwood_weak"/>
@@ -689,7 +697,8 @@
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/ChickenCoops.unity3d?BarrelCoopEmpty"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
 			<property name="ModelOffset" value="-0.5,0.5,0"/>
 			<property class="RepairItems">
@@ -714,7 +723,8 @@
 			<property name="DisplayInfo" value="Name"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="barrelcoop"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
 			<property name="ModelOffset" value="-0.5,0.5,0"/>
 			<property name="Material" value="Mwood_weak"/>
@@ -741,7 +751,8 @@
 			<property name="DisplayInfo" value="Name"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="barrelcoop"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
 			<property name="ModelOffset" value="-0.5,0.5,0"/>
 			<property name="Material" value="Mwood_weak"/>
@@ -767,7 +778,8 @@
 			<property name="CreativeMode" value="Player"/>
 			<property name="DisplayInfo" value="Name"/>
 			<property name="CustomIcon" value="barrelcoop"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
 			<property name="ModelOffset" value="-0.5,0.5,0"/>
 			<property name="Material" value="Mwood_weak"/>
@@ -804,7 +816,8 @@
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/ChickenCoops.unity3d?GovCoopEmpty"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
 			<property name="ModelOffset" value="-0.5,0.5,0"/>
 			<property class="RepairItems">
@@ -829,7 +842,8 @@
 			<property name="DisplayInfo" value="Name"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="statuecoop"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
 			<property name="ModelOffset" value="-0.5,0.5,0"/>
 			<property name="Material" value="Mwood_weak"/>
@@ -856,7 +870,8 @@
 			<property name="DisplayInfo" value="Name"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="statuecoop"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
 			<property name="ModelOffset" value="-0.5,0.5,0"/>
 			<property name="Material" value="Mwood_weak"/>
@@ -882,7 +897,8 @@
 			<property name="CreativeMode" value="Player"/>
 			<property name="DisplayInfo" value="Name"/>
 			<property name="CustomIcon" value="statuecoop"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
 			<property name="ModelOffset" value="-0.5,0.5,0"/>
 			<property name="Material" value="Mwood_weak"/>
@@ -918,7 +934,8 @@
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/ChickenCoops.unity3d?TinCoopEmpty"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
 			<property name="ModelOffset" value="-0.5,0.5,0"/>
 			<property class="RepairItems">
@@ -943,7 +960,8 @@
 			<property name="DisplayInfo" value="Name"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="graincoop"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
 			<property name="ModelOffset" value="-0.5,0.5,0"/>
 			<property name="Material" value="Mwood_weak"/>
@@ -970,7 +988,8 @@
 			<property name="DisplayInfo" value="Name"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="graincoop"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
 			<property name="ModelOffset" value="-0.5,0.5,0"/>
 			<property name="Material" value="Mwood_weak"/>
@@ -996,7 +1015,8 @@
 			<property name="CreativeMode" value="Player"/>
 			<property name="DisplayInfo" value="Name"/>
 			<property name="CustomIcon" value="graincoop"/>
-			<property name="DisplayType" value="blockMulti"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="MultiBlockDim" value="2,2,2"/>
 			<property name="ModelOffset" value="-0.5,0.5,0"/>
 			<property name="Material" value="Mwood_weak"/>
@@ -1021,7 +1041,7 @@
 		</block>
 	</append>
 	<!-- НОВЫЕ СЕМЕНА и РАСТЕНИЯ -->
-		<!-- *** SEEDS_Wheat -->
+	<!-- *** Пшеница -->
 	<append xpath="/blocks">
 		<block name="plantedWheat1">
 			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
@@ -1098,6 +1118,8 @@
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/BeeHivesV1.unity3d?squareBeeHiveGold1"/>
 			<property name="CreativeMode" value="Player"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property class="RepairItems">
 				<property name="resourceWood" value="2"/>
 			</property>
@@ -1131,6 +1153,8 @@
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/BeeHivesV1.unity3d?squareBeeHiveGold2"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property class="RepairItems">
 				<property name="resourceWood" value="2"/>
 			</property>
@@ -1164,6 +1188,8 @@
 				<property name="resourceWood" value="2"/>
 			</property>
 			<property name="Model" value="#@modfolder:Resources/BeeHivesV1.unity3d?squareBeeHiveGold3"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="LootList" value="Honey"/>
 			<drop event="Destroy" name="QueenBee" prob=".8" count="1"/>
 			<drop event="Destroy" name="resourceWood" count="1"/>
@@ -1181,6 +1207,8 @@
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/BeeHivesV1.unity3d?OaksBeeHiveGOLD1"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="CreativeMode" value="Player"/>
 			<property class="RepairItems">
 				<property name="resourceWood" value="2"/>
@@ -1205,6 +1233,8 @@
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/BeeHivesV1.unity3d?OaksBeeHiveGold2"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property class="RepairItems">
 				<property name="resourceWood" value="2"/>
 			</property>
@@ -1236,6 +1266,8 @@
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/BeeHivesV1.unity3d?OaksBeeHiveGold3"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property class="RepairItems">
 				<property name="resourceWood" value="2"/>
 			</property>
@@ -1256,6 +1288,8 @@
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/BeeHivesV1.unity3d?BeeHiveWood_A"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property name="CreativeMode" value="Player"/>
 			<property class="RepairItems">
 				<property name="resourceWood" value="2"/>
@@ -1280,6 +1314,8 @@
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/BeeHivesV1.unity3d?BeeHiveWood_B"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property class="RepairItems">
 				<property name="resourceWood" value="2"/>
 			</property>
@@ -1311,6 +1347,8 @@
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/BeeHivesV1.unity3d?BeeHiveWood_C"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="8"/>
 			<property class="RepairItems">
 				<property name="resourceWood" value="2"/>
 			</property>
@@ -1384,6 +1422,94 @@
 			<property name="PlantGrowing.LightLevelStay" value="0"/>
 			<property name="PlantGrowing.Next" value="BeeStumpBees"/>
 			<property name="Group" value="Food/Cooking"/>
+		</block>
+	</append>
+	<!-- *** Стальные ловушки -->
+	<append xpath="/blocks">
+		<block name="trapSpikesSteelMaster">
+			<property name="CreativeMode" value="None"/>
+			<property name="TintColor" value="1FEA16"/>
+			<property name="CustomIcon" value="trapSpikesSteelMaster"/>
+			<property name="CustomIconTint" value="1FEA16"/>
+			<property name="Class" value="TrunkTip"/>
+			<property name="Damage" value="70"/>
+			<property name="Damage_received" value="20"/>
+			<property name="DescriptionKey" value="trapSpikesSteelDesc"/>
+			<property name="DisplayType" value="blockHardened"/>
+			<property name="Material" value="MtrapSpikesSteel"/>
+			<property name="Shape" value="ModelEntity"/>
+			<!-- <property name="Model" value="Entities/traps/ironSpikesTrapPrefab"/> -->
+			<property name="Model" value="#@modfolder:Resources/TheMeanOnes_SpikeUpgradePath.unity3d?TheMeanOne_HedgeHogUpgrade2"/>
+			<property name="ModelOffset" value="0,-.1,0"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="LightOpacity" value="6"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="melee,entity"/>
+			<property name="Path" value="solid"/>
+			<property name="IsTerrainDecoration" value="false"/>
+			<property name="EconomicValue" value="30"/>
+			<property name="EconomicBundleSize" value="20"/>
+			<property name="MaxDamage" value="600"/>
+			<property class="RepairItems">
+				<property name="resourceForgedSteel" value="4"/>
+			</property>
+			<property name="UpgradeSound" value="place_block_metal"/>
+			<drop event="Destroy" name="resourceScrapIron" count="10,20"/>
+			<!-- <drop event="Fall" count="0"/> -->
+			<property name="SortOrder1" value="B751"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="Group" value="Building"/>
+			<property name="BlockTag" value="Spike"/>
+			<property name="FilterTags" value="MC_building,SC_traps"/>
+		</block>
+		<!-- Player made Stage 3 with blood -->
+		<block name="trapSpikesSteelDmg2">
+			<property name="Extends" value="trapSpikesSteelMaster"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="TintColor" value="e33c66"/>
+			<property name="CustomIcon" value="trapSpikesSteelDamaged"/>
+			<property name="CustomIconTint" value="e33c66"/>
+			<!-- <property name="Model" value="Entities/traps/ironSpikesTrap2BloodPrefab"/> -->
+			<property name="Model" value="#@modfolder:Resources/TheMeanOnes_SpikeUpgradePath.unity3d?TheMeanOne_HedgeHogUpgrade1"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Damage" value="30"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="trapSpikesSteelDmg0"/>
+				<property name="Item" value="resourceForgedSteel"/>
+				<property name="ItemCount" value="1"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+		<!-- Player made Stage 2 with blood -->
+		<block name="trapSpikesSteelDmg1">
+			<property name="Extends" value="trapSpikesSteelMaster"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="TintColor" value="5CDEFF"/>
+			<property name="CustomIcon" value="trapSpikesSteelDamaged"/>
+			<property name="CustomIconTint" value="5CDEFF"/>
+			<!-- <property name="Model" value="Entities/traps/ironSpikesTrap1BloodPrefab"/> -->
+			<property name="Model" value="#@modfolder:Resources/TheMeanOnes_SpikeUpgradePath.unity3d?TheMeanOne_HedgeHogUpgrade1"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="trapSpikesSteelDmg0"/>
+				<property name="Item" value="resourceForgedSteel"/>
+				<property name="ItemCount" value="1"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="DowngradeBlock" value="trapSpikesSteelDmg2"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+		<!-- Player made Stage 1 with no blood -->
+		<block name="trapSpikesSteelDmg0">
+			<property name="Extends" value="trapSpikesSteelMaster"/>
+			<property name="TintColor" value="1FEA16"/>
+			<property name="CustomIcon" value="trapSpikesSteelMaster"/>
+			<property name="CustomIconTint" value="1FEA16"/>
+			<property name="DowngradeBlock" value="trapSpikesSteelDmg1"/>
+			<property name="ItemWeight" value="2"/>
+			<property name="CanPickup" value="true" param1="trapSpikesSteelDmg0"/>
+			<property name="SortOrder2" value="0003"/>
 		</block>
 	</append>
 </blocks_aio_1>

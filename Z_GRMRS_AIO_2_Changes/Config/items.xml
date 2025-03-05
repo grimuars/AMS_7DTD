@@ -952,6 +952,10 @@
 			<property name="Extends" value="resourceRockSmallBundle"/>
 			<property name="CustomIcon" value="resourceScrapBrass"/>
 			<property name="Stacknumber" value="50"/>
+			<property name="ItemWeight" value="5"/>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="5"/>
+			</effect_group>
 			<property class="Action0">
 				<property name="Create_item" value="resourceScrapBrass"/>
 				<property name="Create_item_count" value="10000"/>
@@ -966,6 +970,10 @@
 			<property name="Extends" value="resourceRockSmallBundle"/>
 			<property name="CustomIcon" value="resourceClayLump"/>
 			<property name="Stacknumber" value="50"/>
+			<property name="ItemWeight" value="5"/>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="5"/>
+			</effect_group>
 			<property class="Action0">
 				<property name="Create_item" value="resourceClayLump"/>
 				<property name="Create_item_count" value="10000"/>
@@ -980,6 +988,10 @@
 			<property name="Extends" value="resourceRockSmallBundle"/>
 			<property name="CustomIcon" value="resourceCrushedSand"/>
 			<property name="Stacknumber" value="50"/>
+			<property name="ItemWeight" value="5"/>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="5"/>
+			</effect_group>
 			<property class="Action0">
 				<property name="Create_item" value="resourceCrushedSand"/>
 				<property name="Create_item_count" value="10000"/>
@@ -995,6 +1007,10 @@
 			<property name="CustomIcon" value="resourceCement"/>
 			<property name="Stacknumber" value="50"/>
 			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property name="ItemWeight" value="5"/>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="5"/>
+			</effect_group>
 			<property class="Action0">
 				<property name="Create_item" value="resourceCement"/>
 				<property name="Create_item_count" value="1000"/>
@@ -1009,6 +1025,10 @@
 			<property name="Extends" value="resourceRockSmallBundle"/>
 			<property name="CustomIcon" value="resourcePaper"/>
 			<property name="Stacknumber" value="50"/>
+			<property name="ItemWeight" value="5"/>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="5"/>
+			</effect_group>
 			<property class="Action0">
 				<property name="Create_item" value="resourcePaper"/>
 				<property name="Create_item_count" value="1000"/>
@@ -1021,6 +1041,10 @@
 			<property name="Extends" value="resourceRockSmallBundle"/>
 			<property name="CustomIcon" value="resourceScrapPolymers"/>
 			<property name="Stacknumber" value="50"/>
+			<property name="ItemWeight" value="5"/>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="5"/>
+			</effect_group>
 			<property class="Action0">
 				<property name="Create_item" value="resourceScrapPolymers"/>
 				<property name="Create_item_count" value="1000"/>
@@ -1036,6 +1060,10 @@
 			<property name="CustomIcon" value="resourceCobblestones"/>
 			<property name="Stacknumber" value="50"/>
 			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property name="ItemWeight" value="5"/>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="5"/>
+			</effect_group>
 			<property class="Action0">
 				<property name="Create_item" value="resourceCobblestones"/>
 				<property name="Create_item_count" value="10000"/>
@@ -1049,6 +1077,10 @@
 			<property name="CustomIcon" value="resourceConcreteMix"/>
 			<property name="Stacknumber" value="50"/>
 			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property name="ItemWeight" value="5"/>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="5"/>
+			</effect_group>
 			<property class="Action0">
 				<property name="Create_item" value="resourceConcreteMix"/>
 				<property name="Create_item_count" value="1000"/>
@@ -1064,6 +1096,10 @@
 			<property name="CustomIcon" value="resourceForgedIron"/>
 			<property name="Stacknumber" value="50"/>
 			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property name="ItemWeight" value="5"/>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="5"/>
+			</effect_group>
 			<property class="Action0">
 				<property name="Create_item" value="resourceForgedIron"/>
 				<property name="Create_item_count" value="1000"/>
@@ -1079,6 +1115,10 @@
 			<property name="CustomIcon" value="resourceForgedSteel"/>
 			<property name="Stacknumber" value="50"/>
 			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property name="ItemWeight" value="5"/>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="5"/>
+			</effect_group>
 			<property class="Action0">
 				<property name="Create_item" value="resourceForgedSteel"/>
 				<property name="Create_item_count" value="1000"/>
@@ -1097,6 +1137,10 @@
 			<property name="CustomIcon" value="resourceBuckshot"/>
 			<property name="Stacknumber" value="50"/>
 			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property name="ItemWeight" value="5"/>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="5"/>
+			</effect_group>
 			<property class="Action0">
 				<property name="Create_item" value="resourceBuckshot"/>
 				<property name="Create_item_count" value="1000"/>
@@ -1111,6 +1155,10 @@
 			<property name="CustomIcon" value="resourceBulletCasing"/>
 			<property name="Stacknumber" value="50"/>
 			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property name="ItemWeight" value="5"/>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="5"/>
+			</effect_group>
 			<property class="Action0">
 				<property name="Create_item" value="resourceBulletCasing"/>
 				<property name="Create_item_count" value="1000"/>
@@ -1125,6 +1173,10 @@
 			<property name="CustomIcon" value="resourceBulletTip"/>
 			<property name="Stacknumber" value="50"/>
 			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property name="ItemWeight" value="5"/>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="5"/>
+			</effect_group>
 			<property class="Action0">
 				<property name="Create_item" value="resourceBulletTip"/>
 				<property name="Create_item_count" value="1000"/>
@@ -1141,6 +1193,10 @@
 			<property name="CustomIcon" value="resourceArrowHeadIron"/>
 			<property name="Stacknumber" value="50"/>
 			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property name="ItemWeight" value="5"/>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="5"/>
+			</effect_group>
 			<property class="Action0">
 				<property name="Create_item" value="resourceArrowHeadIron"/>
 				<property name="Create_item_count" value="1000"/>
@@ -1157,6 +1213,10 @@
 			<property name="CustomIcon" value="resourceArrowHeadSteelAP"/>
 			<property name="Stacknumber" value="50"/>
 			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property name="ItemWeight" value="5"/>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="5"/>
+			</effect_group>
 			<property class="Action0">
 				<property name="Create_item" value="resourceArrowHeadSteelAP"/>
 				<property name="Create_item_count" value="1000"/>
@@ -1261,6 +1321,10 @@
 			<property name="Stacknumber" value="50"/>
 			<property name="EconomicValue" value="1360"/>
 			<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+			<property name="ItemWeight" value="5"/>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="5"/>
+			</effect_group>
 			<property class="Action0">
 				<property name="Create_item" value="ammoDartIron"/>
 				<property name="Create_item_count" value="1000"/>
@@ -1437,4 +1501,7 @@
 	<append xpath="/items/item[@name='smallEngine']">
 		<property name="ScrapTimeOverride" value="60.0"/>
 	</append>
+	<!-- Отключаем частицы дыма после выстрела -->
+	<remove xpath="/items/item[starts-with (@name, 'gun')]/property[@class='Action0']/property[@name='Particles_muzzle_smoke']"/>
+	<remove xpath="/items/item[starts-with (@name, 'gun')]/property[@class='Action0']/property[@name='Particles_muzzle_smoke_fpv']"/>
 </items_aio_2>

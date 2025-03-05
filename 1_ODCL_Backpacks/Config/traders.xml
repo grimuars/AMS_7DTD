@@ -1,0 +1,11 @@
+<ODCL>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareBooks']">
+		<item name="odcl_MilitaryBackpackSchematic"/>
+		<item name="odcl_BigBackpackSchematic"/>
+		<item name="odcl_AxisBackpackSchematic"/>
+		<item name="odcl_BackpackSchematic"/>
+		<item name="odcl_GuitarBackpackSchematic"/>
+		<item name="odcl_LeatherBackpackSchematic"/>
+		<item name="odcl_SurvivalBackpackSchematic"/>
+	</append>
+</ODCL>

@@ -1,0 +1,3762 @@
+<ODCL>
+	<append xpath="/items/item[@name='armorLumberjackOutfit']/property[@name='Tags']/@value">,odclShowBackpack</append>
+	<append xpath="/items/item[@name='armorPreacherOutfit']/property[@name='Tags']/@value">,odclShowBackpack</append>
+	<append xpath="/items/item[@name='armorRogueOutfit']/property[@name='Tags']/@value">,odclShowBackpack</append>
+	<append xpath="/items/item[@name='armorAthleticOutfit']/property[@name='Tags']/@value">,odclShowBackpack</append>
+	<append xpath="/items/item[@name='armorEnforcerOutfit']/property[@name='Tags']/@value">,odclShowBackpack</append>
+	<append xpath="/items/item[@name='armorBikerOutfit']/property[@name='Tags']/@value">,odclShowBackpack</append>
+	<append xpath="/items/item[@name='armorCommandoOutfit']/property[@name='Tags']/@value">,odclShowBackpack</append>
+	<append xpath="/items/item[@name='armorNomadOutfit']/property[@name='Tags']/@value">,odclShowBackpack</append>
+	<append xpath="/items/item[@name='armorRaiderOutfit']/property[@name='Tags']/@value">,odclShowBackpack</append>
+	<!-- Инструменты -->
+	<append xpath="//item[@name='meleeToolRepairT0StoneAxe']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolRepairT0TazasStoneAxe']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolRepairT1ClawHammer']">
+		<property name="ItemWeight" value="0.9"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.9"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolRepairT3Nailgun']">
+		<property name="ItemWeight" value="1.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolAxeT1IronFireaxe']">
+		<property name="ItemWeight" value="1.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.6"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolAxeT2SteelAxe']">
+		<property name="ItemWeight" value="1.9"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.9"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolPickT1IronPickaxe']">
+		<property name="ItemWeight" value="1.4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.4"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolPickT2SteelPickaxe']">
+		<property name="ItemWeight" value="1.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolShovelT0StoneShovel']">
+		<property name="ItemWeight" value="0.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.6"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolShovelT1IronShovel']">
+		<property name="ItemWeight" value="1.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolShovelT2SteelShovel']">
+		<property name="ItemWeight" value="1.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.6"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolAxeT3Chainsaw']">
+		<property name="ItemWeight" value="2.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolPickT3Auger']">
+		<property name="ItemWeight" value="2.7"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.7"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolSalvageT1Wrench']">
+		<property name="ItemWeight" value="0.7"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.7"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolSalvageT2Ratchet']">
+		<property name="ItemWeight" value="0.4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.4"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolSalvageT3ImpactDriver']">
+		<property name="ItemWeight" value="1.4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.4"/>
+		</effect_group>
+	</append>
+	<!-- Ножи -->
+	<append xpath="//item[@name='meleeWpnBladeT0BoneKnife']">
+		<property name="ItemWeight" value="0.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnBladeT1HuntingKnife']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnBladeT1CandyKnife']">
+		<property name="ItemWeight" value="0.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnBladeT3Machete']">
+		<property name="ItemWeight" value="0.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.6"/>
+		</effect_group>
+	</append>
+	<!-- Дубины -->
+	<append xpath="//item[@name='meleeWpnClubT0WoodenClub']">
+		<property name="ItemWeight" value="0.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnClubT1BaseballBat']">
+		<property name="ItemWeight" value="1.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnClubT1CandyClub']">
+		<property name="ItemWeight" value="0.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnClubT3SteelClub']">
+		<property name="ItemWeight" value="1.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
+		</effect_group>
+	</append>
+	<!-- Жезлы -->
+	<append xpath="//item[@name='meleeWpnBatonT0PipeBaton']">
+		<property name="ItemWeight" value="0.7"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.7"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnBatonT2StunBaton']">
+		<property name="ItemWeight" value="0.9"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.9"/>
+		</effect_group>
+	</append>
+	<!-- Копья -->
+	<append xpath="//item[@name='meleeWpnSpearT0StoneSpear']">
+		<property name="ItemWeight" value="0.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnSpearT1IronSpear']">
+		<property name="ItemWeight" value="1.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnSpearT3SteelSpear']">
+		<property name="ItemWeight" value="1.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.6"/>
+		</effect_group>
+	</append>
+	<!-- Кувалды -->
+	<append xpath="//item[@name='meleeWpnSledgeT0StoneSledgehammer']">
+		<property name="ItemWeight" value="1.9"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.9"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnSledgeT1IronSledgehammer']">
+		<property name="ItemWeight" value="2.4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.4"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnSledgeT3SteelSledgehammer']">
+		<property name="ItemWeight" value="2.7"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.7"/>
+		</effect_group>
+	</append>
+	<!-- Кастеты -->
+	<append xpath="//item[@name='meleeWpnKnucklesT0LeatherKnuckles']">
+		<property name="ItemWeight" value="0.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnKnucklesT1IronKnuckles']">
+		<property name="ItemWeight" value="0.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnKnucklesT3SteelKnuckles']">
+		<property name="ItemWeight" value="1.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.2"/>
+		</effect_group>
+	</append>
+	<!-- Освещение -->
+	<append xpath="//item[@name='meleeToolFlashlight02']">
+		<property name="ItemWeight" value="0.4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.4"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolTorch']">
+		<property name="ItemWeight" value="0.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.2"/>
+		</effect_group>
+	</append>
+	<!-- Стриппер -->
+	<append xpath="//item[@name='meleeToolWireTool']">
+		<property name="ItemWeight" value="0.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.3"/>
+		</effect_group>
+	</append>
+	<!-- Кисточка -->
+	<append xpath="//item[@name='meleeToolPaintTool']">
+		<property name="ItemWeight" value="0.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.1"/>
+		</effect_group>
+	</append>
+	<!-- Пистолеты -->
+	<append xpath="//item[@name='gunHandgunT0PipePistol']">
+		<property name="ItemWeight" value="0.7"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.7"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunHandgunT1Pistol']">
+		<property name="ItemWeight" value="0.9"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.9"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunHandgunT3SMG5']">
+		<property name="ItemWeight" value="3.4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.9"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunHandgunT2Magnum44']">
+		<property name="ItemWeight" value="1.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunHandgunT3DesertVulture']">
+		<property name="ItemWeight" value="1.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
+		</effect_group>
+	</append>
+	<!-- Дробовики -->
+	<append xpath="//item[@name='gunShotgunT0PipeShotgun']">
+		<property name="ItemWeight" value="4.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="4.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunShotgunT1DoubleBarrel']">
+		<property name="ItemWeight" value="3.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="3.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunShotgunT2PumpShotgun']">
+		<property name="ItemWeight" value="4.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="4.6"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunShotgunT3AutoShotgun']">
+		<property name="ItemWeight" value="3.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="3.6"/>
+		</effect_group>
+	</append>
+	<!-- Винтовки -->
+	<append xpath="//item[@name='gunRifleT0PipeRifle']">
+		<property name="ItemWeight" value="2.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.6"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunRifleT1HuntingRifle']">
+		<property name="ItemWeight" value="4.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="4.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunRifleT2LeverActionRifle']">
+		<property name="ItemWeight" value="4.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="4.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunRifleT3SniperRifle']">
+		<property name="ItemWeight" value="4.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="4.5"/>
+		</effect_group>
+	</append>
+	<!-- Пулемёты -->
+	<append xpath="//item[@name='gunMGT0PipeMachineGun']">
+		<property name="ItemWeight" value="4.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="4.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunMGT1AK47']">
+		<property name="ItemWeight" value="4.7"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="4.7"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunMGT2TacticalAR']">
+		<property name="ItemWeight" value="4.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="4.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunMGT3M60']">
+		<property name="ItemWeight" value="8.9"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="8.9"/>
+		</effect_group>
+	</append>
+	<!-- Гранатомёт -->
+	<append xpath="//item[@name='gunExplosivesT3RocketLauncher']">
+		<property name="ItemWeight" value="12.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="12.3"/>
+		</effect_group>
+	</append>
+	<!-- Луки, арбалеты -->
+	<append xpath="//item[@name='gunBowT0PrimitiveBow']">
+		<property name="ItemWeight" value="0.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunBowT1WoodenBow']">
+		<property name="ItemWeight" value="1.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunBowT3CompoundBow']">
+		<property name="ItemWeight" value="1.7"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.7"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunBowT1IronCrossbow']">
+		<property name="ItemWeight" value="2.4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.4"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunBowT3CompoundCrossbow']">
+		<property name="ItemWeight" value="2.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.1"/>
+		</effect_group>
+	</append>
+	<!-- Робопушки -->
+	<append xpath="//item[@name='gunBotT1JunkSledge']">
+		<property name="ItemWeight" value="3.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="3.6"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunBotT2JunkTurret']">
+		<property name="ItemWeight" value="3.9"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="3.9"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunBotT3JunkDrone']">
+		<property name="ItemWeight" value="2.7"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.7"/>
+		</effect_group>
+	</append>
+	<!-- Боеприпасы -->
+	<append xpath="//item[@name='ammo9mmBulletBall']">
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammo9mmBulletHP']">
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammo9mmBulletAP']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammo44MagnumBulletBall']">
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammo44MagnumBulletHP']">
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammo44MagnumBulletAP']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammo762mmBulletBall']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammo762mmBulletHP']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammo762mmBulletAP']">
+		<property name="ItemWeight" value="0.03"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.03"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoShotgunShell']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoShotgunSlug']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoShotgunBreachingSlug']">
+		<property name="ItemWeight" value="0.03"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.03"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoJunkTurretRegular']">
+		<property name="ItemWeight" value="0.03"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.03"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoJunkTurretShell']">
+		<property name="ItemWeight" value="0.03"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.03"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoJunkTurretAP']">
+		<property name="ItemWeight" value="0.04"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.04"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoRocketHE']">
+		<property name="ItemWeight" value="0.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.6"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoRocketFrag']">
+		<property name="ItemWeight" value="0.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.8"/>
+		</effect_group>
+	</append>
+	<!-- Стрелы, болты -->
+	<append xpath="//item[@name='ammoArrowStone']">
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoArrowIron']">
+		<property name="ItemWeight" value="0.03"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.03"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoArrowSteelAP']">
+		<property name="ItemWeight" value="0.05"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.05"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoArrowFlaming']">
+		<property name="ItemWeight" value="0.04"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.04"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoArrowExploding']">
+		<property name="ItemWeight" value="0.06"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.06"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoCrossbowBoltStone']">
+		<property name="ItemWeight" value="0.05"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.05"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoCrossbowBoltIron']">
+		<property name="ItemWeight" value="0.04"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.04"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoCrossbowBoltSteelAP']">
+		<property name="ItemWeight" value="0.06"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.06"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoCrossbowBoltFlaming']">
+		<property name="ItemWeight" value="0.07"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.07"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoCrossbowBoltExploding']">
+		<property name="ItemWeight" value="0.09"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.09"/>
+		</effect_group>
+	</append>
+	<!-- Метательное -->
+	<append xpath="//item[@name='thrownAmmoPipeBomb']">
+		<property name="ItemWeight" value="1.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='thrownGrenadeContact']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='thrownGrenade']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='thrownTimedCharge']">
+		<property name="ItemWeight" value="2.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='thrownDynamite']">
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='thrownAmmoMolotovCocktail']">
+		<property name="ItemWeight" value="0.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.6"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='ammoDartIron']">
+		<property name="ItemWeight" value="0.03"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.03"/>
+		</effect_group>
+	</append>
+	<!-- Части оружия, инструментов и брони -->
+	<append xpath="//item[@name='partsMaster']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+	</append>
+	<append xpath="//item[@name='gunMGT1AK47Parts']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunHandgunT1PistolParts']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunRifleT1HuntingRifleParts']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunShotgunT1DoubleBarrelParts']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunBowT1WoodenBowParts']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunExplosivesT3RocketLauncherParts']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='gunBotRoboticsParts']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnBatonT2StunBatonParts']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnKnucklesT3SteelKnucklesParts']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnBladeT3MacheteParts']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnSpearT3SteelSpearParts']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnClubT3SteelClubParts']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeWpnSledgeT3SteelSledgehammerParts']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolAllSteelParts']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorParts']">
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='meleeToolAxeT3ChainsawParts']">
+		<property name="ItemWeight" value="2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2"/>
+		</effect_group>
+	</append>
+	<!-- Части транспорта -->
+	<append xpath="//item[@name='vehicleWheels']">
+		<property name="ItemWeight" value="3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='vehicleMinibikeChassis']">
+		<property name="ItemWeight" value="25"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="25"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='vehicleMinibikeHandlebars']">
+		<property name="ItemWeight" value="2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='vehicleMinibikePlaceable']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="33"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="33"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='vehicleBicycleChassis']">
+		<property name="ItemWeight" value="4.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="4.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='vehicleBicycleHandlebars']">
+		<property name="ItemWeight" value="2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='vehicleBicyclePlaceable']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="12.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="12.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='vehicleMotorcycleChassis']">
+		<property name="ItemWeight" value="75"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="75"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='vehicleMotorcycleHandlebars']">
+		<property name="ItemWeight" value="4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="4"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='vehicleMotorcyclePlaceable']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="85"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="85"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='vehicleTruck4x4Chassis']">
+		<property name="ItemWeight" value="60"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="60"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='vehicleTruck4x4Accessories']">
+		<property name="ItemWeight" value="25"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="25"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='vehicleTruck4x4Placeable']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="97"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="97"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='vehicleGyroCopterChassis']">
+		<property name="ItemWeight" value="62"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="62"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='vehicleGyroCopterAccessories']">
+		<property name="ItemWeight" value="38"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="38"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='vehicleGyrocopterPlaceable']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="109"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="109"/>
+		</effect_group>
+	</append>
+	<!-- Броня -->
+	<!-- Примитивная -->
+	<append xpath="//item[@name='armorPrimitiveHelmet']">
+		<property name="ItemWeight" value="1.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorPrimitiveOutfit']">
+		<property name="ItemWeight" value="2.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorPrimitiveGloves']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorPrimitiveBoots']">
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<!-- Лёгкая броня-->
+	<!-- LUMBERJACK -->
+	<append xpath="//item[@name='armorLumberjackHelmet']">
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorLumberjackOutfit']">
+		<property name="ItemWeight" value="3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorLumberjackGloves']">
+		<property name="ItemWeight" value="0.7"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.7"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorLumberjackBoots']">
+		<property name="ItemWeight" value="1.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
+		</effect_group>
+	</append>
+	<!-- PREACHER -->
+	<append xpath="//item[@name='armorPreacherHelmet']">
+		<property name="ItemWeight" value="1.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorPreacherOutfit']">
+		<property name="ItemWeight" value="2.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorPreacherGloves']">
+		<property name="ItemWeight" value="0.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorPreacherBoots']">
+		<property name="ItemWeight" value="1.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.6"/>
+		</effect_group>
+	</append>
+	<!-- ROGUE -->
+	<append xpath="//item[@name='armorRogueHelmet']">
+		<property name="ItemWeight" value="1.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorRogueOutfit']">
+		<property name="ItemWeight" value="2.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorRogueGloves']">
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorRogueBoots']">
+		<property name="ItemWeight" value="1.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.6"/>
+		</effect_group>
+	</append>
+	<!-- ATHLETIC -->
+	<append xpath="//item[@name='armorAthleticHelmet']">
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorAthleticOutfit']">
+		<property name="ItemWeight" value="2.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorAthleticGloves']">
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorAthleticBoots']">
+		<property name="ItemWeight" value="1.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.3"/>
+		</effect_group>
+	</append>
+	<!-- ENFORCER -->
+	<append xpath="//item[@name='armorAthleticHelmet']">
+		<property name="ItemWeight" value="0.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorEnforcerOutfit']">
+		<property name="ItemWeight" value="2.4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.4"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorEnforcerGloves']">
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorEnforcerBoots']">
+		<property name="ItemWeight" value="1.7"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.7"/>
+		</effect_group>
+	</append>
+	<!-- Средняя броня -->
+	<!-- FARMER -->
+	<append xpath="//item[@name='armorFarmerHelmet']">
+		<property name="ItemWeight" value="1.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorFarmerOutfit']">
+		<property name="ItemWeight" value="2.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorFarmerGloves']">
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorFarmerBoots']">
+		<property name="ItemWeight" value="1.7"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.7"/>
+		</effect_group>
+	</append>
+	<!-- BIKER -->
+	<append xpath="//item[@name='armorBikerHelmet']">
+		<property name="ItemWeight" value="1.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorBikerOutfit']">
+		<property name="ItemWeight" value="3.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="3.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorBikerGloves']">
+		<property name="ItemWeight" value="1.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorBikerBoots']">
+		<property name="ItemWeight" value="1.9"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.9"/>
+		</effect_group>
+	</append>
+	<!-- SCAVENGER -->
+	<append xpath="//item[@name='armorScavengerHelmet']">
+		<property name="ItemWeight" value="1.4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.4"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorScavengerOutfit']">
+		<property name="ItemWeight" value="2.7"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.7"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorScavengerGloves']">
+		<property name="ItemWeight" value="1.4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.4"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorScavengerBoots']">
+		<property name="ItemWeight" value="1.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
+		</effect_group>
+	</append>
+	<!-- RANGER -->
+	<append xpath="//item[@name='armorRangerHelmet']">
+		<property name="ItemWeight" value="1.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorRangerOutfit']">
+		<property name="ItemWeight" value="2.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorRangerGloves']">
+		<property name="ItemWeight" value="1.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorRangerBoots']">
+		<property name="ItemWeight" value="1.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.8"/>
+		</effect_group>
+	</append>
+	<!-- COMMANDO -->
+	<append xpath="//item[@name='armorCommandoHelmet']">
+		<property name="ItemWeight" value="1.4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.4"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorCommandoOutfit']">
+		<property name="ItemWeight" value="2.9"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.9"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorCommandoGloves']">
+		<property name="ItemWeight" value="1.4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.4"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorCommandoBoots']">
+		<property name="ItemWeight" value="2.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.1"/>
+		</effect_group>
+	</append>
+	<!-- ASSASSIN -->
+	<append xpath="//item[@name='armorAssassinHelmet']">
+		<property name="ItemWeight" value="1.4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.4"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorAssassinOutfit']">
+		<property name="ItemWeight" value="2.4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.4"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorAssassinGloves']">
+		<property name="ItemWeight" value="0.9"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.9"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorAssassinBoots']">
+		<property name="ItemWeight" value="1.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.6"/>
+		</effect_group>
+	</append>
+	<!-- Тяжёлая броня -->
+	<!-- MINER -->
+	<append xpath="//item[@name='armorMinerHelmet']">
+		<property name="ItemWeight" value="1.9"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.9"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorMinerOutfit']">
+		<property name="ItemWeight" value="3.9"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="3.9"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorMinerGloves']">
+		<property name="ItemWeight" value="1.7"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.7"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorMinerBoots']">
+		<property name="ItemWeight" value="2.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.3"/>
+		</effect_group>
+	</append>
+	<!-- NOMAD -->
+	<append xpath="//item[@name='armorNomadHelmet']">
+		<property name="ItemWeight" value="1.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorNomadOutfit']">
+		<property name="ItemWeight" value="3.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="3.6"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorNomadGloves']">
+		<property name="ItemWeight" value="1.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorNomadBoots']">
+		<property name="ItemWeight" value="2.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.3"/>
+		</effect_group>
+	</append>
+	<!-- NERD -->
+	<append xpath="//item[@name='armorNerdHelmet']">
+		<property name="ItemWeight" value="2.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorNerdOutfit']">
+		<property name="ItemWeight" value="3.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="3.8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorNerdGloves']">
+		<property name="ItemWeight" value="1.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorNerdBoots']">
+		<property name="ItemWeight" value="2.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.6"/>
+		</effect_group>
+	</append>
+	<!-- RAIDER -->
+	<append xpath="//item[@name='armorRaiderHelmet']">
+		<property name="ItemWeight" value="2.4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.4"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorRaiderOutfit']">
+		<property name="ItemWeight" value="4.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="4.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorRaiderGloves']">
+		<property name="ItemWeight" value="2.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='armorRaiderBoots']">
+		<property name="ItemWeight" value="3.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="3.2"/>
+		</effect_group>
+	</append>
+	<!-- Медицинские предметы -->
+	<append xpath="//item[@name='medicalAloeCream']">
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='medicalBandage']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='medicalFirstAidBandage']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='medicalFirstAidKit']">
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='medicalSplint']">
+		<property name="ItemWeight" value="0.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='medicalPlasterCast']">
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='medicalBloodBag']">
+		<property name="ItemWeight" value="0.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugVitamins']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugPainkillers']">
+		<property name="ItemWeight" value="0.04"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.04"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugHerbalAntibiotics']">
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugAntibiotics']">
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugSteroids']">
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugRecog']">
+		<property name="ItemWeight" value="0.03"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.03"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugFortBites']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugAtomJunkies']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugCovertCats']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugEyeKandy']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugHackers']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugHealthBar']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugJailBreakers']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugNerdTats']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugOhShitzDrops']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugRockBusters']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugSkullCrushers']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drugSugarButts']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<!-- Еда -->
+	<append xpath="//item[@name='foodHoney']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCanBeef']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCanChicken']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCanLamb']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCanCatfood']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCanDogfood']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCanChili']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCanTuna']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCanSham']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCanPasta']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCanSalmon']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCanMiso']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCanPeas']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCanPears']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCanSoup']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCanStock']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCornOnTheCob']">
+		<property name="ItemWeight" value="0.08"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.08"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCornBread']">
+		<property name="ItemWeight" value="0.08"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.08"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodShamSandwich']">
+		<property name="ItemWeight" value="0.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCharredMeat']">
+		<property name="ItemWeight" value="0.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodGrilledMeat']">
+		<property name="ItemWeight" value="0.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodBoiledMeat']">
+		<property name="ItemWeight" value="0.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodMeatStew']">
+		<property name="ItemWeight" value="0.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodSteakAndPotato']">
+		<property name="ItemWeight" value="1.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodShamChowder']">
+		<property name="ItemWeight" value="0.6"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.6"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodHoboStew']">
+		<property name="ItemWeight" value="1.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodFishTacos']">
+		<property name="ItemWeight" value="0.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodChiliDog']">
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodBakedPotato']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodBlueberryPie']">
+		<property name="ItemWeight" value="1.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodPumpkinPie']">
+		<property name="ItemWeight" value="0.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodPumpkinCheesecake']">
+		<property name="ItemWeight" value="0.7"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.7"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodPumpkinBread']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodGumboStew']">
+		<property name="ItemWeight" value="1.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodShepardsPie']">
+		<property name="ItemWeight" value="1.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodSpaghetti']">
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodTunaFishGravyToast']">
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodEggBoiled']">
+		<property name="ItemWeight" value="0.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodBaconAndEggs']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodVegetableStew']">
+		<property name="ItemWeight" value="1.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodRawMeat']">
+		<property name="ItemWeight" value="0.9"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.9"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodRottingFlesh']">
+		<property name="ItemWeight" value="0.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodEgg']">
+		<property name="ItemWeight" value="0.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCornMeal']">
+		<property name="ItemWeight" value="0.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCropBlueberries']">
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCropCorn']">
+		<property name="ItemWeight" value="0.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCropGraceCorn']">
+		<property name="ItemWeight" value="0.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="10.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCropPotato']">
+		<property name="ItemWeight" value="0.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCropMushrooms']">
+		<property name="ItemWeight" value="0.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCropYuccaFruit']">
+		<property name="ItemWeight" value="0.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCropPumpkin']">
+		<property name="ItemWeight" value="1.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCropYuccaFruit']">
+		<property name="ItemWeight" value="0.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drinkJarRiverWater']">
+		<property name="ItemWeight" value="0.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drinkJarBoiledWater']">
+		<property name="ItemWeight" value="0.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drinkJarBoiledWater']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drinkJarYuccaJuice']">
+		<property name="ItemWeight" value="0.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drinkJarGoldenRodTea']">
+		<property name="ItemWeight" value="0.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drinkJarRedTea']">
+		<property name="ItemWeight" value="0.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drinkYuccaJuiceSmoothie']">
+		<property name="ItemWeight" value="0.3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drinkCanMegaCrush']">
+		<property name="ItemWeight" value="0.4"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.4"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drinkJarCoffee']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drinkJarBlackStrapCoffee']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drinkJarBeer']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drinkJarGrandpasMoonshine']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drinkJarGrandpasAwesomeSauce']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drinkJarGrandpasLearningElixir']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='drinkJarGrandpasForgettingElixir']">
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bucketEmpty']">
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bucketRiverWater']">
+		<property name="ItemWeight" value="5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="5"/>
+		</effect_group>
+	</append>
+	<!-- Схемы -->
+	<append xpath="//item[@name='schematicMaster']">
+		<property name="ItemWeight" value="0.5"/>
+		<property name="DisplayType" value="TSItemDisplay"/>
+	</append>
+	<!-- Схемы модов -->
+	<append xpath="//item[@name='modGunBarrelExtenderSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunMuzzleBrakeSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunSoundSuppressorSilencerSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunLaserSightSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunFlashlightSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunScopeSmallSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunScopeMediumSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunScopeLargeSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunReflexSightSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunTriggerGroupSemiSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunTriggerGroupBurst3Schematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunTriggerGroupAutomaticSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunBipodSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunForegripSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunRetractingStockSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunDuckbillSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunChokeSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunMagazineExtenderSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modShotgunSawedOffBarrelSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunCrippleEmSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunBowPolymerStringSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunBowArrowRestSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunMeleeTheHunterSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modGunMeleeRadRemoverSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modMeleeTemperedBladeSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modMeleeSerratedBladeSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modMeleeWeightedHeadSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modMeleeStructuralBraceSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modMeleeErgonomicGripSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modMeleeFortifyingGripSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modMeleeClubBarbedWireSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modMeleeClubMetalSpikesSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modMeleeGraveDiggerSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modMeleeBunkerBusterSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modMeleeIronBreakerSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modMeleeWoodSplitterSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modMeleeClubBurningShaftSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modArmorInsulatedLinerSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modArmorCoolingMeshSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modArmorImprovedFittingsSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modArmorCustomizedFittingsSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modArmorPlatingBasicSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modArmorPlatingReinforcedSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modArmorStoragePocketSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modArmorDoubleStoragePocketSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modArmorTripleStoragePocketSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modArmorQuadStoragePocketSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modArmorMuffledConnectorsSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modArmorAdvancedMuffledConnectorsSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modArmorImpactBracingSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modArmorBandolierSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modArmorWaterPurifierSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modArmorHelmetLightSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modFuelTankSmallSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modFuelTankLargeSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modRoboticDroneCargoModSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modRoboticDroneMedicModSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modRoboticDroneHeadlampModSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modRoboticDroneArmorPlatingModSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modRoboticDroneMoraleBoosterModSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modVehicleFuelSaverSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modVehicleOffRoadHeadlightsSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modVehicleSuperChargerSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modVehicleExpandedSeatSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modVehicleReserveFuelTankSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modVehiclePlowSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='modVehicleArmorSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<!-- Рецепты -->
+	<append xpath="//item[@name='schematicNoQualityRecipeMaster']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='foodCanShamSchematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='plantedGraceCorn1Schematic']">
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<!-- Книги навыков -->
+	<append xpath="//item[@name='skillBookMaster']">
+		<property name="ItemWeight" value="1"/>
+	</append>
+	<append xpath="//item[@name='blankNoteMaster']">
+		<property name="ItemWeight" value="0.01"/>
+	</append>
+	<append xpath="//item[@name='noteDuke01']">
+		<property name="ItemWeight" value="0.01"/>
+	</append>
+	<append xpath="//item[@name='questMaster']">
+		<property name="ItemWeight" value="1"/>
+	</append>
+	<!-- Ресурсы -->
+	<!-- Камень -->
+	<append xpath="//item[@name='resourceRockSmall']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<!-- Бумага -->
+	<append xpath="//item[@name='resourcePaper']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<!-- Снежок -->
+	<append xpath="//item[@name='resourceSnowBall']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.04"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.04"/>
+		</effect_group>
+	</append>
+	<!-- Кислота -->
+	<append xpath="//item[@name='resourceAcid']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
+		</effect_group>
+	</append>
+	<!-- Растительные волокна -->
+	<append xpath="//item[@name='resourceYuccaFibers']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<!-- Песок -->
+	<append xpath="//item[@name='resourceCrushedSand']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<!-- Осколки стекла -->
+	<append xpath="//item[@name='resourceBrokenGlass']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<!-- Железный лом -->
+	<append xpath="//item[@name='resourceScrapIron']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<!-- Слитки железа -->
+	<append xpath="//item[@name='resourceForgedIron']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.2"/>
+		</effect_group>
+	</append>
+	<!-- Трубы -->
+	<append xpath="//item[@name='resourceMetalPipe']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.05"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.05"/>
+		</effect_group>
+	</append>
+	<!-- Слитки стали -->
+	<append xpath="//item[@name='resourceForgedSteel']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.25"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.25"/>
+		</effect_group>
+	</append>
+	<!-- Синтетический мусор -->
+	<append xpath="//item[@name='resourceScrapPolymers']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<!-- Линза -->
+	<append xpath="//item[@name='resourceScopeLens']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.04"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.04"/>
+		</effect_group>
+	</append>
+	<!-- Швейный набор -->
+	<append xpath="//item[@name='resourceSewingKit']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<!-- Сланец -->
+	<append xpath="//item[@name='resourceOilShale']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.06"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.06"/>
+		</effect_group>
+	</append>
+	<!-- Кости -->
+	<append xpath="//item[@name='resourceBone']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.03"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.03"/>
+		</effect_group>
+	</append>
+	<!-- Дерево -->
+	<append xpath="//item[@name='resourceWood']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<!-- Кожа -->
+	<append xpath="//item[@name='resourceLeather']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.05"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.05"/>
+		</effect_group>
+	</append>
+	<!-- Животный жир -->
+	<append xpath="//item[@name='resourceAnimalFat']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<!-- Тестостерон -->
+	<append xpath="//item[@name='resourceTestosteroneExtract']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceCropHopsFlower']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceCropAloeLeaf']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceCropChrysanthemumPlant']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceCropCottonPlant']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceCropGoldenrodPlant']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceCropCoffeeBeans']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceScrapBrass']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceScrapLead']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceClayLump']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceCobblestones']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.03"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.03"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceCement']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.04"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.04"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceConcreteMix']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.06"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.06"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceCloth']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceElectricParts']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceHeadlight']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceMechanicalParts']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceSpring']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.05"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.05"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceGlue']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceDuctTape']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceFeather']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceArrowHeadIron']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.05"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.05"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceArrowHeadSteelAP']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.07"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.07"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceCoal']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourcePotassiumNitratePowder']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.02"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceGunPowder']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceBuckshot']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceBulletCasing']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceBulletTip']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceNail']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceRocketTip']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceRocketCasing']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceWaterFilter']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceRepairKit']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceArmorCraftingKit']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="3"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="3"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceLegendaryParts']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourcePaint']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceDoorKnob']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceCandleStick']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceRadiator']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="3.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="3.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceFishingWeight']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceTrophy1']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceTrophy2']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceSilverNugget']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceGoldNugget']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.25"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.25"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceRawDiamond']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.15"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.15"/>
+		</effect_group>
+	</append>
+	<!--Other_Items-->
+	<append xpath="//item[@name='candle']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.2"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='smallEngine']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="8"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="8"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='carBattery']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="7"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="7"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='casinoCoin']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='oldCash']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.01"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.01"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='solarCell']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="2.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='toolCookingGrill']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='toolCookingPot']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="2.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="2.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='toolBeaker']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.7"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.7"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='toolBellows']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='toolAnvil']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="7.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="7.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='toolForgeCrucible']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='toolDewGatherer']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='toolDewTarp']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='toolDewFilter']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1.5"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1.5"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='resourceLockPick']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="0.05"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="0.05"/>
+		</effect_group>
+	</append>
+	<!--BOOKS-->
+	<append xpath="//item[@name='bookFiremansAlmanacHeat']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookFiremansAlmanacAxes']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookFiremansAlmanacSpeed']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookFiremansAlmanacMolotov']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookFiremansAlmanacPrevention']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookFiremansAlmanacHarvest']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookFiremansAlmanacEquipment']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookNightStalkerStealthDamage']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookNightStalkerSilentNight']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookNightStalkerBlades']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookNightStalkerThiefAdrenaline']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookNightStalkerArchery']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookNightStalkerTwilightThief']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookNightStalkerSlumberParty']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookLuckyLooterDukes']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookLuckyLooterAmmunition']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookLuckyLooterBrass']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookLuckyLooterLead']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookLuckyLooterBooks']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookLuckyLooterFood']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookLuckyLooterMedical']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookEnforcerDamage']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookEnforcerApparel']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookEnforcerPunks']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookEnforcerIntimidation']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookEnforcerAPAmmo']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookEnforcerHPAmmo']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookEnforcerCriminalPursuit']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookBatterUpBigHits']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookBatterUpStealingBases']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookBatterUpSlowPitch']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookBatterUpKnockdown']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookBatterUpMaintenance']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookBatterUpFoulBalls']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookBatterUpMetalChain']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookGreatHeistSafes']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookGreatHeistGems']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookGreatHeistGoldRush']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookGreatHeistClaimed']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookGreatHeistAdrenalineFall']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookGreatHeistSprintSneak']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookGreatHeistMotionDetection']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookWasteTreasuresHoney']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookWasteTreasuresCoffins']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookWasteTreasuresAcid']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookWasteTreasuresWater']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookWasteTreasuresDoors']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookWasteTreasuresCloth']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookWasteTreasuresSinks']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookHuntingJournalBears']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookHuntingJournalWolves']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookHuntingJournalCoyotes']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookHuntingJournalMountainLions']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookHuntingJournalDeer']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookHuntingJournalVultures']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookHuntingJournalSelfDefense']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookArtOfMiningLuckyStrike']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookArtOfMiningDiamondTools']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookArtOfMiningCoffee']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookArtOfMiningBlackStrap']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookArtOfMiningPallets']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookArtOfMiningAvalanche']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookArtOfMiningDamage']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookRangersArrowRecovery']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookRangersExplodingBolts']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookRangersCripplingShot']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookRangersAPAmmo']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookRangersFlamingArrows']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookRangersForestGuide']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookRangersKnockdown']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookPistolPeteTakeAim']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookPistolPeteSwissKnees']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookPistolPeteSteadyHand']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookPistolPeteMaintenance']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookPistolPeteHPAmmo']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookPistolPeteAPAmmo']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookPistolPeteDamage']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookShotgunMessiahDamage']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookShotgunMessiahBreachingSlugs']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookShotgunMessiahLimbShot']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookShotgunMessiahSlugs']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookShotgunMessiahMaintenance']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookShotgunMessiahMagazine']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookShotgunMessiahPartyStarter']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookSniperDamage']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookSniperCripplingShot']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookSniperHeadShot']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookSniperReload']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookSniperControlledBreathing']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookSniperAPAmmo']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookSniperHPAmmo']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookAutoWeaponsDamage']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookAutoWeaponsUncontrolledBurst']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookAutoWeaponsMaintenance']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookAutoWeaponsDrumMag']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookAutoWeaponsRecoil']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookAutoWeaponsRagdoll']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookAutoWeaponsMachineGuns']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookUrbanCombatLanding']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookUrbanCombatCigar']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookUrbanCombatSneaking']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookUrbanCombatJumping']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookUrbanCombatLandMines']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookUrbanCombatAdrenalineRush']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookUrbanCombatRoomClearing']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookTechJunkie1Damage']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookTechJunkie2Maintenance']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookTechJunkie3APAmmo']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookTechJunkie4Shells']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookTechJunkie5Repulsor']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookTechJunkie6BatonCharge']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookTechJunkie7Hydraulics']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookBarBrawling1BasicMoves']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookBarBrawling2DropABomb']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookBarBrawling3KillerInstinct']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookBarBrawling4FinishingMoves']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookBarBrawling5AdrenalineHealing']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookBarBrawling6RageMode']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookBarBrawling7BoozedUp']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookSpearHunter1Damage']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookSpearHunter2Maintenance']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookSpearHunter3Bleed']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookSpearHunter4KillMove']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookSpearHunter5RapidStrike']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookSpearHunter6PenetratingShaft']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<append xpath="//item[@name='bookSpearHunter7QuickStrike']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+		<property name="ItemWeight" value="1"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value="1"/>
+		</effect_group>
+	</append>
+	<!--ODCL ADD-->
+	<append xpath="/items">
+		<!-- Схемы рюкзаков -->
+		<!-- odcl_LeatherBackpack + 30 -->
+		<item name="odcl_LeatherBackpackSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="schemBackpackLeather"/>
+			<property name="DescriptionKey" value="schem_LeatherBackpackSchematicDesc"/>
+			<property name="Unlocks" value="odcl_LeatherBackpack"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="930"/>
+			<property name="Group" value="SchematicsOnly"/>
+			<property name="DisplayType" value="modCarryWeight"/>
+			<property name="ItemWeight" value=".4"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="odcl_LeatherBackpack" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				<display_value name="dCarryCapacity" value="30"/>
+				<display_value name="TSItemWeight" value="0.4"/>
+			</effect_group>
+		</item>
+		<!-- odcl_Backpack + 45 -->
+		<item name="odcl_BackpackSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="schemBackpack"/>
+			<property name="DescriptionKey" value="schem_BackpackSchematicDesc"/>
+			<property name="Unlocks" value="odcl_Backpack"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="930"/>
+			<property name="Group" value="SchematicsOnly"/>
+			<property name="DisplayType" value="modCarryWeight"/>
+			<property name="ItemWeight" value=".4"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="odcl_Backpack" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				<display_value name="dCarryCapacity" value="45"/>
+				<display_value name="TSItemWeight" value="0.4"/>
+			</effect_group>
+		</item>
+		<!-- odcl_AxisBackpack + 60 -->
+		<item name="odcl_AxisBackpackSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="schemBackpackAxis"/>
+			<property name="DescriptionKey" value="schem_AxisBackpackSchematicDesc"/>
+			<property name="Unlocks" value="odcl_AxisBackpack"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="930"/>
+			<property name="Group" value="SchematicsOnly"/>
+			<property name="DisplayType" value="modCarryWeight"/>
+			<property name="ItemWeight" value=".4"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="odcl_AxisBackpack" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				<display_value name="dCarryCapacity" value="60"/>
+				<display_value name="TSItemWeight" value="0.4"/>
+			</effect_group>
+		</item>
+		<!-- odcl_SurvivalBackpack + 75 -->
+		<item name="odcl_SurvivalBackpackSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="schemBackpackSurvival"/>
+			<property name="DescriptionKey" value="schem_SurvivalBackpackSchematicDesc"/>
+			<property name="Unlocks" value="odcl_SurvivalBackpack"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="930"/>
+			<property name="Group" value="SchematicsOnly"/>
+			<property name="DisplayType" value="modCarryWeight"/>
+			<property name="ItemWeight" value=".4"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="odcl_SurvivalBackpack" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				<display_value name="dCarryCapacity" value="75"/>
+				<display_value name="TSItemWeight" value="0.4"/>
+			</effect_group>
+		</item>
+		<!-- odcl_GuitarBackpack + 90 -->
+		<item name="odcl_GuitarBackpackSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="schemBackpackGuitar"/>
+			<property name="DescriptionKey" value="schem_GuitarBackpackSchematicDesc"/>
+			<property name="Unlocks" value="odcl_GuitarBackpack"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="930"/>
+			<property name="Group" value="SchematicsOnly"/>
+			<property name="DisplayType" value="modCarryWeight"/>
+			<property name="ItemWeight" value=".4"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="odcl_GuitarBackpack" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				<display_value name="dCarryCapacity" value="90"/>
+				<display_value name="TSItemWeight" value="0.4"/>
+			</effect_group>
+		</item>
+		<!-- odcl_MilitaryBackpack + 105 -->
+		<item name="odcl_MilitaryBackpackSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="schemBackpackMilitary"/>
+			<property name="DescriptionKey" value="schem_MilitaryBackpackSchematicDesc"/>
+			<property name="Unlocks" value="odcl_MilitaryBackpack"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="930"/>
+			<property name="Group" value="SchematicsOnly"/>
+			<property name="DisplayType" value="modCarryWeight"/>
+			<property name="ItemWeight" value=".4"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="odcl_MilitaryBackpack" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				<display_value name="dCarryCapacity" value="105"/>
+				<display_value name="TSItemWeight" value="0.4"/>
+			</effect_group>
+		</item>
+		<!-- odcl_BigBackpack + 120 -->
+		<item name="odcl_BigBackpackSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="schemBackpackBig"/>
+			<property name="DescriptionKey" value="schem_BigBackpackSchematicDesc"/>
+			<property name="Unlocks" value="odcl_BigBackpack"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="930"/>
+			<property name="Group" value="SchematicsOnly"/>
+			<property name="DisplayType" value="modCarryWeight"/>
+			<property name="ItemWeight" value=".4"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="odcl_BigBackpack" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				<display_value name="dCarryCapacity" value="120"/>
+				<display_value name="TSItemWeight" value="0.4"/>
+			</effect_group>
+		</item>
+	</append>
+</ODCL>

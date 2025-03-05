@@ -1,0 +1,846 @@
+<ODCL>
+	<append xpath="/item_modifiers/item_modifier[@name='modGeneralMaster']">
+		<property name="DisplayType" value="TSItemDisplay"/>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunMuzzleBrake']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupSemi']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupBurst3']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupAutomatic']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunBipod']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunForegrip']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunRetractingStock']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modShotgunSawedOffBarrel']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunDuckbill']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunChoke']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtender']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunDrumMagazineExtender']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunShotgunTubeExtenderMagazine']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunCrippleEm']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunBowPolymerString']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunBowArrowRest']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunMeleeTheHunter']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunMeleeRadRemover']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeTemperedBlade']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeSerratedBlade']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeStructuralBrace']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeErgonomicGrip']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeFortifyingGrip']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBarbedWire']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeClubMetalSpikes']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeClubMetalChain']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeFiremansAxeMod']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeGraveDigger']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeBunkerBuster']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeIronBreaker']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeWoodSplitter']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeDiamondTip']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeStunBatonRepulsor']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modFuelTankSmall']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modFuelTankLarge']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorBandolier']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modRadiationReady']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLiner']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorCoolingMesh']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorImprovedFittings']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorCustomizedFittings']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorPlatingBasic']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorPlatingReinforced']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorStoragePocket']">
+		<property name="ItemWeight" value=".2"/>
+		<property name="DisplayType" value="modCarryWeight"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="odcl_BuffCarryWeigthStoragePocket01"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="odcl_BuffCarryWeigthStoragePocket01"/>
+			<display_value name="TSItemCarryWeight" value="5"/>
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorDoubleStoragePocket']">
+		<property name="ItemWeight" value=".2"/>
+		<property name="DisplayType" value="modCarryWeight"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="odcl_BuffCarryWeigthStoragePocket02"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="odcl_BuffCarryWeigthStoragePocket02"/>
+			<display_value name="TSItemCarryWeight" value="10"/>
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorTripleStoragePocket']">
+		<property name="ItemWeight" value=".3"/>
+		<property name="DisplayType" value="modCarryWeight"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="odcl_BuffCarryWeigthStoragePocket03"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="odcl_BuffCarryWeigthStoragePocket03"/>
+			<display_value name="TSItemCarryWeight" value="15"/>
+			<display_value name="TSItemWeight" value=".3"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorQuadStoragePocket']">
+		<property name="ItemWeight" value=".3"/>
+		<property name="DisplayType" value="modCarryWeight"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="odcl_BuffCarryWeigthStoragePocket04"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="odcl_BuffCarryWeigthStoragePocket04"/>
+			<display_value name="TSItemCarryWeight" value="20"/>
+			<display_value name="TSItemWeight" value=".3"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorMuffledConnectors']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorAdvancedMuffledConnectors']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorImpactBracing']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorStealthBoots']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorWaterPurifier']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorCigar']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorPerception']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorStrength']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorFortitude']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorAgility']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorIntellect']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorTreasureHunter']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modDyeWhite']">
+		<property name="ItemWeight" value=".02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".02"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modDyeBrown']">
+		<property name="ItemWeight" value=".02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".02"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modDyeRed']">
+		<property name="ItemWeight" value=".02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".02"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modDyeOrange']">
+		<property name="ItemWeight" value=".02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".02"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modDyeYellow']">
+		<property name="ItemWeight" value=".02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".02"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modDyeGreen']">
+		<property name="ItemWeight" value=".02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".02"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modDyeBlue']">
+		<property name="ItemWeight" value=".02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".02"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modDyePurple']">
+		<property name="ItemWeight" value=".02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".02"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modDyeBlack']">
+		<property name="ItemWeight" value=".02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".02"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modDyePink']">
+		<property name="ItemWeight" value=".02"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".02"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modVehicleMega']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modVehicleFuelSaver']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modVehicleOffRoadHeadlights']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modVehicleSuperCharger']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modVehicleExpandedSeat']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modVehicleReserveFuelTank']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modVehiclePlow']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modVehicleArmor']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modRoboticDroneArmorPlatingMod']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modRoboticDroneCargoMod']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modRoboticDroneMoraleBoosterMod']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modRoboticDroneHeadlampMod']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modRoboticDroneMedicMod']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modRoboticDroneWeaponMod']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modRoboticDroneStunWeaponMod']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunButtkick3000']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunButtkick4000']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeGunToolDecapitizer']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorJumpJets']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunBowAdminArcheryReloadRecovery']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorAdminToughGuyShirt']">
+		<property name="ItemWeight" value=".2"/>
+		<effect_group tiered="false">
+			<display_value name="TSItemWeight" value=".2"/>
+		</effect_group>
+	</append>
+	<append xpath="/item_modifiers">
+		<!-- ***BACKPACKS -->
+		<!-- odcl_LeatherBackpack + 30 -->
+		<item_modifier name="odcl_LeatherBackpack" installable_tags="armorChest" modifier_tags="carryweight" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="odcl_LeatherBackpackSchematic"/>
+			<property name="CustomIcon" value="modBackpackLeather"/>
+			<property name="DescriptionKey" value="odcl_LeatherBackpackDesc"/>
+			<property name="Tags" value="odcl_Backpacks,clothing,backPackMod"/>
+			<property name="DisplayType" value="modCarryWeight"/>
+			<property name="Material" value="Mleather"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="HoldType" value="34"/>
+			<property name="Meshfile" value="#@modfolder:Resources/ODCL_Backpacks.unity3d?HT_FPV_LeatherBackpackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/ODCL_Backpacks.unity3d?Dropped_LeatherBackpackPrefab.prefab"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="ItemWeight" value="0"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="odcl_BuffCarryWeigthLeatherBackpack"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="odcl_BuffCarryWeigthLeatherBackpack"/>
+				<display_value name="TSItemCarryWeight" value="30"/>
+				<display_value name="TSItemWeight" value="0"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="ItemHasTags" tags="odclShowBackpack"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddPartTPV" part="Backpack" prefab="#@modfolder:Resources/ODCL_Backpacks.unity3d?TPV_LeatherBackpackPrefab.prefab" parentTransform="Spine2" localPos="-0,0.1,-0.17" localRot="0,0,0"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Backpack"/>
+			</effect_group>
+		</item_modifier>
+		<!-- odcl_Backpack + 45 -->
+		<item_modifier name="odcl_Backpack" installable_tags="armorChest" modifier_tags="carryweight" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="odcl_BackpackSchematic"/>
+			<property name="CustomIcon" value="modBackpack"/>
+			<property name="DescriptionKey" value="odcl_BackpackDesc"/>
+			<property name="Tags" value="odcl_Backpacks,clothing,backPackMod"/>
+			<property name="DisplayType" value="modCarryWeight"/>
+			<property name="Material" value="Mleather"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="HoldType" value="34"/>
+			<property name="Meshfile" value="#@modfolder:Resources/ODCL_Backpacks.unity3d?HT_FPV_BackpackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/ODCL_Backpacks.unity3d?Dropped_BackpackPrefab.prefab"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="ItemWeight" value="0"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="odcl_BuffCarryWeigthBackpack"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="odcl_BuffCarryWeigthBackpack"/>
+				<display_value name="TSItemCarryWeight" value="45"/>
+				<display_value name="TSItemWeight" value="0"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="ItemHasTags" tags="odclShowBackpack"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddPartTPV" part="Backpack" prefab="#@modfolder:Resources/ODCL_Backpacks.unity3d?TPV_BackpackPrefab.prefab" parentTransform="Spine2" localPos="-0,0.1,-0.17" localRot="0,0,0"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Backpack"/>
+			</effect_group>
+		</item_modifier>
+		<!-- odcl_AxisBackpack + 60 -->
+		<item_modifier name="odcl_AxisBackpack" installable_tags="armorChest" modifier_tags="carryweight" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="odcl_AxisBackpackSchematic"/>
+			<property name="CustomIcon" value="modBackpackAxis"/>
+			<property name="DescriptionKey" value="odcl_AxisBackpackDesc"/>
+			<property name="Tags" value="odcl_Backpacks,clothing,backPackMod"/>
+			<property name="DisplayType" value="modCarryWeight"/>
+			<property name="Material" value="Mleather"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="HoldType" value="34"/>
+			<property name="Meshfile" value="#@modfolder:Resources/ODCL_Backpacks.unity3d?HT_FPV_AxisBackpackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/ODCL_Backpacks.unity3d?Dropped_AxisBackpackPrefab.prefab"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="ItemWeight" value="0"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="odcl_BuffCarryWeigthAxisBackpack"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="odcl_BuffCarryWeigthAxisBackpack"/>
+				<display_value name="TSItemCarryWeight" value="60"/>
+				<display_value name="TSItemWeight" value="0"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="ItemHasTags" tags="odclShowBackpack"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddPartTPV" part="Backpack" prefab="#@modfolder:Resources/ODCL_Backpacks.unity3d?TPV_AxisBackpackPrefab.prefab" parentTransform="Spine2" localPos="-0,0.1,-0.17" localRot="0,0,0"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Backpack"/>
+			</effect_group>
+		</item_modifier>
+		<!-- odcl_SurvivalBackpack + 75 -->
+		<item_modifier name="odcl_SurvivalBackpack" installable_tags="armorChest" modifier_tags="carryweight" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="odcl_SurvivalBackpackSchematic"/>
+			<property name="CustomIcon" value="modBackpackSurvival"/>
+			<property name="DescriptionKey" value="odcl_SurvivalBackpackDesc"/>
+			<property name="Tags" value="odcl_Backpacks,clothing,backPackMod"/>
+			<property name="DisplayType" value="modCarryWeight"/>
+			<property name="Material" value="Mleather"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="HoldType" value="34"/>
+			<property name="Meshfile" value="#@modfolder:Resources/ODCL_Backpacks.unity3d?HT_FPV_SurvivalBackpackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/ODCL_Backpacks.unity3d?Dropped_SurvivalBackpackPrefab.prefab"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="ItemWeight" value="0"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="odcl_BuffCarryWeigthSurvivalBackpack"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="odcl_BuffCarryWeigthSurvivalBackpack"/>
+				<display_value name="TSItemCarryWeight" value="75"/>
+				<display_value name="TSItemWeight" value="0"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="ItemHasTags" tags="odclShowBackpack"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddPartTPV" part="Backpack" prefab="#@modfolder:Resources/ODCL_Backpacks.unity3d?TPV_SurvivalBackpackPrefab.prefab" parentTransform="Spine2" localPos="-0,0.1,-0.17" localRot="0,0,0"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Backpack"/>
+			</effect_group>
+		</item_modifier>
+		<!-- odcl_GuitarBackpack + 90 -->
+		<item_modifier name="odcl_GuitarBackpack" installable_tags="armorChest" modifier_tags="carryweight" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="odcl_GuitarBackpackSchematic"/>
+			<property name="CustomIcon" value="modBackpackGuitar"/>
+			<property name="DescriptionKey" value="odcl_GuitarBackpackDesc"/>
+			<property name="Tags" value="odcl_Backpacks,clothing,backPackMod"/>
+			<property name="DisplayType" value="modCarryWeight"/>
+			<property name="Material" value="Mleather"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="HoldType" value="34"/>
+			<property name="Meshfile" value="#@modfolder:Resources/ODCL_Backpacks.unity3d?HT_FPV_GuitarBackpackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/ODCL_Backpacks.unity3d?Dropped_GuitarBackpackPrefab.prefab"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="ItemWeight" value="0"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="odcl_BuffCarryWeigthGuitarBackpack"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="odcl_BuffCarryWeigthGuitarBackpack"/>
+				<display_value name="TSItemCarryWeight" value="90"/>
+				<display_value name="TSItemWeight" value="0"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="ItemHasTags" tags="odclShowBackpack"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddPartTPV" part="Backpack" prefab="#@modfolder:Resources/ODCL_Backpacks.unity3d?TPV_GuitarBackpackPrefab.prefab" parentTransform="Spine2" localPos="-0,0.1,-0.17" localRot="0,0,0"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Backpack"/>
+			</effect_group>
+		</item_modifier>
+		<!-- odcl_MilitaryBackpack + 105 -->
+		<item_modifier name="odcl_MilitaryBackpack" installable_tags="armorChest" modifier_tags="carryweight" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="odcl_MilitaryBackpackSchematic"/>
+			<property name="CustomIcon" value="modBackpackMilitary"/>
+			<property name="DescriptionKey" value="odcl_MilitaryBackpackDesc"/>
+			<property name="Tags" value="odcl_Backpacks,clothing,backPackMod"/>
+			<property name="DisplayType" value="modCarryWeight"/>
+			<property name="Material" value="Mleather"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="HoldType" value="34"/>
+			<property name="Meshfile" value="#@modfolder:Resources/ODCL_Backpacks.unity3d?HT_FPV_MilitaryBackpackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/ODCL_Backpacks.unity3d?Dropped_MilitaryBackpackPrefab.prefab"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="ItemWeight" value="0"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="odcl_BuffCarryWeigthMilitaryBackpack"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="odcl_BuffCarryWeigthMilitaryBackpack"/>
+				<display_value name="TSItemCarryWeight" value="105"/>
+				<display_value name="TSItemWeight" value="0"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="ItemHasTags" tags="odclShowBackpack"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddPartTPV" part="Backpack" prefab="#@modfolder:Resources/ODCL_Backpacks.unity3d?TPV_MilitaryBackpackPrefab.prefab" parentTransform="Spine2" localPos="-0,0.1,-0.17" localRot="0,0,0"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Backpack"/>
+			</effect_group>
+		</item_modifier>
+		<!-- odcl_BigBackpack + 120 -->
+		<item_modifier name="odcl_BigBackpack" installable_tags="armorChest" modifier_tags="carryweight" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="odcl_BigBackpackSchematic"/>
+			<property name="CustomIcon" value="modBackpackBig"/>
+			<property name="DescriptionKey" value="odcl_BigBackpackDesc"/>
+			<property name="Tags" value="odcl_Backpacks,clothing,backPackMod"/>
+			<property name="DisplayType" value="modCarryWeight"/>
+			<property name="Material" value="Mleather"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="HoldType" value="34"/>
+			<property name="Meshfile" value="#@modfolder:Resources/ODCL_Backpacks.unity3d?HT_FPV_BigBackpackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/ODCL_Backpacks.unity3d?Dropped_BigBackpackPrefab.prefab"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="ItemWeight" value="0"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="odcl_BuffCarryWeigthBigBackpack"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="odcl_BuffCarryWeigthBigBackpack"/>
+				<display_value name="TSItemCarryWeight" value="120"/>
+				<display_value name="TSItemWeight" value="0"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="ItemHasTags" tags="odclShowBackpack"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddPartTPV" part="Backpack" prefab="#@modfolder:Resources/ODCL_Backpacks.unity3d?TPV_BigBackpackPrefab.prefab" parentTransform="Spine2" localPos="-0,0.1,-0.17" localRot="0,0,0"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Backpack"/>
+			</effect_group>
+		</item_modifier>
+	</append>
+</ODCL>
+

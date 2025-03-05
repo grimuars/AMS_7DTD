@@ -8,15 +8,6 @@ lblContextCraftCount,UI,Item Context Menu,,Count,Кол-во
 
 resourceArmorCraftingKit,items,Item,,Armor Crafting Kit,Комплект создания брони
 
-forgelow,blocks,Block,,Artisan Forge,Кустарная кузница
-forgelowDesc,blocks,Block,,"You repaired this forge by spending a lot of valuable resources. It works poorly but meets basic needs. Durability is reduced. You will get almost nothing if you dismantle it.","Вы починили эту кузницу, потратив множество ценных ресурсов. Она плохо работает, но базовые потребности обеспечивает. Прочность уменьшена. При разборе вы почти ничего не получите."
-workbenchlow,blocks,Block,,Artisan Workbench,Кустарный верстак
-workbenchlowDesc,blocks,Block,,"You repaired this workbench by spending a lot of valuable resources. It works poorly but meets basic needs. Durability is reduced. You will get almost nothing if you dismantle it.","Вы починили этот верстак, потратив множество ценных ресурсов. Он плохо работает, но базовые потребности обеспечивает. Прочность уменьшена. При разборе вы почти ничего не получите."
-cementMixerlow,blocks,Block,,Artisan Cement Mixer,Кустарная бетономешалка
-cementMixerlowDesc,blocks,Block,,"You repaired this mixer by spending a lot of valuable resources. It works poorly but meets basic needs. Durability is reduced. You will get almost nothing if you dismantle it.","Вы починили эту бетономешалку, потратив множество ценных ресурсов. Она плохо работает, но базовые потребности обеспечивает. Прочность уменьшена. При разборе вы почти ничего не получите."
-chemistryStationlow,blocks,Block,,Artisan Chemical Station,Кустарная химстанция
-chemistryStationlowDesc,blocks,Block,,"You repaired this chemistry station by spending a lot of valuable resources. It works poorly but meets basic needs. Durability is reduced. You will get almost nothing if you dismantle it.","Вы починили эту химстанцию, потратив множество ценных ресурсов. Она плохо работает, но базовые потребности обеспечивает. Прочность уменьшена. При разборе вы почти ничего не получите."
-
 foodRawChickenMeat,items,Item,,Raw Chicken Meat,Сырое куриное мясо
 foodRawChickenMeatDesc,items,Item,,"A whole chicken. No chemicals, GMOs, or other marketing scare tactics from the past.","Куриная тушка. Без химии, ГМО и прочих маркетинговых пугалок из прошлого."
 

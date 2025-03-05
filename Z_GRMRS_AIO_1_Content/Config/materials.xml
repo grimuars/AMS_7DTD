@@ -1,0 +1,20 @@
+<configs>
+	<append xpath="/materials">
+		<!-- Материал для стальных ловушек -->
+		<material id="MtrapSpikesSteel">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="iron"/>
+			<property name="Hardness" type="float" value="1"/>
+			<property name="stepsound" value="metal"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="stability_glue" value="2"/>
+			<property name="Mass" type="int" value="20"/>
+			<property name="explosionresistance" value="1.0"/>
+			<property name="MaxDamage" value="600"/>
+			<property name="Experience" value="4"/>
+			<property name="movement_factor" value="0.05"/>
+			<property name="MaxIncomingDamage" value="20"/>
+		</material>
+	</append>
+</configs>

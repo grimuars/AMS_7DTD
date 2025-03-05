@@ -2,4 +2,16 @@
 <materials_aio_2>
 	<!-- Добавляем кислоте собственный материал для корректного разбора -->
 	<set xpath="/materials/material[@id='MresourceAcid']/property[@name='forge_category']/@value">resourceAcid</set>
+	<!-- Изменяем материал для деревянных ловушек -->
+	<set xpath="/materials/material[@id='MtrapSpikesWood']/property[@name='MaxDamage']/@value">200</set>
+	<set xpath="/materials/material[@id='MtrapSpikesWood']/property[@name='stability_glue']/@value">2</set>
+	<append xpath="/materials/material[@id='MtrapSpikesWood']">
+		<property name="StabilitySupport" value="false"/>
+	</append>
+	<!-- Изменяем материал для железных ловушек -->
+	<set xpath="/materials/material[@id='MtrapSpikesIron']/property[@name='MaxDamage']/@value">400</set>
+	<set xpath="/materials/material[@id='MtrapSpikesIron']/property[@name='stability_glue']/@value">2</set>
+	<append xpath="/materials/material[@id='MtrapSpikesIron']">
+		<property name="StabilitySupport" value="false"/>
+	</append>
 </materials_aio_2>

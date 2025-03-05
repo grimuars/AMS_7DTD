@@ -1,0 +1,53 @@
+<ODCL>
+	<append xpath="/recipes">
+		<!--***WORKBENCH***-->
+		<recipe name="odcl_SurvivalBackpack" count="1" craft_time="90" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceCloth" count="80"/>
+			<ingredient name="resourceLeather" count="15"/>
+			<ingredient name="resourceScrapIron" count="8"/>
+			<ingredient name="resourceSewingKit" count="5"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+		</recipe>
+		<recipe name="odcl_LeatherBackpack" count="1" craft_time="90" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceCloth" count="12"/>
+			<ingredient name="resourceLeather" count="30"/>
+			<ingredient name="resourceGlue" count="5"/>
+			<ingredient name="resourceSewingKit" count="4"/>
+		</recipe>
+		<recipe name="odcl_GuitarBackpack" count="1" craft_time="90" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceLeather" count="10"/>
+			<ingredient name="resourceWood" count="35"/>
+			<ingredient name="meleeToolTorch" count="1"/>
+			<ingredient name="resourceNail" count="24"/>
+			<ingredient name="meleeToolRepairT0StoneAxe" count="1"/>
+		</recipe>
+		<recipe name="odcl_Backpack" count="1" craft_time="90" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceCloth" count="95"/>
+			<ingredient name="resourceLeather" count="15"/>
+			<ingredient name="resourceGlue" count="3"/>
+			<ingredient name="resourceSewingKit" count="8"/>
+			<ingredient name="meleeToolShovelT0StoneShovel" count="1"/>
+		</recipe>
+		<recipe name="odcl_AxisBackpack" count="1" craft_time="90" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceCloth" count="70"/>
+			<ingredient name="resourceLeather" count="9"/>
+			<ingredient name="resourceScrapIron" count="4"/>
+			<ingredient name="resourceSewingKit" count="7"/>
+			<ingredient name="resourceDuctTape" count="5"/>
+		</recipe>
+		<recipe name="odcl_BigBackpack" count="1" craft_time="90" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceCloth" count="190"/>
+			<ingredient name="resourceLeather" count="35"/>
+			<ingredient name="resourceScrapIron" count="18"/>
+			<ingredient name="resourceSewingKit" count="12"/>
+			<ingredient name="resourceDuctTape" count="5"/>
+		</recipe>
+		<recipe name="odcl_MilitaryBackpack" count="1" craft_time="90" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceCloth" count="155"/>
+			<ingredient name="resourceLeather" count="23"/>
+			<ingredient name="resourceScrapIron" count="6"/>
+			<ingredient name="resourceSewingKit" count="15"/>
+			<ingredient name="resourceDuctTape" count="4"/>
+		</recipe>
+	</append>
+</ODCL>

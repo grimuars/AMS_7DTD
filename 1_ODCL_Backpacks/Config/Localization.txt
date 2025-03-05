@@ -1,0 +1,51 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,german,english
+#Ui_display
+Weight,UI,Menu,,,"Gewicht","Weight",
+WeightAdded,UI,Menu,,,"Gewichtskapazität","Carrying Capacity",
+xuiCarryStageTitle,UI,Stats,,,"Maximales Gewicht","Maximum weight",
+
+#Buffs
+odcl_BuffOverEncumbered,UI,Stat,,,"Du bist überladen!","You are overloaded!",
+odcl_BuffOverEncumberedDesc,UI,Menu,,,"Du trägst zu viel und das macht Dich langsamer.\n\nEffekte:-[ff0000]{cvar($odcl_UIEncumberedMobility:00)}[-]% Mobilität","You carry too much and that slows you down.\n\nEffects:-[ff0000]{cvar($odcl_UIEncumberedMobility:00)}[-]% Mobility",
+odcl_BuffOverEncumberedToolTip,UI,ToolTip,,,"[ed0000]Du bist überladen![-]","[ed0000]You are overloaded![-]",
+#Blocks
+
+#ItemsModifiers
+odcl_LeatherBackpack,item,modbackpack,,,"Ledertasche","Leather Bag",
+odcl_LeatherBackpackDesc,item,modbackpack,,,"Diese handliche Tasche aus echtem Leder passt auf jeden Rücken.","This handy bag made of genuine leather fits on every back.",
+odcl_Backpack,item,modbackpack,,,"Alter Rucksack","Old Backpack",
+odcl_BackpackDesc,item,modbackpack,,,"Nicht jeder hat das Glück, solch einen schönen Rucksack zu finden. Trotz seiner Alterserscheinung schafft er es, seinen Zweck zu erfüllen.","Not everyone is lucky enough to find such a beautiful backpack. Despite its age, it still manages to serve its purpose.",
+odcl_AxisBackpack,item,modbackpack,,,"Alter Deutscher Rucksack","Old German Backpack",
+odcl_AxisBackpackDesc,item,modbackpack,,,"Wie alt dieser Rucksack wohl sein mag, scheint niemand zu ahnen. Seine Arbeit, alles am richtigen Fleck zu tragen, schafft er allemal.","Nobody seems to know how old this backpack might be. But it certainly does its job of carrying everything in the right place.",
+odcl_SurvivalBackpack,item,modbackpack,,,"Survival Rucksack","Survival Backpack",
+odcl_SurvivalBackpackDesc,item,modbackpack,,,"Dieser großartige Rucksack könnte mal einem Künstler gehört haben. In ihm kann man fast alles verstauen, was man braucht.","This amazing backpack could have belonged to an artist. It can hold almost anything you need.",
+odcl_GuitarBackpack,item,modbackpack,,,"Gitarren Rucksack","Guitar Backpack",
+odcl_GuitarBackpackDesc,item,modbackpack,,,"Da hatte jemand die Idee, einen Rucksack aus einer alten Gitarre zu bauen. Andere wären neidisch, so ein seltenes Stück zu besitzen. Dieser Rucksack ist ein Unikat.","Someone had the idea of building a backpack from an old guitar. Others would be jealous of owning such a rare piece. This backpack is unique.",
+odcl_MilitaryBackpack,item,modbackpack,,,"Camoflage Rucksack","Camouflage Backpack",
+odcl_MilitaryBackpackDesc,item,modbackpack,,,"Ein gewöhnlicher Rucksack im Camoflage-Stil.","A regular camouflage style backpack.",
+odcl_BigBackpack,item,modbackpack,,,"Großer Rucksack","Big Backpack",
+odcl_BigBackpackDesc,item,modbackpack,,,"Ein sehr großer Rucksack. Seinem Aussehen nach könnte er jemanden gehört haben, der beim Militär gewesen ist.","A very big backpack. From the looks of it, it could have belonged to someone who was in the military.",
+
+#ItemsModifiers/Schematics
+schem_BackpackFragDesc,item,schematics,,,"Auf diesem Stück Papier ist ein Teil eines Bauplanes zu erkennen. Der Größe nach zu urteilen besteht die gesamte Blaupause aus 4 Teilen. Ich sollte mich auf die Suche nach den anderen Teilen machen.\nMit einem [7e86ff]Designertisch[-] kann ich alle Fragmente zusammenfügen.","On this piece of paper you can see part of a blueprint. Judging by the size, the entire blueprint consists of 4 parts. I should go and look for the other parts.\nWith a [7e86ff]designer table[-] I can put all the fragments together.",
+schem_SurvivalBackpackSchematicDesc,item,schematics,,,"[7eff84]Diese Blaupause ist vollständig.[-]\n\nDieser Rucksack erweitert das Gesamtgewicht um [7eff84]30kg[-].","[7eff84]This blueprint is complete.[-]\n\nThis backpack increases the carrying capacity by [7eff84]30kg[-].",
+schem_LeatherBackpackSchematicDesc,item,schematics,,,"[7eff84]Diese Blaupause ist vollständig.[-]\n\nDiese Ledertasche erweitert das Gesamtgewicht um [7eff84]15kg[-].","[7eff84]This blueprint is complete.[-]\n\nThis leather bag increases the carrying capacity by [7eff84]15kg[-].",
+schem_BackpackSchematicDesc,item,schematics,,,"[7eff84]Diese Blaupause ist vollständig.[-]\n\nDieser Rucksack erweitert das Gesamtgewicht um [7eff84]20kg[-].","[7eff84]This blueprint is complete.[-]\n\nThis leather bag extends the carrying capacity by [7eff84]20kg[-].",
+schem_GuitarBackpackSchematicDesc,item,schematics,,,"[7eff84]Diese Blaupause ist vollständig.[-]\n\nDieser Rucksack erweitert das Gesamtgewicht um [7eff84]40kg[-].","[7eff84]This blueprint is complete.[-]\n\nThis leather bag extends the carrying capacity by [7eff84]40kg[-].",
+schem_AxisBackpackSchematicDesc,item,schematics,,,"[7eff84]Diese Blaupause ist vollständig.[-]\n\nDieser Rucksack erweitert das Gesamtgewicht um [7eff84]30kg[-].","[7eff84]This blueprint is complete.[-]\n\nThis leather bag extends the carrying capacity by [7eff84]30kg[-].",
+schem_MilitaryBackpackSchematicDesc,item,schematics,,,"[7eff84]Diese Blaupause ist vollständig.[-]\n\nDieser Rucksack erweitert das Gesamtgewicht um [7eff84]60kg[-].","[7eff84]This blueprint is complete.[-]\n\nThis leather bag extends the carrying capacity by [7eff84]60kg[-].",
+schem_BigBackpackSchematicDesc,item,schematics,,,"[7eff84]Diese Blaupause ist vollständig.[-]\n\nDieser Rucksack erweitert das Gesamtgewicht um [7eff84]80kg[-].","[7eff84]This blueprint is complete.[-]\n\nThis leather bag extends the carrying capacity by [7eff84]80kg[-].",
+odcl_LeatherBackpackSchematic,item,schematics,,,"[7e86ff]Blaupause Ledertasche[-]","[7e86ff]Blueprint Leather Bag[-]",
+odcl_BackpackSchematic,item,schematics,,,"[7e86ff]Blaupause Alter Rucksack[-]","[7e86ff]Blueprint Old Backpack[-]",
+odcl_AxisBackpackSchematic,item,schematics,,,"[7e86ff]Blaupause Alter Deutscher Rucksack[-]","[7e86ff]Blueprint Old German Backpack[-]",
+odcl_SurvivalBackpackSchematic,item,schematics,,,"[7e86ff]Blaupause Survival Rucksack[-]","[7e86ff]Blueprint Survival Backpack[-]",
+odcl_GuitarBackpackSchematic,item,schematics,,,"[7e86ff]Blaupause Gitarren Rucksack[-]","[7e86ff]Blueprint Guitar Backpack[-]",
+odcl_MilitaryBackpackSchematic,item,schematics,,,"[7e86ff]Blaupause Camoflage Rucksack[-]","[7e86ff]Blueprint Camouflage Backpack[-]",
+odcl_BigBackpackSchematic,item,schematics,,,"[7e86ff]Blaupause Großer Rucksack[-]","[7e86ff]Blueprint Big Backpack[-]",
+
+#Progression/Perks
+odcl_perkPackMuleRank1LongDesc,progression,perk,,,"Wer hat schon Zeit, das ganze Zeug schön zu ordnen? Deine Tragekapazität erhöht sich um 10 kg.","Who has time to organize all that stuff? Your carrying capacity increases by 10 kg.",
+odcl_perkPackMuleRank2LongDesc,progression,perk,,,"Du weißt, dass es irgendwo da drin ist. Deine Tragekapazität erhöht sich um 10 kg.","You know it's in there somewhere. Your carrying capacity increases by 10 kg.",
+odcl_perkPackMuleRank3LongDesc,progression,perk,,,"Du weißt genau, wo du was findest. Deine Tragekapazität erhöht sich um 10 kg.","You know exactly where to find what. Your carrying capacity increases by 10 kg.",
+odcl_perkPackMuleRank4LongDesc,progression,perk,,,"Inspektion bestanden, Soldat. Deine Tragekapazität erhöht sich um 20 kg.","Inspection passed, soldier. Your carrying capacity increases by 20 kg.",
+odcl_perkPackMuleRank5LongDesc,progression,perk,,,"Jetzt gibst du aber an. Du bist entweder halb Esel oder wirklich, wirklich stark. Deine Tragekapazität erhöht sich um 20 kg.","Now you're showing off. You're either half donkey or really, really strong. Your carrying capacity increases by 20 kg.",

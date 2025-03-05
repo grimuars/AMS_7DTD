@@ -1,0 +1,20 @@
+<ODCL>
+	<append xpath="//lootgroup[@name='groupDumpster']">
+		<item name="odcl_MilitaryBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_BigBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_AxisBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_BackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_GuitarBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_LeatherBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_SurvivalBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupMailbox']">
+		<item name="odcl_MilitaryBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_BigBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_AxisBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_BackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_GuitarBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_LeatherBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_SurvivalBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+	</append>
+</ODCL>
