@@ -46,16 +46,16 @@
 	<!-- 7 Увеличиваем запас плавления в кузнице -->
 	<set xpath="/items/item[@name='unit_iron']/property[@name='Stacknumber']/@value">60000</set>
 	<!-- 8 Увеличиваем параметры турелей -->
-	<set xpath="/items/item[@name='gunBotT1JunkSledge']/effect_group[@name='gunBotT1JunkSledge']/passive_effect[@name='EntityDamage'][@operation='base_set']/@value">30</set>
+	<set xpath="/items/item[@name='gunBotT1JunkSledge']/effect_group[@name='gunBotT1JunkSledge']/passive_effect[@name='EntityDamage'][@operation='base_set']/@value">40</set>
 	<set xpath="/items/item[@name='gunBotT1JunkSledge']/effect_group[@name='gunBotT1JunkSledge']/passive_effect[@name='RoundsPerMinute'][@operation='base_set']/@value">40</set>
 	<set xpath="/items/item[@name='gunBotT2JunkTurret']/effect_group[@name='gunBotT2JunkTurret']/passive_effect[@name='MagazineSize'][@operation='base_set']/@value">200</set>
 	<set xpath="/items/item[@name='gunBotT2JunkTurret']/effect_group[@name='gunBotT2JunkTurret']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.02</set>
 	<set xpath="/items/item[@name='ammoJunkTurretRegular']/effect_group[@name='ammoJunkTurretRegular']/passive_effect[@name='MaxRange'][@operation='base_set']/@value">30</set>
-	<set xpath="/items/item[@name='ammoJunkTurretRegular']/effect_group[@name='ammoJunkTurretRegular']/passive_effect[@name='EntityDamage'][@operation='base_set']/@value">30</set>
+	<set xpath="/items/item[@name='ammoJunkTurretRegular']/effect_group[@name='ammoJunkTurretRegular']/passive_effect[@name='EntityDamage'][@operation='base_set']/@value">35</set>
 	<set xpath="/items/item[@name='ammoJunkTurretShell']/effect_group[@name='ammoJunkTurretShell']/passive_effect[@name='MaxRange'][@operation='base_set']/@value">30</set>
-	<set xpath="/items/item[@name='ammoJunkTurretShell']/effect_group[@name='ammoJunkTurretShell']/passive_effect[@name='EntityDamage'][@operation='base_set']/@value">6</set>
+	<set xpath="/items/item[@name='ammoJunkTurretShell']/effect_group[@name='ammoJunkTurretShell']/passive_effect[@name='EntityDamage'][@operation='base_set']/@value">12</set>
 	<set xpath="/items/item[@name='ammoJunkTurretAP']/effect_group[@name='ammoJunkTurretAP']/passive_effect[@name='MaxRange'][@operation='base_set']/@value">30</set>
-	<set xpath="/items/item[@name='ammoJunkTurretAP']/effect_group[@name='ammoJunkTurretAP']/passive_effect[@name='EntityDamage'][@operation='base_set']/@value">36</set>
+	<set xpath="/items/item[@name='ammoJunkTurretAP']/effect_group[@name='ammoJunkTurretAP']/passive_effect[@name='EntityDamage'][@operation='base_set']/@value">45</set>
 	<!-- 9 Увеличиваем прочность некоторого оружия -->
 	<set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/effect_group[@name='meleeToolPickT2SteelPickaxe']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">1050,3861</set>
 	<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/effect_group[@name='meleeToolShovelT2SteelShovel']//passive_effect[@name='DegradationMax'][@operation='base_set']/@value">900,3300</set>
@@ -1504,4 +1504,6 @@
 	<!-- Отключаем частицы дыма после выстрела -->
 	<remove xpath="/items/item[starts-with (@name, 'gun')]/property[@class='Action0']/property[@name='Particles_muzzle_smoke']"/>
 	<remove xpath="/items/item[starts-with (@name, 'gun')]/property[@class='Action0']/property[@name='Particles_muzzle_smoke_fpv']"/>
+	<!-- Увеличиваем вероятность наложения негативных эффектов при атаке зомби -->
+	<set xpath="/items/item[starts-with (@name, 'meleeHandZombie')]/effect_group[1]/triggered_effect[1]/@weights">.21,.17,.17,.15,.39,.46,.21</set>
 </items_aio_2>

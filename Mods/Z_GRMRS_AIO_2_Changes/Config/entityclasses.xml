@@ -108,7 +108,7 @@
 	</insertAfter>
 	<!-- Изменения в здоровье зомби -->
 	<!-- Базовый шаблон -->
-	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/effect_group[@name='Base Effects']//passive_effect[@operation='perc_add']/@value">-.35,.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/effect_group[@name='Base Effects']//passive_effect[@operation='perc_add']/@value">-.35,.35</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">250</set>
 	<set xpath="/entity_classes/entity_class[@name='zombieTemplateSlimFemale']/effect_group[@name='Base Effects']/passive_effect[@name='HealthMax'][@operation='base_set']/@value">225</set>
 	<!-- Гнилая девушка -->
@@ -364,4 +364,14 @@
 	<set xpath="/entity_classes/entity_class[@name='animalChicken']/property[@name='MoveSpeedPanic']/@value">.8</set>
 	<!-- Больше случайности к скорости зомби -->
 	<setattribute xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='MoveSpeedRand']" name="value">-.4, .45</setattribute>
+	<!-- Пробуем увеличить размер выпадающих вещмешков, чтобы их легче было собирать сквозь ловушки -->
+	<append xpath="/entity_classes/entity_class[starts-with (@name, 'EntityLootContainer')]">
+		<property name="SizeScale" value="2"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='DroppedLootContainer']">
+		<property name="SizeScale" value="2"/>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='DroppedVehicleContainer']">
+		<property name="SizeScale" value="2"/>
+	</append>
 </entityclasses_aio_2>

@@ -1082,34 +1082,103 @@
 	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
 	<!--Увеличиваем крафт семян-->
 	<set xpath="/recipes/recipe[@name='plantedAloe1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedAloe1']/@craft_time">15</set>
 	<set xpath="/recipes/recipe[@name='plantedAloe1']/ingredient[@name='resourceCropAloeLeaf']/@count">5</set>
+	<append xpath="/recipes/recipe[@name='plantedAloe1']">
+		<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+	</append>
+	<!--***-->
 	<set xpath="/recipes/recipe[@name='plantedBlueberry1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedBlueberry1']/@craft_time">15</set>
 	<set xpath="/recipes/recipe[@name='plantedBlueberry1']/ingredient[@name='foodCropBlueberries']/@count">5</set>
+	<append xpath="/recipes/recipe[@name='plantedBlueberry1']">
+		<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+	</append>
+	<!-- *** -->
 	<set xpath="/recipes/recipe[@name='plantedChrysanthemum1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedChrysanthemum1']/@craft_time">15</set>
 	<set xpath="/recipes/recipe[@name='plantedChrysanthemum1']/ingredient[@name='resourceCropChrysanthemumPlant']/@count">5</set>
+	<append xpath="/recipes/recipe[@name='plantedChrysanthemum1']">
+		<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+	</append>
+	<!-- *** -->
 	<set xpath="/recipes/recipe[@name='plantedCoffee1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedCoffee1']/@craft_time">15</set>
 	<set xpath="/recipes/recipe[@name='plantedCoffee1']/ingredient[@name='resourceCropCoffeeBeans']/@count">5</set>
+	<append xpath="/recipes/recipe[@name='plantedCoffee1']">
+		<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+	</append>
+	<!-- *** -->
 	<set xpath="/recipes/recipe[@name='plantedCorn1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedCorn1']/@craft_time">15</set>
 	<set xpath="/recipes/recipe[@name='plantedCorn1']/ingredient[@name='foodCropCorn']/@count">5</set>
+	<append xpath="/recipes/recipe[@name='plantedCorn1']">
+		<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+	</append>
+	<!-- *** -->
 	<set xpath="/recipes/recipe[@name='plantedCotton1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedCotton1']/@craft_time">15</set>
 	<set xpath="/recipes/recipe[@name='plantedCotton1']/ingredient[@name='resourceCropCottonPlant']/@count">5</set>
+	<append xpath="/recipes/recipe[@name='plantedCotton1']">
+		<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+	</append>
+	<!-- *** -->
 	<set xpath="/recipes/recipe[@name='plantedGoldenrod1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedGoldenrod1']/@craft_time">15</set>
 	<set xpath="/recipes/recipe[@name='plantedGoldenrod1']/ingredient[@name='resourceCropGoldenrodPlant']/@count">5</set>
+	<append xpath="/recipes/recipe[@name='plantedGoldenrod1']">
+		<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+	</append>
+	<!-- *** -->
 	<set xpath="/recipes/recipe[@name='plantedGraceCorn1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedGraceCorn1']/@craft_time">15</set>
 	<set xpath="/recipes/recipe[@name='plantedGraceCorn1']/ingredient[@name='foodCropGraceCorn']/@count">5</set>
+	<append xpath="/recipes/recipe[@name='plantedGraceCorn1']">
+		<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+	</append>
+	<!-- *** -->
 	<set xpath="/recipes/recipe[@name='plantedHop1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedHop1']/@craft_time">15</set>
 	<set xpath="/recipes/recipe[@name='plantedHop1']/ingredient[@name='resourceCropHopsFlower']/@count">5</set>
+	<append xpath="/recipes/recipe[@name='plantedHop1']">
+		<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+	</append>
+	<!-- *** -->
 	<set xpath="/recipes/recipe[@name='plantedMushroom1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedMushroom1']/@craft_time">15</set>
 	<set xpath="/recipes/recipe[@name='plantedMushroom1']/ingredient[@name='foodCropMushrooms']/@count">5</set>
 	<set xpath="/recipes/recipe[@name='plantedMushroom1']/ingredient[@name='resourceClayLump']/@count">5</set>
+	<append xpath="/recipes/recipe[@name='plantedMushroom1']">
+		<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+	</append>
+	<!-- *** -->
 	<set xpath="/recipes/recipe[@name='plantedPotato1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedPotato1']/@craft_time">15</set>
 	<set xpath="/recipes/recipe[@name='plantedPotato1']/ingredient[@name='foodCropPotato']/@count">5</set>
+	<append xpath="/recipes/recipe[@name='plantedPotato1']">
+		<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+	</append>
+	<!-- *** -->
 	<set xpath="/recipes/recipe[@name='plantedYucca1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedYucca1']/@craft_time">15</set>
 	<set xpath="/recipes/recipe[@name='plantedYucca1']/ingredient[@name='foodCropYuccaFruit']/@count">5</set>
+	<append xpath="/recipes/recipe[@name='plantedYucca1']">
+		<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+	</append>
+	<!-- *** -->
 	<set xpath="/recipes/recipe[@name='plantedPumpkin1']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedPumpkin1']/@craft_time">15</set>
 	<set xpath="/recipes/recipe[@name='plantedPumpkin1']/ingredient[@name='foodCropPumpkin']/@count">5</set>
+	<append xpath="/recipes/recipe[@name='plantedPumpkin1']">
+		<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+	</append>
+	<!-- *** -->
 	<set xpath="/recipes/recipe[@name='plantedtreeGrassSeed1']/@count">3</set>
+	<setattribute xpath="/recipes/recipe[@name='plantedtreeGrassSeed1']" name="craft_time">15</setattribute>
 	<set xpath="/recipes/recipe[@name='plantedtreeGrassSeed1']/ingredient[@name='resourceYuccaFibers']/@count">5</set>
+	<append xpath="/recipes/recipe[@name='plantedtreeGrassSeed1']">
+		<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+	</append>
 	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
 	<!-- ТКАНЬ -->
 	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->

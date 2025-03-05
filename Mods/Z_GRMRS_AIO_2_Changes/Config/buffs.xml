@@ -46,4 +46,6 @@
 	<set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='3']/../@value">15</set>
 	<set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='4']/../@value">18</set>
 	<set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='5']/../@value">21</set>
+	<!-- Уменьшаем максимальную продолжительность инфекции (персонаж без лечения умрёт за 1 час реального времени) -->
+	<set xpath="/buffs/buff[@name='buffInfectionMain']/effect_group[1]/triggered_effect[@trigger='onSelfBuffStart']/@value">3600</set>
 </buffs_aio_2>

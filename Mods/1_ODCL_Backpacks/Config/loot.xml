@@ -1,5 +1,5 @@
 <ODCL>
-	<append xpath="//lootgroup[@name='groupDumpster']">
+	<append xpath="//lootgroup[@name='groupBookPile01']">
 		<item name="odcl_MilitaryBackpackSchematic" count="1" loot_prob_template="veryLow"/>
 		<item name="odcl_BigBackpackSchematic" count="1" loot_prob_template="veryLow"/>
 		<item name="odcl_AxisBackpackSchematic" count="1" loot_prob_template="veryLow"/>
@@ -8,7 +8,16 @@
 		<item name="odcl_LeatherBackpackSchematic" count="1" loot_prob_template="veryLow"/>
 		<item name="odcl_SurvivalBackpackSchematic" count="1" loot_prob_template="veryLow"/>
 	</append>
-	<append xpath="//lootgroup[@name='groupMailbox']">
+	<append xpath="//lootgroup[@name='groupMailbox01']">
+		<item name="odcl_MilitaryBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_BigBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_AxisBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_BackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_GuitarBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_LeatherBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="odcl_SurvivalBackpackSchematic" count="1" loot_prob_template="veryLow"/>
+	</append>
+	<append xpath="//lootgroup[@name='groupCrackabookShelves01']">
 		<item name="odcl_MilitaryBackpackSchematic" count="1" loot_prob_template="veryLow"/>
 		<item name="odcl_BigBackpackSchematic" count="1" loot_prob_template="veryLow"/>
 		<item name="odcl_AxisBackpackSchematic" count="1" loot_prob_template="veryLow"/>

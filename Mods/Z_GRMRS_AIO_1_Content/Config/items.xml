@@ -1089,6 +1089,7 @@
 			</effect_group>
 		</item>
 		<!-- Напитки -->
+		<!-- Черничный смузи -->
 		<item name="drinkBlueberrySmoothie">
 			<property name="Tags" value="food,foodSkill"/>
 			<property name="HoldType" value="31"/>
@@ -1113,14 +1114,29 @@
 				<property name="Create_item" value="drinkJarEmpty"/>
 			</property>
 			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
-			<effect_group tiered="false" name="Food Tier 2">
+			<effect_group tiered="false" name="Drink Tier 3">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="28"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="60"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="20"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="24"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthFarmer" operation="set" value="24">
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="60"/>
+				<display_value name="dStaminaRegen" value=".15"/>
+				<display_value name="dHypothermalResist" value="30"/>
+				<display_value name="dDuration" value="600"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffYuccaJuiceSmoothieDuration" operation="add" value="603"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffYuccaJuiceSmoothieDuration" operation="set" value="3603">
+					<requirement name="CVarCompare" cvar="$buffYuccaJuiceSmoothieDuration" operation="GT" value="3603"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffYuccaJuiceSmoothie"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 			</effect_group>
 		</item>
+		<!-- Черничный сок -->
 		<item name="drinkBlueberryJuice">
 			<property name="Tags" value="food,foodSkill"/>
 			<property name="HoldType" value="31"/>
@@ -1145,9 +1161,21 @@
 				<property name="Create_item" value="drinkJarEmpty"/>
 			</property>
 			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
-			<effect_group tiered="false" name="Food Tier 2">
+			<effect_group tiered="false" name="Drink Tier 1">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="40"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="dStaminaRegen" value=".15"/>
+				<display_value name="dEfficientDigestion" value=".15"/>
+				<display_value name="dDuration" value="600"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffRedTeaDuration" operation="add" value="603"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffRedTeaDuration" operation="set" value="3603">
+					<requirement name="CVarCompare" cvar="$buffRedTeaDuration" operation="GT" value="3603"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffRedTea"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
 			</effect_group>
 		</item>
 		<!-- Курица и блюда из неё -->

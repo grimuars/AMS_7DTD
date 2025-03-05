@@ -340,7 +340,7 @@
 		</recipe>
 		<!-- НОВОЕ Черничный смузи -->
 		<recipe name="drinkBlueberrySmoothie" craft_time="130" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-			<ingredient name="foodCropBlueberries" count="3"/>
+			<ingredient name="foodCropBlueberries" count="6"/>
 			<ingredient name="resourceSnowBall" count="30"/>
 			<ingredient name="foodHoneyComb" count="1"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
@@ -350,7 +350,7 @@
 		</recipe>
 		<!-- Смузи из юкки -->
 		<recipe name="drinkYuccaJuiceSmoothie" craft_time="75" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-			<ingredient name="foodCropYuccaFruit" count="2"/>
+			<ingredient name="foodCropYuccaFruit" count="5"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodHoneyComb" count="1"/>
 			<ingredient name="resourceSnowBall" count="25"/>
@@ -396,7 +396,7 @@
 		</recipe>
 		<!-- НОВОЕ Черничный сок -->
 		<recipe name="drinkBlueberryJuice" craft_time="100" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-			<ingredient name="foodCropBlueberries" count="2"/>
+			<ingredient name="foodCropBlueberries" count="4"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodHoneyComb" count="1"/>
 			<effect_group>
@@ -404,7 +404,7 @@
 			</effect_group>
 		</recipe>
 		<recipe name="drinkBlueberryJuice" craft_time="90" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-			<ingredient name="foodCropBlueberries" count="2"/>
+			<ingredient name="foodCropBlueberries" count="4"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodHoneyComb" count="1"/>
 			<effect_group>
@@ -476,17 +476,17 @@
 		</recipe>
 		<!-- Пиво -->
 		<recipe name="drinkJarBeer" craft_time="300" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-			<ingredient name="resourceCropHopsFlower" count="5"/>
+			<ingredient name="resourceCropHopsFlower" count="6"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
-			<ingredient name="foodCropCorn" count="1"/>
+			<ingredient name="foodCropCorn" count="2"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="resourceCropHopsFlower,drinkJarBoiledWater,foodCropCorn"/>
 			</effect_group>
 		</recipe>
 		<recipe name="drinkJarBeer" craft_time="280" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-			<ingredient name="resourceCropHopsFlower" count="5"/>
+			<ingredient name="resourceCropHopsFlower" count="6"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
-			<ingredient name="foodCropCorn" count="1"/>
+			<ingredient name="foodCropCorn" count="2"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="resourceCropHopsFlower,drinkJarBoiledWater,foodCropCorn"/>
 			</effect_group>
@@ -842,8 +842,9 @@
 			<ingredient name="foodCropWheat" count="10"/>
 		</recipe>
 		<!-- Семена -->
-		<recipe name="plantedWheat1" count="3" craft_time="1" tags="learnable">
-			<ingredient name="foodCropWheat" count="1"/>
+		<recipe name="plantedWheat1" count="3" craft_time="15" tags="learnable">
+			<ingredient name="foodCropWheat" count="5"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="5"/>
 		</recipe>
 		<!-- Вытапливание жира из мяса -->
 		<recipe name="resourceAnimalFat" count="2" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="30" tags="perkMasterChef,perkChefBoiledWater,resourceAnimalFat">

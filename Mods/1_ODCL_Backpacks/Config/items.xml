@@ -2154,9 +2154,9 @@
 	<!-- Камень -->
 	<append xpath="//item[@name='resourceRockSmall']">
 		<property name="DisplayType" value="TSItemDisplay"/>
-		<property name="ItemWeight" value="0.02"/>
+		<property name="ItemWeight" value="0.01"/>
 		<effect_group tiered="false">
-			<display_value name="TSItemWeight" value="0.02"/>
+			<display_value name="TSItemWeight" value="0.01"/>
 		</effect_group>
 	</append>
 	<!-- Бумага -->
@@ -2170,9 +2170,9 @@
 	<!-- Снежок -->
 	<append xpath="//item[@name='resourceSnowBall']">
 		<property name="DisplayType" value="TSItemDisplay"/>
-		<property name="ItemWeight" value="0.04"/>
+		<property name="ItemWeight" value="0.01"/>
 		<effect_group tiered="false">
-			<display_value name="TSItemWeight" value="0.04"/>
+			<display_value name="TSItemWeight" value="0.01"/>
 		</effect_group>
 	</append>
 	<!-- Кислота -->
@@ -2266,17 +2266,17 @@
 	<!-- Сланец -->
 	<append xpath="//item[@name='resourceOilShale']">
 		<property name="DisplayType" value="TSItemDisplay"/>
-		<property name="ItemWeight" value="0.06"/>
+		<property name="ItemWeight" value="0.02"/>
 		<effect_group tiered="false">
-			<display_value name="TSItemWeight" value="0.06"/>
+			<display_value name="TSItemWeight" value="0.02"/>
 		</effect_group>
 	</append>
 	<!-- Кости -->
 	<append xpath="//item[@name='resourceBone']">
 		<property name="DisplayType" value="TSItemDisplay"/>
-		<property name="ItemWeight" value="0.03"/>
+		<property name="ItemWeight" value="0.01"/>
 		<effect_group tiered="false">
-			<display_value name="TSItemWeight" value="0.03"/>
+			<display_value name="TSItemWeight" value="0.01"/>
 		</effect_group>
 	</append>
 	<!-- Дерево -->
@@ -2290,9 +2290,9 @@
 	<!-- Кожа -->
 	<append xpath="//item[@name='resourceLeather']">
 		<property name="DisplayType" value="TSItemDisplay"/>
-		<property name="ItemWeight" value="0.05"/>
+		<property name="ItemWeight" value="0.04"/>
 		<effect_group tiered="false">
-			<display_value name="TSItemWeight" value="0.05"/>
+			<display_value name="TSItemWeight" value="0.04"/>
 		</effect_group>
 	</append>
 	<!-- Животный жир -->
@@ -2306,16 +2306,16 @@
 	<!-- Тестостерон -->
 	<append xpath="//item[@name='resourceTestosteroneExtract']">
 		<property name="DisplayType" value="TSItemDisplay"/>
-		<property name="ItemWeight" value="0.02"/>
+		<property name="ItemWeight" value="0.01"/>
 		<effect_group tiered="false">
-			<display_value name="TSItemWeight" value="0.02"/>
+			<display_value name="TSItemWeight" value="0.01"/>
 		</effect_group>
 	</append>
 	<append xpath="//item[@name='resourceCropHopsFlower']">
 		<property name="DisplayType" value="TSItemDisplay"/>
-		<property name="ItemWeight" value="0.02"/>
+		<property name="ItemWeight" value="0.01"/>
 		<effect_group tiered="false">
-			<display_value name="TSItemWeight" value="0.02"/>
+			<display_value name="TSItemWeight" value="0.01"/>
 		</effect_group>
 	</append>
 	<append xpath="//item[@name='resourceCropAloeLeaf']">
@@ -2327,30 +2327,30 @@
 	</append>
 	<append xpath="//item[@name='resourceCropChrysanthemumPlant']">
 		<property name="DisplayType" value="TSItemDisplay"/>
-		<property name="ItemWeight" value="0.02"/>
+		<property name="ItemWeight" value="0.01"/>
 		<effect_group tiered="false">
-			<display_value name="TSItemWeight" value="0.02"/>
+			<display_value name="TSItemWeight" value="0.01"/>
 		</effect_group>
 	</append>
 	<append xpath="//item[@name='resourceCropCottonPlant']">
 		<property name="DisplayType" value="TSItemDisplay"/>
-		<property name="ItemWeight" value="0.02"/>
+		<property name="ItemWeight" value="0.01"/>
 		<effect_group tiered="false">
-			<display_value name="TSItemWeight" value="0.02"/>
+			<display_value name="TSItemWeight" value="0.01"/>
 		</effect_group>
 	</append>
 	<append xpath="//item[@name='resourceCropGoldenrodPlant']">
 		<property name="DisplayType" value="TSItemDisplay"/>
-		<property name="ItemWeight" value="0.02"/>
+		<property name="ItemWeight" value="0.01"/>
 		<effect_group tiered="false">
-			<display_value name="TSItemWeight" value="0.02"/>
+			<display_value name="TSItemWeight" value="0.01"/>
 		</effect_group>
 	</append>
 	<append xpath="//item[@name='resourceCropCoffeeBeans']">
 		<property name="DisplayType" value="TSItemDisplay"/>
-		<property name="ItemWeight" value="0.02"/>
+		<property name="ItemWeight" value="0.01"/>
 		<effect_group tiered="false">
-			<display_value name="TSItemWeight" value="0.02"/>
+			<display_value name="TSItemWeight" value="0.01"/>
 		</effect_group>
 	</append>
 	<append xpath="//item[@name='resourceScrapBrass']">
@@ -2369,16 +2369,16 @@
 	</append>
 	<append xpath="//item[@name='resourceClayLump']">
 		<property name="DisplayType" value="TSItemDisplay"/>
-		<property name="ItemWeight" value="0.02"/>
+		<property name="ItemWeight" value="0.01"/>
 		<effect_group tiered="false">
-			<display_value name="TSItemWeight" value="0.02"/>
+			<display_value name="TSItemWeight" value="0.01"/>
 		</effect_group>
 	</append>
 	<append xpath="//item[@name='resourceCobblestones']">
 		<property name="DisplayType" value="TSItemDisplay"/>
-		<property name="ItemWeight" value="0.03"/>
+		<property name="ItemWeight" value="0.02"/>
 		<effect_group tiered="false">
-			<display_value name="TSItemWeight" value="0.03"/>
+			<display_value name="TSItemWeight" value="0.02"/>
 		</effect_group>
 	</append>
 	<append xpath="//item[@name='resourceCement']">
@@ -2397,9 +2397,9 @@
 	</append>
 	<append xpath="//item[@name='resourceCloth']">
 		<property name="DisplayType" value="TSItemDisplay"/>
-		<property name="ItemWeight" value="0.1"/>
+		<property name="ItemWeight" value="0.04"/>
 		<effect_group tiered="false">
-			<display_value name="TSItemWeight" value="0.1"/>
+			<display_value name="TSItemWeight" value="0.04"/>
 		</effect_group>
 	</append>
 	<append xpath="//item[@name='resourceElectricParts']">
@@ -2446,9 +2446,9 @@
 	</append>
 	<append xpath="//item[@name='resourceFeather']">
 		<property name="DisplayType" value="TSItemDisplay"/>
-		<property name="ItemWeight" value="0.02"/>
+		<property name="ItemWeight" value="0.01"/>
 		<effect_group tiered="false">
-			<display_value name="TSItemWeight" value="0.02"/>
+			<display_value name="TSItemWeight" value="0.01"/>
 		</effect_group>
 	</append>
 	<append xpath="//item[@name='resourceArrowHeadIron']">
@@ -2474,9 +2474,9 @@
 	</append>
 	<append xpath="//item[@name='resourcePotassiumNitratePowder']">
 		<property name="DisplayType" value="TSItemDisplay"/>
-		<property name="ItemWeight" value="0.02"/>
+		<property name="ItemWeight" value="0.01"/>
 		<effect_group tiered="false">
-			<display_value name="TSItemWeight" value="0.02"/>
+			<display_value name="TSItemWeight" value="0.01"/>
 		</effect_group>
 	</append>
 	<append xpath="//item[@name='resourceGunPowder']">
@@ -2648,13 +2648,13 @@
 			<display_value name="TSItemWeight" value="7"/>
 		</effect_group>
 	</append>
-	<append xpath="//item[@name='casinoCoin']">
+	<!-- <append xpath="//item[@name='casinoCoin']">
 		<property name="DisplayType" value="TSItemDisplay"/>
 		<property name="ItemWeight" value="0.01"/>
 		<effect_group tiered="false">
 			<display_value name="TSItemWeight" value="0.01"/>
 		</effect_group>
-	</append>
+	</append> -->
 	<append xpath="//item[@name='oldCash']">
 		<property name="DisplayType" value="TSItemDisplay"/>
 		<property name="ItemWeight" value="0.01"/>

@@ -55,7 +55,7 @@
 			<stack_type value="ignore"/>
 			<duration value="0"/>
 			<effect_group name="Starting Settings">
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="MaxEncumbrance" operation="set" value="100"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="MaxEncumbrance" operation="set" value="200"/>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$odcl_UICurrentWeight" operation="set" value="@MaxEncumbrance"/>
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$odcl_UICurrentWeight" operation="multiply" value="@encumbranceCVar"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$odcl_UICurrentWeight" operation="set" value="@MaxEncumbrance"/>
