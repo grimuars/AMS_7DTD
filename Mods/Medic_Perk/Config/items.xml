@@ -176,7 +176,7 @@
 				<passive_effect name="CustomTaggedEffect" operation="base_set" value="3" tags="medicWeapon,MedicStock,RechargeDataDecrease" match_all_tags="true"/>
 				<passive_effect name="CustomTaggedEffect" operation="base_set" value="100" tags="medicWeapon,MedicStock,RechargeDataMaximum" match_all_tags="true"/>
 				<passive_effect name="CustomTaggedEffect" operation="base_set" value="50" tags="medicWeapon,MedicStock,ConsumptionValue" match_all_tags="true"/>
-				<passive_effect name="CustomTaggedEffect" operation="base_set" value="15" tags="medicWeapon,MedicWeaponHeal" match_all_tags="true"/>
+				<passive_effect name="CustomTaggedEffect" operation="base_set" value="30" tags="medicWeapon,MedicWeaponHeal" match_all_tags="true"/>
 				<triggered_effect trigger="onRechargeValueUpdate" action="SetPassiveOnWeaponLabel,KFCommonUtilityLib" passive="CustomTaggedEffect" tags="medicWeapon,MedicStock,RechargeDataMaximum" pattern="#[passive]" slot="0"/>
 				<triggered_effect trigger="onRechargeValueUpdate" action="SetPassiveOnWeaponLabel,KFCommonUtilityLib" passive="CustomTaggedEffect" tags="medicWeapon,MedicStock,ConsumptionValue" pattern="$[passive]" slot="0"/>
 				<triggered_effect trigger="onRechargeValueUpdate" action="SetMetadataOnWeaponLabel,KFCommonUtilityLib" metadata="MedicStock" slot="0"/>

@@ -273,7 +273,7 @@
 	<!-- ХХХХХХХХХХХХ РЕЦЕПТЫ ЕДЫ И НАПИТКОВ ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
 	<!-- Рецепт пустых банок -->
 	<append xpath="/recipes">
-		<recipe name="drinkJarEmpty" count="1" material_based="true" craft_area="forge,forgelow" is_trackable="false" tags="perkAdvancedEngineering">
+		<recipe name="drinkJarEmpty" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering">
 			<ingredient name="unit_glass" count="10"/>
 			<ingredient name="unit_clay" count="1"/>
 			<effect_group>

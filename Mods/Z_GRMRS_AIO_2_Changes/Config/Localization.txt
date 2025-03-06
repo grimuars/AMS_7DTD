@@ -14,6 +14,14 @@ foodRawChickenMeatDesc,items,Item,,"A whole chicken. No chemicals, GMOs, or othe
 zombieDemolition,entityclasses,Entity,,Demolition,Разрушитель
 animalChickenHostile,entityclasses,Entity,,Mad Chicken,Курица-убийца
 
+EntityLootContainerBoss,entityclasses,Entity Info,,Valuable Loot Crate,Ценный ящик
+EntityLootContainerRegular,entityclasses,Entity Info,,Ordinary Loot Crate,Обычный ящик
+EntityLootContainerStrong,entityclasses,Entity Info,,Quality Loot Crate,Качественный ящик
+
+treePineBurntLrg,blocks,Block,,"Tree: Burned Pine (Large)","Растение: обугленная сосна (большая)"
+treePineBurntMed,blocks,Block,,"Tree: Burned Pine (Medium)","Растение: обугленная сосна (средняя)"
+treePineBurntFullMed,blocks,Block,,"Tree: Burned Pine (Full Medium)","Растение: обугленная сосна с ветками (средняя)"
+
 OaksCooker,blocks,Block,,Oakraven Cooker,Большая печь Oakraven
 OaksCookerDesc,blocks,Block,,"The Oakraven Cooker allows players to combine recipe ingredients into meals, beverages, and resources.","Печи Oakraven позволяют готовить еду, напитки и различные ресурсы."
 PotStove,blocks,Block,,Oakraven Pot Stove,Печь с горшком Oakraven

@@ -51,7 +51,7 @@
 			<update_rate value="0.5"/>
 			<effect_group>
 				<requirement name="EntityTagCompare" tags="zombie"/>
-					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="buffMedicGrenadePoisonDuration" operation="set" value="15"/>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="buffMedicGrenadePoisonDuration" operation="set" value="30"/>
 					<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffMedicGrenadePoison"/>
 			</effect_group>
 			<effect_group>

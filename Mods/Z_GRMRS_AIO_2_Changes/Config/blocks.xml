@@ -76,6 +76,40 @@
 		<drop event="Harvest" name="resourceScrapIron" count="0"/>
 		<drop event="Harvest" name="resourceForgedIron" count="0"/>
 	</append>
+	<!-- 13 Можно поднимать ловушки -->
+	<append xpath="/blocks/block[@name='trapSpikesWoodDmg0']">
+		<property name="CanPickup" value="true" param1="trapSpikesWoodDmg0"/>
+	</append>
+	<append xpath="/blocks/block[@name='trapSpikesIronDmg0']">
+		<property name="CanPickup" value="true" param1="trapSpikesIronDmg0"/>
+	</append>
+	<!-- 13.1 Колючая проволока -->
+	<append xpath="/blocks/block[@name='barbedWireSheet']">
+		<property name="CanPickup" value="true"/>
+	</append>
+		<append xpath="/blocks/block[@name='barbedFence']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<append xpath="/blocks/block[@name='barbedWireSpindle']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- Эксперименты со столкновением -->
+	<set xpath="/blocks/block[@name='trapSpikesWoodMaster']/property[@name='Collide']/@value">melee,entity</set>
+	<append xpath="/blocks/block[@name='trapSpikesWoodMaster']">
+		<property name="ModelOffset" value="0,.3,0"/>
+	</append>
+	<!-- *** -->
+	<set xpath="/blocks/block[@name='trapSpikesScrapIronMaster']/property[@name='Collide']/@value">melee,entity</set>
+	<append xpath="/blocks/block[@name='trapSpikesScrapIronMaster']">
+		<property name="ModelOffset" value="0,.3,0"/>
+	</append>
+	<!-- Отключаем ловушкам вертикальную поддержку -->
+	<append xpath="/blocks/block[@name='trapSpikesWoodMaster']">
+		<property name="StabilitySupport" value="false"/>
+	</append>
+	<append xpath="/blocks/block[@name='trapSpikesScrapIronMaster']">
+		<property name="StabilitySupport" value="false"/>
+	</append>
 	<!-- 4 Мины при взрыве ломают ноги -->
 	<append xpath="/blocks/block[@name='mineCandyTin']">
 		<property name="Explosion.Buff" value="triggerBrokenLeg"/>
@@ -200,20 +234,6 @@
 		<drop event="Destroy" name="solarbank" count="1" tool_category="Disassemble"/>
 		<drop event="Harvest" name="resourceScrapIron" count="0" tool_category="Disassemble"/>
 	</append>
-	<!-- Добавляем рабочим станциям вращение под всеми углами -->
-	<set xpath="/blocks/block[@name='workbench']/property[@name='OnlySimpleRotations']/@value">false</set>
-	<append xpath="/blocks/block[@name='workbench']">
-		<property name="AllowedRotations" value="All"/>
-	</append>
-	<set xpath="/blocks/block[@name='chemistryStation']/property[@name='OnlySimpleRotations']/@value">false</set>
-	<append xpath="/blocks/block[@name='chemistryStation']">
-		<property name="AllowedRotations" value="All"/>
-	</append>
-	<set xpath="/blocks/block[@name='forge']/property[@name='OnlySimpleRotations']/@value">false</set>
-	<append xpath="/blocks/block[@name='forge']">
-		<property name="AllowedRotations" value="All"/>
-	</append>
-	<set xpath="/blocks/block[contains(@name, 'WritableCrate')]/property[@name='AllowedRotations']/@value">All</set>
 	<!-- Некоторые сломанные и пустые блоки в мире можно чинить -->
 	<append xpath="/blocks/block[@name='cntCollapsedDewCollector']">
 		<property class="UpgradeBlock">
@@ -281,23 +301,6 @@
 	</append> -->
 	<!-- 12 Уменьшаем выпадение электрики при разборке блоков -->
 	<set xpath="/blocks/block[not (contains(@name, 'Trap')) and not (contains(@name, 'fencepost'))]/drop[@event='Harvest' and @name='resourceElectricParts']/@count">1,3</set>
-	<!-- 13 Можно поднимать ловушки -->
-	<append xpath="/blocks/block[@name='trapSpikesWoodDmg0']">
-		<property name="CanPickup" value="true" param1="trapSpikesWoodDmg0"/>
-	</append>
-	<append xpath="/blocks/block[@name='trapSpikesIronDmg0']">
-		<property name="CanPickup" value="true" param1="trapSpikesIronDmg0"/>
-	</append>
-	<!-- 13.1 Колючая проволока -->
-	<append xpath="/blocks/block[@name='barbedWireSheet']">
-		<property name="CanPickup" value="true"/>
-	</append>
-		<append xpath="/blocks/block[@name='barbedFence']">
-		<property name="CanPickup" value="true"/>
-	</append>
-	<append xpath="/blocks/block[@name='barbedWireSpindle']">
-		<property name="CanPickup" value="true"/>
-	</append>
 	<!-- 14 Скорость передвижения зависит от поверхности -->
 	<append xpath="/blocks/block[@name='terrStone']">
 		<property name="MovementFactor" value="1.0"/>

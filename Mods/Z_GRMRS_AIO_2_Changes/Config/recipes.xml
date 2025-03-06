@@ -1522,7 +1522,9 @@
 	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
 	<setattribute xpath="/recipes/recipe[@name='toolAnvil']" name="craft_time">300</setattribute>
 	<!-- *** -->
-	<setattribute xpath="/recipes/recipe[@name='toolBellows']" name="craft_time">300</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='toolBellows']" name="craft_time">180</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='toolBellows']" name="craft_area">workbench</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='toolBellows']" name="tags">learnable,workbenchCrafting</setattribute>
 	<!-- *** -->
 	<setattribute xpath="/recipes/recipe[@name='toolCookingGrill']" name="craft_time">120</setattribute>
 	<!-- *** -->
