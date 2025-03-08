@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<xml>
+	<Name value="ActiveIngredients" />
+	<DisplayName value="Active Ingredients" />
+	<Description value="Makes recipe and ingredient UI a bit more convenient."/>
+	<Author value="redbeardt"/>
+	<Version value="4.3.1.0"/>
+	<Website value="https://www.nexusmods.com/users/102102433"/>
+</xml>
