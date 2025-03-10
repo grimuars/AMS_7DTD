@@ -1,0 +1,93 @@
+<config>
+	<append xpath="/gamestages">
+		<spawner name="pine_forest">
+			<gamestage stage="1">
+				<spawn group="pine_forest_GS1" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="pine_forest_GS50" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="pine_forest_GS100" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="150">
+				<spawn group="pine_forest_GS150" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="pine_forest_GS200" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+		</spawner>
+
+		<spawner name="desert">
+			<gamestage stage="1">
+				<spawn group="desert_GS1" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="desert_GS50" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="desert_GS100" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="150">
+				<spawn group="desert_GS150" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="desert_GS200" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+		</spawner>
+
+		<spawner name="snow">
+			<gamestage stage="1">
+				<spawn group="snow_GS1" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="snow_GS50" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="snow_GS100" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="150">
+				<spawn group="snow_GS150" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="snow_GS200" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+		</spawner>
+
+		<spawner name="wasteland">
+			<gamestage stage="1">
+				<spawn group="wasteland_GS1" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="wasteland_GS50" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="wasteland_GS100" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="150">
+				<spawn group="wasteland_GS150" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="wasteland_GS200" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+		</spawner>
+
+		<spawner name="burnt_forest">
+			<gamestage stage="1">
+				<spawn group="burnt_forest_GS1" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="burnt_forest_GS50" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="burnt_forest_GS100" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="150">
+				<spawn group="burnt_forest_GS150" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="burnt_forest_GS200" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+		</spawner>
+	</append>
+</config>

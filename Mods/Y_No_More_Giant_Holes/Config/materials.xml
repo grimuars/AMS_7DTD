@@ -7,7 +7,7 @@
 			<property name="stepsound" value="stone"/>
 			<property name="stability_glue" value="120"/>
 			<property name="Mass" type="int" value="10"/>
-			<property name="MaxDamage" value="1500"/>
+			<property name="MaxDamage" value="2000"/>
 			<property name="Experience" value="1"/>
 		</material>
 		<material id="OreStone">

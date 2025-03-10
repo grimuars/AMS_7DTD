@@ -25,7 +25,7 @@
 			<property name="IndexName" value="quest_stone"/>
 			<drop event="Fall" name="rockResourceRespawner" count="1" prob="1" stick_chance="1"/>
 			<property name="PlantGrowing.Next" value="resourceRock01"/>
-			<property name="PlantGrowing.GrowthRate" value="15"/>
+			<property name="PlantGrowing.GrowthRate" value="20"/>
 			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
@@ -55,7 +55,7 @@
 			<property name="IndexName" value="quest_stone"/>
 			<drop event="Fall" name="rockResource02Respawner" count="1" prob="1" stick_chance="1"/>
 			<property name="PlantGrowing.Next" value="resourceRock02"/>
-			<property name="PlantGrowing.GrowthRate" value="15"/>
+			<property name="PlantGrowing.GrowthRate" value="20"/>
 			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
@@ -85,7 +85,7 @@
 			<property name="IndexName" value="quest_stone"/>
 			<drop event="Fall" name="rockResource02Respawner" count="1" prob="1" stick_chance="1"/>
 			<property name="PlantGrowing.Next" value="resourceRock03"/>
-			<property name="PlantGrowing.GrowthRate" value="15"/>
+			<property name="PlantGrowing.GrowthRate" value="20"/>
 			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
@@ -115,7 +115,7 @@
 			<property name="IndexName" value="quest_stone"/>
 			<drop event="Fall" name="oreIronBoulderRespawner" count="1" prob="1" stick_chance="1"/>
 			<property name="PlantGrowing.Next" value="oreIronBoulder"/>
-			<property name="PlantGrowing.GrowthRate" value="15"/>
+			<property name="PlantGrowing.GrowthRate" value="20"/>
 			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
@@ -145,7 +145,7 @@
 			<property name="IndexName" value="quest_stone"/>
 			<drop event="Fall" name="oreLeadBoulderRespawner" count="1" prob="1" stick_chance="1"/>
 			<property name="PlantGrowing.Next" value="oreLeadBoulder"/>
-			<property name="PlantGrowing.GrowthRate" value="15"/>
+			<property name="PlantGrowing.GrowthRate" value="20"/>
 			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
@@ -175,7 +175,7 @@
 			<property name="IndexName" value="quest_stone"/>
 			<drop event="Fall" name="oreCoalBoulderRespawner" count="1" prob="1" stick_chance="1"/>
 			<property name="PlantGrowing.Next" value="oreCoalBoulder"/>
-			<property name="PlantGrowing.GrowthRate" value="15"/>
+			<property name="PlantGrowing.GrowthRate" value="20"/>
 			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
@@ -205,7 +205,7 @@
 			<property name="IndexName" value="quest_stone"/>
 			<drop event="Fall" name="orePotassiumNitrateBoulderRespawner" count="1" prob="1" stick_chance="1"/>
 			<property name="PlantGrowing.Next" value="orePotassiumNitrateBoulder"/>
-			<property name="PlantGrowing.GrowthRate" value="15"/>
+			<property name="PlantGrowing.GrowthRate" value="20"/>
 			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
@@ -235,7 +235,7 @@
 			<property name="IndexName" value="quest_stone"/>
 			<drop event="Fall" name="oreShaleBoulderRespawner" count="1" prob="1" stick_chance="1"/>
 			<property name="PlantGrowing.Next" value="oreShaleBoulder"/>
-			<property name="PlantGrowing.GrowthRate" value="15"/>
+			<property name="PlantGrowing.GrowthRate" value="20"/>
 			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
@@ -322,24 +322,24 @@
 	<set xpath="blocks/block [contains(@name, 'resourceRock')]/drop [@event='Harvest'and(@count='22')]/@count">330</set>
 	<!-- Добавляем дроп глины и песка с больших булыжников, учитывая изменения -->
 	<append xpath="blocks/block [contains(@name, 'resourceRock')]">
-		<drop event="Harvest" name="resourceClayLump" count="330" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceClayLump" count="440" tag="oreWoodHarvest"/>
 		<drop event="Harvest" name="resourceCrushedSand" count="330" tag="oreWoodHarvest"/>
 	</append>
 	<set xpath="blocks/block [contains(@name, 'oreBoulderMaster')]/drop [@event='Harvest'and(@count='14')]/@count">220</set>
 	<!-- Добавляем дроп глины и песка с больших булыжников, учитывая изменения -->
 	<append xpath="blocks/block [contains(@name, 'oreBoulderMaster')]">
-		<drop event="Harvest" name="resourceClayLump" count="220" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceClayLump" count="330" tag="oreWoodHarvest"/>
 		<drop event="Harvest" name="resourceCrushedSand" count="220" tag="oreWoodHarvest"/>
 	</append>
 	<!-- Делаем бедрок пригодным для роста растений -->
 	<set xpath="blocks/block[@name='terrBedrock']/property[@name='DisplayType']/@value">blockTerrainFertile</set>
 	<!-- Настраиваем дроп с возобновляемых булыжников -->
-	<set xpath="blocks/block [contains(@name, 'reIron')]/drop [@event='Harvest'and(@count='105')]/@count">2000</set>
-	<set xpath="blocks/block [contains(@name, 'reLead')]/drop [@event='Harvest'and(@count='50')]/@count">2000</set>
-	<set xpath="blocks/block [contains(@name, 'reCoal')]/drop [@event='Harvest'and(@count='50')]/@count">2000</set>
-	<set xpath="blocks/block [contains(@name, 'rePotassiumNitrate')]/drop [@event='Harvest'and(@count='50')]/@count">2000</set>
-	<set xpath="blocks/block [contains(@name, 'reOilDeposit')]/drop [@event='Harvest'and(@count='50')]/@count">2000</set>
-	<set xpath="blocks/block [contains(@name, 'reShale')]/drop [@event='Harvest'and(@count='50')]/@count">2000</set>
+	<set xpath="blocks/block [contains(@name, 'reIron')]/drop [@event='Harvest'and(@count='105')]/@count">1600</set>
+	<set xpath="blocks/block [contains(@name, 'reLead')]/drop [@event='Harvest'and(@count='50')]/@count">1600</set>
+	<set xpath="blocks/block [contains(@name, 'reCoal')]/drop [@event='Harvest'and(@count='50')]/@count">1600</set>
+	<set xpath="blocks/block [contains(@name, 'rePotassiumNitrate')]/drop [@event='Harvest'and(@count='50')]/@count">1600</set>
+	<set xpath="blocks/block [contains(@name, 'reOilDeposit')]/drop [@event='Harvest'and(@count='50')]/@count">1600</set>
+	<set xpath="blocks/block [contains(@name, 'reShale')]/drop [@event='Harvest'and(@count='50')]/@count">1600</set>
 	<!-- Делаем неразрушимыми камень, гравий и руды -->
 	<set xpath="/blocks/block[@name='terrStone']/property[@name='Material']/@value">Mbedrock</set>
 	<set xpath="/blocks/block[@name='terrGravel']/property[@name='Material']/@value">Mbedrock</set>
@@ -429,6 +429,7 @@
 	<append xpath="/blocks/block[@name='terrSand']">
 		<drop event="Harvest" name="resourceRockSmall" count="2" tag="oreWoodHarvest"/>
 	</append>
+	<!-- Искусственные блоки камня и гравия -->
 	<append xpath="/blocks">
 		<block name="Stone">
 			<property name="CustomIcon" value="terrStone"/>

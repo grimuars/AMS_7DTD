@@ -1,0 +1,185 @@
+[3.3.0]
+- [EVA] Add optional 1st person camera support.
+
+- Fix debug messages printing when they shouldn't. 
+
+[3.2.0]
+- Update for 7D2D V1.3
+- [EVA] Add vehicle assemly system similar to A16s.
+- [EVA] Rewrite sections of netcode.
+
+[3.1.4]
+- Revert some netcode changes for VehicleAttachments due to item loss.
+- Add index validation to XUiC_VehicleAttachmentSelectorWindow to prevent index shifting.
+
+- Fix MOR blacklist not affecting tile entities without the UI being open.
+
+[3.1.2]
+- Add patch to allow generator fuel to be defined via XML.
+- VehicleAttachments split into high and low tick priorities. High priority ticks once per second. Low priority ticks every 3 seconds.
+
+- Fix some instances of VehicleAttachmentWorkstation losing items due to colliding network packages.
+- Fix MOR mishandling empty config string.
+- Fix occasional null reference with RecipeQueueItemPatch.
+- Fix MOR output slot check being off by one.
+- Fix EntityVehicleAttachable being able to be picked up if items are in attachments.
+- Fix Gamestaged biome spawns being broken.
+
+[3.1.1]
+- Add config option to allow workstations to be blacklisted from MOR.
+
+- Fix PassiveCollector math on determining output slots.
+- Fix VehicleAttachmentWorkstation not saving state in MP if vehicle is not parked.
+- Fix VehicleRemoteCrafting patch firing unnecessarily.
+
+[3.1.0]
+- Add patch to optionally prevent zombie stumble swings on arm and leg hits (must be enabled in config).
+- Add patch to optionally prevent zombies from entering the "crouched" state (must be enabled in config).
+- Add IDCCore keybinding configuration code for easy connection to Gears.
+- VehicleRadio script can now increase and decrease volume.
+
+- Fix VehicleAttachmentWorkstation kicking players in MP.
+- Fix VehicleAttachmentWorkstation not syncing properly in MP.
+- Fix NetPackageSyncVehicleAttachments not calling base write method resulting in invalid package ids.
+- Fix XUiC_GPSMenu throwing null ref when sharing to party.
+
+[3.0.0]
+- Return of the in game journal.
+- Add PassiveCollectorV3. See DOCs for more information.
+- Add MinEventRequirement to check for attached to entities with tags.
+- Add MinEventRequirement to check if a vehicle has a mod.
+- Add VehicleAttachments system. See DOCs for a full feature and usage list.
+- MOR now supports hiding outputs.
+
+- Rename DLL to drop the Vx postfix.
+- PassiveCollectors use a new internal data system for better memory performance.
+- PassiveCollector tool and fuel grids now implement IModToolGrid and IModFuelGrid respectively for cleaner extension data.
+- All classes with the exception of MinEvents moved into the IDC_Core namespace.
+
+- Deprecate and remove PassiveCollectorV1 and PassiveCollectorV2. 
+- Remove BlockModifable as it was unneeded.
+- Remove most reflection calls for increased performance.
+- LOTS of bug fixes that are too many to name.
+- Cleanup a LOT of old code that existed to prevent a save reset.
+
+[2.4.4]
+- Add MinEvent to break armor piece.
+- Add MinEvent to break weapon.
+- Add MinEvent to check heat in a chunk.
+- Add MinEvent to remove heat in a chunk.
+- Add console command to view trader stages (traderstages)
+
+- Hydroponics basins can now pull water from below either bottom block.
+- Fix incompatibility with BepInEx.
+- Fix heat event action not working on servers.
+- Fix MOR losing output data on world reload.
+- Storage machines can now be renamed.
+- Storage machine remotes are now dyeable.
+- Storage machine remotes will use the machine name set.
+- Fixed being unable to add items to a machine you have access to, but do not own
+- Allow allies to access storage machines
+- Fixed remote binding possible when user does not own storage machine
+- Fixed lock state not saving between world reloads.
+- Fix storage machine manager not properly cleaning up.
+
+[2.4.3]
+- Add MinEvent to generate heat in a chunk.
+- Add MinEvent to set an entities walk type. 
+
+[2.4.2]
+- Fix ammo box sometimes getting "stuck" reloading a single turret.
+
+[2.4.1]
+- Fix reported NRE with quality mod patch.
+
+[2.4.0]
+- Hydroponics basins can now optionally not require water.
+- Hydroponics basins can now consume seeds if desired.
+- Hydroponics basins can produce different outputs from the same seed.
+- Add patch to make quality mod on a per trader basis.
+- Add patch to allow for randomized entity material swapping.
+- Add Debug logging config option. Reduces log spam for non-critical IDCCore information. Errors will always print to log.
+- MOR can now override recipe name, icon, description, tint. See documentation.
+
+[2.3.1]
+- Add patch that can restrict the biomes a block can be placed in.
+- Add new XUiC_RequiredItemStack controller that displays required item name when hovered.
+
+- Fix XUiC_PassiveCollectorContainer failsafe causing console errors when it shouldn't.
+- Fix PassiveCollectorV2 throwing InvalidCastExceptions in multiplayer if block ids have shifted.
+
+[2.3.0]
+- Update for compatibility with A21.2b30.
+- Full redesign of multi output recipe system.
+- Multi output recipes now work with perks.
+- Add new trader entity class that is killable.
+
+[2.2.6]
+- Update for compatibility with A21.2b26.
+- Storage machine now allows for items to be sorted.
+- Add patch to make vehicle damage taken configurable on a per vehicle basis.
+
+- Fix random NRE when crafting with multi output recipes enabled.
+
+[2.2.5]
+- Storage machine item hover colors are now XML based. 
+- Hydroponics basins can have water bucketed into them.
+
+- Fix hydroponics basins throwing exception if unusable fertilizer was present.
+- Fix random NRE when repairing with multi output recipes enabled (this shouldn't have been needed).
+- Fix workstations not consuming items when crafting.
+
+[2.2.4]
+- Passive collector modifiers can now be shift clicked in and out of modifier slots.
+
+- Fix all issues with multi output recipes.
+- Fix random NRE when changing biomes.
+
+[2.2.3]
+- Fix crafted items not counting towards quests.
+
+[2.2.2]
+- Fix NRE when scrapping in workstations.
+
+[2.2.1]
+- Fix NRE when SMX is installed. Fill look to full compatiblity in the future.
+
+[2.2.0]
+- Add config option to disable progression logging.
+- Add ammo box classes. Capable of refilling turret ammo from its inventory.
+- Add storage machine classes. Capable of storing 65,000 stacks of items in a single block.
+- Add console command to give quests to player.
+- Add ability to set zombie move speeds per biome.
+- Add crop trampling options. Configurable via blocks.xml file.
+- Add multi-output recipe functionality. New tab in crafting UI showing outputs.
+- Add block that gives buffs when collided with. 
+
+- Fixed skill points per level mods breaking if individualized progression was disabled.
+- Fixed speed modifiers on passive collectors not working properly.
+- Fix passive collectors being pickable with modifiers on them.
+
+[2.1.1]
+- Add config option to allow trader talk icons to be disabled.
+- Configurable player levels can now use a set amount increase per level for levels not explicitly defined.
+- Add screamer configuration options. Allows for multiple screamers to be spawned when heat in a chunk hits 100.
+
+[2.1.0]
+- Update for compatilibility with A21.1 stable.
+- Passive collectors can now have their sky checks disabled via an xml property.
+- Allow for scout zombies to be gamestaged.
+- Allow for biome zombie spawns to be gamestaged.
+- Config option to prevent zombie spawns inside landclaims.
+- Allow for player levels to require specific xp amounts and allow for variable skill point rewards per level.
+- Passive Collector V2 released. Old collector will remain for now for compatibility purposes. Will be removed in A22.
+
+- Fix passive collector sometimes sharing recipes with other collectors.
+- Fix occasional NRE when opening passive collector.
+
+[2.0.2]
+- Update for compatibility for A21.1b12.
+
+[2.0.1]
+- Fix occasional NullReferenceException in multiplayer.
+
+[2.0.0]
+- Initial public release.

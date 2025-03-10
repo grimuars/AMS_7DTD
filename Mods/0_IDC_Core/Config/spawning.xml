@@ -1,0 +1,92 @@
+<config>
+	<append xpath="/spawning">
+		<entityspawner name="scoutZombiesGS1" dynamic="true" wrapMode="wrap">
+			<day value="*">
+				<!--* means it is used when no day is specified -->
+				<property name="ResetToday" value="true"/>
+				<property name="EntityGroupName" value="scoutZombiesGS1"/>
+				<property name="Time" value="Any"/>
+				<property name="DelayBetweenSpawns" value="1"/>
+				<property name="TotalAlive" value="1"/>
+				<property name="TotalPerWave" value="1"/>
+			</day>
+		</entityspawner>
+		<entityspawner name="scoutZombiesGS50" dynamic="true" wrapMode="wrap">
+			<day value="*">
+				<!--* means it is used when no day is specified -->
+				<property name="ResetToday" value="true"/>
+				<property name="EntityGroupName" value="scoutZombiesGS50"/>
+				<property name="Time" value="Any"/>
+				<property name="DelayBetweenSpawns" value="1"/>
+				<property name="TotalAlive" value="1"/>
+				<property name="TotalPerWave" value="1"/>
+			</day>
+		</entityspawner>
+		<entityspawner name="scoutZombiesGS100" dynamic="true" wrapMode="wrap">
+			<day value="*">
+				<!--* means it is used when no day is specified -->
+				<property name="ResetToday" value="true"/>
+				<property name="EntityGroupName" value="scoutZombiesGS100"/>
+				<property name="Time" value="Any"/>
+				<property name="DelayBetweenSpawns" value="1"/>
+				<property name="TotalAlive" value="1"/>
+				<property name="TotalPerWave" value="1"/>
+			</day>
+		</entityspawner>
+		<entityspawner name="scoutZombiesGS200" dynamic="true" wrapMode="wrap">
+			<day value="*">
+				<!--* means it is used when no day is specified -->
+				<property name="ResetToday" value="true"/>
+				<property name="EntityGroupName" value="scoutZombiesGS200"/>
+				<property name="Time" value="Any"/>
+				<property name="DelayBetweenSpawns" value="1"/>
+				<property name="TotalAlive" value="1"/>
+				<property name="TotalPerWave" value="1"/>
+			</day>
+		</entityspawner>
+		<entityspawner name="scoutZombiesGS300" dynamic="true" wrapMode="wrap">
+			<day value="*">
+				<!--* means it is used when no day is specified -->
+				<property name="ResetToday" value="true"/>
+				<property name="EntityGroupName" value="scoutZombiesGS300"/>
+				<property name="Time" value="Any"/>
+				<property name="DelayBetweenSpawns" value="1"/>
+				<property name="TotalAlive" value="1"/>
+				<property name="TotalPerWave" value="1"/>
+			</day>
+		</entityspawner>
+		<entityspawner name="scoutZombiesGS400" dynamic="true" wrapMode="wrap">
+			<day value="*">
+				<!--* means it is used when no day is specified -->
+				<property name="ResetToday" value="true"/>
+				<property name="EntityGroupName" value="scoutZombiesGS400"/>
+				<property name="Time" value="Any"/>
+				<property name="DelayBetweenSpawns" value="1"/>
+				<property name="TotalAlive" value="1"/>
+				<property name="TotalPerWave" value="1"/>
+			</day>
+		</entityspawner>
+		<entityspawner name="scoutZombiesGS500" dynamic="true" wrapMode="wrap">
+			<day value="*">
+				<!--* means it is used when no day is specified -->
+				<property name="ResetToday" value="true"/>
+				<property name="EntityGroupName" value="scoutZombiesGS500"/>
+				<property name="Time" value="Any"/>
+				<property name="DelayBetweenSpawns" value="1"/>
+				<property name="TotalAlive" value="1"/>
+				<property name="TotalPerWave" value="1"/>
+			</day>
+		</entityspawner>
+		<entityspawner name="scoutZombiesGS600" dynamic="true" wrapMode="wrap">
+			<day value="*">
+				<!--* means it is used when no day is specified -->
+				<property name="ResetToday" value="true"/>
+				<property name="EntityGroupName" value="scoutZombiesGS600"/>
+				<property name="Time" value="Any"/>
+				<property name="DelayBetweenSpawns" value="1"/>
+				<property name="TotalAlive" value="1"/>
+				<property name="TotalPerWave" value="1"/>
+			</day>
+		</entityspawner>
+	</append>
+</config>

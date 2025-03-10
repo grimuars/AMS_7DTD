@@ -1,0 +1,57 @@
+<config>
+	<append xpath="/windows">
+		<window name="windowJournalList" width="450" height="513" panel="Left" controller="IDC_Core.XUiC_JournalEntryListWindow,IDCCore" cursor_area="true">
+			<panel name="header" pos="3,0" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+				<sprite depth="1" name="windowIcon" style="icon32px" pos="4,-5" sprite="ui_game_symbol_pen"/>
+				<label style="header.name" text="JOURNAL" text_key="xuiJournal"/>
+			</panel>
+			<rect name="content" depth="0" pos="0,-43" height="464">
+				<rect depth="3" name="searchControls" width="450" height="43" pos="6,-6">
+					<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="450" height="46" color="[black]" type="sliced" fillcenter="false"/>
+					<sprite color="[darkGrey]" type="sliced" width="446" pos="-1,0"/>
+					<sprite depth="4" name="searchIcon" style="icon30px" pos="210,-20" sprite="ui_game_symbol_search" pivot="center"/>
+					<panel pos="233,-6" depth="1" width="120" disableautobackground="true">
+						<textfield depth="1" pos="0,0" width="100" height="30" name="searchInput" virtual_keyboard_prompt="vkPromptSearchTerm" search_field="true" close_group_on_tab="true" clear_button="true"/>
+					</panel>
+					<panel pos="338,0" width="104" height="43" disableautobackground="true">
+						<pager name="pager" pos="4,-6"/>
+					</panel>
+				</rect>
+				<grid name="journalList" rows="15" cols="1" pos="6,-49" width="450" height="368" cell_width="390" cell_height="46" repeat_content="true" arrangement="vertical" normal_color="[iconColor]" disabled_color="[iconColor]" controller="IDC_Core.XUiC_JournalEntryList,IDCCore">
+					<journal_entry name="0"/>
+				</grid>
+			</rect>
+		</window>
+		<window name="windowJournalEntryDescription" width="653" height="600" panel="Center" controller="IDC_Core.XUiC_JournalEntryDescriptionWindow,IDCCore" cursor_area="true">
+			<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+				<sprite depth="2" name="windowIcon" style="icon32px" pos="4,-5" sprite="ui_game_symbol_pen"/>
+				<label depth="2" pos="345,-8" width="300" height="28" text="{timestamp}" color="[lightGrey]" justify="right" upper_case="true"/>
+				<label style="header.name" text="{entrytitle}" width="500"/>
+			</panel>
+			<rect name="content" pos="0,-46" height="554" depth="1">
+				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="653" height="554" color="[black]" type="sliced" fillcenter="false"/>
+				<sprite color="[darkGrey]" type="sliced"/>
+				<label depth="3" name="descriptionText" pos="8,-8" text="{entrydescription}" width="630" height="540" font_size="28"/>
+				<rect visible="{showempty}">
+					<label pos="0,-270" depth="3" name="descriptionText" width="100%" height="540" text="DESCRIPTION NOT AVAILABLE AT THIS TIME." text_key="xuiDescriptionNotAvailable" justify="center" pivot="left" font_size="28"/>
+				</rect>
+			</rect>
+		</window>
+	</append>
+	<append xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='searchControls']">
+		<button depth="4" name="outputsButton" style="icon30px, press" pos="108,-22" sprite="ui_game_symbol_backpack" pivot="center" tooltip_key="idcXuiOutputsLabel" sound="[paging_click]"/>
+	</append>
+	<append xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']">
+		<rect depth="1" pos="153,-45" name="outputs" width="719" height="264" visible="{showoutputs}">
+			<grid rows="6" width="719" height="231" cell_height="50" cell_width="719" controller="IDC_Core.XUiC_RecipeOutputList,IDCCore" arrangement="vertical">
+				<recipe_output_header name="0"/>
+				<recipe_output_row name="1"/>
+				<recipe_output_row name="2"/>
+				<recipe_output_row name="3"/>
+				<recipe_output_row name="4"/>
+				<recipe_output_row name="5"/>
+			</grid>
+		</rect>
+	</append>
+	<set xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='searchControls']/button[@name='showunlocksButton']/@pos">151,-22</set>
+</config>

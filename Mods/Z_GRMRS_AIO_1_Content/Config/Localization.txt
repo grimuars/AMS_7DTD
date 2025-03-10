@@ -38,10 +38,10 @@ foodHoneyBread,items,Food,,,Honey Bread,Бутерброд с мёдом
 foodHoneyBreadDesc,items,Food,,,"A tasty treat with healing properties. Cures 5% infection.","Не только вкусно, но ещё и лечит 5% заражения."
 
 foodHoneyPumpkinPie,items,Food,,,Honey Pumpkin Pie,Тыквенный медовик
-foodHoneyPumpkinPieDesc,items,Food,,,"A tasty treat with healing properties. Cures 5% infection.","Не только вкусно, но ещё и лечит 5% заражения."
+foodHoneyPumpkinPieDesc,items,Food,,,"A tasty treat with healing properties. Cures 10% infection.","Не только вкусно, но ещё и лечит 10% заражения."
 
-foodBlueberryBreadPudding,items,Food,,,Blueberry Bread Pudding,Черничный пудинг
-foodBlueberryBreadPuddingDesc,items,Food,,,"A tasty treat with healing properties. Cures 5% infection.","Не только вкусно, но ещё и лечит 5% заражения."
+foodBlueberryBreadPudding,items,Food,,,Honey Blueberry Pie,Черничный медовик
+foodBlueberryBreadPuddingDesc,items,Food,,,"A tasty treat with healing properties. Cures 10% infection.","Не только вкусно, но ещё и лечит 10% заражения."
 
 drinkHoneyBeer,items,Food,,,Honey Beer,Медовуха
-drinkHoneyBeerDesc,items,Food,,,"Unleash your inner berserker to put power in your punch for longer, and cure 5% infection.","Выпустите на волю внутреннего берсерка и бейте врага с большей силой и дольше, чем обычно. Излечивает 5% заражения."
+drinkHoneyBeerDesc,items,Food,,,"Unleash your inner berserker to put power in your punch for longer, and cure 10% infection.","Выпустите на волю внутреннего берсерка и бейте врага с большей силой и дольше, чем обычно. Излечивает 10% заражения."

@@ -36,6 +36,7 @@
 			<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 			<property name="UnlockedBy" value="craftingBows"/>
 			<property name="ShowQuality" value="true"/>
+			<property name="ItemWeight" value="6"/>
 			<property class="Action0">
 				<property name="Class" value="Launcher"/>
 				<property name="Hitmask_override" value="Arrow"/>
@@ -113,6 +114,9 @@
 				<passive_effect name="DamageBonus" operation="base_add" value="3"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="3" tags="perkArchery"/>
 				<display_value name="dEntityDamageSneak" value="3"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="6"/>
 			</effect_group>
 		</item>
 	</append>

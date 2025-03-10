@@ -1,0 +1,8 @@
+<idccore>
+	<append xpath="/xui/ruleset">
+		<window_group name="journal" controller="IDC_Core.XUiC_JournalWindowGroup,IDCCore">
+			<window name="windowJournalList" />
+			<window name="windowJournalEntryDescription" />
+		</window_group>
+	</append>
+</idccore>

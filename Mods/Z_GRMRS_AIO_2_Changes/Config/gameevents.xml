@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gameevents_aio_2>
+	<!-- Спаунер для бродчей орды -->
+	<append xpath="/gameevents">
+		<action_sequence name="random_horde_sequence">
+			<property name="allow_user_trigger" value="true"/>
+			<requirement class="InQuestZone">
+				<property name="invert" value="true"/>
+			</requirement>
+			<action class="SpawnEntity">
+				<property name="entity_group" value="SleeperGSList"/>
+				<property name="spawn_count" value="11"/>
+				<property name="air_spawn" value="false"/>
+				<property name="add_to_group" value="zombies"/>
+				<property name="safe_spawn" value="true"/>
+				<property name="min_distance" value="20"/>
+				<property name="max_distance" value="30"/>
+				<property name="spawn_type" value="WanderingHorde"/>
+			</action>
+			<action class="AddEntitiesToGroup">
+				<property name="phase" value="0"/>
+				<property name="group_name" value="zombies"/>
+				<property name="max_distance" value="20"/>
+			</action>
+			<action class="RageZombies">
+				<property name="time" value="5"/>
+				<property name="speed_percent" value=".10"/>
+				<property name="target_group" value="zombies"/>
+			</action>
+		</action_sequence>
+	</append>
+</gameevents_aio_2>

@@ -375,6 +375,18 @@
 	<append xpath="/blocks/block[@name='cntCasketModernRandomHelper']">
 		<property name="EconomicValue" value="600"/>
 	</append>
+	<!-- Изменяем разбор гробов -->
+	<append xpath="/blocks/block[@name='cntCasketModernRandomHelper']">
+		<drop event="Destroy" name="resourceWood" count="5,15"/>
+	</append>
+	<!-- Открытые гробы можно поднимать -->
+	<append xpath="/blocks/block[@name='cntCasketModernOpenTan']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	<!-- А закрытые - нельзя -->
+	<append xpath="/blocks/block[@name='cntCasketModernClosedTan']">
+		<property name="CanPickup" value="false"/>
+	</append>
 	<!-- 17 Дикие растения будут собираться на Е -->
 	<append xpath="/blocks/block[@name='plantedMushroom3Harvest']">
 		<property name="Class" value="CropsGrown"/>
@@ -1042,4 +1054,11 @@
 		<drop event="Harvest" name="resourceMechanicalParts" count="1,3" prob="0.5" tag="salvageHarvest"/>
 		<drop event="Harvest" name="resourceScrapPolymers" count="1,3" prob="0.5" tag="salvageHarvest"/>
 	</append>
+	<!-- Переносные холодильники -->
+	<append xpath="/blocks/block[@name='cntCoolerOpen')]">
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceScrapPolymers" count="2,6" tag="salvageHarvest"/>
+	</append>
+	<!-- *** -->
+	<set xpath="/blocks/block[@name='cntCoolerRandomLootHelper']/drop[@event='Destroy'][@name='resourceScrapPolymers']/@count">2,5</set>
 </blocks_aio_2>

@@ -58,71 +58,8 @@
 			<ingredient name="resourceWood" count="5"/>
 			<ingredient name="resourceMetalPipe" count="30"/>
 		</recipe>
-		<!-- Рецепты для гробов-кроватей -->
-		<recipe name="cntCasketModernOpenWhite" count="1" craft_time="120" craft_area="workbench">
-			<ingredient name="resourceCloth" count="180"/>
-			<ingredient name="resourceScrapPolymers" count="40"/>
-			<ingredient name="resourceSpring" count="10"/>
-			<ingredient name="resourceWood" count="500"/>
-			<ingredient name="resourceMetalPipe" count="30"/>
-		</recipe>
-		<recipe name="cntCasketModernOpenBlue" count="1" craft_time="120" craft_area="workbench">
-			<ingredient name="resourceCloth" count="180"/>
-			<ingredient name="resourceScrapPolymers" count="40"/>
-			<ingredient name="resourceSpring" count="10"/>
-			<ingredient name="resourceWood" count="500"/>
-			<ingredient name="resourceMetalPipe" count="30"/>
-		</recipe>
-		<recipe name="cntCasketModernOpenBrown" count="1" craft_time="120" craft_area="workbench">
-			<ingredient name="resourceCloth" count="180"/>
-			<ingredient name="resourceScrapPolymers" count="40"/>
-			<ingredient name="resourceSpring" count="10"/>
-			<ingredient name="resourceWood" count="500"/>
-			<ingredient name="resourceMetalPipe" count="30"/>
-		</recipe>
-		<recipe name="cntCasketModernOpenRed" count="1" craft_time="120" craft_area="workbench">
-			<ingredient name="resourceCloth" count="180"/>
-			<ingredient name="resourceScrapPolymers" count="40"/>
-			<ingredient name="resourceSpring" count="10"/>
-			<ingredient name="resourceWood" count="500"/>
-			<ingredient name="resourceMetalPipe" count="30"/>
-		</recipe>
-		<recipe name="cntCasketModernOpenGreen" count="1" craft_time="120" craft_area="workbench">
-			<ingredient name="resourceCloth" count="180"/>
-			<ingredient name="resourceScrapPolymers" count="40"/>
-			<ingredient name="resourceSpring" count="10"/>
-			<ingredient name="resourceWood" count="500"/>
-			<ingredient name="resourceMetalPipe" count="30"/>
-		</recipe>
-		<recipe name="cntCasketModernOpenYellow" count="1" craft_time="120" craft_area="workbench">
-			<ingredient name="resourceCloth" count="180"/>
-			<ingredient name="resourceScrapPolymers" count="40"/>
-			<ingredient name="resourceSpring" count="10"/>
-			<ingredient name="resourceWood" count="500"/>
-			<ingredient name="resourceMetalPipe" count="30"/>
-		</recipe>
-		<recipe name="cntCasketModernOpenAqua" count="1" craft_time="120" craft_area="workbench">
-			<ingredient name="resourceCloth" count="180"/>
-			<ingredient name="resourceScrapPolymers" count="40"/>
-			<ingredient name="resourceSpring" count="10"/>
-			<ingredient name="resourceWood" count="500"/>
-			<ingredient name="resourceMetalPipe" count="30"/>
-		</recipe>
-		<recipe name="cntCasketModernOpenPurple" count="1" craft_time="120" craft_area="workbench">
-			<ingredient name="resourceCloth" count="180"/>
-			<ingredient name="resourceScrapPolymers" count="40"/>
-			<ingredient name="resourceSpring" count="10"/>
-			<ingredient name="resourceWood" count="500"/>
-			<ingredient name="resourceMetalPipe" count="30"/>
-		</recipe>
-		<recipe name="cntCasketModernOpenGrey" count="1" craft_time="120" craft_area="workbench">
-			<ingredient name="resourceCloth" count="180"/>
-			<ingredient name="resourceScrapPolymers" count="40"/>
-			<ingredient name="resourceSpring" count="10"/>
-			<ingredient name="resourceWood" count="500"/>
-			<ingredient name="resourceMetalPipe" count="30"/>
-		</recipe>
-		<recipe name="cntCasketModernOpenTan" count="1" craft_time="120" craft_area="workbench">
+		<!-- Рецепт для гробов-кроватей -->
+		<recipe name="FeelCasketModernVariantPlayerHelper" count="1" craft_time="120" craft_area="workbench">
 			<ingredient name="resourceCloth" count="180"/>
 			<ingredient name="resourceScrapPolymers" count="40"/>
 			<ingredient name="resourceSpring" count="10"/>
@@ -255,8 +192,8 @@
 			<ingredient name="resourceGlue" count="5"/>
 		</recipe>
 		<recipe name="partsKatanaSpacer" count="1" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true" tags="learnable">
-			<ingredient name="unit_brass" count="500"/>
-			<ingredient name="unit_clay" count="200"/>
+			<ingredient name="unit_brass" count="800"/>
+			<ingredient name="unit_clay" count="400"/>
 		</recipe>
 	</append>
 	<!-- ПЕЧИ OAKRAVEN -->
@@ -265,9 +202,9 @@
 		<recipe name="CookerVariantHelper" count="1" craft_area="workbench" craft_time="180" tags="workbenchCrafting">
 			<ingredient name="toolCookingPot" count="1"/>
 			<ingredient name="resourceForgedIron" count="25"/>
-			<ingredient name="resourceClayLump" count="100"/>
-			<ingredient name="resourceRockSmall" count="200"/>
-			<ingredient name="resourceScrapIron" count="25"/>
+			<ingredient name="resourceClayLump" count="150"/>
+			<ingredient name="resourceRockSmall" count="300"/>
+			<ingredient name="resourceScrapIron" count="50"/>
 		</recipe>
 	</append>
 	<!-- ХХХХХХХХХХХХ РЕЦЕПТЫ ЕДЫ И НАПИТКОВ ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
@@ -283,7 +220,7 @@
 	</append>
 	<!-- Крафт воды из ведра с водой и таблеток для очистки -->
 	<append xpath="/recipes">
-		<recipe name="drugWaterCleanerPills" count="1" craft_time="90">
+		<recipe name="drugWaterCleanerPills" count="1" craft_time="40">
 			<ingredient name="resourcePotassiumNitratePowder" count="8"/>
 			<ingredient name="resourceCoal" count="8"/>
 			<ingredient name="resourceCropGoldenrodPlant" count="4"/>
@@ -327,7 +264,7 @@
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodHoneyComb" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropYuccaFruit,drinkJarBoiledWater,foodHoneyComb"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropYuccaFruit,foodHoneyComb"/>
 			</effect_group>
 		</recipe>
 		<recipe name="drinkJarYuccaJuice" craft_time="130" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
@@ -335,7 +272,7 @@
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodHoneyComb" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropYuccaFruit,drinkJarBoiledWater,foodHoneyComb"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropYuccaFruit,foodHoneyComb"/>
 			</effect_group>
 		</recipe>
 		<!-- НОВОЕ Черничный смузи -->
@@ -345,17 +282,17 @@
 			<ingredient name="foodHoneyComb" count="1"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropBlueberries,resourceSnowBall,foodHoneyComb,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropBlueberries,resourceSnowBall,foodHoneyComb"/>
 			</effect_group>
 		</recipe>
 		<!-- Смузи из юкки -->
 		<recipe name="drinkYuccaJuiceSmoothie" craft_time="75" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-			<ingredient name="foodCropYuccaFruit" count="5"/>
+			<ingredient name="foodCropYuccaFruit" count="6"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodHoneyComb" count="1"/>
 			<ingredient name="resourceSnowBall" count="25"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropYuccaFruit,drinkJarBoiledWater,foodHoneyComb,resourceSnowBall"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropYuccaFruit,foodHoneyComb,resourceSnowBall"/>
 			</effect_group>
 		</recipe>
 		<!-- Чай из золотарника -->
@@ -364,7 +301,7 @@
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodHoneyComb" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="resourceCropGoldenrodPlant,drinkJarBoiledWater,foodHoneyComb"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="resourceCropGoldenrodPlant,foodHoneyComb"/>
 			</effect_group>
 		</recipe>
 		<recipe name="drinkJarGoldenRodTea" craft_time="50" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
@@ -372,123 +309,127 @@
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodHoneyComb" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="resourceCropGoldenrodPlant,drinkJarBoiledWater,foodHoneyComb"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="resourceCropGoldenrodPlant,foodHoneyComb"/>
 			</effect_group>
 		</recipe>
 		<!-- Минералка -->
 		<recipe name="drinkJarPureMineralWater" craft_time="70" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="1" />
 			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="15"/>
 			<ingredient name="resourceCoal" count="2"/>
-			<ingredient name="resourceCropGoldenrodPlant" count="5"/>
-			<ingredient name="resourceCropChrysanthemumPlant" count="5"/>
+			<ingredient name="resourceCropGoldenrodPlant" count="6"/>
+			<ingredient name="resourceCropChrysanthemumPlant" count="6"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="drinkJarBoiledWater,resourceCoal,resourceCropGoldenrodPlant,resourceCropChrysanthemumPlant"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="resourceCoal,resourceCropGoldenrodPlant,resourceCropChrysanthemumPlant"/>
 			</effect_group>
 		</recipe>
 		<recipe name="drinkJarPureMineralWater" craft_time="60" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="1" />
 			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="15"/>
 			<ingredient name="resourceCoal" count="2"/>
-			<ingredient name="resourceCropGoldenrodPlant" count="5"/>
-			<ingredient name="resourceCropChrysanthemumPlant" count="5"/>
+			<ingredient name="resourceCropGoldenrodPlant" count="6"/>
+			<ingredient name="resourceCropChrysanthemumPlant" count="6"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="drinkJarBoiledWater,resourceCoal,resourceCropGoldenrodPlant,resourceCropChrysanthemumPlant"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="resourceCoal,resourceCropGoldenrodPlant,resourceCropChrysanthemumPlant"/>
 			</effect_group>
 		</recipe>
 		<!-- НОВОЕ Черничный сок -->
 		<recipe name="drinkBlueberryJuice" craft_time="100" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-			<ingredient name="foodCropBlueberries" count="4"/>
+			<ingredient name="foodCropBlueberries" count="6"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodHoneyComb" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropBlueberries,drinkJarBoiledWater,foodHoneyComb"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropBlueberries,foodHoneyComb"/>
 			</effect_group>
 		</recipe>
 		<recipe name="drinkBlueberryJuice" craft_time="90" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-			<ingredient name="foodCropBlueberries" count="4"/>
+			<ingredient name="foodCropBlueberries" count="6"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodHoneyComb" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropBlueberries,drinkJarBoiledWater,foodHoneyComb"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropBlueberries,foodHoneyComb"/>
 			</effect_group>
 		</recipe>
 		<!-- Кофе -->
 		<recipe name="drinkJarCoffee" craft_time="65" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-			<ingredient name="resourceCropCoffeeBeans" count="2"/>
+			<ingredient name="resourceCropCoffeeBeans" count="3"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="resourceCropCoffeeBeans,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="resourceCropCoffeeBeans"/>
 			</effect_group>
 		</recipe>
 		<recipe name="drinkJarCoffee" craft_time="65" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-			<ingredient name="resourceCropCoffeeBeans" count="2"/>
+			<ingredient name="resourceCropCoffeeBeans" count="3"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="resourceCropCoffeeBeans,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="resourceCropCoffeeBeans"/>
 			</effect_group>
 		</recipe>
 		<!-- Кофе рудокопов -->
 		<recipe name="drinkJarBlackStrapCoffee" craft_time="115" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-			<ingredient name="resourceCropCoffeeBeans" count="1"/>
+			<ingredient name="resourceCropCoffeeBeans" count="10"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
-			<ingredient name="resourceGunPowder" count="5"/>
+			<ingredient name="resourceGunPowder" count="15"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="resourceCropCoffeeBeans,drinkJarBoiledWater,resourceGunPowder"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="resourceCropCoffeeBeans,resourceGunPowder"/>
 			</effect_group>
 		</recipe>
 		<recipe name="drinkJarBlackStrapCoffee" craft_time="105" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-			<ingredient name="resourceCropCoffeeBeans" count="1"/>
+			<ingredient name="resourceCropCoffeeBeans" count="10"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
-			<ingredient name="resourceGunPowder" count="5"/>
+			<ingredient name="resourceGunPowder" count="15"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="resourceCropCoffeeBeans,drinkJarBoiledWater,resourceGunPowder"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="resourceCropCoffeeBeans,resourceGunPowder"/>
 			</effect_group>
 		</recipe>
 		<!-- Дедушкины эликсиры -->
-		<recipe name="drinkJarGrandpasMoonshine" craft_time="650" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+		<recipe name="drinkJarGrandpasMoonshine" craft_time="650" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 			<ingredient name="foodCornMeal" count="20"/>
 			<ingredient name="drinkJarBeer" count="5"/>
-			<ingredient name="foodCropBlueberries" count="5"/>
+			<ingredient name="foodCropBlueberries" count="25"/>
 			<ingredient name="resourceAcid" count="5"/>
-			<ingredient name="foodCropGraceCorn" count="5"/>
+			<ingredient name="foodCropGraceCorn" count="15"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropGraceCorn,drinkPearMoonshine,drinkYuccaMoonshine,drinkBlueberryMoonshine,drinkPumpkinSpiceMoonshine"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCornMeal,foodCropBlueberries,resourceAcid,foodCropGraceCorn"/>
 			</effect_group>
 		</recipe>
-		<recipe name="drinkJarGrandpasLearningElixir" craft_time="680" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+		<recipe name="drinkJarGrandpasLearningElixir" craft_time="680" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 			<ingredient name="drinkJarPureMineralWater" count="1"/>
 			<ingredient name="foodCanDogfood" count="2"/>
 			<ingredient name="drinkCanMegaCrush" count="1"/>
 			<ingredient name="drinkJarBeer" count="1"/>
 			<ingredient name="foodCropGraceCorn" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="drinkJarPureMineralWater,foodCanDogfood,drinkCanMegaCrush,drinkJarBeer,foodCropGraceCorn"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropGraceCorn"/>
 			</effect_group>
 		</recipe>
-		<recipe name="drinkJarGrandpasAwesomeSauce" craft_time="480" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+		<recipe name="drinkJarGrandpasAwesomeSauce" craft_time="480" count="1" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 			<ingredient name="drinkJarPureMineralWater" count="1"/>
 			<ingredient name="foodHoney" count="2"/>
-			<ingredient name="foodCropMushrooms" count="3"/>
-			<ingredient name="foodCropGraceCorn" count="2"/>
+			<ingredient name="foodCropMushrooms" count="8"/>
+			<ingredient name="foodCropGraceCorn" count="4"/>
 			<ingredient name="foodCanCatfood" count="3"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="drinkJarPureMineralWater,foodHoney,foodCropMushrooms,foodCropGraceCorn,foodCanCatfood"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodHoney,foodCropMushrooms,foodCropGraceCorn"/>
 			</effect_group>
 		</recipe>
 		<!-- Пиво -->
 		<recipe name="drinkJarBeer" craft_time="300" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-			<ingredient name="resourceCropHopsFlower" count="6"/>
+			<ingredient name="resourceCropHopsFlower" count="8"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
-			<ingredient name="foodCropCorn" count="2"/>
+			<ingredient name="foodCropCorn" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="resourceCropHopsFlower,drinkJarBoiledWater,foodCropCorn"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="resourceCropHopsFlower,foodCropCorn"/>
 			</effect_group>
 		</recipe>
 		<recipe name="drinkJarBeer" craft_time="280" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-			<ingredient name="resourceCropHopsFlower" count="6"/>
+			<ingredient name="resourceCropHopsFlower" count="8"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
-			<ingredient name="foodCropCorn" count="2"/>
+			<ingredient name="foodCropCorn" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="resourceCropHopsFlower,drinkJarBoiledWater,foodCropCorn"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="resourceCropHopsFlower,foodCropCorn"/>
 			</effect_group>
 		</recipe>
 		<!-- ВАНИЛЬНАЯ ЕДА -->
@@ -496,112 +437,119 @@
 		<recipe name="foodCharredMeat" craft_time="20" count="1" craft_area="campfire" tags="perkMasterChef">
 			<ingredient name="foodRawMeat" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodRawMeat"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodRawMeat"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodCharredMeat" craft_time="15" count="2" craft_area="OaksCooker" tags="perkMasterChef">
 			<ingredient name="foodRawMeat" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodRawMeat"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodRawMeat"/>
 			</effect_group>
 		</recipe>
 		<!-- Кукуруза на палочке -->
 		<recipe name="foodCornOnTheCob" craft_time="25" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
 			<ingredient name="foodCropCorn" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropCorn"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropCorn"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodCornOnTheCob" craft_time="20" count="1" craft_area="OaksCooker" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
 			<ingredient name="foodCropCorn" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropCorn"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropCorn"/>
 			</effect_group>
 		</recipe>
 		<!-- Печёная картошка -->
 		<recipe name="foodBakedPotato" craft_time="20" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
 			<ingredient name="foodCropPotato" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropPotato"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropPotato"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodBakedPotato" craft_time="15" count="1" craft_area="OaksCooker" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
 			<ingredient name="foodCropPotato" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropPotato"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropPotato"/>
 			</effect_group>
 		</recipe>
 		<!-- Варёное яйцо -->
-		<recipe name="foodEggBoiled" craft_time="10" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+		<recipe name="foodEggBoiled" craft_time="20" count="2" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="1" />
 			<ingredient name="foodEgg" count="2"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodEgg,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodEgg"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodEggBoiled" craft_time="10" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="1" />
 			<ingredient name="foodEgg" count="2"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodEgg,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodEgg"/>
 			</effect_group>
 		</recipe>
 		<!-- Кукурузный хлеб -->
 		<recipe name="foodCornBread" craft_time="25" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="1" />
 			<ingredient name="foodCornMeal" count="3"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCornMeal,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCornMeal"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodCornBread" craft_time="20" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="1" />
 			<ingredient name="foodCornMeal" count="3"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCornMeal,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCornMeal"/>
 			</effect_group>
 		</recipe>
 		<!-- Мясо на гриле -->
 		<recipe name="foodGrilledMeat" craft_time="36" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
 			<ingredient name="foodRawMeat" count="3"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodRawMeat"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodRawMeat"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodGrilledMeat" craft_time="30" count="2" craft_area="OaksCooker" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
 			<ingredient name="foodRawMeat" count="3"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodRawMeat"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodRawMeat"/>
 			</effect_group>
 		</recipe>
 		<!-- Тесто -->
 		<recipe name="foodDough" craft_time="50" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="2"/>
 			<ingredient name="foodWheatFlour" count="4"/>
 			<ingredient name="drinkJarBoiledWater" count="2"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodWheatFlour,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodWheatFlour"/>
 			</effect_group>
 		</recipe>
 		<!-- Хлеб (пшеничный) -->
 		<recipe name="foodBread" craft_time="45" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 			<ingredient name="foodDough" count="3"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodDough"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodDough"/>
 			</effect_group>
 		</recipe>
 		<!-- Варёное мясо -->
 		<recipe name="foodBoiledMeat" craft_time="65" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="1" />
 			<ingredient name="foodRawMeat" count="2"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodRawMeat,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodRawMeat"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodBoiledMeat" craft_time="65" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="1" />
 			<ingredient name="foodRawMeat" count="2"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodRawMeat,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodRawMeat"/>
 			</effect_group>
 		</recipe>
 		<!-- Красный чай -->
@@ -610,7 +558,7 @@
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodHoneyComb" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="resourceCropChrysanthemumPlant,drinkJarBoiledWater,foodHoneyComb"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="resourceCropChrysanthemumPlant,foodHoneyComb"/>
 			</effect_group>
 		</recipe>
 		<recipe name="drinkJarRedTea" craft_time="65" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
@@ -618,7 +566,7 @@
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodHoneyComb" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="resourceCropChrysanthemumPlant,drinkJarBoiledWater,foodHoneyComb"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="resourceCropChrysanthemumPlant,foodHoneyComb"/>
 			</effect_group>
 		</recipe>
 		<!-- Яйца с беконом -->
@@ -627,7 +575,7 @@
 			<ingredient name="foodEgg" count="1"/>
 			<ingredient name="resourceAnimalFat" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodRawMeat,foodEgg,resourceAnimalFat"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodRawMeat,foodEgg,resourceAnimalFat"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodBaconAndEggs" craft_time="30" count="2" craft_area="OaksCooker" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
@@ -635,7 +583,7 @@
 			<ingredient name="foodEgg" count="1"/>
 			<ingredient name="resourceAnimalFat" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodRawMeat,foodEgg,resourceAnimalFat"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodRawMeat,foodEgg,resourceAnimalFat"/>
 			</effect_group>
 		</recipe>
 		<!-- Черничный пирог -->
@@ -645,18 +593,19 @@
 			<ingredient name="foodHoneyComb" count="1"/>
 			<ingredient name="foodEgg" count="2"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropBlueberries,foodDough,foodHoneyComb,foodEgg"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropBlueberries,foodDough,foodHoneyComb,foodEgg"/>
 			</effect_group>
 		</recipe>
 		<!-- Овощное рагу -->
 		<recipe name="foodVegetableStew" craft_time="150" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="1" />
 			<ingredient name="foodCropPotato" count="3"/>
 			<ingredient name="foodCropPumpkin" count="3"/>
 			<ingredient name="foodBagOfRice" count="1"/>
 			<ingredient name="foodCropMushrooms" count="2"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropOnion,foodCropRadish,foodCropMushrooms,foodCropCarrot,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropOnion,foodCropRadish,foodCropMushrooms,foodCropCarrot"/>
 			</effect_group>
 		</recipe>
 		<!-- Картошка с мясом -->
@@ -665,7 +614,7 @@
 			<ingredient name="foodCropPotato" count="1"/>
 			<ingredient name="resourceAnimalFat" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodRawMeat,foodCropPotato,resourceAnimalFat"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodRawMeat,foodCropPotato,resourceAnimalFat"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodSteakAndPotato" craft_time="170" count="2" craft_area="OaksCooker" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
@@ -673,24 +622,26 @@
 			<ingredient name="foodCropPotato" count="2"/>
 			<ingredient name="resourceAnimalFat" count="3"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodRawMeat,foodCropPotato,resourceAnimalFat"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodRawMeat,foodCropPotato,resourceAnimalFat"/>
 			</effect_group>
 		</recipe>
 		<!-- Тыквенный хлеб -->
 		<recipe name="foodPumpkinBread" craft_time="145" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="1" />
 			<ingredient name="foodCropPumpkin" count="2"/>
 			<ingredient name="foodCornMeal" count="2"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropPumpkin,foodCornMeal,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropPumpkin,foodCornMeal"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodPumpkinBread" craft_time="135" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="1" />
 			<ingredient name="foodCropPumpkin" count="2"/>
 			<ingredient name="foodCornMeal" count="2"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropPumpkin,foodCornMeal,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropPumpkin,foodCornMeal"/>
 			</effect_group>
 		</recipe>
 		<!-- Чили-дог -->
@@ -698,14 +649,14 @@
 			<ingredient name="foodHotdog" count="1"/>
 			<ingredient name="foodCanChili" count="2"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodHotdog,foodCanChili"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodHotdog,foodCanChili"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodChiliDog" craft_time="170" count="2" craft_area="OaksCooker" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
 			<ingredient name="foodHotdog" count="1"/>
 			<ingredient name="foodCanChili" count="2"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodHotdog,foodCanChili"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodHotdog,foodCanChili"/>
 			</effect_group>
 		</recipe>
 		<!-- Рыбный тако -->
@@ -714,17 +665,18 @@
 			<ingredient name="foodCornMeal" count="3"/>
 			<ingredient name="foodCheese" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCanSalmon,foodCornMeal,foodCheese,foodCropCabbage"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCanSalmon,foodCornMeal,foodCheese,foodCropCabbage"/>
 			</effect_group>
 		</recipe>
 		<!-- Картофельный суп с ветчиной -->
 		<recipe name="foodShamChowder" craft_time="220" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="1" />
 			<ingredient name="foodCanSham" count="1"/>
 			<ingredient name="foodCropPotato" count="3"/>
 			<ingredient name="foodCropCorn" count="3"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCanSham,foodCropPotato,foodCropCorn,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCanSham,foodCropPotato,foodCropCorn"/>
 			</effect_group>
 		</recipe>
 		<!-- Особый сэндвич с тунцом -->
@@ -735,7 +687,7 @@
 			<ingredient name="resourceAnimalFat" count="5"/>
 			<ingredient name="foodCanPeas" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCanTuna,foodCropOnion,foodBread,resourceAnimalFat,foodCanPeas"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCanTuna,foodCropOnion,foodBread,resourceAnimalFat,foodCanPeas"/>
 			</effect_group>
 		</recipe>
 		<!-- Тыквенный пирог -->
@@ -746,7 +698,7 @@
 			<ingredient name="foodDough" count="2"/>
 			<ingredient name="foodHoneyComb" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropPumpkin,foodEgg,resourceAnimalFat,foodDough,foodHoneyComb"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropPumpkin,foodEgg,resourceAnimalFat,foodDough,foodHoneyComb"/>
 			</effect_group>
 		</recipe>
 		<!-- Тыквенный чизкейк -->
@@ -757,17 +709,18 @@
 			<ingredient name="foodDough" count="2"/>
 			<ingredient name="foodHoneyComb" count="2"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropPumpkin,foodEgg,resourceAnimalFat,foodDough,foodHoneyComb"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropPumpkin,foodEgg,resourceAnimalFat,foodDough,foodHoneyComb"/>
 			</effect_group>
 		</recipe>
 		<!-- Мегадавка -->
 		<recipe name="drinkCanMegaCrush" craft_time="450" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="2" />
 			<ingredient name="foodHoneyComb" count="1"/>
 			<ingredient name="drinkJarGoldenRodTea" count="1"/>
 			<ingredient name="drinkJarRedTea" count="1"/>
 			<ingredient name="drinkJarYuccaJuice" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodHoneyComb,drinkJarGoldenRodTea,drinkJarRedTea,drinkJarYuccaJuice"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodHoneyComb,drinkJarGoldenRodTea,drinkJarRedTea,drinkJarYuccaJuice"/>
 			</effect_group>
 		</recipe>
 		<!-- Пирог Шепард -->
@@ -778,7 +731,7 @@
 			<ingredient name="foodCropCorn" count="5"/>
 			<ingredient name="foodBagOfRice" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCanLamb,foodCanPeas,foodCropPotato,foodCropCarrot,foodCropCorn"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCanLamb,foodCanPeas,foodCropPotato,foodCropCarrot,foodCropCorn"/>
 			</effect_group>
 		</recipe>
 		<!-- Мясное рагу -->
@@ -789,7 +742,7 @@
 			<ingredient name="resourceAnimalFat" count="3"/>
 			<ingredient name="drinkJarPureMineralWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCanBeef,foodCropPotato,foodCropCorn,resourceAnimalFat,drinkJarPureMineralWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCanBeef,foodCropPotato,foodCropCorn,resourceAnimalFat"/>
 			</effect_group>
 		</recipe>
 		<!-- Спагетти -->
@@ -800,7 +753,7 @@
 			<ingredient name="resourceAnimalFat" count="3"/>
 			<ingredient name="drinkJarPureMineralWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCanBeef,foodCanPasta,foodCropMushrooms,resourceAnimalFat,drinkJarPureMineralWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCanBeef,foodCanPasta,foodCropMushrooms,resourceAnimalFat"/>
 			</effect_group>
 		</recipe>
 		<!-- Рагу Гамбо -->
@@ -811,11 +764,12 @@
 			<ingredient name="resourceAnimalFat" count="5"/>
 			<ingredient name="drinkJarPureMineralWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCanBeef,foodCanPeas,foodCanStock,resourceAnimalFat,drinkJarPureMineralWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCanBeef,foodCanPeas,foodCanStock,resourceAnimalFat"/>
 			</effect_group>
 		</recipe>
 		<!-- МЕДИЦИНА -->
 		<recipe name="medicalPlasterCast" count="1" craft_area="OaksCooker" craft_tool="toolBeaker" tags="learnable">
+			<secondary_output name="drinkJarEmpty" count="2" />
 			<ingredient name="resourceCloth" count="50"/>
 			<ingredient name="foodCornMeal" count="8"/>
 			<ingredient name="resourceCrushedSand" count="4"/>
@@ -842,9 +796,8 @@
 			<ingredient name="foodCropWheat" count="10"/>
 		</recipe>
 		<!-- Семена -->
-		<recipe name="plantedWheat1" count="3" craft_time="15" tags="learnable">
-			<ingredient name="foodCropWheat" count="5"/>
-			<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+		<recipe name="plantedWheat1" count="3" craft_time="1" tags="learnable">
+			<ingredient name="foodCropWheat" count="1"/>
 		</recipe>
 		<!-- Вытапливание жира из мяса -->
 		<recipe name="resourceAnimalFat" count="2" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="30" tags="perkMasterChef,perkChefBoiledWater,resourceAnimalFat">
@@ -855,13 +808,14 @@
 		</recipe>
 		<!-- Рагу бродяги -->
 		<recipe name="foodHoboStew" craft_time="300" count="2" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="1" />
 			<ingredient name="foodRawMeat" count="3"/>
 			<ingredient name="foodCropPotato" count="1"/>
 			<ingredient name="foodBagOfRice" count="1"/>
 			<ingredient name="resourceAnimalFat" count="1"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodRawMeat,foodCropPotato,foodCropCarrot,resourceAnimalFat,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodRawMeat,foodCropPotato,foodCropCarrot,resourceAnimalFat"/>
 			</effect_group>
 		</recipe>
 		<!-- НОВАЯ ЕДА -->
@@ -872,7 +826,7 @@
 			<ingredient name="foodEgg" count="1"/>
 			<ingredient name="foodCanPeas" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCropCarrot,foodBagOfRice,foodCanChicken,foodEgg,foodCanPeas"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCropCarrot,foodBagOfRice,foodCanChicken,foodEgg,foodCanPeas"/>
 			</effect_group>
 		</recipe>
 		<!-- Киш -->
@@ -883,28 +837,30 @@
 			<ingredient name="foodCropPotato" count="1"/>
 			<ingredient name="foodCropMushrooms" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodEgg,foodWheatFlour,foodRawChickenMeat,foodCropPotato,foodCropMushrooms"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodEgg,foodWheatFlour,foodRawChickenMeat,foodCropPotato,foodCropMushrooms"/>
 			</effect_group>
 		</recipe>
 		<!-- Сэндвич с яйцом -->
 		<recipe name="foodEggSandwich" count="1" craft_time="30" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="1" />
 			<ingredient name="foodEggBoiled" count="2"/>
 			<ingredient name="foodWheatFlour" count="1"/>
 			<ingredient name="resourceAnimalFat" count="1"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodEggBoiled,foodWheatFlour,resourceAnimalFat,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodEggBoiled,foodWheatFlour,resourceAnimalFat"/>
 			</effect_group>
 		</recipe>
 		<!-- Куриный суп -->
 		<recipe name="foodChickenStew" count="1" craft_area="OaksCooker" craft_time="60" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<secondary_output name="drinkJarEmpty" count="1" />
 			<ingredient name="foodRawChickenMeat" count="1"/>
 			<ingredient name="foodBagOfRice" count="1"/>
 			<ingredient name="foodCropCorn" count="2"/>
 			<ingredient name="resourceAnimalFat" count="1"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodRawChickenMeat,foodBagOfRice,foodCropCorn,resourceAnimalFat,drinkJarBoiledWater"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodRawChickenMeat,foodBagOfRice,foodCropCorn,resourceAnimalFat"/>
 			</effect_group>
 		</recipe>
 		<!-- Курица с пармезаном -->
@@ -914,7 +870,7 @@
 			<ingredient name="foodEgg" count="2"/>
 			<ingredient name="foodCheese" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCanChicken,foodWheatFlour,foodEgg,foodTomatoSauce,foodCheese"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCanChicken,foodWheatFlour,foodEgg,foodTomatoSauce,foodCheese"/>
 			</effect_group>
 		</recipe>
 		<!-- Мясное тако -->
@@ -923,7 +879,7 @@
 			<ingredient name="foodCornMeal" count="1"/>
 			<ingredient name="foodCheese" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodRawMeat,foodCornMeal,foodCheese"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodRawMeat,foodCornMeal,foodCheese"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodBeefTaco" craft_time="70" count="2" craft_area="OaksCooker" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
@@ -931,7 +887,7 @@
 			<ingredient name="foodCornMeal" count="2"/>
 			<ingredient name="foodCheese" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodRawMeat,foodCornMeal,foodCheese"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodRawMeat,foodCornMeal,foodCheese"/>
 			</effect_group>
 		</recipe>
 		<!-- Гамбургер -->
@@ -941,7 +897,7 @@
 			<ingredient name="resourceAnimalFat" count="1"/>
 			<ingredient name="foodCheese" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodRawMeat,foodBread,resourceAnimalFat"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodRawMeat,foodBread,resourceAnimalFat"/>
 			</effect_group>
 		</recipe>
 		<!-- Бутерброд с ветчиной -->
@@ -950,7 +906,7 @@
 			<ingredient name="foodBread" count="1"/>
 			<ingredient name="foodCheese" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCanSham,foodBread,foodCheese"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCanSham,foodBread,foodCheese"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodShamSandwichFresh" craft_time="20" count="2" craft_area="OaksCooker" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
@@ -958,7 +914,7 @@
 			<ingredient name="foodBread" count="1"/>
 			<ingredient name="foodCheese" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodCanSham,foodBread,foodCheese"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodCanSham,foodBread,foodCheese"/>
 			</effect_group>
 		</recipe>
 		<!-- Хот-дог -->
@@ -966,14 +922,14 @@
 			<ingredient name="foodBread" count="1"/>
 			<ingredient name="foodRawMeat" count="2"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodBread,foodRawMeat"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodBread,foodRawMeat"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodHotdog" craft_time="45" count="2" craft_area="OaksCooker" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
 			<ingredient name="foodBread" count="1"/>
 			<ingredient name="foodRawMeat" count="3"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodBread,foodRawMeat"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodBread,foodRawMeat"/>
 			</effect_group>
 		</recipe>
 		<!-- КУРЯТНИКИ -->
@@ -1017,7 +973,7 @@
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodEgg" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodHoneyComb,foodBread,drinkJarBoiledWater,foodEgg"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodHoneyComb,foodBread,drinkJarBoiledWater,foodEgg"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodHoneyBread" count="2" craft_time="35" craft_area="OaksCooker" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
@@ -1026,7 +982,7 @@
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodEgg" count="1"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodHoneyComb,foodBread,drinkJarBoiledWater,foodEgg"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodHoneyComb,foodBread,drinkJarBoiledWater,foodEgg"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodHoneyPumpkinPie" count="2" craft_time="480" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
@@ -1035,7 +991,7 @@
 			<ingredient name="foodEgg" count="2"/>
 			<ingredient name="foodDough" count="2"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodHoneyComb,foodCropPumpkin,foodDough,foodEgg"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodHoneyComb,foodCropPumpkin,foodDough,foodEgg"/>
 			</effect_group>
 		</recipe>
 		<recipe name="foodBlueberryBreadPudding" count="2" craft_time="360" craft_area="OaksCooker" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
@@ -1045,7 +1001,7 @@
 			<ingredient name="resourceAnimalFat" count="3"/>
 			<ingredient name="foodDough" count="2"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodHoneyComb,foodCropBlueberries,foodDough,foodEgg,resourceAnimalFat"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodHoneyComb,foodCropBlueberries,foodDough,foodEgg,resourceAnimalFat"/>
 			</effect_group>
 		</recipe>
 		<!-- Медовуха -->
@@ -1053,14 +1009,14 @@
 			<ingredient name="drinkJarBeer" count="1"/>
 			<ingredient name="foodHoneyComb" count="5"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodHoneyComb,drinkJarBeer"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodHoneyComb,drinkJarBeer"/>
 			</effect_group>
 		</recipe>
 		<recipe name="drinkHoneyBeer" count="2" craft_area="OaksCooker" craft_time="210" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 			<ingredient name="drinkJarBeer" count="2"/>
 			<ingredient name="foodHoneyComb" count="8"/>
 			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4,5" operation="perc_add" value="1,0.8,0.6,0.4,0.2,0" tags="foodHoneyComb,drinkJarBeer"/>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3" operation="perc_add" value="1,0.6,0.4,0" tags="foodHoneyComb,drinkJarBeer"/>
 			</effect_group>
 		</recipe>
 	</append>

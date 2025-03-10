@@ -1,0 +1,5 @@
+<config>
+	<append xpath="/entityclasses/entity_class[@name='vehicleMinibike']">
+		<property name="AllowedBlocks" value="block1,block2,block3"/>
+	</append>
+</config>

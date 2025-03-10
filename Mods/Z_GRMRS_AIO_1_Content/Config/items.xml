@@ -117,7 +117,7 @@
 			</property>
 		</item>
 	</append>
-	<!-- Возвращаем пустые бутылки -->
+	<!-- Возвращаем пустые банки -->
 	<append xpath="/items">
 		<item name="drinkJarEmpty">
 			<property name="HoldType" value="3"/>
@@ -159,6 +159,7 @@
 			<property name="CustomIcon" value="drinkJarEmpty"/>
 		</item>
 	</append>
+	<!-- *** -->
 	<append xpath="/items/item[@name='foodHoney']/property[@class='Action0']">
 		<property name="Create_item" value="drinkJarEmpty"/>
 	</append>
@@ -188,6 +189,19 @@
 		<property name="Create_item" value="drinkJarEmpty"/>
 	</append>
 	<append xpath="/items/item[@name='drinkJarBeer']/property[@class='Action0']">
+		<property name="Create_item" value="drinkJarEmpty"/>
+	</append>
+	<!-- *** -->
+	<append xpath="/items/item[@name='drinkJarGrandpasMoonshine']/property[@class='Action0']">
+		<property name="Create_item" value="drinkJarEmpty"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/property[@class='Action0']">
+		<property name="Create_item" value="drinkJarEmpty"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/property[@class='Action0']">
+		<property name="Create_item" value="drinkJarEmpty"/>
+	</append>
+	<append xpath="/items/item[@name='drinkJarGrandpasForgettingElixir']/property[@class='Action0']">
 		<property name="Create_item" value="drinkJarEmpty"/>
 	</append>
 	<!-- ХХХХХХХХХХХХ Crowd Control Mod Pack ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ -->
@@ -455,9 +469,6 @@
 			<!-- perkDeepCuts,meleeWpnBladeT1HuntingKnifeSchematic, -->
 			<property name="ShowQuality" value="true"/>
 			<property name="ItemWeight" value="0.6"/>
-			<effect_group tiered="false">
-				<display_value name="TSItemWeight" value="0.6"/>
-			</effect_group>
 			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
 			<property name="RepairExpMultiplier" value="5.5"/>
 			<property name="SoundUnholster" value="weapon_unholster"/>
@@ -548,6 +559,9 @@
 				<requirement name="EntityTagCompare" target="other" tags="walker,crawler,spider"/>
 				<passive_effect name="EntityDamage" operation="base_add" value="500"/>
 			</effect_group>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="0.6"/>
+			</effect_group>
 		</item>
 		<item name="meleeKatanaSword">
 			<property name="Tags" value="machete,melee,grunting,light,longShaft,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval"/>
@@ -564,10 +578,7 @@
 			<property name="TraderStageTemplate" value="baseTier3"/>
 			<property name="SoundJammed" value="ItemNeedsRepair"/>
 			<property name="SoundDestroy" value="wooddestroy1"/>
-			<property name="ItemWeight" value="1.2"/>
-			<effect_group tiered="false">
-				<display_value name="TSItemWeight" value="1.2"/>
-			</effect_group>
+			<property name="ItemWeight" value="2.5"/>
 			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
 			<property name="RepairExpMultiplier" value="5.5"/>
 			<property name="UnlockedBy" value="craftingBlades"/>
@@ -663,6 +674,9 @@
 				<requirement name="EntityTagCompare" target="other" tags="walker,crawler,spider"/>
 				<passive_effect name="EntityDamage" operation="base_add" value="500"/>
 			</effect_group>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="2.5"/>
+			</effect_group>
 		</item>
 		<item name="partsKatanaBlade">
 			<property name="Extends" value="meleeWpnBladeT3MacheteParts"/>
@@ -673,7 +687,7 @@
 			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 			<property name="Material" value="MresourceForgedSteel"/>
 			<property name="Stacknumber" value="1"/>
-			<property name="ItemWeight" value="0.5"/>
+			<property name="ItemWeight" value="1.5"/>
 			<effect_group tiered="false">
 				<display_value name="TSItemWeight" value="0.5"/>
 			</effect_group>
@@ -1140,7 +1154,7 @@
 		<item name="drinkBlueberryJuice">
 			<property name="Tags" value="food,foodSkill"/>
 			<property name="HoldType" value="31"/>
-			<property name="DisplayType" value="water"/>
+			<property name="DisplayType" value="waterRedTea"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Morganic"/>
@@ -1522,8 +1536,8 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-				<display_value name="dCureInfection" value=".05"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="5"/>
+				<display_value name="dCureInfection" value=".10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="10"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionAddCure"/>
 			</effect_group>
 		</item>
@@ -1554,8 +1568,8 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-				<display_value name="dCureInfection" value=".05"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="5"/>
+				<display_value name="dCureInfection" value=".10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="10"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionAddCure"/>
 			</effect_group>
 		</item>
@@ -1597,8 +1611,8 @@
 					<requirement name="CVarCompare" cvar="$buffBeerDuration" operation="GT" value="273"/>
 				</triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffBeer"/>
-				<display_value name="dCureInfection" value=".05"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="5"/>
+				<display_value name="dCureInfection" value=".10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="10"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionAddCure"/>
 			</effect_group>
 			<effect_group tiered="false">

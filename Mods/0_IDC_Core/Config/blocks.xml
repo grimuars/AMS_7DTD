@@ -1,0 +1,48 @@
+<config>
+	<append xpath="/blocks">
+		<block name="IDCConfigBlock">
+			<property name="Extends" value="terrDesertGround"/>
+			<property name="IndividualizedPlayerLevels" value="false"/>
+			<property class="ZombieSpawningSettings">
+				<property name="GamestagedScouts" value="false"/>
+				<property name="GamestagedBiomeSpawns" value="false"/>
+				<property name="GameStagedBiomeSpawnsMinDifficulty" value="0"/>
+				<property name="PreventZombiesInLandclaims" value="true"/>
+			</property>
+			<property class="ZombieFeatures">
+				<property name="NoStumbleSwing" value="true"/>
+				<property name="NoCrouching" value="true"/>
+			</property>
+			<property class="TraderIconsConfig">
+				<property name="NoTraderIcons" value="false"/>
+				<property name="NoTraderIconsNight" value="true"/>
+			</property>
+			<property class="ScreamerOptions">
+				<property name="MultiScreamerEnabled" value="true"/>
+				<property name="MultiScreamerChance" value="0.5"/>
+				<property name="MultiScreamerBounds" value="2,4"/>
+				<property name="ScreamersDuringBloodmoon" value="false"/>
+			</property>
+			<property class="TurretOptions">
+				<property name="AdditionalTurrets" value=""/>
+			</property>
+			<property class="PlantOptions">
+				<property name="ZombiesTrampleCrops" value="false"/>
+				<property name="AnimalsTrampleCrops" value="false"/>
+				<property name="PlayersTrampleCrops" value="false"/>
+				<property name="CropTrampleTag" value="cropTrample"/>
+			</property>
+			<property class="StorageMachineOptions">
+				<property name="StorageMachineRemoteAccessEnabled" value="true"/>
+				<property name="StorageMachineRemoteAccessRange" value="-1"/>
+			</property>
+			<property name="MultipleOutputRecipes" value="true"/>
+			<property name="MultiOutputRecipesWorkstationBlacklist" value=""/>
+			<property name="DebugTools" value="false"/>
+			<property name="DebugLogging" value="false"/>
+			<property name="EVADebugLogging" value="false"/>
+			<property name="LogGamestagedBiomeSpawns" value="false"/>
+			<property name="LogProgressionParsing" value="false"/>
+		</block>
+	</append>
+</config>

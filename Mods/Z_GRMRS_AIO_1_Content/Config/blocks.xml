@@ -119,57 +119,6 @@
 		<property name="BuffsWhenWalkedOn" value="buffBedsHealing"/>
 		<property name="CanPickup" value="true"/>
 	</append>
-	<!-- Гробы-кровати -->
-	<append xpath="/blocks/block[@name='cntCasketModernOpenWhite']">
-		<property name="Class" value="SleepingBag"/>
-		<property name="BuffsWhenWalkedOn" value="buffBedrollHealing"/>
-		<property name="CanPickup" value="true"/>
-	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenBlue']">
-		<property name="Class" value="SleepingBag"/>
-		<property name="BuffsWhenWalkedOn" value="buffBedrollHealing"/>
-		<property name="CanPickup" value="true"/>
-	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenBrown']">
-		<property name="Class" value="SleepingBag"/>
-		<property name="BuffsWhenWalkedOn" value="buffBedrollHealing"/>
-		<property name="CanPickup" value="true"/>
-	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenRed']">
-		<property name="Class" value="SleepingBag"/>
-		<property name="BuffsWhenWalkedOn" value="buffBedrollHealing"/>
-		<property name="CanPickup" value="true"/>
-	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenGreen']">
-		<property name="Class" value="SleepingBag"/>
-		<property name="BuffsWhenWalkedOn" value="buffBedrollHealing"/>
-		<property name="CanPickup" value="true"/>
-	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenYellow']">
-		<property name="Class" value="SleepingBag"/>
-		<property name="BuffsWhenWalkedOn" value="buffBedrollHealing"/>
-		<property name="CanPickup" value="true"/>
-	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenAqua']">
-		<property name="Class" value="SleepingBag"/>
-		<property name="BuffsWhenWalkedOn" value="buffBedrollHealing"/>
-		<property name="CanPickup" value="true"/>
-	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenPurple']">
-		<property name="Class" value="SleepingBag"/>
-		<property name="BuffsWhenWalkedOn" value="buffBedrollHealing"/>
-		<property name="CanPickup" value="true"/>
-	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenGrey']">
-		<property name="Class" value="SleepingBag"/>
-		<property name="BuffsWhenWalkedOn" value="buffBedrollHealing"/>
-		<property name="CanPickup" value="true"/>
-	</append>
-	<append xpath="/blocks/block[@name='cntCasketModernOpenTan']">
-		<property name="Class" value="SleepingBag"/>
-		<property name="BuffsWhenWalkedOn" value="buffBedrollHealing"/>
-		<property name="CanPickup" value="true"/>
-	</append>
 	<!-- Добавляем новые блоки кроватей -->
 	<append xpath="/blocks">
 		<block name="FeelLargeBed01">
@@ -206,6 +155,125 @@
 			<property name="SortOrder1" value="B433"/>
 			<property name="SortOrder2" value="0001"/>
 			<property name="FilterTags" value="MC_building,SC_decor"/>
+		</block>
+		<!-- Базовый белый гроб-кровать -->
+		<block name="cntCasketModernOpenPlayerWhite">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="SleepingBag"/>
+			<property name="IndexName" value="brBlock"/>
+			<!-- need this to show the bigger covering area -->
+			<property name="DescriptionKey" value="bedGroupDesc"/>
+			<property name="DisplayType" value="ODCL_blockMulti"/>
+			<property name="ItemWeight" value="20"/>
+			<property name="CustomIcon" value="cntCasketModernOpenWhite"/>
+			<property name="CustomIconTint" value="A1A1A1"/>
+			<property name="TintColor" value="A1A1A1"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/casketModernOpenPrefab.prefab"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<!-- <property name="GndAlign" value="1"/> -->
+			<property name="WaterFlow" value="permitted"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="FuelValue" value="20"/>
+			<property name="EconomicValue" value="600"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="FallDamage" value=".8"/>
+			<property name="CanPickup" value="true" param1="FeelCasketModernVariantPlayerHelper"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="BuffsWhenWalkedOn" value="buffBedsHealing"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="50"/>
+			</property>
+			<drop event="Destroy" name="resourceWood" count="0"/>
+			<drop event="Destroy" name="FeelCasketModernVariantPlayerHelper" count="1" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceWood" count="0" tool_category="Disassemble"/>
+			<property name="SortOrder1" value="B433"/>
+			<property name="SortOrder2" value="0001"/>
+			<property name="Group" value="Basics,Building,advBuilding"/>
+			<property name="FilterTags" value="MC_building,SC_decor"/>
+		</block>
+		<!-- Варианты гробов-кроватей -->
+		<!-- Tan -->
+		<block name="cntCasketModernOpenPlayerTan">
+			<property name="Extends" value="cntCasketModernOpenPlayerWhite"/>
+			<property name="CustomIconTint" value="7F5D44"/>
+			<property name="TintColor" value="7F5D44"/>
+			<property name="SortOrder2" value="0012"/>
+		</block>
+		<!-- Brown -->
+		<block name="cntCasketModernOpenPlayerBrown">
+			<property name="Extends" value="cntCasketModernOpenPlayerWhite"/>
+			<property name="CustomIconTint" value="633F00"/>
+			<property name="TintColor" value="633F00"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+		<!-- Grey -->
+		<block name="cntCasketModernOpenPlayerGrey">
+			<property name="Extends" value="cntCasketModernOpenPlayerWhite"/>
+			<property name="CustomIconTint" value="575757"/>
+			<property name="TintColor" value="575757"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+		<!-- Red -->
+		<block name="cntCasketModernOpenPlayerRed">
+			<property name="Extends" value="cntCasketModernOpenPlayerWhite"/>
+			<property name="CustomIconTint" value="7D5750"/>
+			<property name="TintColor" value="7D5750"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+		<!-- Green -->
+		<block name="cntCasketModernOpenPlayerGreen">
+			<property name="Extends" value="cntCasketModernOpenPlayerWhite"/>
+			<property name="CustomIconTint" value="657168"/>
+			<property name="TintColor" value="657168"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+		<!-- Blue -->
+		<block name="cntCasketModernOpenPlayerBlue">
+			<property name="Extends" value="cntCasketModernOpenPlayerWhite"/>
+			<property name="CustomIconTint" value="66727B"/>
+			<property name="TintColor" value="66727B"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+		<!-- Yellow -->
+		<block name="cntCasketModernOpenPlayerYellow">
+			<property name="Extends" value="cntCasketModernOpenPlayerWhite"/>
+			<property name="CustomIconTint" value="98967C"/>
+			<property name="TintColor" value="98967C"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+		<!-- Aqua -->
+		<block name="cntCasketModernOpenPlayerAqua">
+			<property name="Extends" value="cntCasketModernOpenPlayerWhite"/>
+			<property name="CustomIconTint" value="889897"/>
+			<property name="TintColor" value="889897"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+		<!-- Purple -->
+		<block name="cntCasketModernOpenPlayerPurple">
+			<property name="Extends" value="cntCasketModernOpenPlayerWhite"/>
+			<property name="CustomIconTint" value="897A87"/>
+			<property name="TintColor" value="897A87"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+		<!-- Новый блок выбора для кроватей-гробов -->
+		<block name="FeelCasketModernVariantPlayerHelper">
+			<property name="Extends" value="cntCasketModernOpenPlayerWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="bedGroupDesc"/>
+			<property name="CustomIcon" value="cntCasketModernOpenWhite"/>
+			<property name="CustomIconTint" value="50493F"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="TintColor" value="50493F"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="cntCasketModernOpenPlayerWhite,cntCasketModernOpenPlayerBlue,cntCasketModernOpenPlayerBrown,cntCasketModernOpenPlayerRed,cntCasketModernOpenPlayerGreen,cntCasketModernOpenPlayerYellow,cntCasketModernOpenPlayerAqua,cntCasketModernOpenPlayerPurple,cntCasketModernOpenPlayerGrey,cntCasketModernOpenPlayerTan"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
 		</block>
 	</append>
 	<!-- ПЕЧИ OAKRAVEN -->
@@ -1440,7 +1508,7 @@
 			<property name="Shape" value="ModelEntity"/>
 			<!-- <property name="Model" value="Entities/traps/ironSpikesTrapPrefab"/> -->
 			<property name="Model" value="#@modfolder:Resources/TheMeanOnes_SpikeUpgradePath.unity3d?TheMeanOne_HedgeHogUpgrade2"/>
-			<property name="ModelOffset" value="0,-.1,0"/>
+			<property name="ModelOffset" value="0,-.2,0"/>
 			<property name="ImposterExclude" value="true"/>
 			<property name="LightOpacity" value="6"/>
 			<property name="WaterFlow" value="permitted"/>
@@ -1471,7 +1539,7 @@
 			<property name="CustomIconTint" value="e33c66"/>
 			<!-- <property name="Model" value="Entities/traps/ironSpikesTrap2BloodPrefab"/> -->
 			<property name="Model" value="#@modfolder:Resources/TheMeanOnes_SpikeUpgradePath.unity3d?TheMeanOne_HedgeHogUpgrade1"/>
-			<property name="ModelOffset" value="0,0,0"/>
+			<property name="ModelOffset" value="0,-.2,0"/>
 			<property name="Damage" value="30"/>
 			<property class="UpgradeBlock">
 				<property name="ToBlock" value="trapSpikesSteelDmg0"/>

@@ -1,0 +1,5 @@
+<config>
+	<append xpath="/vehicles/vehicle[@name='vehicle4x4Truck']">
+		<property name="fuelItem" value="resourceRockSmall" />
+	</append>
+</config>

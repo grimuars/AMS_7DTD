@@ -1,5 +1,5 @@
 <Configs>
-	<!-- Убираем из рецептом стандартные версии блоков, чтобы игроки не могли крафтить неразрушимые версии -->
+	<!-- Убираем из рецептов стандартные версии блоков, чтобы игроки не могли крафтить неразрушимые версии -->
 	<remove xpath="/recipes/recipe[@name='terrStone']"/>
 	<remove xpath="/recipes/recipe[@name='terrGravel']"/>
 	<remove xpath="/recipes/recipe[@name='terrDestroyedStone']"/>
@@ -8,12 +8,12 @@
 	<remove xpath="/recipes/recipe[@name='terrTopSoil']"/>
 	<!-- Добавляем отдельные версии камня и гравия в крафт -->
 	<append xpath="/recipes">
-		<recipe name="Stone" count="1" craft_area="cementMixer,cementMixerlow" tags="cementMixerCrafting">
+		<recipe name="Stone" count="1" craft_area="cementMixer" tags="cementMixerCrafting">
 			<ingredient name="resourceCrushedSand" count="10"/>
 			<ingredient name="resourceRockSmall" count="18"/>
 			<ingredient name="resourceCement" count="4"/>
 		</recipe>
-		<recipe name="Gravel" count="1" craft_area="cementMixer,cementMixerlow" tags="cementMixerCrafting">
+		<recipe name="Gravel" count="1" craft_area="cementMixer" tags="cementMixerCrafting">
 			<ingredient name="resourceCrushedSand" count="10"/>
 			<ingredient name="resourceRockSmall" count="10"/>
 		</recipe>

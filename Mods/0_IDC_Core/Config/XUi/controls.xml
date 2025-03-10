@@ -1,0 +1,51 @@
+<config>
+	<append xpath="/controls">
+		<recipe_output_header>
+			<rect name="header" width="447" height="50">
+				<rect depth="2" width="65" height="48">
+					<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="71" height="53" color="[black]" type="sliced" fillcenter="false"/>
+					<sprite color="[darkGrey]" type="sliced"/>
+					<label depth="3" text="ITEM" text_key="lblitem" pos="32,-23" height="26" font_size="26" justify="center" pivot="center"/>
+				</rect>
+				<rect depth="2" width="236" height="48" pos="68,0">
+					<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="242" height="53" color="[black]" type="sliced" fillcenter="false"/>
+					<sprite color="[darkGrey]" type="sliced"/>
+					<label depth="3" text="NAME" text_key="mmTextName" pos="117,-23" width="230" height="26" font_size="26" justify="center" pivot="center"/>
+				</rect>
+				<rect depth="2" width="140" height="48" pos="307,0">
+					<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="146" height="53" color="[black]" type="sliced" fillcenter="false"/>
+					<sprite color="[darkGrey]" type="sliced"/>
+					<label depth="3" text="COUNT" text_key="idcXuiCount" pos="70,-23" width="64" height="26" font_size="26" justify="center" pivot="center"/>
+				</rect>
+			</rect>
+		</recipe_output_header>
+		<recipe_output_row>
+		<rect name="row" width="447" height="50" controller="IDC_Core.RecipeOutputEntry,IDCCore">
+			<rect depth="2" width="65" height="48">
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="71" height="53" color="[black]" type="sliced" fillcenter="false" />
+
+				<sprite color="[lightGrey]" type="sliced" />
+				<sprite depth="2" name="icon" width="40" height="40" atlas="ItemIconAtlas" sprite="{itemicon}" color="{itemicontint}" pos="30,-22" pivot="center" foregroundlayer="true"/>
+			</rect>
+			<rect depth="2" width="236" height="48" pos="68,0">
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="242" height="53" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[lightGrey]" type="sliced" />
+				<label depth="3" name="name" pos="117,-23" width="230" height="26" font_size="26" color="[labelColor]" justify="center" pivot="center" text="{name}"/>
+			</rect>
+			<rect depth="2" width="140" height="48" pos="307,0">
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="146" height="53" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[lightGrey]" type="sliced" />
+				<label depth="3" name="count" pos="70,-23" width="120" height="26" font_size="26" color="[labelColor]" justify="center" pivot="center" text="{count}"/>
+			</rect>
+			</rect>
+		</recipe_output_row>
+		<journal_entry>
+		<rect width="450" height="43" controller="IDC_Core.XUiC_JournalEntry,IDCCore" style="press, hover, scroll" enabled_color="[iconColor]" disabled_color="[disabledLabelColor]" failed_color="255,0,0,255" row_color="[darkGrey]" hover_color="[mediumGrey]" sound="[recipe_click]" failed_icon="ui_game_symbol_x" sound_play_on_hover="[default_hover]">
+			<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="450" height="49" color="[black]" type="sliced" fillcenter="false" />
+			<sprite depth="1" name="background" pos="-1,1" height="45" width="446" color="{rowstatecolor}" sprite="{rowstatesprite}" type="sliced" />
+			<sprite depth="5" name="Icon" style="icon32px" pos="8,-3" foregroundlayer="true" sprite="{entryicon}" color="{iconcolor}" />
+			<label depth="4" name="Name" pos="45,-8" width="330" height="30" text="{entrytitle}" color="{textstatecolor}" />
+		</rect>
+	</journal_entry>
+	</append>
+</config>

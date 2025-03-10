@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ModInfo>
-    <Name value="TechFreqsSpikeTrapXPModV3"/>
+    <Name value="TechFreqsSpikeTrapXPMod"/>
     <DisplayName value="TechFreq's Spike Trap XP Mod"/>
     <Description value="Adds XP gain for Wooden and Iron spike traps, as well as customizeable config json for XP and Proximity Radius of spike traps, as well as v2 and v1 features."/>
     <Author value="TechFreq"/>
-    <Version value="3.0"/>
+    <Version value="4.1"/>
 </ModInfo>

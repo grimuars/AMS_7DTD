@@ -1,0 +1,30 @@
+<config>
+	<append xpath="/gamestages">
+		<spawner name="ScoutGamestagedSpawner">
+			<gamestage stage="1">
+				<spawn group="scoutZombiesGS1" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="50">
+				<spawn group="scoutZombiesGS50" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="100">
+				<spawn group="scoutZombiesGS100" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="200">
+				<spawn group="scoutZombiesGS200" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="300">
+				<spawn group="scoutZombiesGS300" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="400">
+				<spawn group="scoutZombiesGS400" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="500">
+				<spawn group="scoutZombiesGS500" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+			<gamestage stage="600">
+				<spawn group="scoutZombiesGS600" num="1" maxAlive="1" duration="1"/>
+			</gamestage>
+		</spawner>
+	</append>
+</config>

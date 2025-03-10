@@ -234,33 +234,33 @@
 			<duration value="0"/>
 			<effect_group>
 				<requirement name="ProgressionLevel" progression_name="perkPackMule" operation="Equals" value="1"/>
-				<requirement name="CVarCompare" cvar="$PackMuleAmmount" operation="LT" value="10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PackMuleAmmount" operation="set" value="10"/>
-			</effect_group>
-			<effect_group>
-				<requirement name="ProgressionLevel" progression_name="perkPackMule" operation="Equals" value="2"/>
 				<requirement name="CVarCompare" cvar="$PackMuleAmmount" operation="LT" value="20"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="20"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PackMuleAmmount" operation="set" value="20"/>
 			</effect_group>
 			<effect_group>
+				<requirement name="ProgressionLevel" progression_name="perkPackMule" operation="Equals" value="2"/>
+				<requirement name="CVarCompare" cvar="$PackMuleAmmount" operation="LT" value="40"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PackMuleAmmount" operation="set" value="40"/>
+			</effect_group>
+			<effect_group>
 				<requirement name="ProgressionLevel" progression_name="perkPackMule" operation="Equals" value="3"/>
-				<requirement name="CVarCompare" cvar="$PackMuleAmmount" operation="LT" value="30"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="10"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PackMuleAmmount" operation="set" value="30"/>
+				<requirement name="CVarCompare" cvar="$PackMuleAmmount" operation="LT" value="60"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PackMuleAmmount" operation="set" value="60"/>
 			</effect_group>
 			<effect_group>
 				<requirement name="ProgressionLevel" progression_name="perkPackMule" operation="Equals" value="4"/>
-				<requirement name="CVarCompare" cvar="$PackMuleAmmount" operation="LT" value="50"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="20"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PackMuleAmmount" operation="set" value="50"/>
+				<requirement name="CVarCompare" cvar="$PackMuleAmmount" operation="LT" value="90"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="30"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PackMuleAmmount" operation="set" value="90"/>
 			</effect_group>
 			<effect_group>
 				<requirement name="ProgressionLevel" progression_name="perkPackMule" operation="Equals" value="5"/>
-				<requirement name="CVarCompare" cvar="$PackMuleAmmount" operation="LT" value="70"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="20"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PackMuleAmmount" operation="set" value="70"/>
+				<requirement name="CVarCompare" cvar="$PackMuleAmmount" operation="LT" value="140"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="50"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$PackMuleAmmount" operation="set" value="140"/>
 			</effect_group>
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="MaxEncumbrance" operation="subtract" value="@$PackMuleAmmount"/>

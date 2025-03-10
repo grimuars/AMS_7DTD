@@ -1,0 +1,84 @@
+<config>
+	<append xpath="/entity_classes">
+		<entity_class name="testDummy" extends="zombieTemplateShort">
+			<property name="UserSpawnType" value="Menu"/>
+			<property name="SizeScale" value="0.9"/>
+			<property name="Tags" value="entity,zombie,walker"/>
+			<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZArlene.prefab"/>
+			<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+			<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+			<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+			<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+			<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+			<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="WalkType" value="3"/>
+			<property name="RootMotion" value="true"/>
+			<property name="HasDeathAnim" value="true"/>
+			<property name="AIPathCostScale" value=".4, .4"/>
+			<property name="NavObjectHeadOffset" value="0,-0.15,0"/>
+			<property name="DanceType" value="2"/>
+			<!--Dismemberment -->
+			<property name="DismemberTag_L_HeadGore" value="
+  				  Arlene/Blunt/Head;
+  				  Arlene/Blade/Head" data="
+				 target=Neck+scale=0,0,0+atp=true+type=blunt+detach=true;
+				 target=Neck+scale=0,0,0+atp=true+type=blade+detach=true
+				 "/>
+			<property name="DismemberTag_L_LeftUpperLegGore" value="
+				  Arlene/Blunt/LeftUpperLeg;
+				  Arlene/Blade/LeftUpperLeg" data="
+				  target=LeftLeg+scale=0,0,0+atp=true+type=blunt+detach=true;
+				  target=LeftLeg+scale=0,0,0+atp=true+type=blade+detach=true
+				  "/>
+			<property name="DismemberTag_L_LeftLowerLegGore" value="
+				  Arlene/Blunt/LeftLowerLeg;
+				  Arlene/Blade/LeftLowerLeg" data="
+				  target=LeftFoot+scale=.05,.05,.05+atp=true+type=blunt+detach=true;
+				  target=LeftFoot+scale=.05,.05,.05+atp=true+type=blade+detach=true
+				  "/>
+			<property name="DismemberTag_L_RightUpperLegGore" value="
+				  Arlene/Blunt/RightUpperLeg;
+				  Arlene/Blade/RightUpperLeg" data="
+				  target=RightLeg+scale=0,0,0+atp=true+type=blunt+detach=true;
+				  target=RightLeg+scale=0,0,0+atp=true+type=blade+detach=true
+				  "/>
+			<property name="DismemberTag_L_RightLowerLegGore" value="
+				  Arlene/Blunt/RightLowerLeg;
+				  Arlene/Blade/RightLowerLeg" data="
+				  target=RightFoot+scale=.05,.05,.05+atp=true+type=blunt+detach=true;
+				  target=RightFoot+scale=.05,.05,.05+atp=true+type=blade+detach=true
+				  "/>
+			<property name="DismemberTag_L_LeftUpperArmGore" value="
+				  Arlene/Blunt/LeftUpperArm;
+				  Arlene/Blade/LeftUpperArm" data="
+				  target=LeftArmRoll+scale=.08,.8,.8+type=blunt+detach=true;
+				  target=LeftArmRoll+scale=.08,.8,.8+type=blade+detach=true
+				  "/>
+			<property name="DismemberTag_L_LeftLowerArmGore" value="
+				  Arlene/Blunt/LeftLowerArm;
+				  Arlene/Blade/LeftLowerArm" data="
+				  target=LeftForeArmRoll+scale=.05,.9,.9+type=blunt+detach=true;
+				  target=LeftForeArmRoll+scale=.05,.9,.9+type=blade+detach=true
+				  "/>
+			<property name="DismemberTag_L_RightUpperArmGore" value="
+			    Arlene/Blunt/RightUpperArm;
+				  Arlene/Blade/RightUpperArm" data="
+				  target=RightArmRoll+scale=.06,.85,.85+type=blunt+detach=true;
+				  target=RightArmRoll+scale=.06,.85,.85+type=blade+detach=true
+				  "/>
+			<property name="DismemberTag_L_RightLowerArmGore" value="
+				  Arlene/Blunt/RightLowerArm;
+				  Arlene/Blade/RightLowerArm" data="
+				  target=RightForeArmRoll+scale=.05,.9,.9+type=blunt+detach=true;
+				  target=RightForeArmRoll+scale=.05,.9,.9+type=blade+detach=true
+				  "/>
+			<!-- Gameplay zombieArlene -->
+			<property name="MoveSpeedAggro" value="0.3, 1.35"/>
+			<!-- slim, regular -->
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="125"/>
+			</effect_group>
+		</entity_class>
+	</append>
+</config>

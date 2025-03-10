@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="IDCCore" />
+	<DisplayName value="I Dont Care Core"/>
+	<Description value="Core library containing common functionality for my mods." />
+	<Author value="I Don't Care" />
+	<Version value="3.3.0.3157" />
+	<Website value="" />
+</xml>

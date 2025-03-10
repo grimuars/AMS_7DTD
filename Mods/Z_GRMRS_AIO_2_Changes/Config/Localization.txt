@@ -103,10 +103,10 @@ drinkBlueberrySmoothieDesc,items,Food,,"Blueberry smoothie. It's like yucca, but
 foodChickenParmesan,items,Food,,Chicken Parmesaian,Сырная курица
 foodChickenParmesanDesc,items,Food,,"Chicken and cheese come together, diving into a hot, passionate relationship, where fresh eggs play a key role. You're already covered in goosebumps in anticipation of delicious food.","Курица и сыр встречаются вместе, погружаясь в горячие, страстные отношения, в которых не последнюю роль играют свежие яйца. Вы уже в пупырышках от предвкушения вкусной еды."
 
-foodT1-1,progression,Attribute,,Tier 1: Grilled Corn,Tier 1: Кукуруза на гриле
-foodT1-2,progression,Attribute,,Tier 1: Baked Potato,Tier 1: Печёный картофель
-foodT1-3,progression,Attribute,,Tier 1: Boiled Egg,Tier 1: Варёное яйцо
-foodT1-4,progression,Attribute,,Tier 1: Sunflower Butter,Tier 1: Кукурузный хлеб
+foodT1-1,progression,Attribute,,Tier 1: Grilled Corn,Ур. 1: Кукуруза на гриле
+foodT1-2,progression,Attribute,,Tier 1: Baked Potato,Ур. 1: Печёный картофель
+foodT1-3,progression,Attribute,,Tier 1: Boiled Egg,Ур. 1: Варёное яйцо
+foodT1-4,progression,Attribute,,Tier 1: Sunflower Butter,Ур. 1: Кукурузный хлеб
 foodT1-5,progression,Attribute,,Tier 1: Goldenrod Tea,Ур. 1: Чай из золотарника
 foodT1-6,progression,Attribute,,Tier 1: Grilled Meat,Ур. 1: Мясо на гриле
 foodT1-7,progression,Attribute,,Tier 1: Dough and Wheat Bread,Ур. 1: Тесто и хлеб
@@ -234,6 +234,18 @@ FeelLargeBed01,items,item,,"Beautiful Large Bed","Красивая больша�
 FeelHospitalBed01,items,item,,"Feel Hospital Bed","Удобная больничная кровать"
 FeelBunkBedVariantHelper,items,item,,"Feel Bunk Bed Variant Helper","Кровати из бункера"
 FeelMattressVariantHelper,items,item,,"Feel Mattress Variant Helper","Матрасы"
+
+cntCasketModernOpenPlayerWhite,items,item,,"Casket Bed (White)","Гроб-кровать (белый)"
+cntCasketModernOpenPlayerTan,items,item,,"Casket Bed (Tan)","Гроб-кровать (бежевый)"
+cntCasketModernOpenPlayerBrown,items,item,,"Casket Bed (Brown)","Гроб-кровать (коричневый)"
+cntCasketModernOpenPlayerGrey,items,item,,"Casket Bed (Grey)","Гроб-кровать (серый)"
+cntCasketModernOpenPlayerRed,items,item,,"Casket Bed (Red)","Гроб-кровать (красный)"
+cntCasketModernOpenPlayerGreen,items,item,,"Casket Bed (Green)","Гроб-кровать (зелёный)"
+cntCasketModernOpenPlayerBlue,items,item,,"Casket Bed (Blue)","Гроб-кровать (синий)"
+cntCasketModernOpenPlayerYellow,items,item,,"Casket Bed (Yellow)","Гроб-кровать (жёлтый)"
+cntCasketModernOpenPlayerAqua,items,item,,"Casket Bed (Aqua)","Гроб-кровать (голубой)"
+cntCasketModernOpenPlayerPurple,items,item,,"Casket Bed (Purple)","Гроб-кровать (фиолетовый)"
+FeelCasketModernVariantPlayerHelper,items,item,,"Casket Bed","Гроб-кровать"
 
 DisplayValueBedrollHealing,buffs,buff,,First Aid,ПП
 DisplayValueBedsHealing,buffs,buff,,"First Aid +","ПП +"

@@ -500,25 +500,6 @@
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1" tags="resourceCementBundle,resourceConcreteMixBundle"/>
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="resourceForgedSteelBundle,resourceBuckshotBundle,resourceBulletCasingBundle,resourceBulletTipBundle,resourceArrowHeadSteelAPBundle"/>
 	</append>
-	<!-- Бандлы энергопатронов -->
-	<!-- <append xpath="/progression/perks/book[@name='perkSniperComplete']">
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoEnergyRifleRoundBundle"/>
-		</effect_group>
-	</append>
-	<append xpath="/progression/perks/book[@name='perkPistolPeteComplete']">
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoEnergyRoundBundle"/>
-		</effect_group>
-	</append>
-	<append xpath="/progression/perks/book[@name='perkEnforcerComplete']">
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoEnergyMagnumRoundBundle"/>
-		</effect_group>
-	</append>
-	<append xpath="/progression/perks/book[@name='perkShotgunMessiahComplete']">
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ammoEnergyShellBundle"/>
-		</effect_group>
-	</append> -->
+	<!-- Снижение урона транспортному средству от тома 7 "Альманаха пожарного" увеличено до 50% -->
+	<set xpath="/progression/perks/book[@name='perkFiremansAlmanacEquipment']/effect_group/passive_effect[@name='VehicleSelfDamage']/@value">-.5</set> <!-- Default is -.25 -->
 </progression_aio_2>

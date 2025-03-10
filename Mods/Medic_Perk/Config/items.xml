@@ -32,6 +32,7 @@
 			<property name="UnlockedBy" value="craftingMedicGuns"/>
 			<!-- perkGunslinger,gunHandgunT1PistolSchematic, -->
 			<property name="ShowQuality" value="true"/>
+			<property name="ItemWeight" value="3"/>
 			<property name="SoundUnholster" value="weapon_unholster"/>
 			<property name="SoundHolster" value="weapon_holster"/>
 			<property name="SoundPickup" value="pistol_grab"/>
@@ -117,7 +118,7 @@
 				<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,4,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-				<passive_effect name="DegradationMax" operation="base_set" value="200,450" tier="1,6"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="400,600" tier="1,6"/>
 			</effect_group>
 			<effect_group name="label color restore">
 				<requirement name="RoundsInHoldingItem,KFCommonUtilityLib" operation="GT" value="5"/>
@@ -182,6 +183,9 @@
 				<triggered_effect trigger="onRechargeValueUpdate" action="SetMetadataOnWeaponLabel,KFCommonUtilityLib" metadata="MedicStock" slot="0"/>
 				<triggered_effect trigger="onSelfEquipStart" action="UpdateLocalCache,KFCommonUtilityLib" passive="CustomTaggedEffect" as="MedicWeaponHeal" tags="medicWeapon,MedicWeaponHeal" action_index="3"/>
 				<triggered_effect trigger="onSelfItemSwitchMode" action="UpdateLocalCache,KFCommonUtilityLib" passive="CustomTaggedEffect" as="MedicWeaponHeal" tags="medicWeapon,MedicWeaponHeal" action_index="3"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<display_value name="TSItemWeight" value="3"/>
 			</effect_group>
 		</item>
 		<!-- *** Mod_Schematics -->

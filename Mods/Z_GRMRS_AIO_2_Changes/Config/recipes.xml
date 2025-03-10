@@ -4,14 +4,6 @@
 	<!-- ИЗМЕНЕНИЯ В РЕЦЕПТАХ (КРОМЕ ЕДЫ) -->
 	<!-- РЕЦЕПТЫ, ПО ВОЗМОЖНОСТИ, РАСПОЛОЖЕНЫ В ПОРЯДКЕ ОРИГИНАЛЬНОГО RECIPES.XML -->
 	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
-	<!-- Ресурсы в кузнице -->
-	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
-	<!-- <setattribute xpath="/recipes/recipe[@name='resourceCrushedSand'][@material_based='true']" name="craft_area">forge,forgelow</setattribute>
-	<setattribute xpath="/recipes/recipe[@name='resourceRockSmall'][@material_based='true']" name="craft_area">forge,forgelow</setattribute>
-	<setattribute xpath="/recipes/recipe[@name='resourceScrapBrass'][@material_based='true']" name="craft_area">forge,forgelow</setattribute>
-	<setattribute xpath="/recipes/recipe[@name='resourceScrapIron'][@material_based='true']" name="craft_area">forge,forgelow</setattribute>
-	<setattribute xpath="/recipes/recipe[@name='resourceScrapLead'][@material_based='true']" name="craft_area">forge,forgelow</setattribute>
-	<setattribute xpath="/recipes/recipe[@name='resourceClayLump'][@material_based='true']" name="craft_area">forge,forgelow</setattribute> -->
 	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
 	<!-- Коробки с ресами - на верстаки -->
 	<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
