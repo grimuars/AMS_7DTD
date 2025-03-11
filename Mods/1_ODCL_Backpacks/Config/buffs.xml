@@ -1,7 +1,13 @@
 <ODCL>
+	<!-- Убираем старый бафф для стероидов -->
 	<remove xpath="//buff[@name='buffDrugSteroids']"/>
+	<!-- Убираем триггер на перегрузку от количества слотов в инвентаре -->
+	<remove xpath="//buff[@name='buffEncumberedInv']"/>
+	<remove xpath="//buff[@name='twitch_buffEncumbered']"/>
+	<!-- Баффы для системы веса -->
+	<remove xpath="//buff[@name='buffStatusCheck01']/effect_group/triggered_effect[@buff='buffEncumberedInv']"/>
 	<append xpath="/buffs/buff[@name='buffStatusCheck02']">
-		<!--ODCL ENCUMBRANCE START-->
+		<!-- Вес предметов - нагрузка, обновление -->
 		<effect_group name="MaxEncumbrance Enabled">
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="odcl_BuffCarryWeightSystem">
 				<requirement name="!HasBuff" buff="odcl_BuffCarryWeightSystem"/>
@@ -13,12 +19,13 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$CurrentMaxEncumbrance" operation="set" value="@MaxEncumbrance"/>
 		</effect_group>
 		<effect_group>
-			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="odcl_BuffEncumberedInv">
-				<requirement name="CVarCompare" cvar="_encumberedslots" operation="GT" value="0"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="odcl_BuffOverEncumbered">
+				<requirement name="CVarCompare" cvar="encumbranceCVar" operation="GTE" value="1"/>
 			</triggered_effect>
 		</effect_group>
 	</append>
 	<append xpath="/buffs">
+		<!-- Стероиды -->
 		<buff name="buffDrugSteroids" name_key="drugSteroids" description_key="drugSteroidsDesc" icon="ui_game_symbol_steroids">
 			<stack_type value="replace"/>
 			<duration value="0"/>
@@ -38,7 +45,7 @@
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".buffDrugSteroidsDisplay,$buffDrugSteroidsDuration"/>
 			</effect_group>
 			<effect_group>
-				<passive_effect name="CarryCapacity" operation="base_set" value="50"/>
+				<!-- <passive_effect name="CarryCapacity" operation="base_set" value="50"/> -->
 				<passive_effect name="RunSpeed" operation="perc_add" value=".1"/>
 				<passive_effect name="WaterChangeOT" operation="base_subtract" value=".04"/>
 				<!-- 30/720 -->
@@ -49,8 +56,7 @@
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$CurrentHaulingSkillLevel" operation="set" value="@$perkHaulingSkillLevel"/>
 			</effect_group>
 		</buff>
-		<!-- ADD ODCL MOD -->
-		<!-- ODCL CARRY WEIGHT SYSTEM -->
+		<!-- Система учёта веса -->
 		<buff name="odcl_BuffCarryWeightSystem" hidden="true" remove_on_death="true" name_key="CarryWeightSystem" icon="ui_game_symbol_stomach">
 			<stack_type value="ignore"/>
 			<duration value="0"/>
@@ -60,21 +66,6 @@
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$odcl_UICurrentWeight" operation="multiply" value="@encumbranceCVar"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$odcl_UICurrentWeight" operation="set" value="@MaxEncumbrance"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$odcl_UICurrentWeight" operation="multiply" value="@encumbranceCVar"/>
-			</effect_group>
-			<effect_group name="Over Encumbered Effects">
-				<requirement name="CVarCompare" cvar="encumbranceCVar" operation="GTE" value="1"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$odcl_EncumberedMobility" operation="set" value="@encumbranceCVar"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$odcl_EncumberedMobility" operation="subtract" value="1"/>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$odcl_EncumberedMobility" operation="multiply" value="2"/>
-				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="odcl_BuffOverEncumbered"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$odcl_EncumberedMobility" operation="set" value="@encumbranceCVar"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$odcl_EncumberedMobility" operation="subtract" value="1"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$odcl_EncumberedMobility" operation="multiply" value="2"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="odcl_BuffOverEncumbered"/>
-				<passive_effect name="StaminaChangeOT" operation="base_set" value="0">
-					<requirement name="CVarCompare" cvar="encumbranceCVar" operation="GTE" value="1.5"/>
-				</passive_effect>
-				<passive_effect name="Mobility" operation="perc_subtract" value="@$odcl_EncumberedMobility"/>
 			</effect_group>
 		</buff>
 		<!-- Перегрузка -->
@@ -91,28 +82,41 @@
 					<requirement name="CVarCompare" cvar="encumbranceCVar" operation="LT" value="1"/>
 				</triggered_effect>
 			</effect_group>
+			<!-- Эффекты перегрузки -->
+			<effect_group name="Over Encumbered Effects">
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$odcl_EncumberedMobility" operation="set" value="@encumbranceCVar"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$odcl_EncumberedMobility" operation="subtract" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$odcl_EncumberedMobility" operation="multiply" value="2"/>
+				<!-- <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="odcl_BuffOverEncumbered"/> -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$odcl_EncumberedMobility" operation="set" value="@encumbranceCVar"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$odcl_EncumberedMobility" operation="subtract" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$odcl_EncumberedMobility" operation="multiply" value="2"/>
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="odcl_BuffOverEncumbered"/> -->
+				<passive_effect name="StaminaChangeOT" operation="base_set" value="0">
+					<requirement name="CVarCompare" cvar="encumbranceCVar" operation="GTE" value="1.5"/>
+				</passive_effect>
+				<passive_effect name="Mobility" operation="perc_subtract" value="@$odcl_EncumberedMobility"/>
+			</effect_group>
 		</buff>
 		<!-- *** buffEncumberedInv -->
 		<!-- TRIGGERED_BY: Buffs = buffStatusCheck01 -->
 		<!-- Displays the count of inventory slots that are over encumbered -->
-		<buff name="odcl_BuffEncumberedInv" name_key="EncumberedInvName" description_key="odcl_BuffEncumberedInvDesc" tooltip_key="odcl_BuffEncumberedInvTooltip" icon="ui_game_symbol_pack_mule" icon_color="237,0,0">
+		<!-- <buff name="odcl_BuffEncumberedInv" name_key="EncumberedInvName" description_key="odcl_BuffEncumberedInvDesc" tooltip_key="odcl_BuffEncumberedInvTooltip" icon="ui_game_symbol_pack_mule" icon_color="237,0,0">
 			<stack_type value="ignore"/>
 			<damage_type value="stun"/>
 			<update_rate value="2.1"/>
 			<display_value value="_encumberedslots"/>
 			<display_value_key value="{0}"/>
 			<effect_group>
-				<!-- Blinks the display -->
 				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="odcl_BuffEncumberedInv"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$encumbranceEffect" operation="set" value="@_encumberedslots"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$encumbranceEffect" operation="multiply" value="0.026"/>
-				<!--0.026% X 27 = 0.70-->
 				<passive_effect name="Mobility" operation="perc_subtract" value="@$encumbranceEffect"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="odcl_BuffEncumberedInv">
 					<requirement name="CVarCompare" cvar="_encumberedslots" operation="LT" value="1"/>
 				</triggered_effect>
 			</effect_group>
-		</buff>
+		</buff> -->
 		<!-- Моды на увеличение переносимого веса -->
 		<!-- Глубокие карманы 1 -->
 		<buff name="odcl_BuffCarryWeigthStoragePocket01" hidden="true" remove_on_death="false">
@@ -267,5 +271,13 @@
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$PackMuleAmmount" operation="set" value="0"/>
 			</effect_group>
 		</buff>
+	</append>
+	<!-- Бафф для режима бога -->
+	<set xpath="/buffs/buff[@name='god']/effect_group/passive_effect[@name='CarryCapacity']/@value">169</set>
+	<append xpath="/buffs/buff[@name='god']">
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="MaxEncumbrance" operation="add" value="99999"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="MaxEncumbrance" operation="subtract" value="99999"/>
+		</effect_group>
 	</append>
 </ODCL>

@@ -5,7 +5,7 @@ WeightAdded,UI,Menu,,,"Gewichtskapazität","Carrying Capacity","Текущая �
 xuiCarryStageTitle,UI,Stats,,,"Maximales Gewicht","Maximum weight","Макс. нагрузка"
 
 odcl_BuffOverEncumbered,UI,Stat,,,"Du bist überladen!","You are overloaded!","Вы перегружены!"
-odcl_BuffOverEncumberedDesc,UI,Menu,,,"Du trägst zu viel und das macht Dich langsamer.\n\nEffekte:-[ff0000]{cvar($odcl_UIEncumberedMobility:00)}[-]% Mobilität","You carry too much and that slows you down.\n\nEffects:-[ff0000]{cvar($odcl_UIEncumberedMobility:00)}[-]% Mobility",,"Вы несёте слишком много и не можете быстро передвигаться.\n\nШтраф: -[ff0000]{cvar($odcl_UIEncumberedMobility:00)}[-]% к мобильности"
+odcl_BuffOverEncumberedDesc,UI,Menu,,,"Du trägst zu viel und das macht Dich langsamer.\n\nEffekte: -[ff0000]{cvar($odcl_UIEncumberedMobility:00)}[-]% Mobilität","You carry too much and that slows you down.\n\nEffects: -[ff0000]{cvar($odcl_UIEncumberedMobility:00)}[-]% Mobility",,"Вы несёте слишком много и не можете быстро передвигаться.\n\nШтраф: -[ff0000]{cvar($odcl_UIEncumberedMobility:00)}[-]% к мобильности"
 odcl_BuffOverEncumberedToolTip,UI,ToolTip,,,"[ed0000]Du bist überladen![-]","[ed0000]You are overloaded![-]","[ed0000]Вы перегружены![-]"
 
 odcl_LeatherBackpack,item,modbackpack,,,"Ledertasche","Leather Bag","Кожаный рюкзак (+30 кг)"

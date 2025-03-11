@@ -4,5 +4,6 @@
   "blockRadius": 32,
   "replaceCrop": true,
   "harvestKey": "h",
-  "harvestModKey": ""
+  "harvestModKey": "",
+  "harvestTypes": []
 }

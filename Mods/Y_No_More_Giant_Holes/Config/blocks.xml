@@ -25,7 +25,7 @@
 			<property name="IndexName" value="quest_stone"/>
 			<drop event="Fall" name="rockResourceRespawner" count="1" prob="1" stick_chance="1"/>
 			<property name="PlantGrowing.Next" value="resourceRock01"/>
-			<property name="PlantGrowing.GrowthRate" value="20"/>
+			<property name="PlantGrowing.GrowthRate" value="15"/>
 			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
@@ -55,7 +55,7 @@
 			<property name="IndexName" value="quest_stone"/>
 			<drop event="Fall" name="rockResource02Respawner" count="1" prob="1" stick_chance="1"/>
 			<property name="PlantGrowing.Next" value="resourceRock02"/>
-			<property name="PlantGrowing.GrowthRate" value="20"/>
+			<property name="PlantGrowing.GrowthRate" value="15"/>
 			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
@@ -85,7 +85,7 @@
 			<property name="IndexName" value="quest_stone"/>
 			<drop event="Fall" name="rockResource02Respawner" count="1" prob="1" stick_chance="1"/>
 			<property name="PlantGrowing.Next" value="resourceRock03"/>
-			<property name="PlantGrowing.GrowthRate" value="20"/>
+			<property name="PlantGrowing.GrowthRate" value="15"/>
 			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
@@ -115,7 +115,7 @@
 			<property name="IndexName" value="quest_stone"/>
 			<drop event="Fall" name="oreIronBoulderRespawner" count="1" prob="1" stick_chance="1"/>
 			<property name="PlantGrowing.Next" value="oreIronBoulder"/>
-			<property name="PlantGrowing.GrowthRate" value="20"/>
+			<property name="PlantGrowing.GrowthRate" value="30"/>
 			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
@@ -145,7 +145,7 @@
 			<property name="IndexName" value="quest_stone"/>
 			<drop event="Fall" name="oreLeadBoulderRespawner" count="1" prob="1" stick_chance="1"/>
 			<property name="PlantGrowing.Next" value="oreLeadBoulder"/>
-			<property name="PlantGrowing.GrowthRate" value="20"/>
+			<property name="PlantGrowing.GrowthRate" value="30"/>
 			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
@@ -175,7 +175,7 @@
 			<property name="IndexName" value="quest_stone"/>
 			<drop event="Fall" name="oreCoalBoulderRespawner" count="1" prob="1" stick_chance="1"/>
 			<property name="PlantGrowing.Next" value="oreCoalBoulder"/>
-			<property name="PlantGrowing.GrowthRate" value="20"/>
+			<property name="PlantGrowing.GrowthRate" value="30"/>
 			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
@@ -205,7 +205,7 @@
 			<property name="IndexName" value="quest_stone"/>
 			<drop event="Fall" name="orePotassiumNitrateBoulderRespawner" count="1" prob="1" stick_chance="1"/>
 			<property name="PlantGrowing.Next" value="orePotassiumNitrateBoulder"/>
-			<property name="PlantGrowing.GrowthRate" value="20"/>
+			<property name="PlantGrowing.GrowthRate" value="30"/>
 			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
@@ -235,7 +235,7 @@
 			<property name="IndexName" value="quest_stone"/>
 			<drop event="Fall" name="oreShaleBoulderRespawner" count="1" prob="1" stick_chance="1"/>
 			<property name="PlantGrowing.Next" value="oreShaleBoulder"/>
-			<property name="PlantGrowing.GrowthRate" value="20"/>
+			<property name="PlantGrowing.GrowthRate" value="30"/>
 			<!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.IsRandom" value="false"/>
