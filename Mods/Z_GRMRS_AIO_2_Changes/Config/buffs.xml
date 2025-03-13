@@ -61,7 +61,7 @@
 				<requirement name="CVarCompare" cvar="hordedelay" operation="GTE" value="901"/>
 			</effect_group>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="hordetimer" operation="set" value="randomint(1,1000)"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="hordetimer" operation="set" value="randomint(1,3000)"/>
 			</effect_group>
 			<effect_group>
 				<requirement name="CVarCompare" cvar="hordedelay" operation="GTE" value="900"/>
@@ -84,4 +84,9 @@
 			</effect_group>
 		</buff>
 	</append>
+	<!-- Повышаем вероятность получить дебафф при уменьшении здоровья -->
+	<set xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group/passive_effect[@name='BuffResistance']/@value">-.08</set>
+	<!-- Бафф новичка действует не дальше 2 уровня -->
+	<set xpath="/buffs/buff[@name='buffNewbieCoat']/effect_group[1]/requirement[@name='PlayerLevel']/@value">2</set>
+	<set xpath="/buffs/buff[@name='buffNewbieCoat']/effect_group[2]/triggered_effect/requirement[@name='PlayerLevel']/@value">2</set>
 </buffs_aio_2>
