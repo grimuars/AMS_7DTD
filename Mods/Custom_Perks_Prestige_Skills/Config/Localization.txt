@@ -25,11 +25,11 @@ HealingArtsRank2Desc,progression,Attribute,New,+45% Medical Healing,+45% к си
 HealingArtsRank3Desc,progression,Attribute,New,+60% Medical Healing,+60% к силе исцеления
 HealingArtsRank4Desc,progression,Attribute,New,+70% Medical Healing,+70% к силе исцеления
 HealingArtsRank5Desc,progression,Attribute,New,+75% Medical Healing,+75% к силе исцеления
-HealingArtsRank1LongDesc,progression,Attribute,New,Increase the healing efficiency of medical items by 25%.,Увеличивает эффективность исцеления с помощью медицинских средств на 25%.
-HealingArtsRank2LongDesc,progression,Attribute,New,Increase the healing efficiency of medical items by 45%.,Увеличивает эффективность исцеления с помощью медицинских средств на 45%.
-HealingArtsRank3LongDesc,progression,Attribute,New,Increase the healing efficiency of medical items by 60%.,Увеличивает эффективность исцеления с помощью медицинских средств на 60%.
-HealingArtsRank4LongDesc,progression,Attribute,New,Increase the healing efficiency of medical items by 70%.,Увеличивает эффективность исцеления с помощью медицинских средств на 70%.
-HealingArtsRank5LongDesc,progression,Attribute,New,Increase the healing efficiency of medical items by 75%.,Увеличивает эффективность исцеления с помощью медицинских средств на 75%.
+HealingArtsRank1LongDesc,progression,Attribute,New,Increase the healing efficiency of medical items by 10%.,"Увеличивает эффективность исцеления с помощью медицинских средств на 10%. Не влияет на медицинское оружие."
+HealingArtsRank2LongDesc,progression,Attribute,New,Increase the healing efficiency of medical items by 20%.,"Увеличивает эффективность исцеления с помощью медицинских средств на 20%. Не влияет на медицинское оружие."
+HealingArtsRank3LongDesc,progression,Attribute,New,Increase the healing efficiency of medical items by 30%.,"Увеличивает эффективность исцеления с помощью медицинских средств на 30%. Не влияет на медицинское оружие."
+HealingArtsRank4LongDesc,progression,Attribute,New,Increase the healing efficiency of medical items by 40%.,"Увеличивает эффективность исцеления с помощью медицинских средств на 40%. Не влияет на медицинское оружие."
+HealingArtsRank5LongDesc,progression,Attribute,New,Increase the healing efficiency of medical items by 50%.,"Увеличивает эффективность исцеления с помощью медицинских средств на 50%. Не влияет на медицинское оружие."
 
 ArmorSpecialistName,progression,skills,New,Armor Specialist,Специалист-бронник
 ArmorSpecialistDesc,progression,skills,New,"Your armor feels like a second skin and thus is even more durable now.","Ваша броня - словно ваша вторая кожа."

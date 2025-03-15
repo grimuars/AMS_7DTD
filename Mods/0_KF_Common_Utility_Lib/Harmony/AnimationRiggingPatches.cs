@@ -173,12 +173,14 @@ static class AnimationRiggingPatches
 
     [HarmonyPatch(typeof(MinEventActionAttachPrefabToHeldItem), nameof(MinEventActionAttachPrefabToHeldItem.Execute))]
     [HarmonyTranspiler]
-    private static IEnumerable<CodeInstruction> Transpiler_Execute_MinEventActionAttachPrefabToHeldItem(IEnumerable<CodeInstruction> instructions)
+    private static IEnumerable<CodeInstruction> Transpiler_Execute_MinEventActionAttachPrefabToHeldItem(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
     {
         var codes = instructions.ToList();
         var mtd_find = AccessTools.Method(typeof(GameUtils), nameof(GameUtils.FindDeepChild));
         var fld_trans = AccessTools.Field(typeof(MinEventParams), nameof(MinEventParams.Transform));
         var mtd_layer = AccessTools.Method(typeof(Utils), nameof(Utils.SetLayerRecursively));
+
+        var lbd_targets = generator.DeclareLocal(typeof(AnimationTargetsAbs));
 
         for (int i = 1; i < codes.Count; i++)
         {
@@ -206,25 +208,90 @@ static class AnimationRiggingPatches
                     i += 4;
                 }
             }
+            else if (codes[i].opcode == OpCodes.Stloc_2)
+            {
+                var lbl = generator.DefineLabel();
+                var lbls = codes[i + 1].ExtractLabels();
+                codes[i + 1].WithLabels(lbl);
+                codes.InsertRange(i + 1, new[]
+                {
+                    new CodeInstruction(OpCodes.Ldarg_1).WithLabels(lbls),
+                    CodeInstruction.LoadField(typeof(MinEventParams), nameof(MinEventParams.Transform)),
+                    new CodeInstruction(OpCodes.Ldnull),
+                    new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(UnityEngine.Object), "op_Inequality")),
+                    new CodeInstruction(OpCodes.Brfalse_S, lbl),
+                    new CodeInstruction(OpCodes.Ldarg_1),
+                    CodeInstruction.LoadField(typeof(MinEventParams), nameof(MinEventParams.Transform)),
+                    CodeInstruction.Call(typeof(Transform), nameof(Transform.GetComponent), new Type[0], new Type[]{ typeof(AnimationTargetsAbs)}),
+                    new CodeInstruction(OpCodes.Stloc_S, lbd_targets)
+                });
+                i += 9;
+            }
+            else if (codes[i].opcode == OpCodes.Stloc_S && ((LocalBuilder)codes[i].operand).LocalIndex == 4)
+            {
+                codes.RemoveAt(i - 1);
+                codes.InsertRange(i - 1, new[]
+                {
+                    new CodeInstruction(OpCodes.Ldloc_S, lbd_targets),
+                    new CodeInstruction(OpCodes.Ldloc_2),
+                    CodeInstruction.Call(typeof(AnimationRiggingPatches), nameof(CreateOrMoveAttachment))
+                });
+                i += 2;
+            }
             else if (codes[i].Calls(mtd_layer))
             {
                 codes.InsertRange(i + 1, new[]
                 {
-                    new CodeInstruction(OpCodes.Ldloc_0),
-                    new CodeInstruction(OpCodes.Ldloc_3),
+                    new CodeInstruction(OpCodes.Ldloc_S, lbd_targets),
+                    new CodeInstruction(OpCodes.Ldloc_S, 4),
                     CodeInstruction.Call(typeof(AnimationRiggingPatches), nameof(CheckAttachmentRefMerge))
                 });
                 i += 3;
             }
+            else if (codes[i].opcode == OpCodes.Stloc_S && ((LocalBuilder)codes[i].operand).LocalIndex == 5)
+            {
+                var lbl = generator.DefineLabel();
+                var lbls = codes[i + 1].ExtractLabels();
+                codes[i + 1].WithLabels(lbl);
+                codes.InsertRange(i + 1, new[]
+                {
+                    new CodeInstruction(OpCodes.Ldloc_3).WithLabels(lbls),
+                    CodeInstruction.Call(typeof(Transform), nameof(Transform.GetComponent), new Type[0], new Type[]{ typeof(IgnoreTint)}),
+                    new CodeInstruction(OpCodes.Ldnull),
+                    new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(UnityEngine.Object), "op_Inequality")),
+                    new CodeInstruction(OpCodes.Brfalse_S, lbl),
+                    new CodeInstruction(OpCodes.Ret)
+                });
+                i += 6;
+            }
         }
+        codes.InsertRange(0, new[]
+        {
+            new CodeInstruction(OpCodes.Ldnull),
+            new CodeInstruction(OpCodes.Stloc_S, lbd_targets)
+        });
         return codes;
     }
 
-    private static void CheckAttachmentRefMerge(Transform main, Transform attachmentReference)
+    private static GameObject CreateOrMoveAttachment(GameObject go, AnimationTargetsAbs targets, string name)
     {
-        if (main.TryGetComponent<AnimationTargetsAbs>(out var targets) && attachmentReference.TryGetComponent<AttachmentReferenceAppended>(out var appended))
+        GameObject res = null;
+        if (targets)
         {
-            appended.Merge(targets.AttachmentRef);
+            res = targets.GetPrefab(name);
+        }
+        if (!res)
+        {
+            res = GameObject.Instantiate(go);
+        }
+        return res;
+    }
+
+    private static void CheckAttachmentRefMerge(AnimationTargetsAbs targets, GameObject attachmentReference)
+    {
+        if (targets)
+        {
+            targets.AttachPrefab(attachmentReference);
         }
     }
 
@@ -688,6 +755,7 @@ static class AnimationRiggingPatches
         var mtd_setparent = AccessTools.Method(typeof(Transform), nameof(Transform.SetParent), new[] { typeof(Transform), typeof(bool) });
         var mtd_startholding = AccessTools.Method(typeof(ItemClass), nameof(ItemClass.StartHolding));
         var mtd_showrighthand = AccessTools.Method(typeof(Inventory), nameof(Inventory.ShowRightHand));
+        var mtd_holdingchanged = AccessTools.Method(typeof(EntityAlive), nameof(EntityAlive.OnHoldingItemChanged));
         var prop_holdingitem = AccessTools.PropertyGetter(typeof(Inventory), nameof(Inventory.holdingItem));
         var fld_transform = AccessTools.Field(typeof(MinEventParams), nameof(MinEventParams.Transform));
 
@@ -710,7 +778,7 @@ static class AnimationRiggingPatches
                                 codes.InsertRange(k + 1, new[]
                                 {
                                     new CodeInstruction(OpCodes.Ldloc_0).WithLabels(codes[k + 1].ExtractLabels()),
-                                    new CodeInstruction(OpCodes.Ldc_I4_S, (int)CustomEnums.onSelfHoldingItemAssemble),
+                                    CodeInstruction.LoadField(typeof(CustomEnums), nameof(CustomEnums.onSelfHoldingItemAssemble)),
                                     new CodeInstruction(OpCodes.Ldarg_0),
                                     CodeInstruction.LoadField(typeof(Inventory), nameof(Inventory.entity)),
                                     CodeInstruction.LoadField(typeof(EntityAlive), nameof(EntityAlive.MinEventContext)),
@@ -729,11 +797,40 @@ static class AnimationRiggingPatches
                         break;
                     }
                 }
+                i += 6;
+            }
+            else if (codes[i].Calls(mtd_holdingchanged))
+            {
+                codes.InsertRange(i + 1, new[]
+                {
+                    new CodeInstruction(OpCodes.Ldarg_0).WithLabels(codes[i + 1].ExtractLabels()),
+                    CodeInstruction.Call(typeof(Inventory), nameof(Inventory.syncHeldItem))
+                });
                 break;
             }
         }
         return codes;
     }
+
+    [HarmonyPatch(typeof(Inventory), nameof(Inventory.setHoldingItemTransform))]
+    [HarmonyTranspiler]
+    private static IEnumerable<CodeInstruction> Transpiler_setHoldingItemTransform_Inventory(IEnumerable<CodeInstruction> instructions)
+    {
+        var codes = instructions.ToList();
+        var mtd_sync = AccessTools.Method(typeof(Inventory), nameof(Inventory.syncHeldItem));
+
+        for (int i = 0; i < codes.Count; i++)
+        {
+            if (codes[i].Calls(mtd_sync))
+            {
+                codes[i + 1].WithLabels(codes[i - 1].ExtractLabels());
+                codes.RemoveRange(i - 1, 2);
+                break;
+            }
+        }
+        return codes;
+    }
+
 
     //private static Coroutine delayShowWeaponCo;
     //private static IEnumerator DelayShowWeapon(Camera camera)

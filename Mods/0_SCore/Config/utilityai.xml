@@ -1,6 +1,6 @@
 ﻿<configs>
-	<insertBefore xpath="/utility_ai/ai_packages">
-		<!--
+    <insertBefore xpath="/utility_ai/ai_packages">
+    <!--
         To activate AI Packages, define the following in entityclasses.xml on the NPCs:
         
 			<property name="AIPackages" value="Human Basic, Human Heal"/> 
@@ -356,5 +356,6 @@ More examples:
         <consideration class="TargetTileEntity, SCore" type="Loot, SecureLoot" />
     </action>  
     -->
-	</insertBefore>
+
+    </insertBefore>
 </configs>

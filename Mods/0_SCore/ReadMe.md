@@ -20,6 +20,205 @@ Direct Download to the 0-SCore.zip available on gitlab mirror: https://github.co
 ### Change Logs
 
 [ Change Log ]
+Version: 1.3.31.1014
+	[ NPCs Auto Stash ]
+		- Fixed a null reference when opening up loot bags.
+	
+Version: 1.3.24.1230
+	[ NPCs ]
+		- Added support for the Auto-Stash buttons to work with NPCs.
+
+	[ AdvancedItemsFeatures ]
+		- Added a new property to the AdvancedItemsFeature in the blocks.xml
+	        <property name="DisableScrapFallback" value="false"/>
+		- This feature is only enabled AdvancedItemRepair is set to true.
+		- If this feature is enabled, but RepairItems / ScrapItems is not defined, then the item will scrap using vanilla.
+		- Current behaviour allows an item to be scrapped using a reduced recipe based on its ingredients, without defining RepairItems / ScrapItems.
+
+		- Added ScrapItems support for blocks.
+
+	[ Version Checker ]
+		- Received donated Code from Yakov that allows modders to add a versioncheck.xml file to their overhauls
+		- This versioncheck.xml file can be anywhere in the Mods folder
+		- This versioncheck.xml file contains the expected game version, along with optional messages to display.
+		- If this versioncheck.xml file is found in the Mods folder,
+			- Reads the current game version, and compares it to the expected game version.
+			- If the version matches, the main menu loads normally.
+			- If the version mismatches, a message box is shown to the players, saying the version does not match.
+			- The message box has a Quit and Continue button, allowing the user to keep going if they really want too.
+		- Example file can be found under Features/VersionCheck/versioncheck.example
+		- Added localization support.
+
+
+Version: 1.3.7.1037
+	[ Challenges ]
+		- Added multi-option to the loot_list= for the Gather Challenge. This is a comma-delimited list.
+	
+	[ Craft From Containers ]
+		- Added new Config option in Blocks.xml to check if a container is within Landclaim bounds, rather than distance.
+		    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedRecipes']/property[@name='LandClaimContainersOnly']/@value">true</set>
+		- Default is false, do not restrict to landclaim, but rely on distance.
+
+		- Added new Config option in Blocks.xml to check if the player is within landclaim bounds.
+		    <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedRecipes']/property[@name='LandClaimPlayerOnly']/@value">true</set>
+		- Default is false, do not restrict player from being within a landclaim bounds.
+
+	[ Dynamic Bone ]
+		- Added test code for a new dynamic bone system.
+
+Version: 1.3.2.1535
+	- No Code changes. Rebuilt against Game Version 1.3.
+
+Version: 1.2.68.1007
+	[ Material Modifier ]
+		- With approval from Zilox, consumed the Material Modifier mod into 0-SCore to take over maintenance going forward.
+			<triggered_effect trigger="onSelfFirstSpawn" action="ReplaceMaterial, SCore" 
+				target_material_name="HD_Arlene_Radiated" replace_material="#@modfolder:Resources/ww_zeds_1.unity3d?HD_Arlene_Rad"/>
+	
+	[ Challenges ]
+		- Added an item_tags to the CraftWithIngredient Challenge to check the tag for an ingredient
+			<objective type="CraftWithIngredient, SCore" count="2" item_tags="tag"/>
+			- This can work with ingredient= as well, and mix and match.
+			- Tag is checked first, then ingredient name.
+			- If tag is found, then it counts towards the challenge, but does not again check the ingredient name.
+
+		- Added a PlaceBlockByTag objective that checks for block tag when a block is placed.
+			<objective type="BlockPlaceByTag, SCore" count="2" block_tags="myTag"/>
+
+		- Added a loot_list attribute to GatherTags. It varies that the loot container is opened, with the loot_list name, before counting.
+			- This will not be 100% accurate, as it counts the items you have, and not necessarily how many you are grabbing from the loot container itself
+	            <objective type="GatherTags, SCore" loot_list="garbage"  item_tags="junk" count="10"/>
+
+
+
+
+Version: 1.2.61.2007
+	[ Fire Manager ]
+		- Fixed a potential threading issue with fire particles.
+
+Version: 1.2.59.838
+	[ Fire Manager ]
+		- Fixed a net package setup that was causing bad performance
+		- Adjusted how the netpackages are sent to the clients and recieved by the clients
+		- Reduced the information distributed via net packages
+
+Version: 1.2.57.733
+	[ On Block Added ]
+		- Fixed a null reference in onBlockAdded patch when loading prefab editor.
+
+Version:1.2.56.900
+	[ NPCs ]
+		- Fixed a few issues with null references when adding NPCs to storage.
+		
+
+Version: 1.2.54.1354
+	[ NPCs ]
+		- Fixed an issue where NPCs could be quick stacked into Drop box and other storage units
+
+	[ Challenges ]
+		- Fixed an issue where Stealth Kills would trigger twice, resulting in credit of 2 for 1 kill.
+
+Version: 1.2.53.1812
+	[ Challenges ]
+		- Added in a missing block tag check on the BlockUpgrade challenge
+
+Version: 1.2.52.1518
+
+	[ Challenges ]
+		- Fixed various issues with counting killed entities towards challenges
+		- Refactored the SCore base class a bit to handle the bugs
+		- Stealth kills should be working as expected now.
+		- Decaptation challenges should be working better.
+		- KillWithItem challenges should be working better.
+		- Fixed issues where Fire-related challenges was not running for clients connecting to servers.
+
+	[ Goto POI SDX ]
+		- Fixed an issue where the POI's name was not being localized.
+
+	[ Requirements ]
+		- Fixed an issue with the IsBloodMoon requirement check
+
+	[ Auto Redeem Challenges ]
+		- Fixed a potential null reference.
+			- Probably just a timing issue, but better safe then sorry.
+
+	[ UAI ]
+		- Applied fixes to the UAI Farming Task
+			- Changed how the Entity determines its looking at the target plot
+			- Changed the distance check kto determine if its close enough to the target plot.
+
+	[ Fire Manager ]
+		- Changed FireManager from a polling method to a Monobehaviour, attached to the GameManager's transform.
+			- This should reduce it spinning on Updates every frame.
+		- Fixed a few issues with netpackages, and distributions. Maybe.
+		- Refactored a few calls to make them easier to call from other scripts.
+		- Added in a new property, called "FirePersists". 
+			- If this is set to true, fire will be saved.
+			- Default is not saved when the game is unloaded / loaded.
+
+		- Added new patch to OnBlockAdded to check for property to start a block on fire.
+		- When this property is on a block, and is set to true, it'll automatically catch fire.
+			<property name="RegisterToFireManager" value="true" />
+
+		- Changed how a block picks its Fire Particle.
+		- A Fire Particle can be defined on a block's material, a block, or in the global block configuration, using this syntax:
+			<property name="FireParticle" value="@modfolder:..." />
+
+		- Fire particle that will be used on any given block will now be determined by in this order of priority: 
+			- A block's material
+			- A block
+			- Default fire particle defined in global block configuration.
+				- If Random Fire Particle is set to true, a random fire particle will be used instead of the global block configuration.
+			
+
+
+Version: 1.2.37.1146
+	[ NPCs ]
+		- Reverted a patch that was causing null ref on player death.
+		- This patch was meant to block people stashing NPCs.
+
+Version: 1.2.36.1142
+	[ NPCs ]
+		- Fixed an issue where a null reference would happen in a harmony patch for the Stash All.
+
+	[ Cave Spawning ]
+		- Fixed an issue where cave spawning was too sensitive.
+
+Version: 1.2.35.852
+	[ NPCs ]
+		- Fixed an issue where NPCs could be added to a storage box using the Stash All button.
+
+	[ Path Finding ]
+		- Accidentally reverted the sign for path finding.
+		- Intentionally restored the change.
+
+	[ Entity Factory Patch ]
+		- Added a patch to EntityFactory to catch "GetEntityType slow lookup for" for SCore-related classes
+
+
+Version: 1.2.29.952
+	[ Fire Mod ]
+		- Additional performance fixes when playing on servers
+
+	[ Caves ]
+		- Fixed issues with decorations being too few
+		- Cleaned up old staglamites which do not exist anymore
+		- Fixed cave spawning issues, and refactored the class
+
+	[ EntityAliveSDX ]
+		- Changed the default name of Bob to empty string.
+
+	[ Error Handling ]
+		- Added a ConfigBlock entry for a null reference in BlockEntityData.GetRenderers()
+			- This error would be thrown sometimes when a POI was being reset
+			- This feature must be set to true to guard against the null check. Default is false.
+				<property name="BlockEntityDataGetRenderers" value="true" />
+
+
+Version: 1.2.8.1136
+	[ NPCs ]
+		- Fixed an issue where NPCs could be added to Drone
+
 Version: 1.2.4.1601
 	[ Block Triggered SDX ]
 		- Fixed an issue with the ActivateOnLook check

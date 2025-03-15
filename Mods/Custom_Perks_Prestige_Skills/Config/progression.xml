@@ -31,7 +31,7 @@
 		</skill>
 	</insertAfter>
 	<insertAfter xpath="/progression/perks/perk[@name='perkLockPicking']">
-		<perk name="perkHealingArts" parent="skillMental" name_key="HealingArtsName" desc_key="HealingArtsDesc" icon="cp_healingarts">
+		<perk name="perkHealingArts" parent="skillMental" name_key="HealingArtsName" base_skill_point_cost="2" desc_key="HealingArtsDesc" icon="cp_healingarts">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
 			</level_requirements>
@@ -56,7 +56,7 @@
 				<effect_description level="5" desc_key="HealingArtsRank5Desc" long_desc_key="HealingArtsRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkArmorSpecialist" parent="skillMental" name_key="ArmorSpecialistName" desc_key="ArmorSpecialistDesc" icon="cp_armorspecialist">
+		<perk name="perkArmorSpecialist" parent="skillMental" name_key="ArmorSpecialistName" base_skill_point_cost="2" desc_key="ArmorSpecialistDesc" icon="cp_armorspecialist">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="reqPerceptionLevel04"/>
 			</level_requirements>
@@ -85,7 +85,7 @@
 				<effect_description level="5" desc_key="ArmorSpecialistRank5Desc" long_desc_key="ArmorSpecialistRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkWeaponSpecialist" parent="skillMental" name_key="WeaponSpecialistName" desc_key="WeaponSpecialistDesc" icon="cp_weaponspecialist">
+		<perk name="perkWeaponSpecialist" parent="skillMental" name_key="WeaponSpecialistName" base_skill_point_cost="2" desc_key="WeaponSpecialistDesc" icon="cp_weaponspecialist">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel04"/>
 			</level_requirements>
@@ -114,7 +114,7 @@
 				<effect_description level="5" desc_key="WeaponSpecialistRank5Desc" long_desc_key="WeaponSpecialistRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkWH" parent="skillRangedMasteries" name_key="WeaponHandlingName" desc_key="WeaponHandlingDesc" icon="cp_wh">
+		<perk name="perkWH" parent="skillRangedMasteries" name_key="WeaponHandlingName" base_skill_point_cost="2" desc_key="WeaponHandlingDesc" icon="cp_wh">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="4" desc_key="reqAgilityLevel04"/>
 			</level_requirements>
@@ -144,7 +144,7 @@
 				<effect_description level="5" desc_key="WeaponHandlingRank5Desc" long_desc_key="WeaponHandlingRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkLargeMag" parent="skillRangedMasteries" name_key="LargerMagazinesName" desc_key="LargerMagazinesDesc" icon="cp_largemag">
+		<perk name="perkLargeMag" parent="skillRangedMasteries" name_key="LargerMagazinesName" base_skill_point_cost="2" desc_key="LargerMagazinesDesc" icon="cp_largemag">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="4" desc_key="reqAgilityLevel04"/>
 			</level_requirements>
@@ -174,7 +174,7 @@
 				<effect_description level="5" desc_key="LargerMagazinesRank5Desc" long_desc_key="LargerMagazinesRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkRSM" parent="skillRangedMasteries" name_key="ReloadSpeedName" desc_key="ReloadSpeedDesc" icon="cp_rsm">
+		<perk name="perkRSM" parent="skillRangedMasteries" name_key="ReloadSpeedName" base_skill_point_cost="2" desc_key="ReloadSpeedDesc" icon="cp_rsm">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel04"/>
 			</level_requirements>
@@ -204,7 +204,7 @@
 				<effect_description level="5" desc_key="ReloadSpeedRank5Desc" long_desc_key="ReloadSpeedRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkMaxHP" parent="skillPhysical" name_key="MaximumHealthName" desc_key="MaximumHealthDesc" icon="cp_maxHP">
+		<perk name="perkMaxHP" parent="skillPhysical" name_key="MaximumHealthName" base_skill_point_cost="2" desc_key="MaximumHealthDesc" icon="cp_maxHP">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="6" desc_key="reqFortitudeLevel06"/>
 			</level_requirements>
@@ -229,7 +229,7 @@
 				<effect_description level="5" desc_key="MaximumHealthRank5Desc" long_desc_key="MaximumHealthRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkMaxSta" parent="skillPhysical" name_key="MaximumStaminaName" desc_key="MaximumStaminaDesc" icon="cp_maxsta">
+		<perk name="perkMaxSta" parent="skillPhysical" name_key="MaximumStaminaName" base_skill_point_cost="2" desc_key="MaximumStaminaDesc" icon="cp_maxsta">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="5" desc_key="reqAgilityLevel05"/>
 			</level_requirements>
@@ -254,7 +254,7 @@
 				<effect_description level="5" desc_key="MaximumStaminaRank5Desc" long_desc_key="MaximumStaminaRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkDmgRes" parent="skillPhysical" name_key="DamageResistanceName" desc_key="DamageResistanceDesc" icon="cp_dmgres">
+		<perk name="perkDmgRes" parent="skillPhysical" name_key="DamageResistanceName" base_skill_point_cost="2" desc_key="DamageResistanceDesc" icon="cp_dmgres">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="6" desc_key="reqPerceptionLevel06"/>
 			</level_requirements>
@@ -279,7 +279,7 @@
 				<effect_description level="5" desc_key="DamageResistanceRank5Desc" long_desc_key="DamageResistanceRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkStaLoss" parent="skillPhysical" name_key="VigorName" desc_key="VigorDesc" icon="cp_staloss">
+		<perk name="perkStaLoss" parent="skillPhysical" name_key="VigorName" base_skill_point_cost="2" desc_key="VigorDesc" icon="cp_staloss">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="6" desc_key="reqStrengthLevel06"/>
 			</level_requirements>
@@ -305,7 +305,7 @@
 				<effect_description level="5" desc_key="VigorRank5Desc" long_desc_key="VigorRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkStaRegen" parent="skillPhysical" name_key="ConstancyName" desc_key="ConstancyDesc" icon="cp_staregen">
+		<perk name="perkStaRegen" parent="skillPhysical" name_key="ConstancyName" base_skill_point_cost="2" desc_key="ConstancyDesc" icon="cp_staregen">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="7" desc_key="reqFortitudeLevel07"/>
 			</level_requirements>
@@ -330,7 +330,7 @@
 				<effect_description level="5" desc_key="ConstancyRank5Desc" long_desc_key="ConstancyRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkRecuperate" parent="skillPhysical" name_key="RecuperateName" desc_key="RecuperateDesc" icon="cp_Recuperate">
+		<perk name="perkRecuperate" parent="skillPhysical" name_key="RecuperateName" base_skill_point_cost="2" desc_key="RecuperateDesc" icon="cp_Recuperate">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
 			</level_requirements>
@@ -355,7 +355,7 @@
 				<effect_description level="5" desc_key="RecuperateRank5Desc" long_desc_key="RecuperateRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkMiningMastery" parent="skillPhysical" name_key="MiningMasteryName" desc_key="MiningMasteryDesc" icon="cp_miningmastery">
+		<perk name="perkMiningMastery" parent="skillPhysical" name_key="MiningMasteryName" base_skill_point_cost="2" desc_key="MiningMasteryDesc" icon="cp_miningmastery">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="5" desc_key="reqFortitudeLevel05"/>
 			</level_requirements>
@@ -382,7 +382,7 @@
 				<effect_description level="5" desc_key="MiningMasteryRank5Desc" long_desc_key="MiningMasteryRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkClubMastery" parent="skillMeleeMasteries" name_key="ClubMasteryName" desc_key="ClubMasteryDesc" icon="cp_clubmastery">
+		<perk name="perkClubMastery" parent="skillMeleeMasteries" name_key="ClubMasteryName" base_skill_point_cost="2" desc_key="ClubMasteryDesc" icon="cp_clubmastery">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="4" desc_key="reqFortitudeLevel04"/>
 			</level_requirements>
@@ -410,7 +410,7 @@
 				<effect_description level="5" desc_key="ClubMasteryRank5Desc" long_desc_key="ClubMasteryRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkSledgeMastery" parent="skillMeleeMasteries" name_key="SledgeMasteryName" desc_key="SledgeMasteryDesc" icon="cp_sledgemastery">
+		<perk name="perkSledgeMastery" parent="skillMeleeMasteries" name_key="SledgeMasteryName" base_skill_point_cost="2" desc_key="SledgeMasteryDesc" icon="cp_sledgemastery">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="7" desc_key="reqStrengthLevel07"/>
 			</level_requirements>
@@ -437,7 +437,7 @@
 				<effect_description level="5" desc_key="SledgeMasteryRank5Desc" long_desc_key="SledgeMasteryRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkBrawlMastery" parent="skillMeleeMasteries" name_key="BrawlingMasteryName" desc_key="BrawlingMasteryDesc" icon="cp_brawlmastery">
+		<perk name="perkBrawlMastery" parent="skillMeleeMasteries" name_key="BrawlingMasteryName" base_skill_point_cost="2" desc_key="BrawlingMasteryDesc" icon="cp_brawlmastery">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="4" desc_key="reqAgilityLevel04"/>
 			</level_requirements>
@@ -466,7 +466,7 @@
 				<effect_description level="5" desc_key="BrawlingMasteryRank5Desc" long_desc_key="BrawlingMasteryRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkBladeMastery" parent="skillMeleeMasteries" name_key="BladeMasteryName" desc_key="BladeMasteryDesc" icon="cp_blademastery">
+		<perk name="perkBladeMastery" parent="skillMeleeMasteries" name_key="BladeMasteryName" base_skill_point_cost="2" desc_key="BladeMasteryDesc" icon="cp_blademastery">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="7" desc_key="reqAgilityLevel07"/>
 			</level_requirements>
@@ -494,7 +494,7 @@
 				<effect_description level="5" desc_key="BladeMasteryRank5Desc" long_desc_key="BladeMasteryRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkBatonMastery" parent="skillMeleeMasteries" name_key="BatonMasteryName" desc_key="BatonMasteryDesc" icon="cp_batonmastery">
+		<perk name="perkBatonMastery" parent="skillMeleeMasteries" name_key="BatonMasteryName" base_skill_point_cost="2" desc_key="BatonMasteryDesc" icon="cp_batonmastery">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel04"/>
 			</level_requirements>
@@ -527,7 +527,7 @@
 				</triggered_effect>
 			</effect_group>
 		</perk>
-		<perk name="perkSpearMastery" parent="skillMeleeMasteries" name_key="SpearMasteryName" desc_key="SpearMasteryDesc" icon="cp_spearmastery">
+		<perk name="perkSpearMastery" parent="skillMeleeMasteries" name_key="SpearMasteryName" base_skill_point_cost="2" desc_key="SpearMasteryDesc" icon="cp_spearmastery">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="reqPerceptionLevel04"/>
 			</level_requirements>
@@ -555,7 +555,7 @@
 				<effect_description level="5" desc_key="SpearMasteryRank5Desc" long_desc_key="SpearMasteryRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkSalvager" parent="skillMental" name_key="SalvagerName" desc_key="SalvagerDesc" icon="cp_salvager">
+		<perk name="perkSalvager" parent="skillMental" name_key="SalvagerName" desc_key="SalvagerDesc" base_skill_point_cost="2" icon="cp_salvager">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="reqPerceptionLevel04"/>
 			</level_requirements>
@@ -583,7 +583,7 @@
 				<effect_description level="5" desc_key="SalvagerRank5Desc" long_desc_key="SalvagerRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkExplosiveMastery" parent="skillRangedMasteries" name_key="ExplosivesMasteryName" desc_key="ExplosivesMasteryDesc" icon="cp_explosivemastery">
+		<perk name="perkExplosiveMastery" parent="skillRangedMasteries" name_key="ExplosivesMasteryName" desc_key="ExplosivesMasteryDesc" base_skill_point_cost="2" icon="cp_explosivemastery">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="4" desc_key="reqIntellectLevel04"/>
 			</level_requirements>
@@ -612,7 +612,7 @@
 				<effect_description level="5" desc_key="ExplosivesMasteryRank5Desc" long_desc_key="ExplosivesMasteryRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkBowMastery" parent="skillRangedMasteries" name_key="BowMasteryName" desc_key="BowMasteryDesc" icon="cp_bowmastery">
+		<perk name="perkBowMastery" parent="skillRangedMasteries" name_key="BowMasteryName" desc_key="BowMasteryDesc" base_skill_point_cost="2" icon="cp_bowmastery">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="4" desc_key="reqAgilityLevel04"/>
 			</level_requirements>
@@ -645,7 +645,7 @@
 				<effect_description level="5" desc_key="BowMasteryRank5Desc" long_desc_key="BowMasteryRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkRifleMastery" parent="skillRangedMasteries" name_key="RifleMasteryName" desc_key="RifleMasteryDesc" icon="cp_riflemastery">
+		<perk name="perkRifleMastery" parent="skillRangedMasteries" name_key="RifleMasteryName" desc_key="RifleMasteryDesc" base_skill_point_cost="2" icon="cp_riflemastery">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="4" desc_key="reqPerceptionLevel04"/>
 			</level_requirements>
@@ -675,7 +675,7 @@
 				<effect_description level="5" desc_key="RifleMasteryRank5Desc" long_desc_key="RifleMasteryRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkMGMastery" parent="skillRangedMasteries" name_key="MGMasteryName" desc_key="MGMasteryDesc" icon="cp_mgmastery">
+		<perk name="perkMGMastery" parent="skillRangedMasteries" name_key="MGMasteryName" desc_key="MGMasteryDesc" base_skill_point_cost="2" icon="cp_mgmastery">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
 			</level_requirements>
@@ -706,7 +706,7 @@
 				<effect_description level="5" desc_key="MGMasteryRank5Desc" long_desc_key="MGMasteryRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkSidearmMastery" parent="skillRangedMasteries" name_key="SidearmMasteryName" desc_key="SidearmMasteryDesc" icon="cp_sidearmmastery">
+		<perk name="perkSidearmMastery" parent="skillRangedMasteries" name_key="SidearmMasteryName" desc_key="SidearmMasteryDesc" base_skill_point_cost="2" icon="cp_sidearmmastery">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
 			</level_requirements>
@@ -737,7 +737,7 @@
 				<effect_description level="5" desc_key="SidearmMasteryRank5Desc" long_desc_key="SidearmMasteryRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkShotgunMastery" parent="skillRangedMasteries" name_key="ShotgunMasteryName" desc_key="ShotgunMasteryDesc" icon="cp_shotgunmastery">
+		<perk name="perkShotgunMastery" parent="skillRangedMasteries" name_key="ShotgunMasteryName" desc_key="ShotgunMasteryDesc" base_skill_point_cost="2" icon="cp_shotgunmastery">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="4" desc_key="reqStrengthLevel04"/>
 			</level_requirements>
@@ -768,7 +768,7 @@
 				<effect_description level="5" desc_key="ShotgunMasteryRank5Desc" long_desc_key="ShotgunMasteryRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkSneakDMG" parent="skillLuckPerks" name_key="SneakDamageName" desc_key="SneakDamageDesc" long_desc_key="perkSneakDMGLongDesc" icon="cp_sneakdmg">
+		<perk name="perkSneakDMG" parent="skillLuckPerks" name_key="SneakDamageName" desc_key="SneakDamageDesc" long_desc_key="perkSneakDMGLongDesc" base_skill_point_cost="2" icon="cp_sneakdmg">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="7" desc_key="reqAgilityLevel07"/>
 			</level_requirements>
@@ -797,7 +797,7 @@
 				<effect_description level="5" desc_key="SneakDamageRank5Desc" long_desc_key="SneakDamageRank5LongDesc"/>
 			</effect_group>
 		</perk>
-		<perk name="perkStealth" parent="skillLuckPerks" name_key="StealthName" desc_key="StealthDesc" icon="cp_stealth">
+		<perk name="perkStealth" parent="skillLuckPerks" name_key="StealthName" desc_key="StealthDesc" base_skill_point_cost="2" icon="cp_stealth">
 			<level_requirements level="1">
 				<requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="4" desc_key="reqAgilityLevel04"/>
 			</level_requirements>

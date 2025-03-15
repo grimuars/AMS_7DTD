@@ -3,7 +3,7 @@ using UnityEngine;
 
 public static class KFExtensions
 {
-    public static Transform FindInAllChilds(this Transform target, string name, bool onlyActive = false)
+    public static Transform FindInAllChildren(this Transform target, string name, bool onlyActive = false)
     {
         if (name == null)
         {
@@ -19,7 +19,7 @@ public static class KFExtensions
 
             for (int i = 0; i < target.childCount; i++)
             {
-                Transform transform = target.GetChild(i).FindInAllChilds(name, onlyActive);
+                Transform transform = target.GetChild(i).FindInAllChildren(name, onlyActive);
                 if (transform != null)
                 {
                     return transform;
@@ -58,6 +58,14 @@ public static class KFExtensions
         self.localRotation = rot;
     }
 
+    public static void RotateAroundPivot(this Transform self, Transform pivot, Quaternion rotation)
+    {
+        Vector3 dir = self.InverseTransformVector(self.position - pivot.position); // get point direction relative to pivot
+        dir = rotation * dir; // rotate it
+        self.localPosition = dir + self.InverseTransformPoint(pivot.position); // calculate rotated point
+        self.localRotation = rotation;
+    }
+
     public static Vector3 Random(Vector3 min, Vector3 max)
     {
         return new Vector3(UnityEngine.Random.Range(min.x, max.x), UnityEngine.Random.Range(min.y, max.y), UnityEngine.Random.Range(min.z, max.z));
@@ -66,6 +74,11 @@ public static class KFExtensions
     public static Vector3 Clamp(Vector3 val, Vector3 min, Vector3 max)
     {
         return new Vector3(Mathf.Clamp(val.x, min.x, max.x), Mathf.Clamp(val.y, min.y, max.y), Mathf.Clamp(val.z, min.z, max.z));
+    }
+
+    public static Vector3 SmoothStep(Vector3 from, Vector3 to, float t)
+    {
+        return new Vector3(Mathf.SmoothStep(from.x, to.x, t), Mathf.SmoothStep(from.y, to.y, t), Mathf.SmoothStep(from.z, to.z, t));
     }
 
     public static float AngleToInferior(float angle)
@@ -99,6 +112,8 @@ public static class KFExtensions
                 return builder.VanillaWrapper;
             case AnimationGraphBuilder.ParamInWrapper.Weapon:
                 return builder.WeaponWrapper;
+            case AnimationGraphBuilder.ParamInWrapper.Attachments:
+                return builder.AttachmentWrapper;
             default:
                 return AnimationGraphBuilder.DummyWrapper;
         }
@@ -123,6 +138,8 @@ public static class KFExtensions
                 return builder.VanillaWrapper;
             case AnimationGraphBuilder.ParamInWrapper.Weapon:
                 return builder.WeaponWrapper;
+            case AnimationGraphBuilder.ParamInWrapper.Attachments:
+                return builder.AttachmentWrapper;
             default:
                 return AnimationGraphBuilder.DummyWrapper;
         }
@@ -147,6 +164,8 @@ public static class KFExtensions
                 return builder.VanillaWrapper;
             case AnimationGraphBuilder.ParamInWrapper.Weapon:
                 return builder.WeaponWrapper;
+            case AnimationGraphBuilder.ParamInWrapper.Attachments:
+                return builder.AttachmentWrapper;
             default:
                 return AnimationGraphBuilder.DummyWrapper;
         }
@@ -157,7 +176,7 @@ public static class KFExtensions
         if (self)
         {
             var wrapper = self.GetWrapperForParamHash(_propertyHash);
-            if (wrapper.IsValid)
+            if (wrapper != null && wrapper.IsValid)
             {
                 return wrapper.GetBool(_propertyHash);
             }
@@ -171,7 +190,7 @@ public static class KFExtensions
         if (self)
         {
             var wrapper = self.GetWrapperForParamHash(_propertyHash);
-            if (wrapper.IsValid)
+            if (wrapper != null && wrapper.IsValid)
             {
                 return wrapper.GetInteger(_propertyHash);
             }
@@ -185,7 +204,7 @@ public static class KFExtensions
         if (self)
         {
             var wrapper = self.GetWrapperForParamHash(_propertyHash);
-            if (wrapper.IsValid)
+            if (wrapper != null && wrapper.IsValid)
             {
                 return wrapper.GetFloat(_propertyHash);
             }

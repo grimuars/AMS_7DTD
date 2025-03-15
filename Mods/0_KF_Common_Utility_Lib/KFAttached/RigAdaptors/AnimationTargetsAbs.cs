@@ -9,6 +9,7 @@ using UnityEngine;
 using UnityEngine.Animations;
 using UnityEngine.Animations.Rigging;
 using System;
+using System.Collections.Generic;
 
 [AddComponentMenu("")]
 public abstract class AnimationTargetsAbs : MonoBehaviour
@@ -36,6 +37,7 @@ public abstract class AnimationTargetsAbs : MonoBehaviour
     protected Animator itemAnimatorTpv;
     protected bool fpvSet = false;
     protected bool tpvSet = false;
+    private Dictionary<string, GameObject> dict_attachments = new Dictionary<string, GameObject>();
 
     public abstract Transform ItemFpv { get; protected set; }
     public abstract Transform AttachmentRef { get; protected set; }
@@ -44,7 +46,7 @@ public abstract class AnimationTargetsAbs : MonoBehaviour
     public bool IsFpv { get; set; }
     public bool IsAnimationSet => (IsFpv && fpvSet) || (!IsFpv && tpvSet);
     public bool Destroyed { get; protected set; }
-    protected Transform PlayerAnimatorTrans { get; private set; }
+    public Transform PlayerAnimatorTrans { get; private set; }
     public Animator ItemAnimator => IsFpv ? ItemAnimatorFpv : ItemAnimatorTpv;
     public Transform ItemCurrent => IsFpv ? ItemFpv : ItemTpv;
     public Transform ItemCurrentOrDefault => IsFpv ? ItemFpv : ItemTpvOrSelf;
@@ -83,6 +85,25 @@ public abstract class AnimationTargetsAbs : MonoBehaviour
         }
     }
 
+    //attaching the same prefab multiple times is not allowed!
+    public void AttachPrefab(GameObject prefab)
+    {
+        if (!Destroyed && dict_attachments != null && prefab.TryGetComponent<AttachmentReferenceAppended>(out var appended))
+        {
+            appended.Merge(this);
+            dict_attachments[prefab.name] = prefab.gameObject;
+        }
+    }
+
+    public GameObject GetPrefab(string name)
+    {
+        if (Destroyed || dict_attachments == null || !dict_attachments.TryGetValue(name, out var prefab))
+        {
+            return null;
+        }
+        return prefab;
+    }
+
     public void Init(Transform playerAnimatorTrans, bool isFpv)
     {
         if (Destroyed || (isFpv && fpvSet) || (!isFpv && tpvSet))
@@ -114,7 +135,7 @@ public abstract class AnimationTargetsAbs : MonoBehaviour
         {
             itemAnimatorTpv = null;
         }
-        spine1 = PlayerAnimatorTrans.FindInAllChilds("Spine1");
+        spine1 = PlayerAnimatorTrans.FindInAllChildren("Spine1");
         spine2 = spine1.Find("Spine2");
         spine3 = spine2.Find("Spine3");
 
@@ -199,7 +220,7 @@ public abstract class AnimationTargetsAbs : MonoBehaviour
         Stopwatch sw = new Stopwatch();
         sw.Start();
 
-        itemTpv.SetParent(itemAnimatorTpv.transform.FindInAllChilds(GetParentName(parentNameTpv)));
+        itemTpv.SetParent(itemAnimatorTpv.transform.FindInAllChildren(GetParentName(parentNameTpv)));
         itemTpv.position = Vector3.zero;
         itemTpv.localPosition = Vector3.zero;
         itemTpv.localRotation = Quaternion.identity;
@@ -305,6 +326,7 @@ public abstract class AnimationTargetsAbs : MonoBehaviour
         Destroyed = true;
 #endif
         PlayerAnimatorTrans = null;
+        dict_attachments = null;
 
         Component.DestroyImmediate(this);
         //Log.Out(StackTraceUtility.ExtractStackTrace());
