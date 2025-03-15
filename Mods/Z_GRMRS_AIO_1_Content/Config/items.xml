@@ -112,8 +112,8 @@
 			<property name="DescriptionKey" value="AMSStarterPackDesc"/>
 			<property name="CustomIconTint" value="#38f5f5"/>
 			<property class="Action0">
-				<property name="Create_item" value="medicalFirstAidBandage,foodVegetableStew,drinkJarPureMineralWater,meleeWpnBladeT0BoneKnife,drugHerbalAntibiotics,resourceSewingKit,drugWaterCleanerPills,bucketEmpty,trapSpikesWoodDmg0"/>
-				<property name="Create_item_count" value="4,5,5,1,1,1,2,1,40"/>
+				<property name="Create_item" value="medicalFirstAidBandage,foodVegetableStew,drinkJarPureMineralWater,meleeWpnBladeT0BoneKnife,drugHerbalAntibiotics,resourceSewingKit,drugWaterCleanerPills,bucketEmpty,trapSpikesWoodDmg0,questRewardT3BookBundle"/>
+				<property name="Create_item_count" value="4,5,5,1,1,1,2,1,40,1"/>
 			</property>
 		</item>
 	</append>
