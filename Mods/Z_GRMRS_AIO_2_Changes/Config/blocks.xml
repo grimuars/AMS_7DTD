@@ -125,13 +125,13 @@
 	</append>
 	<!-- 5 Мины наносят больший урон в большем радиусе -->
 	<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='Explosion.EntityDamage']/@value">400</set>
-	<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='Explosion.RadiusEntities']/@value">10</set>
+	<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='Explosion.RadiusEntities']/@value">4</set>
 	<set xpath="/blocks/block[@name='mineCookingPot']/property[@name='Explosion.EntityDamage']/@value">600</set>
-	<set xpath="/blocks/block[@name='mineCookingPot']/property[@name='Explosion.RadiusEntities']/@value">8</set>
+	<set xpath="/blocks/block[@name='mineCookingPot']/property[@name='Explosion.RadiusEntities']/@value">5</set>
 	<set xpath="/blocks/block[@name='mineHubcap']/property[@name='Explosion.EntityDamage']/@value">800</set>
-	<set xpath="/blocks/block[@name='mineHubcap']/property[@name='Explosion.RadiusBlocks']/@value">8</set>
+	<set xpath="/blocks/block[@name='mineHubcap']/property[@name='Explosion.RadiusBlocks']/@value">6</set>
 	<set xpath="/blocks/block[@name='mineAirFilter']/property[@name='Explosion.EntityDamage']/@value">1000</set>
-	<set xpath="/blocks/block[@name='mineAirFilter']/property[@name='Explosion.RadiusBlocks']/@value">9</set>
+	<set xpath="/blocks/block[@name='mineAirFilter']/property[@name='Explosion.RadiusBlocks']/@value">7</set>
 	<!-- 6 Урон по блокам от мин равен 1 -->
 	<set xpath="/blocks/block[contains (@name, 'mine')]/property[@name='Explosion.BlockDamage']/@value">1</set>
 	<!-- 7 Активируем подбор мусора и декалей -->
@@ -192,6 +192,12 @@
 	<append xpath="/blocks/block[@name='cementMixer']">
 		<drop event="Destroy" name="resourceScrapIron" count="1"/>
 		<drop event="Destroy" name="cementMixer" count="1" tool_category="Disassemble"/>
+		<drop event="Harvest" name="resourceScrapIron" count="0" tool_category="Disassemble"/>
+	</append>
+	<!-- *** -->
+	<append xpath="/blocks/block[@name='tableSaw']">
+		<drop event="Destroy" name="resourceScrapIron" count="1"/>
+		<drop event="Destroy" name="tableSaw" count="1" tool_category="Disassemble"/>
 		<drop event="Harvest" name="resourceScrapIron" count="0" tool_category="Disassemble"/>
 	</append>
 	<!-- *** -->
@@ -515,13 +521,13 @@
 	<set xpath="/blocks/block[@name='chairCampingWhite']/property[@name='Stacknumber']/@value">100</set>
 	<!-- Семена и саженцы -->
 	<insertAfter xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='Material']">
-		<property name="Stacknumber" value="500"/>
+		<property name="Stacknumber" value="300"/>
 	</insertAfter>
 	<insertAfter xpath="/blocks/block[@name='treeMaster']/property[@name='Material']">
-		<property name="Stacknumber" value="500"/>
+		<property name="Stacknumber" value="50"/>
 	</insertAfter>
 	<insertAfter xpath="/blocks/block[@name='woodLogPillar100']/property[@name='MaxDamage']">
-		<property name="Stacknumber" value="500"/>
+		<property name="Stacknumber" value="50"/>
 	</insertAfter>
 	<!-- Изменяем ресурсы при разборе некоторых блоков -->
 	<!-- Шкафы -->

@@ -19,7 +19,7 @@
 	<!-- Резкость динамического освещения внутри помещений -->
 	<set xpath="//property[@name='ambientInsideSkyScale']/@value">0.1,0.01</set>
 	<!-- Туман -->
-	<set xpath="/worldglobal/environment/property[@name='fogPower']/@value">0.6,0.4</set>
+	<set xpath="/worldglobal/environment/property[@name='fogPower']/@value">0.8,0.8</set>
 	<!-- <set xpath="/worldglobal/environment/property[@name='ambientMoon']/@value">.9, .3</set> -->
 	<!-- <set xpath="/worldglobal/environment/property[@name='ambientSkyScale']/@value">1, .4</set> -->
 	<!-- <set xpath="/worldglobal/environment/property[@name='ambientInsideSkyScale']/@value">.9, .4</set> -->

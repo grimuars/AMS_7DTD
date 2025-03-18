@@ -743,9 +743,9 @@
 			<property name="HoldType" value="74"/>
 			<property name="CraftingIngredientTime" value="8"/>
 			<property name="Stacknumber" value="10"/>
-			<property name="ItemWeight" value="0.1"/>
+			<property name="ItemWeight" value="0.2"/>
 			<effect_group tiered="false">
-				<display_value name="TSItemWeight" value="0.1"/>
+				<display_value name="TSItemWeight" value="0.2"/>
 			</effect_group>
 			<property class="Action1">
 				<property name="Class" value="Repair"/>
@@ -781,9 +781,9 @@
 			<property name="Stacknumber" value="250"/>
 			<!-- STK resource -->
 			<property name="EconomicValue" value="25"/>
-			<property name="ItemWeight" value="0.1"/>
+			<property name="ItemWeight" value="0.5"/>
 			<effect_group tiered="false">
-				<display_value name="TSItemWeight" value="0.1"/>
+				<display_value name="TSItemWeight" value="0.5"/>
 			</effect_group>
 			<!-- <property name="EconomicBundleSize" value="5"/> -->
 			<property name="CraftingIngredientTime" value="10"/>

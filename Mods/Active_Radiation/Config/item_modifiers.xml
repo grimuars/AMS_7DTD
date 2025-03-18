@@ -1,9 +1,6 @@
 <config>
-	
-	 <append xpath="/item_modifiers">
-		
+	<append xpath="/item_modifiers">
 		<item_modifier name="modArmorARResistHelmet" installable_tags="armorHead" modifier_tags="resistance" type="attachment">
-		
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="UnlockedBy" value="craftingArmor"/>
 			<property name="Material" value="MoreMetal"/>
@@ -11,14 +8,12 @@
 			<property name="EconomicValue" value="1500"/>
 			<property name="CustomIcon" value="modArmorPlatingReinforced"/>
 			<property name="CustomIconTint" value="FF6666"/>
-			
 			<effect_group>
 				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorHeadProtect" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorHeadProtect" operation="set" value="0"/>
 			</effect_group>
 		</item_modifier>
 		<item_modifier name="modArmorAROutfit" installable_tags="armorChest" modifier_tags="resistance" type="attachment">
-		
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="UnlockedBy" value="craftingArmor"/>
 			<property name="Material" value="MoreMetal"/>
@@ -26,14 +21,12 @@
 			<property name="EconomicValue" value="1500"/>
 			<property name="CustomIcon" value="modArmorPlatingReinforced"/>
 			<property name="CustomIconTint" value="FF6666"/>
-			
 			<effect_group>
 				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorChestProtect" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorChestProtect" operation="set" value="0"/>
 			</effect_group>
 		</item_modifier>
 		<item_modifier name="modArmorARGloves" installable_tags="armorHands" modifier_tags="resistance" type="attachment">
-		
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="UnlockedBy" value="craftingArmor"/>
 			<property name="Material" value="MoreMetal"/>
@@ -41,15 +34,12 @@
 			<property name="EconomicValue" value="1500"/>
 			<property name="CustomIcon" value="modArmorPlatingReinforced"/>
 			<property name="CustomIconTint" value="FF6666"/>
-			
 			<effect_group>
 				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorHandsProtect" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorHandsProtect" operation="set" value="0"/>
 			</effect_group>
-		
 		</item_modifier>
 		<item_modifier name="modArmorARBoots" installable_tags="armorFeet" modifier_tags="resistance" type="attachment">
-		
 			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
 			<property name="UnlockedBy" value="craftingArmor"/>
 			<property name="Material" value="MoreMetal"/>
@@ -57,14 +47,10 @@
 			<property name="EconomicValue" value="1500"/>
 			<property name="CustomIcon" value="modArmorPlatingReinforced"/>
 			<property name="CustomIconTint" value="FF6666"/>
-			
 			<effect_group>
 				<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$armorFeetProtect" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$armorFeetProtect" operation="set" value="0"/>
 			</effect_group>
-		
 		</item_modifier>
-		
 	</append>
-	
 </config>

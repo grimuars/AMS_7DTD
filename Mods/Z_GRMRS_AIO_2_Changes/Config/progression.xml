@@ -382,8 +382,8 @@
 	<append xpath="/progression/perks/perk[@name='perkFromTheShadows']/level_requirements[@level='4']">
 		<requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="6" desc_key="reqPerceptionLevel06"/>
 	</append>
-	<!-- За прокачку перка "Из тени" уровень шума снижается до 75% -->
-	<set xpath="/progression/perks/perk[@name='perkFromTheShadows']/effect_group/requirement[@name='CVarCompare']/passive_effect[@name='NoiseMultiplier']/@value">0,-.75</set>
+	<!-- За прокачку перка "Из тени" уровень шума снижается до 80% -->
+	<set xpath="/progression/perks/perk[@name='perkFromTheShadows']/effect_group/passive_effect[@name='NoiseMultiplier']/@value">0,-.8</set>
 	<!-- *** INTELLECT: PERKS -->
 	<!-- *** ELECTROCUTIONER -->
 	<append xpath="/progression/perks/perk[@name='perkElectrocutioner']/level_requirements[@level='3']">

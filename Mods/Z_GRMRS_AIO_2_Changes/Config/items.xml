@@ -1506,4 +1506,9 @@
 	<remove xpath="/items/item[starts-with (@name, 'gun')]/property[@class='Action0']/property[@name='Particles_muzzle_smoke_fpv']"/>
 	<!-- Увеличиваем вероятность наложения негативных эффектов при атаке зомби -->
 	<set xpath="/items/item[starts-with (@name, 'meleeHandZombie')]/effect_group[1]/triggered_effect[1]/@weights">.21,.17,.17,.15,.39,.46,.21</set>
+	<!-- Меняем иконку прочитанной книги на большую зелёную галку -->
+	<set xpath="/items/item[@name='schematicMaster']/property[@name='AltItemTypeIcon']/@value">check</set>
+	<insertAfter xpath="/items/item[@name='schematicMaster']/property[@name='AltItemTypeIcon']">
+		<property name="AltItemTypeIconColor" value="0,255,0"/>
+	</insertAfter>
 </items_aio_2>
